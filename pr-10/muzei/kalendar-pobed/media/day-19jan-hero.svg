@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Зимний Краков: Вавель на холме над Вислой, мосты и трубы заводов на горизонте">
+  <title>Краков зимой: Вавель на холме над Вислой — рисунок музея</title>
+  <defs>
+    <linearGradient id="sky19" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1420"/><stop offset="40%" stop-color="#1a2a3c"/>
+      <stop offset="74%" stop-color="#3b4b58"/><stop offset="100%" stop-color="#5a5348"/>
+    </linearGradient>
+    <linearGradient id="glow19" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9fb2c6" stop-opacity="0"/><stop offset="100%" stop-color="#e8c98a" stop-opacity=".22"/>
+    </linearGradient>
+    <linearGradient id="hill19" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2e3f50"/><stop offset="100%" stop-color="#161f2a"/>
+    </linearGradient>
+    <linearGradient id="visla" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5c7b93"/><stop offset="100%" stop-color="#26384a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" fill="url(#sky19)"/>
+  <ellipse cx="820" cy="300" rx="520" ry="160" fill="url(#glow19)"/>
+  <g fill="#ffffff" opacity=".4">
+    <circle cx="120" cy="44" r="1.1"/><circle cx="300" cy="34" r="1"/><circle cx="470" cy="62" r="1.1"/>
+    <circle cx="640" cy="28" r="1"/><circle cx="830" cy="54" r="1.1"/><circle cx="1010" cy="38" r="1"/>
+    <circle cx="1120" cy="88" r=".9"/><circle cx="380" cy="96" r=".9"/>
+  </g>
+  <!-- дальний горизонт: силезские трубы (условно, за Вислой) -->
+  <g fill="#1a2734" opacity=".85">
+    <rect x="60" y="268" width="10" height="42"/><rect x="112" y="258" width="8" height="52"/>
+    <rect x="160" y="274" width="12" height="36"/><rect x="222" y="264" width="9" height="46"/>
+    <rect x="980" y="266" width="11" height="44"/><rect x="1040" y="256" width="8" height="54"/>
+    <rect x="1104" y="272" width="12" height="38"/>
+  </g>
+  <path d="M0 296 L140 282 L260 292 L400 278 L520 290 L640 276 L780 292 L900 280 L1030 294 L1200 282 L1200 420 L0 420 Z" fill="#1d2b3a" opacity=".9"/>
+  <!-- Вавельский холм -->
+  <path d="M300 330 L420 268 L560 250 L700 268 L820 330 L820 420 L300 420 Z" fill="url(#hill19)"/>
+  <!-- Вавель: собор и стены -->
+  <g fill="#0a121b">
+    <rect x="470" y="212" width="26" height="76"/>
+    <path d="M470 212 L483 178 L496 212 Z"/>
+    <rect x="500" y="222" width="18" height="66"/>
+    <path d="M500 222 L509 196 L518 222 Z"/>
+    <rect x="524" y="236" width="34" height="52"/>
+    <rect x="564" y="244" width="22" height="44"/>
+    <rect x="592" y="252" width="30" height="36"/>
+    <rect x="628" y="258" width="18" height="30"/>
+    <!-- крепостная стена по склону -->
+    <path d="M330 322 L420 288 L470 276 L470 292 L420 306 L330 338 Z"/>
+  </g>
+  <!-- окна: тёплый свет -->
+  <g fill="#e8c98a" opacity=".5">
+    <rect x="530" y="248" width="4" height="6"/><rect x="544" y="248" width="4" height="6"/>
+    <rect x="570" y="256" width="4" height="6"/><rect x="598" y="264" width="4" height="6"/>
+  </g>
+  <!-- Висла -->
+  <path d="M0 372 C 200 352, 380 392, 600 372 S 980 344, 1200 366" fill="none" stroke="url(#visla)" stroke-width="17" stroke-linecap="round" opacity=".9"/>
+  <!-- мосты через Вислу -->
+  <g stroke="#0d1721" stroke-width="4" opacity=".9">
+    <path d="M420 366 L520 358"/><path d="M700 372 L800 366"/><path d="M900 362 L990 358"/>
+  </g>
+  <g stroke="#0d1721" stroke-width="2" opacity=".7">
+    <path d="M446 350 L446 372"/><path d="M486 348 L486 370"/><path d="M730 356 L730 378"/><path d="M930 350 L930 372"/>
+  </g>
+  <!-- дым над городом -->
+  <g fill="none" stroke="#8fa2b4" stroke-width="2" opacity=".25">
+    <path d="M508 190 C 500 176, 514 168, 506 154"/>
+    <path d="M660 232 C 652 218, 666 210, 658 196"/>
+  </g>
+  <!-- дорога-подход с севера, пунктир -->
+  <path d="M300 396 C 420 388, 520 344, 640 300" fill="none" stroke="#c9a84c" stroke-width="3" stroke-dasharray="12 9" opacity=".6"/>
+</svg>
