@@ -1,0 +1,41 @@
+{
+  "test_id": "reset-390",
+  "code": "reset",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-gogol-shinel.html",
+  "steps": [
+    "Найти воротник",
+    "Начать заново: перезагрузка без очистки хранилища",
+    "Повторить то же"
+  ],
+  "checks": [
+    {
+      "label": "Награда набрана",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    },
+    {
+      "label": "Счёт сброшен",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Место снова не найдено",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Сброс не удваивает награду",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "reset-390.png",
+  "status": "pass"
+}

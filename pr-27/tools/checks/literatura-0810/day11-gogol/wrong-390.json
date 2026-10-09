@@ -1,0 +1,84 @@
+{
+  "test_id": "wrong-390",
+  "code": "wrong",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-gogol-shinel.html",
+  "steps": [
+    "Нажать не то место (будка вместо воротника)",
+    "Повторно то же неверное место",
+    "Теперь верное место",
+    "Неверный вариант первого вопроса"
+  ],
+  "checks": [
+    {
+      "label": "Подсказка показана",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Неверное место помечено",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Верное место не объявлено ошибочным",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Неверный выбор не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Задание не сдвинулось",
+      "actual": "Деталь 1 из 5",
+      "expected": "Деталь 1 из 5",
+      "ok": true
+    },
+    {
+      "label": "Повтор не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Верное после ошибки даёт 8",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    },
+    {
+      "label": "Пометка ошибки снята",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Разбор показан",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Верный вариант подсвечен как верный",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Неверный ответ викторины не даёт очков",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "wrong-390.png",
+  "status": "pass"
+}

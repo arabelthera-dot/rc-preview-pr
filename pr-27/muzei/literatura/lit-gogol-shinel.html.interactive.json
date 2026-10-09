@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "page_sha256": "93937882ef10bb3409cc36bbf6aeb5c0166162f64eb0e5327e3eb4ca8b97e503",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-09T22:49:42.678Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/checks/literatura-0810/shinel-plan.mjs",
+  "inputs": {
+    "lit-gogol-shinel.html": "93937882ef10bb3409cc36bbf6aeb5c0166162f64eb0e5327e3eb4ca8b97e503",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/checks/literatura-0810/shinel-plan.mjs": "c9c1e00a2911f4e41dfe1ab04e59674a10f6cfa77a84c9537b937615da7e855c",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-literatura.css": "a205915af4132a432fcb0d668602d1eaf1a0d3c7734d554cc6dcc87a6a5ced75",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media-shinel/hero-kustodiev-shinel-mobile.jpg": "e11de6ee2a7cfcd495b9dd5e531164de42b64d1d34add059db00cb09443f7d29",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "calendar-literatura.js": "214fdc8b6ed35245757bbcf9830696caf6997ec766a5da13a9352f3cec0006d7",
+    "../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "media-shinel/kustodiev-na-nevskom-1905.jpg": "86bb2a54ac76703b95931a971b3f1a0e8b652f1efad8e0ac76ee3e2e59e45bff",
+    "media-shinel/kustodiev-v-novoy-shineli-1905.jpg": "cd71685dc8032d3f54afa2ab4048c6c97ee227f2425aa8b575c734ba455cea97",
+    "../../tools/checks/literatura-0810/day11-gogol/entry-390.png": "f1bb76aaeb659ef367be1373a6afcb5bc7077b982c2e2cea7c1edc83c21f916d",
+    "../../tools/checks/literatura-0810/day11-gogol/entry-390.json": "0106697fb3e0c2d98133bdeb119716e32838acea8f20c1c8e2ab322f02551275",
+    "../../tools/checks/literatura-0810/day11-gogol/wrong-390.png": "52889e649d94065e6df5dd50823422d3b1fa098bf5a4cfa3db86949640a4fa47",
+    "../../tools/checks/literatura-0810/day11-gogol/wrong-390.json": "a4ba3f645cac1c3addfa35f4a2a7a222a6a5a2949fefbf8bc211aaa6cc0e912b",
+    "../../tools/checks/literatura-0810/day11-gogol/reset-390.png": "5c008868181f43f8ec69f4df50264647db0cb1485ced30f0428efe7fe18c0845",
+    "../../tools/checks/literatura-0810/day11-gogol/reset-390.json": "fb75e11ca565175c81d323e8f54f40534563374e4df140553c64bbefe0fe3f48",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMwX7I-NP.woff2": "98c22de85f6e83bcd6ae1a443e12e256fbc8de7142bec4f76b059f8ff9c2797e",
+    "../../tools/checks/literatura-0810/day11-gogol/mobile-390.png": "3b8e523a8acae58fb9b2730366692750b03f2cde3f00eaf7c985e48a2fb86f1a",
+    "../../tools/checks/literatura-0810/day11-gogol/mobile-390.json": "5632e71dc847d2b40fd709d578dfa76b2d195cd4b31c64a5dafe478cbd3ab9ee",
+    "media-shinel/hero-kustodiev-shinel.jpg": "ab57fcfd1c6123077ba437839a8a5f32a46138b001463a884412a7b04b8b4aea",
+    "media-shinel/kustodiev-u-petrovicha-1905.jpg": "fa97166c5f00402e712b806d5dbf66c6e23b3644df19ef2704c8a9b154541fe2",
+    "../../tools/checks/literatura-0810/day11-gogol/mobile-1440.png": "64452cba2226a04f5f45afcb34dbc0f8de36cbb48d5e4e0023f2dab1b62fca96",
+    "../../tools/checks/literatura-0810/day11-gogol/mobile-1440.json": "613f1f0c7196868be49dfd4cc2a6767c1a2ba6a87c7f3978db853b3052ade146",
+    "../../tools/checks/literatura-0810/day11-gogol/nojs-390.png": "0ac12e65bf968edee3d37fc68e94c3ac9254073b75cd5abeea9e715d44cc2cb8",
+    "../../tools/checks/literatura-0810/day11-gogol/nojs-390.json": "5d8980d19686117363259793d5306e48b0e73a28c323928c37403afeb523e7f4",
+    "../../tools/checks/literatura-0810/day11-gogol/score-390.png": "beddb39b1cc6faaff57f9f870abbf4b52bfab73a972694a165d4c357132344c4",
+    "../../tools/checks/literatura-0810/day11-gogol/score-390.json": "5c8c07dcd5a2d1bb05198470a9c244f4712f460d8a92b498678c60fb44cf04f5",
+    "../../tools/checks/literatura-0810/day11-gogol/main-390.png": "b2eeb94f3b081d34755819c51422f923188a585b616bdc2766b3903264477beb",
+    "../../tools/checks/literatura-0810/day11-gogol/main-390.json": "4c74d3cc39bfa2eeeffeadbb533bf52011d004190de75f0fb5afe8b2d21a4ba1",
+    "../../tools/checks/literatura-0810/day11-gogol/empty-390.png": "dae3b0acc41a2b7237ebdff58834dbed1a20ce8083a9cadb3c99657d1d555885",
+    "../../tools/checks/literatura-0810/day11-gogol/empty-390.json": "4e1b6ed9fc23ff29f7393cc54ff81e0cafd927960262ddafb151d0930217df49"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day11-gogol/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day11-gogol/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day11-gogol/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day11-gogol/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day11-gogol/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/literatura-0810/day11-gogol/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day11-gogol/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day11-gogol/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day11-gogol/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
