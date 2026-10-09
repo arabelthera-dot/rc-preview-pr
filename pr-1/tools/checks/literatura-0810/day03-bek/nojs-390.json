@@ -1,0 +1,43 @@
+{
+  "test_id": "nojs-390",
+  "code": "nojs",
+  "width": 390,
+  "javascript_enabled": false,
+  "url": "http://b6.local/muzei/literatura/lit-bek-volokolamskoe-shosse.html",
+  "steps": [],
+  "checks": [
+    {
+      "label": "История читается без JavaScript",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Эпизоды истории раскрываются без JavaScript",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Вместо пустой викторины и развилки — текстовый эквивалент",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Текстовая викторина и разборы: 5 ответов + 4 разбора",
+      "actual": 9,
+      "expected": 9,
+      "ok": true
+    },
+    {
+      "label": "Текстовый разбор «документ или пересказ» на месте",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "nojs-390.png",
+  "status": "pass"
+}

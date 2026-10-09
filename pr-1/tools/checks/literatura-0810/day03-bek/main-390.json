@@ -1,0 +1,48 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-bek-volokolamskoe-shosse.html",
+  "steps": [
+    "Ответить на первую фразу «Документ или пересказ?»",
+    "Пройти остальные фразы",
+    "Верный ответ на первый вопрос",
+    "Повторное нажатие того же ответа"
+  ],
+  "checks": [
+    {
+      "label": "Разбор открыт",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "«Документ или пересказ» очков не даёт",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "И после всех фраз счёт 0",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Вопрос о прочитанном даёт очки",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    },
+    {
+      "label": "Повтор не начисляет дважды",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}

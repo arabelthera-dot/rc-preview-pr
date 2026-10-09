@@ -1,0 +1,41 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-platonov-kotlovan.html",
+  "steps": [
+    "Нажать «плоту» — событие повести, не след бумаги",
+    "Найти «запятую»",
+    "Ещё одно слово после находки"
+  ],
+  "checks": [
+    {
+      "label": "Промах объяснён и без очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Находка даёт 20",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    },
+    {
+      "label": "Сравнение двух документов открылось",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Повтор не начисляет дважды",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}

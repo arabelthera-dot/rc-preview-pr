@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "page_sha256": "f9a6aafcb8a9ec53aafe747edd71deccd43f467766ab1740d2efb8203e9bc5d7",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-08T14:47:08.978Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/checks/literatura-0810/bek-plan.mjs",
+  "inputs": {
+    "lit-bek-volokolamskoe-shosse.html": "f9a6aafcb8a9ec53aafe747edd71deccd43f467766ab1740d2efb8203e9bc5d7",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/checks/literatura-0810/bek-plan.mjs": "c9d57fbf963d98bfaf0d6fd320ded360928d027919ec6f0b2531e771c131a012",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-literatura.css": "c61af6100f347eca763bde21e186eed1e46b4f7595610697abd05e68e231773c",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media-volokolamskoe/volokolamskoe-shosse-shagin-1941-mobile.jpg": "eae8984cc09f73208077a55a3c69fd6e33645265e11e9c787324a8802706f899",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-fact-or-myth.js": "151d8c561e2364d72ee572ad231ddd350d54b59e7f6ba04508e42c5966fcee3f",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "calendar-literatura.js": "26222f2fa46bc5c6511fd5c53e718362d0f5764f8acbe33a96eea4fdcad4c7e3",
+    "../../assets/museum-return.js": "889716801d75c4c3c9a3b2199994c1e8c03a6ca05e88dc9cf96ee1a14afc64db",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "media-volokolamskoe/panfilov-serebryakov-egorov-1941.jpg": "26f603ba3c9ae057158c7cc9f761fdacd1d4671160f5b15e6810ccb53c41c065",
+    "media-volokolamskoe/volokolamskoe-shosse-shagin-1941.jpg": "de83692710e32db1786ab2a662c86f5d3f966dd5943b9994356aaca54bd54887",
+    "../../tools/checks/literatura-0810/day03-bek/entry-390.png": "7008f8422ea907a0c88a3baa426c315d64ba6f54e1674dce80dd0dd16fd5f01b",
+    "../../tools/checks/literatura-0810/day03-bek/entry-390.json": "3ae0affa39b7d8875567c23323788280259d514010adbc7d3187398eb8f495d8",
+    "../../tools/checks/literatura-0810/day03-bek/wrong-390.png": "e62fabbb65ef26ad1f1d1a28a5aaacdd884322fd841e8ab4dcb75246542b6191",
+    "../../tools/checks/literatura-0810/day03-bek/wrong-390.json": "c5251d6da8a3344fcf73f8edb0087efda9ca6fb941f958aa629d949d8a71a623",
+    "../../tools/checks/literatura-0810/day03-bek/reset-390.png": "fe3dc63da6d10238ec205e1868a0c7b724eccf47d3190b4d8bb82e6b66fcbb19",
+    "../../tools/checks/literatura-0810/day03-bek/reset-390.json": "ffce44d875f641415504211b7ec050f1d7970fe9d0382559fec7ae2185c27bed",
+    "../../tools/checks/literatura-0810/day03-bek/mobile-390.png": "7e5b4eb7211b09e654d5b69e43eb8794fe9e9eb0760bbfc1f7abe349ca684f3e",
+    "../../tools/checks/literatura-0810/day03-bek/mobile-390.json": "5e515e20b57eee9b0b978dbadfbeb97129d03c5cb79081fb1a3b13a32c26cc22",
+    "../../tools/checks/literatura-0810/day03-bek/mobile-1440.png": "11d1eda8940b092f29bd45e50fd8bb653d9880a36d0bf70e31b70344436422d8",
+    "../../tools/checks/literatura-0810/day03-bek/mobile-1440.json": "ba118ac0fa4ec137384d48d900b32044cb99ebf230aa861da7315d29e21350f2",
+    "../../tools/checks/literatura-0810/day03-bek/nojs-390.png": "35ae860933b23b2200eb0f43c88b067574f5e5cf52c3bbc3c4519b14890d2d3e",
+    "../../tools/checks/literatura-0810/day03-bek/nojs-390.json": "c9dcc52e516e2da19bc407438157fa66fdf3e35382f964ef3a8b841b17429a2a",
+    "../../tools/checks/literatura-0810/day03-bek/score-390.png": "1f50190a116457e8409a32b7e20717ad601ab885f6e5a906c6180c86af08a3b6",
+    "../../tools/checks/literatura-0810/day03-bek/score-390.json": "8c0c41cd7543d1d87536ace3a936af59c1cd1dcfcaa773d9d3b18af12dc190d8",
+    "../../tools/checks/literatura-0810/day03-bek/main-390.png": "c11ad52a82c618fa7715e3131414b60ae5731c58781402b79bc9b937424750d9",
+    "../../tools/checks/literatura-0810/day03-bek/main-390.json": "a8c16ec55c52a3b04a8898c65a7632458abc1c4c79f60a8888fcd7f6b0528822",
+    "../../tools/checks/literatura-0810/day03-bek/empty-390.png": "d7b274d13c164ddfbb564b34591eda0ac01bf51fdd733e43ee7445b1fd732550",
+    "../../tools/checks/literatura-0810/day03-bek/empty-390.json": "a03aa79f6e49ca73f0e9bf8692e0ecfb6cc121feafe5027814b0fc85dc53d4b9"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day03-bek/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day03-bek/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day03-bek/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day03-bek/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day03-bek/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/literatura-0810/day03-bek/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day03-bek/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day03-bek/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day03-bek/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
