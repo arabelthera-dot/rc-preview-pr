@@ -1,0 +1,207 @@
+/* Музей «Великие русские книги и их авторы» · фактура manuscript (рукопись) · тон: пергамент/сепия
+   * anchor hue: золото-киноварь. Слой поверх общей обвязки музея. */
+  :root{
+    --bp:#14100c;--bp2:#0e0a07;
+    --gold:#c9a84c;--gold-l:#e4c97a;--gold-g:rgba(201,168,76,.13);
+    --kino:#b3402c;--kino-l:#c9583f;
+    --parch:#e7dcc0;--parch2:#ddd0b2;--parch-ink:#2b2216;--parch-mut:#6b5d48;
+    --ink:#f0e8d8;--muted:#a89a80;--line:rgba(255,255,255,.07);
+    --accent:#c9a84c;--accent2:#8f6a2a;
+    --dark:#0c0805;--dark2:#15100b;--surface:#1d1710;
+    --card:rgba(255,255,255,.05);--card-b:rgba(255,255,255,.09);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Lora',Georgia,serif;color:var(--ink);background:var(--dark);line-height:1.74}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.14;margin:0}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px}
+  a{color:var(--gold-l)}
+  /* шапка — единый стандарт музеев */
+  header.top{position:relative;padding:10px 16px 5px;text-align:center;font-family:'Inter',sans-serif}
+  header.top .b1{font-size:13px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase}
+  header.top .b2{font-size:11px;opacity:.6;margin-top:2px}
+  .score{position:absolute;top:12px;right:14px;background:var(--gold-g);border:1px solid rgba(201,168,76,.3);border-radius:24px;padding:5px 13px;font-size:12px;color:var(--gold-l);font-family:'Inter',sans-serif}
+  .crumbs{font-family:'Inter',sans-serif;font-size:12.5px;padding:4px 16px 7px;text-align:center;opacity:.9}
+  .crumbs a{color:var(--gold-l);text-decoration:none}
+  .crumbs a:hover{text-decoration:underline}
+  .crumbs .sep{color:var(--muted);opacity:.6}
+  .crumbs .here{color:var(--muted);opacity:.55}
+  @media(max-width:520px){
+    header.top{padding-top:34px}
+    .score{top:6px;right:50%;transform:translateX(50%)}
+    header.top .b1{font-size:11.5px;letter-spacing:1.8px}
+    /* Крошки в три строки выталкивали заголовок за сгиб — на телефоне одна
+       строка с горизонтальной прокруткой, как .daynav (замер 10.09.2026). */
+    .crumbs{display:flex;gap:6px;overflow-x:auto;white-space:nowrap;justify-content:flex-start;
+      text-align:left;padding:5px 12px 7px;scrollbar-width:none}
+    .crumbs::-webkit-scrollbar{display:none}
+    .crumbs a,.crumbs .sep,.crumbs .here{flex:0 0 auto}
+  }
+  /* ── HERO: сцена (манускрипт) ОТДЕЛЬНО, текст ОТДЕЛЬНО (правило 03.08) ── */
+  .hero-scene{position:relative;height:38vh;min-height:250px;max-height:400px;overflow:hidden;cursor:default;
+        background:radial-gradient(130% 90% at 50% 0%,#2c1d10 0%,#150f09 58%,#0c0805 100%);
+        border-bottom:1px solid rgba(201,168,76,.22)}
+  .hero-scene canvas{display:block;width:100%;height:100%}
+  /* Обложка — подлинник, а не рисунок (Сергей, 08.09.2026: «непонятный детский рисунок»).
+     Кадр вписан по contain: не обрезает ни титул, ни строки текста. */
+  .hero-scene picture{display:block;width:100%;height:100%}
+  .hero-scene .hero-img{display:block;width:100%;height:100%;object-fit:contain;background:#0d0906}
+  .scene-caption{background:#0a0705;padding:11px 0 12px}
+  .scene-caption .wrap{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+  .scene-cap{font-size:13.5px;line-height:1.6;color:var(--muted);border-left:2px solid rgba(201,168,76,.4);padding-left:14px;flex:1 1 420px}
+  .hero-lead{background:linear-gradient(180deg,#17110b 0%,#0c0805 100%);padding:22px 0 22px}
+  .hero-lead .who{font-family:'Inter',sans-serif;font-size:clamp(13px,3vw,15px);letter-spacing:.4px;color:var(--gold-l);margin-bottom:10px}
+  .hero-lead .who i{font-style:normal;color:#8f8068;font-weight:400}
+  .hero-lead h1{color:#fff;font-size:clamp(28px,6vw,50px);font-weight:900;line-height:1.07;margin-bottom:14px}
+  .hero-lead .hook{color:#d9ccb0;font-size:18px;max-width:62ch;margin-bottom:20px;line-height:1.66}
+  .hero-lead .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+  .hero-under{background:linear-gradient(180deg,#0c0805,#0c0805);padding:4px 0 22px}
+  /* Полоса фактов — четыре факта (museum-core §6-бис, п.6). Стиль общий, не инлайн. */
+  .hero-under .stamp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--line);margin-top:14px}
+  .hero-under .stamp div{padding:11px 12px;border-left:1px solid var(--line);min-width:0}
+  .hero-under .stamp div:first-child{border-left:0}
+  .hero-under .stamp .v{font-family:'Playfair Display',Georgia,serif;font-size:clamp(15px,3.4vw,21px);font-weight:700;color:var(--gold-l);line-height:1.1;overflow-wrap:anywhere}
+  .hero-under .stamp .k{font-family:'Inter',sans-serif;font-size:9px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted);margin-top:5px}
+  @media(max-width:600px){.hero-under .stamp{grid-template-columns:repeat(2,minmax(0,1fr))}
+        .hero-under .stamp div:nth-child(3){border-left:0}
+        .hero-under .stamp div:nth-child(n+3){border-top:1px solid var(--line)}}
+  /* Кнопки первого экрана — две, в один ряд; перенос увеличивал их до 101 px
+     и сталкивал за сгиб телефона (замер 10.09.2026). */
+  .hero-btns .btn{white-space:nowrap}
+  @media(max-width:640px){.hero-scene{height:26vh;min-height:200px;max-height:260px}
+        .hero-lead{padding:18px 0 20px}
+        header.top .b2{font-size:10.5px}
+        .crumbs{font-size:11px;padding:3px 10px 6px}
+        .scene-caption .wrap{flex-direction:column;gap:9px}
+        .scene-cap{font-size:12.8px;flex:1 1 auto}}
+  .date-chip{display:inline-block;background:var(--gold-g);border:1px solid rgba(201,168,76,.35);color:var(--gold);font-weight:700;padding:6px 18px;border-radius:24px;font-size:12px;margin-bottom:14px;font-family:'Inter',sans-serif;letter-spacing:.5px}
+  .daynav{position:sticky;top:0;z-index:25;background:rgba(12,8,5,.94);backdrop-filter:blur(20px);border-bottom:1px solid var(--card-b)}
+  .daynav .wrap{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+  .daynav a{flex:0 0 auto;padding:14px 20px;font-size:11px;font-weight:700;font-family:'Inter',sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap;letter-spacing:1.5px;text-transform:uppercase;border-bottom:2px solid transparent;transition:.18s}
+  .daynav a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+  section.block{padding:60px 0;border-bottom:1px solid var(--line);scroll-margin-top:130px}
+  .kicker{font-size:10px;text-transform:uppercase;letter-spacing:3.5px;color:var(--gold);font-weight:700;font-family:'Inter',sans-serif;margin-bottom:8px}
+  section.block h2{font-size:32px;color:#fff;margin-bottom:10px}
+  p{margin:14px 0;color:var(--ink)}
+  .pull{background:var(--gold-g);border-left:3px solid var(--gold);padding:18px 22px;border-radius:0 14px 14px 0;font-style:italic;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-size:19px;line-height:1.5;margin:24px 0}
+  .article{position:relative}
+  .article.collapsed .body{max-height:340px;overflow:hidden}
+  .article.collapsed .body:after{content:'';position:absolute;left:0;right:0;bottom:44px;height:110px;background:linear-gradient(transparent,var(--parch))}
+  .more{text-align:center;margin-top:16px}
+  .btn{cursor:pointer;border:none;border-radius:12px;padding:13px 24px;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;background:var(--accent2);color:#fff;transition:.18s}
+  .btn:hover{filter:brightness(1.18)}
+  .btn.ghost{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid var(--card-b)}
+  .btn.gold{background:linear-gradient(135deg,var(--gold),#b8882b);color:#1a0f00;box-shadow:0 4px 20px rgba(201,168,76,.25)}
+  .btn.gold:hover{filter:brightness(1.1)}
+  .card{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:20px 22px;margin:14px 0}
+  .opt{display:block;width:100%;text-align:left;background:rgba(255,255,255,.04);border:1px solid var(--card-b);border-radius:12px;padding:12px 16px;margin:8px 0;cursor:pointer;font-size:15px;color:var(--ink);font-family:'Inter',sans-serif;transition:.16s}
+  .opt:hover{border-color:var(--gold);background:rgba(201,168,76,.08)}
+  .opt.correct{background:rgba(40,120,60,.18);border-color:#3f9b52;color:#7ed4a0;font-weight:600}
+  .opt.wrong{background:rgba(180,40,40,.13);border-color:#c0453f;color:#f08080}
+  .exp{margin-top:10px;font-size:14px;background:var(--gold-g);border-radius:10px;padding:12px 14px;display:none;color:var(--gold-l)}
+  .exp.show{display:block}
+  /* ── СТАТЬЯ НА ПЕРГАМЕНТЕ ── */
+  #story{background:var(--parch);color:var(--parch-ink);border-bottom:1px solid #c9b88f;
+    background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.024) 0 1px,transparent 1px 27px);box-shadow:inset 0 1px 0 #f5eed8}
+  #story h2{color:#14100b}
+  #story p{color:#2e2517}
+  #story b{color:#14100b}
+  #story .kicker{color:#a33a24}
+  #story .article.collapsed .body:after{background:linear-gradient(transparent,var(--parch))}
+  #story .btn.ghost{background:transparent;border:1px solid #bfae85;color:#4a3d29}
+  #story .btn.ghost:hover{border-color:#8b7550;background:rgba(0,0,0,.04)}
+  .src{font-size:12.5px;color:var(--muted);opacity:.85;margin-top:6px;line-height:1.8}
+  /* ── ИГРА: собрать сюжет ── */
+  .syuzhet-steps{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+  .syuzhet-step{cursor:pointer;background:rgba(255,255,255,.04);border:1px solid var(--card-b);border-radius:12px;padding:11px 15px;font-size:14px;color:var(--ink);font-family:'Inter',sans-serif;transition:.16s;max-width:100%}
+  .syuzhet-step:hover{border-color:var(--gold);background:rgba(201,168,76,.09)}
+  .syuzhet-step.done{background:rgba(40,120,60,.2);border-color:#3f9b52;color:#7ed4a0;cursor:default;pointer-events:none}
+  .syuzhet-step.done::before{content:attr(data-n)'. ';font-weight:700;color:#7ed4a0}
+  .syuzhet-step.bad{animation:shake .4s}
+  @keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+  /* ── ОРИГИНАЛ ── */
+  .orig{background:rgba(255,255,255,.03);border:1px solid var(--card-b);border-radius:14px;padding:20px 24px;margin:18px 0;font-family:'Playfair Display',Georgia,serif;font-size:17px;line-height:1.8;color:#e4d9c2}
+  .orig i{color:#c9a84c}
+  /* ── ТАЙМЛАЙН ── */
+  .tl{list-style:none;margin:18px 0 0;padding:0;border-left:2px solid rgba(201,168,76,.35);padding-left:20px}
+  .tl li{margin:0 0 18px;position:relative}
+  .tl li::before{content:'';position:absolute;left:-26px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 3px rgba(201,168,76,.18)}
+  .tl .y{font-family:'Inter',sans-serif;font-weight:700;color:var(--gold);letter-spacing:.5px;font-size:13px}
+  .tl p{margin:4px 0 0;color:var(--muted)}
+  /* ── КУДА ДАЛЬШЕ ── */
+  .next{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+  .ncard{background:var(--card);border:1px solid var(--card-b);border-radius:14px;padding:14px 16px;font-size:13.5px;color:var(--muted)}
+  .ncard.main{grid-column:1/3;border-color:rgba(201,168,76,.3)}
+  .ncard .lbl{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:5px;font-family:'Inter',sans-serif;font-weight:700}
+  .ncard a{color:var(--gold-l);text-decoration:none;font-weight:600}
+  .ncard a:hover{text-decoration:underline}
+  @media(max-width:600px){.next{grid-template-columns:1fr}.ncard.main{grid-column:1}}
+  /* ── ИТОГ ── */
+  .diploma{border:1px solid var(--gold);border-radius:14px;padding:18px;text-align:center;background:rgba(12,8,5,.6);margin:16px 0 14px}
+  .diploma .dl{display:block;font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);opacity:.85;margin-bottom:8px;font-family:'Inter',sans-serif}
+  .diploma b{display:block;font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:normal;margin-bottom:8px;color:#fff}
+  .diploma .dp{display:block;font-size:13.5px;opacity:.88;line-height:1.6;color:var(--ink)}
+  .diploma .dp i{color:var(--gold);font-style:normal;font-weight:700}
+  .diploma .ds{display:block;margin-top:10px;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;opacity:.55;color:var(--muted)}
+  .gm-bar{height:10px;background:rgba(255,255,255,.08);border-radius:6px;overflow:hidden}
+  .gm-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-l));border-radius:6px;transition:width .4s}
+  footer{padding:40px 0 80px;color:rgba(255,255,255,.2);font-size:12px;text-align:center;font-family:'Inter',sans-serif;letter-spacing:.5px}
+  footer .slog{font-style:italic;color:var(--gold);margin-bottom:8px;font-family:'Playfair Display',Georgia,serif;font-size:15px;letter-spacing:0}
+  @media(prefers-reduced-motion:reduce){.hero-scene canvas{animation:none!important}}
+
+/* ── Кадры-подлинники в тексте (образец: эталон Шухова, перенесено в тему музея писателей) ── */
+.fig{margin:24px 0;border:1px solid rgba(201,168,76,.24);background:rgba(0,0,0,.28);border-radius:4px;overflow:hidden}
+.fig img{display:block;width:100%;height:auto}
+.fig figcaption{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.4px;line-height:1.7;color:var(--muted);
+  padding:10px 13px;border-top:1px solid rgba(201,168,76,.16)}
+.fig figcaption b{color:var(--gold-l);font-weight:600}
+.fig figcaption a{color:rgba(201,168,76,.75);text-decoration:none;border-bottom:1px dotted rgba(201,168,76,.4)}
+.fig figcaption a:hover{color:var(--gold-l)}
+.figs{display:grid;align-items:start;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin:24px 0}
+.figs .fig{margin:0}
+.fig-side{float:right;width:210px;margin:4px 0 16px 22px}
+.fig-portrait{max-width:300px;margin:24px auto}
+@media(max-width:640px){.fig-side{float:none;width:100%;margin:20px 0}}
+/* ── Кадры на светлой (пергаментной) секции: подписи и рамки читаемы ──
+   Ремонт 10.09.2026: на #story фон пергамент, а подпись была --muted по светлому. */
+#story .fig{background:transparent;border-color:rgba(107,93,72,.28)}
+#story .fig figcaption{color:var(--parch-mut);border-top-color:rgba(107,93,72,.22)}
+#story .fig figcaption b{color:var(--kino)}
+#story .fig figcaption a{color:#8a5a2b;border-bottom-color:rgba(138,90,43,.4)}
+#story .fig figcaption a:hover{color:var(--kino)}
+
+/* ── Схема расстановки сил 1185 г. (M-31, блок #sily) ────────────────────
+   Две колонки: свои дружины / половецкая степь. На телефоне — переключатель,
+   чтобы обе стороны не растягивали страницу в высоту. */
+.sily-switch{display:none;gap:8px;margin:0 0 14px}
+.sily-switch button{flex:1;padding:11px 8px;border-radius:6px;border:1px solid rgba(201,168,76,.35);
+  background:transparent;color:var(--gold-l);font-family:'Inter',sans-serif;font-size:13px;font-weight:600;cursor:pointer}
+.sily-switch button[aria-selected="true"]{background:var(--gold-g);border-color:var(--gold);color:var(--gold-l)}
+.sily{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.sily-col{border:1px solid var(--line);border-radius:6px;padding:16px 18px;background:rgba(0,0,0,.18)}
+.sily-col.foe{border-color:rgba(179,64,44,.4);background:rgba(179,64,44,.07)}
+.sily-col h3{margin:0 0 4px;font-family:'Playfair Display',Georgia,serif;font-size:18px;color:var(--gold-l)}
+.sily-col.foe h3{color:var(--kino-l)}
+.sily-col .sily-note{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.6px;text-transform:uppercase;
+  color:var(--muted);margin-bottom:12px}
+.sily-row{display:flex;gap:11px;padding:10px 0;border-top:1px solid var(--line)}
+.sily-row:first-of-type{border-top:0}
+.sily-row .nm{font-weight:600;color:var(--ink)}
+.sily-row .rl{color:var(--muted);font-size:13.5px;line-height:1.55}
+.sily-row .mark{flex:0 0 auto;width:9px;height:9px;border-radius:50%;margin-top:7px;background:var(--gold)}
+.sily-col.foe .mark{background:var(--kino)}
+.sily-out{margin-top:16px;padding:14px 18px;border-left:2px solid rgba(201,168,76,.5);background:rgba(0,0,0,.18);
+  border-radius:0 6px 6px 0}
+.sily-out p{margin:0;color:var(--parch-mut)}
+@media(max-width:760px){
+  .sily-switch{display:flex}
+  .sily{grid-template-columns:1fr}
+  .sily-col.is-off{display:none}
+}
+
+/* ── Древнерусский оригинал плача свёрнут до кнопки (жалоба посетителя:
+   «простыня древнерусского текста мелким шрифтом»; 1174 px на телефоне). */
+.orig.collapsed .orig-body{max-height:190px;overflow:hidden;position:relative}
+.orig.collapsed .orig-body:after{content:'';position:absolute;left:0;right:0;bottom:0;height:80px;
+  background:linear-gradient(transparent,rgba(0,0,0,.72))}
+.orig .org-legend{display:block;margin-top:10px;font-size:12px;color:var(--muted)}
