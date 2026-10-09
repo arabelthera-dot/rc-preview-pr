@@ -1,0 +1,64 @@
+{
+  "test_id": "entry-390",
+  "code": "entry",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-tolstoy-petr-pervyy.html",
+  "steps": [
+    "Верный выбор на первом шаге",
+    "Перезагрузка страницы"
+  ],
+  "checks": [
+    {
+      "label": "Пустой контекст: счёт 0",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Полоса итога пуста",
+      "actual": "0%",
+      "expected": "0%",
+      "ok": true
+    },
+    {
+      "label": "Диплом закрыт",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Лента не пройдена",
+      "actual": "Шагов пройдено: 0 из 5",
+      "expected": "Шагов пройдено: 0 из 5",
+      "ok": true
+    },
+    {
+      "label": "Награда ровно за пройденное: 8",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    },
+    {
+      "label": "После перезагрузки прогресс не выдуман: 0",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Счётчик шагов снова пуст",
+      "actual": "Шагов пройдено: 0 из 5",
+      "expected": "Шагов пройдено: 0 из 5",
+      "ok": true
+    },
+    {
+      "label": "Викторина снова с первого вопроса",
+      "actual": "1 / 5",
+      "expected": "1 / 5",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "entry-390.png",
+  "status": "pass"
+}

@@ -1,0 +1,78 @@
+{
+  "test_id": "wrong-390",
+  "code": "wrong",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-tolstoy-petr-pervyy.html",
+  "steps": [
+    "Неверный вариант на шаге 1917",
+    "Повторное нажатие на погасший вариант",
+    "Теперь верный вариант",
+    "Неверный вариант первого вопроса"
+  ],
+  "checks": [
+    {
+      "label": "Объяснение показано",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Неверный вариант помечен",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Верный вариант не объявлен ошибочным",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Неверный выбор не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Повтор не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Верный после ошибки даёт 8",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    },
+    {
+      "label": "Пояснение с источником открыто",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Разбор показан",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Верный вариант подсвечен как верный",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Неверный ответ викторины не даёт очков",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "wrong-390.png",
+  "status": "pass"
+}

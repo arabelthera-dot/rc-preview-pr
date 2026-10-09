@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "page_sha256": "88ad6a4d2a572eaa3596f3949fa0c884653ad52e0fd1d09078caa2d4bbabf47a",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-09T22:27:20.381Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/checks/literatura-0810/onegin-plan.mjs",
+  "inputs": {
+    "lit-pushkin-evgeniy-onegin.html": "88ad6a4d2a572eaa3596f3949fa0c884653ad52e0fd1d09078caa2d4bbabf47a",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/checks/literatura-0810/onegin-plan.mjs": "15835181c5c25f2aba679be43f88f84c0874d3a3d8424dd8407ba8665471b4ad",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-literatura.css": "a205915af4132a432fcb0d668602d1eaf1a0d3c7734d554cc6dcc87a6a5ced75",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media-onegin/hero-notbek-1829-mobile.jpg": "7dffca0312e66b10e4ce3383aa8bbb15f208b9bdce311d2782dd2979e45998da",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "calendar-literatura.js": "9250cf00204037ef1b41ebac7991bf15a621cdd8ba70853daddff0b296c59179",
+    "../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "media-onegin/notbek-pushkin-onegin-1829.jpg": "3f625fa269e5dc38ef1a98da2b1e96617f39816d6c53d5474d606a26e8748ec3",
+    "../../tools/checks/literatura-0810/day09-onegin/entry-390.png": "46bc9ab56f1de9918a82da0063ec502359868c6ae5d6873620f7bc9817e1074e",
+    "../../tools/checks/literatura-0810/day09-onegin/entry-390.json": "5601c9f61d9d4e661656ab9652059f4802c4d2536d158c2cd85d79dad1e28bb1",
+    "../../tools/checks/literatura-0810/day09-onegin/wrong-390.png": "9573666fcd9ae439ed55083d4197186ecdbecc95743c5b872385955a7f206b1a",
+    "../../tools/checks/literatura-0810/day09-onegin/wrong-390.json": "12ccce7b2c4791310c668cff13c946e66255a293ee5338168c645278ed77c14c",
+    "media-onegin/onegin-glava1-oblozhka-1825.jpg": "b18ad4d9b7f22ce929cc78acfa2f4d741ea033428d8dcb548ed4924647699304",
+    "media-onegin/pushkin-onegin-risunok-1824.jpg": "d8516baed4ac58cb3988038b34cc5831ee2cf317f221efdcb6f7316b36398e73",
+    "../../tools/checks/literatura-0810/day09-onegin/reset-390.png": "896f17fa2635f9154734db1cb446552dff63ac8db7c5c2ec60428196094d40b8",
+    "../../tools/checks/literatura-0810/day09-onegin/reset-390.json": "efa07b8b1a74b681c4d05fead8a7fe6c68aab8e2a18c65276cd977f7d3bafd41",
+    "../../tools/checks/literatura-0810/day09-onegin/mobile-390.png": "85e93614904acbbb64d9316139673026353c9e387cecd17887506dc60670892b",
+    "../../tools/checks/literatura-0810/day09-onegin/mobile-390.json": "2214e3a2e24e5f8822363f19d0a7a551d4d43b7d0e86a38d3a3dbeed2d1a3700",
+    "media-onegin/hero-notbek-1829.jpg": "35a1e8b185aea7d759a31987723f657f23ddf9367374a8a7cb330057ebc0d894",
+    "../../tools/checks/literatura-0810/day09-onegin/mobile-1440.png": "eece436d2b879b73d0ac6105f0ddcbc2b21477f1fe60077ae7f17d35dcf09f8a",
+    "../../tools/checks/literatura-0810/day09-onegin/mobile-1440.json": "5dd18fcb164d6592a895ca1d30eb410976d853d599e69268fd0670ce961d096d",
+    "../../tools/checks/literatura-0810/day09-onegin/nojs-390.png": "7ef4ad3ba9e394b943ce081d06cda94cf12bc0e585e27d8dc0ea6fa3fdb100aa",
+    "../../tools/checks/literatura-0810/day09-onegin/nojs-390.json": "6a1b24bef8da9f0e330f461ccc58362563c7d81a97cf566115f789ff9b91ab48",
+    "../../tools/checks/literatura-0810/day09-onegin/score-390.png": "373dee67b980af513696630302369f71df8fdd10850340350eaefe2db2fec21a",
+    "../../tools/checks/literatura-0810/day09-onegin/score-390.json": "f884ee0972a31c6d52d11f9e1e6dd1152b06a0637e4c0053223fba1d8eaa1363",
+    "../../tools/checks/literatura-0810/day09-onegin/main-390.png": "d45ce254454f99efce122cd6f5516e255936357c294357b3f79eab3a24c2c19d",
+    "../../tools/checks/literatura-0810/day09-onegin/main-390.json": "9a9016b97b485f4d048c4584260c5e271ef5f295c514c8a066405dba44879a21",
+    "../../tools/checks/literatura-0810/day09-onegin/empty-390.png": "8b19434a51176d725b015342f1b99b46dc5835e54809023f0b74a9de1917c89e",
+    "../../tools/checks/literatura-0810/day09-onegin/empty-390.json": "69f4d2ada5bfe9ed57c591b6e6332a44e27e531431b9b3c64f1e13977624d6f6"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day09-onegin/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day09-onegin/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day09-onegin/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day09-onegin/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day09-onegin/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/literatura-0810/day09-onegin/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day09-onegin/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day09-onegin/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day09-onegin/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

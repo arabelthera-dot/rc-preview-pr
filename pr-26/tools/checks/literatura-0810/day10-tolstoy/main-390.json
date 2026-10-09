@@ -1,0 +1,65 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-tolstoy-petr-pervyy.html",
+  "steps": [
+    "Неверный: начало Второй мировой",
+    "Верный: крах Нью-Йоркской биржи",
+    "Повторный клик по верному силой"
+  ],
+  "checks": [
+    {
+      "label": "Шаг 1929: три варианта",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Неверный очков не даёт",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Шаг пройден",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Пояснение называет Великую депрессию",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Верный выбор даёт 8",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    },
+    {
+      "label": "Кнопки шага заблокированы",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Повтор не начисляет дважды",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    },
+    {
+      "label": "Счётчик шагов",
+      "actual": "Шагов пройдено: 1 из 5",
+      "expected": "Шагов пройдено: 1 из 5",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}

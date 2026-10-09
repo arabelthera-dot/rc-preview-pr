@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "page_sha256": "de4b1691d43d36a35e72ed19285eeff205445d8051fbeb11d52c6da99a0fd0e0",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-09T22:28:23.868Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/checks/literatura-0810/petr-plan.mjs",
+  "inputs": {
+    "lit-tolstoy-petr-pervyy.html": "de4b1691d43d36a35e72ed19285eeff205445d8051fbeb11d52c6da99a0fd0e0",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/checks/literatura-0810/petr-plan.mjs": "425a40149d4af6f2be65169fe3b8e02a5fc81d8463f9a6396ecd29536a02e357",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-literatura.css": "a205915af4132a432fcb0d668602d1eaf1a0d3c7734d554cc6dcc87a6a5ced75",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media-petr/hero-serov-1907-mobile.jpg": "1547ac1fe2170814bb56c4ccec7a29138463fcb08478f8df8d0255d598e4c754",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "calendar-literatura.js": "9250cf00204037ef1b41ebac7991bf15a621cdd8ba70853daddff0b296c59179",
+    "../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "media-petr/serov-petr-1907.jpg": "dd20611c0cd35ef76986bb35cc4443f1d58fc846f7c16c4a2150b698104a474d",
+    "media-petr/shoonebek-vzyatie-azova.jpg": "7493aeb65c036d7bb15d69602a07502e6898fcf7909bd8723a89f70b4d8443a6",
+    "media-petr/serov-petr-na-rabotah.jpg": "0414696c8b2a51cd677e336f6deaea6b4fdb530300f89b1c6bff42e5d0870e42",
+    "../../tools/checks/literatura-0810/day10-tolstoy/entry-390.png": "e0efc1dca0b68d49f1844300bc41df6245d567461f5e3b14d96c406e4cd6b5b2",
+    "../../tools/checks/literatura-0810/day10-tolstoy/entry-390.json": "f8f9aa1b70498357ddcafd90e66de2369bb93a8f14d5276630a0c1a9dffed89b",
+    "../../tools/checks/literatura-0810/day10-tolstoy/wrong-390.png": "5ee7884d96d6091659e32b7ee0fac1217fe5f2edb4e5b8b8167f1a4a2c640ea7",
+    "../../tools/checks/literatura-0810/day10-tolstoy/wrong-390.json": "07b8e8d978e08478f544d459a330f8ae02f1462234a0e3b6f7470ed71501e57d",
+    "../../tools/checks/literatura-0810/day10-tolstoy/reset-390.png": "c736b5aa493624d7d121912ebf9b21a13627403f7ffdaf488b7b4e0f510a370b",
+    "../../tools/checks/literatura-0810/day10-tolstoy/reset-390.json": "52259fac650432f34e86e2535784e9781ae92224134ed70517bc2ad6f51994b0",
+    "../../tools/checks/literatura-0810/day10-tolstoy/mobile-390.png": "7a4f43e49e5fad85f2378f74c4311651e31525a0d44485d27e215ef97ebfaae1",
+    "../../tools/checks/literatura-0810/day10-tolstoy/mobile-390.json": "2b43bf6d8f654b365e7b926fb03acea177a8c05c6f450b4a16a5b4d52d5497e3",
+    "media-petr/hero-serov-1907.jpg": "09f6e9d83beece8c32a2ed6aabc79f4ba33b0e34830de1fd455acbdd6612adde",
+    "../../tools/checks/literatura-0810/day10-tolstoy/mobile-1440.png": "5b5ae80f7fbc42b5f5b65193ee20579e4e5956cb1b94fce03cb119480affcce4",
+    "../../tools/checks/literatura-0810/day10-tolstoy/mobile-1440.json": "16829336b782d687ffe9238768cc64a43313e9eaa93efb7d0bd42d62d3619ad8",
+    "../../tools/checks/literatura-0810/day10-tolstoy/nojs-390.png": "4d33a5fb9a2168a96cd7010fd98359f662806cf011ac772a11365caf64b2a43c",
+    "../../tools/checks/literatura-0810/day10-tolstoy/nojs-390.json": "9edb508a3899cecfd49e2df0a50e6177caaf95741d6a395a34883a3341614903",
+    "../../tools/checks/literatura-0810/day10-tolstoy/score-390.png": "8c350abf03f2f7dc5211a8e4d6475c8360e1145246f11a2a258f6bc4d7949ded",
+    "../../tools/checks/literatura-0810/day10-tolstoy/score-390.json": "9e17a4eda8d7a9eeb67aada412000df969b52f49e89e30fd2ffa097091ec5f2b",
+    "../../tools/checks/literatura-0810/day10-tolstoy/main-390.png": "5a507c269a7f3ef1c6be86c24ba9aca014f27188e0019828bd74f6b49794a293",
+    "../../tools/checks/literatura-0810/day10-tolstoy/main-390.json": "11a2e379aa0c3c99315a33192b4dd97053582249365748ba343ff925040bd903",
+    "../../tools/checks/literatura-0810/day10-tolstoy/empty-390.png": "958f2082957d3d2322e3bf1b6265aa8c302b06a7f88bccef0819dd94ab621dea",
+    "../../tools/checks/literatura-0810/day10-tolstoy/empty-390.json": "13b577c8e6b73bb3523fad3e0497771ca0f3c3f9472202fd151650b177c17717"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day10-tolstoy/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day10-tolstoy/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day10-tolstoy/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day10-tolstoy/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day10-tolstoy/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/literatura-0810/day10-tolstoy/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day10-tolstoy/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day10-tolstoy/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day10-tolstoy/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
