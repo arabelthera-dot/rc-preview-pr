@@ -1,0 +1,43 @@
+{
+  "test_id": "nojs-390",
+  "code": "nojs",
+  "width": 390,
+  "javascript_enabled": false,
+  "url": "http://b6.local/muzei/ne-sdayutsya/podvig-matrosov.html",
+  "steps": [],
+  "checks": [
+    {
+      "label": "Quiz text equivalent present",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    },
+    {
+      "label": "No-JS limitation explained",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "All five answers disclosed",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Score block explains limitation",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Story readable without JS",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "nojs-390.png",
+  "status": "pass"
+}

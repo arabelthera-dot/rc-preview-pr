@@ -1,0 +1,58 @@
+{
+  "test_id": "wrong-390",
+  "code": "wrong",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/ne-sdayutsya/podvig-dom-pavlova.html",
+  "steps": [
+    "Choose wrong answer",
+    "Force click on the correct (locked) option"
+  ],
+  "checks": [
+    {
+      "label": "Wrong answer earns nothing",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Wrong option marked",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Correct option shown",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Explanation shown",
+      "actual": "В Сталинграде, у площади 9 Января (ныне площадь Ленина в Волгограде).",
+      "expected": "В Сталинграде, у площади 9 Января (ныне площадь Ленина в Волгограде).",
+      "ok": true
+    },
+    {
+      "label": "Answer locked after first choice",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Locked option earns nothing",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Next question offered",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "wrong-390.png",
+  "status": "pass"
+}

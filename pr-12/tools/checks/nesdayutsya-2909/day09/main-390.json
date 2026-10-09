@@ -1,0 +1,28 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/ne-sdayutsya/podvig-panfilovtsy.html",
+  "steps": [
+    "Answer main quiz question correctly",
+    "Repeat the same answer"
+  ],
+  "checks": [
+    {
+      "label": "Main reward",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    },
+    {
+      "label": "No duplicate reward",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}
