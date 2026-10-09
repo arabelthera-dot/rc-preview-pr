@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "page_sha256": "4441ae21c35cf367aea856b85de2c06d745c5e6cc1f5026fa1b319a8730ffc45",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-09T14:37:24.030Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/checks/literatura-0810/slovo-plan.mjs",
+  "inputs": {
+    "lit-slovo-o-polku-igoreve.html": "4441ae21c35cf367aea856b85de2c06d745c5e6cc1f5026fa1b319a8730ffc45",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/checks/literatura-0810/slovo-plan.mjs": "95e91033264a6cad5247b4a0c7468533015421dcfe635b20cc115725a52d1f02",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-literatura.css": "c61af6100f347eca763bde21e186eed1e46b4f7595610697abd05e68e231773c",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media-slovo/hero-battle-1880.jpg": "53ed5fd458c94d0929ccaff7fa5d008d5ff1ac3c6368fec916526d3542aed9b5",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-choice-tale.js": "6aee17abd710db0c72a01085967efaf55a414c5edfa666574b45b46be465b709",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "calendar-literatura.js": "de123c15c99418b49404066ebc323aa7c9d0f2502fdc0893953e06eb2cb41d91",
+    "../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMwf7I-NP.woff2": "0e523e4bc3c6308f002a3208ea2990cb4f64282d4fbb67c12f5726d13b66eef6",
+    "media-slovo/plach-yaroslavny.jpg": "b1986e9a4b173babf9c364bc21313dc8a19ff2b798d7a22235ccc8a0ea63cd63",
+    "hero-slovo-1800.jpg": "3e8376116fd44d8826d92b5a6574bf2578b4fea5f9566a97921dde050277361f",
+    "../../tools/checks/literatura-0810/day01-slovo/entry-390.png": "e14f2b974a110b8e016dde745388026f2471bdc2320184f0042187f52f0f21b8",
+    "../../tools/checks/literatura-0810/day01-slovo/entry-390.json": "ba28053b3021081658603b374d05ca2b38b509a0a90769fbc2ca6d698ad2fd31",
+    "../../tools/checks/literatura-0810/day01-slovo/wrong-390.png": "d49aed345bda88c66570a1e0d12ae12183d975323dac6edcdff83084f7209390",
+    "../../tools/checks/literatura-0810/day01-slovo/wrong-390.json": "6e4dd49c3f2ee683b6445154419d62a11a09ad4eec4dbd306102d5a9e275011b",
+    "../../tools/checks/literatura-0810/day01-slovo/reset-390.png": "d5d5e90bf06e3fdf12fcc37a75dde0450d4fe382b796b639412fbc171009b541",
+    "../../tools/checks/literatura-0810/day01-slovo/reset-390.json": "82c87898a80f807039b0bc160b1ef11de67a7878c58b24af74dd5c0213648333",
+    "../../tools/checks/literatura-0810/day01-slovo/mobile-390.png": "13b5c40db623f6b8c29837149fcaae01348d5837f2d62a94e143a5a81946952d",
+    "../../tools/checks/literatura-0810/day01-slovo/mobile-390.json": "c878f00e144e8ecbda022777743529fdf9d1c6c9db7a3de95dcb9ae3ad12b3f8",
+    "../../tools/checks/literatura-0810/day01-slovo/mobile-1440.png": "783c2603f627c45b14920ca383b8e097bd169c7e533eb6dbd2d71de27b460eec",
+    "../../tools/checks/literatura-0810/day01-slovo/mobile-1440.json": "b8e04f5e022be687d29546b59ae729aa2d81922f35c048c6f7dc8d358b3b46be",
+    "../../tools/checks/literatura-0810/day01-slovo/nojs-390.png": "e8f4569dbbe457943573de19e15dbe9f7fcb8f63724ddf55b4f89d67825766ae",
+    "../../tools/checks/literatura-0810/day01-slovo/nojs-390.json": "8e19b9a07674d26b9754f3df8471235ba80f333a1a940995186216311bf9f9f2",
+    "../../tools/checks/literatura-0810/day01-slovo/score-390.png": "46d8b8668d5bccebd5ad7a41b9e8be222ab02108848638d6c1f8e992b5054719",
+    "../../tools/checks/literatura-0810/day01-slovo/score-390.json": "9c85f0b9ee2740d206084ef94e7e7b13c36c48dfd679120c9bdabedb849a0c73",
+    "../../tools/checks/literatura-0810/day01-slovo/main-390.png": "33072b0d1b009402513f6f0d88139b95f17f218731b53bc3fe3f69ed1e920d17",
+    "../../tools/checks/literatura-0810/day01-slovo/main-390.json": "73db54d9e9e71607a60c5fd296bb244e4258ce0c060c8c8c6f6bcc7ba3ecf702",
+    "../../tools/checks/literatura-0810/day01-slovo/empty-390.png": "ee50c343175d32e1c80ae0e8ff3db6fb88eba2cfa1770f13e676a7129b5e1a50",
+    "../../tools/checks/literatura-0810/day01-slovo/empty-390.json": "c76e1dfcadd8b0a3ef613d43d2ce0f11988f1a3a60ba9705fd1201e29ac73116"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day01-slovo/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day01-slovo/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day01-slovo/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day01-slovo/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day01-slovo/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/literatura-0810/day01-slovo/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day01-slovo/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day01-slovo/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day01-slovo/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

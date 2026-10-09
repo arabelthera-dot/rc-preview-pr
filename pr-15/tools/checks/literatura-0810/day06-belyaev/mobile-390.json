@@ -1,0 +1,39 @@
+{
+  "test_id": "mobile-390",
+  "code": "mobile",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-belyaev-chelovek-amfibiya.html",
+  "steps": [
+    "Пять верных ответов"
+  ],
+  "checks": [
+    {
+      "label": "Максимум на 390",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "Итог викторины",
+      "actual": "Вопросы пройдены: верных 5 из 5.",
+      "expected": "Вопросы пройдены: верных 5 из 5.",
+      "ok": true
+    },
+    {
+      "label": "Диплом открыт",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Нет горизонтального переполнения",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "mobile-390.png",
+  "status": "pass"
+}

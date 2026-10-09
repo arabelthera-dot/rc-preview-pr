@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "page_sha256": "09a05aa8e3be7be0e334820095c44596f7687925a2ed4ac7b056eaabbfd6a8fc",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-09T14:39:16.300Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/checks/literatura-0810/amfibiya-plan.mjs",
+  "inputs": {
+    "lit-belyaev-chelovek-amfibiya.html": "09a05aa8e3be7be0e334820095c44596f7687925a2ed4ac7b056eaabbfd6a8fc",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/checks/literatura-0810/amfibiya-plan.mjs": "b2fd56211f6e777687463f56db8c86f166d19245695a80adfcd54cec6ee418a8",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-literatura.css": "c61af6100f347eca763bde21e186eed1e46b4f7595610697abd05e68e231773c",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media-amfibiya/aivazovsky-burya-lunnoy-nochyu-mobile.jpg": "165bb1515464c7e29cfa26bdede220de64895b92f54a4485074f0e16b338c798",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-choice-tale.js": "6aee17abd710db0c72a01085967efaf55a414c5edfa666574b45b46be465b709",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "calendar-literatura.js": "de123c15c99418b49404066ebc323aa7c9d0f2502fdc0893953e06eb2cb41d91",
+    "../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "media-amfibiya/posleslovie-1928-zarodysh.jpg": "6e90a043a69096bf02e870fee0a9738630f5738292e057053d9b993ff5dc534d",
+    "media-amfibiya/aivazovsky-burya-lunnoy-nochyu.jpg": "0a6a5e7bd941c6ffb07fb1fadffc227abf5e3f521f48c0457b0ebdc3c0d9488f",
+    "media-amfibiya/posleslovie-1928-zhabernye-shcheli.jpg": "fbf4a4b01c20972b87e6ef030c07c3975a46bd18b4ffd4bce78e361c7de4dcf4",
+    "../../tools/checks/literatura-0810/day06-belyaev/entry-390.png": "e76215aee09e48440c6e4edfdbf12817018dc1cc5fc7f1b5a4e8c15d90af4e6d",
+    "../../tools/checks/literatura-0810/day06-belyaev/entry-390.json": "8b8cda2ab0b1f5ae3b864e17e921412cfb295ff6d509c6b57ad14779415a9438",
+    "../../tools/checks/literatura-0810/day06-belyaev/wrong-390.png": "f79ecc6a7b8d99abcd49e03f777f12e53a8b941d6eaad3aae88150dbeee6fbc7",
+    "../../tools/checks/literatura-0810/day06-belyaev/wrong-390.json": "b17fc59093e2979e548b9acacce04ab00765358b74c1ccb4dfe97ab20dad286d",
+    "../../tools/checks/literatura-0810/day06-belyaev/reset-390.png": "7f1a05a37dce03c2b5972d130090d62c9b9164af7e986da78ba23f978d9baa74",
+    "../../tools/checks/literatura-0810/day06-belyaev/reset-390.json": "0219d412a8273fa06b4cfe50eebbbe3322971cd3dd169004d97cd88fd73c335a",
+    "../../tools/checks/literatura-0810/day06-belyaev/mobile-390.png": "82b46ac5a8932731d9917d0a6c7017b8598c52783d6b8f996d8ad45a4891be9a",
+    "../../tools/checks/literatura-0810/day06-belyaev/mobile-390.json": "7db96f13a85f6f31e90f4a2428e2f621bedc8892f0cef674dc0de41ad8722168",
+    "../../tools/checks/literatura-0810/day06-belyaev/mobile-1440.png": "c7f67691c61c2f10c60fbf53100f672db07c3d4bb492e4dba95007bfdabd95ee",
+    "../../tools/checks/literatura-0810/day06-belyaev/mobile-1440.json": "e6582827f721cd6da0ec9dfc4d6e2a38164c012445b346cbc64b2412e9df313e",
+    "../../tools/checks/literatura-0810/day06-belyaev/nojs-390.png": "4d00c4b0489d475242c12af0776f23ea35d7f49bfeb482f7f3c1d08d8dfaf20e",
+    "../../tools/checks/literatura-0810/day06-belyaev/nojs-390.json": "841333e55a5971d64f3d8c3caf5c8b8ed6911dfbb589f23606172b25ae4c59aa",
+    "../../tools/checks/literatura-0810/day06-belyaev/score-390.png": "49a7cce277c48c30a17aa2e9f9ffd593f4702b537484c69e6d3489675a31ad03",
+    "../../tools/checks/literatura-0810/day06-belyaev/score-390.json": "c1631a28ab888ed3f94f7984557a25e2372bd1c81236cbe87a10d9c6dc8bb784",
+    "../../tools/checks/literatura-0810/day06-belyaev/main-390.png": "1b096eff897c77728bbce33c8d8988163ced17dc9afebd2dc653debba5439450",
+    "../../tools/checks/literatura-0810/day06-belyaev/main-390.json": "f973e07ba74ae8fa7c787aabc06c674714c35a82fb7975d3c68bd462883fd819",
+    "../../tools/checks/literatura-0810/day06-belyaev/empty-390.png": "fb9a963f723bd686bc184fe3a9f2a1e07f1b46a133a4b6cc33f6a7976cfeeeb8",
+    "../../tools/checks/literatura-0810/day06-belyaev/empty-390.json": "953c8f2fe37c86daf5b13214edbc6c02c12257d2663e48747da33e38ca5ba8dd"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day06-belyaev/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day06-belyaev/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day06-belyaev/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day06-belyaev/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day06-belyaev/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/literatura-0810/day06-belyaev/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day06-belyaev/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day06-belyaev/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day06-belyaev/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
