@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "page_sha256": "de8070eb173414647d8355f6ca75628fc57a60b912b2f5d3e6d0d2f6e367f25b",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-09T19:42:12.186Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/checks/literatura-0810/platonov-plan.mjs",
+  "inputs": {
+    "lit-platonov-kotlovan.html": "de8070eb173414647d8355f6ca75628fc57a60b912b2f5d3e6d0d2f6e367f25b",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/checks/literatura-0810/platonov-plan.mjs": "123d65a0c89351e154bfac5fd030e1e0d8777ec4f960d1d41b49c45aa8eeeb52",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-literatura.css": "a205915af4132a432fcb0d668602d1eaf1a0d3c7734d554cc6dcc87a6a5ced75",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media-kotlovan/alpert-kulaki-1930-mobile.jpg": "0f18d365fcdd5f74c64343cf3c7fe59519d1871eaf5f554fdb8ebd2299395c7b",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-find-word.js": "3bbca9c324e36a57b1c1629eafe506677d34a4172f15283179a48ff39f41b9f8",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "calendar-literatura.js": "f8cc9a50fda6d455f1776d0747eac21ef632e9f95063f5472a1b47dafb1b5725",
+    "../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "media-kotlovan/alpert-kulaki-1930.jpg": "8f935390492bed4535def9460e7b7468487fd479e8a2ddd3d7db86101632304d",
+    "../../tools/checks/literatura-0810/day05-platonov/entry-390.png": "35e7079e50f217de658e2484699c0649a00a67cb65ffac2dfa9750fa042e39d6",
+    "../../tools/checks/literatura-0810/day05-platonov/entry-390.json": "ddaaf219157df9f48d9414981c5c4065d1f6f12bf87196d6b08bead3dda9d70e",
+    "../../tools/checks/literatura-0810/day05-platonov/wrong-390.png": "77451129b5d5fac13ea17862ed919175c210e695fe030d9e078cf9df2fe85a07",
+    "../../tools/checks/literatura-0810/day05-platonov/wrong-390.json": "49765a2e1323e47fa5250ebfaa784b5a1532cf95bca23a9c593d144c5d896791",
+    "../../tools/checks/literatura-0810/day05-platonov/reset-390.png": "e2eb7dbb86f397a4bbb815e77d0da68c6b4b674f494d67f8cf917a4b831b3395",
+    "../../tools/checks/literatura-0810/day05-platonov/reset-390.json": "819ed59f512293f1447e1be17453d327cdc256dc61c99e290bffadb19bab86e9",
+    "../../tools/checks/literatura-0810/day05-platonov/mobile-390.png": "de02c47ebbdaeb889325533fe5b4a879ba0ada3f60084d652c007e709b9db829",
+    "../../tools/checks/literatura-0810/day05-platonov/mobile-390.json": "d365a670f38afe78eeb36ad6258e7c7542bc6010acd763e8e78171ef0b747c8b",
+    "../../tools/checks/literatura-0810/day05-platonov/mobile-1440.png": "e0230e620f11fdc39309f4fdf11c22d2239805799da87af9cc48e1291b46c5dd",
+    "../../tools/checks/literatura-0810/day05-platonov/mobile-1440.json": "55c1884e272b1bb4d9a0de82134caf879b47c22ded7e642bf7e064c4c632a825",
+    "../../tools/checks/literatura-0810/day05-platonov/nojs-390.png": "85f9b529da252ea42c0a90afff84a65ee20f9b737e10f36f96e37c5e3f430abe",
+    "../../tools/checks/literatura-0810/day05-platonov/nojs-390.json": "4ef06eff796667b92c3116a730b122e6671970e5f6c878b22ad5e13e6d211b9e",
+    "../../tools/checks/literatura-0810/day05-platonov/score-390.png": "01ca0bf526d0ecb666b68ab283b074af2eb8e3aba3326772c969f89b652b1ada",
+    "../../tools/checks/literatura-0810/day05-platonov/score-390.json": "b17fd3242e67f914db58780e5e89b665a8d87d750f448ed2f90e0a4ab0eedb06",
+    "../../tools/checks/literatura-0810/day05-platonov/main-390.png": "e59c4bb2421bba56e6959a3b8e2a54af37e19a9242288bb1f2af976800826f4e",
+    "../../tools/checks/literatura-0810/day05-platonov/main-390.json": "48c2b20ac879aff3cef9d41b50fe2235894d85fb5396de0ae5ec060745a56cb6",
+    "../../tools/checks/literatura-0810/day05-platonov/empty-390.png": "18d06ff09aa1b355860bf891912f2264932413ae10b118bfc17b7d60e1e8ba31",
+    "../../tools/checks/literatura-0810/day05-platonov/empty-390.json": "cc02dc9d424dbb4412b6e991a00a870f7ca94de496fbf6bc0fdbb35476d2bc0b"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day05-platonov/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day05-platonov/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day05-platonov/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day05-platonov/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day05-platonov/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/literatura-0810/day05-platonov/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day05-platonov/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day05-platonov/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day05-platonov/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
