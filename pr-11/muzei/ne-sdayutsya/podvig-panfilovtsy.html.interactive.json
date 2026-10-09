@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "page_sha256": "3ad4ce1e6f05e80f0b0d273301cbe76d8dee1fcb9bbc61888f26bc8dd40ae249",
+  "runner": "../../tools/checks/nesdayutsya-2909/run-b6.mjs",
+  "created_at": "2026-10-09T12:40:57.368Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/checks/nesdayutsya-2909/day09-plan.mjs",
+  "inputs": {
+    "podvig-panfilovtsy.html": "3ad4ce1e6f05e80f0b0d273301cbe76d8dee1fcb9bbc61888f26bc8dd40ae249",
+    "../../tools/checks/nesdayutsya-2909/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/checks/nesdayutsya-2909/day09-plan.mjs": "bc5de775c6233bc501adaec15ae8cece4af2bf3f526cad01f20b3dba76b2d781",
+    "../../tools/checks/nesdayutsya-2909/plans.mjs": "739639f3b2368589794115ebb6099df6d57dda5441c68795dccc9840ab8e20d0",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "nesdayutsya-style.css": "39e9893b4180f72b0d7e77d2999dc22c2761371749fc30f2e41187b23ce92fdc",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "panfilov-shtab-1941.jpg": "66971e414e696d80e25c0ea1cf131a728a032f845e965aa0dc0e29fbee124641",
+    "panfilovtsy-zhbd-16-11-1941.jpg": "648a5f069680a95e348c5c9c91473fdc2da5c50ad8f6684736c3c9fdc093b41c",
+    "panfilovtsy-marka-klochkov-1967.jpg": "49fd9809f10430a4babb404be2668e39994cca27309e349d046c7426345d716b",
+    "../../assets/museum-fact-or-myth.js": "151d8c561e2364d72ee572ad231ddd350d54b59e7f6ba04508e42c5966fcee3f",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/scrolltelling.js": "782c0de78ecc16edb417b84d9c85a4e9e71f2e289fa2c2c4a27c63a06a689642",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "calendar-nesdayutsya.js": "d69414936fb3402b730764137e47cce5790cc93d9f8f1146af09d86028705341",
+    "../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qWVyvHpA.woff2": "bec4e724c49bde6d6b3f15038c8015f5dc7c810bdaadd3aee537ab72afc50e4a",
+    "../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qSVys.woff2": "bf23a7a4eebedbb87d4084a69496b29815914a18e339a00f5dc73a03c9c9328f",
+    "../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "panfilov-portret-1941.jpg": "0354bdf4381722e53b5173c8cc24f635830c8b97e2ff101122e22d62fa24cb7b",
+    "panfilovtsy-karta-16-11-1941.jpg": "45bb2e4a3bab1078222d89bbc38d5db0847e0dd2d0d5d28c20680cacf5fdc76a",
+    "../../tools/checks/nesdayutsya-2909/day09/entry-390.png": "0dd99df87bc082591a52a51a411a6bf8a1f64cc5ed584fc8651f40d0ffcdcd83",
+    "../../tools/checks/nesdayutsya-2909/day09/entry-390.json": "36d8963f6beab77a0e82dc4a8f3c301dd7d6c64103a7d0b6887f326e7fe6588f",
+    "../../tools/checks/nesdayutsya-2909/day09/wrong-390.png": "97c6f4cc46898b1f00d6acd38def2b0adb7526ba595e6c8e8f52a02e8da39943",
+    "../../tools/checks/nesdayutsya-2909/day09/wrong-390.json": "f97dc0b7af0f3b321a21fd1091d6203a88ea97f2e420ea5606ee516e8cc74a44",
+    "../../tools/checks/nesdayutsya-2909/day09/reset-390.png": "255abae99d9f1442ff59e4b7595f7d6d8836d4699230fa30f5eda9406ea18b4b",
+    "../../tools/checks/nesdayutsya-2909/day09/reset-390.json": "a9c0b41bb204f893ae21c4040d46a8c1f1bdf8bbf3e9ad96631b4826793f12be",
+    "../../tools/checks/nesdayutsya-2909/day09/mobile-390.png": "0d01f0b11dc6300c0cd324c53759ade2aa2a3ac8fe5a00c33e82237439ccb2de",
+    "../../tools/checks/nesdayutsya-2909/day09/mobile-390.json": "6a2c79180e2248affdb92d4dc06f94ffe13562821dedd2babc1eca98af4d8aac",
+    "../../tools/checks/nesdayutsya-2909/day09/mobile-1440.png": "52400c8eb074e592b03db7722e8b3763b3b931577fdd6c460308b71a533a4c0e",
+    "../../tools/checks/nesdayutsya-2909/day09/mobile-1440.json": "d51ed75ddefe22541530c18817814045d25b8abd083a94a2b224a182bdc25822",
+    "../../tools/checks/nesdayutsya-2909/day09/nojs-390.png": "b7c6844be59503528efabd70ffb850510d874f634d2be0558e7db2a3c96f8397",
+    "../../tools/checks/nesdayutsya-2909/day09/nojs-390.json": "5559a3b91b952eb529162640a6ca5865c321cae5fab3f400b6c4aa0ca48e5233",
+    "../../tools/checks/nesdayutsya-2909/day09/score-390.png": "bec48b8c480298a373e5a5e0d2e8e0e8a39d37bc5affd6d0a29cca7fce755cb2",
+    "../../tools/checks/nesdayutsya-2909/day09/score-390.json": "79cd494050295002c99e9b8fe9f005e9c95436c0aa46625788863d3c631dcb88",
+    "../../tools/checks/nesdayutsya-2909/day09/main-390.png": "dde498af295c19f0294d8618e7a154b59805a5b03489ce781724a8ba0cbeb68b",
+    "../../tools/checks/nesdayutsya-2909/day09/main-390.json": "8517d5d1c9440a1afdc14c4ab7135b7d1577d9765b1a569f5b4f9d4da3e011e1",
+    "../../tools/checks/nesdayutsya-2909/day09/empty-390.png": "680cd18be9753727ff64d36bb7b1ce1bfc57f4083710b6abb6330292d5c822f0",
+    "../../tools/checks/nesdayutsya-2909/day09/empty-390.json": "6575ecfdba34d8dab8449c6f275957d04f3391cad03b0ef2dfeb22dd774aa5ec"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day09/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day09/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day09/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day09/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day09/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day09/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day09/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day09/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day09/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

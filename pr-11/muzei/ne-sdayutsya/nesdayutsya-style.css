@@ -1,0 +1,326 @@
+/* museum-nesdayutsya · страница дня — единый стиль портала «Русская цивилизация».
+ * Тёмно-синяя ночь + золото (как изобретения): торжественно, без киноварной «бересты».
+ * Hero — крупная картина во всю ширину, текст ОТДЕЛЬНО (правило 03.08). */
+  :root{
+    /* ── ночной синий портала / тёплая глубь ── */
+    --bg:#060d18;--bg2:#050c15;--surface:#0b1624;--surface2:#101d2e;
+    --ink:#c6d8e8;--muted:#7893ab;--line:rgba(120,147,171,.16);
+    --card:rgba(201,168,76,.05);--card-b:rgba(201,168,76,.16);
+    /* ── золото: единый акцент портала ── */
+    --gold:#c9a84c;--gold-l:#e2c878;--gold-g:rgba(201,168,76,.12);
+    --glow:0 0 30px rgba(201,168,76,.12);
+    --accent:#c9a84c;
+    /* ── пергамент (документ-первоисточник) ── */
+    --paper:#f4efe2;--paper-ink:#241d16;--paper-mut:#6d5f48;
+    /* токены движков museum-support/chrome: красить их явно, не наследованием */
+    --fg:#c6d8e8;--dark:#060d18;--txt:#c6d8e8;--panel:#0b1624;
+    --mono:'JetBrains Mono',ui-monospace,monospace;
+  }
+  /* перебить theme.css :root — акцент и шрифты ЭТОГО музея (специфичность выше) */
+  html[data-museum="ne-sdayutsya"]{
+    --acc:#c9a84c;--acc-soft:rgba(201,168,76,.14);
+    --font-h:'Playfair Display',Georgia,serif;
+    --font-b:'Inter',system-ui,sans-serif;
+    --font-m:'Inter',system-ui,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;overflow-x:clip}
+  body{margin:0;font-family:var(--font-b);color:var(--ink);background:var(--bg);line-height:1.78;overflow-x:clip}
+  h1,h2,h3{font-family:var(--font-h);line-height:1.14;margin:0;font-style:normal;font-weight:700}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent)}
+  /* фактура: мягкое золотое свечение сверху + потемнение полей */
+  body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(120% 80% at 50% -10%,rgba(201,168,76,.06),transparent 55%),
+      radial-gradient(160% 130% at 50% 118%,rgba(0,0,0,.5),transparent 60%);}
+  body>*{position:relative;z-index:1}
+
+  /* шапка — канон портала (28.08.2026): бренд + слоган портала, ниже название музея + его девиз, раздельно.
+     Шрифт разделяет текст: бренд — служебная строка Inter uppercase, название музея — крупный Playfair. */
+  header.top{position:relative;padding:20px 16px 12px;text-align:center;font-family:'Inter',sans-serif}
+  header.top .b1{font-family:'Inter',sans-serif;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);font-weight:700;margin:0}
+  header.top .b2{font-size:13.5px;opacity:1;margin:7px auto 0;color:#c8d4e0;max-width:64ch}
+  header.top .top-sep{width:56px;height:1px;margin:16px auto 0;background:linear-gradient(90deg,transparent,rgba(201,168,76,.6),transparent)}
+  header.top .museum{font-family:var(--font-h);font-size:30px;letter-spacing:.2px;text-transform:none;font-weight:700;color:#fff;margin-top:14px;line-height:1.1}
+  header.top .museum-slog{font-family:var(--font-h);font-style:italic;font-size:15px;color:var(--gold-l);margin-top:6px}
+  .crumbs{font-family:'Inter',sans-serif;font-size:12.5px;padding:4px 16px 8px;text-align:center;opacity:.9}
+  .crumbs a{color:var(--gold-l);text-decoration:none}
+  .crumbs a:hover{text-decoration:underline}
+  .crumbs .sep{color:var(--muted);opacity:.6}
+  .crumbs .here{color:var(--muted);opacity:.55}
+  @media(max-width:520px){header.top{padding-top:14px}header.top .b1{font-size:11px;letter-spacing:2.4px}header.top .museum{font-size:24px}.crumbs{font-size:11px}}
+
+  /* ── HERO: заголовок, хук и кнопки ОТДЕЛЬНО от картины (правило 03.08).
+     Сама картина — в .st-stage скроллтеллинга ниже. */
+  .hero-lead{text-align:center;padding:26px 0 22px;
+    background:radial-gradient(60% 100% at 50% 0%,rgba(201,168,76,.05),transparent 70%)}
+  .hero-lead h1{color:#fff;font-size:clamp(32px,6vw,56px);font-weight:700;line-height:1.06;letter-spacing:-.5px;margin-bottom:18px;overflow-wrap:anywhere;min-width:0;text-shadow:0 2px 40px rgba(0,0,0,.45)}
+  .hero-lead .hook{color:#d7e4f0;font-size:clamp(17px,2.3vw,21px);max-width:58ch;margin:0 auto 24px;line-height:1.66}
+  .hero-lead .hero-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}
+  .hero-under{padding:6px 0 26px}
+  .date-chip{display:inline-block;background:linear-gradient(180deg,rgba(201,168,76,.16),rgba(201,168,76,.05));border:1px solid rgba(201,168,76,.38);color:var(--gold-l);font-weight:700;padding:6px 18px;border-radius:24px;font-size:12px;margin-bottom:16px;font-family:'Inter',sans-serif;letter-spacing:.6px}
+  .hero-lead .who{font-family:'Inter',sans-serif;font-size:clamp(13px,3vw,15px);letter-spacing:.4px;color:var(--gold-l);font-weight:600;margin-bottom:10px}
+  .hero-lead .who i{font-style:normal;color:var(--muted);font-weight:400}
+  @media(max-width:640px){
+    .hero-lead{padding:20px 0 18px}}
+
+  /* штамп-цифры под hero */
+  .stamp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid rgba(201,168,76,.18);border-radius:2px;overflow:hidden;background:rgba(201,168,76,.03)}
+  .stamp div{padding:11px 12px;border-left:1px solid rgba(201,168,76,.15);min-width:0}
+  .stamp div:first-child{border-left:0}
+  .stamp .v{font-family:var(--font-h);font-size:clamp(17px,3.4vw,23px);font-weight:400;color:var(--gold-l);line-height:1.1;overflow-wrap:anywhere;text-shadow:0 0 26px rgba(201,168,76,.16)}
+  .stamp .k{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin-top:5px;font-family:'Inter',sans-serif}
+  @media(max-width:600px){.stamp{grid-template-columns:repeat(2,minmax(0,1fr))}.stamp div:nth-child(3){border-left:0}.stamp div:nth-child(n+3){border-top:1px solid rgba(201,168,76,.15)}}
+  .stamp-note{font-size:11px;line-height:1.6;color:var(--muted);margin-top:9px;font-family:'Inter',sans-serif}
+
+  /* навигация по блокам */
+  .daynav{position:sticky;top:0;z-index:25;background:rgba(6,13,24,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--card-b)}
+  .daynav .wrap{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+  .daynav a{flex:0 0 auto;padding:14px 20px;font-size:11px;font-weight:700;font-family:'Inter',sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap;letter-spacing:1.2px;text-transform:uppercase;border-bottom:2px solid transparent;transition:.18s}
+  .daynav a:hover{color:var(--gold-l);border-bottom-color:var(--gold)}
+  .daynav::before,.daynav::after{content:'';position:absolute;top:0;bottom:0;width:26px;pointer-events:none;z-index:1}
+  .daynav::before{left:0;background:linear-gradient(90deg,rgba(6,13,24,.95),transparent)}
+  .daynav::after{right:0;background:linear-gradient(-90deg,rgba(6,13,24,.95),transparent)}
+
+  /* секции */
+  section.block{padding:56px 0;border-bottom:1px solid var(--line);scroll-margin-top:130px}
+  .kicker{font-size:11.5px;letter-spacing:.14em;color:var(--gold);margin-bottom:10px;font-family:'Inter',sans-serif}
+  .kicker::before{content:'◆';font-size:8px;vertical-align:2px;margin-right:8px;color:var(--gold);opacity:.8}
+  section.block h2{font-size:33px;color:#fff;margin-bottom:12px}
+  p{margin:14px 0;color:var(--ink);max-width:66ch}
+  p b, .pull b, .q p b{color:var(--gold-l);font-weight:700}
+  .pull{background:var(--gold-g);border-left:3px solid var(--gold);padding:20px 24px;border-radius:0 14px 14px 0;font-style:italic;color:#e7dcc0;font-family:var(--font-h);font-size:20px;line-height:1.52;margin:26px 0}
+  .q{background:var(--card);border:1px solid var(--card-b);border-radius:14px;padding:18px 22px;margin:12px 0}
+  .q h3{margin:0 0 6px;font-size:20px;color:#fff}
+  .q h3 em{display:block;font-style:normal;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-family:'Inter',sans-serif;margin-bottom:6px;font-weight:700}
+  .q p{margin:0;color:var(--muted);font-size:15px}
+  .btn{cursor:pointer;border:none;border-radius:12px;padding:13px 24px;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;transition:.18s}
+  .btn:hover{filter:brightness(1.14)}
+  .btn.ghost{background:rgba(198,216,232,.06);color:var(--ink);border:1px solid var(--card-b)}
+  .btn.gold{background:linear-gradient(135deg,#d9b866,#b8933c);color:#1a1408;box-shadow:0 4px 20px rgba(201,168,76,.25)}
+  .btn.gold:hover{filter:brightness(1.1)}
+  a.btn{text-decoration:none;display:inline-block}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+
+  /* буквица — торжественная заставка в начале рассказа */
+  #put .wrap>p:first-of-type::first-letter,
+  #istoriya .wrap>p:first-of-type::first-letter{
+    font-family:var(--font-h);font-weight:700;color:var(--gold);float:left;
+    font-size:3.5em;line-height:.8;padding:6px 13px 0 0}
+
+  /* изображения в теле */
+  .fig{margin:22px 0;border:1px solid rgba(120,147,171,.18);background:var(--surface)}
+  .fig img{display:block;width:100%;height:auto}
+  .fig figcaption{font-size:11px;letter-spacing:.4px;line-height:1.65;color:var(--muted);padding:9px 12px;border-top:1px solid var(--card-b)}
+  .fig-side{float:none;width:100%;margin:26px 0 8px}
+  @media(max-width:600px){.fig-side{width:100%;margin:20px 0 6px}}
+
+  /* пергаментный вкладыш — документ (первоисточник) */
+  .doc{background:var(--paper);color:var(--paper-ink);border:1px solid #d5c9a8;border-radius:3px;padding:26px 28px;margin:22px 0;
+    background-image:repeating-linear-gradient(0deg,rgba(0,0,0,.025) 0 1px,transparent 1px 26px);position:relative;
+    box-shadow:0 20px 44px rgba(0,0,0,.4)}
+  .doc::before{content:'';position:absolute;inset:5px;border:1px solid rgba(43,35,23,.12);border-radius:1px;pointer-events:none}
+  .doc>*{position:relative}
+  .doc .dk{font-size:12px;letter-spacing:2.5px;text-transform:uppercase;color:#a2551f;font-family:'Inter',sans-serif;font-weight:700;margin-bottom:10px}
+  .doc p{color:var(--paper-ink);font-family:'PT Serif',Georgia,serif;font-size:18px;line-height:1.72}
+  .doc .src{font-size:12px;color:var(--paper-mut);font-family:'Inter',sans-serif;margin-top:10px}
+
+  /* чат */
+  .chip{cursor:pointer;background:var(--card);border:1px solid var(--card-b);border-radius:20px;padding:7px 16px;margin:4px 5px 4px 0;font-size:13px;display:inline-block;color:var(--muted);font-family:'Inter',sans-serif;transition:.16s}
+  .chip:hover{border-color:var(--gold);color:var(--gold-l)}
+  .msg{margin:8px 0;padding:12px 16px;border-radius:14px;max-width:88%;font-size:15px;line-height:1.6}
+  .msg.you{background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.3);margin-left:auto;text-align:right;color:#e7dcc0}
+  .msg.inv{background:var(--card);border:1px solid var(--card-b);color:var(--ink)}
+  #chatInput{flex:1;padding:12px 16px;font-size:15px;background:var(--surface);border:1px solid var(--card-b);border-radius:10px;color:var(--ink);font-family:'Inter',sans-serif}
+
+  /* развилка (M-15) */
+  .fork-opt{background:var(--card);border:1px solid var(--card-b);border-radius:14px;padding:16px 18px;margin:10px 0;cursor:pointer;transition:.18s;font-size:15px}
+  .fork-opt:hover{border-color:var(--gold);background:var(--gold-g)}
+  .fork-opt.chosen{border-color:var(--gold);background:var(--gold-g)}
+  .exp{margin-top:10px;font-size:14px;background:var(--gold-g);border-radius:10px;padding:12px 14px;display:none;color:#e7dcc0}
+  .exp.show{display:block}
+
+  /* викторина */
+  .opt{display:block;width:100%;text-align:left;background:var(--card);border:1px solid var(--card-b);border-radius:12px;padding:12px 16px;margin:8px 0;cursor:pointer;font-size:15px;color:var(--ink);font-family:'Inter',sans-serif;transition:.16s}
+  .opt:hover{border-color:var(--gold);background:var(--gold-g)}
+  .opt.correct{background:rgba(201,168,76,.16);border-color:#c9a84c;color:#e2c878;font-weight:600}
+  .opt.wrong{background:rgba(160,60,40,.16);border-color:#a03c28;color:#d99a8c}
+
+  /* разбор */
+  .deepd{background:var(--card);border:1px solid var(--card-b);border-radius:14px;padding:16px 22px}
+  .deepd summary{cursor:pointer;font-family:'Inter',sans-serif;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-l);font-weight:700;list-style:none}
+  .deepd summary::-webkit-details-marker{display:none}
+  .deepd[open] summary{margin-bottom:12px;opacity:.7}
+  .deepd h3{font-family:var(--font-h);color:var(--gold-l);font-size:21px;margin:20px 0 6px}
+  .src{font-size:12px;color:var(--muted);opacity:.85;margin-top:14px}
+
+  /* куда дальше */
+  .next{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:6px}
+  .ncard{background:var(--card);border:1px solid var(--card-b);border-radius:14px;padding:14px 16px;font-size:13.5px;color:var(--muted);line-height:1.55}
+  .ncard.main{grid-column:1/3;border-color:rgba(201,168,76,.32)}
+  .ncard .lbl{font-size:12px;letter-spacing:2.2px;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:5px;font-family:'Inter',sans-serif;font-weight:700}
+  .ncard a{color:var(--gold-l);text-decoration:none;font-weight:600}
+  .ncard .soon{color:var(--muted);font-style:italic}
+  .ncard a:hover{text-decoration:underline}
+  @media(max-width:600px){.next{grid-template-columns:1fr}.ncard.main{grid-column:1}}
+
+  /* поддержать проект — серифная вклейка (движок museum-support красится токенами выше) */
+  .support{position:relative;background:linear-gradient(180deg,rgba(201,168,76,.13),rgba(201,168,76,.03));border:1px solid rgba(201,168,76,.38);border-radius:3px;padding:24px 28px 22px;
+    font-family:'PT Serif',Georgia,serif;font-size:17px;line-height:1.68;color:#e7dcc0}
+  .support::before{content:'';position:absolute;inset:5px;border:1px solid rgba(201,168,76,.16);border-radius:1px;pointer-events:none}
+  .support>*{position:relative}
+  .support .sup-l{display:flex;align-items:center;gap:10px;font-family:'Inter',sans-serif;font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-l);margin-bottom:11px}
+  .support .sup-l::before{content:'❤';font-size:13px;letter-spacing:0}
+  .support .sup-l::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,rgba(201,168,76,.5),transparent)}
+  .support p{margin:0;font-size:17px}
+  .support b{color:var(--gold-l);font-weight:700}
+  .support a{color:var(--gold-l)}
+  @media(max-width:600px){.support{padding:20px 18px;font-size:16px}.support p{font-size:16px}}
+  #heart{position:fixed;right:12px;bottom:82px;z-index:60;background:rgba(6,13,24,.94);border:1px solid rgba(201,168,76,.4);border-radius:26px;width:46px;height:46px;display:flex;align-items:center;justify-content:center;font-size:17px;color:var(--gold-l);cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.5);transition:transform .35s ease,width .3s ease,opacity .3s ease;overflow:hidden;font-family:'Inter',sans-serif}
+  #heart .lbl{display:none;white-space:nowrap;margin-left:7px;font-size:13px;letter-spacing:.3px}
+  #heart.wide{width:auto;padding:0 17px}
+  #heart.wide .lbl{display:inline}
+  #heart.tuck{transform:translateY(96px);opacity:0;pointer-events:none}
+
+  footer{padding:40px 0 80px;color:rgba(198,216,232,.62);font-size:12px;text-align:center;font-family:'Inter',sans-serif;letter-spacing:.5px}
+  footer .slog{font-style:italic;color:var(--gold-l);margin-bottom:8px;font-family:var(--font-h);font-size:16px;letter-spacing:0}
+  .reveal{opacity:1;transform:translateY(16px);transition:.65s cubic-bezier(.2,.7,.2,1)}
+  .reveal.on{transform:none}
+  @media(prefers-reduced-motion:reduce){
+    .reveal{transition:opacity .15s linear;transform:none}
+  }
+
+  /* карта пути (M-72) — интерактивный маршрут подвига */
+  .route-map{margin:26px 0 6px;padding:20px 18px 16px;background:var(--card);border:1px solid var(--card-b);border-radius:14px}
+  .rm-head{font-family:var(--font-h);color:var(--gold-l);font-size:17px;margin-bottom:10px}
+  .route-map svg{width:100%;height:auto;display:block;overflow:visible}
+  .rm-label{fill:#e7dcc0;font-size:13px;font-weight:600;font-family:'Inter',sans-serif}
+  .rm-sub{fill:var(--muted);font-size:10.5px;font-family:'Inter',sans-serif;letter-spacing:.4px}
+  .rm-node{cursor:pointer;outline:none}
+  .rm-node circle{transition:r .2s ease,fill .2s ease,stroke .2s ease}
+  .rm-node:hover circle,.rm-node:focus-visible circle{fill:rgba(201,168,76,.25);stroke:#e2c878}
+  .rm-node.sel circle{fill:rgba(201,168,76,.3);stroke:#f0c66a;stroke-width:3}
+  .rm-desc{margin-top:12px;min-height:54px;color:var(--ink);font-size:14.5px;line-height:1.62;border-left:2px solid rgba(201,168,76,.5);padding-left:14px}
+  .rm-desc b{color:var(--gold-l);font-weight:700;display:block;margin-bottom:2px}
+  @media(max-width:600px){.rm-label{font-size:12px}.rm-sub{font-size:10px}}
+
+  /* ===== Скроллтеллинг M-73: закреплённая картина, сцены следуют за текстом ===== */
+  .scrolltelling{display:grid;grid-template-columns:1fr;border-bottom:1px solid var(--line)}
+  .st-media{display:flex;flex-direction:column;min-width:0}
+  .st-stage{position:relative;height:56vh;min-height:300px;overflow:hidden;background:#000}
+  .st-stage .st-scene{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:0;transition:opacity 1s ease,transform .4s ease-out;will-change:transform}
+  .st-stage .st-scene.active{opacity:1}
+  .st-indicator{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);display:flex;gap:9px;z-index:3}
+  .st-dot{width:7px;height:7px;border-radius:50%;background:rgba(226,200,120,.28);transition:background .3s,box-shadow .3s}
+  .st-dot.on{background:var(--gold-l);box-shadow:0 0 8px rgba(201,168,76,.55)}
+  .st-cap{display:flex;align-items:flex-start;gap:16px;background:var(--surface);border-top:1px solid var(--line);padding:14px 24px}
+  .st-cap-layer{display:none;margin:0;padding:0;flex:1 1 auto;min-width:0;font-size:13px;line-height:1.62;color:var(--muted)}
+  .st-cap-layer.active{display:block}
+  .st-counter{flex:0 0 auto;font:700 11px/1.5 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);padding-top:2px}
+  .st-cap-layer .st-src{display:block;font:700 12px/1.5 'Inter',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:5px}
+  .st-chapters{display:flex;flex-direction:column;min-width:0}
+  .st-chapters .hero-lead{text-align:left;padding:26px 24px 8px}
+  .st-chapters .hero-lead h1{margin-bottom:14px}
+  .st-chapters .hero-lead .hook{margin:0 0 20px;max-width:62ch}
+  .st-chapters .hero-lead .hero-btns{justify-content:flex-start}
+  .st-steps{display:flex;flex-direction:column;margin-top:4px}
+  .st-step{padding:20px 24px;border-top:1px solid var(--line)}
+  .st-step .kicker{margin-bottom:8px}
+  .st-step p{margin:0;font-size:15.5px;line-height:1.62;color:var(--muted)}
+  .st-step p b{color:var(--ink);font-weight:700}
+
+  /* ===== Таймлайн M-74: горизонтальная лента параллельных событий ===== */
+  .timeline-block{margin:0;padding:0}
+  .tl-head{padding-top:28px;padding-bottom:4px}
+  .tl-title{font-family:var(--font-h);font-size:clamp(22px,4vw,28px);font-weight:700;margin:0 0 6px;color:var(--ink)}
+  .tl-sub{color:var(--muted);font-size:13.5px;margin:0}
+  .timeline{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;padding:14px 24px 18px;cursor:grab}
+  .timeline:active{cursor:grabbing}
+  .timeline::-webkit-scrollbar{height:6px}
+  .timeline::-webkit-scrollbar-thumb{background:var(--gold-g);border-radius:99px}
+  .tl-card{flex:0 0 250px;scroll-snap-align:start;background:var(--surface);border:1px solid var(--card-b);border-radius:14px;padding:18px 16px;position:relative}
+  .tl-card .yr{font:700 12px/1 'Inter',sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+  .tl-card h3{font-family:var(--font-h);font-size:17px;font-weight:700;margin:10px 0 8px;line-height:1.2;color:var(--ink)}
+  .tl-card p{margin:0;font-size:13.5px;color:var(--muted);line-height:1.5}
+  .tl-card .dot{position:absolute;top:18px;right:16px;width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px var(--gold-g)}
+
+  @media(max-width:899px){
+    .st-media{position:sticky;top:0;z-index:2;align-self:start;background:var(--bg)}
+    .st-stage{height:36vh;min-height:230px}
+    .st-chapters .hero-lead{padding-top:14px}
+  }
+  @media(min-width:900px){
+    .scrolltelling{grid-template-columns:1fr 1fr;align-items:start}
+    .st-media{grid-column:1;grid-row:1;position:sticky;top:0;align-self:start;max-height:100vh}
+    .st-stage{height:calc(100vh - 74px)}
+    .st-chapters{grid-column:2}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .st-scene{transition:none}
+  }
+
+  /* ── Светлая читательная поверхность: длинный текст на бумаге, не на почти чёрном ── */
+  .block--paper{background:var(--paper);color:var(--paper-ink)}
+  .block--paper h2{color:var(--paper-ink)}
+  .block--paper p{color:var(--paper-ink)}
+  .block--paper p b{color:var(--paper-ink)}
+  .block--paper .kicker{color:var(--gold)}
+  .block--paper .fig{background:transparent;border-color:rgba(36,29,22,.18)}
+  .block--paper .fig figcaption{color:var(--paper-mut)}
+
+  /* ── HERO-МЕДАЛЬОН (Сиротинин и другие герои без прижизненных портретов) ── */
+  .hero-medallion{text-align:center;padding:34px 24px 6px;border-bottom:1px solid var(--line)}
+  .med-lead{margin-bottom:18px}
+  .med-lead h1{margin-bottom:14px}
+  .medallion{max-width:340px;margin:0 auto 6px}
+  .medallion svg{width:100%;height:auto;display:block}
+  .med-num{font-family:var(--font-h);font-size:34px;font-weight:700;fill:#e2c878}
+  .med-lab{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;fill:var(--muted)}
+  .med-year{font-family:var(--font-h);font-size:40px;font-weight:700;fill:#fff}
+  .med-sub{font-family:'Inter',sans-serif;font-size:12px;fill:var(--gold-l)}
+  .med-line{color:var(--gold-l);font-family:var(--font-h);font-style:italic;font-size:15px;margin:8px auto 20px;max-width:56ch;line-height:1.5}
+  .hero-medallion .hero-btns{justify-content:center}
+  @media(max-width:600px){
+    .hero-medallion{padding-top:24px}
+    .med-num{font-size:28px}
+    .med-year{font-size:34px}
+  }
+
+  /* §5-бис museum-core (раскрытие у каждого момента): короткая мысль читается без нажатия,
+     «Узнать подробнее» раскрывает свидетельство и источник прямо под своим фактом.
+     Введено страницами дней 8–9 (28.09.2026). */
+  details.more{margin-top:10px}
+  details.more summary{cursor:pointer;display:inline-block;font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-l);font-weight:700;list-style:none;padding:6px 0;min-height:32px}
+  details.more summary::-webkit-details-marker{display:none}
+  details.more summary::after{content:' ↓'}
+  details.more[open] summary::after{content:' ↑'}
+  details.more summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:4px}
+  details.more .more-body{margin-top:6px;padding-left:12px;border-left:2px solid rgba(201,168,76,.35);color:var(--muted);font-size:14.5px;line-height:1.65}
+  details.more .more-body p{margin:0 0 8px}
+  details.more .more-src{font-size:12px;opacity:.8}
+
+  /* Итог дня и паспорт кадров (museum-core §6-тер; сборщик pilot-nesdayutsya/build-ochki-prava.py).
+     Подача сдержанная: звание знатока, без игровых фанфар. Введено днями 8–9 (29.09.2026). */
+  .itog-score{font-family:'Inter',sans-serif;font-size:22px;font-weight:700;color:var(--gold-l);margin:4px 0 10px}
+  .itog-bar{height:8px;border-radius:6px;background:var(--line);overflow:hidden;max-width:520px}
+  .itog-bar>div{height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--gold-l));transition:width .5s ease}
+  .itog-txt{color:var(--muted);font-size:14.5px;margin:10px 0 0}
+  .itog-note{color:var(--muted);font-size:13.5px;max-width:62ch}
+  .diploma{border:1px solid var(--gold);border-radius:14px;padding:18px;text-align:center;background:var(--surface);margin:16px 0 10px;max-width:520px}
+  .diploma .dl{display:block;font-family:'Inter',sans-serif;font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+  .diploma b{display:block;font-family:var(--font-h);font-size:20px;font-weight:normal;color:#fff;margin-bottom:8px}
+  .diploma .dp{display:block;font-size:14px;line-height:1.6}
+  .diploma .dp i{font-style:normal;font-weight:700;color:var(--gold-l)}
+  .nojs-note{color:var(--muted);font-size:14px;max-width:62ch}
+  .kadry{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px;margin:14px 0 18px}
+  .kadry figure{margin:0}
+  .kadry img{display:block;width:100%;height:120px;object-fit:cover;border-radius:8px;border:1px solid var(--line)}
+  .kadry figcaption{font-size:12.5px;line-height:1.45;color:var(--muted);margin-top:6px}
+  .kadry figcaption b{display:block;color:var(--ink);font-weight:600}
+  .rights-wrap{overflow-x:auto}
+  table.rights{border-collapse:collapse;font-size:13px;line-height:1.45;min-width:560px;width:100%}
+  table.rights th,table.rights td{border-bottom:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}
+  table.rights th{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+  table.rights a{color:var(--gold-l)}
+  table.rights code{font-size:11.5px;color:var(--muted)}
