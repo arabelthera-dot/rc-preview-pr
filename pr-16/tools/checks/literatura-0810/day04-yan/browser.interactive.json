@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "page_sha256": "8dc31d0145ab29e6063205d1adc62bd515e9ad0ccd5fd1e59420e9ca2ffdc83b",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-09T14:54:09.990Z",
+  "browser": "151.0.7922.173",
+  "plan": "../yan-plan.mjs",
+  "inputs": {
+    "../../../../muzei/literatura/lit-yan-chingishan.html": "8dc31d0145ab29e6063205d1adc62bd515e9ad0ccd5fd1e59420e9ca2ffdc83b",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../yan-plan.mjs": "de89a910fdc0c83af11aa810ee595d8aab7bfd463a484ff865045404b2378c10",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../assets/museum-literatura.css": "c61af6100f347eca763bde21e186eed1e46b4f7595610697abd05e68e231773c",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/literatura/media-chingishan/chingishan-yuan-hero-mobile.jpg": "5ddfbb639d77d2835f4e4efd04caf7942a1c05207b4fd4a83e476bbec588addc",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../muzei/literatura/calendar-literatura.js": "bf0615523b6846097d094d07ec2d2e0b4847b8d87023672521224437b7a9070d",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "entry-390.png": "242e84efded2636ce5690b3cac6540d057c939e0f9f399a3a40bf46db3661fea",
+    "entry-390.json": "f4b59585d454d6a6f3d9827657e4a81d536778ee8db4df88252e24c267593770",
+    "wrong-390.png": "b5aee275d609bf139b2e9a77121fcee3940e90067ea5e5f927e9fc9824bfb251",
+    "wrong-390.json": "3e026d31e04d3a33f5e949fd774f4aef5a0f6700d0a20f620951bcb2a1280bd2",
+    "reset-390.png": "dd4d665dae6a2880e28256b5d150c6efe24f366cc024909bca938ea790b41283",
+    "reset-390.json": "c81eb71f676ec87e366b1ee63d43acfe475421232e963f182409e44ae31e09ee",
+    "mobile-390.png": "16c67cbdd94b7165aa496d71ee751e75b7b7f4619f1a2b8859ad498c6684dac2",
+    "mobile-390.json": "824472895572e5ad21490283f2ff1054064e29871be4fa5e0f6d5f006b4aaa92",
+    "../../../../muzei/literatura/media-chingishan/chingishan-yuan-hero.jpg": "20397dca91accd643e7be427230a5ccdb1dd2fe2ae3cd057f5b5da8ee09d2ace",
+    "mobile-1440.png": "79f9878e2a76b2df829255823bbd15c1eac6b82f2cfee47e7054e72a598dc378",
+    "mobile-1440.json": "3800c48a7fe1b71a4e39addf056a329fa16e646c559a46f8da625928f96e6b96",
+    "../../../../muzei/literatura/media-chingishan/chingishan-yuan-portret.jpg": "6e6c41af28e26e900fefddfaa65711b54c66ec127d20d37f3c032fd552ce1025",
+    "../../../../muzei/literatura/media-chingishan/chingishan-dzhami-at-tavarih.jpg": "986f7754ede25799f98c18daee58be2116f94a595460e66f9305e32f23acfb94",
+    "nojs-390.png": "28b1acf6a12fd2c89856a163dc4a0e81686064df846dbb337792fee8b6c4d1dc",
+    "nojs-390.json": "9522826041d2a5f7201870d460c05c1921b91f12ffde83214e547f1fdff504ce",
+    "score-390.png": "52d505968f3d83625c4901138419bfdd871479c4bb14704f79fdfaf31c19310c",
+    "score-390.json": "ed2c2cb95e9145b006becaf634fc4ed03143b1712dc678b9e50e0fa40d731397",
+    "main-390.png": "0849f243f4620afa116718831ab9826c3341d9bd72ea5634e4a8e0c8036ecb35",
+    "main-390.json": "eb057b5088a94d84814de9321a75d08248a9fe024de1c972697790c4aa6c1aa3",
+    "empty-390.png": "6983f7113ab40f99b34062a85de12648c7fb74f75315cd096e88dcc114308ad2",
+    "empty-390.json": "425557fd6429c7a811f7ffa0c1ee9b7342ade8f1e78c459c71dfd9568bdc96e6"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
