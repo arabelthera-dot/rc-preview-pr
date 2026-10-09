@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "page_sha256": "f0e47776c9653a6ee82b2b04444b12ee07c6a0ecf4e7422d3bd3111018e71cac",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-09T20:00:33.213Z",
+  "browser": "151.0.7922.173",
+  "plan": "../liza-plan.mjs",
+  "inputs": {
+    "../../../../muzei/literatura/lit-karamzin-bednaya-liza.html": "f0e47776c9653a6ee82b2b04444b12ee07c6a0ecf4e7422d3bd3111018e71cac",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../liza-plan.mjs": "ff318699453811957f39912da6be3537e662fd5e683b64c101e7e9fd168beb8a",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../assets/museum-literatura.css": "a205915af4132a432fcb0d668602d1eaf1a0d3c7734d554cc6dcc87a6a5ced75",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/literatura/media-liza/simonov-saltykov-1832-mobile.jpg": "55d98b3b4434459e1541bb457879eb33409e5a51db9f6bd0e5d8973781ebfdca",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../muzei/literatura/calendar-literatura.js": "029ecdce6378f83f179711d71100997acad4145699d070e3012ad198673e6499",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../../../muzei/literatura/media-liza/simonov-saltykov-1832.jpg": "71f9dbcf9ea6946476b33c609a42732e12361369dfc07a62d1126416fdcc5301",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "entry-390.png": "19c97b0cab2eda57b876f23271ce2c8b0005b4d4f440f1cdf94875e85f30f3c9",
+    "entry-390.json": "5a450b2061dcc031d89041b0999d6b6de34df5341d48f0f1cdb7d7d71aa0f264",
+    "wrong-390.png": "76f79f9e90a8199439b404a742320d55d66aa980fbbaf2d039c69e6e41a4f53e",
+    "wrong-390.json": "f2bceb6a93c9e0d31429026c67b7fcfaa67a904bca901e35c9af75e82e9ccf99",
+    "reset-390.png": "9c13d35170668880ee3d1232b5421f95162349b7643d55c2001af9b2ffffda31",
+    "reset-390.json": "6898835524e483e0d249591064e343890c77ffc4b64cf086384b4e854db00999",
+    "mobile-390.png": "b957a872ae9a71250a48e7ce44e8b36ed5db8554af1a86dc6dd154be2c245ff9",
+    "mobile-390.json": "bd6b7fbc89c7b03d8706337da52e01df639e98cd60b9f4ab4de25e082e51fd6d",
+    "mobile-1440.png": "06d69c54a976a7544f6fed468d21c45d20eb8902d4a1dbcfbd7ac8ff5c0c9172",
+    "mobile-1440.json": "8357511cb219a8f2632bc375224f71a4a703e3162cc5afbb986747971753d703",
+    "../../../../muzei/literatura/media-liza/bednaya-liza-kiprensky-1827.jpg": "1fb37a305302734b546db40491641634d519b012ce55c9aa8561ca9542918cac",
+    "../../../../muzei/literatura/media-liza/lizin-prud-rabus-1840e.jpg": "c687fa22adbd6c288847f05f25ecbeef1e4e9e9b2baa3e5c7309395a4ea1b361",
+    "nojs-390.png": "066111c2f694f7d09529d629c182e3761f76f80d2490ecac674248a2e0da8752",
+    "nojs-390.json": "8744f745127b9ae1999e877a4235dd109fd1246ee2eaef9e94d115a6d5d425fe",
+    "score-390.png": "a7332ffd6513cd4852b55751104dbccaf4870760c4c0dd89f4df3b37048ece55",
+    "score-390.json": "88af9273f87475d1ca6a58a3b65b0b85a11da10fdf7c6dfcaf7030490fd841a1",
+    "main-390.png": "7dd229fee34322e1cfddf41a30c6fb7a74022330c7c68741d5be4449b4aed833",
+    "main-390.json": "d6e38967bfd0f6361de2f7c42c4d87bdee5a4b4288fe595160bc72a9a7e7db6e",
+    "empty-390.png": "d1106b1416e42c6322dee43636e40178030ee98805eda46dd9495e954dc0c006",
+    "empty-390.json": "375994f4697c41dc4a7bee5e64d7eaa53b24b85b998f830afa20ba35e2dfd6c3"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

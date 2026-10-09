@@ -1,0 +1,43 @@
+{
+  "test_id": "nojs-390",
+  "code": "nojs",
+  "width": 390,
+  "javascript_enabled": false,
+  "url": "http://b6.local/muzei/literatura/lit-pushkin-evgeniy-onegin.html",
+  "steps": [],
+  "checks": [
+    {
+      "label": "История читается без JavaScript",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Эпизоды истории раскрываются без JavaScript",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Черновик без JavaScript — текстом: пять строк",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    },
+    {
+      "label": "Вместо пустой викторины — текстовый эквивалент",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Текстовая викторина: пять вопросов с ответами",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "nojs-390.png",
+  "status": "pass"
+}
