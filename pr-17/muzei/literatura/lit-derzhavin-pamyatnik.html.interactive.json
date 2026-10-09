@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "page_sha256": "d7733df0b262769c4a7cdb9ee071b6acde2473043da8b935afdaac9dbd3739d5",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-09T15:06:23.748Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/checks/literatura-0810/pamyatnik-plan.mjs",
+  "inputs": {
+    "lit-derzhavin-pamyatnik.html": "d7733df0b262769c4a7cdb9ee071b6acde2473043da8b935afdaac9dbd3739d5",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/checks/literatura-0810/pamyatnik-plan.mjs": "35f78ace690049f832c236242e55b7fe0cae6deca5f73331d617946bdf01710e",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-literatura.css": "c61af6100f347eca763bde21e186eed1e46b4f7595610697abd05e68e231773c",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media-pamyatnik/repin-pushkin-ekzamen-1911-mobile.jpg": "a1e11dcbbc46c9a552e6f2ae296a174b08997ad63f950cd246dca899352c0f54",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "calendar-literatura.js": "f8cc9a50fda6d455f1776d0747eac21ef632e9f95063f5472a1b47dafb1b5725",
+    "../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "media-pamyatnik/repin-pushkin-ekzamen-1911.jpg": "10505729a4beed7212f3733e59f24a0016438677a8a4d95387de75574ae3743d",
+    "../../tools/checks/literatura-0810/day07-derzhavin/entry-390.png": "12490306a2ee47145601f500738da495d184ff905629cd7882bda217c1a87a8b",
+    "../../tools/checks/literatura-0810/day07-derzhavin/entry-390.json": "e00db4aa5cf6c34c54d4884e306a17b773b67adecae973a09e42c33fc6bcb478",
+    "../../tools/checks/literatura-0810/day07-derzhavin/wrong-390.png": "445b454ea0276068c439b38521589c329641ecc6fb5e629a0904c84c88f989ca",
+    "../../tools/checks/literatura-0810/day07-derzhavin/wrong-390.json": "54a5f52318c963249b091dad5d0080f7882479d13aeea84377d3e8126db83bd8",
+    "../../tools/checks/literatura-0810/day07-derzhavin/reset-390.png": "6d9b7f557ecd54a7f9dd798665c9b0c11cc725c49c645db268e67c597d038f84",
+    "../../tools/checks/literatura-0810/day07-derzhavin/reset-390.json": "1e9c76414ca63e27b3532a215f051d0b0ada7ab0ce451db7f3622f7097f04bfd",
+    "../../tools/checks/literatura-0810/day07-derzhavin/mobile-390.png": "4ccf45818516c0b2552787524e245a78e7c267bb437d0820dd80f59603875577",
+    "../../tools/checks/literatura-0810/day07-derzhavin/mobile-390.json": "c747de9e4e8d43cec66ce7f6ab965cbaf9afebce7252bfc4d335a0f9966276eb",
+    "media-pamyatnik/ekaterina-progulka-borovikovsky-1794.jpg": "7f428a3b0b3c9cd532ba245802f632a43095031e7f8236a62c54e5de0d8a2123",
+    "../../tools/checks/literatura-0810/day07-derzhavin/mobile-1440.png": "349d0ee20d8967b5c329b62ee80dda0f432fb8187adf2d14e082c0d67c583f14",
+    "../../tools/checks/literatura-0810/day07-derzhavin/mobile-1440.json": "db4de0b57d0946f7ab6059c48c883d6dc1b73cf50ea26b9e9ab3698b80052697",
+    "media-pamyatnik/derzhavin-borovikovsky.jpg": "701f10a553646ee9c33d118d22e9adb3844cd7d638fb1bcb5178c426d09cd8a0",
+    "../../tools/checks/literatura-0810/day07-derzhavin/nojs-390.png": "c27017f35415c8f4e26128ed84e07460b58ae76955bba1b3a000833848ea056a",
+    "../../tools/checks/literatura-0810/day07-derzhavin/nojs-390.json": "18b962396d6b3663ee54c0e3f286dfd9bb5b99bb3faa765250aa5808b7bd909a",
+    "../../tools/checks/literatura-0810/day07-derzhavin/score-390.png": "c38d51dd4ad85db1caaa79feff5b369bfbbbcaf49aa25c440246c952a115a2f5",
+    "../../tools/checks/literatura-0810/day07-derzhavin/score-390.json": "34fef5350adff36257fd286dd0586f3ee896d494b932f036119a477e834ab9f6",
+    "../../tools/checks/literatura-0810/day07-derzhavin/main-390.png": "38b4f0f343c813ea10a6d3b9ec353721f97b5031a03fc9fb07d5067fac900232",
+    "../../tools/checks/literatura-0810/day07-derzhavin/main-390.json": "b917345940bd2a02d54564bc1e2e1a68cfd87ae65048aa244de6972a5c8cd9b4",
+    "../../tools/checks/literatura-0810/day07-derzhavin/empty-390.png": "dd832e607fcb77ea568af4cac446f7fc7c4f9c3778fc8f61e51d602b5d62f59f",
+    "../../tools/checks/literatura-0810/day07-derzhavin/empty-390.json": "23aedb0731731032cd88c8f7aeef7fc3ed82fbf7b4a9c8a027b15f6c777c0299"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day07-derzhavin/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day07-derzhavin/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day07-derzhavin/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day07-derzhavin/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day07-derzhavin/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/literatura-0810/day07-derzhavin/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day07-derzhavin/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day07-derzhavin/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day07-derzhavin/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
