@@ -1,0 +1,75 @@
+{
+  "test_id": "empty-390",
+  "code": "empty",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/ne-sdayutsya/podvig-rogozov.html",
+  "steps": [
+    "Inspect subject interactive"
+  ],
+  "checks": [
+    {
+      "label": "Five questions",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    },
+    {
+      "label": "Each question has ≥3 options and an explanation",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Declared answers match page data",
+      "actual": "1,0,2,3,1",
+      "expected": "1,0,2,3,1",
+      "ok": true
+    },
+    {
+      "label": "Options rendered",
+      "actual": 4,
+      "expected": 4,
+      "ok": true
+    },
+    {
+      "label": "Exhibits in rights register",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    },
+    {
+      "label": "Rights rows",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    },
+    {
+      "label": "Eight room objects declared",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    },
+    {
+      "label": "Object opens with source",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Counter moves",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Objects give no points",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "empty-390.png",
+  "status": "pass"
+}

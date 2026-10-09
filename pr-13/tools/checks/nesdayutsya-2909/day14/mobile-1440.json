@@ -1,0 +1,39 @@
+{
+  "test_id": "mobile-1440",
+  "code": "mobile",
+  "width": 1440,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/ne-sdayutsya/podvig-vir.html",
+  "steps": [
+    "Answer all five correctly"
+  ],
+  "checks": [
+    {
+      "label": "No horizontal overflow at 1440",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Maximum at 1440",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "Quiz summary at 1440",
+      "actual": "Вопросы пройдены: верных 5 из 5.",
+      "expected": "Вопросы пройдены: верных 5 из 5.",
+      "ok": true
+    },
+    {
+      "label": "Diploma at 1440",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "mobile-1440.png",
+  "status": "pass"
+}
