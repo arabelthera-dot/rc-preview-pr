@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ru">
+<head><meta name="robots" content="noindex"><base href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/arhitektura/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Первозданный облик — стенд движка · Музей русской архитектуры и зодчества</title>
+<meta name="description" content="Стенд движка museum-firstlook.js: шторка «было/стало» и переключатель закреплённых дат. Экспонат показан таким, каким его видели современники.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="https://arabelthera-dot.github.io/rc-museum-preview/assets/fonts.css">
+<style>
+  :root{
+    --bg:#12100e; --surface:#1a1714; --fg:#efe7d8; --muted:#a89e8e;
+    --gold:#c9a24a; --gold-l:#e6c877; --gold-g:#8a6f2c; --line:rgba(201,162,74,.28);
+    --dark:#0c0a09;
+    /* переменные движка первозданного облика */
+    --fl-accent:#c9a24a; --fl-fg:#efe7d8; --fl-line:rgba(201,162,74,.34); --fl-frame-bg:#0c0a09;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--fg);
+       font:400 17px/1.7 Inter,system-ui,-apple-system,sans-serif;
+       -webkit-font-smoothing:antialiased}
+  .wrap{max-width:900px;margin:0 auto;padding:0 22px}
+  .block{padding:clamp(34px,6vw,64px) 0}
+  h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:700;line-height:1.16;margin:0 0 14px}
+  h1{font-size:clamp(30px,6vw,54px)}
+  h2{font-size:clamp(22px,3.6vw,34px)}
+  p{margin:0 0 16px;max-width:66ch}
+  .eyebrow{font:600 10px/1.4 Inter,sans-serif;letter-spacing:.3em;text-transform:uppercase;
+           color:var(--gold);margin:0 0 14px}
+  .lead{font-size:clamp(18px,2.4vw,21px);color:var(--fg);opacity:.92}
+  .muted{color:var(--muted)}
+  header.top{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#171310,#12100e)}
+  .crumbs{font:400 13px/1.5 Inter,sans-serif;color:var(--muted);padding:18px 0}
+  .crumbs a{color:var(--muted);text-decoration:none;border-bottom:1px solid transparent}
+  .crumbs a:hover{color:var(--gold-l);border-bottom-color:var(--gold-g)}
+  .hero{padding:clamp(26px,5vw,54px) 0 clamp(20px,3vw,30px)}
+  .note{border-left:3px solid var(--gold-g);padding:12px 0 12px 16px;margin:0 0 26px;
+        color:var(--muted);font-size:15px;max-width:66ch}
+  .sep{height:1px;background:var(--line);border:0;margin:0}
+  pre{background:#0c0a09;border:1px solid var(--line);border-radius:12px;padding:18px;
+      overflow:auto;font:400 13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;color:#d8cdb6}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+  ul{max-width:66ch;padding-left:20px}
+  li{margin:0 0 10px}
+  footer{border-top:1px solid var(--line);padding:30px 0 60px;color:var(--muted);font-size:14px}
+  a{color:var(--gold-l)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap"><nav class="crumbs">
+    <a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Город-музей</a> · <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-31/muzei/arhitektura/kolomenskoe.html">Музей русской архитектуры и зодчества</a> · Первозданный облик
+  </nav></div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Стенд движка · museum-firstlook.js</div>
+    <h1>Первозданный облик</h1>
+    <p class="lead">Здание в музее почти всегда показывают таким, каким его оставило время.
+    Мы ставим рядом то, каким его видели современники. Первый сюжет движка — Адмиралтейская
+    игла: осенью 1941 года золотой шпиль, главный ориентир немецких артиллеристов, зашили
+    в серый чехол, и работали на высоте под обстрелом ленинградские альпинисты.</p>
+    <p class="muted">Ниже — два способа сравнения, оба работают одним движком, без внешних
+    библиотек. Тяни границу мышкой, пальцем или стрелками на клавиатуре. Кадры —
+    архивные снимки блокады с PastVu и современная фотография; ни одного рисунка.</p>
+  </div>
+</section>
+
+<hr class="sep">
+
+<section class="block">
+  <div class="wrap">
+    <div id="firstlook-izba"></div>
+  </div>
+</section>
+
+<section class="block" id="support-anchor">
+  <div class="wrap">
+    <h2>Зачем это музею</h2>
+    <p>Пятнадцать музеев архитектуры, которые мы разобрали, делятся на два лагеря: одни дают
+    красоту реконструкции без интернета, другие — интернет с чёрным деревом. Совместить не берётся
+    никто. Шторка стоит дёшево, а меняет главное: посетитель видит здание живым, а потом сам
+    решает, что с ним сделало время.</p>
+    <p>Второе правило движка — <b>слой достоверности</b> под каждым кадром. Посетитель всегда знает,
+    смотрит он на документальный снимок, на реконструкцию музея или на учебную схему. Ни один из
+    пятнадцати конкурентов этого не подписывает.</p>
+  </div>
+</section>
+
+<hr class="sep">
+
+<section class="block">
+  <div class="wrap">
+    <div id="firstlook-spire"></div>
+  </div>
+</section>
+
+<hr class="sep">
+
+<section class="block">
+  <div class="wrap">
+    <h2>Как это ставится на страницу дня</h2>
+    <p class="muted">Движок подключается двумя строками; вёрстки в теле страницы нет — значит
+    уточнение вкуса правится один раз для всех страниц музея, а не в каждом файле.</p>
+<pre>&lt;section class="block" id="firstlook"&gt;&lt;/section&gt;
+
+&lt;script&gt;window.MUSEUM_FIRSTLOOK=[{
+  mount:'#firstlook',
+  eyebrow:'Первозданный облик',
+  title:'Изба, какой её видели в 1870 году',
+  lead:'Потяни границу…',
+  mode:'shutter',                 // 'shutter' — две эпохи, 'eras' — 3–5 дат
+  states:[
+    {date:'1870-е', label:'Свежий сруб', img:'…', kind:'Реконструкция',
+     caption:'…', source:'…'},
+    {date:'сегодня', label:'То, что осталось', img:'…', kind:'Фотография',
+     caption:'…', source:'…'}
+  ]
+}];&lt;/script&gt;
+&lt;script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-firstlook.js"&gt;&lt;/script&gt;</pre>
+    <ul>
+      <li><b>Текста внутри кадра нет вообще</b> — даты, подписи и источник живут отдельными
+      строками под картинкой. Это правило страницы, а не настройка.</li>
+      <li><b>Клавиатура и тач</b>: шторка — ползунок под кадром, даты — стрелки влево-вправо.</li>
+      <li><b>Кадры сводит один скрипт</b> (<code>tools/prep-firstlook-photos.py</code>): архив
+      снят сверху и с расстояния, современный кадр — снизу и крупно, поэтому пара совмещается
+      по опорному отрезку «вершина иглы → антаблемент колоннады» и доводится по контрольному
+      наложению. Без этого здание прыгает под границей.</li>
+    </ul>
+    <div class="note"><b>Права.</b> Архивные кадры взяты с PastVu, съёмка 1941–1945, авторы
+    в большинстве не названы — статус <code>pending</code>: для стенда материал годится,
+    для публичной страницы дня каждый кадр либо подтверждается, либо заменяется. Современный
+    снимок — Wikimedia Commons, автор Wolfgang Moroder, лицензия CC BY-SA 3.0, подпись под
+    кадром обязательна. Паспорт — <code>pilot-arhitektura/media/pastvu/RIGHTS.md</code>.</div>
+    <div class="note">Точка съёмки у архивного и современного кадра разная — одинакового
+    ракурса за восемьдесят лет не существует. Поэтому шторка сводит верх башни, где и живёт
+    сюжет, а не весь фасад: честнее показать совпадение иглы, чем подделать совпадение целого.</div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Стенд движка «Первозданный облик» · механики M-39, M-47, M-48, M-49 из реестра
+    <code>docs/interactive/REGISTRY.md</code> · «Русская цивилизация»
+  </div>
+</footer>
+
+<script>
+window.MUSEUM_FIRSTLOOK = [
+  {
+    mount:'#firstlook-izba',
+    eyebrow:'Шторка · было и стало',
+    title:'Адмиралтейская игла: чехол 1943 года и золото сегодня',
+    lead:'Потяни границу поперёк кадра. Слева — блокадный снимок: шпиль зашит в серый чехол, башня растворяется в ряду крыш. Справа — тот же шпиль сегодня, с той же высоты видно кораблик, часы и статуи у колоннады.',
+    mode:'shutter',
+    ratio:'3/4',
+    maxw:'560px',
+    start:52,
+    states:[
+      { date:'1943', label:'Под чехлом',
+        img:'media/firstlook/photo/spire-1943-shrouded.jpg',
+        alt:'Адмиралтейство, 1943 год: шпиль зашит в тёмный маскировочный чехол, город вокруг лежит в дымке',
+        kind:'Архивная фотография',
+        caption:'Золочёная игла двести лет служила городу ориентиром — в блокаду она стала ориентиром для артиллеристов на Пулковских высотах. Шпиль зашили в чехол, и сверху башня превратилась в серое пятно среди крыш.',
+        source:'PastVu, снимок 1943 года (cid 2000049); правовой статус кадра уточняется' },
+      { date:'сегодня', label:'Снова золото',
+        img:'media/firstlook/photo/spire-today.jpg',
+        alt:'Башня Адмиралтейства сегодня: золочёный шпиль с корабликом, часы, колоннада со статуями',
+        kind:'Фотография',
+        caption:'Кораблик, часы, статуи над колоннадой — всё на месте. Разница между двумя половинами кадра и есть цена работы верхолазов, четыре года не сходивших со шпиля.',
+        source:'Wikimedia Commons, фото: Wolfgang Moroder, CC BY-SA 3.0' }
+    ]
+  },
+  {
+    mount:'#firstlook-spire',
+    eyebrow:'Даты одного места · как прятали Ленинград',
+    title:'Четыре даты Адмиралтейской иглы',
+    lead:'Переключай даты стрелками или кнопками. Это не реконструкция: каждый кадр — документальный снимок из городского архива, кроме последнего, снятого в наши дни.',
+    mode:'eras',
+    ratio:'3/4',
+    maxw:'560px',
+    states:[
+      { date:'1941', label:'Маскировка',
+        img:'media/firstlook/photo/spire-1941-masking.jpg',
+        alt:'1941 год: альпинистка работает на кровле у основания шпиля, закрывая золочение маскировкой',
+        kind:'Архивная фотография',
+        caption:'Осень 1941-го. На высоту подняли не строителей, а спортсменов-альпинистов: только они могли работать на конусе шпиля без лесов. На снимке — А. И. Пригожева во время маскировки.',
+        source:'PastVu, снимок 1941 года (cid 936116); правовой статус кадра уточняется' },
+      { date:'1942', label:'Ремонт на высоте',
+        img:'media/firstlook/photo/spire-1942-repair.jpg',
+        alt:'1942 год: верхолаз Ольга Фирсова на верёвках у шпиля ремонтирует маскировочный чехол над блокадным городом',
+        kind:'Архивная фотография',
+        caption:'Ветер рвал чехол, и его чинили прямо на весу. Ольга Фирсова — из четвёрки ленинградских верхолазов, укрывавших городские доминанты; за спиной у неё блокадный город, которому эта работа стоила меньше попаданий.',
+        source:'PastVu, снимок 1942 года (cid 129713); правовой статус кадра уточняется' },
+      { date:'1945', label:'Чехол снимают',
+        img:'media/firstlook/photo/spire-1945-unveil.jpg',
+        alt:'1945 год: верхолаз на шаре под корабликом снимает маскировочный чехол со шпиля Адмиралтейства',
+        kind:'Архивная фотография',
+        caption:'Весна 1945-го, тот же шар под корабликом, те же верёвки — но работа обратная. Снятие чехла в городе считали одним из первых видимых признаков конца войны.',
+        source:'PastVu, снимок 1945 года (cid 754859); правовой статус кадра уточняется' },
+      { date:'сегодня', label:'Снова золото',
+        img:'media/firstlook/photo/spire-today.jpg',
+        alt:'Башня Адмиралтейства сегодня: золочёный шпиль с корабликом, часы, колоннада со статуями',
+        kind:'Фотография',
+        caption:'Ради этого кадра и показывают три предыдущих: золото на месте, потому что четверо людей четыре года лазали на иглу под обстрелом.',
+        source:'Wikimedia Commons, фото: Wolfgang Moroder, CC BY-SA 3.0' }
+    ]
+  }
+];
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-firstlook.js"></script>
+<script>window.MUSEUM_SUPPORT={
+  museum:'Музей русской архитектуры и зодчества',
+  page:'стенде «Первозданный облик»',
+  peak:'#support-anchor'
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-support.js"></script>
+</body>
+</html>
