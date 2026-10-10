@@ -1,0 +1,69 @@
+{
+  "test_id": "empty-390",
+  "code": "empty",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/karikatura/day-12jan-tri-podpisi.html",
+  "steps": [
+    "Inspect concrete activity contents"
+  ],
+  "checks": [
+    {
+      "label": "Three versions offered",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "One version open",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    },
+    {
+      "label": "Six caption cards offered",
+      "actual": 6,
+      "expected": 6,
+      "ok": true
+    },
+    {
+      "label": "Sheets start empty",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Sheet announced as unsigned",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Completion badge hidden",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Three dossiers offered",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Verdict hidden before assembly",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Promised quiz count",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "empty-390.png",
+  "status": "pass"
+}

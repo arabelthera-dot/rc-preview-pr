@@ -1,0 +1,75 @@
+{
+  "test_id": "mobile-390",
+  "code": "mobile",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/karikatura/day-12jan-tri-podpisi.html",
+  "steps": [
+    "Complete page-specific action and quiz"
+  ],
+  "checks": [
+    {
+      "label": "Caption of another version earns nothing",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Wrong version is explained",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    },
+    {
+      "label": "Six captions placed",
+      "actual": 6,
+      "expected": 6,
+      "ok": true
+    },
+    {
+      "label": "Reading reports all three versions",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Completion badge shown",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Three dossiers opened",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Verdict says the drawing never changed",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Cancelled share earns nothing",
+      "actual": 95,
+      "expected": 95,
+      "ok": true
+    },
+    {
+      "label": "Maximum at 390",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "No horizontal overflow",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "mobile-390.png",
+  "status": "pass"
+}

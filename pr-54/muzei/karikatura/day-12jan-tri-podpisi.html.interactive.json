@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "page_sha256": "95e30e7ce11d0b38e7507e4c84b8fc0e81589d7779cca420d8f060641378b386",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-10T17:17:22.579Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/b6/plans/karikatura-day12.mjs",
+  "inputs": {
+    "day-12jan-tri-podpisi.html": "95e30e7ce11d0b38e7507e4c84b8fc0e81589d7779cca420d8f060641378b386",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/b6/plans/karikatura-day12.mjs": "d311d420bfd30a645dc4f3d28d9210fe74aa4197fed3968d76c01d56edbaf72c",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media/cruikshank-dung-cart-1813.jpg": "695c2ae2cad9fd4af26a56e5831d4f5dff0bddb2a1ae1d7e74ce66493062069d",
+    "calendar-karikatura.js": "cb2251b8acf62377de3f0a10330e963857c43e4d0cf17b0e66a9cd13eb6aa509",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-analytics-v2.js": "63c87a66c44c4631ac15a2308f3e74a87751eef8ea8762121ff514845d04651d",
+    "../../assets/museum-video.js": "de33b1a1c1ece4c2ab4ad7975d0fe20114183f19ca598c5461abe123c5c7d38f",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2": "ca157063339ac4ad418f214f3abfed119b0798ab4d377386ce5c9e5a7a435ebd",
+    "../../tools/checks/karikatura-1010/day12-after/entry-390.png": "1a1eecb70aed3ce0b044df9e6b4d2a12bcddd944031e11f2a446fcb726e7fc41",
+    "../../tools/checks/karikatura-1010/day12-after/entry-390.json": "f00e4ce331442b0d40c557338e14b7e19aa326ba3bc16bae0149f638632f5ec3",
+    "../../tools/checks/karikatura-1010/day12-after/wrong-390.png": "6812591e8d56efc7b79c1dedd682d14206558ed76595c0e98f32d67583f208a1",
+    "../../tools/checks/karikatura-1010/day12-after/wrong-390.json": "66a5cc6bc6fa08960b178dcdc5136c8f45bf288b5911991cb9cbd08747d7780e",
+    "media/venetsianov-dolbila-1812.jpg": "e514cac23aec00950c7a39061e992161f87cc1ecd539fcee61dae560d9318de5",
+    "../../tools/checks/karikatura-1010/day12-after/reset-390.png": "3f34e3e5bb73ea47c73dc8d2e5732f740fe29fa7d876c1e08cffe4f035a1ce0f",
+    "../../tools/checks/karikatura-1010/day12-after/reset-390.json": "937675654c90f0af8aeed354b2b03223818f202922919a05c2c09b7e4b395fc4",
+    "../../tools/checks/karikatura-1010/day12-after/mobile-390.png": "d5a34b89eb8c02d7d303084af0cbec2ec5805f59227dcd9b737e5e2d383af33c",
+    "../../tools/checks/karikatura-1010/day12-after/mobile-390.json": "221e6d009bd562162adff2928c99beb4e36f6e9c071fb786cafdceec91c9d40d",
+    "media/cruikshank-chopping-blocks-1813.jpg": "fbf5a0aea3547556574652064da7d722b836000e248def295a9ce1f939f4c492",
+    "../../tools/checks/karikatura-1010/day12-after/mobile-1440.png": "85ebdfcb2ba0e94383d834b29d810c505e59c6952b46825f4535c70c806f1608",
+    "../../tools/checks/karikatura-1010/day12-after/mobile-1440.json": "1ea893ad2ebdda5593081c61096228b9fba33c7687ab6017dc814ea758c19eed",
+    "../../tools/checks/karikatura-1010/day12-after/nojs-390.png": "5f22a9c8dba9f88ac8d311934bedffc0b19a2449cbbde358174b9edf5f9db63f",
+    "../../tools/checks/karikatura-1010/day12-after/nojs-390.json": "ab87181c9e2bb9aa836b30ac2c511d9de93e4cdda49a8581fa666435aa55806e",
+    "../../tools/checks/karikatura-1010/day12-after/score-390.png": "458aee5f2dcac27434d3eb4acc9a9be5ca0b2aa841f7ca6dfade3ffdfd1debed",
+    "../../tools/checks/karikatura-1010/day12-after/score-390.json": "c8f9adc992a407aede7f8bf71a6c6e8f01c0b7ca2e7fbe7f6b4c1853742ffa40",
+    "../../tools/checks/karikatura-1010/day12-after/main-390.png": "3f34e3e5bb73ea47c73dc8d2e5732f740fe29fa7d876c1e08cffe4f035a1ce0f",
+    "../../tools/checks/karikatura-1010/day12-after/main-390.json": "6c72cc46f43a076d75f5e6a77a1e286f42fe09ebc2cc884e81dc6f4c5965cc37",
+    "../../tools/checks/karikatura-1010/day12-after/empty-390.png": "b14c47a2fd3588c5b8e05fb92a35b92efe7daf8e6a1de62095a81ee63f22f801",
+    "../../tools/checks/karikatura-1010/day12-after/empty-390.json": "b2063ab1ebe0f4078b13c660518c79136c47956220d23e5e15cebf97316454bf"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day12-after/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day12-after/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day12-after/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day12-after/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day12-after/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/karikatura-1010/day12-after/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day12-after/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day12-after/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day12-after/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
