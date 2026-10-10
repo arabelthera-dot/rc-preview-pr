@@ -1,0 +1,63 @@
+{
+  "test_id": "empty-390",
+  "code": "empty",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/karikatura/day-11jan-terebenev.html",
+  "steps": [
+    "Inspect concrete activity contents"
+  ],
+  "checks": [
+    {
+      "label": "Eight link words offered",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    },
+    {
+      "label": "Five slots to fill",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    },
+    {
+      "label": "No slot filled yet",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Chain announced as empty",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Chain completion badge hidden",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Three dossiers offered",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Verdict hidden before the chain",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Promised quiz count",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "empty-390.png",
+  "status": "pass"
+}

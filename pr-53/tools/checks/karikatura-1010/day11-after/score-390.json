@@ -1,0 +1,93 @@
+{
+  "test_id": "score-390",
+  "code": "score",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/karikatura/day-11jan-terebenev.html",
+  "steps": [
+    "Earn all stated rewards"
+  ],
+  "checks": [
+    {
+      "label": "Chain starts empty",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Plausible but wrong link earns nothing",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Wrong link is explained",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    },
+    {
+      "label": "Out-of-order link earns nothing",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Five links placed",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    },
+    {
+      "label": "Five slots filled",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    },
+    {
+      "label": "Chain reported as assembled",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Reading names the whole chain",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Three dossiers opened",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Verdict states the chain",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Cancelled share earns nothing",
+      "actual": 95,
+      "expected": 95,
+      "ok": true
+    },
+    {
+      "label": "Reachable maximum",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "Repeat does not exceed maximum",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "score-390.png",
+  "status": "pass"
+}
