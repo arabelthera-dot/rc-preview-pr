@@ -1,0 +1,70 @@
+{
+  "test_id": "reset-390",
+  "code": "reset",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/arhitektura/dubrovicy.html",
+  "steps": [
+    "Собрать два нижних яруса",
+    "Начать заново",
+    "Повторить сборку после сброса",
+    "Сбросить и начать снова"
+  ],
+  "checks": [
+    {
+      "label": "Два яруса собраны",
+      "actual": 2,
+      "expected": 2,
+      "ok": true
+    },
+    {
+      "label": "Сброс очищает последовательность",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Сброс возвращает исходную подсказку",
+      "actual": "Выбери нижний ярус.",
+      "expected": "Выбери нижний ярус.",
+      "ok": true
+    },
+    {
+      "label": "Сброс включает все ярусы снова",
+      "actual": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "expected": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "ok": true
+    },
+    {
+      "label": "После сброса собирается ровно четыре яруса",
+      "actual": 4,
+      "expected": 4,
+      "ok": true
+    },
+    {
+      "label": "Сборка подтверждена словами",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Сброс не накапливает повторную сборку",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "reset-390.png",
+  "status": "pass"
+}

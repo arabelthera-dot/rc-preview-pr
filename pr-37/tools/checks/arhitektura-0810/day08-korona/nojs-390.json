@@ -1,0 +1,43 @@
+{
+  "test_id": "nojs-390",
+  "code": "nojs",
+  "width": 390,
+  "javascript_enabled": false,
+  "url": "http://b6.local/muzei/arhitektura/dubrovicy.html",
+  "steps": [],
+  "checks": [
+    {
+      "label": "Вместо пустой игры — текстовый эквивалент",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    },
+    {
+      "label": "Текстовый эквивалент игры содержателен",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Предметный текст дня читается без JavaScript",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Текстовая альтернатива сравнению на месте без JavaScript",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Источники и права читаются без JavaScript",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "nojs-390.png",
+  "status": "pass"
+}

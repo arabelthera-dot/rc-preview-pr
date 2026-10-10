@@ -1,0 +1,394 @@
+{
+  "_": "СГЕНЕРИРОВАНО tools/video-sync.py из docs/video/REGISTRY.json. Руками не править.",
+  "version": 2,
+  "updated": "2026-10-10",
+  "hosting": {
+    "base": ""
+  },
+  "releases": {
+    "izobreteniya/05jan-shukhov": {
+      "title": "История в 82 секунды",
+      "note": "Часть кадров сгенерирована нейросетью (Genosai) — не архивная съёмка. Закадровый текст озвучен синтезом речи.",
+      "horizontal": {
+        "file": "izobreteniya/05jan-shukhov/day-05jan-shukhov.mp4",
+        "local": "muzei/izobreteniya/video/day-05jan-shukhov.mp4",
+        "v": 3,
+        "w": 1920,
+        "h": 1080,
+        "sec": 82,
+        "mb": 20.8
+      },
+      "vertical": {
+        "file": "izobreteniya/05jan-shukhov/day-05jan-shukhov-9x16.mp4",
+        "local": "muzei/izobreteniya/video/day-05jan-shukhov-9x16.mp4",
+        "v": 1,
+        "w": 1080,
+        "h": 1920,
+        "sec": 34.8,
+        "mb": 11.9
+      },
+      "poster": {
+        "file": "izobreteniya/05jan-shukhov/day-05jan-shukhov-poster.jpg",
+        "local": "muzei/izobreteniya/video/day-05jan-shukhov-poster.jpg",
+        "v": 1
+      },
+      "poster_vertical": {
+        "file": "izobreteniya/05jan-shukhov/day-05jan-shukhov-9x16-poster.jpg",
+        "local": "muzei/izobreteniya/video/day-05jan-shukhov-9x16-poster.jpg",
+        "v": 1
+      }
+    },
+    "arhitektura/01jan-kizhi": {
+      "title": "Все ли эти здания всегда стояли здесь?",
+      "note": "Документальные фотографии: Alexxx1979, CC BY-SA 4.0. Две сцены созданы GenosAI и маркированы как образовательные ИИ-визуализации, не хроника. Голос и предметная фонограмма синтезированы и раскрыты в паспорте.",
+      "horizontal": {
+        "file": "arhitektura/01jan-kizhi/day-01jan-kizhi.mp4",
+        "local": "muzei/arhitektura/video/day-01jan-kizhi.mp4",
+        "v": 2,
+        "w": 1920,
+        "h": 1080,
+        "sec": 89.7,
+        "mb": 21.3
+      },
+      "vertical": {
+        "file": "arhitektura/01jan-kizhi/day-01jan-kizhi-9x16.mp4",
+        "local": "muzei/arhitektura/video/day-01jan-kizhi-9x16.mp4",
+        "v": 2,
+        "w": 1080,
+        "h": 1920,
+        "sec": 49.6,
+        "mb": 12.6
+      },
+      "poster": {
+        "file": "arhitektura/01jan-kizhi/day-01jan-kizhi-poster.jpg",
+        "local": "muzei/arhitektura/video/day-01jan-kizhi-poster.jpg",
+        "v": 2
+      },
+      "poster_vertical": {
+        "file": "arhitektura/01jan-kizhi/day-01jan-kizhi-9x16-poster.jpg",
+        "local": "muzei/arhitektura/video/day-01jan-kizhi-9x16-poster.jpg",
+        "v": 2
+      }
+    },
+    "arhitektura/02jan-dvorets": {
+      "title": "Дворец XVII века — или здание 2010 года?",
+      "note": "Современные фотографии: A. Savin и Mvad, CC BY-SA 3.0; Юрий Д.К., CC BY 4.0. Исторические листы — общественное достояние. Одна сцена создана GenosAI и маркирована как образовательная ИИ-визуализация, не хроника. Голос и предметная фонограмма синтезированы и раскрыты в паспорте.",
+      "horizontal": {
+        "file": "arhitektura/02jan-dvorets/day-02jan-dvorets.mp4",
+        "local": "muzei/arhitektura/video/day-02jan-dvorets.mp4",
+        "v": 1,
+        "w": 1920,
+        "h": 1080,
+        "sec": 85.9,
+        "mb": 21.6
+      },
+      "vertical": {
+        "file": "arhitektura/02jan-dvorets/day-02jan-dvorets-9x16.mp4",
+        "local": "muzei/arhitektura/video/day-02jan-dvorets-9x16.mp4",
+        "v": 1,
+        "w": 1080,
+        "h": 1920,
+        "sec": 42.0,
+        "mb": 12.7
+      },
+      "poster": {
+        "file": "arhitektura/02jan-dvorets/day-02jan-dvorets-poster.jpg",
+        "local": "muzei/arhitektura/video/day-02jan-dvorets-poster.jpg",
+        "v": 1
+      },
+      "poster_vertical": {
+        "file": "arhitektura/02jan-dvorets/day-02jan-dvorets-9x16-poster.jpg",
+        "local": "muzei/arhitektura/video/day-02jan-dvorets-9x16-poster.jpg",
+        "v": 1
+      }
+    },
+    "arhitektura/03jan-astashovo": {
+      "title": "С какого повреждения деревянный дом начинает умирать?",
+      "note": "Документальные фотографии: IvanShkaev, CC BY-SA 3.0; Olga Shuklina, Usadboved / Vadim Razumov и Pilgrim-chik, CC BY-SA 4.0; снимок 1910 года — общественное достояние. Одна сцена создана GenosAI и маркирована как образовательная ИИ-визуализация, не хроника. Голос и предметная фонограмма синтезированы и раскрыты в паспорте.",
+      "horizontal": {
+        "file": "arhitektura/03jan-astashovo/day-03jan-astashovo.mp4",
+        "local": "muzei/arhitektura/video/day-03jan-astashovo.mp4",
+        "v": 1,
+        "w": 1920,
+        "h": 1080,
+        "sec": 78.5,
+        "mb": 21.4
+      },
+      "vertical": {
+        "file": "arhitektura/03jan-astashovo/day-03jan-astashovo-9x16.mp4",
+        "local": "muzei/arhitektura/video/day-03jan-astashovo-9x16.mp4",
+        "v": 1,
+        "w": 1080,
+        "h": 1920,
+        "sec": 39.9,
+        "mb": 12.7
+      },
+      "poster": {
+        "file": "arhitektura/03jan-astashovo/day-03jan-astashovo-poster.jpg",
+        "local": "muzei/arhitektura/video/day-03jan-astashovo-poster.jpg",
+        "v": 1
+      },
+      "poster_vertical": {
+        "file": "arhitektura/03jan-astashovo/day-03jan-astashovo-9x16-poster.jpg",
+        "local": "muzei/arhitektura/video/day-03jan-astashovo-9x16-poster.jpg",
+        "v": 1
+      }
+    },
+    "arhitektura/07jan-nerl": {
+      "title": "Зачем маленькому храму основание высотой 5,3 метра?",
+      "note": "Документальные фотографии с открытыми лицензиями; образовательные схемы маркированы, генеративные изображения и исторические реконструкции не использованы. Голос и предметная фонограмма синтезированы и раскрыты в паспорте.",
+      "horizontal": {
+        "file": "arhitektura/07jan-nerl/day-07jan-nerl.mp4",
+        "local": "muzei/arhitektura/video/day-07jan-nerl.mp4",
+        "v": 1,
+        "w": 1920,
+        "h": 1080,
+        "sec": 62.4,
+        "mb": 19.8
+      },
+      "vertical": {
+        "file": "arhitektura/07jan-nerl/day-07jan-nerl-9x16.mp4",
+        "local": "muzei/arhitektura/video/day-07jan-nerl-9x16.mp4",
+        "v": 1,
+        "w": 1080,
+        "h": 1920,
+        "sec": 38.4,
+        "mb": 12.9
+      },
+      "poster": {
+        "file": "arhitektura/07jan-nerl/day-07jan-nerl-poster.jpg",
+        "local": "muzei/arhitektura/video/day-07jan-nerl-poster.jpg",
+        "v": 1
+      },
+      "poster_vertical": {
+        "file": "arhitektura/07jan-nerl/day-07jan-nerl-9x16-poster.jpg",
+        "local": "muzei/arhitektura/video/day-07jan-nerl-9x16-poster.jpg",
+        "v": 1
+      }
+    },
+    "izobreteniya/01jan-cabletv": {
+      "title": "История в 84 секунды",
+      "note": "Часть кадров сгенерирована нейросетью (Genosai) — не архивная съёмка. Закадровый текст озвучен синтезом речи.",
+      "horizontal": {
+        "file": "izobreteniya/01jan-cabletv/day-01jan-cabletv.mp4",
+        "local": "muzei/izobreteniya/video/day-01jan-cabletv.mp4",
+        "v": 1,
+        "w": 1920,
+        "h": 1080,
+        "sec": 84,
+        "mb": 20.8
+      },
+      "vertical": {
+        "file": "izobreteniya/01jan-cabletv/day-01jan-cabletv-9x16.mp4",
+        "local": "muzei/izobreteniya/video/day-01jan-cabletv-9x16.mp4",
+        "v": 1,
+        "w": 1080,
+        "h": 1920,
+        "sec": 42.7,
+        "mb": 12.4
+      },
+      "poster": {
+        "file": "izobreteniya/01jan-cabletv/day-01jan-cabletv-poster.jpg",
+        "local": "muzei/izobreteniya/video/day-01jan-cabletv-poster.jpg",
+        "v": 1
+      },
+      "poster_vertical": {
+        "file": "izobreteniya/01jan-cabletv/day-01jan-cabletv-9x16-poster.jpg",
+        "local": "muzei/izobreteniya/video/day-01jan-cabletv-9x16-poster.jpg",
+        "v": 1
+      }
+    },
+    "izobreteniya/02jan-luna1": {
+      "title": "История в 90 секунд",
+      "note": "Все кадры ролика созданы нейросетью (Genosai) — образовательные визуализации, не архивная съёмка; в реестр источников они не идут. Факты — по русским официальным и научным источникам со страницы дня. Закадровый текст озвучен синтезом речи (edge-tts).",
+      "horizontal": {
+        "file": "izobreteniya/02jan-luna1/day-02jan-luna1.mp4",
+        "local": "muzei/izobreteniya/video/day-02jan-luna1.mp4",
+        "v": 1,
+        "w": 1920,
+        "h": 1080,
+        "sec": 90.4,
+        "mb": 21.2
+      },
+      "vertical": {
+        "file": "izobreteniya/02jan-luna1/day-02jan-luna1-9x16.mp4",
+        "local": "muzei/izobreteniya/video/day-02jan-luna1-9x16.mp4",
+        "v": 1,
+        "w": 1080,
+        "h": 1920,
+        "sec": 45.8,
+        "mb": 12.9
+      },
+      "poster": {
+        "file": "izobreteniya/02jan-luna1/day-02jan-luna1-poster.jpg",
+        "local": "muzei/izobreteniya/video/day-02jan-luna1-poster.jpg",
+        "v": 1
+      },
+      "poster_vertical": {
+        "file": "izobreteniya/02jan-luna1/day-02jan-luna1-9x16-poster.jpg",
+        "local": "muzei/izobreteniya/video/day-02jan-luna1-9x16-poster.jpg",
+        "v": 1
+      }
+    },
+    "karikatura/02jan-napoleon": {
+      "title": "Пришёл за славой — ушёл с носом",
+      "note": "Документальные изображения: листы Ивана Теребенева 1812–1813 годов (Государственный исторический музей), общественное достояние. Закадровый голос синтезирован (edge-tts).",
+      "horizontal": {
+        "file": "karikatura/02jan-napoleon/day-02jan-napoleon.mp4",
+        "local": "muzei/karikatura/video/day-02jan-napoleon.mp4",
+        "v": 2,
+        "w": 1920,
+        "h": 1080,
+        "sec": 62.9,
+        "mb": 21.3
+      },
+      "vertical": {
+        "file": "karikatura/02jan-napoleon/day-02jan-napoleon-9x16.mp4",
+        "local": "muzei/karikatura/video/day-02jan-napoleon-9x16.mp4",
+        "v": 1,
+        "w": 1080,
+        "h": 1920,
+        "sec": 35.7,
+        "mb": 12.7
+      },
+      "poster": {
+        "file": "karikatura/02jan-napoleon/day-02jan-napoleon-poster.jpg",
+        "local": "muzei/karikatura/video/day-02jan-napoleon-poster.jpg",
+        "v": 2
+      },
+      "poster_vertical": {
+        "file": "karikatura/02jan-napoleon/day-02jan-napoleon-9x16-poster.jpg",
+        "local": "muzei/karikatura/video/day-02jan-napoleon-9x16-poster.jpg",
+        "v": 1
+      }
+    },
+    "nesdayutsya/06aug-osovets": {
+      "title": "Атака мертвецов: 60 против 7000",
+      "note": "Архивные фотографии крепости Осовец 1915 года — Wikimedia Commons (общественное достояние). Сцена газового облака сгенерирована нейросетью (Genosai, veo-3.1-fast) — не архивная съёмка, в реестр источников не идёт. Закадровый текст озвучен синтезом речи (edge-tts).",
+      "horizontal": {
+        "file": "nesdayutsya/06aug-osovets/day-06aug-osovets.mp4",
+        "local": "muzei/ne-sdayutsya/video/day-06aug-osovets.mp4",
+        "v": 1,
+        "w": 1920,
+        "h": 1080,
+        "sec": 69.4,
+        "mb": 21.1
+      },
+      "vertical": {
+        "file": "nesdayutsya/06aug-osovets/day-06aug-osovets-9x16.mp4",
+        "local": "muzei/ne-sdayutsya/video/day-06aug-osovets-9x16.mp4",
+        "v": 1,
+        "w": 1080,
+        "h": 1920,
+        "sec": 35.0,
+        "mb": 12.5
+      },
+      "poster": {
+        "file": "nesdayutsya/06aug-osovets/day-06aug-osovets-poster.jpg",
+        "local": "muzei/ne-sdayutsya/video/day-06aug-osovets-poster.jpg",
+        "v": 1
+      },
+      "poster_vertical": {
+        "file": "nesdayutsya/06aug-osovets/day-06aug-osovets-9x16-poster.jpg",
+        "local": "muzei/ne-sdayutsya/video/day-06aug-osovets-9x16-poster.jpg",
+        "v": 1
+      }
+    },
+    "nesdayutsya/01jan-kolovrat": {
+      "title": "Евпатий Коловрат: пепелище Рязани, 1700 против орды",
+      "note": "Визуалы реальные: картина М. Преснякова «Евпатий Коловрат» (2009, Wikimedia Commons), миниатюра Лицевого летописного свода XVI века (общественное достояние), фото памятника в Рязани (Wikimedia Commons). Genosai не использовался. Закадровый текст озвучен синтезом речи (edge-tts).",
+      "horizontal": {
+        "file": "nesdayutsya/01jan-kolovrat/day-01jan-kolovrat.mp4",
+        "local": "muzei/ne-sdayutsya/video/day-01jan-kolovrat.mp4",
+        "v": 1,
+        "w": 1920,
+        "h": 1080,
+        "sec": 68.6,
+        "mb": 21.3
+      },
+      "vertical": {
+        "file": "nesdayutsya/01jan-kolovrat/day-01jan-kolovrat-9x16.mp4",
+        "local": "muzei/ne-sdayutsya/video/day-01jan-kolovrat-9x16.mp4",
+        "v": 1,
+        "w": 1080,
+        "h": 1920,
+        "sec": 35.5,
+        "mb": 12.9
+      },
+      "poster": {
+        "file": "nesdayutsya/01jan-kolovrat/day-01jan-kolovrat-poster.jpg",
+        "local": "muzei/ne-sdayutsya/video/day-01jan-kolovrat-poster.jpg",
+        "v": 1
+      },
+      "poster_vertical": {
+        "file": "nesdayutsya/01jan-kolovrat/day-01jan-kolovrat-9x16-poster.jpg",
+        "local": "muzei/ne-sdayutsya/video/day-01jan-kolovrat-9x16-poster.jpg",
+        "v": 1
+      }
+    },
+    "arhitektura/04jan-vyatskoe": {
+      "title": "Почему ярославское село выглядит как нарядный городской квартал?",
+      "note": "Документальные фотографии: Виталий Барсов, Blooming soul, Чуринъ, Vyatskoe — CC BY-SA 4.0. Генерация GenosAI не применялась. Голос и фонограмма синтезированы и раскрыты в паспорте выпуска.",
+      "horizontal": {
+        "file": "arhitektura/04jan-vyatskoe/day-04jan-vyatskoe.mp4",
+        "local": "muzei/arhitektura/video/day-04jan-vyatskoe.mp4",
+        "v": 1,
+        "w": 1920,
+        "h": 1080,
+        "sec": 85.95,
+        "mb": 21.1
+      },
+      "vertical": {
+        "file": "arhitektura/04jan-vyatskoe/day-04jan-vyatskoe-9x16.mp4",
+        "local": "muzei/arhitektura/video/day-04jan-vyatskoe-9x16.mp4",
+        "v": 1,
+        "w": 1080,
+        "h": 1920,
+        "sec": 44.74,
+        "mb": 13.0
+      },
+      "poster": {
+        "file": "arhitektura/04jan-vyatskoe/day-04jan-vyatskoe-poster.jpg",
+        "local": "muzei/arhitektura/video/day-04jan-vyatskoe-poster.jpg",
+        "v": 1
+      },
+      "poster_vertical": {
+        "file": "arhitektura/04jan-vyatskoe/day-04jan-vyatskoe-9x16-poster.jpg",
+        "local": "muzei/arhitektura/video/day-04jan-vyatskoe-9x16-poster.jpg",
+        "v": 1
+      }
+    },
+    "arhitektura/08jan-dubrovicy": {
+      "title": "Почему над куполом храма в Дубровицах надета золотая корона?",
+      "note": "Документальные фотографии: Елена Нечипоренко, Goussew, Ludvig14, Никонико962, Dmitry Ivanov — CC BY-SA 4.0; гравюра С. Ф. Щедрина (1790-е) и фотография П. Павлова (около 1900 года) — общественное достояние. Образовательная схема завершения маркирована в кадре. Генерация GenosAI не применялась. Голос и фонограмма синтезированы и раскрыты в паспорте выпуска.",
+      "horizontal": {
+        "file": "arhitektura/08jan-dubrovicy/day-08jan-dubrovicy.mp4",
+        "local": "muzei/arhitektura/video/day-08jan-dubrovicy.mp4",
+        "v": 1,
+        "w": 1920,
+        "h": 1080,
+        "sec": 68.3,
+        "mb": 21.4
+      },
+      "vertical": {
+        "file": "arhitektura/08jan-dubrovicy/day-08jan-dubrovicy-9x16.mp4",
+        "local": "muzei/arhitektura/video/day-08jan-dubrovicy-9x16.mp4",
+        "v": 1,
+        "w": 1080,
+        "h": 1920,
+        "sec": 38.7,
+        "mb": 12.9
+      },
+      "poster": {
+        "file": "arhitektura/08jan-dubrovicy/day-08jan-dubrovicy-poster.jpg",
+        "local": "muzei/arhitektura/video/day-08jan-dubrovicy-poster.jpg",
+        "v": 1
+      },
+      "poster_vertical": {
+        "file": "arhitektura/08jan-dubrovicy/day-08jan-dubrovicy-9x16-poster.jpg",
+        "local": "muzei/arhitektura/video/day-08jan-dubrovicy-9x16-poster.jpg",
+        "v": 1
+      }
+    }
+  }
+}

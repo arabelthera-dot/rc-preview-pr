@@ -1,0 +1,75 @@
+{
+  "test_id": "empty-390",
+  "code": "empty",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/arhitektura/dubrovicy.html",
+  "steps": [
+    "Осмотреть названия интерактивов"
+  ],
+  "checks": [
+    {
+      "label": "Обещаны два состояния силуэта",
+      "actual": 2,
+      "expected": 2,
+      "ok": true
+    },
+    {
+      "label": "Обещаны четыре яруса сборки",
+      "actual": 4,
+      "expected": 4,
+      "ok": true
+    },
+    {
+      "label": "Обещаны три варианта ответа о верхе",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Обещаны три варианта проверки понимания",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Обещаны два маршрута осмотра",
+      "actual": 2,
+      "expected": 2,
+      "ok": true
+    },
+    {
+      "label": "Главный интерактив назван",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Игра названа",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Проверка понимания названа",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Подпись об источниках непустая",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Источники перечислены ссылками",
+      "actual": 4,
+      "expected": 4,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "empty-390.png",
+  "status": "pass"
+}

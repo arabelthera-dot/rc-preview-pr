@@ -1,0 +1,88 @@
+{
+  "test_id": "entry-390",
+  "code": "entry",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/arhitektura/dubrovicy.html",
+  "steps": [
+    "Открыть второе состояние силуэта",
+    "Новый вход в браузере"
+  ],
+  "checks": [
+    {
+      "label": "Первый вход: показано «как построено»",
+      "actual": "media/dubrovicy/siluet-kak-postroeno.webp",
+      "expected": "media/dubrovicy/siluet-kak-postroeno.webp",
+      "ok": true
+    },
+    {
+      "label": "Первый вход: состояние силуэта объявлено",
+      "actual": "Показан силуэт храма с короной и крестом.",
+      "expected": "Показан силуэт храма с короной и крестом.",
+      "ok": true
+    },
+    {
+      "label": "Первый вход: последовательность не собрана",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Первый вход: итог пуст — пройденное не выдано заранее",
+      "actual": "",
+      "expected": "",
+      "ok": true
+    },
+    {
+      "label": "Первый вход: продолжение скрыто",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Первый вход: нажата только кнопка построенного вида",
+      "actual": [
+        "true",
+        "false"
+      ],
+      "expected": [
+        "true",
+        "false"
+      ],
+      "ok": true
+    },
+    {
+      "label": "Второе состояние показывает условно снятое завершение",
+      "actual": "media/dubrovicy/siluet-uslovno-bez-zaversheniya.webp",
+      "expected": "media/dubrovicy/siluet-uslovno-bez-zaversheniya.webp",
+      "ok": true
+    },
+    {
+      "label": "Состояние объяснено словами",
+      "actual": "Завершение снято условно: видно, что осталось бы от силуэта без короны.",
+      "expected": "Завершение снято условно: видно, что осталось бы от силуэта без короны.",
+      "ok": true
+    },
+    {
+      "label": "Сравнение подсказывает ответить на вопрос",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Непройденное не выдаётся за пройденное после перезагрузки",
+      "actual": "media/dubrovicy/siluet-kak-postroeno.webp",
+      "expected": "media/dubrovicy/siluet-kak-postroeno.webp",
+      "ok": true
+    },
+    {
+      "label": "Последовательность после перезагрузки пуста",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "entry-390.png",
+  "status": "pass"
+}

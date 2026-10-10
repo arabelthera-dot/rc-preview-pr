@@ -1,0 +1,54 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/arhitektura/dubrovicy.html",
+  "steps": [
+    "Снять завершение одним движением",
+    "Вернуть построенный вид",
+    "Ответить на главный вопрос дня",
+    "Ответить повторно"
+  ],
+  "checks": [
+    {
+      "label": "Главный интерактив сменил кадр",
+      "actual": "media/dubrovicy/siluet-uslovno-bez-zaversheniya.webp",
+      "expected": "media/dubrovicy/siluet-uslovno-bez-zaversheniya.webp",
+      "ok": true
+    },
+    {
+      "label": "Главный интерактив возвращает исходный кадр",
+      "actual": "media/dubrovicy/siluet-kak-postroeno.webp",
+      "expected": "media/dubrovicy/siluet-kak-postroeno.webp",
+      "ok": true
+    },
+    {
+      "label": "Главный ответ принят",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Продолжение маршрута открылось",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Повтор не добавляет второй итог",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    },
+    {
+      "label": "Повтор не закрывает продолжение",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}

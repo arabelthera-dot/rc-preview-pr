@@ -1,0 +1,59 @@
+{
+  "test_id": "mobile-390",
+  "code": "mobile",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/arhitektura/dubrovicy.html",
+  "steps": [
+    "Собрать верх храма снизу вверх",
+    "Переключить силуэт",
+    "Ответить на вопрос о верхе"
+  ],
+  "checks": [
+    {
+      "label": "Нет горизонтального переполнения на 390",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Сборка даёт тот же результат на 390",
+      "actual": 4,
+      "expected": 4,
+      "ok": true
+    },
+    {
+      "label": "Итог сборки тот же на 390",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Кадр переключился на 390",
+      "actual": "media/dubrovicy/siluet-uslovno-bez-zaversheniya.webp",
+      "expected": "media/dubrovicy/siluet-uslovno-bez-zaversheniya.webp",
+      "ok": true
+    },
+    {
+      "label": "Подпись кадра та же на 390",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Ответ принят одинаково на 390",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Продолжение открылось на 390",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "mobile-390.png",
+  "status": "pass"
+}

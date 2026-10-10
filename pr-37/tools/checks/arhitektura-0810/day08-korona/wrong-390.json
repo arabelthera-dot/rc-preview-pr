@@ -1,0 +1,60 @@
+{
+  "test_id": "wrong-390",
+  "code": "wrong",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/arhitektura/dubrovicy.html",
+  "steps": [
+    "Назвать верхний ярус первым",
+    "Повторить неверный ярус",
+    "Неверный ответ в проверке понимания",
+    "Верный ответ проверки"
+  ],
+  "checks": [
+    {
+      "label": "Неверный ярус назван прямо",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Подсказка объясняет порядок сборки",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Неверный ярус не попал в последовательность",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Повтор неверного яруса ничего не добавляет",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Неверный ответ проверки объяснён",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Фактически верный ответ не назван ошибочным",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Верный ответ подтверждён",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "wrong-390.png",
+  "status": "pass"
+}
