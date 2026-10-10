@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "page_sha256": "6e108218b97000c17b0ee0f4b0c2ff240b56e67098ce4ab0e302704449c96b08",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-10T17:10:53.683Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/b6/plans/karikatura-day09.mjs",
+  "inputs": {
+    "day-09jan-zhurnaly-1905.html": "6e108218b97000c17b0ee0f4b0c2ff240b56e67098ce4ab0e302704449c96b08",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/b6/plans/karikatura-day09.mjs": "b2180a8488587edd6311af723c9ff691ed0e609da20769e23b195bd018fc7801",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media/bilibin-zhupel-02-1905.jpg": "80de2506d9afce6e278dfe0dbb613d3f35158fc962c7467d283e15bdb8524e8d",
+    "calendar-karikatura.js": "38231c9313abded4a015905e98e7c46b2ec8e2ee0d3944625af88e61d8e6ea12",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-analytics-v2.js": "63c87a66c44c4631ac15a2308f3e74a87751eef8ea8762121ff514845d04651d",
+    "../../assets/museum-video.js": "de33b1a1c1ece4c2ab4ad7975d0fe20114183f19ca598c5461abe123c5c7d38f",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../tools/checks/karikatura-1010/day09-after/entry-390.png": "3080d9757d2199bd6555ed5ceccb08a48a18c8156671910897e4ac45910a4c3f",
+    "../../tools/checks/karikatura-1010/day09-after/entry-390.json": "d9c20b35667c53d9d6005577552410724e0b4f55814bda1f729b025787092d9c",
+    "../../tools/checks/karikatura-1010/day09-after/wrong-390.png": "5164825488c5b145af5421a9f4821c2af11ff9ccb348b80a93457f692d0fa22c",
+    "../../tools/checks/karikatura-1010/day09-after/wrong-390.json": "be670030625d4a0cf0fc33c70fffa4be00cbc8aeffb8b34255ca8b4e3aa50dcd",
+    "media/serov-soldatushki-1905.jpg": "59b0b3c435776c97644ad28f2ebfb52dc0fe0886bd4d16e52eda15c0931aa2b1",
+    "media/shebuev-pulemet-manifest-1905.jpg": "c88d29ba8450e85be94772f8e74385339565d9ea2b525b92456d72800b7398c6",
+    "../../tools/checks/karikatura-1010/day09-after/reset-390.png": "de86c5c61ced6bfcb838aae8b1cbbc0ddd6c3e6ddfd86742d3d2cc182c94b411",
+    "../../tools/checks/karikatura-1010/day09-after/reset-390.json": "a939e67d6fa94403e43579280fdd00464bc9e72b07066f0691f431a6991e2b90",
+    "../../tools/checks/karikatura-1010/day09-after/mobile-390.png": "fb82c4ce755bee3a085a8aa29cf8d7e0dec78b878ca164f404d3497b560d09da",
+    "../../tools/checks/karikatura-1010/day09-after/mobile-390.json": "d31cfd287b3e16428916c6c6cffd8b26fc168057619e64671e75ce64c22dfaa2",
+    "../../tools/checks/karikatura-1010/day09-after/mobile-1440.png": "cd2fe91ff51e98c8159d27a0cecd2b283a0ff5dd1ef17f29ed41720506b442d8",
+    "../../tools/checks/karikatura-1010/day09-after/mobile-1440.json": "f251ff2210135f2bd47263f923a8a6b5c9e32bae15027cce0e3bf022670bddf1",
+    "../../tools/checks/karikatura-1010/day09-after/nojs-390.png": "88ccc8198a5a525473d9d88cdc5c5ac239c647461dbbade5c773d3fb2d252940",
+    "../../tools/checks/karikatura-1010/day09-after/nojs-390.json": "6a266d7d467e7795e97ce81a6cfdaf6be46f67dae3571ddf89ddb18246cd390a",
+    "../../tools/checks/karikatura-1010/day09-after/score-390.png": "b767e8fb104e2cb720d190353f36d0d64a9f18a7ee216c4de926e9217470505c",
+    "../../tools/checks/karikatura-1010/day09-after/score-390.json": "a98100968defc69cceae8318b08b29e8562e7d28ffef15d681dbd4cd7f68c6ef",
+    "../../tools/checks/karikatura-1010/day09-after/main-390.png": "49d793a75e1d2dc61d6ae02c773e7159060c5226484f55c29555c972016b0819",
+    "../../tools/checks/karikatura-1010/day09-after/main-390.json": "48be007d98b9145ebe03b070267d6973bd089d43f17e311c2d5ef1a9b8c7a4f3",
+    "../../tools/checks/karikatura-1010/day09-after/empty-390.png": "0daf01e3c465f3c41f4a5d5759517a7e413c9b03939533b94889bf530aec3e16",
+    "../../tools/checks/karikatura-1010/day09-after/empty-390.json": "eb99e79f18646d830ef7d592bdbe737b0f50659ee55a5d3e778bb7d9d0913a14"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day09-after/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day09-after/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day09-after/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day09-after/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day09-after/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/karikatura-1010/day09-after/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day09-after/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day09-after/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/karikatura-1010/day09-after/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

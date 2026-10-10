@@ -1,0 +1,27 @@
+{
+  "test_id": "entry-390",
+  "code": "entry",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/karikatura/day-09jan-zhurnaly-1905.html",
+  "steps": [
+    "Choose correct first answer"
+  ],
+  "checks": [
+    {
+      "label": "Fresh score",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Session-only answer cleared on reload",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "entry-390.png",
+  "status": "pass"
+}

@@ -1,0 +1,51 @@
+{
+  "test_id": "empty-390",
+  "code": "empty",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/karikatura/day-09jan-zhurnaly-1905.html",
+  "steps": [
+    "Inspect concrete activity contents"
+  ],
+  "checks": [
+    {
+      "label": "Three decisions offered",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Cover starts without a censor mark",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Censor has not read anything yet",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Three dossiers offered",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "No decisions taken yet",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Promised quiz count",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "empty-390.png",
+  "status": "pass"
+}

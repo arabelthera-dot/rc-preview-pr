@@ -1,0 +1,33 @@
+{
+  "test_id": "wrong-390",
+  "code": "wrong",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/karikatura/day-09jan-zhurnaly-1905.html",
+  "steps": [
+    "Choose wrong answer"
+  ],
+  "checks": [
+    {
+      "label": "Wrong answer earns nothing",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Explanation available",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Repeated answer earns nothing",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "wrong-390.png",
+  "status": "pass"
+}
