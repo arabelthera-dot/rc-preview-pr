@@ -1,0 +1,69 @@
+{
+  "test_id": "mobile-1440",
+  "code": "mobile",
+  "width": 1440,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/karikatura/day-10jan-karta-1854.html",
+  "steps": [
+    "Complete page-specific action and quiz"
+  ],
+  "checks": [
+    {
+      "label": "Slider reveals the German layer",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Slider explains what changed",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Three distortions named",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Three key notes shown",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Three dossiers opened",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Verdict says the outline stayed real",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Cancelled share earns nothing",
+      "actual": 95,
+      "expected": 95,
+      "ok": true
+    },
+    {
+      "label": "Maximum at 1440",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "No horizontal overflow",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "mobile-1440.png",
+  "status": "pass"
+}

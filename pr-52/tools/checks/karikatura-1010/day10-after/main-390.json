@@ -1,0 +1,75 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/karikatura/day-10jan-karta-1854.html",
+  "steps": [
+    "Run subject-specific main action"
+  ],
+  "checks": [
+    {
+      "label": "Slider reveals the German layer",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Slider explains what changed",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Three distortions named",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Three key notes shown",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Three dossiers opened",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Verdict says the outline stayed real",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Main action reward",
+      "actual": 65,
+      "expected": 65,
+      "ok": true
+    },
+    {
+      "label": "Used distortions are disabled",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Used dossier controls are disabled",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "No duplicate main reward",
+      "actual": 65,
+      "expected": 65,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}

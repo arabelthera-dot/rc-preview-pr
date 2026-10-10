@@ -1,0 +1,100 @@
+{
+  "test_id": "reset-390",
+  "code": "reset",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/karikatura/day-10jan-karta-1854.html",
+  "steps": [
+    "Complete main action",
+    "Reset using browser new visit"
+  ],
+  "checks": [
+    {
+      "label": "Slider reveals the German layer",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Slider explains what changed",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Three distortions named",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Three key notes shown",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Three dossiers opened",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Verdict says the outline stayed real",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Main action reward",
+      "actual": 65,
+      "expected": 65,
+      "ok": true
+    },
+    {
+      "label": "Slider reveals the German layer",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Slider explains what changed",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Three distortions named",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Three key notes shown",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Three dossiers opened",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Verdict says the outline stayed real",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Repeating after reset earns once",
+      "actual": 65,
+      "expected": 65,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "reset-390.png",
+  "status": "pass"
+}
