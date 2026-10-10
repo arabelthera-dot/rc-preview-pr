@@ -1,0 +1,35 @@
+{
+  "test_id": "reset-390",
+  "code": "reset",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-04jan-sofiya.html",
+  "steps": [
+    "Набрать награду развилки",
+    "Сброс страницы — перезагрузка без ручной очистки",
+    "Повторить то же действие после сброса"
+  ],
+  "checks": [
+    {
+      "label": "Награда набрана",
+      "actual": 10,
+      "expected": 10,
+      "ok": true
+    },
+    {
+      "label": "Сброс обнулил счёт",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Сброс не накапливает повторные награды",
+      "actual": 10,
+      "expected": 10,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "reset-390.png",
+  "status": "pass"
+}

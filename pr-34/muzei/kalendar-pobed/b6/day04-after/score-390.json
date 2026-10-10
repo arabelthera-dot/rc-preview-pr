@@ -1,0 +1,39 @@
+{
+  "test_id": "score-390",
+  "code": "score",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-04jan-sofiya.html",
+  "steps": [
+    "Полный набор уникальных наград"
+  ],
+  "checks": [
+    {
+      "label": "Объявленный максимум достижим",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "Знаменатель шкалы — 100 (сумма реестра)",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "Повтор главного действия не начисляет дважды — развилка закрыта",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Счёт не переполняет максимум",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "score-390.png",
+  "status": "pass"
+}

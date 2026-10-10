@@ -1,0 +1,35 @@
+{
+  "test_id": "reset-390",
+  "code": "reset",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-19jan-krakov.html",
+  "steps": [
+    "Набрать награду за первый вопрос",
+    "Начать заново без ручной очистки браузера",
+    "Повторить то же действие"
+  ],
+  "checks": [
+    {
+      "label": "Награда набрана",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    },
+    {
+      "label": "После начала заново счёт пуст",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Награда не удвоилась",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "reset-390.png",
+  "status": "pass"
+}

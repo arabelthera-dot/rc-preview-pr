@@ -1,0 +1,39 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-04jan-sofiya.html",
+  "steps": [
+    "Главное предметное действие — выбор на развилке M-15"
+  ],
+  "checks": [
+    {
+      "label": "Главное действие даёт очки",
+      "actual": 10,
+      "expected": 10,
+      "ok": true
+    },
+    {
+      "label": "Варианты закрыты после выбора",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Повтор не начисляет дважды",
+      "actual": 10,
+      "expected": 10,
+      "ok": true
+    },
+    {
+      "label": "Показан разбор «как было на самом деле»",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}

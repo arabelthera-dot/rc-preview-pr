@@ -1,0 +1,27 @@
+{
+  "test_id": "mobile-1440",
+  "code": "mobile",
+  "width": 1440,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-04jan-sofiya.html",
+  "steps": [
+    "Полный набор действий"
+  ],
+  "checks": [
+    {
+      "label": "Максимум достижим на 1440px",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "Нет горизонтального переполнения",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "mobile-1440.png",
+  "status": "pass"
+}

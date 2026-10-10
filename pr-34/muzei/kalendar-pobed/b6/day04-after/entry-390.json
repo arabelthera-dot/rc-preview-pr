@@ -1,0 +1,34 @@
+{
+  "test_id": "entry-390",
+  "code": "entry",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-04jan-sofiya.html",
+  "steps": [
+    "Первый шаг главного интерактива (развилка M-15)",
+    "Перезагрузка страницы"
+  ],
+  "checks": [
+    {
+      "label": "Пустой контекст: счёт 0",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Награда за пройденное",
+      "actual": 10,
+      "expected": 10,
+      "ok": true
+    },
+    {
+      "label": "Перезагрузка не сохраняет непройденное",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "entry-390.png",
+  "status": "pass"
+}

@@ -1,0 +1,25 @@
+{
+  "test_id": "nojs-390",
+  "code": "nojs",
+  "width": 390,
+  "javascript_enabled": false,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-04jan-sofiya.html",
+  "steps": [],
+  "checks": [
+    {
+      "label": "Предметный текст читается без JavaScript",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Есть текстовый эквивалент вместо пустой игры — вопросы с ответами",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "nojs-390.png",
+  "status": "pass"
+}

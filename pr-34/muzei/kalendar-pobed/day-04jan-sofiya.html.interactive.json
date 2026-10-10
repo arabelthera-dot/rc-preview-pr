@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "page_sha256": "c7b9bb649df954804f5b5504001421d443649e7d7d39decd76ad9f5858c189e6",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-10T13:27:29.376Z",
+  "browser": "151.0.7922.173",
+  "plan": "b6/day-04jan-plan.mjs",
+  "inputs": {
+    "day-04jan-sofiya.html": "c7b9bb649df954804f5b5504001421d443649e7d7d39decd76ad9f5858c189e6",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "b6/day-04jan-plan.mjs": "f09675732634bb187026de83506f77f529c6d38b7942196dd5a42545bdd3613a",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media/day-04jan-hero.svg": "69a310ee0c0a170b9ce7a5ed248356ec3af294d8a2888607eb6d5c9cb0304872",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "calendar-kalendar-pobed.js": "feab23ad710ddace637ce17c018dc99454d545d80e9612f38cb43cf5ee50563c",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../icon-192.png": "073414c383bcd7798fd7954fbb9df89db6b5a989e4d7b66a819efe3aebf84249",
+    "b6/day04-after/entry-390.png": "aac91f20923b589a728e3b6cbd71cdfee61711a60d4aad93aac61f0463843ceb",
+    "b6/day04-after/entry-390.json": "54a9926fe30bbefdf63da88bde6adcdd4d2f935a5b848446fa4258999399cf15",
+    "b6/day04-after/wrong-390.png": "c11901ca23c623e549c19bc37f18099ec8a5a97754835d387f6767dfaa450872",
+    "b6/day04-after/wrong-390.json": "20733011006f3b86f2772beb5959e2f8b6b6ae0c0f1aee10abff75b2a9aad6af",
+    "b6/day04-after/reset-390.png": "65e4bae840f80b811333c03f121923cc30f99035a23f4c14577e0a8164256d15",
+    "b6/day04-after/reset-390.json": "fa520f2943930b9af2b899a51f7d56d6a68d7580d7cb3740a7d11b70822c217f",
+    "b6/day04-after/mobile-390.png": "0daafb632dde6c40c8590a6fc7bea11949bda93f958d632f5886bf0a0bf13068",
+    "b6/day04-after/mobile-390.json": "a71b36b9fe8acd3d3fac275179a48fc6c5f3630dfc373a831020492c0241bb5f",
+    "b6/day04-after/mobile-1440.png": "25e33e9d56cf7adc00f856d45cebc79c36d16bcd3e9e4a90320708c0a7e25855",
+    "b6/day04-after/mobile-1440.json": "b837135bb170ae1c819c67b052edb17c6772ab03ad5556257172e6e6f18cfaee",
+    "b6/day04-after/nojs-390.png": "5c592235ab93d8029c3710eb2ba15d7e2a15c315a21dd46fdd9a8c0cbc5e33c7",
+    "b6/day04-after/nojs-390.json": "7809e0eed89199cff080aa2873c3e2adb7115649101b4602ca51150a43801b0a",
+    "b6/day04-after/score-390.png": "b56cfe2b59705b2c97987fc8448f3b70046acb18db99b70744b07dec132b2cfd",
+    "b6/day04-after/score-390.json": "9728071382efdfaad579b8be50baa79fdfc159f9116e3395dd0a0cb0f9c06b32",
+    "b6/day04-after/main-390.png": "0d12dc17419c854622ed3d89beca291622c31418a0b831a3d530ed10f004dcbd",
+    "b6/day04-after/main-390.json": "c9da71e7fb598b83efa73169ed127bdd744ae6916e92767bc786f7866b660b2e",
+    "b6/day04-after/empty-390.png": "c38082653308706659a3680da42c781fc1cd173850f78915206d60181b790e8d",
+    "b6/day04-after/empty-390.json": "4421f810b5809fd550dcbde2b17df728a89ada48084f959748e499698c29dd36"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "b6/day04-after/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "b6/day04-after/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "b6/day04-after/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "b6/day04-after/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "b6/day04-after/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "b6/day04-after/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "b6/day04-after/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "b6/day04-after/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "b6/day04-after/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "test_id": "wrong-390",
+  "code": "wrong",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-04jan-sofiya.html",
+  "steps": [
+    "Неверный ответ на первом вопросе"
+  ],
+  "checks": [
+    {
+      "label": "Разбор показан",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Фактически верный ответ отмечен верным",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Неверный ответ не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Повтор закрыт — варианты выключены",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Повтор не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "wrong-390.png",
+  "status": "pass"
+}
