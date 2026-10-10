@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Предгорья Кавказа на рассвете: двуглавая вершина Эльбруса и силуэт города у подножия">
+  <title>Предгорья Кавказа и Нальчик у подножия Эльбруса — рисунок музея</title>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1622"/><stop offset="46%" stop-color="#16283a"/>
+      <stop offset="74%" stop-color="#2b3b46"/><stop offset="100%" stop-color="#3f3a31"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7c8ea0" stop-opacity="0"/><stop offset="100%" stop-color="#d9b877" stop-opacity=".22"/>
+    </linearGradient>
+    <linearGradient id="far" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c4356"/><stop offset="100%" stop-color="#1a2836"/>
+    </linearGradient>
+    <linearGradient id="near" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#141f2b"/><stop offset="100%" stop-color="#0b1119"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="420" fill="url(#sky)"/>
+  <ellipse cx="880" cy="300" rx="420" ry="150" fill="url(#glow)"/>
+  <g fill="#ffffff" opacity=".5">
+    <circle cx="180" cy="52" r="1.2"/><circle cx="304" cy="34" r="1"/><circle cx="470" cy="66" r="1.1"/>
+    <circle cx="1010" cy="40" r="1.1"/><circle cx="1128" cy="72" r="1"/><circle cx="640" cy="28" r=".9"/>
+  </g>
+  <path d="M0 300 L120 258 L210 282 L330 236 L430 276 L520 250 L600 288 L700 262 L820 296 L930 268 L1050 298 L1200 272 L1200 420 L0 420 Z" fill="url(#far)" opacity=".85"/>
+  <path d="M760 300 L846 176 L886 214 L926 150 L1010 300 Z" fill="#22384a"/>
+  <path d="M846 176 L872 240 L820 300 L846 300 Z" fill="#1b2c3b"/>
+  <path d="M926 150 L948 216 L900 300 L926 300 Z" fill="#1b2c3b"/>
+  <path d="M846 176 L862 208 L830 208 Z" fill="#8fa6b8" opacity=".55"/>
+  <path d="M926 150 L942 182 L910 182 Z" fill="#8fa6b8" opacity=".55"/>
+  <path d="M0 348 L140 316 L260 340 L390 300 L520 336 L660 306 L790 344 L920 312 L1060 348 L1200 322 L1200 420 L0 420 Z" fill="url(#near)"/>
+  <g fill="#080d14">
+    <rect x="132" y="330" width="26" height="34"/><rect x="164" y="318" width="18" height="46"/>
+    <rect x="188" y="336" width="30" height="28"/><rect x="226" y="324" width="16" height="40"/>
+    <rect x="248" y="342" width="24" height="22"/><path d="M164 318 L173 300 L182 318 Z"/>
+    <rect x="292" y="334" width="22" height="30"/><rect x="320" y="346" width="34" height="18"/>
+    <rect x="366" y="326" width="18" height="38"/><path d="M366 326 L375 310 L384 326 Z"/>
+    <rect x="396" y="340" width="28" height="24"/><rect x="436" y="330" width="20" height="34"/>
+    <rect x="476" y="344" width="30" height="20"/><rect x="520" y="332" width="16" height="32"/>
+  </g>
+  <g stroke="#5a6b7c" stroke-width="1.6">
+    <line x1="173" y1="300" x2="173" y2="282"/><line x1="375" y1="310" x2="375" y2="292"/>
+  </g>
+  <path d="M173 282 L193 288 L173 294 Z" fill="#a8322d"/>
+  <path d="M375 292 L395 298 L375 304 Z" fill="#a8322d"/>
+</svg>

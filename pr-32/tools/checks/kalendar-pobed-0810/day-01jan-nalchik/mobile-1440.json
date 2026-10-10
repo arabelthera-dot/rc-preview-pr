@@ -1,0 +1,33 @@
+{
+  "test_id": "mobile-1440",
+  "code": "mobile",
+  "width": 1440,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-01jan-nalchik.html",
+  "steps": [
+    "Полный набор верных ответов"
+  ],
+  "checks": [
+    {
+      "label": "Максимум на 1440",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "Нет горизонтального переполнения",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Викторина дошла до конца",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "mobile-1440.png",
+  "status": "pass"
+}

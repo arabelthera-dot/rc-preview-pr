@@ -1,0 +1,34 @@
+{
+  "test_id": "score-390",
+  "code": "score",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-02jan-maloyaroslavets.html",
+  "steps": [
+    "Полный набор уникальных наград",
+    "Пройти викторину второй раз"
+  ],
+  "checks": [
+    {
+      "label": "Объявленный максимум 100 достижим",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "Знаменатель шкалы — 100",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Повтор не переполняет максимум",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "score-390.png",
+  "status": "pass"
+}

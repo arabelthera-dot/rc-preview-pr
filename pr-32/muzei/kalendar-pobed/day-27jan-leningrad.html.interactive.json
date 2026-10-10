@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "page_sha256": "f3a58a73e1802e4bf823c4d5efc28bd3357bda62fde4150cea258312d140dddd",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-08T15:48:12.803Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/b6/plans/day-27jan-leningrad.mjs",
+  "inputs": {
+    "day-27jan-leningrad.html": "f3a58a73e1802e4bf823c4d5efc28bd3357bda62fde4150cea258312d140dddd",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/b6/plans/day-27jan-leningrad.mjs": "1ecf68e5a20e260b7fbe61246c8cdc5e13bfb1daf672cc74d358d854891bce19",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media/day-27jan-hero.svg": "6092e3611c394bdae7653bbdc8fec4b49601c9b4befef452e0521207069a30cc",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "calendar-kalendar-pobed.js": "feab23ad710ddace637ce17c018dc99454d545d80e9612f38cb43cf5ee50563c",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../icon-192.png": "073414c383bcd7798fd7954fbb9df89db6b5a989e4d7b66a819efe3aebf84249",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/entry-390.png": "9d98acb4be6617697814e5735e8525f519189d9eff67dee33ae18a03bd66cb90",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/entry-390.json": "13ec6bfe1e2a2ec55325a30de870c3582e6d9994ffc0ef2240975426418ebc0d",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/wrong-390.png": "2208e0870d013fd5622dcdfd35120a3380a018bd80332441def30827d8ab67a9",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/wrong-390.json": "9b3c0407d19fcb49134765c49c2a4b3bdff61f323d9c172a84f3d9c824c753ac",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/reset-390.png": "ac3d4396351020c42ab6259b70dbfffadbd7a66643f213dbc52e9e16f158587f",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/reset-390.json": "42d15357eecfd538a1808d286ee23151c486c9e83249f74763c4b751970903ca",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/mobile-390.png": "ede835cfccf539a3ef83595eb227be4059ef451edc9932f3942db7bdc0b1a874",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/mobile-390.json": "9ebd7fed66d8cdb0f810337131cb8c2726c79c425441d2d2c87bb69b5eff0ece",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/mobile-1440.png": "06907063ebaab51c7e3de621de239e6d0961b279a7f1bc9da699fdc6a99629b0",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/mobile-1440.json": "094691d9608917e399a1bed160b9c6456109b2a27417b4368f1dba21b232193d",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/nojs-390.png": "dd98ec5ccc8ee35526a8566a0547d2c261eca5118eb04f5664dc0279248f2cb7",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/nojs-390.json": "8a5df909beeeb700639686cb5ce7458704bf3a78f1225ef4dd415a0a8a5a36be",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/score-390.png": "75fd9c2fd7dbceb31b203fc906b967464bf3e0f92dcd1b4001e72ca45908cce2",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/score-390.json": "e442c64befd30649b60b5d21bbbd3b73b4bcf11aaadbd36024c1577f5e524cb1",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/main-390.png": "5f1fd0c61311645646ad2eb5fe0bd22b0009ed46530d624277ae8e3feaa3787d",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/main-390.json": "77ea3f03cfd40aa719d7f5cb4a54d1d2988c7266db5f39fc47d21570a5e9d338",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/empty-390.png": "9f45d7e0e7f2c91dc249bfe0f4747b6057f02cb5ded5b04ce92f971c3400ab62",
+    "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/empty-390.json": "3b57b5f2895e606bae921c0bd2e2552f9e96ebef198131b0c471417e91b2b079"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-27jan-leningrad/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

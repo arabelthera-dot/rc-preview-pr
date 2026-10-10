@@ -1,0 +1,58 @@
+{
+  "test_id": "wrong-390",
+  "code": "wrong",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-19jan-krakov.html",
+  "steps": [
+    "Неверный ответ на первый вопрос",
+    "Повтор неверного ответа"
+  ],
+  "checks": [
+    {
+      "label": "Неверный ответ не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Ошибка объяснена",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Верный вариант помечен верным",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Неверный вариант помечен неверным",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Верный вариант не объявлен ошибочным",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Движок погасил варианты после ответа",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Повтор неверного ответа не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "wrong-390.png",
+  "status": "pass"
+}

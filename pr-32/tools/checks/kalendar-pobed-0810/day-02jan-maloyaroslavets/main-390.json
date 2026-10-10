@@ -1,0 +1,41 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-02jan-maloyaroslavets.html",
+  "steps": [
+    "Главное предметное действие — ответ на вопрос",
+    "Повторить нажатие на том же вопросе",
+    "Дойти до конца викторины"
+  ],
+  "checks": [
+    {
+      "label": "Главное действие даёт 20",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    },
+    {
+      "label": "Варианты погашены после ответа",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Повтор не начисляет дважды",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    },
+    {
+      "label": "Пять вопросов засчитаны по одному разу",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}
