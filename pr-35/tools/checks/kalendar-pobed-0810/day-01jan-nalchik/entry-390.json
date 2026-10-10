@@ -1,0 +1,64 @@
+{
+  "test_id": "entry-390",
+  "code": "entry",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-01jan-nalchik.html",
+  "steps": [
+    "Ответить на первый вопрос",
+    "Новый вход в браузере"
+  ],
+  "checks": [
+    {
+      "label": "Первый вход: счёт 0",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Викторина стоит на первом вопросе",
+      "actual": "1 / 5",
+      "expected": "1 / 5",
+      "ok": true
+    },
+    {
+      "label": "У вопроса три варианта",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Пояснение ещё не показано",
+      "actual": "",
+      "expected": "",
+      "ok": true
+    },
+    {
+      "label": "Награда за пройденный вопрос",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    },
+    {
+      "label": "Викторина перешла ко второму",
+      "actual": "2 / 5",
+      "expected": "2 / 5",
+      "ok": true
+    },
+    {
+      "label": "Непройденное не выдаётся за пройденное",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Викторина вернулась к началу",
+      "actual": "1 / 5",
+      "expected": "1 / 5",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "entry-390.png",
+  "status": "pass"
+}

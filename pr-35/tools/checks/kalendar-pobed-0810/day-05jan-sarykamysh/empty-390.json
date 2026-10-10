@@ -1,0 +1,52 @@
+{
+  "test_id": "empty-390",
+  "code": "empty",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-05jan-sarykamysh.html",
+  "steps": [
+    "Осмотреть ставку «до ответа»",
+    "Осмотреть подпись об источниках"
+  ],
+  "checks": [
+    {
+      "label": "Викторина обещает пять вопросов",
+      "actual": "1 / 5",
+      "expected": "1 / 5",
+      "ok": true
+    },
+    {
+      "label": "Заголовок викторины непустой",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Три варианта ставки",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "У ставки есть текстовый эквивалент",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Подпись называет основу рассказа",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Знаменатель счёта 100",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "empty-390.png",
+  "status": "pass"
+}

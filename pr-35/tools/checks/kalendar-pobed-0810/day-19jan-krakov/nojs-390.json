@@ -1,0 +1,39 @@
+{
+  "test_id": "nojs-390",
+  "code": "nojs",
+  "width": 390,
+  "javascript_enabled": false,
+  "url": "http://b6.local/muzei/kalendar-pobed/day-19jan-krakov.html",
+  "steps": [
+    "Найти текстовый эквивалент вместо викторины"
+  ],
+  "checks": [
+    {
+      "label": "Предметный рассказ читается без JavaScript",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Источники читаются без JavaScript",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Есть текстовый эквивалент вместо пустой обещанной викторины",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    },
+    {
+      "label": "Текстовый эквивалент несёт все пять ответов",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "nojs-390.png",
+  "status": "pass"
+}

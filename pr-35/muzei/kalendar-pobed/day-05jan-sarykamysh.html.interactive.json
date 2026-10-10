@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "page_sha256": "1ac53d1f0b42a6a315e7c94e7e469c5d438b72537899b62dcc22aa70a020e553",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-10T13:26:23.983Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/b6/plans/day-05jan-sarykamysh.mjs",
+  "inputs": {
+    "day-05jan-sarykamysh.html": "1ac53d1f0b42a6a315e7c94e7e469c5d438b72537899b62dcc22aa70a020e553",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/b6/plans/day-05jan-sarykamysh.mjs": "727f182a654b83a6f44e2bd1010cee310a16a358cca7dd50e2af121cde05f8fd",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media/day-05jan-hero.svg": "56af1d12abe2a03848c4a2be8e01eeb663f4d2be32686c55b923b100852390fa",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "calendar-kalendar-pobed.js": "feab23ad710ddace637ce17c018dc99454d545d80e9612f38cb43cf5ee50563c",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../icon-192.png": "073414c383bcd7798fd7954fbb9df89db6b5a989e4d7b66a819efe3aebf84249",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/entry-390.png": "b7c4d15a28b4f693698a66504314378fe98b2f54bda5e6f88d72ed89f2f7b43f",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/entry-390.json": "a1fa13069d3a6935693a02825533f7547cde9a59de543dbf5eb5e58be573ca2d",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/wrong-390.png": "27b21f8f9231f8e2249bf42d03976b846c5abbf964178bc093b73388b94ae524",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/wrong-390.json": "0817f536eb7f150b8553af69e74b3cbd2ab6c3da26cfbbe7665e6ed94c136a5a",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/reset-390.png": "4e142f36ece5c87ebd0852033e38fd83b7bc233af66ae37f7956f87fb16a8809",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/reset-390.json": "e6707bcc9c2bdc4929e65120ff578a01b2d7b1e191c237dc697bfeedc1622e00",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/mobile-390.png": "d032514c107e4ef5e45b4fc3ecf6bf8f52de3f4c072a44a776ab14339b00a2e2",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/mobile-390.json": "1bf263882ceb35ecebf10a314903042966a23a954afb93f918ff722204041a23",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/mobile-1440.png": "b1c6f629f8e9683429cc243678f70b9850104872e886b177b6bb7f430c1f6fb8",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/mobile-1440.json": "bce00ff727219732237da143c97ed056c63b0e2e89d2915c612a518aab761083",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/nojs-390.png": "1d64e13cc37bceaac2a74d83c4f5821cf86695e688542a31841c10b94e2825c8",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/nojs-390.json": "c1aa93423bee5a46a2201b5221d346610812611b7508549b604fdb653d40979a",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/score-390.png": "bd1462bdccd761bf84c4d2833a25d4dd8870ba22d9e2972f689b504203e8eae0",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/score-390.json": "d48c25b7bb35988c1042e05f14c7b3eb452191051abca2ee23a5e54637ad9dc6",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/main-390.png": "ec1dbbd7284003d2c4a87db963f2348ffad3e408bdf304b8215ea64f2692ee50",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/main-390.json": "5c1a4748963d343acdec7e15552f8aa67749dfd32ddcb42ebf98e50b49e9cc03",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/empty-390.png": "a5c3e8884e3585b796593b7906a11a1622867cf2a3d91ac794c2e8646d8610c0",
+    "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/empty-390.json": "e0262dfb4c4428ea7a0a03b73e175a4436111e17ad8f5ee56847daddfd64a984"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/kalendar-pobed-0810/day-05jan-sarykamysh/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
