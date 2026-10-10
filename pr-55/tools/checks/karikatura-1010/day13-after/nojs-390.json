@@ -1,0 +1,27 @@
+{
+  "test_id": "nojs-390",
+  "code": "nojs",
+  "width": 390,
+  "javascript_enabled": false,
+  "url": "http://b6.local/muzei/karikatura/day-13jan-myshi-kota.html",
+  "steps": [
+    "Read no-JavaScript explanation"
+  ],
+  "checks": [
+    {
+      "label": "Static explanation visible",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Originals available without JavaScript",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "nojs-390.png",
+  "status": "pass"
+}

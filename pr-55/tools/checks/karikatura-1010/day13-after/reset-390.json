@@ -1,0 +1,124 @@
+{
+  "test_id": "reset-390",
+  "code": "reset",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/karikatura/day-13jan-myshi-kota.html",
+  "steps": [
+    "Complete main action",
+    "Reset using browser new visit"
+  ],
+  "checks": [
+    {
+      "label": "Statement of another shelf earns nothing",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Wrong shelf is explained",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    },
+    {
+      "label": "Six statements placed",
+      "actual": 6,
+      "expected": 6,
+      "ok": true
+    },
+    {
+      "label": "Three boards complete",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Reading reports all six",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Completion badge shown",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Three dossiers opened",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Verdict counts the statements",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Main action reward",
+      "actual": 65,
+      "expected": 65,
+      "ok": true
+    },
+    {
+      "label": "Statement of another shelf earns nothing",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Wrong shelf is explained",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    },
+    {
+      "label": "Six statements placed",
+      "actual": 6,
+      "expected": 6,
+      "ok": true
+    },
+    {
+      "label": "Three boards complete",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Reading reports all six",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Completion badge shown",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Three dossiers opened",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Verdict counts the statements",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Repeating after reset earns once",
+      "actual": 65,
+      "expected": 65,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "reset-390.png",
+  "status": "pass"
+}

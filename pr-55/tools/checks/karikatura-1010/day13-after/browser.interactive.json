@@ -1,0 +1,143 @@
+{
+  "schema_version": 1,
+  "page_sha256": "8bc40ba8a3fdb5feaf16bcf41bc9e8618a0dc00f02fbacc508264852a52728e5",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-10T17:19:07.273Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../../b6/plans/karikatura-day13.mjs",
+  "inputs": {
+    "../../../../muzei/karikatura/day-13jan-myshi-kota.html": "8bc40ba8a3fdb5feaf16bcf41bc9e8618a0dc00f02fbacc508264852a52728e5",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../../b6/plans/karikatura-day13.mjs": "8701354675afe7a633b1fca2ebf2d406d181540731bd1fea65629eb30d79c402",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/karikatura/media/mice-kot-kazansky-167.jpg": "76f401a2fffe97a59cf68f93fdfbdc310816688faf513214932c9b0ea48c9457",
+    "../../../../muzei/karikatura/calendar-karikatura.js": "981a909fe95d8801f0733be7fcbcec481f0402beb743e375f78d01ceff6f192d",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-analytics-v2.js": "63c87a66c44c4631ac15a2308f3e74a87751eef8ea8762121ff514845d04651d",
+    "../../../../assets/museum-video.js": "de33b1a1c1ece4c2ab4ad7975d0fe20114183f19ca598c5461abe123c5c7d38f",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2": "ca157063339ac4ad418f214f3abfed119b0798ab4d377386ce5c9e5a7a435ebd",
+    "entry-390.png": "a9bf5ebae68f6c4303147ed260fbdf097fc72954321b435719b3c0dabbe1a6e9",
+    "entry-390.json": "956a29b0b668ad1ad627853755fedf6743bf78241712b5ba107ff55b72e305be",
+    "wrong-390.png": "d49b1c887db33f043d890141005f7e7b5b8e064ee4af0b9b32ea9d976b142fa3",
+    "wrong-390.json": "3bf29a435686a1f9ad5da03d9910d65f8d8d3d46bfc82eb34f2e95da6007a65e",
+    "../../../../muzei/karikatura/media/mice-rovinsky-219.jpg": "fe7dceada6a6a8a4f1a3fd30e9b6395244858e81c8fdf80535100584e91c4777",
+    "reset-390.png": "4b389c0e4717f4eca4843da6b9d4191a5430fb033865654f3d69d7de9ccb1e63",
+    "reset-390.json": "b211d153ecaa07e93ec377c16edf39753b3ec1b185caff1506f8f28e386f5356",
+    "mobile-390.png": "86bdef1f348d070c8f140d389acf7653e0b412341e0f6c313b4f894e1ac1a2e3",
+    "mobile-390.json": "1666432ec7e35900eb37e75401f011eb5a18069f36e2ba1e7a3c0f497e948818",
+    "../../../../muzei/karikatura/media/mice-golyshev-1878.jpg": "9e32c9d084e0fdc8f2a2afe010e7dae0e1fe74f7357a553d7dc47f7369b2280a",
+    "mobile-1440.png": "e17ef70f45c2069d87a6dff2a68838f14190bc9a8bc86bda7c25490a3e35e9c5",
+    "mobile-1440.json": "c9ebe246bb5050dde75462cb56e961a7d89a8ba2c0d6c73852af42a036c89eb1",
+    "nojs-390.png": "3aa13a55310b3907864f130048c4b8a76b8bc4f10094d62d3ac331a25cb41503",
+    "nojs-390.json": "696b9a99ce5c9fb27a91f47e460b1b4a72ee37a26c8c78659ae7c08ba6817b9e",
+    "score-390.png": "13ae6b3325105246688a5845673859a957fbd96a1bca8b6aed6e3d5ab017f539",
+    "score-390.json": "33864b41aaeed25bb3ad3264fa4a1854cfef02d3ca21b080508a2f85671e0535",
+    "main-390.png": "873ff0e87fd187e5a588cd84b72a3cd776bcbac3b7a5d212b7b90453560a3e9d",
+    "main-390.json": "7d55661e6ad1024e3d6d9a400f556229ee102a100696f2340eba936cd79c033c",
+    "empty-390.png": "920c91709500251392758dc429a577d36fc36161c246a06b3192786a9e7ef916",
+    "empty-390.json": "29ef3634b755a0c70f42170402323f0e233499ce43824c4796a57403a91d4ca7"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

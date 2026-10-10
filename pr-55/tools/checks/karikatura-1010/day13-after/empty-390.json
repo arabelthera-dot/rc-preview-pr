@@ -1,0 +1,69 @@
+{
+  "test_id": "empty-390",
+  "code": "empty",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/karikatura/day-13jan-myshi-kota.html",
+  "steps": [
+    "Inspect concrete activity contents"
+  ],
+  "checks": [
+    {
+      "label": "Three shelves offered",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "One shelf open",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    },
+    {
+      "label": "Six statements offered",
+      "actual": 6,
+      "expected": 6,
+      "ok": true
+    },
+    {
+      "label": "No shelf filled yet",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Shelves announced as empty",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Completion badge hidden",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Three dossiers offered",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Verdict hidden before the sorting",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Promised quiz count",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "empty-390.png",
+  "status": "pass"
+}
