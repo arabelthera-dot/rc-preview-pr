@@ -1,0 +1,51 @@
+{
+  "test_id": "mobile-1440",
+  "code": "mobile",
+  "width": 1440,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/karikatura/day-07jan-portrait-sharzh-caricature.html",
+  "steps": [
+    "Complete page-specific action and quiz"
+  ],
+  "checks": [
+    {
+      "label": "Three genre decisions recorded",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Three dossiers opened",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Verdict compares before and after",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Cancelled share earns nothing",
+      "actual": 95,
+      "expected": 95,
+      "ok": true
+    },
+    {
+      "label": "Maximum at 1440",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "No horizontal overflow",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "mobile-1440.png",
+  "status": "pass"
+}

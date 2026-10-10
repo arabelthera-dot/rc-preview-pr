@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "page_sha256": "bf2c662f368672aac3d9da536a79f8160fff57ed208e086e3eedde10e8c8c042",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-10T17:05:44.525Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../../b6/plans/karikatura-day07.mjs",
+  "inputs": {
+    "../../../../muzei/karikatura/day-07jan-portrait-sharzh-caricature.html": "bf2c662f368672aac3d9da536a79f8160fff57ed208e086e3eedde10e8c8c042",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../../b6/plans/karikatura-day07.mjs": "b2a6f9008968403ca441c0e441ce30e1cd782702b71c89cf1b7f96e18c6eb18e",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/karikatura/media/orlovsky-karykatura-quarengi-1808.jpg": "d13bfd403f3452e9f0cfd8a41cbb8450e0a4493ec7d531b567f79933b3a81aee",
+    "../../../../muzei/karikatura/media/orlovsky-avtoportret-1814.jpg": "d3e76846ded1a5dc65b0320449ed71fb19f949a7d8ca48ba8cb8205eb5305f5a",
+    "../../../../muzei/karikatura/media/orlovsky-karykatura-dvoryanin-1818.jpg": "74920d497013ccd26815bdd232257a598b925eeadfeec76b861d43c73c038ca0",
+    "../../../../muzei/karikatura/calendar-karikatura.js": "b97aa3b1574588d1c9e88884f0f36f6607ea988e0c2c73fbd662cf761bd4318a",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-analytics-v2.js": "63c87a66c44c4631ac15a2308f3e74a87751eef8ea8762121ff514845d04651d",
+    "../../../../assets/museum-video.js": "de33b1a1c1ece4c2ab4ad7975d0fe20114183f19ca598c5461abe123c5c7d38f",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "entry-390.png": "dd239877810750316438998bd948be96dbbfcb3bd9fe79f5dc5ed3b39b632bf3",
+    "entry-390.json": "b0e74a4c5ae55ef1cc658a88c29800f2d02538e540a88dd837e7b15898b27eba",
+    "wrong-390.png": "b0d9417e2a0bca77f74b8b504b14d55a51e6e1f67b07b5e7ec2289d1cc8723d2",
+    "wrong-390.json": "a4a538740d44107b71b1d027b7425bb0cb211637ce33ce3e3598d66575e5f569",
+    "reset-390.png": "3c46ba3373edca9d5515e887cd522fca2682b4ec9d255d395b072cfd99f545b7",
+    "reset-390.json": "4e9d48cfe8ebaf71fca42b1e3ba5e9a7b38ff7ff048cc1cbbaa64dc1dfbbb739",
+    "mobile-390.png": "28daf36942674c524d836212daab777a56f4c78d7dd69b910d0d880a5f9d1db9",
+    "mobile-390.json": "ca2ad0518bf1d419978288fc8815c419a21d112121119e82f9c1b79d5a79fe26",
+    "mobile-1440.png": "73dacd6f8befc07f1182bb903a70e891e21c14948d40331670898cfebbcf6c58",
+    "mobile-1440.json": "37ec7ebfef05ee337e05d46286ef4a8f2619b6487d794dde2b55d47555be1b54",
+    "nojs-390.png": "ce760ce8410d9db621e2ec06d7de7ff52e474fcdf78a92aa572a0265ab0e7568",
+    "nojs-390.json": "5905284ad41ce4a583a1530ae4609f1e1bc57c60de70d52853b220ebfd30a88e",
+    "score-390.png": "8875c42e0592a4900b93d6202c2f6cd52d50426365b5503e7850628ef9da49ad",
+    "score-390.json": "c5b3d73e96c8a470e7b571095acf1918c1381416f7d4c26e5463a93989010ef7",
+    "main-390.png": "3c46ba3373edca9d5515e887cd522fca2682b4ec9d255d395b072cfd99f545b7",
+    "main-390.json": "5a644bf662b97ae3518a63f6c8278d46b05a8663e7f3128558b7ed5af9dea2ee",
+    "empty-390.png": "0704877b9066109560542fe65035689e69686702df05a8a6df1b2bf94344069a",
+    "empty-390.json": "2d697a18115c70088da906f7d7fd870df57a868deebff164789468d2eba0be2e"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
