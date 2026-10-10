@@ -1,0 +1,37 @@
+{
+  "test_id": "nojs-390",
+  "code": "nojs",
+  "width": 390,
+  "javascript_enabled": false,
+  "url": "http://b6.local/muzei/arhitektura/tsaritsyno.html",
+  "steps": [],
+  "checks": [
+    {
+      "label": "Текстовый эквивалент игры вместо пустой обещанной игры",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    },
+    {
+      "label": "Текстовый эквивалент читается без JavaScript",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Текстовая альтернатива переключению состояний читается",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Предметный текст страницы на месте",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "nojs-390.png",
+  "status": "pass"
+}

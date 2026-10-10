@@ -1,0 +1,60 @@
+{
+  "test_id": "wrong-390",
+  "code": "wrong",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/arhitektura/tsaritsyno.html",
+  "steps": [
+    "Назвать письмо о залах документом о разборке",
+    "Повторить неверный ответ",
+    "Неверный ответ в проверке понимания",
+    "Повторить неверный ответ викторины"
+  ],
+  "checks": [
+    {
+      "label": "Неверный ответ объяснён",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Неверный ответ не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Повтор неверного ответа не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Верный вариант не объявлен ошибочным",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Викторина объясняет ошибку",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Неверный ответ викторины не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Повтор не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "wrong-390.png",
+  "status": "pass"
+}

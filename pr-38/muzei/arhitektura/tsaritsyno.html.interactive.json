@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "page_sha256": "76b9f95e611dd2f3266c7a1c87705ec82ba5dbe53efc813a678fcb8b97e7a421",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-10T16:33:35.478Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/b6/plans/arhitektura-09jan-tsaritsyno.mjs",
+  "inputs": {
+    "tsaritsyno.html": "76b9f95e611dd2f3266c7a1c87705ec82ba5dbe53efc813a678fcb8b97e7a421",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/b6/plans/arhitektura-09jan-tsaritsyno.mjs": "64e6a0007fe9403c649d1eed7efb1ccb09ea2d97e63d2da80bb91720c94e7a78",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../assets/nevjanskaya-page.css": "86b775850b854765a0770a7b429cdcbae0410ee11154932bf1cc978158f6cf79",
+    "../../assets/tsaritsyno-page.css": "44c2739896e5849a4e37cce943610d97da30728c68cbf996a614f1e6f53c53e2",
+    "media/tsaritsyno/hero-480.webp": "f2925a7d6d0cb1eb129c9fa895dbcab775dff98e8baf48a5dd225508d64e44e9",
+    "media/tsaritsyno/og-1200x630.webp": "5638eec54939a982bc99453772cd509598bbb08772abea2b1cc43d42655aceb9",
+    "media/tsaritsyno/plan-1776.webp": "9ff9418ecfc0da531ac9ce5598b7ff05c36a650117743d7360d273bfc4b8d401",
+    "../../assets/museum-video.js": "de33b1a1c1ece4c2ab4ad7975d0fe20114183f19ca598c5461abe123c5c7d38f",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-analytics-v2.js": "63c87a66c44c4631ac15a2308f3e74a87751eef8ea8762121ff514845d04651d",
+    "../../assets/museum-page-runtime.js": "a6f87bcfc48439dc180f76edeb39f3cbaf41a6c84578e455faf92736499a81b0",
+    "../../assets/tsaritsyno-page.js": "cac856f02de4db33049f0c0bbcd7c2b292b6a0cdd58828e38263eeb97c63f145",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "media/tsaritsyno/intro-film-ru.vtt": "c01bab2a80252d18f966e353ff6e15a7911df675ef20d86e05ad3e565969e18e",
+    "../../video/registry.json": "ae3b2224050e404fc88a5d1e3bc03b28bcb3e9df5b0bddccff6c2d43f00e17c7",
+    "media/tsaritsyno/ist-1800.webp": "702af3d7bcac883118d80ac73f9b21aedb57497224827adb6a79bff4898c63db",
+    "media/tsaritsyno/hero.webp": "7ce396b67d522962ff81c4b3a4b2722ca7f6bea0178b3acb7fa57f99863dd103",
+    "media/tsaritsyno/detail.webp": "17858d7ed4bffd8115b15e2a3e600b21180e196ce53e58c157e03108da196e71",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/entry-390.png": "253417a32a2bd72cff6ee45d392db63b64e8c884db6f9017d0e48ce87514a1e3",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/entry-390.json": "23c69de3526c1637dd03d2aa7ec9d177fd47326972f893e06cc6b9b1e94fdb04",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/wrong-390.png": "7115e9827d7aac60a28c98a4f9ff573617a216261933d9ebec9f31acbb94de75",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/wrong-390.json": "030c9c0002470c4a93fe14c566199734ed7546d8bd60b691f1f073ce4a04c6e5",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/reset-390.png": "5bb7d3ab37c7571d006f7eca000b2337c9d7acfd20244d83da3af6492791a876",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/reset-390.json": "c29c2fd075de7648e619f475ab4db3f62c35615eb4470905a8e7f885793e23f8",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/mobile-390.png": "2611a6f290e0d96cbdb6a9f65011db50afa08e4e15fbdee7bef4b4a92775cec9",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/mobile-390.json": "14bb107c7c9041b463aba8d337e43fd75e75738463e3854a0291a18a43630ab6",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/mobile-1440.png": "1523c8d1c8fc56e2310441187bbf9e2f3f091a32923d2c2d22dff4e84c347115",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/mobile-1440.json": "78b5fab5a1f9b3f397e85edda532e851d31afb343c7a3d2aba233e801dc016ed",
+    "media/tsaritsyno/building.webp": "b2932bfa045e624515c9573930b1e169b4bf94483f37016f696b2e0c50331d86",
+    "media/tsaritsyno/ensemble.webp": "c1f99b7a525db44a38ff51d90f92bde5aa5b1dbe23b1218f65aa4931e5d81a24",
+    "media/tsaritsyno/landscape.webp": "aab57b2f4f524a574d91f8e17cb1c29dbf1db3fcd8d695b3bb95b8c864de182c",
+    "media/tsaritsyno/ist-1900.webp": "1ab7a5a6498ffdc4baabcc39521604f56767446ecc65fdac0d3242a02215843d",
+    "media/tsaritsyno/fund-1795.webp": "7647905279c17b91bc8e7c6e436dfe2c157413aabfda4e40694dd39d78c26ea7",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/nojs-390.png": "bc27ab70d3e394036daa1b0d427e38c9d7ad2ef89132ea6f2e457902d2e71e5a",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/nojs-390.json": "6b6e116bd7040fde75b442d494db5fa4f304ea7c63ffe80499e2222fe47a5b79",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/score-390.png": "1acb5677929abb7b73f32c9e4394bd51b99ac2c93a59912c3302dd35f56d5389",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/score-390.json": "967d398b055b50c67b8c3371ca2f3625381a55e09f8ea8cc587bc3d703a31c1c",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/main-390.png": "76f67472db977b4785d45a05ad38000af1d422266f86e2c524243a52c85784ef",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/main-390.json": "362889bcc29ecf5eca2c8ac92fc11e914b2beaa07316046ce479fc5c90637f75",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/empty-390.png": "f256e0f729d71f0b91c43851be2ea0f1e88c55b68fc723a3aefe6d7f22fdbccf",
+    "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/empty-390.json": "05faa40c929448e2023e96ebf3636485cb60142ed0d3193009cf7dc994f6db48"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/arhitektura-1010/day09-tsaritsyno-v2/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

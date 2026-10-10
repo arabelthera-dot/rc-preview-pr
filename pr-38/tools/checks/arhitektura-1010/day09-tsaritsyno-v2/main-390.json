@@ -1,0 +1,28 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/arhitektura/tsaritsyno.html",
+  "steps": [
+    "Главное предметное действие — переключение состояний",
+    "Повтор главного действия"
+  ],
+  "checks": [
+    {
+      "label": "Главное действие даёт очки",
+      "actual": 25,
+      "expected": 25,
+      "ok": true
+    },
+    {
+      "label": "Повтор не начисляет дважды",
+      "actual": 25,
+      "expected": 25,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}

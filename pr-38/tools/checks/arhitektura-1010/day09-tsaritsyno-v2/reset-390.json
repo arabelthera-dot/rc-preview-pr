@@ -1,0 +1,53 @@
+{
+  "test_id": "reset-390",
+  "code": "reset",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/arhitektura/tsaritsyno.html",
+  "steps": [
+    "Собрать порядок состояний",
+    "Начать заново",
+    "Повторить порядок после сброса"
+  ],
+  "checks": [
+    {
+      "label": "Собранный порядок даёт 30",
+      "actual": 30,
+      "expected": 30,
+      "ok": true
+    },
+    {
+      "label": "Последовательность собрана из трёх шагов",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Последовательность очищена",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Подсказка вернулась к началу",
+      "actual": "Выбери первое состояние места.",
+      "expected": "Выбери первое состояние места.",
+      "ok": true
+    },
+    {
+      "label": "Кнопки снова доступны",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Сброс не накапливает награду",
+      "actual": 30,
+      "expected": 30,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "reset-390.png",
+  "status": "pass"
+}

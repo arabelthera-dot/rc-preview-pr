@@ -1,0 +1,53 @@
+{
+  "test_id": "score-390",
+  "code": "score",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/arhitektura/tsaritsyno.html",
+  "steps": [
+    "Полный набор уникальных наград",
+    "Повторить главное действие",
+    "Повторить викторину"
+  ],
+  "checks": [
+    {
+      "label": "Объявленный реестр наград — шкала из 100",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "Знаменатель в разметке — 100",
+      "actual": "⭐ 0 / 100",
+      "expected": "⭐ 0 / 100",
+      "ok": true
+    },
+    {
+      "label": "Объявленный максимум достижим",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "Движок подтверждает максимум",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "Движок подтверждает набранное",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "Повтор не переполняет максимум",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "score-390.png",
+  "status": "pass"
+}

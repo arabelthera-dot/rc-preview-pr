@@ -1,0 +1,57 @@
+{
+  "test_id": "empty-390",
+  "code": "empty",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/arhitektura/tsaritsyno.html",
+  "steps": [
+    "Осмотреть обещанное содержимое"
+  ],
+  "checks": [
+    {
+      "label": "Три состояния одного места",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Четыре масштаба показа",
+      "actual": 4,
+      "expected": 4,
+      "ok": true
+    },
+    {
+      "label": "Три варианта ответа о документе",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Три варианта в проверке понимания",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Вводный фильм имеет расшифровку",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Подпись об источниках содержательна",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Подпись об источниках называет документ и версию",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "empty-390.png",
+  "status": "pass"
+}

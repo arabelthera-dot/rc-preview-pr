@@ -1,0 +1,91 @@
+{
+  "test_id": "entry-390",
+  "code": "entry",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/arhitektura/tsaritsyno.html",
+  "steps": [
+    "Открыть второе состояние",
+    "Открыть третье состояние",
+    "Новый вход в браузере"
+  ],
+  "checks": [
+    {
+      "label": "Первый вход: счёт 0 — наград за непройденное нет",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Первый вход: открыто первое состояние",
+      "actual": [
+        "true",
+        "false",
+        "false"
+      ],
+      "expected": [
+        "true",
+        "false",
+        "false"
+      ],
+      "ok": true
+    },
+    {
+      "label": "Первый вход: порядок не собран",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Первый вход: итог вопроса пуст",
+      "actual": "",
+      "expected": "",
+      "ok": true
+    },
+    {
+      "label": "Первый вход: продолжение скрыто",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Двух состояний для награды мало",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Три состояния дают награду 25",
+      "actual": 25,
+      "expected": 25,
+      "ok": true
+    },
+    {
+      "label": "Строка «что изменилось» сменилась на современную",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Перезагрузка не сохраняет пройденное",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Первое состояние вернулось",
+      "actual": "true",
+      "expected": "true",
+      "ok": true
+    },
+    {
+      "label": "Порядок после перезагрузки пуст",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "entry-390.png",
+  "status": "pass"
+}

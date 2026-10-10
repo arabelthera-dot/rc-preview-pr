@@ -1,0 +1,28 @@
+/* Страница дня 09.01 — Царицыно: «Дворец, который приказали сломать».
+   Наследует общие классы museum-theme.css и nevjanskaya-page.css; здесь — только своё. */
+/* Шкала посетителя: держит её assets/museum-score.js, страница объявляет награды. */
+.top .score{flex:0 0 auto;align-self:center;padding:.35rem .7rem;border:1px solid #d8b76d;border-radius:2rem;font-weight:700;white-space:nowrap}
+@media(max-width:640px){.top .score{font-size:.85rem;padding:.25rem .55rem}}
+.ts-hero img{aspect-ratio:4/3;object-fit:cover}
+.ts-hero .scene-cap{display:block;margin-top:.55rem;padding:0 .15rem;font-size:13.5px;line-height:1.45;opacity:.9}
+.hero-copy .hook{font-style:italic;opacity:.9;margin:.45rem 0 0;max-width:52ch}
+/* Главное действие M-49 «Timeline одного места»: три закреплённые даты одного места */
+.ts-lab{display:grid;grid-template-columns:minmax(0,1fr) minmax(18rem,.85fr);gap:clamp(1rem,4vw,3rem);align-items:start}
+.ts-switch{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.7rem;margin:1rem 0}
+.ts-switch button{border:1px solid #9ab4b9;border-radius:.85rem;background:#f5f0e5;color:#18272c;padding:.85rem;font:inherit;text-align:left;min-height:3rem;font-weight:700}
+.ts-switch button b{display:block;font-size:1.02rem}
+.ts-switch button span{display:block;font-weight:400;font-size:.88rem;opacity:.85;margin-top:.25rem}
+.ts-switch button[aria-pressed="true"]{background:#d8b76d;color:#11252c;outline:3px solid #f2d890}
+.ts-state{margin:.4rem 0 1rem;font-size:.98rem;color:#e7e4d8}
+.ts-change{margin:.6rem 0 0;padding:.7rem .9rem;border-left:4px solid #d8b76d;background:#0f3038;color:#f2ede0;font-size:.97rem}
+.ts-visual{margin:0;border-radius:1.2rem;overflow:hidden;background:#092832}
+.ts-visual img{display:block;width:100%;height:auto}
+.ts-visual figcaption{padding:.8rem 1rem;color:#e7e4d8;font-size:.94rem}
+.ts-ask{margin:1.1rem 0}
+.ts-ask p{margin:0 0 .6rem;font-weight:750}
+.ts-game{display:grid;grid-template-columns:minmax(0,1fr) minmax(16rem,.65fr);gap:1.2rem}
+.ts-game .sequence{min-height:4rem;padding:1rem;border:1px dashed #91adb3;border-radius:.8rem}
+.ts-game .sequence span{display:inline-block;margin:.2rem;padding:.45rem .6rem;border-radius:2rem;background:#d8b76d;color:#17252a}
+.ts-switch button:focus-visible,.ts-ask button:focus-visible{outline:4px solid #f1b85f;outline-offset:3px}
+@media(max-width:800px){.ts-lab,.ts-game,.ts-switch{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
