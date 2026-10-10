@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ru">
+<head><meta name="robots" content="noindex"><base href="https://arabelthera-dot.github.io/rc-museum-preview/lab/gruppy-skriptov/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Скрипты проекта: три группы — Русская цивилизация</title>
+<style>
+body{margin:0;background:#14100e;color:#f0e8d8;font:16px/1.5 Georgia,'PT Serif',serif}
+main{max-width:1100px;margin:0 auto;padding:20px 14px 48px}
+h1{font-size:clamp(22px,4.5vw,32px);line-height:1.2;margin:.3em 0}
+h2{font-size:20px;margin:1.6em 0 .5em;border-bottom:1px solid rgba(240,232,216,.25);padding-bottom:4px}
+.lead{opacity:.8;margin:0 0 12px}
+.kpi{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0}
+.kpi div{background:rgba(240,232,216,.07);border-radius:8px;padding:10px 14px;min-width:120px}
+.kpi b{display:block;font-size:26px;color:#e8c56b}
+.wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font:14px/1.4 system-ui,sans-serif}
+th,td{border-bottom:1px solid rgba(240,232,216,.15);padding:6px 8px;text-align:left;vertical-align:top}
+th{position:sticky;top:0;background:#1d1714}
+td.n{text-align:right;font-variant-numeric:tabular-nums}
+.red{color:#ff8a7a}.green{color:#9fd49a}.amber{color:#e8c56b}
+.empty{opacity:.6;font-style:italic}
+footer{margin-top:28px;font-size:13px;opacity:.65}
+</style>
+</head>
+<body>
+<main>
+<h1>Скрипты проекта: три группы</h1>
+<p class="lead">Конвейер делает работу, ОТК проверяет на выходе — остаются. Заплатки живут из-за дыры в устройстве: чиним дыру, заплатку с её тестами удаляем.</p>
+<div class="kpi"><div><b>45</b>конвейер</div><div><b>56</b>отк</div><div><b>34</b>заплатка</div><div><b>23</b>тестов при заплатках</div></div>
+<h2>Корни заплаток: дыра → устройство</h2>
+<div class="wrap"><table><thead><tr><th>Корень</th><th>Дыра</th><th>Устройство на замену</th><th>Кто делает</th><th>Заплаток</th><th>Тестов</th></tr></thead><tbody>
+<tr><td>К1</td><td>Общая папка проекта открыта исполнителям на запись</td><td>Исполнителям папка только на чтение, работа — в своей копии через заявку; владельцы папок — стандартный файл владельцев CODEOWNERS + проверка зоны в заявке</td><td>Михаил: карточка М17 #921</td><td class="n">5</td><td class="n">2</td></tr>
+<tr><td>К2</td><td>Автоматика хоста запускается из общей рабочей папки, её приходится держать на main</td><td>Автоматика работает из отдельной копии, которую обновляет только слияние (deploy-копия)</td><td>Джарвис + строка Михаилу в крон хоста</td><td class="n">1</td><td class="n">1</td></tr>
+<tr><td>К3</td><td>Очередь нарядов — текстовая тетрадь HANDOFF.md, а не доска</td><td>Доска заданий GitHub (карточки, метки, заявки) — gh-board и пульт уже есть; тетрадь закрыть</td><td>Джарвис: план перестройки, шаг 8</td><td class="n">14</td><td class="n">18</td></tr>
+<tr><td>К4</td><td>Один факт календаря живёт в нескольких носителях: таблица, черновик, календарь, витрина</td><td>Один источник данных календаря, носители собираются из него; витрины — общий движок</td><td>Джарвис: п.5 списка</td><td class="n">5</td><td class="n">0</td></tr>
+<tr><td>К5</td><td>Процессы умирают при перезапуске контейнера</td><td>Политика перезапуска контейнера или служба systemd на хосте</td><td>Михаил</td><td class="n">2</td><td class="n">1</td></tr>
+<tr><td>К6</td><td>Разовая оснастка: работа сделана, скрипт остался</td><td>Перенести в tools/archive/ обычным git mv, история сохраняется</td><td>Джарвис, без хоста</td><td class="n">7</td><td class="n">1</td></tr>
+</tbody></table></div>
+<h2>Конвейер — делает работу: собирает страницы, медиа, отчёты; общие библиотеки</h2>
+<div class="wrap"><table><thead><tr><th>Скрипт</th><th>Что делает</th><th>Тестов</th></tr></thead><tbody>
+<tr><td>approvals.py</td><td>реестр «да» Сергея на месяц календаря</td><td class="n">1</td></tr>
+<tr><td>competitors.py</td><td>библиотека конкурентов: карточка на каждого</td><td class="n">1</td></tr>
+<tr><td>create-source-backup.mjs</td><td>резервная копия исходников проекта</td><td class="n">0</td></tr>
+<tr><td>daily-digest.py</td><td>утренний отчёт Сергею одним экраном</td><td class="n">1</td></tr>
+<tr><td>dispatcher.py</td><td>будильник очереди: будит агента, когда ему пришёл наряд</td><td class="n">3</td></tr>
+<tr><td>gate-sergey.py</td><td>гейт Сергея через карточку доски</td><td class="n">1</td></tr>
+<tr><td>gen-day.py</td><td>генератор страницы дня</td><td class="n">0</td></tr>
+<tr><td>generate-museum-skill.py</td><td>генератор тематического скилла музея</td><td class="n">0</td></tr>
+<tr><td>gh-board.py</td><td>доска заданий GitHub — устройство на замену тетради</td><td class="n">1</td></tr>
+<tr><td>install-hooks.sh</td><td>ставит проверки предкоммита в оба репозитория</td><td class="n">2</td></tr>
+<tr><td>kartochki.mjs</td><td>строка прав на карточке экспоната</td><td class="n">1</td></tr>
+<tr><td>make-audioguide.py</td><td>сборщик аудиогида страницы</td><td class="n">0</td></tr>
+<tr><td>make-day-video.py</td><td>сборщик роликов дня</td><td class="n">0</td></tr>
+<tr><td>make-tiles.py</td><td>нарезка скана картины для глубокого зума</td><td class="n">0</td></tr>
+<tr><td>md-page.py</td><td>отчёт из markdown в веб-страницу</td><td class="n">0</td></tr>
+<tr><td>media_build_receipt.py</td><td>квитанция сборки медиа: что на входе, что на выходе</td><td class="n">0</td></tr>
+<tr><td>media_dependencies.py</td><td>карта зависимостей медиа: что пересобрать при правке</td><td class="n">0</td></tr>
+<tr><td>media_speech.py</td><td>общий синтез речи для медиа</td><td class="n">0</td></tr>
+<tr><td>month-approval.py</td><td>страница утверждения месяца календаря</td><td class="n">1</td></tr>
+<tr><td>page_delivery.py</td><td>сдача страницы музея по адресу</td><td class="n">1</td></tr>
+<tr><td>pasport.py</td><td>паспорт экспоната по образцу Госкаталога</td><td class="n">1</td></tr>
+<tr><td>pult-doski.py</td><td>пульт доски заданий — одна страница</td><td class="n">1</td></tr>
+<tr><td>rc-page.py</td><td>единая команда сборки страниц музеев</td><td class="n">1</td></tr>
+<tr><td>rc_card.py</td><td>библиотека: разбор карточки наряда</td><td class="n">1</td></tr>
+<tr><td>rc_delivery.py</td><td>доставка извещений агентам через очередь будильника</td><td class="n">0</td></tr>
+<tr><td>rc_obzor_html.py</td><td>библиотека: общий вид веб-таблиц отчётов</td><td class="n">0</td></tr>
+<tr><td>rc_pages.py</td><td>библиотека: общие проверки страниц</td><td class="n">0</td></tr>
+<tr><td>rc_paths.py</td><td>библиотека: адрес музея по его коду</td><td class="n">0</td></tr>
+<tr><td>rc_root.py</td><td>библиотека: где лежат репозитории проекта</td><td class="n">1</td></tr>
+<tr><td>readiness_state.py</td><td>состояние готовности: размещено / утверждено / выкачено</td><td class="n">0</td></tr>
+<tr><td>seo-head.py</td><td>поисковая шапка страницы</td><td class="n">1</td></tr>
+<tr><td>sergey-mail.py</td><td>почтальон вопросов Сергею</td><td class="n">1</td></tr>
+<tr><td>sergey_words.py</td><td>журнал дословных слов Сергея</td><td class="n">1</td></tr>
+<tr><td>standards.py</td><td>реестр версий стандартов и скиллов</td><td class="n">1</td></tr>
+<tr><td>stt-local.py</td><td>распознавание голосовых Сергея</td><td class="n">0</td></tr>
+<tr><td>tekst-otdelno.py</td><td>текст отдельно от макета (прототип)</td><td class="n">1</td></tr>
+<tr><td>video-sync.py</td><td>реестр видео на сайте сверяется с файлами</td><td class="n">0</td></tr>
+<tr><td>video-upload.py</td><td>заливка роликов в хранилище</td><td class="n">0</td></tr>
+<tr><td>vneshniy_dostup.py</td><td>библиотека: проверка внешнего адреса</td><td class="n">0</td></tr>
+<tr><td>vyklyuchateli.py</td><td>выключатели автоматов из файла</td><td class="n">1</td></tr>
+<tr><td>wake-agent.sh</td><td>вход будильника: сохранить звонок и разбудить</td><td class="n">0</td></tr>
+<tr><td>wake-circuit-breaker.py</td><td>предохранитель будильника от лавины звонков</td><td class="n">0</td></tr>
+<tr><td>wake-gate.py</td><td>привратник будильника: единственный вход в очередь звонков</td><td class="n">2</td></tr>
+<tr><td>whoami.py</td><td>стартовая карточка агента: кто я, моя зона, что брать</td><td class="n">2</td></tr>
+<tr><td>yandex-object-storage.mjs</td><td>работа с хранилищем Яндекса для медиа</td><td class="n">0</td></tr>
+</tbody></table></div>
+<h2>ОТК — проверяет готовое на выходе: аудиторы, сторожа, проверки заявок</h2>
+<div class="wrap"><table><thead><tr><th>Скрипт</th><th>Что делает</th><th>Тестов</th></tr></thead><tbody>
+<tr><td>a11y.py</td><td>доступность страницы (WCAG, ГОСТ)</td><td class="n">1</td></tr>
+<tr><td>acceptance-report.py</td><td>доказательный отчёт приёмки</td><td class="n">0</td></tr>
+<tr><td>adr-check.py</td><td>правило с датой без записи решения — предупреждение</td><td class="n">1</td></tr>
+<tr><td>audit-content.py</td><td>аудитор содержания страниц по стоп-листу</td><td class="n">0</td></tr>
+<tr><td>audit-leaks.mjs</td><td>поиск утечек служебного на публичный сайт</td><td class="n">0</td></tr>
+<tr><td>audit-museum.py</td><td>аудитор чистоты музея: дубли, битые ссылки, сироты</td><td class="n">0</td></tr>
+<tr><td>audit-pages.py</td><td>аудит страниц против стандартов</td><td class="n">1</td></tr>
+<tr><td>audit-prava.py</td><td>права на изображения (стандарт №14)</td><td class="n">1</td></tr>
+<tr><td>audit-precommit.py</td><td>страница не уезжает в репозиторий хуже, чем была</td><td class="n">0</td></tr>
+<tr><td>audit-structure.py</td><td>порядок папок сайта не расползается</td><td class="n">0</td></tr>
+<tr><td>audit-tools.py</td><td>скрипты без потребителей + эта таблица групп</td><td class="n">0</td></tr>
+<tr><td>check-catalog.py</td><td>сторож каталога музеев</td><td class="n">1</td></tr>
+<tr><td>check-entities.py</td><td>имена и даты на странице проверены явно</td><td class="n">1</td></tr>
+<tr><td>check-hook.py</td><td>хук: длина, одно предложение, без вопроса</td><td class="n">1</td></tr>
+<tr><td>check-inline-js.mjs</td><td>синтаксис встроенных скриптов страницы</td><td class="n">0</td></tr>
+<tr><td>check-links.py</td><td>битые ссылки на сайте</td><td class="n">0</td></tr>
+<tr><td>check-media.py</td><td>медиа не лежит в git</td><td class="n">0</td></tr>
+<tr><td>check-series.py</td><td>серия дней не однообразна: хуки, механики, кадры</td><td class="n">1</td></tr>
+<tr><td>check-skills.py</td><td>скиллы музеев и их обязательные ссылки</td><td class="n">0</td></tr>
+<tr><td>check_fact_sources.py</td><td>у каждого факта есть источник</td><td class="n">0</td></tr>
+<tr><td>concept-check.py</td><td>концепция музея — все 16 разделов</td><td class="n">0</td></tr>
+<tr><td>delivery-browser.mjs</td><td>снимок живой страницы в браузере</td><td class="n">0</td></tr>
+<tr><td>fold-gap.mjs</td><td>диагностика: кто занимает зазор на первом экране</td><td class="n">0</td></tr>
+<tr><td>fold-parts.mjs</td><td>диагностика: разбор первого экрана телефона</td><td class="n">0</td></tr>
+<tr><td>gate.py</td><td>единая статическая приёмка страницы</td><td class="n">1</td></tr>
+<tr><td>hook-gate.py</td><td>красный хук не проходит в репозиторий</td><td class="n">0</td></tr>
+<tr><td>interactive_contract.py</td><td>интерактив страницы доказан проверкой</td><td class="n">0</td></tr>
+<tr><td>istochniki-proverka.py</td><td>ночная проверка реестра источников</td><td class="n">1</td></tr>
+<tr><td>kontroler.py</td><td>контролёр роботов: жив ли, дошёл ли результат</td><td class="n">1</td></tr>
+<tr><td>monitor-public.mjs</td><td>наблюдение за публичным сайтом</td><td class="n">0</td></tr>
+<tr><td>museum-page-check.mjs</td><td>проверка страницы музея в браузере</td><td class="n">0</td></tr>
+<tr><td>obzor-arhitektury.py</td><td>ежемесячный обзор архитектуры</td><td class="n">0</td></tr>
+<tr><td>page-eyes.mjs</td><td>скриншоты страницы для приёмки</td><td class="n">0</td></tr>
+<tr><td>passport-gate.py</td><td>красный паспорт не проходит в репозиторий</td><td class="n">0</td></tr>
+<tr><td>poisk-instrumenta.py</td><td>поиск готового инструмента до нового</td><td class="n">1</td></tr>
+<tr><td>polomki.py</td><td>журнал поломок без виноватых</td><td class="n">1</td></tr>
+<tr><td>pr-checks.py</td><td>проверки заявок нашим сервером</td><td class="n">3</td></tr>
+<tr><td>proof-check.py</td><td>блок «Документ»: доказательство первенства</td><td class="n">0</td></tr>
+<tr><td>pulse-watch.py</td><td>сторож пульса: замолчавший автомат</td><td class="n">1</td></tr>
+<tr><td>pulse.py</td><td>пульс автоматов: отметка «жив»</td><td class="n">1</td></tr>
+<tr><td>rashod-agentov.py</td><td>расход токенов по агентам</td><td class="n">1</td></tr>
+<tr><td>schetchik-samodelki.py</td><td>счётчик самоделок против мировых стандартов</td><td class="n">0</td></tr>
+<tr><td>skorost.mjs</td><td>скорость страницы на телефоне</td><td class="n">1</td></tr>
+<tr><td>skorost.py</td><td>вес и скорость страницы (стандарт №10)</td><td class="n">1</td></tr>
+<tr><td>skvoznoy-probnik.py</td><td>сквозной пробник: робот проходит весь круг наряда</td><td class="n">1</td></tr>
+<tr><td>start-context-audit.py</td><td>стартовый налог токенов на всех путях запуска</td><td class="n">1</td></tr>
+<tr><td>validate-agent-system.mjs</td><td>проверка устройства агентной системы</td><td class="n">0</td></tr>
+<tr><td>validate-issue.mjs</td><td>проверка карточки наряда</td><td class="n">0</td></tr>
+<tr><td>validate-legal-release.mjs</td><td>юридические условия выпуска</td><td class="n">0</td></tr>
+<tr><td>validate-platform.mjs</td><td>проверка платформы</td><td class="n">0</td></tr>
+<tr><td>validate-production-release.mjs</td><td>проверка рабочего выпуска</td><td class="n">0</td></tr>
+<tr><td>validate-resilience.mjs</td><td>проверка устойчивости</td><td class="n">0</td></tr>
+<tr><td>validate-scaling.mjs</td><td>проверка масштабирования</td><td class="n">0</td></tr>
+<tr><td>validate-standards.mjs</td><td>стандарты оформлены по правилам</td><td class="n">0</td></tr>
+<tr><td>verify-pages.py</td><td>живая ссылка отдаёт то, что сдано</td><td class="n">1</td></tr>
+<tr><td>verify-preview-snapshot.mjs</td><td>снимок сайта-превью совпадает с выпуском</td><td class="n">0</td></tr>
+</tbody></table></div>
+<h2>Заплатка — живёт только из-за дыры в устройстве; меняется устройством и удаляется</h2>
+<div class="wrap"><table><thead><tr><th>Скрипт</th><th>Что делает</th><th>Корень</th><th>Тестов</th></tr></thead><tbody>
+<tr><td>isolate-work.py</td><td>готовит отдельную копию под работу</td><td>К1</td><td class="n">1</td></tr>
+<tr><td>place-zone-markers.py</td><td>раскладывает метку-владельца в папки музеев</td><td>К1</td><td class="n">0</td></tr>
+<tr><td>safe-commit.py</td><td>замок на коммит, потому что все коммитят в одну папку</td><td>К1</td><td class="n">1</td></tr>
+<tr><td>shared-folder-guard.py</td><td>не даёт писать в общую папку</td><td>К1</td><td class="n">0</td></tr>
+<tr><td>zone-guard.py</td><td>не даёт записать работу в чужой музей</td><td>К1</td><td class="n">0</td></tr>
+<tr><td>shared-folder-watch.py</td><td>держит общую папку на main</td><td>К2</td><td class="n">1</td></tr>
+<tr><td>auto-housekeeping.py</td><td>уборка тетради-очереди по расписанию</td><td>К3</td><td class="n">0</td></tr>
+<tr><td>handoff-accept.py</td><td>приёмка строки тетради</td><td>К3</td><td class="n">1</td></tr>
+<tr><td>handoff-answer.py</td><td>ответ в строке тетради</td><td>К3</td><td class="n">1</td></tr>
+<tr><td>handoff-issue.py</td><td>выдача наряда строкой в тетрадь</td><td>К3</td><td class="n">2</td></tr>
+<tr><td>handoff-rotate.py</td><td>ротация разросшейся тетради</td><td>К3</td><td class="n">1</td></tr>
+<tr><td>handoff-scope.py</td><td>сверка заявленной области с диффом</td><td>К3</td><td class="n">1</td></tr>
+<tr><td>handoff-shrink.py</td><td>ужатие длинных строк тетради</td><td>К3</td><td class="n">4</td></tr>
+<tr><td>inbox.py</td><td>моя очередь приёмки из тетради</td><td>К3</td><td class="n">4</td></tr>
+<tr><td>kvitki-iz-vetok.py</td><td>переносит квитки из веток в тетрадь</td><td>К3</td><td class="n">1</td></tr>
+<tr><td>queue-build.py</td><td>собирает очередь из тетради</td><td>К3</td><td class="n">1</td></tr>
+<tr><td>rc_handoff.py</td><td>библиотека разбора тетради</td><td>К3</td><td class="n">0</td></tr>
+<tr><td>rc_main_commit.py</td><td>правит тетрадь коммитом прямо в main</td><td>К3</td><td class="n">0</td></tr>
+<tr><td>sdacha.py</td><td>сдача строкой в тетради</td><td>К3</td><td class="n">1</td></tr>
+<tr><td>trevoga.py</td><td>тревога строкой в тетрадь</td><td>К3</td><td class="n">1</td></tr>
+<tr><td>build-calendar-data.py</td><td>данные своей витрины изобретений</td><td>К4</td><td class="n">0</td></tr>
+<tr><td>build-calendar.py</td><td>своя витрина календаря музея изобретений</td><td>К4</td><td class="n">0</td></tr>
+<tr><td>sverka-kalendarya.py</td><td>сверка таблицы календаря со всеми носителями</td><td>К4</td><td class="n">0</td></tr>
+<tr><td>sync-month-hooks.py</td><td>переносит хуки из утверждённой таблицы в черновик</td><td>К4</td><td class="n">0</td></tr>
+<tr><td>sync-year-draft-fields.py</td><td>переносит поля черновика года в месяц</td><td>К4</td><td class="n">0</td></tr>
+<tr><td>ensure-postman.py</td><td>поднимает почтальона после перезапуска контейнера</td><td>К5</td><td class="n">1</td></tr>
+<tr><td>install-delivery-host-watch.sh</td><td>ежеминутная проверка хоста, что доставка жива</td><td>К5</td><td class="n">0</td></tr>
+<tr><td>audioguide-build.py</td><td>разовый перевод аудиогидов на общий движок</td><td>К6</td><td class="n">0</td></tr>
+<tr><td>fix-score-engine.py</td><td>разовый перевод страниц на общий счёт</td><td>К6</td><td class="n">0</td></tr>
+<tr><td>fix_hero.py</td><td>разовое приведение обложек к эталону</td><td>К6</td><td class="n">0</td></tr>
+<tr><td>migrate-skill-canons.py</td><td>разовая замена дублей скиллов</td><td>К6</td><td class="n">0</td></tr>
+<tr><td>perenos-naryadov.py</td><td>разовый перенос нарядов из тетради на доску</td><td>К6</td><td class="n">1</td></tr>
+<tr><td>summarize-visitor-test.mjs</td><td>сводка одного теста посетителей</td><td>К6</td><td class="n">0</td></tr>
+<tr><td>sync-january-hooks.py</td><td>перенос хуков января — заменён месячным</td><td>К6</td><td class="n">0</td></tr>
+</tbody></table></div>
+<footer>Источник — docs/registries/tools-gruppy.json; пересборка — python3 tools/audit-tools.py --gruppy --out файл.html</footer>
+</main>
+</body>
+</html>
