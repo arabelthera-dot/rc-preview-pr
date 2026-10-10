@@ -1,0 +1,23 @@
+{
+  "note": "Права на кадры главной страницы музея. Здесь — только те файлы, что стоят на самой странице; их цифровые копии в полном разрешении задокументированы в media/zum/<зал>/rights.json (стандарт №14).",
+  "files": [
+    {
+      "file": "devyatyi-val-hero.jpg",
+      "object": "Иван Айвазовский. «Девятый вал». 1850. Холст, масло. 221 × 332 см",
+      "holder": "Государственный Русский музей, Санкт-Петербург",
+      "author": "Иван Константинович Айвазовский (1817–1900)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Aivazovsky,_Ivan_-_The_Ninth_Wave.jpg",
+      "file_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Aivazovsky%2C_Ivan_-_The_Ninth_Wave.jpg",
+      "via": "Wikimedia Commons",
+      "license": "общественное достояние",
+      "basis": "Автор умер в 1900 году: срок охраны (ГК РФ ст. 1281) истёк; на Commons файл в общественном достоянии. Тот же цифровой файл задокументирован в media/zum/devyatyi-val/rights.json",
+      "derived_from": "media/zum/devyatyi-val/rights.json",
+      "note": "кадр 1800 × 1189 — уменьшение того же полотна: пропорции совпадают с исходным файлом 5815 × 3840 (1,514 у обоих)",
+      "sha1": "36a02830495d3947a2789591adfb4f4e1e4d532b",
+      "sha256": "96230bd7ba1883940561a502b71ac690d7c3e92194c408598238c95630122c29",
+      "size": "1800×1189",
+      "checked_at": "2026-10-10",
+      "ai_modification": "not_applied"
+    }
+  ]
+}

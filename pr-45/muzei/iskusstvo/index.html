@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head><meta name="robots" content="noindex"><base href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/iskusstvo/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Русское искусство · Русская цивилизация</title>
+<style>
+:root{--gold:#d4af37;--ink:#0b0d11;--panel:#12151c;--line:rgba(212,175,55,.35);--txt:#e9e3d3}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--ink);color:var(--txt);font-family:Georgia,'Times New Roman',serif;line-height:1.6}
+a{color:var(--gold);text-decoration:none}
+header{padding:34px 18px 10px;text-align:center}
+header .b1{font-size:12px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase}
+h1{font-size:clamp(28px,7vw,44px);font-weight:normal;margin-top:6px}
+header p{font-size:14px;opacity:.8;font-style:italic;margin-top:6px}
+nav.crumbs{font-size:12.5px;padding:4px 16px 14px;text-align:center}
+nav.crumbs span{opacity:.55}
+main{max-width:720px;margin:0 auto;padding:10px 16px 40px}
+.today{background:linear-gradient(160deg,#181206,#12151c);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:26px}
+.today .lbl{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold)}
+.today p{font-size:14px;margin-top:6px}
+h2{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:normal;margin:24px 0 12px}
+.hall{display:block;background:var(--panel);border:1px solid rgba(212,175,55,.2);border-radius:14px;padding:14px 16px;margin-bottom:10px;color:var(--txt)}
+.hall .n{font-size:11px;color:var(--gold);letter-spacing:1.5px}
+.hall .t{font-size:16px;margin-top:2px}
+.hall .s{font-size:12.5px;opacity:.65;margin-top:2px;font-style:italic}
+.hall.open{border-color:var(--line);box-shadow:0 0 18px rgba(212,175,55,.12)}
+.hall.soon{opacity:.55}
+.pics{display:grid;gap:8px;margin-top:12px}
+@media (min-width:720px){.pics{grid-template-columns:1fr 1fr 1fr}}
+.pics a{display:block;background:rgba(233,227,211,.045);border:1px solid rgba(212,175,55,.22);border-radius:11px;padding:11px 13px;font-size:12.5px;line-height:1.5;color:var(--txt);opacity:.9}
+.pics a:hover{border-color:var(--gold);opacity:1}
+.pics a b{display:block;color:var(--gold);font-size:13.5px;font-weight:normal;margin-bottom:3px}
+.council,.support{background:var(--panel);border:1px solid rgba(212,175,55,.2);border-radius:14px;padding:15px;font-size:13.5px;margin-top:14px}
+/* обложка: документальный кадр открытого зала (минимум главной §6-quinquies) */
+.cover-shot{margin:0 0 22px;text-align:center}
+.cover-shot img{width:100%;height:auto;display:block;border-radius:14px;border:1px solid var(--line)}
+.cover-shot figcaption{font-size:12.5px;opacity:.82;margin-top:8px;font-style:italic}
+.cover-shot .src{font-size:11.5px;opacity:.6;margin-top:4px;font-style:normal;word-break:break-all}
+/* экспонат дня: «сегодня в музее» */
+#segodnya .lbl{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold)}
+#segodnya h3{font-family:Georgia,serif;font-size:17px;font-weight:normal;margin-top:6px}
+#segodnya p{font-size:13.5px;margin-top:6px;opacity:.9}
+#segodnya a{display:inline-block;margin-top:9px;font-size:13px}
+.zaly-lead{font-size:13px;opacity:.75;margin:-4px 0 12px}
+footer{padding:22px 16px 60px;border-top:1px solid rgba(212,175,55,.2);text-align:center;font-size:12.5px;opacity:.85;margin-top:30px}
+footer .slog{font-style:italic;color:var(--gold);margin-bottom:6px}
+
+/* календарь музея (стандарт: свой календарь у каждого музея — свой ежедневный ролик) */
+#calendar .calnav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0 12px}
+.calarrow{background:none;border:1px solid var(--line);color:var(--gold);border-radius:50%;width:32px;height:32px;font-size:18px;line-height:1;cursor:pointer;font-family:Georgia,serif;flex:none}
+.calarrow:hover{border-color:var(--gold);background:rgba(212,175,55,.1)}
+.caldate{font-family:Georgia,serif;font-size:15px;text-align:center;flex:1}
+.caldate b{color:var(--gold);font-weight:normal;font-size:12.5px}
+.calcard h3{font-family:Georgia,serif;font-size:15.5px;font-weight:normal;color:var(--gold);margin-bottom:7px}
+.calcard .caly{opacity:.55;font-size:13px;color:var(--txt)}
+.calcard p{font-size:13.5px;line-height:1.6}
+.calcard.empty{opacity:.85}
+.calcard a{display:inline-block;margin-top:9px;font-size:13px}
+.calnext{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);opacity:.75;margin-bottom:7px}
+
+/* ── кнопка возврата: видна всегда, на каждой странице музея ── */
+.backbtn{position:fixed;top:10px;left:10px;z-index:60;display:inline-flex;align-items:center;gap:7px;
+  background:rgba(11,13,17,.86);backdrop-filter:blur(6px);border:1px solid var(--gold);color:var(--gold);
+  border-radius:22px;padding:9px 15px;font-family:Georgia,serif;font-size:13.5px;text-decoration:none;
+  box-shadow:0 4px 16px rgba(0,0,0,.5);transition:background .2s}
+.backbtn:hover{background:rgba(212,175,55,.18)}
+.backbtn .ar{font-size:16px;line-height:1}
+@media (max-width:520px){.backbtn{font-size:12.5px;padding:8px 13px}}
+</style>
+<!-- rc-meta:start -->
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="description" content="Русское искусство. У каждого дня свой повод — день рождения художника, дата картины, событие. Листайте стрелками, тапните по числу.">
+  <link rel="canonical" href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/iskusstvo/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Русская цивилизация">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Русское искусство · Русская цивилизация">
+  <meta property="og:description" content="Русское искусство. У каждого дня свой повод — день рождения художника, дата картины, событие. Листайте стрелками, тапните по числу.">
+  <meta property="og:url" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/iskusstvo/">
+  <meta property="og:image" content="https://arabelthera-dot.github.io/rc-museum-preview/og/iskusstvo_index.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Русское искусство · Русская цивилизация">
+  <meta name="twitter:description" content="Русское искусство. У каждого дня свой повод — день рождения художника, дата картины, событие. Листайте стрелками, тапните по числу.">
+  <meta name="twitter:image" content="https://arabelthera-dot.github.io/rc-museum-preview/og/iskusstvo_index.jpg">
+  <meta name="theme-color" content="#1a1410">
+  <link rel="icon" href="https://arabelthera-dot.github.io/rc-museum-preview/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://arabelthera-dot.github.io/rc-museum-preview/icon-192.png">
+  <link rel="apple-touch-icon" href="https://arabelthera-dot.github.io/rc-museum-preview/apple-touch-icon.png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Русское искусство · Русская цивилизация",
+  "description": "Русское искусство. У каждого дня свой повод — день рождения художника, дата картины, событие. Листайте стрелками, тапните по числу.",
+  "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/iskusstvo/",
+  "image": "https://arabelthera-dot.github.io/rc-museum-preview/og/iskusstvo_index.jpg",
+  "inLanguage": "ru-RU",
+  "isAccessibleForFree": true,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Русская цивилизация",
+    "url": "https://arabelthera-dot.github.io/rc-museum-preview/",
+    "logo": "https://arabelthera-dot.github.io/rc-museum-preview/icon-512.png"
+  },
+  "isPartOf": {
+    "@type": "CollectionPage",
+    "name": "Русское искусство",
+    "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/iskusstvo/"
+  }
+}
+  </script>
+  <!-- rc-meta:end -->
+</head>
+<body>
+<a class="backbtn" href="https://arabelthera-dot.github.io/rc-museum-preview/index.html"><span class="ar">←</span>В город-музей</a>
+<header class="top">
+  <div class="b1">Русская цивилизация</div>
+  <div class="b2">Первый цифровой музей достижений России · Цивилизация первенств — что Россия дала миру раньше всех</div>
+  <h1>Русское искусство</h1>
+  <div class="b4">От иконы — до первой в мире абстракции. Галерея, в картины которой можно провалиться.</div>
+</header>
+<nav class="crumbs"><a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация</a> › <span>Русское искусство</span></nav>
+<main>
+  <figure class="cover-shot">
+    <img src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/iskusstvo/media/devyatyi-val-hero.jpg" width="1800" height="1189" alt="Иван Айвазовский, «Девятый вал», 1850 — полотно открытого зала музея">
+    <figcaption><b>Открытый зал · Айвазовский.</b> «Девятый вал», 1850. Холст, масло, 221 × 332 см. Полотно — Государственный Русский музей, Санкт-Петербург; общественное достояние: автор умер в 1900 году. <a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/iskusstvo/pic-aivazovsky-devyatyi-val.html">Войти в зал →</a></figcaption>
+    <div class="src">Изображение: скан полотна. Источник файла — Wikimedia Commons, общественное достояние (см. <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-45/muzei/iskusstvo/media/rights.json">media/rights.json</a>). Источники описания — rusmuseum.ru · ar.culture.ru · culture.ru</div>
+  </figure>
+
+  <section class="today" id="segodnya">
+    <span class="lbl">Экспонат дня · сегодня в музее</span>
+    <h3 id="segodnya-title">Сегодняшний повод</h3>
+    <p id="segodnya-text"></p>
+    <a id="segodnya-link" href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/iskusstvo/calendar.html">Календарь галереи — весь год →</a>
+  </section>
+
+  <div class="today" id="calendar"><span class="lbl">Календарь музея · этот день в русском искусстве</span>
+    <p style="font-size:13px;opacity:.75;margin-top:4px">У каждого дня свой повод — день рождения художника, дата картины, событие. Листайте стрелками, тапните по числу.</p>
+    <div id="calbox"></div>
+    <p style="font-size:13px;opacity:.7;margin-top:10px"><a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/iskusstvo/calendar.html">Весь год целиком — 365 дней в календаре музея →</a></p>
+  </div>
+
+  <h2 id="zaly">Анфилада залов — второй вход в музей</h2>
+  <p class="zaly-lead">Пришли не за датой? Идите по залам: двенадцать залов от иконы до XXI века, открыт пока один — Айвазовского.</p>
+  <span class="hall soon"><span class="n">Зал 1</span><div class="t">Иконопись</div><div class="s">XV–XVII века · готовится</div></span>
+  <span class="hall soon"><span class="n">Зал 2</span><div class="t">Портрет XVIII века</div><div class="s">готовится</div></span>
+  <div class="hall open" id="aivazovsky"><span class="n">Зал 3 · ОТКРЫТ</span><div class="t">Айвазовский. Человек, который писал море по памяти</div><div class="s">Три картины — три разговора о человеке и стихии</div>
+    <div class="pics">
+      <a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/iskusstvo/pic-aivazovsky-devyatyi-val.html"><b>«Девятый вал» · 1850</b>Надежда в самой середине катастрофы. Он пережил такой шторм сам — газеты успели напечатать некролог.</a>
+      <a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/iskusstvo/pic-aivazovsky-raduga.html"><b>«Радуга» · 1873</b>Кораблекрушение, в котором вместо ужаса — радуга. Найдите её: с первого раза почти никто не находит.</a>
+      <a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/iskusstvo/pic-aivazovsky-chernoe-more.html"><b>«Чёрное море» · 1881</b>Картина, на которой словно ничего нет. Все так говорят — они просто не нашли корабль.</a>
+    </div>
+  </div>
+  <span class="hall soon"><span class="n">Зал 4</span><div class="t">Пейзаж русской природы</div><div class="s">Шишкин, Левитан, Куинджи · готовится</div></span>
+  <span class="hall soon"><span class="n">Зал 5</span><div class="t">Передвижники</div><div class="s">готовится</div></span>
+  <span class="hall soon"><span class="n">Зал 6</span><div class="t">Историческая живопись</div><div class="s">Суриков, Верещагин · готовится</div></span>
+  <span class="hall soon"><span class="n">Зал 7</span><div class="t">Сказка и былина</div><div class="s">Васнецов, Билибин · готовится</div></span>
+  <span class="hall soon"><span class="n">Зал 8</span><div class="t">Врубель и модерн</div><div class="s">готовится</div></span>
+  <span class="hall soon"><span class="n">Зал 9</span><div class="t">Авангард. Первые в мире</div><div class="s">беспредметная живопись родилась в России · готовится</div></span>
+  <span class="hall soon"><span class="n">Залы 10–12</span><div class="t">Советское искусство · Народное искусство · XXI век</div><div class="s">визия</div></span>
+
+  <div class="council"><b style="color:var(--gold)">Научный совет музея.</b> Ищем научного консультанта — искусствоведа, готового проверять факты и держать планку. Напишите: <a href="mailto:arabelthera@gmail.com?subject=Научный совет музея Русское искусство">arabelthera@gmail.com</a></div>
+  <div class="support"><b style="color:var(--gold)">❤ Поддержать проект.</b> Музей бесплатный для всех и делается крошечной командой. Донат-реквизиты появятся здесь; пока лучшая поддержка — показать музей друзьям и школе.</div>
+</main>
+<footer><div class="slog">Цивилизация первенств — что Россия дала миру раньше всех</div>Музей «Русское искусство» · пилотный зал Айвазовского · <a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">в город-музей →</a></footer>
+<script>window.addEventListener("pageshow",function(e){if(e.persisted)location.reload();});</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-calendar-month.js"></script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/iskusstvo/calendar-art.js"></script>
+<script>
+/* Экспонат дня: берём ровно то, что уже лежит в календаре музея (window.MUSEUM_CALENDAR),
+   — ничего не досочиняем. Нет повода на сегодня — говорим об этом прямо текстом движка. */
+(function(){
+  var d = new Date();
+  var key = ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2);
+  var item = (window.MUSEUM_CALENDAR || {})[key];
+  var t = document.getElementById('segodnya-title');
+  var p = document.getElementById('segodnya-text');
+  var a = document.getElementById('segodnya-link');
+  if (!t || !p || !a) return;
+  if (!item) {
+    t.textContent = 'Повод на сегодня ещё не привязан';
+    p.textContent = window.MUSEUM_CALENDAR_EMPTY || '';
+    return;
+  }
+  t.textContent = item.t + (item.y ? ' · ' + item.y : '');
+  p.textContent = item.d;
+  if (item.href) { a.href = item.href; a.textContent = item.link || ('Экспонат дня: ' + item.t + ' →'); }
+})();
+</script>
+<script>window.MUSEUM_SUPPORT={museum:'Русское искусство'};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-support.js"></script>
+  <!-- rc-analytics --><script defer src="https://arabelthera-dot.github.io/rc-museum-preview/assets/analytics.js"></script>
+</body>
+</html>
