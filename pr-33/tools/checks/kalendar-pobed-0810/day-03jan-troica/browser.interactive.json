@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "page_sha256": "5f92a55d33d880369652dbc2fa5fd925bbf99b3d48d50c8394ea02e7d4030826",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-10T13:28:04.461Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../../b6/plans/day-03jan-troica.mjs",
+  "inputs": {
+    "../../../../muzei/kalendar-pobed/day-03jan-troica.html": "5f92a55d33d880369652dbc2fa5fd925bbf99b3d48d50c8394ea02e7d4030826",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../../b6/plans/day-03jan-troica.mjs": "da285aa0cd585bcb895c876004947f8c5351d363e46c5edf1c25fd531a8a0e0e",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/kalendar-pobed/media/day-03jan-hero.svg": "73402a084b155b51f1d7b8fcdd28b63587e49bb0ada32e1af15f7b82d9dd21c9",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../muzei/kalendar-pobed/calendar-kalendar-pobed.js": "feab23ad710ddace637ce17c018dc99454d545d80e9612f38cb43cf5ee50563c",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../icon-192.png": "073414c383bcd7798fd7954fbb9df89db6b5a989e4d7b66a819efe3aebf84249",
+    "entry-390.png": "d1844d319c1be7e69ba2a4a8b9c506533bb466560fa35e6889645134834e473a",
+    "entry-390.json": "63f1dcf643140f31856ce4b04e45612d49120c191273aaf112ba0fa56b32a843",
+    "wrong-390.png": "e31d9c7528cf0ace44c942c6178c21bc6c79ecf724644cf842cef21862ca8baf",
+    "wrong-390.json": "4db1f067d19eecc0309a0d184703cf363b8ae730ecc32c409bc7e1e52cb26fe6",
+    "reset-390.png": "3aa0d60b78fcf81d9d257948939dfed1da40cfb15cb40de7f6b3e61a86f432ca",
+    "reset-390.json": "45eac6c654e2b42626932768400f9080194ac91cb855a2b7efca6e349cf649ec",
+    "mobile-390.png": "33860675001c3fbe603c95b44960238fbbba44377e3017775ff845d31adcaa11",
+    "mobile-390.json": "90e8ab312ebae249a7ac661df4430b1e1116568e54dbaf4d9f354cb0377dd624",
+    "mobile-1440.png": "17d81b373df61785dc57baa41cfac3bbadc6304a16f4c9300f85ed92f972914d",
+    "mobile-1440.json": "f23341583d844441facecfc42c90d0bd9f45c36f685a378eb42da7a984aa5d18",
+    "nojs-390.png": "96f265699cd95c6c57616783ce6df50979c920ff38eafd69ea91b7bc631ab8ec",
+    "nojs-390.json": "0b6c458523417efb7bca7de91190542301dbfecfecde451a57639ab95b3add0c",
+    "score-390.png": "a342ceceeb495296308dc5b6e05a45ff237542be622d442a1de7089ce7403527",
+    "score-390.json": "23649d3eb72efd1f3a77ac7d996079d0deebc401a6561adb6c05f18ab8e9344a",
+    "main-390.png": "425497732deb7f198d284cc2ac06bb0aee21cfcc12bf4c284b99ed6568f08e79",
+    "main-390.json": "6ee4580190e5c488a0fc5531060adf662a3b2bcc6168ff6520f772d2f12e9fe6",
+    "empty-390.png": "dba7aabe4e315a25694078cbf97634a619aab2f1fd6be2594e237820628dce60",
+    "empty-390.json": "57d99b99038fbcec824a0f375b29e8da20902205f8a851b077682bad160374f6"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
