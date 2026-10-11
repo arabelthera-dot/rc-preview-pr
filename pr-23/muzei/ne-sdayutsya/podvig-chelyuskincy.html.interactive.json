@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "page_sha256": "9c484ef01cff5a4d46b5991201f378068f625d539f96ea2e09b3a960d410e39b",
+  "runner": "../../tools/checks/nesdayutsya-2909/run-b6.mjs",
+  "created_at": "2026-10-09T18:55:26.363Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/checks/nesdayutsya-2909/day15-plan.mjs",
+  "inputs": {
+    "podvig-chelyuskincy.html": "9c484ef01cff5a4d46b5991201f378068f625d539f96ea2e09b3a960d410e39b",
+    "../../tools/checks/nesdayutsya-2909/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/checks/nesdayutsya-2909/day15-plan.mjs": "28ac60251da2cefbb7c76b47c7a24eaa2729986cb37ee3c24e95f76bef5f339e",
+    "../../tools/checks/nesdayutsya-2909/plans.mjs": "739639f3b2368589794115ebb6099df6d57dda5441c68795dccc9840ab8e20d0",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "nesdayutsya-style.css": "39e9893b4180f72b0d7e77d2999dc22c2761371749fc30f2e41187b23ce92fdc",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "chelyuskin-tonet-1934.jpg": "cf4ccf95ba6d32ebbad08eb1bdbeb055d08ff3067e284554805361cade02b8ab",
+    "chelyuskin-aerodrom-1934.jpg": "e0aa26f81e982b4c2a7d2c4d0fecb595ba5f639b76f58bb5465df46ae5667b66",
+    "chelyuskin-samolety-1934.jpg": "de5e38703d46b5cdc0c14f3da535112cec2f26717e4bf87e2779d6dc2cd9864c",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/scrolltelling.js": "782c0de78ecc16edb417b84d9c85a4e9e71f2e289fa2c2c4a27c63a06a689642",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "calendar-nesdayutsya.js": "379d94500e966012ad82c13928fdea03a2ba26a55d542e3bb5961436493e3db0",
+    "../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qWVyvHpA.woff2": "bec4e724c49bde6d6b3f15038c8015f5dc7c810bdaadd3aee537ab72afc50e4a",
+    "../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qSVys.woff2": "bf23a7a4eebedbb87d4084a69496b29815914a18e339a00f5dc73a03c9c9328f",
+    "../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "lyapidevskij-marka-1935.jpg": "d7765d593aec50753603879c333a43cca9395207a582a2198aa642ffbb47fb84",
+    "chelyuskin-pervyj-samolet-1934.jpg": "a0501f1d25ee02902b8e641be19d6beaa721ef9b1ac970fac835c6190d3c62b3",
+    "../../tools/checks/nesdayutsya-2909/day15/entry-390.png": "c861ac259831a0172bfcef1b2b036dae1f60b6c42dbc1471a323c16d17a34609",
+    "../../tools/checks/nesdayutsya-2909/day15/entry-390.json": "e8f60023ca35cc8bbaebd38b71a760e8d653fbcda44eb075d089043dc72b7861",
+    "../../tools/checks/nesdayutsya-2909/day15/wrong-390.png": "31720bf76ecdf465d1f5ba16827366eea4c5af4a26f581cde90d1667e717219b",
+    "../../tools/checks/nesdayutsya-2909/day15/wrong-390.json": "65f3ad68dc689bdeec549a6d4b88225bfdd8eaff3220575683e601263e23d5c1",
+    "../../tools/checks/nesdayutsya-2909/day15/reset-390.png": "a7f00e0569b85c11156f8f7f5b4b0735bc04b73c1eab958d077bf770ab641f92",
+    "../../tools/checks/nesdayutsya-2909/day15/reset-390.json": "fd0bdbe45dc294efb6dd1ee6f69997dc82adcddbb7214b10ef7580045d80883c",
+    "../../tools/checks/nesdayutsya-2909/day15/mobile-390.png": "634effdec4b399eba4a20d6f38dc050fe1d0a8b915359e99ae7c22364c763e8e",
+    "../../tools/checks/nesdayutsya-2909/day15/mobile-390.json": "fb0178a8875e42e068aa8ee17f0753fa09ba98f7496437086be4bda7351d641f",
+    "../../tools/checks/nesdayutsya-2909/day15/mobile-1440.png": "af1f24ee1bbda8bd0129d971ea241cd4063ec65410658cefb239cea3bbdb61ce",
+    "../../tools/checks/nesdayutsya-2909/day15/mobile-1440.json": "15e8a1888ea2f3feef982ab10cce8614aad5abbebff1c86fe7b5bca9e1fc93ee",
+    "../../tools/checks/nesdayutsya-2909/day15/nojs-390.png": "77cc031baaecc8dd15b53290bc7a068cd5bf5a08af11c608bf133e189b1ccc8d",
+    "../../tools/checks/nesdayutsya-2909/day15/nojs-390.json": "24cb9f8bf79977fe054eeaf5e46ba119ea7109a2ba3cbdf701f5a87dc2a49499",
+    "../../tools/checks/nesdayutsya-2909/day15/score-390.png": "5359d719f1245d0aca029a7ee963d70687e6aa3c01652050467a89edc7c02487",
+    "../../tools/checks/nesdayutsya-2909/day15/score-390.json": "9234492c4df9695e12122fc6b748216a8b121fe4c02dcc2a033206818648f550",
+    "../../tools/checks/nesdayutsya-2909/day15/main-390.png": "25ead490d8f33badad956705210ccc5ba0fef750ce9a2a3a01c99b1e2ec76596",
+    "../../tools/checks/nesdayutsya-2909/day15/main-390.json": "e19f43b97a8563490b8b0b2a4acc713210d817530b837b52f379e9db91692908",
+    "../../tools/checks/nesdayutsya-2909/day15/empty-390.png": "48ffaaa27d6470d6b6472b8cf3c40d296193526451f9a6d13b46ff4c30ff2af0",
+    "../../tools/checks/nesdayutsya-2909/day15/empty-390.json": "9ac1509d2ebcf33ce6b2bacc6b8c5bcb39fcc71e7c26b9f87b13f9d4fdd113e7"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day15/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day15/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day15/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day15/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day15/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day15/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day15/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day15/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day15/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "test_id": "entry-390",
+  "code": "entry",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/ne-sdayutsya/podvig-varyag.html",
+  "steps": [
+    "Answer first question correctly",
+    "Reload page"
+  ],
+  "checks": [
+    {
+      "label": "Fresh score",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "First question visible",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Question counter",
+      "actual": "1 / 5",
+      "expected": "1 / 5",
+      "ok": true
+    },
+    {
+      "label": "Diploma closed",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Rank before answers",
+      "actual": "0 / 100 · звание: Гость музея",
+      "expected": "0 / 100 · звание: Гость музея",
+      "ok": true
+    },
+    {
+      "label": "Persistence rule stated",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Reward after correct answer",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    },
+    {
+      "label": "Session-only score cleared on reload",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Quiz back at question 1",
+      "actual": "1 / 5",
+      "expected": "1 / 5",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "entry-390.png",
+  "status": "pass"
+}

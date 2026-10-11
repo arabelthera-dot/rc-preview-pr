@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "page_sha256": "40a7648f53c8c879d0e32b48819a79c7895b32576ad6f32722f767b16ccd8d45",
+  "runner": "../run-b6.mjs",
+  "created_at": "2026-10-09T19:00:40.959Z",
+  "browser": "151.0.7922.173",
+  "plan": "../day13-plan.mjs",
+  "inputs": {
+    "../../../../muzei/ne-sdayutsya/podvig-rogozov.html": "40a7648f53c8c879d0e32b48819a79c7895b32576ad6f32722f767b16ccd8d45",
+    "../run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../day13-plan.mjs": "1c7d629d75b740d2e2ad6842aeb9d63641b7a167780978b1b6e346b18cef1593",
+    "../plans.mjs": "739639f3b2368589794115ebb6099df6d57dda5441c68795dccc9840ab8e20d0",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../muzei/ne-sdayutsya/nesdayutsya-style.css": "39e9893b4180f72b0d7e77d2999dc22c2761371749fc30f2e41187b23ce92fdc",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/ne-sdayutsya/rogozov-stanciya-2006.jpg": "01c7e4a18a680a8378a157b6a0b14fa90ae1702866778dd2c0d195ef5805771e",
+    "../../../../muzei/ne-sdayutsya/rogozov-oazis-1983.jpg": "59820ab7130aabf788b5d6a1f606e84ed1e6924c93b855cbd460ca4f013b8924",
+    "../../../../muzei/ne-sdayutsya/rogozov-novolazarevskaya-1982.jpg": "b6a8b2a7bccea21ebd043f781993750b85dcc9f26f921e293058772a571290e2",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/scrolltelling.js": "782c0de78ecc16edb417b84d9c85a4e9e71f2e289fa2c2c4a27c63a06a689642",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../muzei/ne-sdayutsya/calendar-nesdayutsya.js": "379d94500e966012ad82c13928fdea03a2ba26a55d542e3bb5961436493e3db0",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qWVyvHpA.woff2": "bec4e724c49bde6d6b3f15038c8015f5dc7c810bdaadd3aee537ab72afc50e4a",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "../../../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qSVys.woff2": "bf23a7a4eebedbb87d4084a69496b29815914a18e339a00f5dc73a03c9c9328f",
+    "../../../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "../../../../muzei/ne-sdayutsya/rogozov-muzey-arktiki.jpg": "8d49c6a7100c1bb8de5cd75630812e9a70f41024b87470aab8f20eff442e4f83",
+    "entry-390.png": "810e32c9797d65987cd383c03275492d0761f187b053616cc23b71b415f15cdf",
+    "entry-390.json": "6700622534d85aa1f62564bd08c6906188ecfc59e3745049319848c551613346",
+    "wrong-390.png": "f24234edd563f749225cbfa6dea336bea57634589a99a34a82b01eed9325c381",
+    "wrong-390.json": "dfa490ec0cdd4323864d8fdc15aa26a5d37baab86307b7351b95ba499b651c38",
+    "reset-390.png": "01903af2fcac3176ac17fef31e32fb623446619b2850816838d1bc5773d73898",
+    "reset-390.json": "1ec03066aa989625cb610fb3e7fec7b8817f10ef343bd221cc074240ae1afbca",
+    "mobile-390.png": "608791825262fb0a830f5bcc32a265d89b79de446a7d6fec9e3b78e579e6a125",
+    "mobile-390.json": "045580680029e60ae58e3c4c0aa08a432b8885326d90b1d0bb57882864955457",
+    "mobile-1440.png": "784e487b659736f3c9986e5cf17fe0563cb06d2069758f482bbb4a9bb99d3045",
+    "mobile-1440.json": "78069acb277d11159f3bde4e1c28e61304838fac18a56a35726945bd2031b5a0",
+    "nojs-390.png": "9d08e55f190b73f05d784184355fe37d9906884cd5d8f757bede6b01a12f5d3b",
+    "nojs-390.json": "f3e10db2670a6f85753870bfc6e1eab7f3478ec14b5a4f2f7a41d10a871152c3",
+    "score-390.png": "8b54782e99634c6e7f4352e2579251182e3dcc3619d343f0afbf4924b6e3b1c6",
+    "score-390.json": "b56a6791c630b53e3b672aee221428d3e93a5046c686d2ee1b1b690b3c500e97",
+    "main-390.png": "18463b9952bae2a30d7bc821fb4a35ddedb2f5f0c82fdce962b2e00cd73ed530",
+    "main-390.json": "aa315c79b4ff3168c30d50bfd9a1386ce3ab261ec6353ec5dd712d6609d3a6c5",
+    "empty-390.png": "ac035aa7c57df41ec2115902dda835db5281e1737492a7cd1fbd3032df5edea6",
+    "empty-390.json": "10826669380a76a978043b23a20bee873ceb14729d3a7eaaf6f1cb537887754a"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
