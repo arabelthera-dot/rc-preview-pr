@@ -1,0 +1,61 @@
+{
+  "test_id": "empty-390",
+  "code": "empty",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-pushkin-evgeniy-onegin.html",
+  "steps": [],
+  "checks": [
+    {
+      "label": "В каждом вопросе три варианта",
+      "actual": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "expected": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "ok": true
+    },
+    {
+      "label": "Пять строк черновика",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    },
+    {
+      "label": "У каждой строки есть кнопка листания",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    },
+    {
+      "label": "Аудиогид на месте",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Подпись о баллах совпадает с реестром (5 × 8 и 5 × 12)",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Источники названы",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "empty-390.png",
+  "status": "pass"
+}
