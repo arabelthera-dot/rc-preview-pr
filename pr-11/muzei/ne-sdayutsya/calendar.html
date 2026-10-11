@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru" data-museum="ne-sdayutsya">
+<head><meta name="robots" content="noindex"><base href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/ne-sdayutsya/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Календарь Музея стойкости и подвига «Русские не сдаются»</title>
+<style>
+:root{--gold:#c9a84c;--gold-l:#e2c878;--ink:#060d18;--panel:#0b1624;--line:rgba(201,168,76,.35);--txt:#c6d8e8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--ink);color:var(--txt);font-family:Georgia,'Times New Roman',serif;line-height:1.6;
+ background-image:radial-gradient(60% 100% at 50% 0%,rgba(201,168,76,.05),transparent 70%)}
+a{color:var(--gold);text-decoration:none}
+header{padding:34px 18px 10px;text-align:center}
+header .b1{font-size:12px;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase}
+h1{font-size:clamp(28px,7vw,44px);font-weight:normal;margin-top:6px}
+header p{font-size:14px;opacity:.8;font-style:italic;margin-top:6px}
+nav.crumbs{font-size:12.5px;padding:4px 16px 14px;text-align:center}
+nav.crumbs span{opacity:.55}
+main{max-width:720px;margin:0 auto;padding:10px 16px 40px}
+
+.calstat{font-size:13px;opacity:.85;margin:6px 0 20px;padding:11px 14px;background:var(--panel);border:1px solid rgba(201,168,76,.25);border-radius:12px}
+.calstat b{color:var(--gold-l)}
+.cmon{margin:0 0 20px}
+.cmon h2{font-size:13px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:normal;margin:0 0 9px;display:flex;justify-content:space-between;align-items:baseline}
+.cmon h2 .cnt{font-size:11px;letter-spacing:.5px;text-transform:none;opacity:.5;color:var(--txt)}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(34px,1fr));gap:5px}
+.cday{aspect-ratio:1;border-radius:8px;border:1px solid rgba(198,216,232,.13);background:rgba(198,216,232,.03);color:var(--txt);opacity:.4;font-family:inherit;font-size:12.5px;cursor:default;padding:0}
+.cday.full{opacity:1;cursor:pointer;border-color:var(--gold);background:rgba(201,168,76,.16);color:var(--gold-l)}
+.cday.full:hover{background:rgba(201,168,76,.3)}
+.cday.on{background:var(--gold);color:#1a1508;font-weight:bold}
+.cday.today{box-shadow:0 0 0 2px rgba(198,216,232,.5)}
+.cmon.beyond h2{color:var(--gold-l)}
+.cgrid-wide{grid-template-columns:repeat(auto-fill,minmax(132px,1fr))}
+.cgrid-wide .cday{aspect-ratio:auto;padding:9px 11px;font-size:12.5px}
+#calcard{display:none;position:sticky;bottom:12px;background:linear-gradient(160deg,#0d1a2b,#0b1624);border:1px solid var(--gold);border-radius:16px;padding:17px;margin:18px 0 8px;box-shadow:0 10px 34px rgba(0,0,0,.6);z-index:20}
+#calcard .cdate{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);opacity:.85;margin-bottom:6px}
+#calcard h3{font-family:Georgia,serif;font-size:18px;font-weight:normal;color:var(--gold-l);margin-bottom:8px}
+#calcard .caly{opacity:.55;font-size:14px;color:var(--txt)}
+#calcard p{font-size:14px;line-height:1.6}
+#calcard a{display:inline-block;margin-top:11px;font-size:13.5px}
+
+.council{background:var(--panel);border:1px solid rgba(201,168,76,.2);border-radius:14px;padding:15px;font-size:13.5px;margin-top:14px}
+footer{padding:22px 16px 60px;border-top:1px solid rgba(201,168,76,.2);text-align:center;font-size:12.5px;opacity:.85;margin-top:30px}
+footer .slog{font-style:italic;color:var(--gold);margin-bottom:6px}
+
+.backbtn{position:fixed;top:10px;left:10px;z-index:60;display:inline-flex;align-items:center;gap:7px;
+  background:rgba(6,13,24,.86);backdrop-filter:blur(6px);border:1px solid var(--gold);color:var(--gold);
+  border-radius:22px;padding:9px 15px;font-family:Georgia,serif;font-size:13.5px;text-decoration:none;
+  box-shadow:0 4px 16px rgba(0,0,0,.5);transition:background .2s}
+.backbtn:hover{background:rgba(201,168,76,.18)}
+.backbtn .ar{font-size:16px;line-height:1}
+@media (max-width:520px){.backbtn{font-size:12.5px;padding:8px 13px}}
+</style>
+<!-- rc-meta:start -->
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="description" content="Календарь Музея стойкости и подвига «Русские не сдаются»: на каждый день года — подвиг стойкости. Коловрат, «Меркурий», Сиротинин, Козельск, Брестская крепость.">
+  <link rel="canonical" href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/ne-sdayutsya/calendar.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Русская цивилизация">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Календарь Музея стойкости и подвига «Русские не сдаются»">
+  <meta property="og:description" content="На каждый день года — подвиг стойкости: кто не сдался и почему об этом помнят.">
+  <meta property="og:url" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/ne-sdayutsya/calendar.html">
+  <meta property="og:image" content="https://arabelthera-dot.github.io/rc-museum-preview/og/og-default.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#060d18">
+  <link rel="icon" href="https://arabelthera-dot.github.io/rc-museum-preview/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://arabelthera-dot.github.io/rc-museum-preview/icon-192.png">
+  <link rel="apple-touch-icon" href="https://arabelthera-dot.github.io/rc-museum-preview/apple-touch-icon.png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Календарь Музея стойкости и подвига «Русские не сдаются»",
+  "description": "Календарь Музея стойкости и подвига «Русские не сдаются»: на каждый день года — подвиг стойкости.",
+  "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/ne-sdayutsya/calendar.html",
+  "inLanguage": "ru-RU",
+  "isAccessibleForFree": true,
+  "publisher": {"@type": "Organization", "name": "Русская цивилизация",
+    "url": "https://arabelthera-dot.github.io/rc-museum-preview/",
+    "logo": "https://arabelthera-dot.github.io/rc-museum-preview/icon-512.png"},
+  "isPartOf": {"@type": "CollectionPage", "name": "Музей стойкости и подвига «Русские не сдаются»",
+    "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/ne-sdayutsya/"}
+}
+  </script>
+  <!-- rc-meta:end -->
+</head>
+<body>
+<a class="backbtn" href="https://arabelthera-dot.github.io/rc-preview-pr/pr-11/muzei/ne-sdayutsya/index.html"><span class="ar">←</span>Музей стойкости и подвига «Русские не сдаются»</a>
+<header>
+  <div class="b1">Музей стойкости и подвига «Русские не сдаются»</div>
+  <h1>Календарь музея</h1>
+  <p>Каждый заполненный день — готовый повод для ролика, поста и урока.</p>
+</header>
+<nav class="crumbs"><a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация</a> › <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-11/muzei/ne-sdayutsya/index.html">Музей стойкости и подвига «Русские не сдаются»</a> › <span>Календарь</span></nav>
+<main>
+  <div id="calcard"></div>
+  <div id="calyear"></div>
+  <div class="council"><b style="color:var(--gold-l)">Календарь наполняется.</b> Состав года утверждён целиком — 365 дней; страницы открываются по одной, по образцу эталонного дня. Золотом отмечены дни, у которых уже есть разбор, аудиогид и интерактив.</div>
+</main>
+<footer><div class="slog">Цивилизация первенств — что Россия дала миру раньше всех</div><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-11/muzei/ne-sdayutsya/index.html">← в музей</a> · <a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">в город-музей →</a></footer>
+<script src="https://arabelthera-dot.github.io/rc-preview-pr/pr-11/muzei/ne-sdayutsya/calendar-nesdayutsya.js"></script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-calendar-page.js"></script>
+<script>window.MUSEUM_SUPPORT={museum:'Музей стойкости и подвига «Русские не сдаются»'};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-support.js"></script>
+<script defer src="https://arabelthera-dot.github.io/rc-museum-preview/assets/analytics.js"></script>
+</body>
+</html>
