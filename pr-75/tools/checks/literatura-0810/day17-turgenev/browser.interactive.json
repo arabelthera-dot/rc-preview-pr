@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "page_sha256": "051c7661fe28ecbb05f2681c0bb34f0da92ddf1eacd338f29113794cbbd9e975",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-11T22:00:25.914Z",
+  "browser": "151.0.7922.173",
+  "plan": "../turgenev-plan.mjs",
+  "inputs": {
+    "../../../../muzei/literatura/lit-turgenev-otcy-i-deti.html": "051c7661fe28ecbb05f2681c0bb34f0da92ddf1eacd338f29113794cbbd9e975",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../turgenev-plan.mjs": "b9bbcbcefafa8c44e58e027658cbe246074334cbfabed4d4963565a68b7df4fb",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../assets/museum-literatura.css": "a205915af4132a432fcb0d668602d1eaf1a0d3c7734d554cc6dcc87a6a5ced75",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/literatura/media-turgenev/turgenev-hero-mobile.jpg": "d94d068c6ca2faa44d7089e772e8b8e65fdb00ecc4eed0571a21f92155d94992",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../muzei/literatura/calendar-literatura.js": "276e910e35cb93c142d773698bd0c40f5e938ec07bb6c9595b8f45d225d1fee5",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../../../muzei/literatura/media-turgenev/perov-portret-1872.jpg": "c9c08ea4218ecd66fc2f6a518885ec2866eac77143ea0e02c1e85a4e1bbb3f81",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "../../../../muzei/literatura/media-turgenev/otcy-i-deti-titul-1880.jpg": "f715f01171431feb8596c5dd95dc47ea25546c457c44b20b46ef7bc08a94080d",
+    "entry-390.png": "463e3971475e5b310958c4ebc69d6aeee46a00a36a8c73f1a5d9a45d8879238c",
+    "entry-390.json": "6f590c36a622f142f2f6862a883b39bc42cd37dc6849b69f47b86d0824f0819e",
+    "wrong-390.png": "2cc72b08670f7cecb5359d8914b06a29a2635ae028446c17e6608caa26c55cab",
+    "wrong-390.json": "4dc111c628f344ec9db47fd761e66b423380e20656c8caaada27bd348e389c7d",
+    "reset-390.png": "244980bcbea8a7b8a72f220664f0bf3dae1fa9c866b4b70c395b6b6a96f538d0",
+    "reset-390.json": "33a4d5fc34190ad8f42a12d7a38627c1659c741da557925beefea5b02d100c9c",
+    "mobile-390.png": "ac62e65920ab0d35f2bd039e69e3213d3189bd04808aebb8bf52fdb1c5aedcf0",
+    "mobile-390.json": "db2a2a8ece82f49662c4cf0c2ec71826189a67e72e891a942e5f66810190b770",
+    "../../../../muzei/literatura/media-turgenev/turgenev-hero.jpg": "9a398f04a009510846ed6db685a248364d43fabb27f76b0ef6f01dc4b5aa926f",
+    "mobile-1440.png": "55bdcfe527d6721bb006f1d957c61a791ab8dbbec91bd2939c894741a81e015b",
+    "mobile-1440.json": "5e8416d0b2049ee13b3eda44a3e52eca6e897dcbb31fe6d55faaa3b2aa84ac69",
+    "nojs-390.png": "07db267ba53177c4853098256e05e39252db9393ddeed60574f8f9e608e6837b",
+    "nojs-390.json": "106533ad1bdd34925ae73cc301346cd9412258ddbdc857e8ce83616f6a25c58f",
+    "score-390.png": "3fcc0e924c29d79cb684600ccf5a473748067b523b391dc9bc10e89432f54d1e",
+    "score-390.json": "e720d1417766d2a98baf9ae6ffbd93c3bd2808dc4f4ba356a4d9c8b34e2b41c0",
+    "main-390.png": "224fa60136eb2520b6856c094ef8f68ea754d2be91615e9f521ff4f00e147189",
+    "main-390.json": "95a4d188ec7ce53db67cfdb4f7090a3efaeade5ae9b2b842dc7f7e757ce7c37c",
+    "empty-390.png": "567674d3e167ed96e70f2da2bad00a09c2e5f93fb9122b6cf833c801daf5dcee",
+    "empty-390.json": "e0d3d0821b3528d7fd29a1c4161b65c2290199c6074521ad862442a03f1d601c"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
