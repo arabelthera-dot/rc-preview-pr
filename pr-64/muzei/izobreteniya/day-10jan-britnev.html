@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru" data-museum="izobreteniya">
+<head><meta name="robots" content="noindex"><base href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Первый в мире ледокол «Пайлот» Бритнева — Что изобрели русские первыми в мире, 10 января</title>
+<!--
+  Страница дня 10 января. Наряд izobreteniya-eshche-2-2909 (claude2, 29.09.2026), доска заданий #77.
+  Форма — вариант А музея изобретений (Сергей 12.09.2026): лента ударов, подробности свёрнуты.
+  Паспорт выпуска: rc-museum-production/izobreteniya/day-10jan-britnev/passport/issue.json
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --dark:#060c17; --dark2:#0c1826; --surface:#111f33;
+    --card:rgba(255,255,255,.05); --card-b:rgba(255,255,255,.09);
+    --gold:#c9a84c; --gold-l:#e4c97a; --gold-g:rgba(201,168,76,.13);
+    --ink:#e8eef5; --muted:#7a9ab8; --line:rgba(255,255,255,.07);
+    --accent:#2d8cbf; --accent2:#1f6f8b;
+    /* legacy compat */
+    --paper:#0c1826; --paper2:#111f33;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Inter','Segoe UI',sans-serif;color:var(--ink);background:var(--dark);line-height:1.72}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.13;margin:0}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent)}
+
+  /* ── ШАПКА ── */
+  header.top{background:rgba(6,12,23,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--card-b);color:#fff;position:sticky;top:0;z-index:30}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+  .logo svg{display:block;filter:drop-shadow(0 0 8px rgba(201,168,76,.4))}
+  .logo .lt{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:16px}
+  .logo .lt small{display:block;font-size:9px;font-weight:600;letter-spacing:3px;color:var(--gold);text-transform:uppercase;font-family:'Inter',sans-serif}
+  .score{background:var(--gold-g);border:1px solid rgba(201,168,76,.3);border-radius:24px;padding:6px 16px;font-size:13px;color:var(--gold-l);cursor:pointer;font-family:'Inter',sans-serif}
+  .score-info{position:absolute;right:12px;top:66px;max-width:260px;background:#0e1c30;color:var(--ink);border:1px solid var(--card-b);border-radius:14px;padding:14px 16px;font-size:13px;line-height:1.6;box-shadow:0 20px 60px rgba(0,0,0,.6);display:none;z-index:40}
+  .score-info.show{display:block}
+
+  /* ── HERO — СТАНДАРТ (не менять): 3D-сцена сверху, текст отдельным блоком ниже ── */
+  .hero-scene{position:relative;height:52vh;min-height:300px;max-height:520px;overflow:hidden;background:linear-gradient(160deg,#0a1e3a 0%,#1a3a6a 55%,#0d2240 100%)}
+  .hero-scene canvas.scene,.hero-scene img.scene{width:100%;height:100%;display:block;object-fit:cover}
+  .scene-caption{background:#060d18;padding:11px 0 12px}
+  .scene-caption .wrap{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+  .scene-cap{font-size:13.5px;line-height:1.6;color:var(--muted);border-left:2px solid rgba(201,168,76,.4);padding-left:14px;flex:1 1 420px}
+  .scene-hint{flex:0 0 auto;font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.4px;color:#e4c97a;
+    background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.34);border-radius:24px;padding:7px 16px;font-weight:600}
+  .hero-lead{background:linear-gradient(180deg,#0c1826 0%,#060c17 100%);color:#fff;padding:28px 0 38px}
+  .hero-lead .museum{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase;font-weight:700;font-family:'Inter',sans-serif;margin-bottom:12px;opacity:.9}
+  .hero-lead .who{font-family:'Inter',sans-serif;font-size:clamp(13px,3vw,15px);letter-spacing:.4px;color:var(--accent-l,#7dc8ff);margin-bottom:10px}
+  .hero-lead .who i{font-style:normal;color:#7893ab;font-weight:400}
+  .hero-lead h1{color:#fff;font-size:56px;font-weight:900;line-height:1.04;margin-bottom:16px}
+  .hero-lead .hook{color:#b8ccde;font-size:19px;max-width:580px;margin-bottom:28px;line-height:1.65;font-weight:400}
+  .hero-lead .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+  @media(max-width:680px){.hero-lead h1{font-size:34px}.hero-lead .hook{font-size:16px}
+    .hero-scene{height:34vh;min-height:230px;max-height:300px}
+    .scene-caption .wrap{flex-direction:column;gap:9px}
+    .scene-hint{order:-1;align-self:flex-start;font-size:11.5px;padding:6px 13px}
+    .scene-cap{font-size:12.8px;flex:1 1 auto}}
+  .date-chip{display:inline-block;background:var(--gold-g);border:1px solid rgba(201,168,76,.35);color:var(--gold);font-weight:700;padding:6px 18px;border-radius:24px;font-size:12px;margin-bottom:16px;font-family:'Inter',sans-serif;letter-spacing:.5px}
+
+  /* ── НАВИГАЦИЯ ДНЯ ── */
+  .daynav{position:sticky;top:64px;z-index:25;background:rgba(6,12,23,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--card-b)}
+  .daynav .wrap{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+  .daynav::-webkit-scrollbar{display:none}
+  .daynav a{flex:0 0 auto;padding:14px 20px;font-size:11px;font-weight:700;font-family:'Inter',sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap;letter-spacing:1.5px;text-transform:uppercase;border-bottom:2px solid transparent;transition:.18s}
+  .daynav a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+
+  /* ── СЕКЦИИ ── */
+  section.block{padding:64px 0;border-bottom:1px solid var(--line);scroll-margin-top:130px}
+  .kicker{font-size:10px;text-transform:uppercase;letter-spacing:3.5px;color:var(--gold);font-weight:700;font-family:'Inter',sans-serif;margin-bottom:8px}
+  section.block h2{font-size:34px;color:#fff;margin-bottom:10px}
+  p{margin:14px 0;color:var(--ink)}
+  .pull{background:var(--gold-g);border-left:3px solid var(--gold);padding:18px 22px;border-radius:0 14px 14px 0;font-style:italic;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-size:20px;line-height:1.5;margin:26px 0}
+
+  /* ── КНОПКИ ── */
+  .btn{cursor:pointer;border:none;border-radius:12px;padding:14px 26px;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;background:var(--accent2);color:#fff;transition:.18s;letter-spacing:.2px}
+  .btn:hover{filter:brightness(1.18)}
+  .btn.ghost{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid var(--card-b)}
+  .btn.ghost:hover{background:rgba(255,255,255,.11);border-color:rgba(255,255,255,.2)}
+  .btn.gold{background:linear-gradient(135deg,var(--gold),#b8882b);color:#1a0f00;box-shadow:0 4px 20px rgba(201,168,76,.25)}
+  .btn.gold:hover{filter:brightness(1.1);box-shadow:0 6px 28px rgba(201,168,76,.4)}
+  .btn:active{transform:translateY(1px)}
+  .pulse{animation:pulse .9s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+
+  /* ── КАРТОЧКИ ── */
+  .card{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:20px 22px;margin:16px 0;backdrop-filter:blur(6px)}
+
+  /* ── КВИЗ ── */
+  .opt{display:block;width:100%;text-align:left;background:rgba(255,255,255,.04);border:1px solid var(--card-b);border-radius:12px;padding:13px 16px;margin:8px 0;cursor:pointer;font-size:15px;color:var(--ink);font-family:'Inter',sans-serif;transition:.16s}
+  .opt:hover{border-color:var(--accent);background:rgba(45,140,191,.08)}
+  .opt.correct{background:rgba(40,120,60,.18);border-color:#3f9b52;color:#7ed4a0;font-weight:600}
+  .opt.wrong{background:rgba(180,40,40,.13);border-color:#c0453f;color:#f08080}
+  .exp{margin-top:10px;font-size:14px;background:var(--gold-g);border-radius:10px;padding:12px 14px;display:none;color:var(--gold-l)}
+  .exp.show{display:block}
+
+  /* ── ИТОГ ДНЯ ── */
+  .day-result{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:22px 24px;max-width:460px}
+  .dr-rank{font-family:'Playfair Display',Georgia,serif;font-size:28px;color:var(--gold-l);font-weight:700}
+  .dr-score{font-size:16px;margin:4px 0 12px;color:var(--ink)}.dr-score span{color:var(--muted);font-size:14px}
+  .dr-bar{height:8px;background:rgba(255,255,255,.08);border-radius:6px;overflow:hidden}
+  .dr-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent2),var(--gold));transition:width .6s cubic-bezier(.2,.7,.2,1)}
+  .dr-note{margin-top:12px;font-size:14px;color:var(--muted)}
+
+  /* ── РЕКЛАМНЫЕ СЛОТЫ ── */
+  .ad-slot{position:relative;margin:26px 0;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.1);border-radius:14px;min-height:88px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px}
+  .ad-slot .lbl{position:absolute;top:7px;right:12px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.15);font-family:'Inter',sans-serif}
+  .ad-slot .ph-txt{font-size:12px;max-width:80%;color:rgba(255,255,255,.18)}
+  .ad-slot.billboard{min-height:108px}
+  .adband{background:transparent;border-bottom:none}
+
+  footer{padding:40px 0 80px;color:rgba(255,255,255,.2);font-size:12px;text-align:center;font-family:'Inter',sans-serif;letter-spacing:.5px}
+  .crumbs{background:rgba(6,12,23,.6);border-bottom:1px solid var(--card-b);font-family:'Inter',sans-serif;font-size:12.5px}
+  .crumbs .wrap{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
+  .crumbs a{color:var(--gold-l);text-decoration:none;white-space:nowrap}
+  .crumbs a:hover{text-decoration:underline}
+  .crumbs .sep{color:var(--muted);opacity:.6}
+  .crumbs .here{color:var(--muted);white-space:nowrap}
+
+
+  /* ── ШАПКА: четыре строки по museum-core §6-бис ── */
+  header.top{display:block;text-align:center;padding:10px 12px 8px;height:auto;position:relative}
+  header.top .b1{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:15px;letter-spacing:.5px;color:#fff}
+  header.top .b2{font-size:11px;color:var(--muted);margin-top:2px}
+  header.top .b3{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:6px}
+  header.top .b4{font-size:12.5px;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-style:italic}
+  header.top .score{position:absolute;right:12px;top:10px}
+  .daynav{top:0}
+  .hero-scene{background:#0e1c2c;height:38vh;min-height:250px;max-height:400px}
+  @media(max-width:680px){.hero-lead h1{font-size:31px}}
+  .hero-scene img.scene{object-fit:cover;object-position:50% 55%}
+  .date-origin{font-size:13px;color:#9fb4c8;margin:-6px 0 12px;max-width:62ch}
+  .hero-lead .hook{color:#c6d8e8;max-width:62ch}
+  .hero-under{background:linear-gradient(180deg,#060d18,#060c17);padding:4px 0 22px}
+  .stamp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(125,200,255,.28);margin-top:14px}
+  .stamp>div{padding:11px 12px;border-left:1px solid rgba(125,200,255,.16);min-width:0}
+  .stamp>div:first-child{border-left:0}
+  .stamp .v{font-size:clamp(15px,3.4vw,21px);font-weight:700;color:#8fd3ff;line-height:1.1;overflow-wrap:anywhere}
+  .stamp .k{font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:#8fa5b9;margin-top:5px}
+  @media(max-width:600px){.stamp{grid-template-columns:repeat(2,minmax(0,1fr))}.stamp>div:nth-child(3){border-left:0}.stamp>div:nth-child(n+3){border-top:1px solid rgba(125,200,255,.16)}}
+
+  /* ── ЛЕНТА УДАРОВ (museum-inventions, вариант А; museum-core §5-бис) ── */
+  .udary{list-style:none;margin:18px 0 0;padding:0;counter-reset:u}
+  .udary>li{border-top:1px solid var(--line);padding:4px 0}
+  .udary details>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:34px 1fr;gap:10px;padding:12px 0;font-size:17px;line-height:1.55;color:var(--ink)}
+  .udary details>summary::-webkit-details-marker{display:none}
+  .udary details>summary::before{counter-increment:u;content:counter(u);font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:20px;color:var(--gold);line-height:1.3}
+  .udary .more-lbl{display:block;grid-column:2;font-size:12.5px;color:var(--gold-l);letter-spacing:.3px;margin-top:4px}
+  .udary .more-lbl::after{content:' ▾'}
+  .udary details[open] .more-lbl::after{content:' ▴'}
+  .udary details[open] .more-lbl .o{display:none}
+  .udary details:not([open]) .more-lbl .c{display:none}
+  .udary summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+  .udary .det{margin:0 0 14px 44px;padding:12px 16px;background:rgba(255,255,255,.035);border-left:2px solid rgba(201,168,76,.45);border-radius:0 10px 10px 0;font-size:15px;color:#d5e0ea}
+  .udary .det p{margin:8px 0}
+  .udary .tag{display:inline-block;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#1a0f00;background:var(--gold-l);border-radius:6px;padding:1px 7px;margin-right:6px}
+  .udary .find{border-left:3px solid var(--gold);padding-left:8px}
+  figure.fig{margin:18px 0}
+  figure.fig img{max-width:100%;height:auto;border-radius:10px;display:block}
+  figure.fig figcaption{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5}
+  .src-note{font-size:12px;color:#8fa5b9}
+
+  /* ── МОДЕЛЬ ДНЯ (главное предметное действие) ── */
+  .lab{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:18px 18px 20px;margin-top:14px}
+  .lab-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+  .lab-row .lbl{flex:0 0 100%;font-size:13px;color:var(--muted);letter-spacing:.3px}
+  .seg{cursor:pointer;border:1px solid var(--card-b);background:rgba(255,255,255,.04);color:var(--ink);border-radius:10px;padding:10px 14px;font:inherit;font-size:14.5px;min-height:44px}
+  .seg[aria-pressed="true"]{border-color:var(--gold);background:var(--gold-g);color:var(--gold-l);font-weight:600}
+  .seg:focus-visible,.btn:focus-visible,.opt:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .lab-stage{position:relative;margin-top:12px}
+  .lab-stage canvas{width:100%;height:auto;display:block;border-radius:10px;background:#1c2530}
+  .lab-cap{font-size:12px;color:#8fa5b9;margin-top:6px}
+  .lab-msg{margin-top:12px;font-size:15.5px;padding:12px 14px;border-radius:10px;background:rgba(255,255,255,.04);border-left:3px solid var(--card-b);min-height:48px}
+  .lab-msg.ok{border-left-color:#3f9b52;background:rgba(40,120,60,.14)}
+  .lab-msg.bad{border-left-color:#c0453f;background:rgba(180,40,40,.10)}
+  .lab-found{font-size:13px;color:var(--muted);margin-top:8px}
+  .lab-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  .noscript-box{background:rgba(255,255,255,.04);border:1px dashed var(--card-b);border-radius:12px;padding:12px 16px;font-size:15px}
+
+  /* ── ГРАНИЦА ПЕРВЕНСТВА ── */
+  .border-box{background:rgba(45,140,191,.08);border:1px solid rgba(45,140,191,.3);border-radius:14px;padding:16px 18px}
+  .border-box b{color:#8fd3ff}
+  .ctx{width:100%;border-collapse:collapse;margin-top:14px;font-size:14.5px}
+  .ctx th,.ctx td{text-align:left;padding:9px 8px;border-top:1px solid var(--line);vertical-align:top}
+  .ctx th{color:var(--gold-l);font-weight:600;font-size:12.5px;letter-spacing:.5px}
+  .quiz-q{margin:18px 0 6px;font-weight:600}
+  .sources a{color:var(--gold-l)}
+  .sources li{margin:6px 0;font-size:14px;color:#c8d6e2}
+  @media(max-width:600px){header.top{padding:8px 64px 6px}header.top .score{top:8px;right:8px;padding:4px 10px;font-size:12px}header.top .b3{margin-top:3px}
+    .hero-scene{height:26vh;min-height:200px;max-height:260px}.date-origin{font-size:12px;margin:-8px 0 8px}.hero-lead{padding:18px 0 26px}.hero-lead .date-chip{margin-bottom:12px}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+
+<meta name="description" content="Кронштадтский купец срезал своему пароходу нос под углом — и судно перестало биться о лёд, а полезло на него сверху.">
+<link rel="canonical" href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-10jan-britnev.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Русская цивилизация">
+<meta property="og:title" content="Первый в мире ледокол">
+<meta property="og:description" content="Кронштадтский купец срезал своему пароходу нос под углом — и судно перестало биться о лёд, а полезло на него сверху.">
+<meta property="og:url" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-10jan-britnev.html">
+<meta property="og:image" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-10jan-britnev-pilot.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Первый в мире ледокол", "description": "Кронштадтский купец срезал своему пароходу нос под углом — и судно перестало биться о лёд, а полезло на него сверху.", "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-10jan-britnev.html", "inLanguage": "ru", "isPartOf": {"@type": "WebSite", "name": "Музей «Что изобрели русские первыми в мире»"}, "publisher": {"@type": "Organization", "name": "Русская цивилизация"}, "about": {"@type": "CreativeWork", "name": "Первый в мире ледокол"}, "image": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-10jan-britnev-pilot.jpg"}</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="b1">Русская цивилизация</div>
+  <div class="b2">Первый цифровой музей достижений России · Цивилизация первенств — что Россия дала миру раньше всех</div>
+  <div class="b3">Что изобрели русские первыми в мире</div>
+  <div class="b4">365 изобретений. Все русские. Все первые</div>
+  <div class="score" id="scoreBox" title="Баллы знаний за этот день">⭐ <span id="score">0</span> / 100</div>
+</header>
+
+<nav class="crumbs" aria-label="Хлебные крошки"><div class="wrap">
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация</a>
+  <span class="sep">›</span>
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми в мире</a>
+  <span class="sep">›</span>
+  <span class="here">10 января · Бритнев</span>
+</div></nav>
+
+<div class="hero-scene" id="hero">
+  <img class="scene" src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-10jan-britnev-pilot.jpg" data-source="https://commons.wikimedia.org/wiki/File:1976._%D0%9B%D0%B5%D0%B4%D0%BE%D0%BA%D0%BE%D0%BB_%D0%9F%D0%B0%D0%B9%D0%BB%D0%BE%D1%82.jpg" data-license="Public domain" width="1200" height="652" alt="Рисунок на почтовой марке: небольшой тёмный пароход с высокой трубой идёт по льдинам, над трубой дым, на корме флаг" fetchpriority="high">
+</div>
+
+<div class="scene-caption">
+  <div class="wrap">
+    <div class="scene-cap">Ледокол «Пайлот» на марке Почты СССР, 1976. Это рисунок художника, а не снимок: фотографий самого «Пайлота» мы не нашли. Марки не охраняются авторским правом (ст. 1259 ГК РФ).</div>
+    <span class="scene-hint">Марка · 1976</span>
+  </div>
+</div>
+
+<header class="hero-lead">
+  <div class="wrap">
+    <div class="date-chip">10 января · 1864</div>
+    <p class="date-origin">Дата условная: у изобретения нет одного дня. Первый рейс переделанного «Пайлота» — 22 апреля 1864 года.</p>
+    <div class="who">Михаил Бритнев <i>· судовладелец, Кронштадт</i></div>
+    <div class="museum">Музей «Что изобрели русские первыми в мире»</div>
+    <h1>Первый в мире ледокол</h1>
+    <p class="hook">Кронштадтский купец срезал своему пароходу нос под углом — и судно перестало биться о лёд, а полезло на него сверху.</p>
+    <div class="hero-btns">
+      <button class="btn gold" id="readBtn" type="button">Читать историю ↓</button>
+      <button class="btn ghost" id="listenBtn" type="button">🎧 Слушать аудиогид</button>
+    </div>
+  </div>
+</header>
+
+<div class="hero-under">
+  <div class="wrap">
+    <div class="stamp">
+      <div><div class="v">20°</div><div class="k">срез носа</div></div>
+      <div><div class="v">22.04.1864</div><div class="k">первый рейс</div></div>
+      <div><div class="v">26 м</div><div class="k">длина «Пайлота»</div></div>
+      <div><div class="v">300 ₽</div><div class="k">цена чертежей, 1871</div></div>
+    </div>
+  </div>
+</div>
+
+<nav class="daynav" aria-label="Разделы дня">
+  <div class="wrap">
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-10jan-britnev.html#story">Читать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-10jan-britnev.html#audioguide">Слушать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-10jan-britnev.html#games">Нос корабля</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-10jan-britnev.html#pervenstvo">Первенство</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-10jan-britnev.html#quiz">Викторина</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-10jan-britnev.html#calendar">Календарь</a>
+  </div>
+</nav>
+
+<section class="wrap" id="dokument" data-proof-block aria-label="Документ первенства"></section>
+
+<section class="block" id="audioguide"></section>
+
+<section class="block" id="story">
+  <div class="wrap">
+    <div class="kicker">История изобретения · 12 ударов</div>
+    <h2>Корабль, который полез на лёд</h2>
+    <p style="color:var(--muted);max-width:62ch">Читается подряд. Нажми на удар — откроется подробный разбор с источниками.</p>
+    <ol class="udary">
+      <li><details><summary><span>Кронштадт стоит на острове посреди Финского залива: пока лёд не сойдёт, пароход к нему не подойдёт.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Остров Котлин с Кронштадтом отделён от южного берега, где стоит Ораниенбаум, полосой воды в несколько вёрст. Когда залив замерзал, пароходы вставали до весны. Бритнев потом и мерил успех этим: в апреле 1865 года навигация благодаря «Пайлоту» открылась раньше обычного.</p>
+          <p class="src-note">Источник: Президентская библиотека имени Б. Н. Ельцина, «Михаил Осипович Бритнев (1822–1889)».</p>
+        </div></details></li>
+      <li><details><summary><span>Михаил Бритнев родился в 1822 году в Кронштадте, в купеческой семье. Отца он потерял в двенадцать лет.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <figure class="fig" style="max-width:200px;float:right;margin:4px 0 10px 16px">
+            <img src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-10jan-britnev-portret.jpg" data-source="https://commons.wikimedia.org/wiki/File:Britnev_M_O.jpg" data-license="Public domain" width="266" height="340" loading="lazy" alt="Портрет пожилого мужчины с бородой, в тёмном сюртуке">
+            <figcaption>М. О. Бритнев. Портрет XIX века, автор неизвестен. Общественное достояние.</figcaption>
+          </figure>
+          <p>Бритнев родом из купеческой семьи потомственного почётного гражданина Кронштадта. Отец умер, когда сыну было двенадцать лет.</p>
+          <p>Учился в уездном четырёхклассном училище, потом в коммерческом училище в Петербурге.</p>
+          <p class="src-note">Источник: Президентская библиотека имени Б. Н. Ельцина.</p>
+          <div style="clear:both"></div>
+        </div></details></li>
+      <li><details><summary><span>Купеческий сын поехал в Англию учиться корабельной архитектуре — и вернулся в Кронштадт судовым хозяином.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>В Англии Бритнев изучал корабельную архитектуру. Дома он занялся ремонтом судов и спасательными работами, держал паровые плавучие краны для разгрузки кораблей.</p>
+          <p class="src-note">Источники: Президентская библиотека; О. Обыденская, «Очень деловой человек. Кто придумал ледокол», «Сноб», 03.10.2023.</p>
+        </div></details></li>
+      <li><details><summary><span>В 1862 году он заказал в Англии небольшой буксир «Пайлот»: 26 метров длины, машина в 85 лошадиных сил.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>«Пайлот» построили в Англии по заказу Бритнева в 1862 году. Длина — 26 метров, осадка — до 2,5 метра, мощность машины — 85 лошадиных сил. Обычный небольшой буксир.</p>
+          <p class="src-note">Источник: Президентская библиотека имени Б. Н. Ельцина.</p>
+        </div></details></li>
+      <li class="find"><details><summary><span>Бритнев велел срезать нос «Пайлота» ниже ватерлинии под углом 20 градусов к килю.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p><span class="tag">Находка дня</span>Форштевень — передняя кромка корпуса. У обычного судна он почти отвесный. Бритнев заострил его ниже ватерлинии и скосил под углом 20 градусов. Судно перестало упираться в кромку льда: скошенный нос подныривал под неё.</p>
+          <p>Попробуй сам в модели ниже: прямой нос против скошенного.</p>
+          <p class="src-note">Источники: ОСК и Почта России о марке 2022 года (korabel.ru); Президентская библиотека.</p>
+        </div></details></li>
+      <li><details><summary><span>Корабль больше не бил лёд, а вползал на него и ломал собственным весом.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Так объясняют сами кораблестроители: скошенный нос позволил судну «вползать на лёд и ломать его своим весом». Удар в лоб тратит силу машины и калечит корпус. Вес давит сверху на тонкую плиту, и лёд проламывается.</p>
+          <p class="src-note">Источник: пресс-релиз ОСК к выпуску марки, korabel.ru, 2022.</p>
+        </div></details></li>
+      <li><details><summary><span>22 апреля 1864 года переделанный «Пайлот» пошёл первым рейсом из Кронштадта к Ораниенбауму.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>С этого рейса «Деловой Петербург» и «Сноб» ведут отсчёт ледокольного флота.</p>
+          <p class="src-note">Источники: И. Хлебов, «"Пайлот" Первый», «Деловой Петербург», 21.04.2019; «Сноб», 03.10.2023.</p>
+        </div></details></li>
+      <li><details><summary><span>Льды он не отменил, но растянул навигацию: весной 1865-го пароходы пошли раньше обычного.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Маленький «Пайлот» не пробивал зимний лёд в середине залива. Его сила — в начале и конце сезона, когда кромка тоньше: несколько лишних недель навигации для купеческой линии означали деньги. «Сноб» пишет, что «Пайлот» ходил между Кронштадтом и Петербургом до конца века.</p>
+          <p class="src-note">Источники: Президентская библиотека (апрель 1865 года); «Сноб», 2023.</p>
+        </div></details></li>
+      <li><details><summary><span>Зимой 1871 года замёрзла Эльба — и немцы приехали в Кронштадт за чертежами. Бритнев продал их за 300 рублей.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Суровая зима заперла Гамбургский порт. Немецкие инженеры купили у Бритнева чертежи «Пайлота», заплатив, как пишет «Деловой Петербург», «не щедрые 300 рублей».</p>
+          <p class="src-note">Источники: Президентская библиотека; «Деловой Петербург», 2019; «Сноб», 2023.</p>
+        </div></details></li>
+      <li><details><summary><span>По русским чертежам в Гамбурге построили первые немецкие ледоколы.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Президентская библиотека называет их «Айсбрехер-1» и «Айсбрехер-2». «Деловой Петербург» даёт немецкому ледоколу другое имя — «Айсфукс», «Ледяной лис». Какой из кораблей пошёл первым, мы по русским источникам не установили и оставляем оба свидетельства.</p>
+          <p class="src-note">Источники: Президентская библиотека; «Деловой Петербург», 2019.</p>
+        </div></details></li>
+      <li><details><summary><span>Сам Бритнев строил дальше: «Бой» в 1875 году, «Буй» в 1889-м — оба ледокольные.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>В 1869–1873 годах был городским головой Кронштадта, основал водолазную школу, сиротский дом и женскую гимназию.</p>
+          <p class="src-note">Источники: Президентская библиотека; «Сноб», 2023.</p>
+        </div></details></li>
+      <li><details><summary><span>Форму его носа назвали «ледокольной». В 2022 году Почта России выпустила марку к двухсотлетию Бритнева.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <figure class="fig" style="max-width:300px">
+            <img src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-10jan-britnev-marka.jpg" data-source="https://commons.wikimedia.org/wiki/File:Mikhail_Britnev_2022_stamp_of_Russia.jpg" data-license="Public domain" width="497" height="356" loading="lazy" alt="Почтовая марка 2022 года: портрет Бритнева и силуэт парохода во льдах">
+            <figcaption>Марка Почты России, 28 июля 2022 года, серия «Русские кораблестроители». Художник М. Подобед. Марки не охраняются авторским правом.</figcaption>
+          </figure>
+          <p>По словам ОСК, форма носа «впоследствии стала именоваться „ледокольной“», а проект Бритнева «стал прообразом нового типа судов — ледоколов». Бритнев умер в 1889 году. Через десять лет в Россию пришёл «Ермак» — первый арктический ледокол (о нём — 8 января).</p>
+          <p class="src-note">Источники: korabel.ru, 2022 (тираж марки — 120 тысяч); Президентская библиотека.</p>
+        </div></details></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="games">
+  <div class="wrap">
+    <div class="kicker">Главное действие · модель</div>
+    <h2>Нос «Пайлота»: пройти лёд</h2>
+    <p style="max-width:62ch">Ты на мостике буксира у кромки льда. Выбери форму носа, как идти на лёд и когда выходить. Пройдёшь только при верном сочетании. На каждый неверный ход объясним, что пошло не так.</p>
+    <div class="lab" id="lab">
+      <div class="lab-row" role="group" aria-labelledby="lg1"><span class="lbl" id="lg1">1. Форма носа</span>
+        <button class="seg" type="button" data-k="bow" data-v="straight" aria-pressed="true">Прямой, отвесный</button>
+        <button class="seg" type="button" data-k="bow" data-v="cut" aria-pressed="false">Срезан под 20°</button>
+      </div>
+      <div class="lab-row" role="group" aria-labelledby="lg2"><span class="lbl" id="lg2">2. Как идти на лёд</span>
+        <button class="seg" type="button" data-k="way" data-v="ram" aria-pressed="true">Разогнаться и ударить</button>
+        <button class="seg" type="button" data-k="way" data-v="climb" aria-pressed="false">Наползти и продавить весом</button>
+      </div>
+      <div class="lab-row" role="group" aria-labelledby="lg3"><span class="lbl" id="lg3">3. Когда выходить</span>
+        <button class="seg" type="button" data-k="when" data-v="winter" aria-pressed="true">В разгар зимы</button>
+        <button class="seg" type="button" data-k="when" data-v="edge" aria-pressed="false">Весной, у тонкой кромки</button>
+      </div>
+      <div class="lab-btns">
+        <button class="btn gold" type="button" id="labGo">Полный вперёд</button>
+        <button class="btn ghost" type="button" id="labReset">Начать заново</button>
+      </div>
+      <div class="lab-stage">
+        <canvas id="labCv" width="640" height="220" role="img" aria-label="Буксир у кромки льда, вид сбоку"></canvas>
+        <div class="lab-cap">Модель, а не чертёж: форма корпуса упрощена, угол носа — как у «Пайлота».</div>
+      </div>
+      <div class="lab-msg" id="labMsg" aria-live="polite">Буксир у кромки льда. Выбери три условия и нажми «Полный вперёд».</div>
+      <div class="lab-found" id="labFound">Найдено причин неудачи: 0 из 3.</div>
+      <noscript><div class="noscript-box">Для модели нужен JavaScript. Текстовая версия опыта: прямой нос упирается в кромку, и лёд держит судно. Если с разгона бить льдину, удар тратит машину и калечит корпус. Если выйти в разгар зимы, маленькому буксиру не хватит веса на толстый лёд. Проходит так: нос срезан под 20°, судно наползает и давит весом, выход — у тонкой весенней кромки.</div></noscript>
+    </div>
+    <p class="src-note" style="margin-top:10px">Правила модели: угол 20° и принцип «вползать и ломать весом» — ОСК и Президентская библиотека; работа в начале и конце сезона — Президентская библиотека (навигация 1865 года открылась раньше обычного).</p>
+  </div>
+</section>
+
+<section class="block" id="pervenstvo">
+  <div class="wrap">
+    <div class="kicker">Проверка факта</div>
+    <h2>Что именно Бритнев сделал первым</h2>
+    <div class="border-box">
+      <p style="margin-top:0"><b>Граница первенства:</b> первое судно, которому нарочно дали скошенный нос, чтобы оно наползало на лёд и ломало его своим весом, — «Пайлот», 1864 год. Эту форму и назвали ледокольной; по его чертежам строили первые немецкие ледоколы.</p>
+      <p style="margin-bottom:0"><b>Чего здесь нет:</b> Бритнев не первым стал ходить зимой и не первым колол лёд. Первенство — в форме носа и способе ломать лёд весом. «Пайлот» был маленьким портовым буксиром. Линейный ледокол для открытого моря и Арктики — это «Ермак», 1899 год.</p>
+    </div>
+    <table class="ctx">
+      <thead><tr><th scope="col">Кто</th><th scope="col">Что</th><th scope="col">Когда</th></tr></thead>
+      <tbody>
+        <tr><td>Михаил Бритнев, Кронштадт</td><td>«Пайлот»: нос срезан под 20°, судно ломает лёд весом</td><td>1864</td></tr>
+        <tr><td>Гамбург</td><td>Первые немецкие ледоколы по купленным чертежам «Пайлота»</td><td>после 1871</td></tr>
+        <tr><td>С. О. Макаров, Россия</td><td>«Ермак» — первый арктический линейный ледокол</td><td>1899</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="block" id="quiz">
+  <div class="wrap">
+    <div class="kicker">Проверь себя · 5 вопросов</div>
+    <h2>Викторина</h2>
+    <p style="color:var(--muted);max-width:62ch">На каждый вопрос — одна попытка. После ответа покажем объяснение.</p>
+    <div id="quizBox"></div>
+    <noscript><div class="noscript-box">Для викторины нужен JavaScript. Ответы: 1 — наползал и ломал весом; 2 — 20 градусов; 3 — 300 рублей; 4 — замёрзла Эльба; 5 — «Ермак».</div></noscript>
+  </div>
+</section>
+
+<section class="block" id="result">
+  <div class="wrap">
+    <h2 style="margin-bottom:6px">Итог дня</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Модель, три причины неудачи и викторина вместе дают 100 баллов. Прогресс не сохраняется: перезагрузка страницы начинает день заново.</p>
+    <div class="day-result">
+      <div class="dr-score" id="dayTxt">0 / 100 · звание: Гость дня</div>
+      <div class="dr-bar"><i id="dayBar" style="width:0%"></i></div>
+      <div class="dr-note">Проведи буксир через лёд, найди все три причины неудачи и ответь на вопросы.</div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="sources">
+  <div class="wrap">
+    <div class="kicker">Источники</div>
+    <h2>На чём стоит страница</h2>
+    <ul class="sources">
+      <li><a href="https://www.prlib.ru/Great_Russia/outstanding_scientists_XIX/Britnev" rel="noopener" target="_blank">Президентская библиотека имени Б. Н. Ельцина · «Михаил Осипович Бритнев (1822–1889)»</a>: семья и учёба, «Пайлот» 1862 года (размеры, машина), угол 20°, навигация 1865 года, чертежи 1871 года за 300 рублей, «Айсбрехер-1» и «-2», «Бой» и «Буй».</li>
+      <li><a href="https://www.korabel.ru/news/comments/po_iniciative_osk_vypuschena_marka_posvyaschennaya_sozdatelyu_pervogo_ledokola.html" rel="noopener" target="_blank">Korabel.ru · «По инициативе ОСК выпущена марка, посвящённая создателю первого ледокола», 2022</a>: форма носа, принцип «вползать и ломать весом», «ледокольная» форма, марка.</li>
+      <li><a href="https://www.dp.ru/a/2019/04/21/Pajlot_Pervij" rel="noopener" target="_blank">И. Хлебов. «"Пайлот" Первый». «Деловой Петербург», 21.04.2019</a>: первый рейс 22 апреля 1864 года, 300 рублей, «Айсфукс».</li>
+      <li><a href="https://snob.ru/history/ochen-delovoj-chelovek-kto-pridumal-ledokol/" rel="noopener" target="_blank">О. Обыденская. «Очень деловой человек. Кто придумал ледокол». «Сноб», 03.10.2023</a>: Англия, краны, зима 1871 года и Эльба, «Бой» и «Буй», городской голова, водолазная школа.</li>
+      <li>Изображения: <a href="https://commons.wikimedia.org/wiki/File:1976._%D0%9B%D0%B5%D0%B4%D0%BE%D0%BA%D0%BE%D0%BB_%D0%9F%D0%B0%D0%B9%D0%BB%D0%BE%D1%82.jpg" rel="noopener" target="_blank">марка СССР 1976 года (общественное достояние)</a>, <a href="https://commons.wikimedia.org/wiki/File:Mikhail_Britnev_2022_stamp_of_Russia.jpg" rel="noopener" target="_blank">марка России 2022 года (общественное достояние)</a>, <a href="https://commons.wikimedia.org/wiki/File:Britnev_M_O.jpg" rel="noopener" target="_blank">портрет Бритнева (общественное достояние)</a>.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="calendar">
+  <div class="wrap">
+    <h2 style="margin-bottom:6px">Календарь изобретений</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Выбери любой день — узнаешь, что русские сделали первыми в мире. Листай месяцы стрелками.</p>
+    <div id="calbox"></div>
+  </div>
+</section>
+
+<section class="block kd" id="kuda-dalshe">
+  <div class="wrap">
+    <div class="kd-kicker">Куда дальше</div>
+    <h2>Музей продолжается</h2>
+    <div class="kd-grid">
+      <div class="kd-card main"><span class="kd-lbl">Следующий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-11jan-kostovich.html">11 января — Первый в мире бензиновый двигатель для дирижабля <span class="kd-arr">→</span></a>
+        <p>Костович собрал бензиновый мотор раньше, чем Даймлер и Бенц поставили такие на свои повозки.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Предыдущий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-09jan-blinov.html">9 января — Гусеничный ход Блинова <span class="kd-arr">→</span></a>
+        <p>Крестьянин без образования придумал гусеницу для тяжёлой техники.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Весь музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми <span class="kd-arr">→</span></a>
+        <p>Все изобретения — по залам и по дням года.</p></div>
+      <div class="kd-card main"><span class="kd-lbl">Город-музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация <span class="kd-arr">→</span></a>
+        <p>Все музеи проекта на одной карте.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div class="slog">Цивилизация первенств — что Россия дала миру раньше всех</div>
+  Русская цивилизация · «Что изобрели русские первыми в мире»</div></footer>
+
+<script>
+/* ── СЧЁТ ── шкала из 100 держит assets/museum-score.js; здесь только реестр наград.
+   модель 35 + три причины неудачи 3×5 + викторина 5×10 = 100. */
+window.MUSEUM_SCORE = {awards:{lab:35, why0:5, why1:5, why2:5, q:[5,10]},
+  ranks:[[100,'Капитан ледокола'],[70,'Штурман'],[40,'Юнга'],[0,'Гость дня']]};
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-score.js"></script>
+<script>
+(function(){
+  var $ = function(id){return document.getElementById(id);};
+  $('readBtn').onclick = function(){ $('story').scrollIntoView({behavior:'smooth'}); };
+  $('listenBtn').onclick = function(){ $('audioguide').scrollIntoView({behavior:'smooth'}); };
+
+  /* ── НОС «ПАЙЛОТА» ── холст фиксированного размера 640×220, CSS только масштабирует.
+     Картинка рисуется по состоянию, без случайностей: одинаковый выбор — одинаковый кадр. */
+  var st = {bow:'straight', way:'ram', when:'winter'};
+  var found = {};
+  var W = 640, H = 220, WL = 128;          // WL — уровень воды
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function scene(c, iceThick){
+    c.clearRect(0,0,W,H);
+    var sky=c.createLinearGradient(0,0,0,WL); sky.addColorStop(0,'#12263e'); sky.addColorStop(1,'#2c4a68');
+    c.fillStyle=sky; c.fillRect(0,0,W,WL);
+    c.fillStyle='#0b2236'; c.fillRect(0,WL,W,H-WL);
+    return iceThick;
+  }
+  function ice(c, x0, thick, broken){
+    c.fillStyle='#dfeef7'; c.strokeStyle='#9fc2d8'; c.lineWidth=1;
+    if (!broken){ c.fillRect(x0, WL-thick*0.3, W-x0, thick); c.strokeRect(x0, WL-thick*0.3, W-x0, thick); return; }
+    // проломленная кромка: плиты наклонены и расходятся
+    for (var i=0;i<5;i++){
+      var x=x0+i*34, a=(i%2?1:-1)*0.18;
+      c.save(); c.translate(x+15, WL+4); c.rotate(a); c.fillRect(-15,-thick*0.5,30,thick); c.strokeRect(-15,-thick*0.5,30,thick); c.restore();
+    }
+    c.fillRect(x0+170, WL-thick*0.3, W-x0-170, thick); c.strokeRect(x0+170, WL-thick*0.3, W-x0-170, thick);
+  }
+  function ship(c, x, lift, tilt, bow){
+    c.save(); c.translate(x, WL-lift); c.rotate(-tilt);
+    c.fillStyle='#2b3440'; c.strokeStyle='#8fa5b9'; c.lineWidth=1.2;
+    c.beginPath(); c.moveTo(-170,-26); c.lineTo(0,-26);
+    if (bow==='cut'){ c.lineTo(0,-6); c.lineTo(20,18); }        // скос под водой
+    else { c.lineTo(8,18); }
+    c.lineTo(-160,18); c.lineTo(-176,0); c.closePath(); c.fill(); c.stroke();
+    c.fillStyle='#d8dde3'; c.fillRect(-120,-44,58,18);            // рубка
+    c.fillStyle='#1b1f24'; c.fillRect(-92,-86,12,42);             // труба
+    c.fillStyle='rgba(180,190,200,.35)'; c.beginPath(); c.arc(-80,-96,14,0,6.3); c.arc(-60,-104,11,0,6.3); c.fill();
+    c.restore();
+  }
+  function label(c, t){ c.fillStyle='#e4c97a'; c.font='bold 22px Inter, sans-serif'; c.textAlign='left'; c.fillText(t, 14, 30); }
+  function draw(kind){
+    var c=$('labCv').getContext('2d');
+    var thick = st.when==='winter' ? 30 : 12;
+    scene(c);
+    if (kind==='idle'){ ice(c, 330, thick, false); ship(c, 250, 0, 0, st.bow); label(c,'У кромки льда'); return; }
+    if (kind==='stuck'){ ice(c, 330, thick, false); ship(c, 322, 0, 0, st.bow); label(c,'Нос упёрся в кромку'); return; }
+    if (kind==='ram'){ ice(c, 330, thick, false); ship(c, 320, 0, -0.03, st.bow);
+      c.strokeStyle='#ff8a7a'; c.lineWidth=2; c.beginPath(); c.moveTo(332,WL-20); c.lineTo(346,WL-34); c.moveTo(334,WL-4); c.lineTo(352,WL-6); c.stroke();
+      label(c,'Удар: корпус гудит, лёд цел'); return; }
+    if (kind==='heavy'){ ice(c, 300, thick, false); ship(c, 318, 10, 0.07, st.bow); label(c,'Взобрался, но толстый лёд держит'); return; }
+    ice(c, 300, thick, true); ship(c, 360, 8, 0.05, st.bow); label(c,'Лёд проломлен весом — проход открыт');
+  }
+  function setFound(){ var n=Object.keys(found).length; $('labFound').textContent='Найдено причин неудачи: '+n+' из 3.'; }
+  function msg(t, cls){ var m=$('labMsg'); m.className='lab-msg'+(cls?' '+cls:''); m.textContent=t; }
+  var segs = document.querySelectorAll('#lab .seg');
+  for (var s=0;s<segs.length;s++) segs[s].addEventListener('click', function(){
+    var k=this.getAttribute('data-k'), v=this.getAttribute('data-v');
+    st[k]=v;
+    var same=document.querySelectorAll('#lab .seg[data-k="'+k+'"]');
+    for (var j=0;j<same.length;j++) same[j].setAttribute('aria-pressed', same[j]===this ? 'true':'false');
+    draw('idle');
+  });
+  $('labGo').onclick = function(){
+    if (st.bow==='straight'){
+      draw('stuck'); found.b=1; award('why0',5);
+      msg('Отвесный нос упирается в кромку, и лёд держит судно, как стена. Бритнев срезал форштевень ниже ватерлинии под 20° — нос подныривает под лёд.','bad');
+    } else if (st.way==='ram'){
+      draw('ram'); found.w=1; award('why1',5);
+      msg('Удар с разгона тратит силу машины и бьёт корпус, а лёд цел. Скошенный нос работает иначе: судно наползает на кромку и ломает её своим весом.','bad');
+    } else if (st.when==='winter'){
+      draw('heavy'); found.t=1; award('why2',5);
+      msg('Нос на льду, но середина зимы: плита толстая, а «Пайлот» — буксир в 26 метров. Его дело — начало и конец сезона. Весной 1865 года он открыл навигацию раньше обычного.','bad');
+    } else {
+      draw('ok'); award('lab',35);
+      msg('Прошли! Скошенный нос, ход без удара и тонкая весенняя кромка — так «Пайлот» и работал с 1864 года. Лёд ломается не ударом, а весом.','ok');
+    }
+    setFound();
+  };
+  $('labReset').onclick = function(){
+    st = {bow:'straight', way:'ram', when:'winter'};
+    for (var j=0;j<segs.length;j++){ var v=segs[j].getAttribute('data-v'); segs[j].setAttribute('aria-pressed', (v==='straight'||v==='ram'||v==='winter')?'true':'false'); }
+    draw('idle'); msg('Буксир снова у кромки. Выбери три условия заново. Уже полученные баллы сохраняются и повторно не начисляются.');
+  };
+  void reduce;
+  draw('idle');
+
+  /* ── ВИКТОРИНА ── один ответ на вопрос; дистракторы сверены с источниками страницы. */
+  var Q = [
+    {q:'Как «Пайлот» ломал лёд?', o:['Бил его с разгона усиленным тараном','Наползал на лёд и ломал его своим весом','Растапливал паром из котла'], a:1,
+     e:'Скошенный нос позволял судну «вползать на лёд и ломать его своим весом» — так объясняют кораблестроители ОСК.'},
+    {q:'Под каким углом Бритнев срезал нос «Пайлота»?', o:['5 градусов','20 градусов','45 градусов'], a:1,
+     e:'20 градусов, ниже ватерлинии. Эту форму потом назвали ледокольной.'},
+    {q:'За сколько немецкие инженеры купили чертежи «Пайлота» в 1871 году?', o:['300 рублей','3000 рублей','30 000 рублей'], a:0,
+     e:'300 рублей — «не щедрые», как пишет «Деловой Петербург». По чертежам в Гамбурге построили первые немецкие ледоколы.'},
+    {q:'Что заставило немцев приехать за чертежами?', o:['Война с Францией','Зимой 1871 года замёрзла Эльба','Приказ кайзера строить флот'], a:1,
+     e:'Суровая зима 1871 года: замёрзла Эльба, и порт Гамбурга встал.'},
+    {q:'Какой ледокол стал первым арктическим — через десять лет после смерти Бритнева?', o:['«Ермак»','«Бой»','«Красин»'], a:0,
+     e:'«Ермак», 1899 год, — о нём страница 8 января. «Бой» — второй ледокол самого Бритнева, 1875 год.'}
+  ];
+  var box = $('quizBox');
+  Q.forEach(function(it, qi){
+    var wrap = document.createElement('div');
+    var h = document.createElement('p'); h.className='quiz-q'; h.textContent=(qi+1)+'. '+it.q; wrap.appendChild(h);
+    var exp = document.createElement('div'); exp.className='exp'; exp.setAttribute('aria-live','polite');
+    var btns = it.o.map(function(txt, oi){
+      var b=document.createElement('button'); b.type='button'; b.className='opt'; b.textContent=txt;
+      b.onclick=function(){
+        if (wrap.dataset.done) return; wrap.dataset.done='1';
+        btns.forEach(function(x,xi){ x.disabled=true; if (xi===it.a) x.classList.add('correct'); });
+        if (oi===it.a){ award('q'+qi,10); exp.textContent='Верно. '+it.e; }
+        else { b.classList.add('wrong'); exp.textContent='Не совсем. '+it.e; }
+        exp.classList.add('show');
+      };
+      wrap.appendChild(b); return b;
+    });
+    wrap.appendChild(exp); box.appendChild(wrap);
+  });
+})();
+</script>
+<script>window.addEventListener("pageshow",function(e){if(e.persisted)location.reload();});</script>
+<script>window.MUSEUM_CHROME={
+  museum:{title:'Что изобрели русские первыми в мире',href:'index.html'},
+  share:{title:'Первый в мире ледокол «Пайлот» — музей «Что изобрели русские первыми в мире»',
+         text:'Кронштадтский купец срезал пароходу нос под углом — и судно полезло на лёд. Что Россия дала миру раньше всех — день за днём.'},
+  prev:{href:'day-09jan-blinov.html',title:'9 января · Гусеничный ход'},
+  next:{href:'day-11jan-kostovich.html',title:'11 января · Двигатель Костовича'},
+  all:{href:'index.html',label:'Все изобретения'},
+  city:'../../index.html',
+  random:['day-01jan-cabletv.html','day-02jan-luna1.html','day-03jan-anosov.html','day-04jan-pilchikov.html','day-05jan-shukhov.html','day-06jan-orlov.html','day-08jan-icebreaker.html','day-09jan-blinov.html','day-10jan-britnev.html','day-11jan-kostovich.html','day-12jan-r7.html','day-30jan-kotelnikov.html','day-03feb-luna9.html','day-18mar-leonov.html','day-15may-mechnikov.html','day-16jun-tereshkova.html','day-26sep-pavlov.html','day-15nov-buran.html','day-25nov-pirogov.html','day-01dec-lobachevsky.html','day-14dec-laser.html']
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-chrome.js"></script>
+<script>window.MUSEUM_SUPPORT={museum:'Что изобрели русские первыми в мире'};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-support.js"></script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/calendar-izobreteniya.js"></script>
+<script>window.MUSEUM_CALENDAR_INITIAL='01-10';</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-calendar-month.js"></script>
+<script>window.MUSEUM_RETURN={riddle:{q:"«Пайлот» строили не в Кронштадте. В какой стране в 1862 году заказал этот буксир Михаил Бритнев?",a:"В Англии. Там же Бритнев раньше учился корабельной архитектуре.",src:"Президентская библиотека имени Б. Н. Ельцина, «Михаил Осипович Бритнев (1822–1889)»"}};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-return.js" data-museum="izobreteniya" data-day="01-10"></script>
+<script defer src="https://arabelthera-dot.github.io/rc-museum-preview/assets/analytics.js"></script>
+<script>window.MUSEUM_AUDIOGUIDE={
+  audioSrc:"audio-guide-britnev-ru.mp3",
+  durationLabel:"3 минуты 53 секунд",
+  lead:"Голос ведёт по залу Михаила Бритнева: от марки с маленьким пароходом во льдах до чертежей, которые немцы купили за триста рублей. Шесть остановок, на каждой — что искать глазами. Слушать можно фоном, пока читаешь статью ниже.",
+  stops:[
+    {t:0,mark:"0:00",title:"Пароход на марке"},
+    {t:37,mark:"0:37",title:"Остров во льду"},
+    {t:76,mark:"1:16",title:"Буксир из Англии"},
+    {t:115,mark:"1:55",title:"Первый рейс"},
+    {t:152,mark:"2:32",title:"Чертежи за триста рублей"},
+    {t:188,mark:"3:08",title:"Ледокольный нос"}
+  ],
+  transcript:[
+    "<p>«Марка 1976 года: „Пайлот“ идёт по льдинам. Это рисунок художника — снимков самого буксира мы не нашли, но форму носа он передаёт верно».</p>",
+    "<p>«Михаил Бритнев, кронштадтский купец, учился в Англии корабельной архитектуре. В 1862 году там же для него построили буксир „Пайлот“ — 26 метров, 85 лошадиных сил».</p>",
+    "<p>«Нос „Пайлота“ срезали ниже ватерлинии под 20 градусов: судно вползало на лёд и ломало его своим весом. Первый рейс — 22 апреля 1864 года, из Кронштадта к Ораниенбауму».</p>",
+    "<p>«Зимой 1871 года замёрзла Эльба. Немецкие инженеры купили чертежи „Пайлота“ за 300 рублей и построили по ним первые немецкие ледоколы».</p>",
+    "<p>«Форму носа назвали ледокольной. В 2022 году Почта России выпустила марку к 200-летию Бритнева».</p>"
+  ],
+  note:"Озвучено синтезом речи — временно, до записи голосом автора музея."
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-audioguide.js"></script>
+<script type="application/json" data-proof>
+{
+ "status": "not_found",
+ "claim_id": "rc:izobreteniya:britnev:claim-bow",
+ "searched": [
+  "Президентская библиотека, «Великая Россия» — биография Бритнева: переделка «Пайлота» 1864 г. описана, привилегии или иного документа нет",
+  "Commons: марки 1976 и 2022 гг. и портрет — не документы первенства",
+  "«Деловой Петербург», «Сноб», Korabel.ru: на документ не ссылаются; архивное дело о «Пайлоте» в открытых описях не найдено"
+ ]
+}
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-proof.js"></script>
+</body>
+</html>

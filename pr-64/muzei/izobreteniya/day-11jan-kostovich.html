@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ru" data-museum="izobreteniya">
+<head><meta name="robots" content="noindex"><base href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Первый в мире бензиновый двигатель для дирижабля, Костович — Что изобрели русские первыми в мире, 11 января</title>
+<!--
+  Страница дня 11 января. Наряд izobreteniya-11-yanv-3009 (claude2, 02.10.2026), доска заданий #108.
+  Форма — вариант А музея изобретений (Сергей 12.09.2026): лента ударов, подробности свёрнуты.
+  Паспорт выпуска: rc-museum-production/izobreteniya/day-11jan-kostovich/passport/issue.json
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --dark:#060c17; --dark2:#0c1826; --surface:#111f33;
+    --card:rgba(255,255,255,.05); --card-b:rgba(255,255,255,.09);
+    --gold:#c9a84c; --gold-l:#e4c97a; --gold-g:rgba(201,168,76,.13);
+    --ink:#e8eef5; --muted:#7a9ab8; --line:rgba(255,255,255,.07);
+    --accent:#2d8cbf; --accent2:#1f6f8b;
+    /* legacy compat */
+    --paper:#0c1826; --paper2:#111f33;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Inter','Segoe UI',sans-serif;color:var(--ink);background:var(--dark);line-height:1.72}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.13;margin:0}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent)}
+
+  /* ── ШАПКА ── */
+  header.top{background:rgba(6,12,23,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--card-b);color:#fff;position:sticky;top:0;z-index:30}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+  .logo svg{display:block;filter:drop-shadow(0 0 8px rgba(201,168,76,.4))}
+  .logo .lt{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:16px}
+  .logo .lt small{display:block;font-size:9px;font-weight:600;letter-spacing:3px;color:var(--gold);text-transform:uppercase;font-family:'Inter',sans-serif}
+  .score{background:var(--gold-g);border:1px solid rgba(201,168,76,.3);border-radius:24px;padding:6px 16px;font-size:13px;color:var(--gold-l);cursor:pointer;font-family:'Inter',sans-serif}
+  .score-info{position:absolute;right:12px;top:66px;max-width:260px;background:#0e1c30;color:var(--ink);border:1px solid var(--card-b);border-radius:14px;padding:14px 16px;font-size:13px;line-height:1.6;box-shadow:0 20px 60px rgba(0,0,0,.6);display:none;z-index:40}
+  .score-info.show{display:block}
+
+  /* ── HERO — СТАНДАРТ (не менять): 3D-сцена сверху, текст отдельным блоком ниже ── */
+  .hero-scene{position:relative;height:52vh;min-height:300px;max-height:520px;overflow:hidden;background:linear-gradient(160deg,#0a1e3a 0%,#1a3a6a 55%,#0d2240 100%)}
+  .hero-scene canvas.scene,.hero-scene img.scene{width:100%;height:100%;display:block;object-fit:cover}
+  .scene-caption{background:#060d18;padding:11px 0 12px}
+  .scene-caption .wrap{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+  .scene-cap{font-size:13.5px;line-height:1.6;color:var(--muted);border-left:2px solid rgba(201,168,76,.4);padding-left:14px;flex:1 1 420px}
+  .scene-hint{flex:0 0 auto;font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.4px;color:#e4c97a;
+    background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.34);border-radius:24px;padding:7px 16px;font-weight:600}
+  .hero-lead{background:linear-gradient(180deg,#0c1826 0%,#060c17 100%);color:#fff;padding:28px 0 38px}
+  .hero-lead .museum{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase;font-weight:700;font-family:'Inter',sans-serif;margin-bottom:12px;opacity:.9}
+  .hero-lead .who{font-family:'Inter',sans-serif;font-size:clamp(13px,3vw,15px);letter-spacing:.4px;color:var(--accent-l,#7dc8ff);margin-bottom:10px}
+  .hero-lead .who i{font-style:normal;color:#7893ab;font-weight:400}
+  .hero-lead h1{color:#fff;font-size:56px;font-weight:900;line-height:1.04;margin-bottom:16px}
+  .hero-lead .hook{color:#b8ccde;font-size:19px;max-width:580px;margin-bottom:28px;line-height:1.65;font-weight:400}
+  .hero-lead .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+  @media(max-width:680px){.hero-lead h1{font-size:34px}.hero-lead .hook{font-size:16px}
+    .hero-scene{height:34vh;min-height:230px;max-height:300px}
+    .scene-caption .wrap{flex-direction:column;gap:9px}
+    .scene-hint{order:-1;align-self:flex-start;font-size:11.5px;padding:6px 13px}
+    .scene-cap{font-size:12.8px;flex:1 1 auto}}
+  .date-chip{display:inline-block;background:var(--gold-g);border:1px solid rgba(201,168,76,.35);color:var(--gold);font-weight:700;padding:6px 18px;border-radius:24px;font-size:12px;margin-bottom:16px;font-family:'Inter',sans-serif;letter-spacing:.5px}
+
+  /* ── НАВИГАЦИЯ ДНЯ ── */
+  .daynav{position:sticky;top:64px;z-index:25;background:rgba(6,12,23,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--card-b)}
+  .daynav .wrap{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+  .daynav::-webkit-scrollbar{display:none}
+  .daynav a{flex:0 0 auto;padding:14px 20px;font-size:11px;font-weight:700;font-family:'Inter',sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap;letter-spacing:1.5px;text-transform:uppercase;border-bottom:2px solid transparent;transition:.18s}
+  .daynav a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+
+  /* ── СЕКЦИИ ── */
+  section.block{padding:64px 0;border-bottom:1px solid var(--line);scroll-margin-top:130px}
+  .kicker{font-size:10px;text-transform:uppercase;letter-spacing:3.5px;color:var(--gold);font-weight:700;font-family:'Inter',sans-serif;margin-bottom:8px}
+  section.block h2{font-size:34px;color:#fff;margin-bottom:10px}
+  p{margin:14px 0;color:var(--ink)}
+  .pull{background:var(--gold-g);border-left:3px solid var(--gold);padding:18px 22px;border-radius:0 14px 14px 0;font-style:italic;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-size:20px;line-height:1.5;margin:26px 0}
+
+  /* ── КНОПКИ ── */
+  .btn{cursor:pointer;border:none;border-radius:12px;padding:14px 26px;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;background:var(--accent2);color:#fff;transition:.18s;letter-spacing:.2px}
+  .btn:hover{filter:brightness(1.18)}
+  .btn.ghost{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid var(--card-b)}
+  .btn.ghost:hover{background:rgba(255,255,255,.11);border-color:rgba(255,255,255,.2)}
+  .btn.gold{background:linear-gradient(135deg,var(--gold),#b8882b);color:#1a0f00;box-shadow:0 4px 20px rgba(201,168,76,.25)}
+  .btn.gold:hover{filter:brightness(1.1);box-shadow:0 6px 28px rgba(201,168,76,.4)}
+  .btn:active{transform:translateY(1px)}
+  .pulse{animation:pulse .9s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+
+  /* ── КАРТОЧКИ ── */
+  .card{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:20px 22px;margin:16px 0;backdrop-filter:blur(6px)}
+
+  /* ── КВИЗ ── */
+  .opt{display:block;width:100%;text-align:left;background:rgba(255,255,255,.04);border:1px solid var(--card-b);border-radius:12px;padding:13px 16px;margin:8px 0;cursor:pointer;font-size:15px;color:var(--ink);font-family:'Inter',sans-serif;transition:.16s}
+  .opt:hover{border-color:var(--accent);background:rgba(45,140,191,.08)}
+  .opt.correct{background:rgba(40,120,60,.18);border-color:#3f9b52;color:#7ed4a0;font-weight:600}
+  .opt.wrong{background:rgba(180,40,40,.13);border-color:#c0453f;color:#f08080}
+  .exp{margin-top:10px;font-size:14px;background:var(--gold-g);border-radius:10px;padding:12px 14px;display:none;color:var(--gold-l)}
+  .exp.show{display:block}
+
+  /* ── ИТОГ ДНЯ ── */
+  .day-result{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:22px 24px;max-width:460px}
+  .dr-rank{font-family:'Playfair Display',Georgia,serif;font-size:28px;color:var(--gold-l);font-weight:700}
+  .dr-score{font-size:16px;margin:4px 0 12px;color:var(--ink)}.dr-score span{color:var(--muted);font-size:14px}
+  .dr-bar{height:8px;background:rgba(255,255,255,.08);border-radius:6px;overflow:hidden}
+  .dr-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent2),var(--gold));transition:width .6s cubic-bezier(.2,.7,.2,1)}
+  .dr-note{margin-top:12px;font-size:14px;color:var(--muted)}
+
+  /* ── РЕКЛАМНЫЕ СЛОТЫ ── */
+  .ad-slot{position:relative;margin:26px 0;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.1);border-radius:14px;min-height:88px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px}
+  .ad-slot .lbl{position:absolute;top:7px;right:12px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.15);font-family:'Inter',sans-serif}
+  .ad-slot .ph-txt{font-size:12px;max-width:80%;color:rgba(255,255,255,.18)}
+  .ad-slot.billboard{min-height:108px}
+  .adband{background:transparent;border-bottom:none}
+
+  footer{padding:40px 0 80px;color:rgba(255,255,255,.2);font-size:12px;text-align:center;font-family:'Inter',sans-serif;letter-spacing:.5px}
+  .crumbs{background:rgba(6,12,23,.6);border-bottom:1px solid var(--card-b);font-family:'Inter',sans-serif;font-size:12.5px}
+  .crumbs .wrap{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
+  .crumbs a{color:var(--gold-l);text-decoration:none;white-space:nowrap}
+  .crumbs a:hover{text-decoration:underline}
+  .crumbs .sep{color:var(--muted);opacity:.6}
+  .crumbs .here{color:var(--muted);white-space:nowrap}
+
+
+  /* ── ШАПКА: четыре строки по museum-core §6-бис ── */
+  header.top{display:block;text-align:center;padding:10px 12px 8px;height:auto;position:relative}
+  header.top .b1{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:15px;letter-spacing:.5px;color:#fff}
+  header.top .b2{font-size:11px;color:var(--muted);margin-top:2px}
+  header.top .b3{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:6px}
+  header.top .b4{font-size:12.5px;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-style:italic}
+  header.top .score{position:absolute;right:12px;top:10px}
+  .daynav{top:0}
+  .hero-scene{background:#0e1c2c;height:38vh;min-height:250px;max-height:400px}
+  @media(max-width:680px){.hero-lead h1{font-size:31px}}
+  .hero-scene img.scene{object-fit:cover;object-position:50% 55%}
+  .date-origin{font-size:13px;color:#9fb4c8;margin:-6px 0 12px;max-width:62ch}
+  .hero-lead .hook{color:#c6d8e8;max-width:62ch}
+  .hero-under{background:linear-gradient(180deg,#060d18,#060c17);padding:4px 0 22px}
+  .stamp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(125,200,255,.28);margin-top:14px}
+  .stamp>div{padding:11px 12px;border-left:1px solid rgba(125,200,255,.16);min-width:0}
+  .stamp>div:first-child{border-left:0}
+  .stamp .v{font-size:clamp(15px,3.4vw,21px);font-weight:700;color:#8fd3ff;line-height:1.1;overflow-wrap:anywhere}
+  .stamp .k{font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:#8fa5b9;margin-top:5px}
+  @media(max-width:600px){.stamp{grid-template-columns:repeat(2,minmax(0,1fr))}.stamp>div:nth-child(3){border-left:0}.stamp>div:nth-child(n+3){border-top:1px solid rgba(125,200,255,.16)}}
+
+  /* ── ЛЕНТА УДАРОВ (museum-inventions, вариант А; museum-core §5-бис) ── */
+  .udary{list-style:none;margin:18px 0 0;padding:0;counter-reset:u}
+  .udary>li{border-top:1px solid var(--line);padding:4px 0}
+  .udary details>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:34px 1fr;gap:10px;padding:12px 0;font-size:17px;line-height:1.55;color:var(--ink)}
+  .udary details>summary::-webkit-details-marker{display:none}
+  .udary details>summary::before{counter-increment:u;content:counter(u);font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:20px;color:var(--gold);line-height:1.3}
+  .udary .more-lbl{display:block;grid-column:2;font-size:12.5px;color:var(--gold-l);letter-spacing:.3px;margin-top:4px}
+  .udary .more-lbl::after{content:' ▾'}
+  .udary details[open] .more-lbl::after{content:' ▴'}
+  .udary details[open] .more-lbl .o{display:none}
+  .udary details:not([open]) .more-lbl .c{display:none}
+  .udary summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+  .udary .det{margin:0 0 14px 44px;padding:12px 16px;background:rgba(255,255,255,.035);border-left:2px solid rgba(201,168,76,.45);border-radius:0 10px 10px 0;font-size:15px;color:#d5e0ea}
+  .udary .det p{margin:8px 0}
+  .udary .tag{display:inline-block;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#1a0f00;background:var(--gold-l);border-radius:6px;padding:1px 7px;margin-right:6px}
+  .udary .find{border-left:3px solid var(--gold);padding-left:8px}
+  figure.fig{margin:18px 0}
+  figure.fig img{max-width:100%;height:auto;border-radius:10px;display:block}
+  figure.fig figcaption{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5}
+  .src-note{font-size:12px;color:#8fa5b9}
+
+  /* ── МОДЕЛЬ ДНЯ (главное предметное действие) ── */
+  .lab{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:18px 18px 20px;margin-top:14px}
+  .lab-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+  .lab-row .lbl{flex:0 0 100%;font-size:13px;color:var(--muted);letter-spacing:.3px}
+  .seg{cursor:pointer;border:1px solid var(--card-b);background:rgba(255,255,255,.04);color:var(--ink);border-radius:10px;padding:10px 14px;font:inherit;font-size:14.5px;min-height:44px}
+  .seg[aria-pressed="true"]{border-color:var(--gold);background:var(--gold-g);color:var(--gold-l);font-weight:600}
+  .seg:focus-visible,.btn:focus-visible,.opt:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .lab-stage{position:relative;margin-top:12px}
+  .lab-stage canvas{width:100%;height:auto;display:block;border-radius:10px;background:#1c2530}
+  .lab-cap{font-size:12px;color:#8fa5b9;margin-top:6px}
+  .lab-msg{margin-top:12px;font-size:15.5px;padding:12px 14px;border-radius:10px;background:rgba(255,255,255,.04);border-left:3px solid var(--card-b);min-height:48px}
+  .lab-msg.ok{border-left-color:#3f9b52;background:rgba(40,120,60,.14)}
+  .lab-msg.bad{border-left-color:#c0453f;background:rgba(180,40,40,.10)}
+  .lab-found{font-size:13px;color:var(--muted);margin-top:8px}
+  .lab-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  .noscript-box{background:rgba(255,255,255,.04);border:1px dashed var(--card-b);border-radius:12px;padding:12px 16px;font-size:15px}
+
+  /* ── ГРАНИЦА ПЕРВЕНСТВА ── */
+  .border-box{background:rgba(45,140,191,.08);border:1px solid rgba(45,140,191,.3);border-radius:14px;padding:16px 18px}
+  .border-box b{color:#8fd3ff}
+  .ctx{width:100%;border-collapse:collapse;margin-top:14px;font-size:14.5px}
+  .ctx th,.ctx td{text-align:left;padding:9px 8px;border-top:1px solid var(--line);vertical-align:top}
+  .ctx th{color:var(--gold-l);font-weight:600;font-size:12.5px;letter-spacing:.5px}
+  .quiz-q{margin:18px 0 6px;font-weight:600}
+  .sources a{color:var(--gold-l)}
+  .sources li{margin:6px 0;font-size:14px;color:#c8d6e2}
+  @media(max-width:600px){header.top{padding:8px 64px 6px}header.top .score{top:8px;right:8px;padding:4px 10px;font-size:12px}header.top .b3{margin-top:3px}
+    .hero-scene{height:26vh;min-height:200px;max-height:260px}.date-origin{font-size:12px;margin:-8px 0 8px}.hero-lead{padding:18px 0 26px}.hero-lead .date-chip{margin-bottom:12px}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+
+<meta name="description" content="Костович собрал бензиновый мотор раньше, чем Даймлер и Бенц поставили такие на свои повозки.">
+<link rel="canonical" href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-11jan-kostovich.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Русская цивилизация">
+<meta property="og:title" content="Первый в мире бензиновый двигатель для дирижабля">
+<meta property="og:description" content="Костович собрал бензиновый мотор раньше, чем Даймлер и Бенц поставили такие на свои повозки.">
+<meta property="og:url" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-11jan-kostovich.html">
+<meta property="og:image" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-11jan-kostovich-dvigatel.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Первый в мире бензиновый двигатель для дирижабля", "description": "Костович собрал бензиновый мотор раньше, чем Даймлер и Бенц поставили такие на свои повозки.", "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-11jan-kostovich.html", "inLanguage": "ru", "isPartOf": {"@type": "WebSite", "name": "Музей «Что изобрели русские первыми в мире»"}, "publisher": {"@type": "Organization", "name": "Русская цивилизация"}, "about": {"@type": "CreativeWork", "name": "Первый в мире бензиновый двигатель для дирижабля"}, "image": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-11jan-kostovich-dvigatel.jpg"}</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="b1">Русская цивилизация</div>
+  <div class="b2">Первый цифровой музей достижений России · Цивилизация первенств — что Россия дала миру раньше всех</div>
+  <div class="b3">Что изобрели русские первыми в мире</div>
+  <div class="b4">365 изобретений. Все русские. Все первые</div>
+  <div class="score" id="scoreBox" title="Баллы знаний за этот день">⭐ <span id="score">0</span> / 100</div>
+</header>
+
+<nav class="crumbs" aria-label="Хлебные крошки"><div class="wrap">
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация</a>
+  <span class="sep">›</span>
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми в мире</a>
+  <span class="sep">›</span>
+  <span class="here">11 января · Костович</span>
+</div></nav>
+
+<div class="hero-scene" id="hero">
+  <img class="scene" src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-11jan-kostovich-dvigatel.jpg" data-source="https://commons.wikimedia.org/wiki/File:Gasoline_engine_of_Kostovi%C4%87.JPG" data-license="CC BY-SA 3.0" width="1200" height="656" alt="Музейный экспонат: восемь бронзовых цилиндров лежат двумя рядами на чугунной станине, над ними стальные тяги и большое колесо-маховик со спицами" fetchpriority="high">
+</div>
+
+<div class="scene-caption">
+  <div class="wrap">
+    <div class="scene-cap">Двигатель Костовича в Центральном музее ВВС, Монино. Музей называет экспонат оригиналом 1889 года. Фото: Dmitry Ivanov, 2014, Викисклад, лицензия CC BY-SA 3.0.</div>
+    <span class="scene-hint">Предмет · музей ВВС</span>
+  </div>
+</div>
+
+<header class="hero-lead">
+  <div class="wrap">
+    <div class="date-chip">11 января · 1884</div>
+    <p class="date-origin">Дата условная: у изобретения нет одного дня. Мотор собран к 1884 году, испытания шли до 1885-го.</p>
+    <div class="who">Огнеслав Костович <i>· капитан, изобретатель, Петербург</i></div>
+    <div class="museum">Музей «Что изобрели русские первыми в мире»</div>
+    <h1>Первый в мире бензиновый двигатель для дирижабля</h1>
+    <p class="hook">Костович собрал бензиновый мотор раньше, чем Даймлер и Бенц поставили такие на свои повозки.</p>
+    <div class="hero-btns">
+      <button class="btn gold" id="readBtn" type="button">Читать историю ↓</button>
+      <button class="btn ghost" id="listenBtn" type="button">🎧 Слушать аудиогид</button>
+    </div>
+  </div>
+</header>
+
+<div class="hero-under">
+  <div class="wrap">
+    <div class="stamp">
+      <div><div class="v">80 л. с.</div><div class="k">мощность</div></div>
+      <div><div class="v">240 кг</div><div class="k">масса мотора</div></div>
+      <div><div class="v">8</div><div class="k">цилиндров</div></div>
+      <div><div class="v">0,5 л. с.</div><div class="k">у Даймлера, 1885</div></div>
+    </div>
+  </div>
+</div>
+
+<nav class="daynav" aria-label="Разделы дня">
+  <div class="wrap">
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-11jan-kostovich.html#story">Читать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-11jan-kostovich.html#audioguide">Слушать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-11jan-kostovich.html#games">Поднять мотор</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-11jan-kostovich.html#pervenstvo">Первенство</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-11jan-kostovich.html#quiz">Викторина</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-11jan-kostovich.html#calendar">Календарь</a>
+  </div>
+</nav>
+
+<section class="wrap" id="dokument" data-proof-block aria-label="Документ первенства"></section>
+
+<section class="block" id="audioguide"></section>
+
+<section class="block" id="story">
+  <div class="wrap">
+    <div class="kicker">История изобретения · 11 ударов</div>
+    <h2>Мотор, который строили для неба</h2>
+    <p style="color:var(--muted);max-width:62ch">Читается подряд. Нажми на удар — откроется подробный разбор с источниками.</p>
+    <ol class="udary">
+      <li><details><summary><span>Серб Огнеслав Костович воевал за Россию на Дунае, а после войны, в 27 лет, остался в Петербурге.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <figure class="fig" style="max-width:150px;float:right;margin:4px 0 10px 16px">
+            <img src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-11jan-kostovich-portret.jpg" data-source="https://commons.wikimedia.org/wiki/File:Ognjeslav_Kostovic.jpg" data-license="Public domain" width="140" height="200" loading="lazy" alt="Старая фотография: бородатый мужчина в морской фуражке и тёмной куртке">
+            <figcaption>О. С. Костович. Фотография конца XIX века, автор неизвестен. Общественное достояние.</figcaption>
+          </figure>
+          <p>Костович родился в 1851 году, в юности жил в Пеште, водил каботажные суда торгового флота. В русско-турецкую войну 1877–1878 годов он примкнул к русской армии, принял российское подданство и командовал пароходом Дунайской флотилии.</p>
+          <p>После войны, сопровождая имущество морского ведомства, 27-летний капитан оказался в Петербурге и увлёкся летательными аппаратами.</p>
+          <p class="src-note">Источники: Центральный музей ВВС, «Двигатель Костовича»; А. Ф. Ткаченко, «Морской биографический словарь» (по публикации Международной военно-исторической ассоциации).</p>
+          <div style="clear:both"></div>
+        </div></details></li>
+      <li><details><summary><span>В декабре 1879 года он предложил управляемый аэростат: гондола, машина и баллон — одна жёсткая система.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Проект одобрили и назвали «Дирижабль „Россия“». На постройку собрали паевое товарищество; его поддержали Д. И. Менделеев и М. А. Рыкачёв. 8 августа 1882 года на Охтинской верфи в Петербурге начали строить корабль.</p>
+          <p>О самом дирижабле — отдельный день нашего календаря, 29 января. Здесь — его сердце, мотор.</p>
+          <p class="src-note">Источники: Центральный музей ВВС; «Российская авиация», «Дирижабль „Россия“ (проект О. С. Костовича)».</p>
+        </div></details></li>
+      <li><details><summary><span>Паровая машина для неба не годилась: ей нужны котёл и запас угля, а это лишние сотни килограммов.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>До Костовича воздухоплавание знало только паровые машины. Костович отказался ставить пар на дирижабль: слишком много места уходило бы под уголь, котёл и машину, и корабль пришлось бы делать больше.</p>
+          <p class="src-note">Источники: М. И. Левин, «Машина-двигатель. От водяного колеса до атомного двигателя», глава «Капитан русского флота Костович и его двигатель»; «Российская авиация».</p>
+        </div></details></li>
+      <li><details><summary><span>Газовый двигатель Отто тоже не подходил: светильный газ пришлось бы возить на борту в баллонах.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Двигатель Отто на заводе берёт газ из трубы. В полёте трубы нет: газ везут с собой в баллонах, а баллоны занимают место и весят.</p>
+          <p class="src-note">Источник: М. И. Левин, «Машина-двигатель».</p>
+        </div></details></li>
+      <li class="find"><details><summary><span>Костович решил жечь в цилиндрах не газ, а пары жидкого топлива — бензина.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p><span class="tag">Находка дня</span>Цикл тот же, что у Отто, — четыре такта. Новое — топливо: лёгкое жидкое, которое занимает мало места и превращается в горючую смесь в карбюраторе. Работать над мотором Костович начал в 1879 году, в 1880-м собрал уменьшенную модель с двумя цилиндрами и поставил её на катер своей конструкции.</p>
+          <p>Попробуй сам в модели ниже: чем крутить винт дирижабля.</p>
+          <p class="src-note">Источники: Центральный музей ВВС; «Российская авиация», «Двигатель внутреннего сгорания для дирижабля О. С. Костовича».</p>
+        </div></details></li>
+      <li><details><summary><span>Восемь цилиндров лежат двумя четвёрками навстречу друг другу, смесь поджигает электрический ток.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <figure class="fig" style="max-width:360px">
+            <img src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-11jan-kostovich-dvigatel-full.jpg" data-source="https://commons.wikimedia.org/wiki/File:Gasoline_engine_of_Kostovi%C4%87.JPG" data-license="CC BY-SA 3.0" width="800" height="800" loading="lazy" alt="Двигатель целиком: станина на ножках, внизу восемь бронзовых цилиндров, сверху колесо-маховик со спицами">
+            <figcaption>Двигатель Костовича целиком, Центральный музей ВВС. Фото: Dmitry Ivanov, 2014, Викисклад, CC BY-SA 3.0.</figcaption>
+          </figure>
+          <p>Цилиндры и поршни бронзовые, коленчатый вал, шатуны и коромысла стальные. Смесь из карбюратора идёт к впускным клапанам по четырём патрубкам. Зажигание электрическое, током низкого напряжения. Охлаждение водяное, смазка — из маслёнок. Большой маховик выравнивает ход.</p>
+          <p>«Российская авиация» пишет: электрическое зажигание и встречное движение поршней Костович впервые применил на двигателе внутреннего сгорания.</p>
+          <p class="src-note">Источники: Центральный музей ВВС; «Российская авиация».</p>
+        </div></details></li>
+      <li><details><summary><span>К 1884 году мотор был собран: до 80 лошадиных сил при 240 килограммах — три килограмма на каждую силу.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Испытания и доводка шли до 1885 года. Центральный музей ВВС даёт мощность 60–80 лошадиных сил и называет 1883 год; «Российская авиация» — 80 сил и 1884 год. Масса у обоих — 240 килограммов.</p>
+          <p>Для сравнения: моторы первого немецкого жёсткого дирижабля LZ-1 (1900) давали всего 14 сил и весили 420 килограммов — 30 килограммов на силу, в десять раз тяжелее.</p>
+          <p class="src-note">Источники: Центральный музей ВВС; «Российская авиация» (оба материала).</p>
+        </div></details></li>
+      <li><details><summary><span>Через год, в 1885-м, Даймлер запатентовал мотоцикл. Его мотор давал половину лошадиной силы.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>29 августа 1885 года Готлиб Даймлер получил немецкий патент на мотоцикл: деревянная рама, одноцилиндровый мотор в 0,5 л. с., скорость до 12 км/ч. 10 ноября 1885 года на нём проехал сын изобретателя.</p>
+          <p>Выходит, мотор Костовича давал до 80 лошадиных сил, когда у первого мотоцикла Даймлера было полсилы.</p>
+          <p>29 января 1886 года Карл Бенц получил патент на трёхколёсную моторную повозку — её признают первым автомобилем.</p>
+          <p class="src-note">Источники: Мотоциклетная федерация России, «29 августа — день рождения первого мотоцикла»; «Парламентская газета», 29.08.2019; «Коммерсантъ», «День рождения автомобиля», 2026.</p>
+        </div></details></li>
+      <li><details><summary><span>Заявку на привилегию Костович подал в 1888 году. Патенты США и Англии пришли раньше русского — его выдали в 1892-м.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>14 мая 1888 года (по старому стилю) Костович просил Департамент торговли и мануфактур о десятилетней привилегии на «усовершенствованный двигатель, действующий бензином, керосином, нефтяным, светильным и другими газами и взрывчатыми веществами». Привилегию выдали 4 ноября 1892 года — через четыре с половиной года.</p>
+          <p class="src-note">Источники: Большая советская энциклопедия, «Костович»; «Российская авиация».</p>
+        </div></details></li>
+      <li><details><summary><span>Дирижабль «Россия» так и не взлетел: денег на постройку не хватило. Мотор остался без неба.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>После неудачи с дирижаблем Костович пытался выпускать свои двигатели как стационарные: в 1890-х один такой мотор в 64 силы работал на его заводе в Рыбацком. Широкого распространения мотор не получил.</p>
+          <p class="src-note">Источники: Большая советская энциклопедия; Центральный музей ВВС; «Российская авиация».</p>
+        </div></details></li>
+      <li><details><summary><span>Мотор засекретили. До 1947 года он простоял на заводе при Охтинской верфи, теперь его видно в Монино.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Двигатель хранился в помещениях ремонтного завода при Охтинской судоверфи, затем в Доме авиации в Москве. В 1977 году он поступил в Центральный музей ВВС и стоит в зале № 1. В 1965 году сделали два макета, которые показывали посетителям, как работает мотор.</p>
+          <p class="src-note">Источники: Центральный музей ВВС; «Российская авиация»; М. И. Левин, «Машина-двигатель».</p>
+        </div></details></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="games">
+  <div class="wrap">
+    <div class="kicker">Главное действие · модель</div>
+    <h2>Поднять мотор в небо</h2>
+    <p style="max-width:62ch">Дирижаблю нужно 80 лошадиных сил на винт. Выбери, на чём работает мотор и как он устроен, и нажми «Запустить». Взлетит только верное сочетание. На каждый неверный ход объясним, что пошло не так.</p>
+    <div class="lab" id="lab">
+      <div class="lab-row" role="group" aria-labelledby="lg1"><span class="lbl" id="lg1">1. Чем крутить винт</span>
+        <button class="seg" type="button" data-k="fuel" data-v="steam" aria-pressed="true">Паровая машина: котёл и уголь</button>
+        <button class="seg" type="button" data-k="fuel" data-v="gas" aria-pressed="false">Газовый двигатель: газ в баллонах</button>
+        <button class="seg" type="button" data-k="fuel" data-v="petrol" aria-pressed="false">Бензиновый мотор</button>
+      </div>
+      <div class="lab-row" role="group" aria-labelledby="lg2"><span class="lbl" id="lg2">2. Вес на одну лошадиную силу</span>
+        <button class="seg" type="button" data-k="build" data-v="heavy" aria-pressed="true">30 кг, как моторы LZ-1 (1900)</button>
+        <button class="seg" type="button" data-k="build" data-v="light" aria-pressed="false">3 кг, как мотор Костовича</button>
+      </div>
+      <div class="lab-btns">
+        <button class="btn gold" type="button" id="labGo">Запустить</button>
+        <button class="btn ghost" type="button" id="labReset">Начать заново</button>
+      </div>
+      <div class="lab-stage">
+        <canvas id="labCv" width="640" height="220" role="img" aria-label="Дирижабль у земли, под ним гондола с мотором"></canvas>
+        <div class="lab-cap">Модель, а не чертёж: подъёмная сила условная. Вес моторов — из источников: 240 кг на 80 сил у Костовича, 420 кг на 14 сил у LZ-1.</div>
+      </div>
+      <div class="lab-msg" id="labMsg" aria-live="polite">Дирижабль у земли. Выбери топливо и вес мотора и нажми «Запустить».</div>
+      <div class="lab-found" id="labFound">Найдено причин неудачи: 0 из 3.</div>
+      <noscript><div class="noscript-box">Для модели нужен JavaScript. Текстовая версия опыта: паровой машине нужны котёл и запас угля — дирижабль с ними не поднимется. Газовому двигателю нужен газ в баллонах на борту — тот же лишний груз. Бензиновый мотор с весом 30 кг на силу на 80 сил весит 2400 кг — тоже слишком тяжело. Взлетает так: бензин и 3 кг на силу, как у Костовича, — 240 кг на 80 сил.</div></noscript>
+    </div>
+    <p class="src-note" style="margin-top:10px">Правила модели: отказ от пара и газа — М. И. Левин, «Машина-двигатель»; 80 сил при 240 кг — Центральный музей ВВС; 14 сил при 420 кг у LZ-1 — «Российская авиация». 2400 кг — наш расчёт: 30 кг × 80 сил.</p>
+  </div>
+</section>
+
+<section class="block" id="pervenstvo">
+  <div class="wrap">
+    <div class="kicker">Проверка факта</div>
+    <h2>Что именно Костович сделал первым</h2>
+    <div class="border-box">
+      <p style="margin-top:0"><b>Граница первенства:</b> первый в мире бензиновый двигатель, построенный для летательного аппарата: восемь цилиндров, до 80 лошадиных сил при 240 килограммах, собран к 1884 году — раньше, чем Даймлер (1885) и Бенц (1886) поставили бензиновые моторы на свои повозки. Доказательство — сам мотор в Центральном музее ВВС и привилегия 1892 года.</p>
+      <p style="margin-bottom:0"><b>Чего здесь нет:</b> Костович не изобретал двигатель внутреннего сгорания вообще — он взял четырёхтактный цикл Отто, газового двигателя. В воздух мотор не поднялся: дирижабль «Россия» не достроили.</p>
+    </div>
+    <table class="ctx">
+      <thead><tr><th scope="col">Кто</th><th scope="col">Что</th><th scope="col">Когда</th></tr></thead>
+      <tbody>
+        <tr><td>О. С. Костович, Петербург</td><td>Бензиновый мотор для дирижабля: 8 цилиндров, до 80 л. с., 240 кг</td><td>1883–1884</td></tr>
+        <tr><td>Г. Даймлер, Германия</td><td>Патент на мотоцикл, мотор 0,5 л. с.</td><td>29.08.1885</td></tr>
+        <tr><td>К. Бенц, Германия</td><td>Патент на трёхколёсную моторную повозку</td><td>29.01.1886</td></tr>
+        <tr><td>О. С. Костович</td><td>Русская привилегия на двигатель (заявка 14.05.1888)</td><td>04.11.1892</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="block" id="quiz">
+  <div class="wrap">
+    <div class="kicker">Проверь себя · 5 вопросов</div>
+    <h2>Викторина</h2>
+    <p style="color:var(--muted);max-width:62ch">На каждый вопрос — одна попытка. После ответа покажем объяснение.</p>
+    <div id="quizBox"></div>
+    <noscript><div class="noscript-box">Для викторины нужен JavaScript. Ответы: 1 — котёл и запас угля; 2 — 80 сил; 3 — 240 кг; 4 — половина лошадиной силы; 5 — в Монино.</div></noscript>
+  </div>
+</section>
+
+<section class="block" id="result">
+  <div class="wrap">
+    <h2 style="margin-bottom:6px">Итог дня</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Модель, три причины неудачи и викторина вместе дают 100 баллов. Прогресс не сохраняется: перезагрузка страницы начинает день заново.</p>
+    <div class="day-result">
+      <div class="dr-score" id="dayTxt">0 / 100 · звание: Гость дня</div>
+      <div class="dr-bar"><i id="dayBar" style="width:0%"></i></div>
+      <div class="dr-note">Подними дирижабль, найди все три причины неудачи и ответь на вопросы.</div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="sources">
+  <div class="wrap">
+    <div class="kicker">Источники</div>
+    <h2>На чём стоит страница</h2>
+    <ul class="sources">
+      <li><a href="https://cmvvs.ru/ekspozitsiya/dvigateli.html?view=article&amp;id=449" rel="noopener" target="_blank">Центральный музей Военно-воздушных сил · «Двигатель Костовича»</a>: биография, проект 1879 года, 1883–1885 годы, 60–80 сил при 240 кг, устройство мотора, привилегия, экспонат зала № 1, поступление в 1977 году.</li>
+      <li><a href="http://xn--80aafy5bs.xn--p1ai/aviamuseum/dvigateli-i-vooruzhenie/aviamotorostroenie/aviamotory-rossijskoj-imperii/dvigatel-vnutrennego-sgoraniya-dlya-dirizhablya-o-s-kostovicha/" rel="noopener" target="_blank">«Российская авиация» · «Двигатель внутреннего сгорания для дирижабля О. С. Костовича»</a>: модель 1880 года, постройка 1884 года, 80 сил, электрическое зажигание и встречные поршни, мотор в Рыбацком, хранение до 1947 года, заявка 1888 и привилегия 1892 года.</li>
+      <li><a href="http://xn--80aafy5bs.xn--p1ai/aviamuseum/airplanes/rossijskaya-imperiya/dirizhabli-rossijskoj-imperii/dirizhabl-rossiya-proekt-o-s-kostovicha/" rel="noopener" target="_blank">«Российская авиация» · «Дирижабль „Россия“ (проект О. С. Костовича)»</a>: товарищество, Менделеев и Рыкачёв, 8 августа 1882 года, сравнение с моторами LZ-1.</li>
+      <li><a href="https://www.booksite.ru/fulltext/1/001/008/065/241.htm" rel="noopener" target="_blank">Большая советская энциклопедия · «Костович Огнеслав (Игнатий) Степанович»</a>: годы жизни, дирижабль не достроен, заявка 1888 года, привилегия 1892 года.</li>
+      <li><a href="https://history.wikireading.ru/hzF3MeoRyT" rel="noopener" target="_blank">М. И. Левин. «Машина-двигатель. От водяного колеса до атомного двигателя», глава «Капитан русского флота Костович и его двигатель»</a>: почему не пар и не газ, постройка 1884 года, мотор в Доме авиации в Москве.</li>
+      <li><a href="https://imha.ru/1144548367-kostovich-ogneslav-stepanovich.html" rel="noopener" target="_blank">Международная военно-историческая ассоциация · «Костович Огнеслав Степанович»</a> (по «Морскому биографическому словарю» А. Ф. Ткаченко, 2008): подданство, Дунайская флотилия, размеры мотора.</li>
+      <li><a href="https://www.mfr.ru/news/den-rozhdeniya-pervogo-mototsikla/" rel="noopener" target="_blank">Мотоциклетная федерация России · «29 августа — день рождения первого мотоцикла»</a> и <a href="https://www.pnp.ru/in-world/maybakh-nazval-pervyy-v-istorii-motocikl-kostedrobilkoy.html" rel="noopener" target="_blank">«Парламентская газета», 29.08.2019</a>: патент Даймлера, мотор 0,5 л. с.</li>
+      <li><a href="https://www.kommersant.ru/doc/8380786" rel="noopener" target="_blank">«Коммерсантъ» · «День рождения автомобиля»</a>: патент Бенца 29 января 1886 года.</li>
+      <li>Изображения: <a href="https://commons.wikimedia.org/wiki/File:Gasoline_engine_of_Kostovi%C4%87.JPG" rel="noopener" target="_blank">двигатель Костовича в музее ВВС, фото Dmitry Ivanov, 2014 (CC BY-SA 3.0)</a>, <a href="https://commons.wikimedia.org/wiki/File:Ognjeslav_Kostovic.jpg" rel="noopener" target="_blank">фотография Костовича (общественное достояние)</a>.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="calendar">
+  <div class="wrap">
+    <h2 style="margin-bottom:6px">Календарь изобретений</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Выбери любой день — узнаешь, что русские сделали первыми в мире. Листай месяцы стрелками.</p>
+    <div id="calbox"></div>
+  </div>
+</section>
+
+<section class="block kd" id="kuda-dalshe">
+  <div class="wrap">
+    <div class="kd-kicker">Куда дальше</div>
+    <h2>Музей продолжается</h2>
+    <div class="kd-grid">
+      <div class="kd-card main"><span class="kd-lbl">Следующий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-12jan-r7.html">12 января — Первая в мире межконтинентальная ракета Р-7 <span class="kd-arr">→</span></a>
+        <p>Её строили как оружие, а она вывела на орбиту первый спутник.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Предыдущий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-10jan-britnev.html">10 января — Первый в мире ледокол «Пайлот» <span class="kd-arr">→</span></a>
+        <p>Купец срезал пароходу нос под углом — и судно полезло на лёд.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Весь музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми <span class="kd-arr">→</span></a>
+        <p>Все изобретения — по залам и по дням года.</p></div>
+      <div class="kd-card main"><span class="kd-lbl">Город-музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация <span class="kd-arr">→</span></a>
+        <p>Все музеи проекта на одной карте.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div class="slog">Цивилизация первенств — что Россия дала миру раньше всех</div>
+  Русская цивилизация · «Что изобрели русские первыми в мире»</div></footer>
+
+<script>
+/* ── СЧЁТ ── шкала из 100 держит assets/museum-score.js; здесь только реестр наград.
+   модель 35 + три причины неудачи 3×5 + викторина 5×10 = 100. */
+window.MUSEUM_SCORE = {awards:{lab:35, why0:5, why1:5, why2:5, q:[5,10]},
+  ranks:[[100,'Главный моторист'],[70,'Механик'],[40,'Подмастерье'],[0,'Гость дня']]};
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-score.js"></script>
+<script>
+(function(){
+  var $ = function(id){return document.getElementById(id);};
+  $('readBtn').onclick = function(){ $('story').scrollIntoView({behavior:'smooth'}); };
+  $('listenBtn').onclick = function(){ $('audioguide').scrollIntoView({behavior:'smooth'}); };
+
+  /* ── ПОДНЯТЬ МОТОР ── холст фиксированного размера 640×220, CSS только масштабирует.
+     Кадр рисуется по состоянию, без случайностей: одинаковый выбор — одинаковый кадр. */
+  var st = {fuel:'steam', build:'heavy'};
+  var found = {};
+  var W = 640, H = 220, GROUND = 196;
+  function sky(c){
+    var g=c.createLinearGradient(0,0,0,H); g.addColorStop(0,'#12263e'); g.addColorStop(1,'#2c4a68');
+    c.fillStyle=g; c.fillRect(0,0,W,H);
+    c.fillStyle='#22301f'; c.fillRect(0,GROUND,W,H-GROUND);
+    c.fillStyle='#3a4a2e'; c.fillRect(0,GROUND,W,3);
+  }
+  // дирижабль: y — верх оболочки; extra — что висит под гондолой
+  function airship(c, y, extra){
+    var cx=320;
+    c.fillStyle='#b9c4cf'; c.strokeStyle='#e4c97a'; c.lineWidth=1.4;
+    c.beginPath(); c.ellipse(cx, y+34, 190, 34, 0, 0, 6.3); c.fill(); c.stroke();
+    c.strokeStyle='#8fa5b9'; c.beginPath();
+    for (var i=-150;i<=150;i+=50){ c.moveTo(cx+i, y+6); c.lineTo(cx+i, y+62); }
+    c.stroke();
+    c.strokeStyle='#d8dde3'; c.beginPath(); c.moveTo(cx-40,y+66); c.lineTo(cx-30,y+86); c.moveTo(cx+40,y+66); c.lineTo(cx+30,y+86); c.stroke();
+    c.fillStyle='#2b3440'; c.fillRect(cx-36, y+86, 72, 20);                  // гондола
+    c.fillStyle='#c9a84c'; for (var k=0;k<4;k++) c.fillRect(cx-30+k*16, y+92, 12, 8); // цилиндры
+    c.fillStyle='#d8dde3'; c.beginPath(); c.moveTo(cx+190,y+34); c.lineTo(cx+206,y+18); c.lineTo(cx+206,y+50); c.closePath(); c.fill(); // винт
+    if (extra==='steam'){ c.fillStyle='#55606c'; c.fillRect(cx-70,y+106,60,26); c.fillStyle='#1b1f24'; c.fillRect(cx+4,y+106,64,26);
+      c.fillStyle='#e4c97a'; c.font='12px Inter, sans-serif'; c.textAlign='center'; c.fillText('котёл',cx-40,y+123); c.fillStyle='#c6d8e8'; c.fillText('уголь',cx+36,y+123); }
+    if (extra==='gas'){ c.fillStyle='#7c8a96'; for (var b=0;b<5;b++) c.fillRect(cx-70+b*28, y+106, 20, 32);
+      c.fillStyle='#e4c97a'; c.font='12px Inter, sans-serif'; c.textAlign='center'; c.fillText('баллоны газа',cx,y+124); }
+    if (extra==='heavy'){ c.fillStyle='#55606c'; c.fillRect(cx-80,y+106,160,28);
+      c.fillStyle='#e4c97a'; c.font='12px Inter, sans-serif'; c.textAlign='center'; c.fillText('мотор 2400 кг',cx,y+125); }
+  }
+  function label(c, t){ c.fillStyle='#e4c97a'; c.font='bold 20px Inter, sans-serif'; c.textAlign='left'; c.fillText(t, 14, 28); }
+  function draw(kind){
+    var c=$('labCv').getContext('2d');
+    sky(c);
+    if (kind==='idle'){ airship(c, 90, ''); label(c,'Дирижабль у земли'); return; }
+    if (kind==='ok'){ airship(c, 30, ''); label(c,'Взлёт: 80 сил весят 240 кг'); return; }
+    airship(c, kind==='heavy' ? 62 : 58, kind); label(c,'Не поднимается: лишний груз');
+  }
+  function setFound(){ var n=Object.keys(found).length; $('labFound').textContent='Найдено причин неудачи: '+n+' из 3.'; }
+  function msg(t, cls){ var m=$('labMsg'); m.className='lab-msg'+(cls?' '+cls:''); m.textContent=t; }
+  var segs = document.querySelectorAll('#lab .seg');
+  for (var s=0;s<segs.length;s++) segs[s].addEventListener('click', function(){
+    var k=this.getAttribute('data-k'), v=this.getAttribute('data-v');
+    st[k]=v;
+    var same=document.querySelectorAll('#lab .seg[data-k="'+k+'"]');
+    for (var j=0;j<same.length;j++) same[j].setAttribute('aria-pressed', same[j]===this ? 'true':'false');
+    draw('idle');
+  });
+  $('labGo').onclick = function(){
+    if (st.fuel==='steam'){
+      draw('steam'); found.s=1; award('why0',5);
+      msg('Паровой машине нужны котёл и запас угля. Костович отказался от пара: под уголь и котёл ушло бы слишком много места и веса, корабль пришлось бы делать больше.','bad');
+    } else if (st.fuel==='gas'){
+      draw('gas'); found.g=1; award('why1',5);
+      msg('Газовый двигатель Отто на заводе берёт газ из трубы. В небе трубы нет — газ пришлось бы везти в баллонах. Костович решил жечь пары жидкого топлива.','bad');
+    } else if (st.build==='heavy'){
+      draw('heavy'); found.h=1; award('why2',5);
+      msg('Бензин верный, но мотор тяжёлый: по 30 кг на силу, как у моторов первого цеппелина, 80 сил весят 2400 кг. Мотор Костовича — 240 кг, в десять раз легче.','bad');
+    } else {
+      draw('ok'); award('lab',35);
+      msg('Взлетели! Бензин вместо угля и газа, и всего 3 кг на силу: 80 лошадиных сил при 240 килограммах. Такой мотор Костович собрал к 1884 году.','ok');
+    }
+    setFound();
+  };
+  $('labReset').onclick = function(){
+    st = {fuel:'steam', build:'heavy'};
+    for (var j=0;j<segs.length;j++){ var v=segs[j].getAttribute('data-v'); segs[j].setAttribute('aria-pressed', (v==='steam'||v==='heavy')?'true':'false'); }
+    draw('idle'); msg('Дирижабль снова у земли. Выбери условия заново. Уже полученные баллы сохраняются и повторно не начисляются.');
+  };
+  draw('idle');
+
+  /* ── ВИКТОРИНА ── один ответ на вопрос; дистракторы сверены с источниками страницы. */
+  var Q = [
+    {q:'Почему Костович не поставил на дирижабль паровую машину?', o:['Пар тогда запрещали в воздухоплавании','Ей нужны котёл и запас угля — слишком тяжело','Паровые машины не умели крутить винт'], a:1,
+     e:'Котёл, уголь и сама машина заняли бы слишком много места и веса — так объясняет М. И. Левин в книге «Машина-двигатель».'},
+    {q:'Какую мощность давал мотор Костовича?', o:['8 лошадиных сил','До 80 лошадиных сил','800 лошадиных сил'], a:1,
+     e:'До 80 сил — Центральный музей ВВС даёт 60–80.'},
+    {q:'Сколько весил мотор?', o:['240 килограммов','2,4 тонны','24 килограмма'], a:0,
+     e:'240 килограммов — три килограмма на каждую лошадиную силу.'},
+    {q:'Какую мощность давал мотор первого мотоцикла Даймлера (1885)?', o:['Половину лошадиной силы','10 лошадиных сил','80 лошадиных сил'], a:0,
+     e:'0,5 л. с. — у мотора Костовича было до восьмидесяти.'},
+    {q:'Где сегодня можно увидеть двигатель Костовича?', o:['В Политехническом музее в Москве','В Центральном музее ВВС в Монино','Он не сохранился'], a:1,
+     e:'В зале № 1 Центрального музея ВВС в Монино, куда мотор поступил в 1977 году.'}
+  ];
+  var box = $('quizBox');
+  Q.forEach(function(it, qi){
+    var wrap = document.createElement('div');
+    var h = document.createElement('p'); h.className='quiz-q'; h.textContent=(qi+1)+'. '+it.q; wrap.appendChild(h);
+    var exp = document.createElement('div'); exp.className='exp'; exp.setAttribute('aria-live','polite');
+    var btns = it.o.map(function(txt, oi){
+      var b=document.createElement('button'); b.type='button'; b.className='opt'; b.textContent=txt;
+      b.onclick=function(){
+        if (wrap.dataset.done) return; wrap.dataset.done='1';
+        btns.forEach(function(x,xi){ x.disabled=true; if (xi===it.a) x.classList.add('correct'); });
+        if (oi===it.a){ award('q'+qi,10); exp.textContent='Верно. '+it.e; }
+        else { b.classList.add('wrong'); exp.textContent='Не совсем. '+it.e; }
+        exp.classList.add('show');
+      };
+      wrap.appendChild(b); return b;
+    });
+    wrap.appendChild(exp); box.appendChild(wrap);
+  });
+})();
+</script>
+<script>window.addEventListener("pageshow",function(e){if(e.persisted)location.reload();});</script>
+<script>window.MUSEUM_CHROME={
+  museum:{title:'Что изобрели русские первыми в мире',href:'index.html'},
+  share:{title:'Первый в мире бензиновый двигатель для дирижабля — музей «Что изобрели русские первыми в мире»',
+         text:'Капитан Костович собрал бензиновый мотор в 80 сил раньше Даймлера и Бенца. Что Россия дала миру раньше всех — день за днём.'},
+  prev:{href:'day-10jan-britnev.html',title:'10 января · Ледокол «Пайлот»'},
+  next:{href:'day-12jan-r7.html',title:'12 января · Ракета Р-7'},
+  all:{href:'index.html',label:'Все изобретения'},
+  city:'../../index.html',
+  random:['day-01jan-cabletv.html','day-02jan-luna1.html','day-03jan-anosov.html','day-04jan-pilchikov.html','day-05jan-shukhov.html','day-06jan-orlov.html','day-08jan-icebreaker.html','day-09jan-blinov.html','day-10jan-britnev.html','day-11jan-kostovich.html','day-12jan-r7.html','day-30jan-kotelnikov.html','day-03feb-luna9.html','day-18mar-leonov.html','day-15may-mechnikov.html','day-16jun-tereshkova.html','day-26sep-pavlov.html','day-15nov-buran.html','day-25nov-pirogov.html','day-01dec-lobachevsky.html','day-14dec-laser.html']
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-chrome.js"></script>
+<script>window.MUSEUM_SUPPORT={museum:'Что изобрели русские первыми в мире'};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-support.js"></script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/calendar-izobreteniya.js"></script>
+<script>window.MUSEUM_CALENDAR_INITIAL='01-11';</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-calendar-month.js"></script>
+<script>window.MUSEUM_RETURN={riddle:{q:"На каком топливе Костович решил гонять мотор дирижабля вместо угля и светильного газа?",a:"На жидком лёгком топливе — бензине. Его пары сгорали в цилиндрах по циклу Отто.",src:"Центральный музей ВВС, «Двигатель Костовича»"}};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-return.js" data-museum="izobreteniya" data-day="01-11"></script>
+<script defer src="https://arabelthera-dot.github.io/rc-museum-preview/assets/analytics.js"></script>
+<script>window.MUSEUM_AUDIOGUIDE={
+  audioSrc:"audio-guide-kostovich-ru.mp3",
+  durationLabel:"3 минуты 43 секунд",
+  lead:"Голос ведёт по залу Огнеслава Костовича: от бронзового мотора в Монино до привилегии, которую он ждал четыре с половиной года. Шесть остановок, на каждой — что искать глазами. Слушать можно фоном, пока читаешь статью ниже.",
+  stops:[
+    {t:0,mark:"0:00",title:"Мотор в первом зале"},
+    {t:39,mark:"0:39",title:"Капитан с Дуная"},
+    {t:71,mark:"1:11",title:"Чем крутить винт"},
+    {t:108,mark:"1:48",title:"Восемь цилиндров"},
+    {t:144,mark:"2:24",title:"Полсилы и восемьдесят"},
+    {t:183,mark:"3:03",title:"Мотор без неба"}
+  ],
+  transcript:[
+    "<p>«Мотор Костовича в первом зале Центрального музея ВВС в Монино: огромный маховик со спицами и восемь бронзовых цилиндров, две четвёрки навстречу друг другу».</p>",
+    "<p>«Серб Огнеслав Костович воевал на Дунае в 1877–1878 годах и после войны, в 27 лет, остался в Петербурге».</p>",
+    "<p>«Пар — это котёл и уголь, газ Отто — баллоны на борту. Костович решил жечь в цилиндрах пары жидкого топлива».</p>",
+    "<p>«К 1884 году мотор собран на Охтинской верфи: до 80 лошадиных сил при 240 килограммах, электрическое зажигание, водяное охлаждение».</p>",
+    "<p>«Мотоцикл Даймлера 1885 года — половина лошадиной силы. Патент Бенца — 29 января 1886 года. Русская привилегия Костовича — 4 ноября 1892 года».</p>",
+    "<p>«Дирижабль „Россия“ не взлетел. Мотор до 1947 года хранили на Охтинской верфи, с 1977 года он в Монино».</p>"
+  ],
+  note:"Озвучено синтезом речи — временно, до записи голосом автора музея."
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-audioguide.js"></script>
+<script type="application/json" data-proof>
+{
+ "status": "found",
+ "claim_id": "rc:izobreteniya:kostovich:claim-engine",
+ "ours": {
+  "kind": "привилегия",
+  "title": "Десятилетняя привилегия О. С. Костовичу на «усовершенствованный двигатель, действующий бензином, керосином…» (прошение — 14 мая 1888 г.)",
+  "date": "1892-11-04",
+  "holder": "Департамент торговли и мануфактур",
+  "source_url": "https://web.archive.org/web/20260614135058/http://xn--80aafy5bs.xn--p1ai/aviamuseum/dvigateli-i-vooruzhenie/aviamotorostroenie/aviamotory-rossijskoj-imperii/dvigatel-vnutrennego-sgoraniya-dlya-dirizhablya-o-s-kostovicha/"
+ }
+}
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-proof.js"></script>
+</body>
+</html>

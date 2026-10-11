@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru" data-museum="izobreteniya">
+<head><meta name="robots" content="noindex"><base href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мировой рекорд глубины для подводной лодки, К-278 — Что изобрели русские первыми в мире, 13 января</title>
+<!--
+  Страница дня 13 января. Наряд izobreteniya-eshche-2-2909 (claude2, 08.10.2026), доска заданий #77.
+  Форма — вариант А музея изобретений (Сергей 12.09.2026): лента ударов, подробности свёрнуты.
+  Паспорт выпуска: rc-museum-production/izobreteniya/day-13jan-k278/passport/issue.json
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --dark:#060c17; --dark2:#0c1826; --surface:#111f33;
+    --card:rgba(255,255,255,.05); --card-b:rgba(255,255,255,.09);
+    --gold:#c9a84c; --gold-l:#e4c97a; --gold-g:rgba(201,168,76,.13);
+    --ink:#e8eef5; --muted:#7a9ab8; --line:rgba(255,255,255,.07);
+    --accent:#2d8cbf; --accent2:#1f6f8b;
+    /* legacy compat */
+    --paper:#0c1826; --paper2:#111f33;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Inter','Segoe UI',sans-serif;color:var(--ink);background:var(--dark);line-height:1.72}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.13;margin:0}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent)}
+
+  /* ── ШАПКА ── */
+  header.top{background:rgba(6,12,23,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--card-b);color:#fff;position:sticky;top:0;z-index:30}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+  .logo svg{display:block;filter:drop-shadow(0 0 8px rgba(201,168,76,.4))}
+  .logo .lt{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:16px}
+  .logo .lt small{display:block;font-size:9px;font-weight:600;letter-spacing:3px;color:var(--gold);text-transform:uppercase;font-family:'Inter',sans-serif}
+  .score{background:var(--gold-g);border:1px solid rgba(201,168,76,.3);border-radius:24px;padding:6px 16px;font-size:13px;color:var(--gold-l);cursor:pointer;font-family:'Inter',sans-serif}
+  .score-info{position:absolute;right:12px;top:66px;max-width:260px;background:#0e1c30;color:var(--ink);border:1px solid var(--card-b);border-radius:14px;padding:14px 16px;font-size:13px;line-height:1.6;box-shadow:0 20px 60px rgba(0,0,0,.6);display:none;z-index:40}
+  .score-info.show{display:block}
+
+  /* ── HERO — СТАНДАРТ (не менять): 3D-сцена сверху, текст отдельным блоком ниже ── */
+  .hero-scene{position:relative;height:52vh;min-height:300px;max-height:520px;overflow:hidden;background:linear-gradient(160deg,#0a1e3a 0%,#1a3a6a 55%,#0d2240 100%)}
+  .hero-scene canvas.scene,.hero-scene img.scene{width:100%;height:100%;display:block;object-fit:cover}
+  .scene-caption{background:#060d18;padding:11px 0 12px}
+  .scene-caption .wrap{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+  .scene-cap{font-size:13.5px;line-height:1.6;color:var(--muted);border-left:2px solid rgba(201,168,76,.4);padding-left:14px;flex:1 1 420px}
+  .scene-hint{flex:0 0 auto;font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.4px;color:#e4c97a;
+    background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.34);border-radius:24px;padding:7px 16px;font-weight:600}
+  .hero-lead{background:linear-gradient(180deg,#0c1826 0%,#060c17 100%);color:#fff;padding:28px 0 38px}
+  .hero-lead .museum{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase;font-weight:700;font-family:'Inter',sans-serif;margin-bottom:12px;opacity:.9}
+  .hero-lead .who{font-family:'Inter',sans-serif;font-size:clamp(13px,3vw,15px);letter-spacing:.4px;color:var(--accent-l,#7dc8ff);margin-bottom:10px}
+  .hero-lead .who i{font-style:normal;color:#7893ab;font-weight:400}
+  .hero-lead h1{color:#fff;font-size:56px;font-weight:900;line-height:1.04;margin-bottom:16px}
+  .hero-lead .hook{color:#b8ccde;font-size:19px;max-width:580px;margin-bottom:28px;line-height:1.65;font-weight:400}
+  .hero-lead .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+  @media(max-width:680px){.hero-lead h1{font-size:34px}.hero-lead .hook{font-size:16px}
+    .hero-scene{height:34vh;min-height:230px;max-height:300px}
+    .scene-caption .wrap{flex-direction:column;gap:9px}
+    .scene-hint{order:-1;align-self:flex-start;font-size:11.5px;padding:6px 13px}
+    .scene-cap{font-size:12.8px;flex:1 1 auto}}
+  .date-chip{display:inline-block;background:var(--gold-g);border:1px solid rgba(201,168,76,.35);color:var(--gold);font-weight:700;padding:6px 18px;border-radius:24px;font-size:12px;margin-bottom:16px;font-family:'Inter',sans-serif;letter-spacing:.5px}
+
+  /* ── НАВИГАЦИЯ ДНЯ ── */
+  .daynav{position:sticky;top:64px;z-index:25;background:rgba(6,12,23,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--card-b)}
+  .daynav .wrap{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+  .daynav::-webkit-scrollbar{display:none}
+  .daynav a{flex:0 0 auto;padding:14px 20px;font-size:11px;font-weight:700;font-family:'Inter',sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap;letter-spacing:1.5px;text-transform:uppercase;border-bottom:2px solid transparent;transition:.18s}
+  .daynav a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+
+  /* ── СЕКЦИИ ── */
+  section.block{padding:64px 0;border-bottom:1px solid var(--line);scroll-margin-top:130px}
+  .kicker{font-size:10px;text-transform:uppercase;letter-spacing:3.5px;color:var(--gold);font-weight:700;font-family:'Inter',sans-serif;margin-bottom:8px}
+  section.block h2{font-size:34px;color:#fff;margin-bottom:10px}
+  p{margin:14px 0;color:var(--ink)}
+  .pull{background:var(--gold-g);border-left:3px solid var(--gold);padding:18px 22px;border-radius:0 14px 14px 0;font-style:italic;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-size:20px;line-height:1.5;margin:26px 0}
+
+  /* ── КНОПКИ ── */
+  .btn{cursor:pointer;border:none;border-radius:12px;padding:14px 26px;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;background:var(--accent2);color:#fff;transition:.18s;letter-spacing:.2px}
+  .btn:hover{filter:brightness(1.18)}
+  .btn.ghost{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid var(--card-b)}
+  .btn.ghost:hover{background:rgba(255,255,255,.11);border-color:rgba(255,255,255,.2)}
+  .btn.gold{background:linear-gradient(135deg,var(--gold),#b8882b);color:#1a0f00;box-shadow:0 4px 20px rgba(201,168,76,.25)}
+  .btn.gold:hover{filter:brightness(1.1);box-shadow:0 6px 28px rgba(201,168,76,.4)}
+  .btn:active{transform:translateY(1px)}
+  .pulse{animation:pulse .9s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+
+  /* ── КАРТОЧКИ ── */
+  .card{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:20px 22px;margin:16px 0;backdrop-filter:blur(6px)}
+
+  /* ── КВИЗ ── */
+  .opt{display:block;width:100%;text-align:left;background:rgba(255,255,255,.04);border:1px solid var(--card-b);border-radius:12px;padding:13px 16px;margin:8px 0;cursor:pointer;font-size:15px;color:var(--ink);font-family:'Inter',sans-serif;transition:.16s}
+  .opt:hover{border-color:var(--accent);background:rgba(45,140,191,.08)}
+  .opt.correct{background:rgba(40,120,60,.18);border-color:#3f9b52;color:#7ed4a0;font-weight:600}
+  .opt.wrong{background:rgba(180,40,40,.13);border-color:#c0453f;color:#f08080}
+  .exp{margin-top:10px;font-size:14px;background:var(--gold-g);border-radius:10px;padding:12px 14px;display:none;color:var(--gold-l)}
+  .exp.show{display:block}
+
+  /* ── ИТОГ ДНЯ ── */
+  .day-result{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:22px 24px;max-width:460px}
+  .dr-rank{font-family:'Playfair Display',Georgia,serif;font-size:28px;color:var(--gold-l);font-weight:700}
+  .dr-score{font-size:16px;margin:4px 0 12px;color:var(--ink)}.dr-score span{color:var(--muted);font-size:14px}
+  .dr-bar{height:8px;background:rgba(255,255,255,.08);border-radius:6px;overflow:hidden}
+  .dr-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent2),var(--gold));transition:width .6s cubic-bezier(.2,.7,.2,1)}
+  .dr-note{margin-top:12px;font-size:14px;color:var(--muted)}
+
+  /* ── РЕКЛАМНЫЕ СЛОТЫ ── */
+  .ad-slot{position:relative;margin:26px 0;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.1);border-radius:14px;min-height:88px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px}
+  .ad-slot .lbl{position:absolute;top:7px;right:12px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.15);font-family:'Inter',sans-serif}
+  .ad-slot .ph-txt{font-size:12px;max-width:80%;color:rgba(255,255,255,.18)}
+  .ad-slot.billboard{min-height:108px}
+  .adband{background:transparent;border-bottom:none}
+
+  footer{padding:40px 0 80px;color:rgba(255,255,255,.2);font-size:12px;text-align:center;font-family:'Inter',sans-serif;letter-spacing:.5px}
+  .crumbs{background:rgba(6,12,23,.6);border-bottom:1px solid var(--card-b);font-family:'Inter',sans-serif;font-size:12.5px}
+  .crumbs .wrap{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
+  .crumbs a{color:var(--gold-l);text-decoration:none;white-space:nowrap}
+  .crumbs a:hover{text-decoration:underline}
+  .crumbs .sep{color:var(--muted);opacity:.6}
+  .crumbs .here{color:var(--muted);white-space:nowrap}
+
+
+  /* ── ШАПКА: четыре строки по museum-core §6-бис ── */
+  header.top{display:block;text-align:center;padding:10px 12px 8px;height:auto;position:relative}
+  header.top .b1{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:15px;letter-spacing:.5px;color:#fff}
+  header.top .b2{font-size:11px;color:var(--muted);margin-top:2px}
+  header.top .b3{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:6px}
+  header.top .b4{font-size:12.5px;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-style:italic}
+  header.top .score{position:absolute;right:12px;top:10px}
+  .daynav{top:0}
+  .hero-scene{background:#0e1c2c;height:38vh;min-height:250px;max-height:400px}
+  @media(max-width:680px){.hero-lead h1{font-size:31px}}
+  .hero-scene img.scene{object-fit:cover;object-position:50% 55%}
+  .date-origin{font-size:13px;color:#9fb4c8;margin:-6px 0 12px;max-width:62ch}
+  .hero-lead .hook{color:#c6d8e8;max-width:62ch}
+  .hero-under{background:linear-gradient(180deg,#060d18,#060c17);padding:4px 0 22px}
+  .stamp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(125,200,255,.28);margin-top:14px}
+  .stamp>div{padding:11px 12px;border-left:1px solid rgba(125,200,255,.16);min-width:0}
+  .stamp>div:first-child{border-left:0}
+  .stamp .v{font-size:clamp(15px,3.4vw,21px);font-weight:700;color:#8fd3ff;line-height:1.1;overflow-wrap:anywhere}
+  .stamp .k{font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:#8fa5b9;margin-top:5px}
+  @media(max-width:600px){.stamp{grid-template-columns:repeat(2,minmax(0,1fr))}.stamp>div:nth-child(3){border-left:0}.stamp>div:nth-child(n+3){border-top:1px solid rgba(125,200,255,.16)}}
+
+  /* ── ЛЕНТА УДАРОВ (museum-inventions, вариант А; museum-core §5-бис) ── */
+  .udary{list-style:none;margin:18px 0 0;padding:0;counter-reset:u}
+  .udary>li{border-top:1px solid var(--line);padding:4px 0}
+  .udary details>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:34px 1fr;gap:10px;padding:12px 0;font-size:17px;line-height:1.55;color:var(--ink)}
+  .udary details>summary::-webkit-details-marker{display:none}
+  .udary details>summary::before{counter-increment:u;content:counter(u);font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:20px;color:var(--gold);line-height:1.3}
+  .udary .more-lbl{display:block;grid-column:2;font-size:12.5px;color:var(--gold-l);letter-spacing:.3px;margin-top:4px}
+  .udary .more-lbl::after{content:' ▾'}
+  .udary details[open] .more-lbl::after{content:' ▴'}
+  .udary details[open] .more-lbl .o{display:none}
+  .udary details:not([open]) .more-lbl .c{display:none}
+  .udary summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+  .udary .det{margin:0 0 14px 44px;padding:12px 16px;background:rgba(255,255,255,.035);border-left:2px solid rgba(201,168,76,.45);border-radius:0 10px 10px 0;font-size:15px;color:#d5e0ea}
+  .udary .det p{margin:8px 0}
+  .udary .tag{display:inline-block;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#1a0f00;background:var(--gold-l);border-radius:6px;padding:1px 7px;margin-right:6px}
+  .udary .find{border-left:3px solid var(--gold);padding-left:8px}
+  figure.fig{margin:18px 0}
+  figure.fig img{max-width:100%;height:auto;border-radius:10px;display:block}
+  figure.fig figcaption{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5}
+  .src-note{font-size:12px;color:#8fa5b9}
+
+  /* ── МОДЕЛЬ ДНЯ (главное предметное действие) ── */
+  .lab{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:18px 18px 20px;margin-top:14px}
+  .lab-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+  .lab-row .lbl{flex:0 0 100%;font-size:13px;color:var(--muted);letter-spacing:.3px}
+  .seg{cursor:pointer;border:1px solid var(--card-b);background:rgba(255,255,255,.04);color:var(--ink);border-radius:10px;padding:10px 14px;font:inherit;font-size:14.5px;min-height:44px}
+  .seg[aria-pressed="true"]{border-color:var(--gold);background:var(--gold-g);color:var(--gold-l);font-weight:600}
+  .seg:focus-visible,.btn:focus-visible,.opt:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .lab-stage{position:relative;margin-top:12px}
+  .lab-stage canvas{width:100%;height:auto;display:block;border-radius:10px;background:#1c2530}
+  .lab-cap{font-size:12px;color:#8fa5b9;margin-top:6px}
+  .lab-msg{margin-top:12px;font-size:15.5px;padding:12px 14px;border-radius:10px;background:rgba(255,255,255,.04);border-left:3px solid var(--card-b);min-height:48px}
+  .lab-msg.ok{border-left-color:#3f9b52;background:rgba(40,120,60,.14)}
+  .lab-msg.bad{border-left-color:#c0453f;background:rgba(180,40,40,.10)}
+  .lab-found{font-size:13px;color:var(--muted);margin-top:8px}
+  .lab-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  .noscript-box{background:rgba(255,255,255,.04);border:1px dashed var(--card-b);border-radius:12px;padding:12px 16px;font-size:15px}
+
+  /* ── ГРАНИЦА ПЕРВЕНСТВА ── */
+  .border-box{background:rgba(45,140,191,.08);border:1px solid rgba(45,140,191,.3);border-radius:14px;padding:16px 18px}
+  .border-box b{color:#8fd3ff}
+  .ctx{width:100%;border-collapse:collapse;margin-top:14px;font-size:14.5px}
+  .ctx th,.ctx td{text-align:left;padding:9px 8px;border-top:1px solid var(--line);vertical-align:top}
+  .ctx th{color:var(--gold-l);font-weight:600;font-size:12.5px;letter-spacing:.5px}
+  .quiz-q{margin:18px 0 6px;font-weight:600}
+  .sources a{color:var(--gold-l)}
+  .sources li{margin:6px 0;font-size:14px;color:#c8d6e2}
+  @media(max-width:600px){header.top{padding:8px 64px 6px}header.top .score{top:8px;right:8px;padding:4px 10px;font-size:12px}header.top .b3{margin-top:3px}
+    .hero-scene{height:26vh;min-height:200px;max-height:260px}.date-origin{font-size:12px;margin:-8px 0 8px}.hero-lead{padding:18px 0 26px}.hero-lead .date-chip{margin-bottom:12px}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+
+<meta name="description" content="Обычной атомной подлодке хватало 600 метров, а К-278 ушла на 1027 — и этот рекорд не побит до сих пор.">
+<link rel="canonical" href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-13jan-k278.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Русская цивилизация">
+<meta property="og:title" content="Мировой рекорд глубины для подводной лодки — 1027 метров">
+<meta property="og:description" content="Обычной атомной подлодке хватало 600 метров, а К-278 ушла на 1027 — и этот рекорд не побит до сих пор.">
+<meta property="og:url" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-13jan-k278.html">
+<meta property="og:image" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-13jan-k278.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Мировой рекорд глубины для подводной лодки — 1027 метров", "description": "Обычной атомной подлодке хватало 600 метров, а К-278 ушла на 1027 — и этот рекорд не побит до сих пор.", "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-13jan-k278.html", "inLanguage": "ru", "isPartOf": {"@type": "WebSite", "name": "Музей «Что изобрели русские первыми в мире»"}, "publisher": {"@type": "Organization", "name": "Русская цивилизация"}, "about": {"@type": "CreativeWork", "name": "Мировой рекорд глубины для подводной лодки — 1027 метров"}, "image": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-13jan-k278.jpg"}</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="b1">Русская цивилизация</div>
+  <div class="b2">Первый цифровой музей достижений России · Цивилизация первенств — что Россия дала миру раньше всех</div>
+  <div class="b3">Что изобрели русские первыми в мире</div>
+  <div class="b4">365 изобретений. Все русские. Все первые</div>
+  <div class="score" id="scoreBox" title="Баллы знаний за этот день">⭐ <span id="score">0</span> / 100</div>
+</header>
+
+<nav class="crumbs" aria-label="Хлебные крошки"><div class="wrap">
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация</a>
+  <span class="sep">›</span>
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми в мире</a>
+  <span class="sep">›</span>
+  <span class="here">13 января · К-278</span>
+</div></nav>
+
+<div class="hero-scene" id="hero">
+  <img class="scene" src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-13jan-k278.jpg" data-source="https://commons.wikimedia.org/wiki/File:DN-SN-87-07042-Mike_class_submarine-1_Jan_1986.JPEG" data-license="Public domain" width="1200" height="656" alt="Чёрно-белый снимок с самолёта: длинная подводная лодка идёт в надводном положении, над корпусом высокая рубка с выдвинутыми мачтами, за кормой пенный след" fetchpriority="high">
+</div>
+
+<div class="scene-caption">
+  <div class="wrap">
+    <div class="scene-cap">К-278 в море, снимок с самолёта, середина 1980-х. Других лодок проекта 685 не строили, поэтому на снимке именно она. Фото Министерства обороны США, общественное достояние.</div>
+    <span class="scene-hint">Предмет · фото 1980-х</span>
+  </div>
+</div>
+
+<header class="hero-lead">
+  <div class="wrap">
+    <div class="date-chip">13 января · 1985</div>
+    <p class="date-origin">Дата условная: в календаре рекорд стоит на 13 января, а сам он поставлен 4 августа 1985 года.</p>
+    <div class="who">ЦКБ-18, ныне «Рубин» <i>· главные конструкторы Н. А. Климов и Ю. Н. Кормилицин</i></div>
+    <div class="museum">Музей «Что изобрели русские первыми в мире»</div>
+    <h1>Мировой рекорд глубины для подводной лодки — 1027 метров</h1>
+    <p class="hook">Обычной атомной подлодке хватало 600 метров, а К-278 ушла на 1027 — и этот рекорд не побит до сих пор.</p>
+    <div class="hero-btns">
+      <button class="btn gold" id="readBtn" type="button">Читать историю ↓</button>
+      <button class="btn ghost" id="listenBtn" type="button">🎧 Слушать аудиогид</button>
+    </div>
+  </div>
+</header>
+
+<div class="hero-under">
+  <div class="wrap">
+    <div class="stamp">
+      <div><div class="v">1027 м</div><div class="k">рекорд глубины</div></div>
+      <div><div class="v">1000 м</div><div class="k">рабочая глубина</div></div>
+      <div><div class="v">600 м</div><div class="k">у обычной АПЛ</div></div>
+      <div><div class="v">титан</div><div class="k">прочный корпус</div></div>
+    </div>
+  </div>
+</div>
+
+<nav class="daynav" aria-label="Разделы дня">
+  <div class="wrap">
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-13jan-k278.html#story">Читать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-13jan-k278.html#audioguide">Слушать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-13jan-k278.html#games">Уйти на километр</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-13jan-k278.html#pervenstvo">Рекорд</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-13jan-k278.html#quiz">Викторина</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-13jan-k278.html#calendar">Календарь</a>
+  </div>
+</nav>
+
+<section class="wrap" id="dokument" data-proof-block aria-label="Документ первенства"></section>
+
+<section class="block" id="audioguide"></section>
+
+<section class="block" id="story">
+  <div class="wrap">
+    <div class="kicker">История рекорда · 13 ударов</div>
+    <h2>Лодка, которая ушла на километр</h2>
+    <p style="color:var(--muted);max-width:62ch">Читается подряд. Нажми на удар — откроется подробный разбор с источниками.</p>
+    <ol class="udary">
+      <li><details><summary><span>В 1966 году флот заказал лодку, которая уйдёт на километр. Обычной атомной подлодке хватало 600 метров.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Задание на глубоководную атомную подводную лодку командование ВМФ СССР выдало ленинградскому ЦКБ-18 — сегодня это ЦКБ морской техники «Рубин» — в 1966 году. Проектирование закончили в 1974-м. Главным конструктором был Н. А. Климов, с 1977 года — Ю. Н. Кормилицин.</p>
+          <p>Рабочая глубина обычной атомной лодки — не больше 600 метров. Новой лодке задали рабочую глубину 1000 метров и предельную — 1250.</p>
+          <p class="src-note">Источники: ЦКБ МТ «Рубин», «История»; «Московская правда», 04.08.2021; «Российская газета», 04.08.2020; Общество памяти АПЛ «Комсомолец».</p>
+        </div></details></li>
+      <li><details><summary><span>Сталь на такой глубине не годилась. Прочный корпус сварили из титанового сплава — впервые целиком у атомной лодки.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>«Российская газета» называет корпус К-278 первым целиком созданным из титана корпусом атомной подлодки. Титан не магнитится и меньше шумит. Он к тому же лёгкий: корпус занял всего 39 процентов водоизмещения лодки — меньше, чем у других атомных лодок.</p>
+          <p>Прочный корпус — цилиндр диаметром 8 метров, разделённый на семь отсеков. Второй и третий отсеки были убежищами: их переборки рассчитали на давление до 40 килограммов на квадратный сантиметр.</p>
+          <p class="src-note">Источники: «Российская газета», 04.08.2020; «Московская правда», 04.08.2021; Общество памяти АПЛ «Комсомолец».</p>
+        </div></details></li>
+      <li><details><summary><span>Лодку заложили в Северодвинске в 1978 году и спустили на воду в 1983-м. Других таких не строили: проект 685 «Плавник» — одна К-278.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Закладка — 22 апреля 1978 года, спуск на воду — 3 июня 1983 года, в строй лодка вступила 28 декабря 1983-го и вошла в Северный флот. В НАТО её называли «Майк».</p>
+          <p class="src-note">Источники: «Российская газета», 04.08.2020; «Московская правда», 04.08.2021; Общество памяти АПЛ «Комсомолец».</p>
+        </div></details></li>
+      <li><details><summary><span>4 августа 1985 года в Норвежском море с глубиномера оторвали чёрную бумажку. Под ней прятали цифры предельной глубины.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Лодкой командовал капитан 1-го ранга Юрий Зеленский, старшим на борту был вице-адмирал Евгений Чернов, командующий 1-й флотилией атомных подводных лодок. В отсеках был и главный конструктор Юрий Кормилицин.</p>
+          <p>Старшина команды штурманских электриков Вениамин Матвеев вспоминал: «В тот день с глубиномера в центральном посту была оторвана чёрная бумажка, закрывавшая на его шкале секретности ради цифры предельной глубины. Мы ахнули: 900, 1000, 1100 метров…»</p>
+          <p class="src-note">Источники: телеканал «Звезда», «Титановый панцирь „Комсомольца“»; «Московская правда», 04.08.2021, по книге Ю. Бахарева «Триумф и трагедия „Комсомольца“».</p>
+        </div></details></li>
+      <li><details><summary><span>Уходили медленно, ступенями по сто метров, и на каждой осматривали отсеки. На 700 метрах реактор вывели на полную мощность.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Адмирал Чернов рассказывал: «Перед погружением были тщательно проверены все системы, имеющие забортное сообщение, торпедные аппараты, оружие… Понимали, что с такой глубины можно и не всплыть. Уходили в пучину медленно по невидимым стометровым ступеням, задерживаясь на каждой из них для осмотра отсеков».</p>
+          <p>Погружение на километр заняло несколько часов.</p>
+          <p class="src-note">Источники: телеканал «Звезда»; «Московская правда», 04.08.2021.</p>
+        </div></details></li>
+      <li><details><summary><span>На тысяче метров Чернов сказал в микрофон: «Остановись, мгновенье!» — и по отсекам пронесли флаг корабля.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>«Наконец стрелка глубиномера остановилась на четырёхзначной отметке — 1000. Есть глубина в один километр! Я вышел на связь с отсеками по боевой линии и, глядя на глубиномер, произнёс в микрофон внутрилодочной связи бессмертную пушкинскую фразу: „Остановись, мгновенье!..“»</p>
+          <p>Потом адмирал спросил конструкторов Юрия Кормилицина и Дмитрия Романова: «Если ещё на двадцать метров погрузимся — выдержим?» Их поддержал главный строитель корабля Михаил Чувакин, и лодка пошла глубже.</p>
+          <p class="src-note">Источник: телеканал «Звезда», рассказ Героя Советского Союза адмирала Е. Д. Чернова.</p>
+        </div></details></li>
+      <li class="find"><details><summary><span>На 1027 метрах потёк фланец, треснула деревянная панель, а срезанные давлением титановые болты отлетали, как пули.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p><span class="tag">Находка дня</span>Корпус на такой глубине обжимает так, что он становится чуть уже. Чернов вспоминал: «Из отсеков поступали тревожные доклады: там потёк фланец, там треснула от резкого уменьшения диаметра корпуса деревянная панель… Потом, как пули, стали отлетать срезанные немыслимым обжатием титановые болты. Но в целом все механизмы работали без замечаний, корабль прекрасно управлялся как по глубине, так и по горизонту».</p>
+          <p>Попробуй сам в модели ниже: опустить лодку на километр.</p>
+          <p class="src-note">Источник: телеканал «Звезда», рассказ адмирала Е. Д. Чернова.</p>
+        </div></details></li>
+      <li><details><summary><span>На километре вода давит на каждый квадратный сантиметр корпуса почти с сотней килограммов.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Каждые 10 метров воды добавляют примерно одну атмосферу — около килограмма на квадратный сантиметр. На глубине 1027 метров это около 103 атмосфер. Это наш расчёт по школьной физике, а не цифра из документов лодки.</p>
+          <p>«Московская правда» пишет, что на километровой глубине на весь корпус давит больше трёх миллионов тонн.</p>
+          <p class="src-note">Источник: «Московская правда», 04.08.2021; расчёт давления — наш.</p>
+        </div></details></li>
+      <li><details><summary><span>На обратном пути, на 800 метрах, лодка выстрелила торпедой. Задние крышки аппаратов дрогнули — и выдержали.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Стреляли болванками — торпедами без боевой части. Вениамин Матвеев был в торпедном отсеке: «Когда открыли передние крышки торпедных аппаратов, мы увидели, как дрогнули задние от напора глубины. Дрогнули, но чудовищное забортное давление удержали. Торпеда вышла нормально… Гребные валы вдруг изогнулись, потом снова приняли свою форму. А затем всплытие. Вознеслись с глубины 800 метров… за 30 секунд».</p>
+          <p>На такой глубине лодку не могли достать ни другие подлодки, ни противолодочное оружие, а гидроакустика её почти не слышала.</p>
+          <p class="src-note">Источники: телеканал «Звезда»; Общество памяти АПЛ «Комсомолец»; «Московская правда», 04.08.2021.</p>
+        </div></details></li>
+      <li><details><summary><span>7 апреля 1989 года, на 39-й день похода, в седьмом отсеке вспыхнул пожар. Лодка всплыла и почти шесть часов боролась за жизнь.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>31 января 1989 года К-278 получила имя «Комсомолец». Через 67 дней, в 11:02, лодка шла на глубине 380 метров, и в седьмом отсеке начался пожар. Причина так и не установлена. В 11:16 лодка всплыла. Огонь разрушил трубопроводы, и лодку стала заливать вода. В 17:08 «Комсомолец» затонул в Норвежском море на глубине 1658 метров.</p>
+          <p class="src-note">Источники: Центральный военно-морской музей, выставка «Памяти АПЛ К-278 „Комсомолец“»; Общество памяти АПЛ «Комсомолец»; «Московская правда», 04.08.2021.</p>
+        </div></details></li>
+      <li><details><summary><span>Капитан 3-го ранга А. М. Испенков остался внутри и до последних минут держал работающим дизель-генератор.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Пока экипаж выходил наверх, Испенков оставался в прочном корпусе и обеспечивал работу дизель-генератора. Он ушёл на дно вместе с лодкой.</p>
+          <p>Командир Евгений Ванин и ещё четверо успели забраться во всплывающую спасательную камеру. На поверхности давлением сорвало люк. Мичмана Сергея Черникова выбросило в море, выбраться сумел только мичман Виктор Слюсаренко. Камера набрала воды и затонула.</p>
+          <p class="src-note">Источник: Общество памяти АПЛ «Комсомолец», хроника гибели.</p>
+        </div></details></li>
+      <li><details><summary><span>На борту было 69 человек, погибли 42. Весь экипаж наградили орденом Красного Знамени.<span class="more-lbl"><span class="o">Указ о награждении и День памяти</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Большинство погибших не утонули вместе с лодкой, а замёрзли в ледяной воде, не дождавшись спасателей. Плавбаза «Алексей Хлобыстов» пришла в 18:20 и подняла 30 живых и 16 погибших. Указ о награждении всех членов экипажа орденом Красного Знамени вышел 12 мая 1989 года.</p>
+          <p>День гибели «Комсомольца», 7 апреля, в России — День памяти погибших подводников.</p>
+          <p class="src-note">Источники: Общество памяти АПЛ «Комсомолец»; Центральный военно-морской музей; «Российская газета», 04.08.2020.</p>
+        </div></details></li>
+      <li><details><summary><span>Рекорд остался за погибшей лодкой: ни одна подводная лодка не погружалась глубже 1027 метров.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Центральный военно-морской музей называет 1027 метров абсолютным рекордом глубины погружения среди подводных лодок. «Российская газета» в 2020 году и «Московская правда» в 2021-м пишут, что этот рекорд никто не побил.</p>
+          <p>Участник погружения капитан 2-го ранга Василий Кундрюков вспоминал, что одни манометры показали 1040 метров, а в документы по общему согласию записали 1020.</p>
+          <p class="src-note">Источники: Центральный военно-морской музей; «Российская газета», 04.08.2020; «Московская правда», 04.08.2021.</p>
+        </div></details></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="games">
+  <div class="wrap">
+    <div class="kicker">Главное действие · модель</div>
+    <h2>Уйти на километр</h2>
+    <p style="max-width:62ch">Выбери корпус и опускай лодку по стометровым ступеням, как К-278. Следи за давлением. Дойди до рекорда, на обратном пути выстрели торпедой с той же глубины, что и экипаж, и всплыви.</p>
+    <div class="lab" id="lab">
+      <div class="lab-row" role="group" aria-labelledby="lg1"><span class="lbl" id="lg1">1. Прочный корпус</span>
+        <button class="seg" type="button" data-k="hull" data-v="steel" aria-pressed="true">Сталь, как у обычной АПЛ: рабочая глубина до 600 м</button>
+        <button class="seg" type="button" data-k="hull" data-v="ti" aria-pressed="false">Титан, как у К-278: рабочая глубина 1000 м</button>
+      </div>
+      <div class="lab-btns">
+        <button class="btn gold" type="button" id="labDown">Глубже на 100 м</button>
+        <button class="btn ghost" type="button" id="labUp">Всплыть на 100 м</button>
+        <button class="btn ghost" type="button" id="labFire">Пустить торпеду</button>
+        <button class="btn ghost" type="button" id="labReset">Начать заново</button>
+      </div>
+      <div class="lab-stage">
+        <canvas id="labCv" width="640" height="260" role="img" aria-label="Разрез моря: слева шкала глубины до 1250 метров, на ней подводная лодка"></canvas>
+        <div class="lab-cap">Модель, а не чертёж. Глубины 600, 700, 800, 1000, 1027 и 1250 метров — по источникам; давление — наш расчёт: около одной атмосферы на каждые 10 метров воды.</div>
+      </div>
+      <div class="lab-msg" id="labMsg" aria-live="polite">Лодка у поверхности. Выбери корпус и нажми «Глубже на 100 м».</div>
+      <div class="lab-found" id="labFound">Найдено открытий: 0 из 3.</div>
+      <noscript><div class="noscript-box">Для модели нужен JavaScript. Текстовая версия опыта: со стальным корпусом обычной атомной лодки дальше 600 метров идти нельзя. С титановым корпусом К-278 уходит по стометровым ступеням на 1000 метров, а потом ещё на 27 — до рекорда 1027 метров. На каждые 10 метров давление растёт примерно на атмосферу: на рекордной глубине около 103 атмосфер. На обратном пути, на 800 метрах, лодка стреляет торпедой и затем всплывает.</div></noscript>
+    </div>
+    <p class="src-note" style="margin-top:10px">Правила модели: рабочая глубина обычной АПЛ до 600 м — «Российская газета»; 1000 и 1250 м у К-278 — Общество памяти АПЛ «Комсомолец»; 700 м — полная мощность реактора, ступени по 100 м, 1027 м и стрельба на 800 м — рассказы Е. Д. Чернова и В. Матвеева (телеканал «Звезда»).</p>
+  </div>
+</section>
+
+<section class="block" id="pervenstvo">
+  <div class="wrap">
+    <div class="kicker">Проверка факта</div>
+    <h2>Что именно сделала К-278</h2>
+    <div class="border-box">
+      <p style="margin-top:0"><b>Граница рекорда:</b> абсолютный мировой рекорд глубины погружения подводной лодки — 1027 метров, К-278, 4 августа 1985 года, Норвежское море. Это боевая лодка, а не исследовательский аппарат: на обратном пути она стреляла торпедой с 800 метров. Доказательство — Центральный военно-морской музей и свидетельства участников погружения.</p>
+      <p style="margin-bottom:0"><b>Чего здесь нет:</b> батискафы и глубоководные аппараты уходят глубже — но это не подводные лодки. В документы, по воспоминаниям участника, записали 1020 метров; музей и общество памяти называют 1027.</p>
+    </div>
+    <table class="ctx">
+      <thead><tr><th scope="col">Что</th><th scope="col">Глубина</th><th scope="col">Источник</th></tr></thead>
+      <tbody>
+        <tr><td>Обычная атомная подлодка, рабочая глубина</td><td>до 600 м</td><td>«Российская газета»</td></tr>
+        <tr><td>Подлодки проекта 705 «Лира», предельная глубина</td><td>400 м</td><td>сборник «Подводные лодки: история развития»</td></tr>
+        <tr><td>К-278, рабочая и предельная глубина</td><td>1000 и 1250 м</td><td>Общество памяти АПЛ «Комсомолец»</td></tr>
+        <tr><td>К-278, 4 августа 1985 года</td><td><b>1027 м</b></td><td>Центральный военно-морской музей</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="block" id="quiz">
+  <div class="wrap">
+    <div class="kicker">Проверь себя · 5 вопросов</div>
+    <h2>Викторина</h2>
+    <p style="color:var(--muted);max-width:62ch">На каждый вопрос — одна попытка. После ответа покажем объяснение.</p>
+    <div id="quizBox"></div>
+    <noscript><div class="noscript-box">Для викторины нужен JavaScript. Ответы: 1 — 1027 метров; 2 — из титанового сплава; 3 — на 800 метрах; 4 — «Остановись, мгновенье!»; 5 — орденом Красного Знамени.</div></noscript>
+  </div>
+</section>
+
+<section class="block" id="result">
+  <div class="wrap">
+    <h2 style="margin-bottom:6px">Итог дня</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Модель, три открытия и викторина вместе дают 100 баллов. Прогресс не сохраняется: перезагрузка страницы начинает день заново.</p>
+    <div class="day-result">
+      <div class="dr-score" id="dayTxt">0 / 100 · звание: Гость дня</div>
+      <div class="dr-bar"><i id="dayBar" style="width:0%"></i></div>
+      <div class="dr-note">Дойди до рекорда, сделай три открытия и ответь на вопросы.</div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="sources">
+  <div class="wrap">
+    <div class="kicker">Источники</div>
+    <h2>На чём стоит страница</h2>
+    <ul class="sources">
+      <li><a href="https://navalmuseum.ru/exhibition?id=159" rel="noopener" target="_blank">Центральный военно-морской музей · выставка «Памяти АПЛ К-278 „Комсомолец“»</a>: единственная лодка проекта 685, абсолютный рекорд глубины среди подводных лодок — 1027 м, 4 августа 1985 года; гибель 7 апреля 1989 года; День памяти погибших подводников.</li>
+      <li><a href="https://opaplkomsomolec.ru/apl-k-278/" rel="noopener" target="_blank">Общество памяти атомной подводной лодки «Комсомолец» · «АПЛ К-278»</a>: устройство и титановый корпус, главные конструкторы, рабочая глубина 1000 м и предельная 1250 м, рекорд и стрельба на 800 м, хроника 7 апреля 1989 года, Испенков и спасательная камера, 69 человек на борту и 42 погибших, указ 12 мая 1989 года.</li>
+      <li><a href="https://ckb-rubin.ru/ckb_mt_rubin/istorija/1955_1982/" rel="noopener" target="_blank">ЦКБ МТ «Рубин» · «История, 1955–1982»</a>: технический проект 685 самой глубоководной в мире подводной лодки, главные конструкторы Н. А. Климов и Ю. Н. Кормилицин, вступление в строй в 1983 году.</li>
+      <li><a href="https://rg.ru/2020/08/04/apl-komsomolec-ustanovila-rekord-glubiny-pogruzheniia-35-let-nazad.html" rel="noopener" target="_blank">«Российская газета» · «АПЛ „Комсомолец“ установила рекорд глубины погружения 35 лет назад», 04.08.2020</a>: закладка, спуск, первый целиком титановый корпус АПЛ, рабочая глубина обычных АПЛ до 600 м, Зеленский, рекорд не побит.</li>
+      <li><a href="https://mospravda.ru/2021/08/04/213644/" rel="noopener" target="_blank">«Московская правда» · «Погружение на рекордную глубину», 04.08.2021</a>: задание 1966 года, титановый корпус и его масса, рассказ из книги Ю. Бахарева «Триумф и трагедия „Комсомольца“», воспоминания В. Кундрюкова, стрельба на 800 м.</li>
+      <li><a href="https://zvezdaweekly.ru/news/20257221243-lJNcP.html" rel="noopener" target="_blank">Телеканал «Звезда» · «Титановый панцирь „Комсомольца“, или Триумф и трагедия самой глубоководной АПЛ»</a>: рассказ адмирала Е. Д. Чернова о погружении, воспоминания мичмана В. Матвеева о торпедной стрельбе.</li>
+      <li>Изображение: <a href="https://commons.wikimedia.org/wiki/File:DN-SN-87-07042-Mike_class_submarine-1_Jan_1986.JPEG" rel="noopener" target="_blank">К-278 в море, снимок Министерства обороны США, середина 1980-х (общественное достояние)</a>.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="calendar">
+  <div class="wrap">
+    <h2 style="margin-bottom:6px">Календарь изобретений</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Выбери любой день — узнаешь, что русские сделали первыми в мире. Листай месяцы стрелками.</p>
+    <div id="calbox"></div>
+  </div>
+</section>
+
+<section class="block kd" id="kuda-dalshe">
+  <div class="wrap">
+    <div class="kd-kicker">Куда дальше</div>
+    <h2>Музей продолжается</h2>
+    <div class="kd-grid">
+      <div class="kd-card main"><span class="kd-lbl">Следующий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-14jan-lira.html">14 января — Самые быстрые серийные подводные лодки «Лира» <span class="kd-arr">→</span></a>
+        <p>Лодка разгонялась до 41 узла за минуту и разворачивалась за 42 секунды — так быстро, что уходила от торпед.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Предыдущий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-12jan-r7.html">12 января — Первая в мире межконтинентальная ракета Р-7 <span class="kd-arr">→</span></a>
+        <p>Её строили как оружие, а она вывела на орбиту первый спутник.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Весь музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми <span class="kd-arr">→</span></a>
+        <p>Все изобретения — по залам и по дням года.</p></div>
+      <div class="kd-card main"><span class="kd-lbl">Город-музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация <span class="kd-arr">→</span></a>
+        <p>Все музеи проекта на одной карте.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div class="slog">Цивилизация первенств — что Россия дала миру раньше всех</div>
+  Русская цивилизация · «Что изобрели русские первыми в мире»</div></footer>
+
+<script>
+/* ── СЧЁТ ── шкала из 100 держит assets/museum-score.js; здесь только реестр наград.
+   модель 35 + три открытия 3×5 + викторина 5×10 = 100. */
+window.MUSEUM_SCORE = {awards:{lab:35, why0:5, why1:5, why2:5, q:[5,10]},
+  ranks:[[100,'Командир глубины'],[70,'Штурман'],[40,'Юнга'],[0,'Гость дня']]};
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-score.js"></script>
+<script>
+(function(){
+  var $ = function(id){return document.getElementById(id);};
+  $('readBtn').onclick = function(){ $('story').scrollIntoView({behavior:'smooth'}); };
+  $('listenBtn').onclick = function(){ $('audioguide').scrollIntoView({behavior:'smooth'}); };
+
+  /* ── УЙТИ НА КИЛОМЕТР ── холст 640×260, CSS только масштабирует.
+     Кадр рисуется по состоянию, без случайностей. Глубина меняется ступенями по 100 м,
+     от 1000 м последняя ступень — 27 м, до рекорда. */
+  var hull = 'steel', depth = 0, record = false, fired = false, found = {};
+  var W = 640, H = 260, TOP = 22, BOT = 246, MAXD = 1250;
+  function y(d){ return TOP + (BOT-TOP)*d/MAXD; }
+  function atm(d){ return Math.round(d/10); }
+  function draw(state){
+    var c=$('labCv').getContext('2d');
+    var g=c.createLinearGradient(0,TOP,0,BOT); g.addColorStop(0,'#1d4e74'); g.addColorStop(1,'#040a14');
+    c.fillStyle='#0b1828'; c.fillRect(0,0,W,H);
+    c.fillStyle=g; c.fillRect(0,TOP,W,BOT-TOP);
+    c.font='11px Inter, sans-serif'; c.textAlign='left';
+    var marks=[[0,'0'],[600,'600 м — обычная АПЛ'],[1000,'1000 м — рабочая К-278'],[1250,'1250 м — предельная К-278']];
+    for (var i=0;i<marks.length;i++){ var my=y(marks[i][0]);
+      c.strokeStyle= marks[i][0]===600 ? 'rgba(240,128,128,.7)' : 'rgba(228,201,122,.45)';
+      c.setLineDash([4,4]); c.beginPath(); c.moveTo(70,my); c.lineTo(W,my); c.stroke(); c.setLineDash([]);
+      c.fillStyle='#c6d8e8'; c.fillText(marks[i][1], 76, my-3); }
+    if (record){ c.fillStyle='#e4c97a'; c.fillRect(70,y(1027)-1,W-70,2); c.fillText('1027 м — рекорд', 420, y(1027)+13); }
+    // шкала
+    c.fillStyle='#8fa5b9'; for (var d=0; d<=MAXD; d+=250){ c.fillRect(56,y(d),10,1); c.textAlign='right'; c.fillText(String(d),52,y(d)+4); c.textAlign='left'; }
+    // лодка
+    var sy=y(depth), sx=250;
+    c.fillStyle= state==='bad' ? '#c0453f' : (hull==='ti' ? '#b9c4cf' : '#7c8a96');
+    c.beginPath(); c.ellipse(sx, sy, 70, 9, 0, 0, 6.3); c.fill();
+    c.fillRect(sx-14, sy-17, 26, 10);
+    if (state==='fire'){ c.fillStyle='#e4c97a'; c.fillRect(sx+80, sy-2, 44, 4); }
+    // табло
+    c.fillStyle='rgba(6,12,23,.8)'; c.fillRect(W-196,TOP+6,188,44);
+    c.fillStyle='#e4c97a'; c.font='bold 15px Inter, sans-serif'; c.fillText('Глубина: '+depth+' м', W-188, TOP+24);
+    c.fillStyle='#c6d8e8'; c.font='12px Inter, sans-serif'; c.fillText('Давление: ≈ '+atm(depth)+' атм', W-188, TOP+42);
+  }
+  function setFound(){ $('labFound').textContent='Найдено открытий: '+Object.keys(found).length+' из 3.'; }
+  function msg(t, cls){ var m=$('labMsg'); m.className='lab-msg'+(cls?' '+cls:''); m.textContent=t; }
+  function setHull(v){
+    hull=v; var segs=document.querySelectorAll('#lab .seg');
+    for (var j=0;j<segs.length;j++) segs[j].setAttribute('aria-pressed', segs[j].getAttribute('data-v')===v ? 'true':'false');
+  }
+  var segs = document.querySelectorAll('#lab .seg');
+  for (var s=0;s<segs.length;s++) segs[s].addEventListener('click', function(){
+    if (depth>0){ msg('Корпус меняют на верфи, а не под водой. Всплыви до поверхности или начни заново.'); return; }
+    setHull(this.getAttribute('data-v')); draw(''); msg('Лодка у поверхности. Нажми «Глубже на 100 м».');
+  });
+  $('labDown').onclick = function(){
+    if (hull==='steel' && depth>=600){
+      draw('bad'); found.steel=1; award('why0',5); setFound();
+      msg('Стоп. Рабочая глубина обычной атомной лодки — не больше 600 метров, дальше её корпус не рассчитан. Чтобы идти глубже, ЦКБ-18 сделало прочный корпус из титанового сплава. Всплыви и смени корпус.','bad');
+      return;
+    }
+    if (record || depth>=1027){ msg('Рекорд взят. Глубже 1027 метров К-278 не погружалась: предельные 1250 — запас прочности, а не цель. Теперь всплывай.'); return; }
+    depth = depth>=1000 ? 1027 : depth+100;
+    if (depth===1027){
+      record=true; draw(''); award('lab',35);
+      msg('1027 метров — мировой рекорд. «Там потёк фланец, там треснула деревянная панель… как пули, стали отлетать срезанные немыслимым обжатием титановые болты». Но лодка слушалась рулей. Теперь всплывай — и не забудь про торпеду.','ok');
+    } else {
+      draw('');
+      var t='Глубина '+depth+' м, давление около '+atm(depth)+' атмосфер. Остановка — осмотр отсеков.';
+      if (depth===700) t='700 метров. Здесь реактор К-278 вывели на полную мощность. Давление около 70 атмосфер.';
+      if (depth===1000) t='1000 метров. Адмирал Чернов сказал в микрофон: «Остановись, мгновенье!» Конструкторы согласились: ещё 20 метров корпус выдержит. Нажми «Глубже» ещё раз.';
+      msg(t);
+    }
+  };
+  $('labUp').onclick = function(){
+    if (depth===0){ msg('Лодка и так у поверхности.'); return; }
+    depth = depth===1027 ? 1000 : Math.max(0, depth-100);
+    draw('');
+    if (depth===0){
+      if (record && fired && !found.up){ found.up=1; award('why2',5); setFound();
+        msg('Всплыли. С 800 метров лодка поднялась, по словам мичмана Матвеева, «за 30 секунд». На берегу экипаж встретил командующий Северным флотом.','ok'); }
+      else msg(record ? 'На поверхности. А торпеду с глубины так и не пустили — нырни на 800 метров и выстрели.' : 'Лодка на поверхности.');
+      return;
+    }
+    msg('Глубина '+depth+' м, давление около '+atm(depth)+' атмосфер.');
+  };
+  $('labFire').onclick = function(){
+    if (depth===0){ msg('С поверхности стреляет любая лодка. Испытание было в другом: выстрелить с огромной глубины.'); return; }
+    if (depth===800 && record){
+      fired=true; draw('fire');
+      if (!found.fire){ found.fire=1; award('why1',5); setFound(); }
+      msg('Торпеда вышла. «Когда открыли передние крышки торпедных аппаратов, мы увидели, как дрогнули задние от напора глубины. Дрогнули, но… удержали». С такой глубины лодку не достать ни торпедой, ни глубинной бомбой.','ok');
+      return;
+    }
+    msg(record ? 'Экипаж стрелял на обратном пути, на 800 метрах. Поднимись до этой глубины.' : 'Сначала дойди до рекорда: стрельбу проверяли после погружения, на обратном пути.');
+  };
+  $('labReset').onclick = function(){
+    depth=0; record=false; fired=false; setHull('steel'); draw('');
+    msg('Лодка снова у поверхности. Уже полученные баллы сохраняются и повторно не начисляются.');
+  };
+  draw('');
+
+  /* ── ВИКТОРИНА ── один ответ на вопрос; дистракторы сверены с источниками страницы. */
+  var Q = [
+    {q:'На какую глубину ушла К-278 4 августа 1985 года?', o:['600 метров','1027 метров','6000 метров'], a:1,
+     e:'1027 метров — абсолютный рекорд глубины среди подводных лодок, так его называет Центральный военно-морской музей.'},
+    {q:'Из чего сделали прочный корпус К-278?', o:['Из обычной стали','Из алюминия','Из титанового сплава'], a:2,
+     e:'Из титанового сплава: он прочный, лёгкий и не магнитится.'},
+    {q:'На какой глубине лодка стреляла торпедой?', o:['На 800 метрах','На 100 метрах','На 1250 метрах'], a:0,
+     e:'На 800 метрах, на обратном пути после рекорда. Задние крышки торпедных аппаратов дрогнули, но выдержали.'},
+    {q:'Что сказал адмирал Чернов, когда лодка дошла до километра?', o:['«Полный вперёд!»','«Остановись, мгновенье!»','«Всплываем!»'], a:1,
+     e:'Пушкинскую фразу «Остановись, мгновенье!» — и по отсекам пронесли флаг корабля.'},
+    {q:'Как наградили экипаж «Комсомольца» после гибели лодки в 1989 году?', o:['Орденом Красного Знамени — весь экипаж','Только командира','Никак'], a:0,
+     e:'Указом от 12 мая 1989 года орденом Красного Знамени наградили всех членов экипажа.'}
+  ];
+  var box = $('quizBox');
+  Q.forEach(function(it, qi){
+    var wrap = document.createElement('div');
+    var h = document.createElement('p'); h.className='quiz-q'; h.textContent=(qi+1)+'. '+it.q; wrap.appendChild(h);
+    var exp = document.createElement('div'); exp.className='exp'; exp.setAttribute('aria-live','polite');
+    var btns = it.o.map(function(txt, oi){
+      var b=document.createElement('button'); b.type='button'; b.className='opt'; b.textContent=txt;
+      b.onclick=function(){
+        if (wrap.dataset.done) return; wrap.dataset.done='1';
+        btns.forEach(function(x,xi){ x.disabled=true; if (xi===it.a) x.classList.add('correct'); });
+        if (oi===it.a){ award('q'+qi,10); exp.textContent='Верно. '+it.e; }
+        else { b.classList.add('wrong'); exp.textContent='Не совсем. '+it.e; }
+        exp.classList.add('show');
+      };
+      wrap.appendChild(b); return b;
+    });
+    wrap.appendChild(exp); box.appendChild(wrap);
+  });
+})();
+</script>
+<script>window.addEventListener("pageshow",function(e){if(e.persisted)location.reload();});</script>
+<script>window.MUSEUM_CHROME={
+  museum:{title:'Что изобрели русские первыми в мире',href:'index.html'},
+  share:{title:'Мировой рекорд глубины для подводной лодки — музей «Что изобрели русские первыми в мире»',
+         text:'К-278 ушла на 1027 метров — глубже любой подводной лодки в мире. Что Россия дала миру раньше всех — день за днём.'},
+  prev:{href:'day-12jan-r7.html',title:'12 января · Ракета Р-7'},
+  next:{href:'day-14jan-lira.html',title:'14 января · «Лира»'},
+  all:{href:'index.html',label:'Все изобретения'},
+  city:'../../index.html',
+  random:['day-01jan-cabletv.html','day-02jan-luna1.html','day-03jan-anosov.html','day-04jan-pilchikov.html','day-05jan-shukhov.html','day-06jan-orlov.html','day-08jan-icebreaker.html','day-09jan-blinov.html','day-10jan-britnev.html','day-11jan-kostovich.html','day-12jan-r7.html','day-13jan-k278.html','day-14jan-lira.html','day-30jan-kotelnikov.html','day-03feb-luna9.html','day-18mar-leonov.html','day-15may-mechnikov.html','day-16jun-tereshkova.html','day-26sep-pavlov.html','day-15nov-buran.html','day-25nov-pirogov.html','day-01dec-lobachevsky.html','day-14dec-laser.html']
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-chrome.js"></script>
+<script>window.MUSEUM_SUPPORT={museum:'Что изобрели русские первыми в мире'};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-support.js"></script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/calendar-izobreteniya.js"></script>
+<script>window.MUSEUM_CALENDAR_INITIAL='01-13';</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-calendar-month.js"></script>
+<script>window.MUSEUM_RETURN={riddle:{q:"Почему К-278 смогла уйти на километр, когда обычной атомной лодке хватало 600 метров?",a:"Её прочный корпус сварили из титанового сплава: он прочнее и легче стали.",src:"«Российская газета», 04.08.2020"}};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-return.js" data-museum="izobreteniya" data-day="01-13"></script>
+<script defer src="https://arabelthera-dot.github.io/rc-museum-preview/assets/analytics.js"></script>
+
+<script>window.MUSEUM_AUDIOGUIDE={
+  audioSrc:"audio-guide-k278-ru.mp3",
+  durationLabel:"3 минуты 18 секунд",
+  lead:"Голос ведёт по залу К-278: от снимка лодки в море до глубины, на которую с тех пор не уходила ни одна подводная лодка. Шесть остановок, на каждой — что искать глазами. Слушать можно фоном, пока читаешь статью ниже.",
+  stops:[
+    {t:0,mark:"0:00",title:"Лодка на снимке"},
+    {t:32,mark:"0:32",title:"Корпус из титана"},
+    {t:65,mark:"1:05",title:"Чёрная бумажка"},
+    {t:97,mark:"1:37",title:"Остановись, мгновенье"},
+    {t:130,mark:"2:10",title:"Выстрел с глубины"},
+    {t:158,mark:"2:38",title:"Седьмое апреля"}
+  ],
+  transcript:[
+    "<p>«К-278 в море, снимок середины 1980-х. Других лодок её проекта не строили — на снимке именно она».</p>",
+    "<p>«Заказ 1966 года: лодка на километр. Обычной атомной лодке хватало 600 метров. Корпус — из титанового сплава».</p>",
+    "<p>«4 августа 1985 года, Норвежское море: с глубиномера сорвали чёрную бумажку. Погружение ступенями по 100 метров».</p>",
+    "<p>«На тысяче метров — „Остановись, мгновенье!“. На 1027 метрах титановые болты отлетали, как пули».</p>",
+    "<p>«На 800 метрах — выстрел торпедой. Задние крышки аппаратов дрогнули, но выдержали».</p>",
+    "<p>«7 апреля 1989 года — пожар и гибель „Комсомольца“: из 69 человек погибли 42. Весь экипаж — орден Красного Знамени».</p>"
+  ],
+  note:"Озвучено синтезом речи — временно, до записи голосом автора музея."
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-audioguide.js"></script>
+<script type="application/json" data-proof>
+{
+ "status": "not_found",
+ "claim_id": "rc:izobreteniya:k278:claim-record",
+ "searched": [
+  "Центральный военно-морской музей, выставка «Памяти АПЛ К-278»: глубина 1027 м названа, документ погружения не показан",
+  "ЦКБ МТ «Рубин», раздел «История»; общество памяти АПЛ «Комсомолец»: акта или вахтенного журнала нет",
+  "РГАНТД и онлайн-описи архивов ВМФ: дело о погружении 04.08.1985 в открытом доступе не найдено (по воспоминаниям участника, в документы записали 1020 м)"
+ ]
+}
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-proof.js"></script>
+</body>
+</html>

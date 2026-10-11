@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ru" data-museum="izobreteniya">
+<head><meta name="robots" content="noindex"><base href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Самые быстрые серийные подводные лодки в мире, «Лира» — Что изобрели русские первыми в мире, 14 января</title>
+<!--
+  Страница дня 14 января. Наряд izobreteniya-eshche-2-2909 (claude2, 08.10.2026), доска заданий #77.
+  Форма — вариант А музея изобретений (Сергей 12.09.2026): лента ударов, подробности свёрнуты.
+  Паспорт выпуска: rc-museum-production/izobreteniya/day-14jan-lira/passport/issue.json
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --dark:#060c17; --dark2:#0c1826; --surface:#111f33;
+    --card:rgba(255,255,255,.05); --card-b:rgba(255,255,255,.09);
+    --gold:#c9a84c; --gold-l:#e4c97a; --gold-g:rgba(201,168,76,.13);
+    --ink:#e8eef5; --muted:#7a9ab8; --line:rgba(255,255,255,.07);
+    --accent:#2d8cbf; --accent2:#1f6f8b;
+    /* legacy compat */
+    --paper:#0c1826; --paper2:#111f33;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Inter','Segoe UI',sans-serif;color:var(--ink);background:var(--dark);line-height:1.72}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.13;margin:0}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent)}
+
+  /* ── ШАПКА ── */
+  header.top{background:rgba(6,12,23,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--card-b);color:#fff;position:sticky;top:0;z-index:30}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+  .logo svg{display:block;filter:drop-shadow(0 0 8px rgba(201,168,76,.4))}
+  .logo .lt{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:16px}
+  .logo .lt small{display:block;font-size:9px;font-weight:600;letter-spacing:3px;color:var(--gold);text-transform:uppercase;font-family:'Inter',sans-serif}
+  .score{background:var(--gold-g);border:1px solid rgba(201,168,76,.3);border-radius:24px;padding:6px 16px;font-size:13px;color:var(--gold-l);cursor:pointer;font-family:'Inter',sans-serif}
+  .score-info{position:absolute;right:12px;top:66px;max-width:260px;background:#0e1c30;color:var(--ink);border:1px solid var(--card-b);border-radius:14px;padding:14px 16px;font-size:13px;line-height:1.6;box-shadow:0 20px 60px rgba(0,0,0,.6);display:none;z-index:40}
+  .score-info.show{display:block}
+
+  /* ── HERO — СТАНДАРТ (не менять): 3D-сцена сверху, текст отдельным блоком ниже ── */
+  .hero-scene{position:relative;height:52vh;min-height:300px;max-height:520px;overflow:hidden;background:linear-gradient(160deg,#0a1e3a 0%,#1a3a6a 55%,#0d2240 100%)}
+  .hero-scene canvas.scene,.hero-scene img.scene{width:100%;height:100%;display:block;object-fit:cover}
+  .scene-caption{background:#060d18;padding:11px 0 12px}
+  .scene-caption .wrap{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+  .scene-cap{font-size:13.5px;line-height:1.6;color:var(--muted);border-left:2px solid rgba(201,168,76,.4);padding-left:14px;flex:1 1 420px}
+  .scene-hint{flex:0 0 auto;font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.4px;color:#e4c97a;
+    background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.34);border-radius:24px;padding:7px 16px;font-weight:600}
+  .hero-lead{background:linear-gradient(180deg,#0c1826 0%,#060c17 100%);color:#fff;padding:28px 0 38px}
+  .hero-lead .museum{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase;font-weight:700;font-family:'Inter',sans-serif;margin-bottom:12px;opacity:.9}
+  .hero-lead .who{font-family:'Inter',sans-serif;font-size:clamp(13px,3vw,15px);letter-spacing:.4px;color:var(--accent-l,#7dc8ff);margin-bottom:10px}
+  .hero-lead .who i{font-style:normal;color:#7893ab;font-weight:400}
+  .hero-lead h1{color:#fff;font-size:56px;font-weight:900;line-height:1.04;margin-bottom:16px}
+  .hero-lead .hook{color:#b8ccde;font-size:19px;max-width:580px;margin-bottom:28px;line-height:1.65;font-weight:400}
+  .hero-lead .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+  @media(max-width:680px){.hero-lead h1{font-size:34px}.hero-lead .hook{font-size:16px}
+    .hero-scene{height:34vh;min-height:230px;max-height:300px}
+    .scene-caption .wrap{flex-direction:column;gap:9px}
+    .scene-hint{order:-1;align-self:flex-start;font-size:11.5px;padding:6px 13px}
+    .scene-cap{font-size:12.8px;flex:1 1 auto}}
+  .date-chip{display:inline-block;background:var(--gold-g);border:1px solid rgba(201,168,76,.35);color:var(--gold);font-weight:700;padding:6px 18px;border-radius:24px;font-size:12px;margin-bottom:16px;font-family:'Inter',sans-serif;letter-spacing:.5px}
+
+  /* ── НАВИГАЦИЯ ДНЯ ── */
+  .daynav{position:sticky;top:64px;z-index:25;background:rgba(6,12,23,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--card-b)}
+  .daynav .wrap{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+  .daynav::-webkit-scrollbar{display:none}
+  .daynav a{flex:0 0 auto;padding:14px 20px;font-size:11px;font-weight:700;font-family:'Inter',sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap;letter-spacing:1.5px;text-transform:uppercase;border-bottom:2px solid transparent;transition:.18s}
+  .daynav a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+
+  /* ── СЕКЦИИ ── */
+  section.block{padding:64px 0;border-bottom:1px solid var(--line);scroll-margin-top:130px}
+  .kicker{font-size:10px;text-transform:uppercase;letter-spacing:3.5px;color:var(--gold);font-weight:700;font-family:'Inter',sans-serif;margin-bottom:8px}
+  section.block h2{font-size:34px;color:#fff;margin-bottom:10px}
+  p{margin:14px 0;color:var(--ink)}
+  .pull{background:var(--gold-g);border-left:3px solid var(--gold);padding:18px 22px;border-radius:0 14px 14px 0;font-style:italic;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-size:20px;line-height:1.5;margin:26px 0}
+
+  /* ── КНОПКИ ── */
+  .btn{cursor:pointer;border:none;border-radius:12px;padding:14px 26px;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;background:var(--accent2);color:#fff;transition:.18s;letter-spacing:.2px}
+  .btn:hover{filter:brightness(1.18)}
+  .btn.ghost{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid var(--card-b)}
+  .btn.ghost:hover{background:rgba(255,255,255,.11);border-color:rgba(255,255,255,.2)}
+  .btn.gold{background:linear-gradient(135deg,var(--gold),#b8882b);color:#1a0f00;box-shadow:0 4px 20px rgba(201,168,76,.25)}
+  .btn.gold:hover{filter:brightness(1.1);box-shadow:0 6px 28px rgba(201,168,76,.4)}
+  .btn:active{transform:translateY(1px)}
+  .pulse{animation:pulse .9s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+
+  /* ── КАРТОЧКИ ── */
+  .card{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:20px 22px;margin:16px 0;backdrop-filter:blur(6px)}
+
+  /* ── КВИЗ ── */
+  .opt{display:block;width:100%;text-align:left;background:rgba(255,255,255,.04);border:1px solid var(--card-b);border-radius:12px;padding:13px 16px;margin:8px 0;cursor:pointer;font-size:15px;color:var(--ink);font-family:'Inter',sans-serif;transition:.16s}
+  .opt:hover{border-color:var(--accent);background:rgba(45,140,191,.08)}
+  .opt.correct{background:rgba(40,120,60,.18);border-color:#3f9b52;color:#7ed4a0;font-weight:600}
+  .opt.wrong{background:rgba(180,40,40,.13);border-color:#c0453f;color:#f08080}
+  .exp{margin-top:10px;font-size:14px;background:var(--gold-g);border-radius:10px;padding:12px 14px;display:none;color:var(--gold-l)}
+  .exp.show{display:block}
+
+  /* ── ИТОГ ДНЯ ── */
+  .day-result{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:22px 24px;max-width:460px}
+  .dr-rank{font-family:'Playfair Display',Georgia,serif;font-size:28px;color:var(--gold-l);font-weight:700}
+  .dr-score{font-size:16px;margin:4px 0 12px;color:var(--ink)}.dr-score span{color:var(--muted);font-size:14px}
+  .dr-bar{height:8px;background:rgba(255,255,255,.08);border-radius:6px;overflow:hidden}
+  .dr-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent2),var(--gold));transition:width .6s cubic-bezier(.2,.7,.2,1)}
+  .dr-note{margin-top:12px;font-size:14px;color:var(--muted)}
+
+  /* ── РЕКЛАМНЫЕ СЛОТЫ ── */
+  .ad-slot{position:relative;margin:26px 0;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.1);border-radius:14px;min-height:88px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px}
+  .ad-slot .lbl{position:absolute;top:7px;right:12px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.15);font-family:'Inter',sans-serif}
+  .ad-slot .ph-txt{font-size:12px;max-width:80%;color:rgba(255,255,255,.18)}
+  .ad-slot.billboard{min-height:108px}
+  .adband{background:transparent;border-bottom:none}
+
+  footer{padding:40px 0 80px;color:rgba(255,255,255,.2);font-size:12px;text-align:center;font-family:'Inter',sans-serif;letter-spacing:.5px}
+  .crumbs{background:rgba(6,12,23,.6);border-bottom:1px solid var(--card-b);font-family:'Inter',sans-serif;font-size:12.5px}
+  .crumbs .wrap{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
+  .crumbs a{color:var(--gold-l);text-decoration:none;white-space:nowrap}
+  .crumbs a:hover{text-decoration:underline}
+  .crumbs .sep{color:var(--muted);opacity:.6}
+  .crumbs .here{color:var(--muted);white-space:nowrap}
+
+
+  /* ── ШАПКА: четыре строки по museum-core §6-бис ── */
+  header.top{display:block;text-align:center;padding:10px 12px 8px;height:auto;position:relative}
+  header.top .b1{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:15px;letter-spacing:.5px;color:#fff}
+  header.top .b2{font-size:11px;color:var(--muted);margin-top:2px}
+  header.top .b3{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:6px}
+  header.top .b4{font-size:12.5px;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-style:italic}
+  header.top .score{position:absolute;right:12px;top:10px}
+  .daynav{top:0}
+  .hero-scene{background:#0e1c2c;height:38vh;min-height:250px;max-height:400px}
+  @media(max-width:680px){.hero-lead h1{font-size:31px}}
+  .hero-scene img.scene{object-fit:cover;object-position:50% 55%}
+  .date-origin{font-size:13px;color:#9fb4c8;margin:-6px 0 12px;max-width:62ch}
+  .hero-lead .hook{color:#c6d8e8;max-width:62ch}
+  .hero-under{background:linear-gradient(180deg,#060d18,#060c17);padding:4px 0 22px}
+  .stamp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(125,200,255,.28);margin-top:14px}
+  .stamp>div{padding:11px 12px;border-left:1px solid rgba(125,200,255,.16);min-width:0}
+  .stamp>div:first-child{border-left:0}
+  .stamp .v{font-size:clamp(15px,3.4vw,21px);font-weight:700;color:#8fd3ff;line-height:1.1;overflow-wrap:anywhere}
+  .stamp .k{font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:#8fa5b9;margin-top:5px}
+  @media(max-width:600px){.stamp{grid-template-columns:repeat(2,minmax(0,1fr))}.stamp>div:nth-child(3){border-left:0}.stamp>div:nth-child(n+3){border-top:1px solid rgba(125,200,255,.16)}}
+
+  /* ── ЛЕНТА УДАРОВ (museum-inventions, вариант А; museum-core §5-бис) ── */
+  .udary{list-style:none;margin:18px 0 0;padding:0;counter-reset:u}
+  .udary>li{border-top:1px solid var(--line);padding:4px 0}
+  .udary details>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:34px 1fr;gap:10px;padding:12px 0;font-size:17px;line-height:1.55;color:var(--ink)}
+  .udary details>summary::-webkit-details-marker{display:none}
+  .udary details>summary::before{counter-increment:u;content:counter(u);font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:20px;color:var(--gold);line-height:1.3}
+  .udary .more-lbl{display:block;grid-column:2;font-size:12.5px;color:var(--gold-l);letter-spacing:.3px;margin-top:4px}
+  .udary .more-lbl::after{content:' ▾'}
+  .udary details[open] .more-lbl::after{content:' ▴'}
+  .udary details[open] .more-lbl .o{display:none}
+  .udary details:not([open]) .more-lbl .c{display:none}
+  .udary summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+  .udary .det{margin:0 0 14px 44px;padding:12px 16px;background:rgba(255,255,255,.035);border-left:2px solid rgba(201,168,76,.45);border-radius:0 10px 10px 0;font-size:15px;color:#d5e0ea}
+  .udary .det p{margin:8px 0}
+  .udary .tag{display:inline-block;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#1a0f00;background:var(--gold-l);border-radius:6px;padding:1px 7px;margin-right:6px}
+  .udary .find{border-left:3px solid var(--gold);padding-left:8px}
+  figure.fig{margin:18px 0}
+  figure.fig img{max-width:100%;height:auto;border-radius:10px;display:block}
+  figure.fig figcaption{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5}
+  .src-note{font-size:12px;color:#8fa5b9}
+
+  /* ── МОДЕЛЬ ДНЯ (главное предметное действие) ── */
+  .lab{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:18px 18px 20px;margin-top:14px}
+  .lab-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+  .lab-row .lbl{flex:0 0 100%;font-size:13px;color:var(--muted);letter-spacing:.3px}
+  .seg{cursor:pointer;border:1px solid var(--card-b);background:rgba(255,255,255,.04);color:var(--ink);border-radius:10px;padding:10px 14px;font:inherit;font-size:14.5px;min-height:44px}
+  .seg[aria-pressed="true"]{border-color:var(--gold);background:var(--gold-g);color:var(--gold-l);font-weight:600}
+  .seg:focus-visible,.btn:focus-visible,.opt:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .lab-stage{position:relative;margin-top:12px}
+  .lab-stage canvas{width:100%;height:auto;display:block;border-radius:10px;background:#1c2530}
+  .lab-cap{font-size:12px;color:#8fa5b9;margin-top:6px}
+  .lab-msg{margin-top:12px;font-size:15.5px;padding:12px 14px;border-radius:10px;background:rgba(255,255,255,.04);border-left:3px solid var(--card-b);min-height:48px}
+  .lab-msg.ok{border-left-color:#3f9b52;background:rgba(40,120,60,.14)}
+  .lab-msg.bad{border-left-color:#c0453f;background:rgba(180,40,40,.10)}
+  .lab-found{font-size:13px;color:var(--muted);margin-top:8px}
+  .lab-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  .noscript-box{background:rgba(255,255,255,.04);border:1px dashed var(--card-b);border-radius:12px;padding:12px 16px;font-size:15px}
+
+  /* ── ГРАНИЦА ПЕРВЕНСТВА ── */
+  .border-box{background:rgba(45,140,191,.08);border:1px solid rgba(45,140,191,.3);border-radius:14px;padding:16px 18px}
+  .border-box b{color:#8fd3ff}
+  .ctx{width:100%;border-collapse:collapse;margin-top:14px;font-size:14.5px}
+  .ctx th,.ctx td{text-align:left;padding:9px 8px;border-top:1px solid var(--line);vertical-align:top}
+  .ctx th{color:var(--gold-l);font-weight:600;font-size:12.5px;letter-spacing:.5px}
+  .quiz-q{margin:18px 0 6px;font-weight:600}
+  .sources a{color:var(--gold-l)}
+  .sources li{margin:6px 0;font-size:14px;color:#c8d6e2}
+  @media(max-width:600px){header.top{padding:8px 64px 6px}header.top .score{top:8px;right:8px;padding:4px 10px;font-size:12px}header.top .b3{margin-top:3px}
+    .hero-scene{height:26vh;min-height:200px;max-height:260px}.date-origin{font-size:12px;margin:-8px 0 8px}.hero-lead{padding:18px 0 26px}.hero-lead .date-chip{margin-bottom:12px}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+
+<meta name="description" content="Лодка разгонялась до 41 узла за минуту и разворачивалась за 42 секунды — так быстро, что уходила от торпед.">
+<link rel="canonical" href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-14jan-lira.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Русская цивилизация">
+<meta property="og:title" content="Самые быстрые серийные подводные лодки в мире — «Лира»">
+<meta property="og:description" content="Лодка разгонялась до 41 узла за минуту и разворачивалась за 42 секунды — так быстро, что уходила от торпед.">
+<meta property="og:url" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-14jan-lira.html">
+<meta property="og:image" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-14jan-lira-1982.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Самые быстрые серийные подводные лодки в мире — «Лира»", "description": "Лодка разгонялась до 41 узла за минуту и разворачивалась за 42 секунды — так быстро, что уходила от торпед.", "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-14jan-lira.html", "inLanguage": "ru", "isPartOf": {"@type": "WebSite", "name": "Музей «Что изобрели русские первыми в мире»"}, "publisher": {"@type": "Organization", "name": "Русская цивилизация"}, "about": {"@type": "CreativeWork", "name": "Самые быстрые серийные подводные лодки в мире — «Лира»"}, "image": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-14jan-lira-1982.jpg"}</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="b1">Русская цивилизация</div>
+  <div class="b2">Первый цифровой музей достижений России · Цивилизация первенств — что Россия дала миру раньше всех</div>
+  <div class="b3">Что изобрели русские первыми в мире</div>
+  <div class="b4">365 изобретений. Все русские. Все первые</div>
+  <div class="score" id="scoreBox" title="Баллы знаний за этот день">⭐ <span id="score">0</span> / 100</div>
+</header>
+
+<nav class="crumbs" aria-label="Хлебные крошки"><div class="wrap">
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация</a>
+  <span class="sep">›</span>
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми в мире</a>
+  <span class="sep">›</span>
+  <span class="here">14 января · «Лира»</span>
+</div></nav>
+
+<div class="hero-scene" id="hero">
+  <img class="scene" src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-14jan-lira-1982.jpg" data-source="https://commons.wikimedia.org/wiki/File:A_starboard_beam_view_of_a_Soviet_Alfa_Class_nuclear-powered_attack_submarine_underway_-_DPLA_-_d3a02a1da0fbe287b3dc1596f5fa3df3.jpeg" data-license="Public domain" width="1200" height="656" alt="Зернистый снимок в серой дымке: низкая подводная лодка идёт в надводном положении, над водой видна обтекаемая рубка с двумя мачтами и люди на мостике" fetchpriority="high">
+</div>
+
+<div class="scene-caption">
+  <div class="wrap">
+    <div class="scene-cap">Лодка проекта 705 в море, снимок начала 1980-х. Фото Министерства обороны США (Национальный архив США), общественное достояние.</div>
+    <span class="scene-hint">Предмет · фото 1980-х</span>
+  </div>
+</div>
+
+<header class="hero-lead">
+  <div class="wrap">
+    <div class="date-chip">14 января · 1971</div>
+    <p class="date-origin">Дата условная: у «Лиры» нет одного дня изобретения. Головная лодка вступила в строй 31 декабря 1971 года.</p>
+    <div class="who">Михаил Русанов <i>· главный конструктор, СКБ-143, ныне «Малахит», Ленинград</i></div>
+    <div class="museum">Музей «Что изобрели русские первыми в мире»</div>
+    <h1>Самые быстрые серийные подводные лодки в мире — «Лира»</h1>
+    <p class="hook">Лодка разгонялась до 41 узла за минуту и разворачивалась за 42 секунды — так быстро, что уходила от торпед.</p>
+    <div class="hero-btns">
+      <button class="btn gold" id="readBtn" type="button">Читать историю ↓</button>
+      <button class="btn ghost" id="listenBtn" type="button">🎧 Слушать аудиогид</button>
+    </div>
+  </div>
+</header>
+
+<div class="hero-under">
+  <div class="wrap">
+    <div class="stamp">
+      <div><div class="v">41 узел</div><div class="k">под водой</div></div>
+      <div><div class="v">1 мин</div><div class="k">разгон до полного хода</div></div>
+      <div><div class="v">42 с</div><div class="k">разворот на 180°</div></div>
+      <div><div class="v">8</div><div class="k">человек в боевой смене</div></div>
+    </div>
+  </div>
+</div>
+
+<nav class="daynav" aria-label="Разделы дня">
+  <div class="wrap">
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-14jan-lira.html#story">Читать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-14jan-lira.html#audioguide">Слушать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-14jan-lira.html#games">Перехват</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-14jan-lira.html#pervenstvo">Первенство</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-14jan-lira.html#quiz">Викторина</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-14jan-lira.html#calendar">Календарь</a>
+  </div>
+</nav>
+
+<section class="wrap" id="dokument" data-proof-block aria-label="Документ первенства"></section>
+
+<section class="block" id="audioguide"></section>
+
+<section class="block" id="story">
+  <div class="wrap">
+    <div class="kicker">История изобретения · 13 ударов</div>
+    <h2>Подводный истребитель</h2>
+    <p style="color:var(--muted);max-width:62ch">Читается подряд. Нажми на удар — откроется подробный разбор с источниками.</p>
+    <ol class="udary">
+      <li><details><summary><span>В 1959 году ленинградский инженер А. Б. Петров предложил подводный истребитель: маленький, автоматический и быстрее 40 узлов.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>По замыслу, лодка водоизмещением около 1500 тонн за короткое время выходит в нужную точку океана, атакует подводного или надводного противника, а заметив торпедную атаку — даёт залп и уходит от торпед.</p>
+          <p>Главным конструктором стал Михаил Русанов, проект вело СКБ-143 — сегодня Санкт-Петербургское морское бюро машиностроения «Малахит».</p>
+          <p class="src-note">Источники: сборник «Подводные лодки: история развития» (сост. В. П. Власов), «Атомные подводные лодки проекта 705»; «Адмиралтейские верфи», «Проект 705, „Лира“».</p>
+        </div></details></li>
+      <li><details><summary><span>На других атомных лодках служили 80–100 человек. В задание на «Лиру» записали шестнадцать — и только офицеров.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Экипаж сократили автоматикой. В ходе проектирования он всё же вырос до 31 человека: шесть техников-мичманов и один матрос, который был коком и заодно дневальным. Справочная таблица сборника «Подводные лодки: история развития» даёт экипаж в 32 человека.</p>
+          <p class="src-note">Источники: «Страна Росатом», «Сотворение „Лиры“», 16.12.2021; сборник «Подводные лодки: история развития».</p>
+        </div></details></li>
+      <li><details><summary><span>В отсеках вахту не несли: система «Аккорд» сводила всё на центральный пост. Боевая смена — восемь человек.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Боевая информационно-управляющая система «Аккорд» следила за обстановкой и реактором, гидролокатор и оружие работали самостоятельно, механизирован был даже камбуз. Центральный пост был набит индикаторами от палубы до обшивки. Моряки прозвали эти лодки «автоматами».</p>
+          <p class="src-note">Источники: «Страна Росатом», 16.12.2021; «Адмиралтейские верфи»; сборник «Подводные лодки: история развития».</p>
+        </div></details></li>
+      <li><details><summary><span>Корпус сварили из титанового сплава ЦНИИ «Прометей»: он легче стали, прочнее её и почти не магнитится.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Сплав разработали в ЦНИИ «Прометей» под руководством И. В. Горынина. Титан оказался капризным: его трудно варить и обрабатывать. На головной лодке потом нашли трещины сварного корпуса.</p>
+          <p class="src-note">Источники: «Адмиралтейские верфи»; Межрегиональное общественное движение ветеранов атомной энергетики и промышленности, «Чудо инженерии — подлодки проекта 705 „Лира“»; сборник «Подводные лодки: история развития».</p>
+        </div></details></li>
+      <li class="find"><details><summary><span>Реактор охлаждала не вода, а расплав свинца и висмута. Поэтому «Лира» разгонялась до полного хода за минуту.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p><span class="tag">Находка дня</span>Лодкам с водо-водяными реакторами перед полным ходом нужен особый переход установки на повышенные параметры. «Лире» он был не нужен: свинцово-висмутовая установка давала полный ход в течение минуты, с почти «самолётным» разгоном.</p>
+          <p>Жидкий металл в реакторе до этого пробовали на одной опытной лодке проекта 645, а «Лиры» строили серией.</p>
+          <p>Попробуй сам в модели ниже: зайти в хвост лодке противника.</p>
+          <p class="src-note">Источники: сборник «Подводные лодки: история развития»; «Страна Росатом», 16.12.2021; «Адмиралтейские верфи».</p>
+        </div></details></li>
+      <li><details><summary><span>Под водой «Лира» давала 41 узел — около 76 километров в час.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Полная подводная скорость по справочной таблице — 41 узел, «Страна Росатом» пишет «более 40 узлов». 76 километров в час — наш перевод: узел — это 1,852 километра в час. Скорость лодки была сравнима со скоростью противолодочных торпед.</p>
+          <p class="src-note">Источники: сборник «Подводные лодки: история развития»; «Адмиралтейские верфи»; «Страна Росатом», 16.12.2021.</p>
+        </div></details></li>
+      <li><details><summary><span>На полном ходу она разворачивалась на 180 градусов и через 42 секунды уже шла обратно.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Контр-адмирал А. С. Богатырев, командовавший К-123, вспоминал, что лодка разворачивалась «на пятачке». Командиры А. Ч. Аббасов и А. Ф. Загрядский описывали манёвр: разгон с погружением сбивал со следа противника, который слушал «Лиру», и она «по-истребительному» заходила ему в хвост.</p>
+          <p class="src-note">Источники: сборник «Подводные лодки: история развития»; «Страна Росатом», 16.12.2021; «Адмиралтейские верфи».</p>
+        </div></details></li>
+      <li><details><summary><span>В начале 80-х «Лира» 22 часа держалась в хвосте атомохода НАТО. Сбросить её он так и не смог.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Лодка шла в кормовом секторе чужого атомохода в Северной Атлантике. Командир противника отчаянно пытался оторваться, но слежение прекратили только по приказу с берега. «Страна Росатом» называет срок в 20 часов, сборник — 22 часа.</p>
+          <p class="src-note">Источники: сборник «Подводные лодки: история развития»; «Страна Росатом», 16.12.2021.</p>
+        </div></details></li>
+      <li><details><summary><span>Впервые в мире на подлодке стояла всплывающая рубка: в ней с предельной глубины мог спастись весь экипаж.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Обитаемый отсек на лодке был один, и камера стояла прямо над ним. Она всплывала даже при большом крене и дифференте и спасала экипаж «сухим способом», без выхода в воду.</p>
+          <p class="src-note">Источники: «Адмиралтейские верфи»; сборник «Подводные лодки: история развития»; МОД ветеранов атомной энергетики; «Страна Росатом», 16.12.2021.</p>
+        </div></details></li>
+      <li><details><summary><span>Расплав свинца и висмута застывает при 145 °C. В базе реактор держали горячим, иначе металл каменел в трубах.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Это главная цена скорости. Первый контур нужно было постоянно держать горячим, следить за сплавом и регулярно очищать его от окислов. С заглушённым реактором лодке в базе требовался внешний источник энергии. Идею второго, «берегового» экипажа на практике так и не осуществили.</p>
+          <p class="src-note">Источники: «Страна Росатом», 16.12.2021; сборник «Подводные лодки: история развития».</p>
+        </div></details></li>
+      <li><details><summary><span>Головная К-64 боевой так и не стала: в 1972 году в отсек вытекли сотни литров сплава, и лодку списали.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>К-64 заложили 2 июня 1968 года в Ленинграде, на том же стапеле, где строили «Аврору», и спустили на воду 22 апреля 1969 года. В строй она вступила 31 декабря 1971 года. В феврале 1972-го вышла из строя ещё одна петля реактора, 700–800 литров сплава попали в отсек. Лодку решили не восстанавливать. Первый командир, капитан 1-го ранга А. С. Пушкин, позже получил орден Ленина.</p>
+          <p>Конструкторы учли урок: у следующих лодок реакторный отсек удлинили на 1,2 метра и переделали парогенератор.</p>
+          <p class="src-note">Источники: «Страна Росатом», 16.12.2021; сборник «Подводные лодки: история развития»; «Адмиралтейские верфи».</p>
+        </div></details></li>
+      <li><details><summary><span>За двадцать с лишним лет службы на «Лирах» никто не погиб в борьбе за живучесть, ни одна лодка не потеряна.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Всего построили семь лодок проектов 705 и 705К. Командир К-123 капитан 2-го ранга А. Ч. Аббасов за освоение принципиально нового корабля в 1984 году стал Героем Советского Союза.</p>
+          <p class="src-note">Источники: «Страна Росатом», 16.12.2021; сборник «Подводные лодки: история развития»; МОД ветеранов атомной энергетики.</p>
+        </div></details></li>
+      <li><details><summary><span>За скорость проект 705 занесли в Книгу рекордов Гиннесса.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <figure class="fig" style="max-width:420px">
+            <img src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-14jan-lira-1984.jpg" data-source="https://commons.wikimedia.org/wiki/File:Alfa_class_submarine_2.jpg" data-license="Public domain" width="640" height="312" loading="lazy" alt="Снимок сверху: тёмная обтекаемая подлодка в надводном положении режет волну, рубка плавно переходит в корпус">
+            <figcaption>Лодка проекта 705 в море, снимок начала 1980-х. Фото Министерства обороны США, общественное достояние.</figcaption>
+          </figure>
+          <p>Об этом пишет «Страна Росатом». Рубку «лимузинного типа», плавно переходящую в корпус, отработали гидродинамики. Обводы почти не отражали сигналы гидролокаторов, и атаковать «Лиру» с активной гидроакустикой было трудно.</p>
+          <p class="src-note">Источники: «Страна Росатом», 16.12.2021; сборник «Подводные лодки: история развития».</p>
+        </div></details></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="games">
+  <div class="wrap">
+    <div class="kicker">Главное действие · модель</div>
+    <h2>Перехват</h2>
+    <p style="max-width:62ch">Лодка противника где-то в океане. Подготовь «Лиру» и выйди на перехват: нужно зайти противнику в хвост и удержаться там. Выбери, как стоять в базе, какой реактор и какой манёвр, — и нажми «Выйти на перехват». На каждый неверный ход объясним, что пошло не так.</p>
+    <div class="lab" id="lab">
+      <div class="lab-row" role="group" aria-labelledby="lg1"><span class="lbl" id="lg1">1. Стоянка в базе</span>
+        <button class="seg" type="button" data-k="base" data-v="cold" aria-pressed="true">Реактор заглушили и остудили</button>
+        <button class="seg" type="button" data-k="base" data-v="hot" aria-pressed="false">Сплав держат горячим</button>
+      </div>
+      <div class="lab-row" role="group" aria-labelledby="lg2"><span class="lbl" id="lg2">2. Реактор</span>
+        <button class="seg" type="button" data-k="reactor" data-v="water" aria-pressed="true">Водо-водяной, как у обычной АПЛ</button>
+        <button class="seg" type="button" data-k="reactor" data-v="metal" aria-pressed="false">Свинец-висмут, как у «Лиры»</button>
+      </div>
+      <div class="lab-row" role="group" aria-labelledby="lg3"><span class="lbl" id="lg3">3. Манёвр</span>
+        <button class="seg" type="button" data-k="move" data-v="straight" aria-pressed="true">Разгон по прямой</button>
+        <button class="seg" type="button" data-k="move" data-v="turn" aria-pressed="false">Разворот на 180° за 42 секунды</button>
+      </div>
+      <div class="lab-btns">
+        <button class="btn gold" type="button" id="labGo">Выйти на перехват</button>
+        <button class="btn ghost" type="button" id="labReset">Начать заново</button>
+      </div>
+      <div class="lab-stage">
+        <canvas id="labCv" width="640" height="220" role="img" aria-label="Океан сверху: лодка противника и «Лира»"></canvas>
+        <div class="lab-cap">Модель, а не карта похода: расстояния условные. 145 °C, полный ход за минуту, разворот за 42 секунды и 22 часа слежения — из источников.</div>
+      </div>
+      <div class="lab-msg" id="labMsg" aria-live="polite">«Лира» в базе. Выбери условия и нажми «Выйти на перехват».</div>
+      <div class="lab-found" id="labFound">Найдено причин неудачи: 0 из 3.</div>
+      <noscript><div class="noscript-box">Для модели нужен JavaScript. Текстовая версия опыта: если реактор в базе остудить, сплав свинца и висмута застынет при 145 °C, и лодка не выйдет. Водо-водяному реактору перед полным ходом нужен долгий переход на повышенные параметры — противник успевает уйти. Разгон по прямой оставляет «Лиру» перед носом противника, где он её слышит. Удаётся так: сплав горячий, реактор свинцово-висмутовый, разворот на 180° за 42 секунды — «Лира» заходит противнику в хвост и держится там.</div></noscript>
+    </div>
+    <p class="src-note" style="margin-top:10px">Правила модели: 145 °C и горячий контур в базе — «Страна Росатом»; разгон без перехода на повышенные параметры, разворот за 42 секунды, заход в кормовой сектор и 22 часа слежения — сборник «Подводные лодки: история развития».</p>
+  </div>
+</section>
+
+<section class="block" id="pervenstvo">
+  <div class="wrap">
+    <div class="kicker">Проверка факта</div>
+    <h2>Что именно «Лира» сделала первой</h2>
+    <div class="border-box">
+      <p style="margin-top:0"><b>Граница первенства:</b> самые быстрые серийные подводные лодки в мире — 41 узел под водой, полный ход за минуту, разворот на 180° за 42 секунды; за скорость проект занесён в Книгу рекордов Гиннесса. Ещё одно мировое первенство — всплывающая рубка для спасения всего экипажа с предельной глубины. Доказательство — построенные лодки (семь в строю флота) и документы строителей.</p>
+      <p style="margin-bottom:0"><b>Чего здесь нет:</b> слово «серийные» важно. Рекорд скорости одиночной опытной лодки К-162 — другой день нашего календаря, 24 января.</p>
+    </div>
+    <table class="ctx">
+      <thead><tr><th scope="col">Лодка</th><th scope="col">Что</th><th scope="col">Когда</th></tr></thead>
+      <tbody>
+        <tr><td>К-64, головная, проект 705</td><td>Вступила в строй Северного флота</td><td>31.12.1971</td></tr>
+        <tr><td>К-123, проект 705К</td><td>Завершила заводские и государственные испытания</td><td>декабрь 1977</td></tr>
+        <tr><td>Лодки проекта 705</td><td>22 часа в хвосте атомохода НАТО, Северная Атлантика</td><td>начало 1980-х</td></tr>
+        <tr><td>Семь лодок проектов 705 и 705К</td><td>Служба без гибели людей в борьбе за живучесть</td><td>более 20 лет</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="block" id="quiz">
+  <div class="wrap">
+    <div class="kicker">Проверь себя · 5 вопросов</div>
+    <h2>Викторина</h2>
+    <p style="color:var(--muted);max-width:62ch">На каждый вопрос — одна попытка. После ответа покажем объяснение.</p>
+    <div id="quizBox"></div>
+    <noscript><div class="noscript-box">Для викторины нужен JavaScript. Ответы: 1 — 41 узел; 2 — расплавом свинца и висмута; 3 — при 145 °C; 4 — всплывающая спасательная рубка на весь экипаж; 5 — 22 часа.</div></noscript>
+  </div>
+</section>
+
+<section class="block" id="result">
+  <div class="wrap">
+    <h2 style="margin-bottom:6px">Итог дня</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Модель, три причины неудачи и викторина вместе дают 100 баллов. Прогресс не сохраняется: перезагрузка страницы начинает день заново.</p>
+    <div class="day-result">
+      <div class="dr-score" id="dayTxt">0 / 100 · звание: Гость дня</div>
+      <div class="dr-bar"><i id="dayBar" style="width:0%"></i></div>
+      <div class="dr-note">Зайди противнику в хвост, найди все три причины неудачи и ответь на вопросы.</div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="sources">
+  <div class="wrap">
+    <div class="kicker">Источники</div>
+    <h2>На чём стоит страница</h2>
+    <ul class="sources">
+      <li><a href="http://admship.ru/production/archive/spravochnik-proektov-podvodnykh-lodok-postroennykh-na-admiralteyskikh-verfyakh/proekt-705-lira/" rel="noopener" target="_blank">АО «Адмиралтейские верфи» · «Проект 705, „Лира“»</a> (справочник проектов, построенных на верфи): главный конструктор М. Г. Русанов, до 41 узла, разгон за минуту, разворот за 42 секунды, титан ЦНИИ «Прометей», жидкометаллический теплоноситель, впервые в мире — всплывающая спасательная камера, система «Аккорд», даты постройки лодок.</li>
+      <li><a href="https://book.uraic.ru/elib/pl/lodki/705.htm" rel="noopener" target="_blank">Свердловская областная универсальная научная библиотека им. В. Г. Белинского · «Подводные лодки: история развития», сборник статей, сост. В. П. Власов, глава «Атомные подводные лодки проекта 705 („Альфа“)»</a>: 22 часа слежения, замысел А. Б. Петрова, К-64 и её командир, свинец-висмут, всплывающая рубка «впервые в мире», характеристики, К-123 и Аббасов, манёвры, трудности базирования.</li>
+      <li><a href="https://strana-rosatom.ru/2021/12/16/sotvorenie-liry-istoriya-sozdaniya-p/" rel="noopener" target="_blank">«Страна Росатом» · «Сотворение „Лиры“: история создания первого атомного подводного истребителя», 16.12.2021</a>: реакторы ОК-550 и БМ-40А, экипаж 16 и 31 человек, «Аккорд» и боевая смена из восьми, спасательная капсула, 20 лет без потерь, судьба К-64, более 40 узлов, 42 секунды, Книга рекордов Гиннесса.</li>
+      <li><a href="https://www.veteranrosatom.ru/articles/articles_991.html" rel="noopener" target="_blank">МОД ветеранов атомной энергетики и промышленности · «Чудо инженерии — подлодки проекта 705 „Лира“»</a>: СКБ-143 и М. Г. Русанов, титановый корпус и трудности его сварки, семь лодок проекта.</li>
+      <li>Изображения: <a href="https://commons.wikimedia.org/wiki/File:A_starboard_beam_view_of_a_Soviet_Alfa_Class_nuclear-powered_attack_submarine_underway_-_DPLA_-_d3a02a1da0fbe287b3dc1596f5fa3df3.jpeg" rel="noopener" target="_blank">лодка проекта 705 в море</a> и <a href="https://commons.wikimedia.org/wiki/File:Alfa_class_submarine_2.jpg" rel="noopener" target="_blank">второй снимок лодки проекта 705</a> — снимки Министерства обороны США, общественное достояние.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="calendar">
+  <div class="wrap">
+    <h2 style="margin-bottom:6px">Календарь изобретений</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Выбери любой день — узнаешь, что русские сделали первыми в мире. Листай месяцы стрелками.</p>
+    <div id="calbox"></div>
+  </div>
+</section>
+
+<section class="block kd" id="kuda-dalshe">
+  <div class="wrap">
+    <div class="kd-kicker">Куда дальше</div>
+    <h2>Музей продолжается</h2>
+    <div class="kd-grid">
+      <div class="kd-card main"><span class="kd-lbl">Следующий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-15jan-kovalevskaya.html">15 января — Первая в мире женщина — профессор математики <span class="kd-arr">→</span></a>
+        <p>Чтобы учиться математике, ей пришлось фиктивно выйти замуж и уехать из России, — а через шестнадцать лет она стала первой в мире женщиной-профессором математики.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Предыдущий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-13jan-k278.html">13 января — Мировой рекорд глубины для подводной лодки <span class="kd-arr">→</span></a>
+        <p>Обычной атомной подлодке хватало 600 метров, а К-278 ушла на 1027 — и этот рекорд не побит до сих пор.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Весь музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми <span class="kd-arr">→</span></a>
+        <p>Все изобретения — по залам и по дням года.</p></div>
+      <div class="kd-card main"><span class="kd-lbl">Город-музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация <span class="kd-arr">→</span></a>
+        <p>Все музеи проекта на одной карте.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div class="slog">Цивилизация первенств — что Россия дала миру раньше всех</div>
+  Русская цивилизация · «Что изобрели русские первыми в мире»</div></footer>
+
+<script>
+/* ── СЧЁТ ── шкала из 100 держит assets/museum-score.js; здесь только реестр наград.
+   модель 35 + три причины неудачи 3×5 + викторина 5×10 = 100. */
+window.MUSEUM_SCORE = {awards:{lab:35, why0:5, why1:5, why2:5, q:[5,10]},
+  ranks:[[100,'Командир истребителя'],[70,'Акустик'],[40,'Мичман'],[0,'Гость дня']]};
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-score.js"></script>
+<script>
+(function(){
+  var $ = function(id){return document.getElementById(id);};
+  $('readBtn').onclick = function(){ $('story').scrollIntoView({behavior:'smooth'}); };
+  $('listenBtn').onclick = function(){ $('audioguide').scrollIntoView({behavior:'smooth'}); };
+
+  /* ── ПЕРЕХВАТ ── холст 640×220, CSS только масштабирует.
+     Кадр рисуется по состоянию, без случайностей: одинаковый выбор — одинаковый кадр. */
+  var DEF = {base:'cold', reactor:'water', move:'straight'};
+  var st = {base:DEF.base, reactor:DEF.reactor, move:DEF.move};
+  var found = {};
+  var W = 640, H = 220;
+  function sea(c){
+    var g=c.createLinearGradient(0,0,W,H); g.addColorStop(0,'#0d2a44'); g.addColorStop(1,'#081a2c');
+    c.fillStyle=g; c.fillRect(0,0,W,H);
+    c.strokeStyle='rgba(143,165,185,.12)'; c.beginPath();
+    for (var x=0;x<W;x+=40){ c.moveTo(x,0); c.lineTo(x,H); } for (var yy=0;yy<H;yy+=40){ c.moveTo(0,yy); c.lineTo(W,yy); }
+    c.stroke();
+  }
+  // лодка сверху: x,y — центр, a — курс в радианах, col — цвет
+  function boat(c, x, y, a, col, name){
+    c.save(); c.translate(x,y); c.rotate(a);
+    c.fillStyle=col; c.beginPath(); c.ellipse(0,0,34,7,0,0,6.3); c.fill();
+    c.fillRect(-4,-4,12,8);
+    c.restore();
+    c.fillStyle='#c6d8e8'; c.font='12px Inter, sans-serif'; c.textAlign='center'; c.fillText(name, x, y-14);
+  }
+  function wake(c, pts){ c.strokeStyle='rgba(228,201,122,.6)'; c.setLineDash([5,5]); c.beginPath(); c.moveTo(pts[0][0],pts[0][1]); for (var i=1;i<pts.length;i++) c.lineTo(pts[i][0],pts[i][1]); c.stroke(); c.setLineDash([]); }
+  function label(c, t){ c.fillStyle='#e4c97a'; c.font='bold 18px Inter, sans-serif'; c.textAlign='left'; c.fillText(t, 14, 26); }
+  function draw(kind){
+    var c=$('labCv').getContext('2d'); sea(c);
+    c.fillStyle='#22301f'; c.fillRect(0,170,90,50); c.fillStyle='#8fa5b9'; c.font='11px Inter, sans-serif'; c.textAlign='left'; c.fillText('база', 30, 208);
+    if (kind==='idle'){ boat(c, 470, 90, 0, '#c0453f', 'противник'); boat(c, 60, 186, 0, '#b9c4cf', '«Лира»'); label(c,'«Лира» в базе'); return; }
+    if (kind==='cold'){ boat(c, 470, 90, 0, '#c0453f', 'противник'); boat(c, 60, 186, 0, '#55606c', '«Лира»: сплав застыл'); label(c,'Не вышли из базы'); return; }
+    if (kind==='water'){ wake(c, [[60,186],[200,150]]); boat(c, 600, 50, -0.4, '#c0453f', 'противник ушёл'); boat(c, 200, 150, -0.3, '#b9c4cf', '«Лира»'); label(c,'Опоздали: долгий разгон'); return; }
+    if (kind==='straight'){ wake(c, [[60,186],[330,100]]); boat(c, 470, 90, Math.PI, '#c0453f', 'противник'); boat(c, 360, 92, 0, '#b9c4cf', '«Лира»');
+      c.strokeStyle='rgba(240,128,128,.6)'; c.beginPath(); c.arc(440,90,60,2.4,3.9); c.stroke(); label(c,'Противник тебя слышит'); return; }
+    wake(c, [[60,186],[300,120],[540,110],[560,80],[520,70]]);
+    boat(c, 380, 72, Math.PI, '#c0453f', 'противник'); boat(c, 470, 72, Math.PI, '#b9c4cf', '«Лира» в хвосте');
+    label(c,'В хвосте у противника');
+  }
+  function setFound(){ $('labFound').textContent='Найдено причин неудачи: '+Object.keys(found).length+' из 3.'; }
+  function msg(t, cls){ var m=$('labMsg'); m.className='lab-msg'+(cls?' '+cls:''); m.textContent=t; }
+  var segs = document.querySelectorAll('#lab .seg');
+  for (var s=0;s<segs.length;s++) segs[s].addEventListener('click', function(){
+    var k=this.getAttribute('data-k'), v=this.getAttribute('data-v');
+    st[k]=v;
+    var same=document.querySelectorAll('#lab .seg[data-k="'+k+'"]');
+    for (var j=0;j<same.length;j++) same[j].setAttribute('aria-pressed', same[j]===this ? 'true':'false');
+    draw('idle');
+  });
+  $('labGo').onclick = function(){
+    if (st.reactor==='water'){
+      draw('water'); found.w=1; award('why1',5);
+      msg('Водо-водяному реактору перед полным ходом нужен особый переход на повышенные параметры. Пока он шёл, противник ушёл. Свинцово-висмутовая установка «Лиры» давала полный ход за минуту.','bad');
+    } else if (st.base==='cold'){
+      draw('cold'); found.c=1; award('why0',5);
+      msg('Сплав свинца и висмута застывает при 145 °C. Реактор остыл — металл окаменел в трубах, и лодка из базы не вышла. Поэтому «Лиру» в базе держали горячей, а с заглушённым реактором питали от берега.','bad');
+    } else if (st.move==='straight'){
+      draw('straight'); found.s=1; award('why2',5);
+      msg('Разогнался, но остался перед носом противника — он тебя слышит и готовит атаку. «Лира» разворачивалась на 180 градусов и через 42 секунды заходила ему в хвост, в зону, где гидроакустика почти глуха.','bad');
+    } else {
+      draw('ok'); award('lab',35);
+      msg('Ты в хвосте у противника. В начале 80-х «Лира» так держалась за атомоходом НАТО 22 часа — и отстала только по приказу с берега.','ok');
+    }
+    setFound();
+  };
+  $('labReset').onclick = function(){
+    st = {base:DEF.base, reactor:DEF.reactor, move:DEF.move};
+    for (var j=0;j<segs.length;j++){ var k=segs[j].getAttribute('data-k'); segs[j].setAttribute('aria-pressed', segs[j].getAttribute('data-v')===DEF[k] ? 'true':'false'); }
+    draw('idle'); msg('«Лира» снова в базе. Выбери условия заново. Уже полученные баллы сохраняются и повторно не начисляются.');
+  };
+  draw('idle');
+
+  /* ── ВИКТОРИНА ── один ответ на вопрос; дистракторы сверены с источниками страницы. */
+  var Q = [
+    {q:'Какую скорость под водой давала «Лира»?', o:['25 узлов','41 узел','60 узлов'], a:1,
+     e:'41 узел — около 76 километров в час. За скорость проект 705 занесён в Книгу рекордов Гиннесса.'},
+    {q:'Чем охлаждали реактор «Лиры»?', o:['Обычной водой','Расплавом свинца и висмута','Воздухом'], a:1,
+     e:'Расплавом свинца и висмута — поэтому лодка разгонялась до полного хода за минуту.'},
+    {q:'При какой температуре застывает этот сплав?', o:['При 0 °C','При 145 °C','При 1000 °C'], a:1,
+     e:'При 145 °C. В базе реактор держали горячим, иначе металл каменел в трубах.'},
+    {q:'Что впервые в мире появилось на «Лире»?', o:['Всплывающая рубка для спасения всего экипажа','Перископ','Торпедный аппарат'], a:0,
+     e:'Всплывающая спасательная рубка: в ней весь экипаж мог подняться с предельной глубины.'},
+    {q:'Сколько часов «Лира» держалась в хвосте атомохода НАТО?', o:['2 часа','22 часа','220 часов'], a:1,
+     e:'22 часа по сборнику «Подводные лодки: история развития» — и отстала только по приказу с берега.'}
+  ];
+  var box = $('quizBox');
+  Q.forEach(function(it, qi){
+    var wrap = document.createElement('div');
+    var h = document.createElement('p'); h.className='quiz-q'; h.textContent=(qi+1)+'. '+it.q; wrap.appendChild(h);
+    var exp = document.createElement('div'); exp.className='exp'; exp.setAttribute('aria-live','polite');
+    var btns = it.o.map(function(txt, oi){
+      var b=document.createElement('button'); b.type='button'; b.className='opt'; b.textContent=txt;
+      b.onclick=function(){
+        if (wrap.dataset.done) return; wrap.dataset.done='1';
+        btns.forEach(function(x,xi){ x.disabled=true; if (xi===it.a) x.classList.add('correct'); });
+        if (oi===it.a){ award('q'+qi,10); exp.textContent='Верно. '+it.e; }
+        else { b.classList.add('wrong'); exp.textContent='Не совсем. '+it.e; }
+        exp.classList.add('show');
+      };
+      wrap.appendChild(b); return b;
+    });
+    wrap.appendChild(exp); box.appendChild(wrap);
+  });
+})();
+</script>
+<script>window.addEventListener("pageshow",function(e){if(e.persisted)location.reload();});</script>
+<script>window.MUSEUM_CHROME={
+  museum:{title:'Что изобрели русские первыми в мире',href:'index.html'},
+  share:{title:'Самые быстрые серийные подводные лодки в мире — музей «Что изобрели русские первыми в мире»',
+         text:'«Лира» разгонялась до 41 узла за минуту и уходила от торпед. Что Россия дала миру раньше всех — день за днём.'},
+  prev:{href:'day-13jan-k278.html',title:'13 января · К-278'},
+  next:{href:'day-15jan-kovalevskaya.html',title:'15 января · Ковалевская'},
+  all:{href:'index.html',label:'Все изобретения'},
+  city:'../../index.html',
+  random:['day-01jan-cabletv.html','day-02jan-luna1.html','day-03jan-anosov.html','day-04jan-pilchikov.html','day-05jan-shukhov.html','day-06jan-orlov.html','day-08jan-icebreaker.html','day-09jan-blinov.html','day-10jan-britnev.html','day-11jan-kostovich.html','day-12jan-r7.html','day-13jan-k278.html','day-14jan-lira.html','day-15jan-kovalevskaya.html','day-30jan-kotelnikov.html','day-03feb-luna9.html','day-18mar-leonov.html','day-15may-mechnikov.html','day-16jun-tereshkova.html','day-26sep-pavlov.html','day-15nov-buran.html','day-25nov-pirogov.html','day-01dec-lobachevsky.html','day-14dec-laser.html']
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-chrome.js"></script>
+<script>window.MUSEUM_SUPPORT={museum:'Что изобрели русские первыми в мире'};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-support.js"></script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/calendar-izobreteniya.js"></script>
+<script>window.MUSEUM_CALENDAR_INITIAL='01-14';</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-calendar-month.js"></script>
+<script>window.MUSEUM_RETURN={riddle:{q:"Почему «Лиру» в базе нельзя было остудить, как обычную лодку?",a:"Её реактор охлаждал расплав свинца и висмута, а он застывает при 145 °C и каменеет в трубах.",src:"«Страна Росатом», 16.12.2021"}};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-return.js" data-museum="izobreteniya" data-day="01-14"></script>
+<script defer src="https://arabelthera-dot.github.io/rc-museum-preview/assets/analytics.js"></script>
+
+<script>window.MUSEUM_AUDIOGUIDE={
+  audioSrc:"audio-guide-lira-ru.mp3",
+  durationLabel:"2 минуты 44 секунд",
+  lead:"Голос ведёт по залу «Лиры»: от зернистого снимка начала 1980-х до реактора, который нельзя было остудить. Шесть остановок, на каждой — что искать глазами. Слушать можно фоном, пока читаешь статью ниже.",
+  stops:[
+    {t:0,mark:"0:00",title:"Снимок в дымке"},
+    {t:25,mark:"0:25",title:"Подводный истребитель"},
+    {t:52,mark:"0:52",title:"Восемь человек на вахте"},
+    {t:79,mark:"1:19",title:"Жидкий металл"},
+    {t:108,mark:"1:48",title:"Двадцать два часа"},
+    {t:129,mark:"2:09",title:"Цена скорости"}
+  ],
+  transcript:[
+    "<p>«Снимок начала 1980-х: лодка проекта 705, у американцев — „Альфа“, у нас — „Лира“».</p>",
+    "<p>«Замысел 1959 года — подводный истребитель. Главный конструктор Михаил Русанов, корпус из титана».</p>",
+    "<p>«Вместо 80–100 человек — 31. Система „Аккорд“, боевая смена из восьми человек».</p>",
+    "<p>«Реактор на расплаве свинца и висмута: полный ход за минуту, 41 узел, разворот за 42 секунды».</p>",
+    "<p>«22 часа в хвосте атомохода НАТО — отстали только по приказу с берега».</p>",
+    "<p>«Сплав застывает при 145 °C. К-64 потеряна для флота, но на „Лирах“ за 20 лет никто не погиб в борьбе за живучесть».</p>"
+  ],
+  note:"Озвучено синтезом речи — временно, до записи голосом автора музея."
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-audioguide.js"></script>
+<script type="application/json" data-proof>
+{
+ "status": "not_found",
+ "claim_id": "rc:izobreteniya:lira:claim-speed",
+ "searched": [
+  "«Адмиралтейские верфи», справочник проектов (копия в web.archive.org): характеристики проекта 705, документа рекорда нет",
+  "«Страна Росатом», ветераны атомной отрасли: упоминают Книгу рекордов Гиннесса, но не номер записи и не год",
+  "Свердловская ОУНБ, сборник «Подводные лодки: история развития»; РГАНТД: акта испытаний на скорость в открытом доступе нет"
+ ]
+}
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-proof.js"></script>
+</body>
+</html>

@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ru" data-museum="izobreteniya">
+<head><meta name="robots" content="noindex"><base href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Аносов первым в мире посмотрел на сталь в микроскоп — Что изобрели русские первыми в мире, 3 января</title>
+<!--
+  Страница дня 3 января. Наряд izobreteniya-2-stranicy-2809 (claude2, 28.09.2026).
+  Форма — вариант А музея изобретений (Сергей 12.09.2026): лента ударов, подробности свёрнуты.
+  Паспорт выпуска: rc-museum-production/izobreteniya/day-03jan-anosov/passport/issue.json
+  Рабочая записка дня (три подачи, находка, карта моментов): pilot-izobreteniya/day-03jan-anosov.md
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --dark:#060c17; --dark2:#0c1826; --surface:#111f33;
+    --card:rgba(255,255,255,.05); --card-b:rgba(255,255,255,.09);
+    --gold:#c9a84c; --gold-l:#e4c97a; --gold-g:rgba(201,168,76,.13);
+    --ink:#e8eef5; --muted:#7a9ab8; --line:rgba(255,255,255,.07);
+    --accent:#2d8cbf; --accent2:#1f6f8b;
+    /* legacy compat */
+    --paper:#0c1826; --paper2:#111f33;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Inter','Segoe UI',sans-serif;color:var(--ink);background:var(--dark);line-height:1.72}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.13;margin:0}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent)}
+
+  /* ── ШАПКА ── */
+  header.top{background:rgba(6,12,23,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--card-b);color:#fff;position:sticky;top:0;z-index:30}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+  .logo svg{display:block;filter:drop-shadow(0 0 8px rgba(201,168,76,.4))}
+  .logo .lt{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:16px}
+  .logo .lt small{display:block;font-size:9px;font-weight:600;letter-spacing:3px;color:var(--gold);text-transform:uppercase;font-family:'Inter',sans-serif}
+  .score{background:var(--gold-g);border:1px solid rgba(201,168,76,.3);border-radius:24px;padding:6px 16px;font-size:13px;color:var(--gold-l);cursor:pointer;font-family:'Inter',sans-serif}
+  .score-info{position:absolute;right:12px;top:66px;max-width:260px;background:#0e1c30;color:var(--ink);border:1px solid var(--card-b);border-radius:14px;padding:14px 16px;font-size:13px;line-height:1.6;box-shadow:0 20px 60px rgba(0,0,0,.6);display:none;z-index:40}
+  .score-info.show{display:block}
+
+  /* ── HERO — СТАНДАРТ (не менять): 3D-сцена сверху, текст отдельным блоком ниже ── */
+  .hero-scene{position:relative;height:52vh;min-height:300px;max-height:520px;overflow:hidden;background:linear-gradient(160deg,#0a1e3a 0%,#1a3a6a 55%,#0d2240 100%)}
+  .hero-scene canvas.scene,.hero-scene img.scene{width:100%;height:100%;display:block;object-fit:cover}
+  .scene-caption{background:#060d18;padding:11px 0 12px}
+  .scene-caption .wrap{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+  .scene-cap{font-size:13.5px;line-height:1.6;color:var(--muted);border-left:2px solid rgba(201,168,76,.4);padding-left:14px;flex:1 1 420px}
+  .scene-hint{flex:0 0 auto;font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.4px;color:#e4c97a;
+    background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.34);border-radius:24px;padding:7px 16px;font-weight:600}
+  .hero-lead{background:linear-gradient(180deg,#0c1826 0%,#060c17 100%);color:#fff;padding:28px 0 38px}
+  .hero-lead .museum{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase;font-weight:700;font-family:'Inter',sans-serif;margin-bottom:12px;opacity:.9}
+  .hero-lead .who{font-family:'Inter',sans-serif;font-size:clamp(13px,3vw,15px);letter-spacing:.4px;color:var(--accent-l,#7dc8ff);margin-bottom:10px}
+  .hero-lead .who i{font-style:normal;color:#7893ab;font-weight:400}
+  .hero-lead h1{color:#fff;font-size:56px;font-weight:900;line-height:1.04;margin-bottom:16px}
+  .hero-lead .hook{color:#b8ccde;font-size:19px;max-width:580px;margin-bottom:28px;line-height:1.65;font-weight:400}
+  .hero-lead .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+  @media(max-width:680px){.hero-lead h1{font-size:34px}.hero-lead .hook{font-size:16px}
+    .hero-scene{height:34vh;min-height:230px;max-height:300px}
+    .scene-caption .wrap{flex-direction:column;gap:9px}
+    .scene-hint{order:-1;align-self:flex-start;font-size:11.5px;padding:6px 13px}
+    .scene-cap{font-size:12.8px;flex:1 1 auto}}
+  .date-chip{display:inline-block;background:var(--gold-g);border:1px solid rgba(201,168,76,.35);color:var(--gold);font-weight:700;padding:6px 18px;border-radius:24px;font-size:12px;margin-bottom:16px;font-family:'Inter',sans-serif;letter-spacing:.5px}
+
+  /* ── НАВИГАЦИЯ ДНЯ ── */
+  .daynav{position:sticky;top:64px;z-index:25;background:rgba(6,12,23,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--card-b)}
+  .daynav .wrap{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+  .daynav::-webkit-scrollbar{display:none}
+  .daynav a{flex:0 0 auto;padding:14px 20px;font-size:11px;font-weight:700;font-family:'Inter',sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap;letter-spacing:1.5px;text-transform:uppercase;border-bottom:2px solid transparent;transition:.18s}
+  .daynav a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+
+  /* ── СЕКЦИИ ── */
+  section.block{padding:64px 0;border-bottom:1px solid var(--line);scroll-margin-top:130px}
+  .kicker{font-size:10px;text-transform:uppercase;letter-spacing:3.5px;color:var(--gold);font-weight:700;font-family:'Inter',sans-serif;margin-bottom:8px}
+  section.block h2{font-size:34px;color:#fff;margin-bottom:10px}
+  p{margin:14px 0;color:var(--ink)}
+  .pull{background:var(--gold-g);border-left:3px solid var(--gold);padding:18px 22px;border-radius:0 14px 14px 0;font-style:italic;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-size:20px;line-height:1.5;margin:26px 0}
+
+  /* ── КНОПКИ ── */
+  .btn{cursor:pointer;border:none;border-radius:12px;padding:14px 26px;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;background:var(--accent2);color:#fff;transition:.18s;letter-spacing:.2px}
+  .btn:hover{filter:brightness(1.18)}
+  .btn.ghost{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid var(--card-b)}
+  .btn.ghost:hover{background:rgba(255,255,255,.11);border-color:rgba(255,255,255,.2)}
+  .btn.gold{background:linear-gradient(135deg,var(--gold),#b8882b);color:#1a0f00;box-shadow:0 4px 20px rgba(201,168,76,.25)}
+  .btn.gold:hover{filter:brightness(1.1);box-shadow:0 6px 28px rgba(201,168,76,.4)}
+  .btn:active{transform:translateY(1px)}
+  .pulse{animation:pulse .9s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+
+  /* ── КАРТОЧКИ ── */
+  .card{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:20px 22px;margin:16px 0;backdrop-filter:blur(6px)}
+
+  /* ── КВИЗ ── */
+  .opt{display:block;width:100%;text-align:left;background:rgba(255,255,255,.04);border:1px solid var(--card-b);border-radius:12px;padding:13px 16px;margin:8px 0;cursor:pointer;font-size:15px;color:var(--ink);font-family:'Inter',sans-serif;transition:.16s}
+  .opt:hover{border-color:var(--accent);background:rgba(45,140,191,.08)}
+  .opt.correct{background:rgba(40,120,60,.18);border-color:#3f9b52;color:#7ed4a0;font-weight:600}
+  .opt.wrong{background:rgba(180,40,40,.13);border-color:#c0453f;color:#f08080}
+  .exp{margin-top:10px;font-size:14px;background:var(--gold-g);border-radius:10px;padding:12px 14px;display:none;color:var(--gold-l)}
+  .exp.show{display:block}
+
+  /* ── ИТОГ ДНЯ ── */
+  .day-result{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:22px 24px;max-width:460px}
+  .dr-rank{font-family:'Playfair Display',Georgia,serif;font-size:28px;color:var(--gold-l);font-weight:700}
+  .dr-score{font-size:16px;margin:4px 0 12px;color:var(--ink)}.dr-score span{color:var(--muted);font-size:14px}
+  .dr-bar{height:8px;background:rgba(255,255,255,.08);border-radius:6px;overflow:hidden}
+  .dr-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent2),var(--gold));transition:width .6s cubic-bezier(.2,.7,.2,1)}
+  .dr-note{margin-top:12px;font-size:14px;color:var(--muted)}
+
+  /* ── РЕКЛАМНЫЕ СЛОТЫ ── */
+  .ad-slot{position:relative;margin:26px 0;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.1);border-radius:14px;min-height:88px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px}
+  .ad-slot .lbl{position:absolute;top:7px;right:12px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.15);font-family:'Inter',sans-serif}
+  .ad-slot .ph-txt{font-size:12px;max-width:80%;color:rgba(255,255,255,.18)}
+  .ad-slot.billboard{min-height:108px}
+  .adband{background:transparent;border-bottom:none}
+
+  footer{padding:40px 0 80px;color:rgba(255,255,255,.2);font-size:12px;text-align:center;font-family:'Inter',sans-serif;letter-spacing:.5px}
+  .crumbs{background:rgba(6,12,23,.6);border-bottom:1px solid var(--card-b);font-family:'Inter',sans-serif;font-size:12.5px}
+  .crumbs .wrap{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
+  .crumbs a{color:var(--gold-l);text-decoration:none;white-space:nowrap}
+  .crumbs a:hover{text-decoration:underline}
+  .crumbs .sep{color:var(--muted);opacity:.6}
+  .crumbs .here{color:var(--muted);white-space:nowrap}
+
+
+  /* ── ШАПКА: четыре строки по museum-core §6-бис ── */
+  header.top{display:block;text-align:center;padding:10px 12px 8px;height:auto;position:relative}
+  header.top .b1{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:15px;letter-spacing:.5px;color:#fff}
+  header.top .b2{font-size:11px;color:var(--muted);margin-top:2px}
+  header.top .b3{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:6px}
+  header.top .b4{font-size:12.5px;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-style:italic}
+  header.top .score{position:absolute;right:12px;top:10px}
+  .daynav{top:0}
+  .hero-scene{background:#2a0c10;height:38vh;min-height:250px;max-height:400px}
+  @media(max-width:680px){.hero-lead h1{font-size:31px}}
+  .hero-scene img.scene{object-fit:cover;object-position:50% 50%}
+  .date-origin{font-size:13px;color:#9fb4c8;margin:-6px 0 12px;max-width:62ch}
+  .hero-lead .hook{color:#c6d8e8;max-width:62ch}
+  .hero-under{background:linear-gradient(180deg,#060d18,#060c17);padding:4px 0 22px}
+  .stamp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(125,200,255,.28);margin-top:14px}
+  .stamp>div{padding:11px 12px;border-left:1px solid rgba(125,200,255,.16);min-width:0}
+  .stamp>div:first-child{border-left:0}
+  .stamp .v{font-size:clamp(15px,3.4vw,21px);font-weight:700;color:#8fd3ff;line-height:1.1;overflow-wrap:anywhere}
+  .stamp .k{font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:#8fa5b9;margin-top:5px}
+  @media(max-width:600px){.stamp{grid-template-columns:repeat(2,minmax(0,1fr))}.stamp>div:nth-child(3){border-left:0}.stamp>div:nth-child(n+3){border-top:1px solid rgba(125,200,255,.16)}}
+
+  /* ── ЛЕНТА УДАРОВ (museum-inventions, вариант А; museum-core §5-бис) ── */
+  .udary{list-style:none;margin:18px 0 0;padding:0;counter-reset:u}
+  .udary>li{border-top:1px solid var(--line);padding:4px 0}
+  .udary details>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:34px 1fr;gap:10px;padding:12px 0;font-size:17px;line-height:1.55;color:var(--ink)}
+  .udary details>summary::-webkit-details-marker{display:none}
+  .udary details>summary::before{counter-increment:u;content:counter(u);font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:20px;color:var(--gold);line-height:1.3}
+  .udary .more-lbl{display:block;grid-column:2;font-size:12.5px;color:var(--gold-l);letter-spacing:.3px;margin-top:4px}
+  .udary .more-lbl::after{content:' ▾'}
+  .udary details[open] .more-lbl::after{content:' ▴'}
+  .udary details[open] .more-lbl .o{display:none}
+  .udary details:not([open]) .more-lbl .c{display:none}
+  .udary summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+  .udary .det{margin:0 0 14px 44px;padding:12px 16px;background:rgba(255,255,255,.035);border-left:2px solid rgba(201,168,76,.45);border-radius:0 10px 10px 0;font-size:15px;color:#d5e0ea}
+  .udary .det p{margin:8px 0}
+  .udary .tag{display:inline-block;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#1a0f00;background:var(--gold-l);border-radius:6px;padding:1px 7px;margin-right:6px}
+  .udary .find{border-left:3px solid var(--gold);padding-left:8px}
+  figure.fig{margin:18px 0}
+  figure.fig img{max-width:100%;height:auto;border-radius:10px;display:block}
+  figure.fig figcaption{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5}
+  .src-note{font-size:12px;color:#8fa5b9}
+
+  /* ── ТИГЕЛЬ АНОСОВА (главное предметное действие) ── */
+  .lab{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:18px 18px 20px;margin-top:14px}
+  .lab-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+  .lab-row .lbl{flex:0 0 100%;font-size:13px;color:var(--muted);letter-spacing:.3px}
+  .seg{cursor:pointer;border:1px solid var(--card-b);background:rgba(255,255,255,.04);color:var(--ink);border-radius:10px;padding:10px 14px;font:inherit;font-size:14.5px;min-height:44px}
+  .seg[aria-pressed="true"]{border-color:var(--gold);background:var(--gold-g);color:var(--gold-l);font-weight:600}
+  .seg:focus-visible,.btn:focus-visible,.opt:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .lab-stage{position:relative;margin-top:12px}
+  .lab-stage canvas{width:100%;height:auto;display:block;border-radius:10px;background:#1c2530}
+  .lab-cap{font-size:12px;color:#8fa5b9;margin-top:6px}
+  .lab-msg{margin-top:12px;font-size:15.5px;padding:12px 14px;border-radius:10px;background:rgba(255,255,255,.04);border-left:3px solid var(--card-b);min-height:48px}
+  .lab-msg.ok{border-left-color:#3f9b52;background:rgba(40,120,60,.14)}
+  .lab-msg.bad{border-left-color:#c0453f;background:rgba(180,40,40,.10)}
+  .lab-found{font-size:13px;color:var(--muted);margin-top:8px}
+  .lab-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  .micro{display:none;margin-top:14px;text-align:center}
+  .micro canvas{width:min(280px,80%);height:auto;border-radius:50%;border:6px solid #2b3642;box-shadow:0 0 0 2px rgba(201,168,76,.5)}
+  .micro.show{display:block}
+  .noscript-box{background:rgba(255,255,255,.04);border:1px dashed var(--card-b);border-radius:12px;padding:12px 16px;font-size:15px}
+
+  /* ── ГРАНИЦА ПЕРВЕНСТВА ── */
+  .border-box{background:rgba(45,140,191,.08);border:1px solid rgba(45,140,191,.3);border-radius:14px;padding:16px 18px}
+  .border-box b{color:#8fd3ff}
+  .ctx{width:100%;border-collapse:collapse;margin-top:14px;font-size:14.5px}
+  .ctx th,.ctx td{text-align:left;padding:9px 8px;border-top:1px solid var(--line);vertical-align:top}
+  .ctx th{color:var(--gold-l);font-weight:600;font-size:12.5px;letter-spacing:.5px}
+  .quiz-q{margin:18px 0 6px;font-weight:600}
+  .sources a{color:var(--gold-l)}
+  .sources li{margin:6px 0;font-size:14px;color:#c8d6e2}
+  @media(max-width:600px){header.top{padding:8px 64px 6px}header.top .score{top:8px;right:8px;padding:4px 10px;font-size:12px}header.top .b3{margin-top:3px}
+    .hero-scene{height:26vh;min-height:200px;max-height:260px}.date-origin{font-size:12px;margin:-8px 0 8px}.hero-lead{padding:18px 0 26px}.hero-lead .date-chip{margin-bottom:12px}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+</style>
+<meta name="description" content="Над тайной булата сдался даже Фарадей, а уральский инженер разгадал её, первым в мире положив сталь под микроскоп.">
+<link rel="canonical" href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-03jan-anosov.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Русская цивилизация">
+<meta property="og:title" content="Первым в мире посмотрел на сталь в микроскоп">
+<meta property="og:description" content="Над тайной булата сдался даже Фарадей, а уральский инженер разгадал её, первым в мире положив сталь под микроскоп.">
+<meta property="og:url" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-03jan-anosov.html">
+<meta property="og:image" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-03jan-anosov-kinzhal.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Первым в мире посмотрел на сталь в микроскоп", "description": "Над тайной булата сдался даже Фарадей, а уральский инженер разгадал её, первым в мире положив сталь под микроскоп.", "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-03jan-anosov.html", "inLanguage": "ru", "isPartOf": {"@type": "WebSite", "name": "Музей «Что изобрели русские первыми в мире»"}, "publisher": {"@type": "Organization", "name": "Русская цивилизация"}, "about": {"@type": "CreativeWork", "name": "Первым в мире посмотрел на сталь в микроскоп"}, "image": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-03jan-anosov-kinzhal.jpg"}</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="b1">Русская цивилизация</div>
+  <div class="b2">Первый цифровой музей достижений России · Цивилизация первенств — что Россия дала миру раньше всех</div>
+  <div class="b3">Что изобрели русские первыми в мире</div>
+  <div class="b4">365 изобретений. Все русские. Все первые</div>
+  <div class="score" id="scoreBox" title="Баллы знаний за этот день">⭐ <span id="score">0</span> / 100</div>
+</header>
+
+<nav class="crumbs" aria-label="Хлебные крошки"><div class="wrap">
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация</a>
+  <span class="sep">›</span>
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми в мире</a>
+  <span class="sep">›</span>
+  <span class="here">3 января · Аносов</span>
+</div></nav>
+
+<div class="hero-scene" id="hero">
+  <img class="scene" src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-03jan-anosov-kinzhal.jpg" data-source="https://commons.wikimedia.org/wiki/File%3A%D0%9A%D0%B8%D0%BD%D0%B6%D0%B0%D0%BB_%D0%B8%D0%B7_%D0%B0%D0%BD%D0%BE%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B1%D1%83%D0%BB%D0%B0%D1%82%D0%B0_%D1%83%D0%B7%D0%BE%D1%80%D1%87%D0%B0%D1%82%D0%BE%D0%B9_%D1%81%D1%82%D0%B0%D0%BB%D0%B8.jpg" data-license="CC BY-SA 1.0" width="1400" height="458" alt="Кинжал из аносовского булата, 1840 год: прямой клинок с долом, рукоять с золочёной насечкой, рядом ножны на красном бархате" fetchpriority="high">
+</div>
+
+<div class="scene-caption">
+  <div class="wrap">
+    <div class="scene-cap">Кинжал из аносовского булата, Златоуст, 1840. Музей артиллерии, Петербург. Фото G. Shuklin, CC BY-SA 1.0.</div>
+    <span class="scene-hint">Предмет · 1840</span>
+  </div>
+</div>
+
+<header class="hero-lead">
+  <div class="wrap">
+    <div class="date-chip">3 января · 1831</div>
+    <p class="date-origin">Дата условная: у открытия нет одного дня. Микроскоп — 1831, книга «О булатах» — 1841.</p>
+    <div class="who">Павел Аносов <i>· горный инженер, Златоуст</i></div>
+    <div class="museum">Музей «Что изобрели русские первыми в мире»</div>
+    <h1>Первым в мире посмотрел на сталь в микроскоп</h1>
+    <p class="hook">Над тайной булата сдался даже Фарадей, а уральский инженер разгадал её, первым в мире положив сталь под микроскоп.</p>
+    <div class="hero-btns">
+      <button class="btn gold" id="readBtn" type="button">Читать историю ↓</button>
+      <button class="btn ghost" id="listenBtn" type="button">🎧 Слушать аудиогид</button>
+    </div>
+  </div>
+</header>
+
+<div class="hero-under">
+  <div class="wrap">
+    <div class="stamp">
+      <div><div class="v">1831</div><div class="k">сталь под микроскопом</div></div>
+      <div><div class="v">10+ лет</div><div class="k">опытов до клинка</div></div>
+      <div><div class="v">10</div><div class="k">условий булата</div></div>
+      <div><div class="v">1841</div><div class="k">книга «О булатах»</div></div>
+    </div>
+  </div>
+</div>
+
+<nav class="daynav" aria-label="Разделы дня">
+  <div class="wrap">
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-03jan-anosov.html#story">Читать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-03jan-anosov.html#audioguide">Слушать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-03jan-anosov.html#games">Тигель</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-03jan-anosov.html#pervenstvo">Первенство</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-03jan-anosov.html#quiz">Викторина</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-03jan-anosov.html#calendar">Календарь</a>
+  </div>
+</nav>
+
+<section class="wrap" id="dokument" data-proof-block aria-label="Документ первенства"></section>
+
+<section class="block" id="audioguide"></section>
+
+<section class="block" id="story">
+  <div class="wrap">
+    <div class="kicker">История изобретения · 12 ударов</div>
+    <h2>Узор, который оказался строением стали</h2>
+    <p style="color:var(--muted);max-width:62ch">Читается подряд. Нажми на удар — откроется подробный разбор с источниками.</p>
+    <ol class="udary">
+      <li><details><summary><span>Европа веками покупала булатные клинки на Востоке и не умела их повторить: за лучший клинок в Азии платили по сто и больше червонцев.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Родина булата — Индия: оттуда вывозили слитки-«хлебцы» вуца, около 12,5 см в поперечнике и около 900 граммов весом. Слиток разрубали пополам, чтобы покупатель видел строение металла.</p>
+          <p>В 1779 году в Париже докладчик Общества поощрения национальной промышленности признал: европейцы «в конце концов оказались вынужденными получать все булатные клинки с востока».</p>
+          <p>Сам Аносов писал: «Азиатцы… охотно платят за лучшие клинки по 100 и более червонцев».</p>
+          <p><span class="tag">Предание</span>Рассказ о том, как Саладин булатом разрезал в воздухе шёлковый платок, — легенда, а не документ. Её пересказывают, чтобы объяснить славу булата.</p>
+          <p class="src-note">Источник: С. В. Истомин, «Самые знаменитые изобретатели России», 2000 (текст в библиотеке ИРНИТУ).</p>
+        </div></details></li>
+      <li><details><summary><span>Над секретом булата бились лучшие учёные Европы, среди них Майкл Фарадей, — и тайна не поддалась.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Булат изучали французы Клуэ, Бреан, Бертье, англичане Стодарт и Фарадей. Швед Ринман считал, что узор получается только сваркой стали и железа разной твёрдости. Бертье принимал за булат хромистую сталь.</p>
+          <p>Даже имитация, похожая на булат лишь внешне, тогда считалась серьёзным достижением.</p>
+          <p class="src-note">Источник: С. В. Истомин, 2000.</p>
+        </div></details></li>
+      <li><details><summary><span>Рано осиротевший мальчик попал в Горный кадетский корпус, а к тридцати годам уже управлял Златоустовской оружейной фабрикой.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <figure class="fig" style="max-width:220px;float:right;margin:4px 0 10px 16px">
+            <img src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-03jan-anosov-portret.jpg" data-source="https://commons.wikimedia.org/wiki/File%3A%D0%90%D0%BD%D0%BE%D1%81%D0%BE%D0%B2_%D0%9F.%D0%9F._%D0%93%D0%BE%D1%80%D0%BD%D1%8B%D0%B9_%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB_1914.jpg" data-license="Public domain" width="420" height="556" loading="lazy" alt="Павел Аносов в мундире горного ведомства, портрет 1844 года">
+            <figcaption>П. П. Аносов. Портрет работы Е. С. Абабкова, 1844. Воспроизведён в «Горном журнале», 1914. Общественное достояние.</figcaption>
+          </figure>
+          <p>Павел Петрович Аносов родился 29 июня 1796 года в Твери (так у Президентской библиотеки; в других биографиях — 1797 год и Петербург). Рано осиротев, рос в семье родственника. В 1810 году его определили в Горный кадетский корпус.</p>
+          <p>В 1817 году он приехал на Златоустовский казённый завод техником для поручений, в 1819-м стал смотрителем отделения «украшенного оружия», в декабре 1821-го — помощником управляющего, в ноябре 1824-го — управляющим оружейной фабрикой.</p>
+          <p class="src-note">Источники: Президентская библиотека имени Б. Н. Ельцина; С. В. Истомин, 2000.</p>
+          <div style="clear:both"></div>
+        </div></details></li>
+      <li class="find"><details><summary><span>Немецкий тигель стоил 25 рублей золотом — Аносов слепил свой из уральской глины с толчёным углём за 40–50 копеек.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p><span class="tag">Находка дня</span>Тигель — глиняный сосуд, в котором плавят сталь. Считалось, что хорошие тигли умеют делать только за границей. Аносов взял местную огнеупорную глину, смешал с мелко истолчённым древесным углём, высушил и обжёг. Его тигли выдерживали плавку стали и золота и обходились примерно в пятьдесят раз дешевле привозных.</p>
+          <p>Дешёвые тигли и позволили ставить опыты сотнями: без них десятилетний поиск булата разорил бы завод.</p>
+          <p class="src-note">Источник: С. В. Истомин, 2000.</p>
+        </div></details></li>
+      <li><details><summary><span>В 1831 году он первым в мире положил сталь под микроскоп — англичанин Генри Сорби сделает это только через три десятилетия.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>О микроскопе 1831 года Аносов сам пишет в книге «О булатах». С этого начался микроскопический анализ металлов — сегодня без него не выпускают ни рельсы, ни турбинные лопатки.</p>
+          <p>Честь начала металлографии долго отдавали Сорби, который взялся за микроисследования стали в 1860-х. Граница нашего первенства узкая и точная: не булат, а метод — первое исследование строения стали под микроскопом.</p>
+          <p class="src-note">Источники: Президентская библиотека («первый применил для исследования стали микроскоп»); С. В. Истомин, 2000.</p>
+        </div></details></li>
+      <li><details><summary><span>Он доказал: узор булата — не рисунок кузнеца, а видимое глазу строение самого металла.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Аносов разделил булаты на настоящие и ложные. Ложный — узор наведён на поверхность рисовкой и травлением. Сварочный — узор внутри, но получен многократной сваркой полос. Настоящий — узор рождается при плавке и остывании и после каждой полировки проявляется снова.</p>
+          <p>Строение, писал он, зависит от состава, способа плавки, условий затвердевания и ковки. Для самых прочных клинков он назвал лучшими сетчатый и коленчатый узор.</p>
+          <p class="src-note">Источник: П. П. Аносов, «О булатах», 1841, по изложению С. В. Истомина, 2000.</p>
+        </div></details></li>
+      <li><details><summary><span>Больше десяти лет опытов: кремний, марганец, хром, титан, золото, платина и даже алмаз — всё шло в тигель.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Опыты начались в 1828 году. Приложение к книге описывает плавки 1828–1839 годов. Своё дело Аносов сравнивал с «океаном, который надлежало переплывать многие годы, не приставая к берегу».</p>
+          <p>Лучшей присадкой для получения углеродистой булатной стали он признал графит.</p>
+          <p class="src-note">Источники: Президентская библиотека (начало опытов — 1828); С. В. Истомин, 2000; Златоустовская ЦБС, «Научное исследование П. П. Аносовым булатной стали».</p>
+        </div></details></li>
+      <li><details><summary><span>В 1838 году он выковал первый клинок русского булата — и перестал называть сталь азиатскими именами.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Аносов отказался от старых названий «вуц», «табан», «кара-табан», «шам» и ввёл своё — «русский булат». По виду он делил его на полосатый, струистый, волнистый, сетчатый и коленчатый.</p>
+          <p>Златоустовские мастера выковывали из булата сабли и кинжалы. Кинжал 1840 года на обложке этой страницы — из той самой стали.</p>
+          <p class="src-note">Источники: Президентская библиотека (первый булатный клинок — 1838); С. В. Истомин, 2000; Военно-исторический музей артиллерии — предмет на обложке.</p>
+        </div></details></li>
+      <li><details><summary><span>Секрет он не спрятал: в 1841 году напечатал всё, от сорта угля до медленного остывания тигля, — книгу сразу перевели на немецкий и французский.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Десять условий «совершенного булата» по Аносову: лучший уголь, «как, например, чистый сосновый»; печь из самых огнеупорных кирпичей; тигли без трещин; лучшее железо; чистый самородный графит; пожжённый кварц или доломит; сильнейший жар; наибольшее время плавления; медленное охлаждение тигля; наименьшее нагревание при ковке.</p>
+          <p>Три из них ты проверишь сам в тигле ниже.</p>
+          <p class="src-note">Источник: П. П. Аносов, «О булатах», 1841, цитата по С. В. Истомину, 2000.</p>
+        </div></details></li>
+      <li><details><summary><span>Отдельный запрет его инструкции — перегреть булат при ковке: от лишнего жара узор теряется.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Аносов требовал, чтобы при проковке «ни один нагрев не был оставлен без внимания и точного доведения до степени жара, при которой узор теряется». Рецепт был не только в тигле, но и в руке кузнеца.</p>
+          <p class="src-note">Источник: П. П. Аносов, «О булатах», 1841, цитата по С. В. Истомину, 2000.</p>
+        </div></details></li>
+      <li><details><summary><span>Попутно он первым в России применил газовую цементацию: насыщал сталь углеродом из печных газов, без засыпки углём.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Веками считалось, что для науглероживания железо должно касаться угля. Аносов показал, что печные газы с большим содержанием углерода делают это не хуже. Позже этот приём разошёлся по машиностроительным заводам.</p>
+          <figure class="fig" style="max-width:320px">
+            <img src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-03jan-anosov-zlatoust.jpg" data-source="https://commons.wikimedia.org/wiki/File%3AZlatoustFactory1850.jpg" data-license="Public domain" width="300" height="209" loading="lazy" alt="Гравюра: Златоустовский завод у подножия горы, дымят трубы, вокруг деревянные дома">
+            <figcaption>Златоустовский завод с горы Косотур. Гравюра середины XIX века. Общественное достояние.</figcaption>
+          </figure>
+          <p class="src-note">Источник: С. В. Истомин, 2000. Истомин пишет «впервые в мире»; второго независимого источника под мировую границу у нас нет, поэтому на странице — «первым в России».</p>
+        </div></details></li>
+      <li><details><summary><span>Генерала-металлурга свалил буран: возок опрокинулся, и Аносов часами пролежал в снегу под адъютантом и чемоданами.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>В 1847 году Аносова назначили начальником Алтайских заводов, затем томским гражданским губернатором. В начале 1851 года он ехал из Томска в Омск встречать сенатора Анненкова и не доехал восемнадцати вёрст.</p>
+          <p>Дочь, Лариса Павловна, вспоминала: возок наехал на сугроб и опрокинулся, Аносов выпал, сверху упали адъютант и чемоданы. Их нашли через несколько часов. Вскоре начались нарывы в горле. Павел Петрович Аносов умер в Омске 13 (25) мая 1851 года.</p>
+          <p class="src-note">Источник: воспоминания Л. П. Аносовой по книге С. В. Истомина, 2000; некролог в «Санкт-Петербургских ведомостях», 1851.</p>
+        </div></details></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="games">
+  <div class="wrap">
+    <div class="kicker">Главное действие · модель</div>
+    <h2>Тигель Аносова: сварить булат с узором</h2>
+    <p style="max-width:62ch">Три условия из десяти, которые Аносов напечатал в 1841 году. Выбери, что положить в тигель, как ему остывать и как ковать слиток. Узор выйдет только при верном сочетании. На каждый неверный ход объясним, что пошло не так.</p>
+    <div class="lab" id="lab">
+      <div class="lab-row" role="group" aria-labelledby="lg1"><span class="lbl" id="lg1">1. Что добавить к железу в тигель</span>
+        <button class="seg" type="button" data-k="add" data-v="none" aria-pressed="true">Ничего</button>
+        <button class="seg" type="button" data-k="add" data-v="graphite" aria-pressed="false">Чистый графит</button>
+      </div>
+      <div class="lab-row" role="group" aria-labelledby="lg2"><span class="lbl" id="lg2">2. Как остывает тигель</span>
+        <button class="seg" type="button" data-k="cool" data-v="fast" aria-pressed="true">Быстро — вынуть из печи</button>
+        <button class="seg" type="button" data-k="cool" data-v="slow" aria-pressed="false">Медленно — вместе с печью</button>
+      </div>
+      <div class="lab-row" role="group" aria-labelledby="lg3"><span class="lbl" id="lg3">3. Как ковать слиток</span>
+        <button class="seg" type="button" data-k="forge" data-v="hot" aria-pressed="true">Добела — так мягче</button>
+        <button class="seg" type="button" data-k="forge" data-v="low" aria-pressed="false">Наименьшим жаром</button>
+      </div>
+      <div class="lab-btns">
+        <button class="btn gold" type="button" id="labGo">Сварить и выковать</button>
+        <button class="btn ghost" type="button" id="labReset">Начать заново</button>
+      </div>
+      <div class="lab-stage">
+        <canvas id="labCv" width="640" height="220" role="img" aria-label="Поверхность протравленного слитка"></canvas>
+        <div class="lab-cap">Модель, а не снимок: рисунок строится программой по правилам из книги Аносова.</div>
+      </div>
+      <div class="lab-msg" id="labMsg" aria-live="polite">Слиток ещё не сварен. Выбери три условия и нажми «Сварить и выковать».</div>
+      <div class="lab-found" id="labFound">Найдено причин неудачи: 0 из 3.</div>
+      <div class="micro" id="micro">
+        <button class="btn ghost" type="button" id="microBtn">🔬 Посмотреть, как Аносов, — под микроскопом</button>
+        <div id="microView" hidden>
+          <canvas id="microCv" width="280" height="280" role="img" aria-label="Узор булата при увеличении"></canvas>
+          <p class="lab-cap">Увеличенный участок того же слитка. Светлые извилистые полосы — то, что Аносов назвал строением стали.</p>
+        </div>
+      </div>
+      <noscript><div class="noscript-box">Для тигля нужен JavaScript. Текстовая версия опыта: без графита углероду неоткуда взяться, выйдет мягкое железо без узора. Если тигель остынет быстро, строение металла не успеет сложиться в рисунок. Если ковать добела, узор, по словам Аносова, «теряется». Узорчатый булат выходит только так: графит, медленное остывание вместе с печью, ковка наименьшим жаром.</div></noscript>
+    </div>
+    <p class="src-note" style="margin-top:10px">Правила модели — условия 5, 9 и 10 из книги «О булатах» (1841). Объяснение, почему медленное остывание рождает узор, дано по современной металловедческой трактовке, изложенной у С. В. Истомина: узор — кристаллическое строение металла, которое зависит от условий затвердевания.</p>
+  </div>
+</section>
+
+<section class="block" id="pervenstvo">
+  <div class="wrap">
+    <div class="kicker">Проверка факта</div>
+    <h2>Что именно Аносов сделал первым</h2>
+    <div class="border-box">
+      <p style="margin-top:0"><b>Граница первенства:</b> первое в мире исследование внутреннего строения стали под микроскопом, 1831 год. Документ — собственная книга Аносова «О булатах» (1841).</p>
+      <p style="margin-bottom:0"><b>Чего здесь нет:</b> сам булат придумал не Аносов — узорчатую сталь варили в Индии за много веков до него. Первенство Аносова — в методе: он первым прочёл строение металла и первым описал, как получить булат по правилам, а не по тайному рецепту.</p>
+    </div>
+    <table class="ctx">
+      <thead><tr><th scope="col">Кто</th><th scope="col">Что</th><th scope="col">Когда</th></tr></thead>
+      <tbody>
+        <tr><td>Мастера Индии</td><td>Слитки булата-вуца, секрет не записан</td><td>за века до XIX</td></tr>
+        <tr><td>Павел Аносов, Россия</td><td>Сталь под микроскопом; книга «О булатах» с условиями плавки</td><td>1831; 1841</td></tr>
+        <tr><td>Генри Сорби, Англия</td><td>Микроскопическое исследование стали</td><td>1860-е</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="block" id="quiz">
+  <div class="wrap">
+    <div class="kicker">Проверь себя · 5 вопросов</div>
+    <h2>Викторина</h2>
+    <p style="color:var(--muted);max-width:62ch">На каждый вопрос — одна попытка. После ответа покажем объяснение.</p>
+    <div id="quizBox"></div>
+    <noscript><div class="noscript-box">Для викторины нужен JavaScript. Ответы: 1 — исследовал строение стали под микроскопом; 2 — 25 рублей золотом; 3 — перегрев при ковке; 4 — 1841 год; 5 — Индия.</div></noscript>
+  </div>
+</section>
+
+<section class="block" id="result">
+  <div class="wrap">
+    <h2 style="margin-bottom:6px">Итог дня</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Тигель, три причины неудачи, микроскоп и викторина вместе дают 100 баллов. Прогресс не сохраняется: перезагрузка страницы начинает день заново.</p>
+    <div class="day-result">
+      <div class="dr-score" id="dayTxt">0 / 100 · звание: Гость дня</div>
+      <div class="dr-bar"><i id="dayBar" style="width:0%"></i></div>
+      <div class="dr-note">Свари булат, найди все три причины неудачи, загляни в микроскоп и ответь на вопросы.</div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="sources">
+  <div class="wrap">
+    <div class="kicker">Источники</div>
+    <h2>На чём стоит страница</h2>
+    <ul class="sources">
+      <li><a href="https://www.prlib.ru/Great_Russia/outstanding_scientists_XIX/Anosov" rel="noopener" target="_blank">Президентская библиотека имени Б. Н. Ельцина · «Павел Петрович Аносов (1796–1851)»</a>: даты жизни, начало опытов (1828), первый булатный клинок (1838), микроскоп.</li>
+      <li><a href="https://library.istu.edu/hoe/personalia/anosov.pdf" rel="noopener" target="_blank">С. В. Истомин. «Самые знаменитые изобретатели России». М.: Вече, 2000 — глава об Аносове (PDF, библиотека ИРНИТУ)</a>: тигли, десять условий, цитаты из «О булатах», газовая цементация, обстоятельства смерти.</li>
+      <li><a href="https://blog.zlatcbs.ru/istoriya-goroda/34-nauchnoe-isledovanie-pp-anosovym-bulatnoj-stali" rel="noopener" target="_blank">Златоустовская ЦБС · «Научное исследование П. П. Аносовым булатной стали»</a>: десять лет работы, графит как присадка, микроскоп 1831 года.</li>
+      <li>Изображения: <a href="https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B8%D0%BD%D0%B6%D0%B0%D0%BB_%D0%B8%D0%B7_%D0%B0%D0%BD%D0%BE%D1%81%D0%BE%D0%B2%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D0%B1%D1%83%D0%BB%D0%B0%D1%82%D0%B0_%D1%83%D0%B7%D0%BE%D1%80%D1%87%D0%B0%D1%82%D0%BE%D0%B9_%D1%81%D1%82%D0%B0%D0%BB%D0%B8.jpg" rel="noopener" target="_blank">кинжал 1840 года (George Shuklin, CC BY-SA 1.0)</a>, <a href="https://commons.wikimedia.org/wiki/File:%D0%90%D0%BD%D0%BE%D1%81%D0%BE%D0%B2_%D0%9F.%D0%9F._%D0%93%D0%BE%D1%80%D0%BD%D1%8B%D0%B9_%D0%B6%D1%83%D1%80%D0%BD%D0%B0%D0%BB_1914.jpg" rel="noopener" target="_blank">портрет 1844 года (общественное достояние)</a>, <a href="https://commons.wikimedia.org/wiki/File:ZlatoustFactory1850.jpg" rel="noopener" target="_blank">гравюра Златоустовского завода (общественное достояние)</a>.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="calendar">
+  <div class="wrap">
+    <h2 style="margin-bottom:6px">Календарь изобретений</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Выбери любой день — узнаешь, что русские сделали первыми в мире. Листай месяцы стрелками.</p>
+    <div id="calbox"></div>
+  </div>
+</section>
+
+<section class="block kd" id="kuda-dalshe">
+  <div class="wrap">
+    <div class="kd-kicker">Куда дальше</div>
+    <h2>Музей продолжается</h2>
+    <div class="kd-grid">
+      <div class="kd-card main"><span class="kd-lbl">Следующий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-04jan-pilchikov.html">4 января — Первое в мире радиоуправление <span class="kd-arr">→</span></a>
+        <p>Пильчиков взорвал заряд из другого конца зала, не прикоснувшись к нему.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Предыдущий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-02jan-luna1.html">2 января — «Луна-1», первая межпланетная станция <span class="kd-arr">→</span></a>
+        <p>Она промахнулась мимо Луны — и первой навсегда ушла из притяжения Земли.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Весь музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми <span class="kd-arr">→</span></a>
+        <p>Все изобретения — по залам и по дням года.</p></div>
+      <div class="kd-card main"><span class="kd-lbl">Город-музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация <span class="kd-arr">→</span></a>
+        <p>Все музеи проекта на одной карте.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div class="slog">Цивилизация первенств — что Россия дала миру раньше всех</div>
+  Русская цивилизация · «Что изобрели русские первыми в мире»</div></footer>
+
+<script>
+/* ── СЧЁТ ── шкала из 100 держит assets/museum-score.js; здесь только реестр наград.
+   тигель 30 + микроскоп 5 + три причины неудачи 3×5 + викторина 5×10 = 100. */
+window.MUSEUM_SCORE = {awards:{lab:30, micro:5, why0:5, why1:5, why2:5, q:[5,10]},
+  ranks:[[100,'Мастер русского булата'],[70,'Знаток стали'],[40,'Подмастерье'],[0,'Гость дня']]};
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-score.js"></script>
+<script>
+(function(){
+  var $ = function(id){return document.getElementById(id);};
+  $('readBtn').onclick = function(){ $('story').scrollIntoView({behavior:'smooth'}); };
+  $('listenBtn').onclick = function(){ $('audioguide').scrollIntoView({behavior:'smooth'}); };
+
+  /* ── ТИГЕЛЬ ── детерминированная модель: одинаковые условия дают одинаковый рисунок
+     на любой ширине (холст фиксированного размера 640×220, CSS только масштабирует). */
+  var st = {add:'none', cool:'fast', forge:'hot'};
+  var found = {};
+  var W = 640, H = 220;
+  function rng(seed){ return function(){ seed = (seed*1664525 + 1013904223) >>> 0; return seed/4294967296; }; }
+  var R = rng(1831), P = [];
+  for (var i=0;i<24;i++) P.push([R()*W, R()*H, 0.6+R()*1.4, R()*6.28]);
+  function field(x,y){               // извилистое поле для узора
+    var v = 0;
+    for (var i=0;i<P.length;i++){ var dx=x-P[i][0], dy=y-P[i][1]; v += Math.sin(Math.sqrt(dx*dx+dy*dy)*0.045*P[i][2] + P[i][3]); }
+    return v + Math.sin(x*0.02 + Math.sin(y*0.03)*2.2)*2;
+  }
+  function paint(cv, kind, zoom){
+    var c = cv.getContext('2d'), w = cv.width, h = cv.height, img = c.createImageData(w,h), d = img.data;
+    var n = rng(7);
+    for (var y=0;y<h;y++) for (var x=0;x<w;x++){
+      var k=(y*w+x)*4, g=n()*14, r,gg,b;
+      var fx = zoom ? 250 + x/4 : x, fy = zoom ? 80 + y/4 : y;
+      if (kind === 'iron'){ r=gg=b=170+g; }
+      else if (kind === 'plain'){ r=gg=b=112+g; b+=6; }
+      else {
+        var f = field(fx,fy), wave = 0.5 + 0.5*Math.sin(f*2.4 + Math.sin(fy*0.05)*0.8);
+        var t = wave*wave*(3-2*wave);                  // плавный переход, без резких полос
+        var amp = kind === 'faded' ? 0.15 : 1;
+        var base = 78 + g*0.7;
+        r = base + t*95*amp; gg = base + t*92*amp + 3; b = base + t*84*amp + 10;
+      }
+      d[k]=r; d[k+1]=gg; d[k+2]=b; d[k+3]=255;
+    }
+    c.putImageData(img,0,0);
+  }
+  function blank(){ var c=$('labCv').getContext('2d'); c.fillStyle='#1c2530'; c.fillRect(0,0,W,H);
+    c.fillStyle='#8fa5b9'; c.font='16px Inter, sans-serif'; c.textAlign='center'; c.fillText('Тигель пуст', W/2, H/2); }
+  function setFound(){ var n=Object.keys(found).length; $('labFound').textContent='Найдено причин неудачи: '+n+' из 3.'; }
+  function msg(t, cls){ var m=$('labMsg'); m.className='lab-msg'+(cls?' '+cls:''); m.textContent=t; }
+  var segs = document.querySelectorAll('#lab .seg');
+  for (var s=0;s<segs.length;s++) segs[s].addEventListener('click', function(){
+    var k=this.getAttribute('data-k'), v=this.getAttribute('data-v');
+    st[k]=v;
+    var same=document.querySelectorAll('#lab .seg[data-k="'+k+'"]');
+    for (var j=0;j<same.length;j++) same[j].setAttribute('aria-pressed', same[j]===this ? 'true':'false');
+  });
+  $('labGo').onclick = function(){
+    var cv=$('labCv');
+    if (st.add==='none'){
+      paint(cv,'iron'); found.c=1; award('why0',5);
+      msg('Узора нет: без графита углероду в тигле взяться неоткуда — вышло мягкое железо, а не булат. Аносов клал «чистый самородный графит» (условие 5).','bad');
+    } else if (st.cool==='fast'){
+      paint(cv,'plain'); found.f=1; award('why1',5);
+      msg('Сталь получилась, а узора нет: тигель остыл слишком быстро, и строение металла не успело сложиться в рисунок. Условие 9 — «медленное охлаждение тигля».','bad');
+    } else if (st.forge==='hot'){
+      paint(cv,'faded'); found.h=1; award('why2',5);
+      msg('Узор в слитке был — и пропал в горне. Аносов требовал не доводить металл до «степени жара, при которой узор теряется» (условие 10).','bad');
+    } else {
+      paint(cv,'bulat'); award('lab',30);
+      msg('Булат! Графит, медленное остывание и ковка наименьшим жаром — ровно так, как записал Аносов. Светлый извилистый узор — строение самой стали.','ok');
+      $('micro').classList.add('show');
+    }
+    setFound();
+  };
+  $('labReset').onclick = function(){
+    st = {add:'none', cool:'fast', forge:'hot'};
+    for (var j=0;j<segs.length;j++){ var v=segs[j].getAttribute('data-v'); segs[j].setAttribute('aria-pressed', (v==='none'||v==='fast'||v==='hot')?'true':'false'); }
+    blank(); msg('Тигель очищен. Выбери три условия заново. Уже полученные баллы сохраняются и повторно не начисляются.');
+    $('micro').classList.remove('show'); $('microView').hidden = true;
+  };
+  $('microBtn').onclick = function(){ $('microView').hidden=false; paint($('microCv'),'bulat',true); award('micro',5); };
+  blank();
+
+  /* ── ВИКТОРИНА ── один ответ на вопрос; дистракторы сверены с источниками страницы. */
+  var Q = [
+    {q:'Что Аносов сделал первым в мире?', o:['Изобрёл булатную сталь','Исследовал строение стали под микроскопом','Первым стал плавить сталь в тигле'], a:1,
+     e:'Микроскоп на стали — 1831 год, об этом пишет сам Аносов. Булат варили в Индии за века до него, а тигельная плавка стали была известна и до Аносова: он её усовершенствовал.'},
+    {q:'Сколько стоил привозной тигель, который Аносов заменил своим?', o:['40–50 копеек','25 рублей золотом','100 червонцев'], a:1,
+     e:'Привозной — 25 рублей золотом, аносовский из уральской глины — 40–50 копеек. Сто и больше червонцев в Азии платили за лучший булатный клинок.'},
+    {q:'Что, по Аносову, губит узор булата при ковке?', o:['Слишком сильный нагрев','Медленное остывание','Чистый графит'], a:0,
+     e:'Он требовал «наименьшее нагревание при ковке»: от лишнего жара узор теряется. Медленное остывание тигля и чистый графит — наоборот, условия булата из его списка.'},
+    {q:'В каком году вышла книга «О булатах»?', o:['1831','1841','1851'], a:1,
+     e:'1841. В 1831 году Аносов впервые посмотрел на сталь в микроскоп, в 1851-м он умер в Омске.'},
+    {q:'Где родина булата?', o:['На Урале','В Индии','В Англии'], a:1,
+     e:'Родина булата — Индия, оттуда везли слитки-«хлебцы» вуца. Аносов вернул утраченный секрет и назвал свою сталь «русским булатом».'}
+  ];
+  var box = $('quizBox');
+  Q.forEach(function(it, qi){
+    var wrap = document.createElement('div');
+    var h = document.createElement('p'); h.className='quiz-q'; h.textContent=(qi+1)+'. '+it.q; wrap.appendChild(h);
+    var exp = document.createElement('div'); exp.className='exp'; exp.setAttribute('aria-live','polite');
+    var btns = it.o.map(function(txt, oi){
+      var b=document.createElement('button'); b.type='button'; b.className='opt'; b.textContent=txt;
+      b.onclick=function(){
+        if (wrap.dataset.done) return; wrap.dataset.done='1';
+        btns.forEach(function(x,xi){ x.disabled=true; if (xi===it.a) x.classList.add('correct'); });
+        if (oi===it.a){ award('q'+qi,10); exp.textContent='Верно. '+it.e; }
+        else { b.classList.add('wrong'); exp.textContent='Не совсем. '+it.e; }
+        exp.classList.add('show');
+      };
+      wrap.appendChild(b); return b;
+    });
+    wrap.appendChild(exp); box.appendChild(wrap);
+  });
+})();
+</script>
+<script>window.addEventListener("pageshow",function(e){if(e.persisted)location.reload();});</script>
+<script>window.MUSEUM_CHROME={
+  museum:{title:'Что изобрели русские первыми в мире',href:'index.html'},
+  share:{title:'Аносов первым в мире посмотрел на сталь в микроскоп — музей «Что изобрели русские первыми в мире»',
+         text:'Тайну булата не разгадал даже Фарадей, а уральский инженер разгадал. Что Россия дала миру раньше всех — день за днём.'},
+  prev:{href:'day-02jan-luna1.html',title:'2 января · «Луна-1»'},
+  next:{href:'day-04jan-pilchikov.html',title:'4 января · Радиоуправление'},
+  all:{href:'index.html',label:'Все изобретения'},
+  city:'../../index.html',
+  random:['day-01jan-cabletv.html','day-02jan-luna1.html','day-03jan-anosov.html','day-04jan-pilchikov.html','day-05jan-shukhov.html','day-08jan-icebreaker.html','day-09jan-blinov.html','day-30jan-kotelnikov.html']
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-chrome.js"></script>
+<script>window.MUSEUM_SUPPORT={museum:'Что изобрели русские первыми в мире'};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-support.js"></script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/calendar-izobreteniya.js"></script>
+<script>window.MUSEUM_CALENDAR_INITIAL='01-03';</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-calendar-month.js"></script>
+<script>window.MUSEUM_RETURN={riddle:{q:"Первым условием «совершенного булата» Аносов назвал «лучший уголь, дающий наименее шлаку». Какой уголь он привёл в пример?",a:"Чистый сосновый. Так в книге «О булатах» (1841): «Лучший уголь, дающий наименее шлаку, как, например, чистый сосновый».",src:"П. П. Аносов, «О булатах», 1841 — по книге С. В. Истомина «Самые знаменитые изобретатели России», 2000"}};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-return.js" data-museum="izobreteniya" data-day="01-03"></script>
+<script defer src="https://arabelthera-dot.github.io/rc-museum-preview/assets/analytics.js"></script>
+<script>window.MUSEUM_AUDIOGUIDE={
+  audioSrc:"audio-guide-anosov-ru.mp3",
+  durationLabel:"5 минут 34 секунд",
+  lead:"Голос ведёт по залу Павла Аносова: от булатного кинжала на красном бархате до микроскопа 1831 года и книги «О булатах». Семь остановок, на каждой — что искать глазами. Слушать можно фоном, пока читаешь статью ниже.",
+  stops:[
+    {t:0,mark:"0:00",title:"Клинок на красном бархате"},
+    {t:49,mark:"0:49",title:"Тайна, перед которой отступил Фарадей"},
+    {t:97,mark:"1:37",title:"Портрет и завод"},
+    {t:144,mark:"2:24",title:"Глиняный горшок за полтинник"},
+    {t:190,mark:"3:10",title:"Тысяча восемьсот тридцать первый"},
+    {t:237,mark:"3:57",title:"Узор — это строение"},
+    {t:287,mark:"4:47",title:"Книга без секретов"}
+  ],
+  transcript:[
+    "<p>«Кинжал 1840 года из Златоуста — русский булат. Веками Европа покупала такие клинки на Востоке и не умела их повторить; над тайной бились и Фарадей, и Стодарт, и Бертье».</p>",
+    "<p>«Павел Аносов пришёл на Златоустовский завод в 1817 году, а к 1824-му управлял оружейной фабрикой. Немецкий тигель стоил 25 рублей золотом — он слепил свой из уральской глины за 40–50 копеек, и опыты можно было ставить сотнями».</p>",
+    "<p>«В 1831 году Аносов первым в мире положил сталь под микроскоп; Генри Сорби сделает это в 1860-х. Первенство — не булат, а метод: с него начался микроскопический анализ металлов».</p>",
+    "<p>«Он доказал, что узор булата — строение самого металла, отделил настоящий булат от ложного и сварочного и в 1838 году выковал первый клинок русского булата».</p>",
+    "<p>«В 1841 году книга „О булатах“ открыла всем десять условий совершенного булата и сразу вышла на немецком и французском. Три из них можно проверить в тигле на этой странице».</p>"
+  ],
+  note:"Озвучено синтезом речи — временно, до записи голосом автора музея."
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-audioguide.js"></script>
+<script type="application/json" data-proof>
+{
+ "status": "found",
+ "claim_id": "rc:izobreteniya:anosov:claim-microscope",
+ "ours": {
+  "kind": "публикация",
+  "title": "П. П. Аносов. «О булатах» — «Горный журнал», 1841, кн. 2 (февраль), с. 5",
+  "date": "1841-02",
+  "holder": "Свердловская областная научная библиотека им. Белинского (электронная копия)",
+  "source_url": "https://elib.uraic.ru/handle/123456789/6559"
+ },
+ "rival": {
+  "name": "Генри Сорби, Англия",
+  "doc_title": "доклад о строении стали под микроскопом",
+  "date": "1864"
+ },
+ "gap_years": 23
+}
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-proof.js"></script>
+</body>
+</html>

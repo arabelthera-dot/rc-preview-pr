@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="ru" data-museum="inventions" data-fabric="instrument">
+<head><meta name="robots" content="noindex"><base href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>первая в мире межпланетная станция «Луна-1» — Русские первые в мире</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --dark:#060c17;--dark2:#0c1826;--surface:#111f33;
+    --card:rgba(255,255,255,.05);--card-b:rgba(255,255,255,.09);
+    --gold:#c9a84c;--gold-l:#e4c97a;--gold-g:rgba(201,168,76,.13);
+    --ink:#e8eef5;--muted:#7a9ab8;--line:rgba(255,255,255,.07);
+    --accent:#2d8cbf;--accent2:#1f6f8b;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Inter','Segoe UI',sans-serif;color:var(--ink);background:var(--dark);line-height:1.72}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.13;margin:0}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent)}
+  header.top{background:rgba(6,12,23,.88);backdrop-filter:blur(24px);border-bottom:1px solid var(--card-b);color:#fff;position:sticky;top:0;z-index:30}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+  .logo .lt{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:16px}
+  .logo .lt small{display:block;font-size:9px;font-weight:600;letter-spacing:3px;color:var(--gold);text-transform:uppercase;font-family:'Inter',sans-serif}
+  .score{background:var(--gold-g);border:1px solid rgba(201,168,76,.3);border-radius:24px;padding:6px 16px;font-size:13px;color:var(--gold-l);cursor:pointer;font-family:'Inter',sans-serif}
+  .hero{position:relative;height:52vh;min-height:280px;max-height:520px;overflow:hidden;background:linear-gradient(160deg,#0a1e3a 0%,rgb(18,56,96) 55%,#0d2240 100%)}
+  .scene-caption{background:#060d18;padding:11px 0 12px}
+  .scene-caption .wrap{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+  .scene-cap{font-size:13.5px;line-height:1.6;color:var(--muted,#8ea3b8);border-left:2px solid rgba(201,168,76,.4);padding-left:14px;flex:1 1 420px}
+  .hero-caption{background:#0c1826;border-bottom:1px solid var(--card-b);padding:10px 0}
+  .hero-year{font-family:'Inter',sans-serif;font-size:11px;font-weight:600;letter-spacing:.6px;color:var(--gold);line-height:1.4}
+  @keyframes yearFade{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+  .hero-particles{position:absolute;inset:0;pointer-events:none}
+  /* ── КАЛЕНДАРЬ ── */
+  .cal2{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:20px;max-width:520px}
+  .cal2-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+  .cal2-title{font-family:'Playfair Display',Georgia,serif;font-size:22px;color:var(--gold-l);font-weight:700}
+  .cal2-nav{width:40px;height:40px;border-radius:10px;border:1px solid var(--card-b);background:rgba(255,255,255,.05);color:var(--muted);font-size:13px;cursor:pointer;transition:.16s}
+  .cal2-nav:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-g)}
+  .cal2-dow{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:6px;font-size:10px;color:var(--muted);font-weight:700;font-family:'Inter',sans-serif;letter-spacing:1px;text-align:center}
+  .cal2-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+  .cal2-cell{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:10px;font-size:14px;color:rgba(255,255,255,.18);background:rgba(255,255,255,.02);border:1px solid transparent;cursor:default}
+  .cal2-cell.has{background:rgba(45,140,191,.12);color:var(--ink);font-weight:700;cursor:pointer;border-color:rgba(45,140,191,.22);position:relative}
+  .cal2-cell.has:hover{border-color:var(--gold);background:var(--gold-g);color:var(--gold)}
+  .cal2-cell.has::after{content:'';position:absolute;bottom:4px;width:4px;height:4px;border-radius:50%;background:var(--accent)}
+  .cal2-cell.sel{background:var(--gold);color:#1a0f00;border-color:var(--gold);font-weight:700}
+  .cal2-detail{margin-top:14px;background:var(--gold-g);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:12px 16px;font-size:14px;color:var(--ink)}
+  .hero-text{background:linear-gradient(180deg,#0c1826 0%,#060c17 100%);color:#fff;padding:28px 0 38px}
+  .hero-text .museum{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase;font-weight:700;font-family:'Inter',sans-serif;margin-bottom:12px;opacity:.9}
+  .hero-text h1{color:#fff;font-size:clamp(28px,6vw,52px);font-weight:900;line-height:1.06;margin-bottom:14px}
+  .hero-text .hook{color:#b8ccde;font-size:18px;max-width:580px;margin-bottom:26px;line-height:1.65}
+  .date-chip{display:inline-block;background:var(--gold-g);border:1px solid rgba(201,168,76,.35);color:var(--gold);font-weight:700;padding:6px 18px;border-radius:24px;font-size:12px;margin-bottom:14px;font-family:'Inter',sans-serif;letter-spacing:.5px}
+  .daynav{position:sticky;top:64px;z-index:25;background:rgba(6,12,23,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--card-b)}
+  .daynav .wrap{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+  .daynav a{flex:0 0 auto;padding:14px 20px;font-size:11px;font-weight:700;font-family:'Inter',sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap;letter-spacing:1.5px;text-transform:uppercase;border-bottom:2px solid transparent;transition:.18s}
+  .daynav a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+  section.block{padding:60px 0;border-bottom:1px solid var(--line);scroll-margin-top:130px}
+  .kicker{font-size:10px;text-transform:uppercase;letter-spacing:3.5px;color:var(--gold);font-weight:700;font-family:'Inter',sans-serif;margin-bottom:8px}
+  section.block h2{font-size:32px;color:#fff;margin-bottom:10px}
+  p{margin:14px 0;color:var(--ink)}
+  .pull{background:var(--gold-g);border-left:3px solid var(--gold);padding:18px 22px;border-radius:0 14px 14px 0;font-style:italic;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-size:19px;line-height:1.5;margin:24px 0}
+  .article{position:relative}
+  .article.collapsed .body{max-height:260px;overflow:hidden}
+  .article.collapsed .body:after{content:'';position:absolute;left:0;right:0;bottom:44px;height:110px;background:linear-gradient(transparent,var(--dark))}
+  .more{text-align:center;margin-top:16px}
+  .btn{cursor:pointer;border:none;border-radius:12px;padding:13px 24px;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;background:var(--accent2);color:#fff;transition:.18s}
+  .btn:hover{filter:brightness(1.18)}
+  .btn.ghost{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid var(--card-b)}
+  .btn.gold{background:linear-gradient(135deg,var(--gold),#b8882b);color:#1a0f00;box-shadow:0 4px 20px rgba(201,168,76,.25)}
+  .btn.gold:hover{filter:brightness(1.1)}
+  .card{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:20px 22px;margin:14px 0}
+  .opt{display:block;width:100%;text-align:left;background:rgba(255,255,255,.04);border:1px solid var(--card-b);border-radius:12px;padding:12px 16px;margin:8px 0;cursor:pointer;font-size:15px;color:var(--ink);font-family:'Inter',sans-serif;transition:.16s}
+  .opt:hover{border-color:var(--accent);background:rgba(45,140,191,.08)}
+  .opt.correct{background:rgba(40,120,60,.18);border-color:#3f9b52;color:#7ed4a0;font-weight:600}
+  .opt.wrong{background:rgba(180,40,40,.13);border-color:#c0453f;color:#f08080}
+  .exp{margin-top:10px;font-size:14px;background:var(--gold-g);border-radius:10px;padding:12px 14px;display:none;color:var(--gold-l)}
+  .exp.show{display:block}
+  .chip{cursor:pointer;background:rgba(255,255,255,.05);border:1px solid var(--card-b);border-radius:20px;padding:7px 16px;margin:4px 5px 4px 0;font-size:13px;display:inline-block;color:var(--muted);font-family:'Inter',sans-serif;transition:.16s}
+  .chip:hover{border-color:var(--gold);color:var(--gold)}
+  .msg{margin:8px 0;padding:12px 16px;border-radius:14px;max-width:88%;font-size:15px}
+  .msg.you{background:rgba(45,140,191,.18);border:1px solid rgba(45,140,191,.28);margin-left:auto;text-align:right;color:#a8d4f0}
+  .msg.inv{background:rgba(255,255,255,.05);border:1px solid var(--card-b);color:var(--ink)}
+  .fork-opt{background:var(--card);border:1px solid var(--card-b);border-radius:14px;padding:16px 18px;margin:10px 0;cursor:pointer;transition:.18s;font-size:15px}
+  .fork-opt:hover{border-color:var(--accent);background:rgba(45,140,191,.08)}
+  .fork-opt.chosen{border-color:var(--gold);background:var(--gold-g)}
+  .reveal{opacity:1;transform:translateY(16px);transition:.65s cubic-bezier(.2,.7,.2,1)}
+  .reveal.on{transform:none}
+  .ad-slot{position:relative;margin:24px 0;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.1);border-radius:14px;min-height:80px;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px}
+  .ad-slot .lbl{position:absolute;top:7px;right:12px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.15);font-family:'Inter',sans-serif}
+  .ad-slot .ph-txt{font-size:12px;max-width:80%;color:rgba(255,255,255,.18)}
+  footer{padding:40px 0 80px;color:rgba(255,255,255,.2);font-size:12px;text-align:center;font-family:'Inter',sans-serif;letter-spacing:.5px}
+  @media(max-width:600px){.hero h1{font-size:26px}.hero .hook{font-size:15px}}
+  .crumbs{background:rgba(6,12,23,.6);border-bottom:1px solid var(--card-b);font-family:'Inter',sans-serif;font-size:12.5px}
+  .crumbs .wrap{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
+  .crumbs a{color:var(--gold-l);text-decoration:none;white-space:nowrap}
+  .crumbs a:hover{text-decoration:underline}
+  .crumbs .sep{color:var(--muted);opacity:.6}
+  .crumbs .here{color:var(--muted);white-space:nowrap}
+</style>
+<link rel="stylesheet" href="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-theme.css">
+<!-- rc-meta:start -->
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="description" content="Первая в мире межпланетная станция «Луна-1». Она должна была упасть на Луну — но промахнулась.">
+  <link rel="canonical" href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-02jan-luna1.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Русская цивилизация">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="первая в мире межпланетная станция «Луна-1» — Русские первые в мире">
+  <meta property="og:description" content="Первая в мире межпланетная станция «Луна-1». Она должна была упасть на Луну — но промахнулась.">
+  <meta property="og:url" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-02jan-luna1.html">
+  <meta property="og:image" content="https://arabelthera-dot.github.io/rc-museum-preview/og/izobreteniya_day-02jan-luna1.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="первая в мире межпланетная станция «Луна-1» — Русские первые в мире">
+  <meta name="twitter:description" content="Первая в мире межпланетная станция «Луна-1». Она должна была упасть на Луну — но промахнулась.">
+  <meta name="twitter:image" content="https://arabelthera-dot.github.io/rc-museum-preview/og/izobreteniya_day-02jan-luna1.jpg">
+  <meta name="theme-color" content="#1a1410">
+  <link rel="icon" href="https://arabelthera-dot.github.io/rc-museum-preview/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://arabelthera-dot.github.io/rc-museum-preview/icon-192.png">
+  <link rel="apple-touch-icon" href="https://arabelthera-dot.github.io/rc-museum-preview/apple-touch-icon.png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "первая в мире межпланетная станция «Луна-1» — Русские первые в мире",
+  "description": "Первая в мире межпланетная станция «Луна-1». Она должна была упасть на Луну — но промахнулась.",
+  "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-02jan-luna1.html",
+  "image": "https://arabelthera-dot.github.io/rc-museum-preview/og/izobreteniya_day-02jan-luna1.jpg",
+  "inLanguage": "ru-RU",
+  "isAccessibleForFree": true,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Русская цивилизация",
+    "url": "https://arabelthera-dot.github.io/rc-museum-preview/",
+    "logo": "https://arabelthera-dot.github.io/rc-museum-preview/icon-512.png"
+  },
+  "isPartOf": {
+    "@type": "CollectionPage",
+    "name": "Что изобрели русские первыми в мире",
+    "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Русская цивилизация",
+    "url": "https://arabelthera-dot.github.io/rc-museum-preview/",
+    "logo": "https://arabelthera-dot.github.io/rc-museum-preview/icon-512.png"
+  }
+}
+  </script>
+  <!-- rc-meta:end -->
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">
+      <svg width="34" height="34" viewBox="0 0 48 48" aria-label="логотип">
+        <circle cx="24" cy="24" r="23" fill="#0f1e33" stroke="#c8a24a" stroke-width="2"/>
+        <path d="M24 10 L24 30 L12 30 Z" fill="#c8a24a"/>
+        <path d="M26 14 L36 30 L26 30 Z" fill="#c8a24a" opacity=".7"/>
+        <path d="M10 33 q14 6 28 0" fill="none" stroke="#c8a24a" stroke-width="2"/>
+      </svg>
+      <span class="lt">Русская цивилизация<small>первые в мире</small></span>
+    </a>
+    <div class="score" id="scoreBox">⭐ <span id="score">0</span> / 100</div>
+  </div>
+</header>
+<nav class="crumbs"><div class="wrap">
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация</a>
+  <span class="sep">›</span>
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми в мире</a>
+  <span class="sep">›</span>
+  <span class="here">2 января · Луна-1</span>
+</div></nav>
+
+
+<div class="hero">
+  <canvas id="heroCvs" class="hero-particles"></canvas>
+</div>
+<div class="hero-caption"><div class="wrap"><div class="hero-year">1959</div></div></div>
+<div class="scene-caption">
+  <div class="wrap"><div class="scene-cap">Анимация · дуга зонда от Земли мимо Луны к Солнцу — путь, которым «Мечта» ушла в межпланетное пространство. Не документальный кадр.</div></div>
+</div>
+<div class="hero-text">
+  <div class="wrap">
+    <div class="date-chip">2 января</div>
+    <div class="museum">Музей «Что изобрели русские первыми в мире»</div>
+    <h1>Первая в мире межпланетная станция «Луна-1»</h1>
+    <p class="hook">Она промахнулась мимо Луны на шесть тысяч километров — и стала первым телом, навсегда вырвавшимся из притяжения Земли.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap">
+      <button class="btn gold" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">Читать историю ↓</button>
+      <button class="btn ghost" onclick="document.getElementById('video').scrollIntoView({behavior:'smooth'})">▶ Смотреть видео</button>
+    </div>
+  </div>
+</div>
+
+<div class="wrap"><div class="ad-slot"><span class="lbl">Реклама</span><span class="ph-txt">Баннер-шапка — размещается здесь.</span></div></div>
+
+<nav class="daynav">
+  <div class="wrap">
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-02jan-luna1.html#story">Читать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-02jan-luna1.html#video">Видео</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-02jan-luna1.html#quiz">Викторина</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-02jan-luna1.html#fork">Развилка</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-02jan-luna1.html#chat-sec">Спросить</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-02jan-luna1.html#excursion">Экскурсия</a>
+  </div>
+</nav>
+
+<!-- ── ВИДЕО ── -->
+<section class="wrap" id="dokument" data-proof-block aria-label="Документ первенства"></section>
+
+<section class="block" id="video">
+  <div class="wrap">
+    <div class="kicker">Видео дня</div>
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap"><h2 style="margin:0">История в 90 секунд</h2><span style="background:var(--gold-g);color:var(--gold);border:1px solid rgba(201,168,76,.3);border-radius:20px;padding:3px 14px;font-size:12px;font-weight:600;font-family:'Inter',sans-serif" data-rc-video-field="izobreteniya/02jan-luna1:horizontal.sec" data-rc-video-suffix="сек">90 сек</span></div>
+    <p style="color:var(--muted);margin-top:0">Та же история кинематографическим роликом — закадровый нейроголос и атмосферная музыка.</p>
+    <video controls playsinline preload="none" poster="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/video/day-02jan-luna1-poster.jpg" data-rc-video="izobreteniya/02jan-luna1" data-rc-format="horizontal"
+      style="width:100%;aspect-ratio:16/9;background:#050c18;border-radius:14px;display:block;box-shadow:0 8px 40px rgba(0,0,0,.5)">
+      <source src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/video/day-02jan-luna1.mp4?v=1" type="video/mp4">
+      Ваш браузер не поддерживает видео.
+    </video>
+    <p style="font-size:13px;color:var(--muted);margin-top:10px">Закадровый голос — нейросеть Microsoft Azure Neural (ru-RU-DmitryNeural). Музыка — атмосферный дрон, генерация. Визуальный ряд — старт «Луны-1», промах мимо Луны, первая искусственная планета; часть кадров сгенерирована (Genosai).</p>
+  </div>
+</section>
+
+<section class="block" id="audioguide"></section>
+
+<!-- ── СТАТЬЯ ── -->
+<section class="block" id="story">
+  <div class="wrap">
+    <div class="kicker">История изобретения</div>
+    <h2>первая в мире межпланетная станция «Луна-1»</h2>
+    <div class="article collapsed" id="article">
+      <div class="body" id="articleBody">
+
+
+<p><b>2 января 1959 года, 16:41 по московскому времени.</b> С Байконура стартует ракета. На борту — металлический шар массой 361 килограмм, набитый приборами и маленьким вымпелом с советским гербом. Цель — Луна. Впервые в истории человечества рукотворный объект должен достичь другого небесного тела.</p>
+
+<p>Он не достиг. Прошёл мимо — на расстоянии примерно шести тысяч километров.</p>
+
+<p><b>Что это была за машина.</b> «Луна-1» — первый в мире космический аппарат, отправленный к другой планете. До неё всё, что запускали в космос, оставалось на орбите Земли или падало обратно. «Луна-1» впервые разогналась до второй космической скорости — 11,2 км/с — и вырвалась из земного притяжения навсегда. Это само по себе было мировым рекордом, даже без попадания в Луну.</p>
+
+<p><b>Что нашли по дороге.</b> Учёные ожидали обнаружить у Луны магнитное поле — как у Земли. Магнитометр «Луны-1» не нашёл ничего. Зато нашли кое-что неожиданное: непрерывный поток заряженных частиц, летящих от Солнца. Это и был солнечный ветер — явление, о существовании которого физики спорили. «Луна-1» измерила его впервые и поставила точку в споре.</p>
+
+<p><b>Промах или план?</b> До сих пор нет точного ответа: была ли траектория рассчитана на попадание, или запас топлива для коррекции намеренно не предусматривался. Часть историков считает, что «Луна-1» изначально могла лишь облететь Луну — технически попасть в неё тогда было почти невозможно. Так или иначе, она прошла мимо.</p>
+
+<p><b>Что стало с «Луной-1».</b> Пролетев мимо, аппарат вышел на орбиту вокруг Солнца — и стал первым в истории искусственным спутником Солнца. Именно так его и назвали: «Мечта» — неофициальное имя, которое дали станции в советских газетах. Формальное обозначение — «Луна-1», но за ней закрепилось и это романтическое прозвище. Сегодня она продолжает летать вокруг Солнца где-то между орбитами Земли и Марса.</p>
+
+<p><b>США не успели.</b> Американцы запустили Pioneer 4 в марте того же 1959 года — тоже прошёл мимо Луны. На два месяца позже. К тому времени СССР уже отправил «Луну-2», которая в сентябре 1959-го всё-таки упала на Луну — первая в мире жёсткая посадка на другое небесное тело.</p>
+
+<p><b>Человек.</b> Сергей Павлович Королёв (12 января 1907 — 14 января 1966) — главный конструктор, чьё имя при жизни было государственной тайной. «Луна-1», как и всё советское космическое, делалась в его ОКБ-1. Подробнее о Королёве — в дне 4 октября: первый спутник Земли.</p>
+
+
+
+
+
+<hr>
+      </div>
+      <div class="more"><button class="btn ghost" id="moreBtn">Читать дальше ↓</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="theme-inventions" style="background:rgba(201,168,76,.03);border-top:1px solid rgba(201,168,76,.15)">
+  <div class="wrap">
+    <div class="kicker">Космос · Русские первенства</div>
+    <h2 style="margin-bottom:6px">Что ещё русские изобрели первыми в теме «космос»</h2>
+    <p style="color:var(--muted);margin-top:0;margin-bottom:16px;max-width:62ch">Этот день — не единственный. Вот другие изобретения русских в этой теме.</p>
+    <div style="text-align:center;margin:14px 0 4px">
+      <button class="btn gold" id="themeInvBtn">Показать 20 изобретений →</button>
+    </div>
+    <div id="themeInvBody" style="display:none;margin-top:20px">
+      <div class="card" style="padding:0;overflow:hidden">
+        <div style="padding:14px 20px;background:rgba(201,168,76,.08);border-bottom:1px solid rgba(201,168,76,.15)">
+          <span style="color:var(--gold-l);font-weight:600;font-size:14px;letter-spacing:.5px">20 ИЗОБРЕТЕНИЙ · КОСМОС</span>
+        </div>
+        <div style="padding:4px 20px 12px">
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">12 янв 1907</span>
+          <span>Первая в мире межконтинентальная баллистическая ракета Р-7</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">16 янв</span>
+          <span>Первая стыковка кораблей и переход через открытый космос («Союз-4/5»)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">29 янв</span>
+          <span>Первый в мире серийный атомный подводный ракетоносец К-19</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">3 фев</span>
+          <span>Первая в мире мягкая посадка на Луну («Луна-9»)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">20 фев</span>
+          <span>Первая в мире модульная орбитальная станция «Мир»</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">17 мар</span>
+          <span>Стартовые (пусковые) ракетные комплексы</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">18 мар</span>
+          <span>Первый выход человека в открытый космос (Леонов, «Восход-2»)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">12 апр</span>
+          <span>Первый полёт человека в космос (Ю. Гагарин, «Восток-1»)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">17 апр</span>
+          <span>Первый в мире буксируемый ракетный снаряд</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">19 апр</span>
+          <span>Первая в мире орбитальная станция «Салют-1»</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">23 апр</span>
+          <span>Первая в мире система спутникового телевещания</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">2 июн</span>
+          <span>Первый в мире ракетный двигатель на гиперголическом топливе</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">16 июн</span>
+          <span>Первая женщина в космосе (В. Терешкова)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">23 июн</span>
+          <span>Авиационные и ракетные двигатели (НК)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">30 июн</span>
+          <span>Ракетно-космическая техника, крылатые ракеты</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">20 июл</span>
+          <span>Первая в мире ракета на жидком кислороде и керосине (испытания ГДЛ)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">24 июл</span>
+          <span>Первая в мире женщина в открытом космосе (С. Савицкая)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">6 авг</span>
+          <span>Первый в мире суточный полёт человека в космос («Восток-2», Г. Титов)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">11 авг</span>
+          <span>Первый в мире групповой космический полёт («Восток-3/4»)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">19 авг</span>
+          <span>Белка и Стрелка: первое в мире возвращение живых существ с орбиты («Спутник-5»)</span>
+        </div>
+        </div>
+      </div>
+      <p style="text-align:center;color:var(--muted);font-size:14px;margin-top:12px">Каждое — отдельный день музея. <a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Полная база →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ── УНИКАЛЬНАЯ ИГРА: ТРАЕКТОРИЯ К ЛУНЕ ── -->
+<section class="block" id="game-trajectory">
+  <div class="wrap">
+    <div class="kicker">Игра · Уникальная механика</div>
+    <h2>Запусти «Луну-1» к Луне</h2>
+    <p style="color:var(--muted);max-width:64ch;margin-top:0">«Луна-1» пролетела в 6000 км от Луны — промахнулась, но стала первым в истории объектом, достигшим окрестностей другого небесного тела. Выбери угол запуска и нажми — попадёшь в «лунный коридор»?</p>
+    <canvas id="luna1game" width="680" height="340" style="width:100%;max-width:680px;border-radius:14px;border:1px solid rgba(255,255,255,.1);display:block;touch-action:none"></canvas>
+    <div style="display:flex;align-items:center;gap:16px;margin:14px 0;flex-wrap:wrap">
+      <label style="color:var(--muted);font-size:14px">Угол запуска: <b id="l1angleLbl" style="color:var(--gold-l)">45°</b></label>
+      <input type="range" id="l1angle" min="25" max="70" value="45" style="flex:1;min-width:140px;accent-color:#c9a84c">
+      <button class="btn gold" id="l1launch" style="padding:12px 28px">🚀 Запуск</button>
+      <button class="btn ghost" id="l1reset" style="display:none">Ещё раз</button>
+    </div>
+    <div id="l1msg" style="min-height:28px;font-weight:600;font-size:16px;color:var(--gold-l);text-align:center"></div>
+  </div>
+</section>
+<script>
+(function(){
+  const cv=document.getElementById('luna1game');
+  if(!cv)return;
+  const ctx=cv.getContext('2d');
+  // Физика считается в логическом поле 680×340 и НЕ зависит от ширины экрана:
+  // один и тот же угол даёт один и тот же исход на телефоне и на десктопе.
+  // Пиксели входят только в отрисовку — через масштаб S и сдвиг OX.
+  const VW=680,VH=340;
+  const EARTH={x:VW*.13,y:VH*.82,r:28};
+  const MOON={x:VW*.82,y:VH*.2,r:18};
+  const CORRIDOR=38; // радиус «коридора» попадания, логические единицы
+  const MOON_HIT=20; // радиус прямого столкновения
+  let S=1,OX=0;
+  const tx=x=>OX+x*S, ty=y=>y*S;
+  function layout(){
+    const w=Math.round(cv.getBoundingClientRect().width)||VW;
+    S=Math.max(.5,Math.min(1.25,w/VW));
+    cv.width=w;cv.height=Math.round(VH*S);
+    OX=(w-VW*S)/2;
+  }
+  const slider=document.getElementById('l1angle');
+  const lbl=document.getElementById('l1angleLbl');
+  const launchBtn=document.getElementById('l1launch');
+  const rstBtn=document.getElementById('l1reset');
+  const msg=document.getElementById('l1msg');
+  let animId=null,launched=false,scored=false;
+  // Звёзды заданы раз и навсегда в логическом поле — иначе мерцают каждый кадр
+  const STARS=[];
+  for(let i=0;i<80;i++)STARS.push({x:(i*137.5)%VW,y:(i*91.3)%VH,r:((i*37)%7)/10+.25,a:.25+((i*53)%50)/100});
+
+  function drawStatic(){
+    ctx.fillStyle='#040c1a';ctx.fillRect(0,0,cv.width,cv.height);
+    STARS.forEach(s=>{ctx.beginPath();ctx.arc(tx(s.x),ty(s.y),s.r*S,0,Math.PI*2);
+      ctx.fillStyle=`rgba(255,255,255,${s.a})`;ctx.fill();});
+    // Земля
+    ctx.beginPath();ctx.arc(tx(EARTH.x),ty(EARTH.y),EARTH.r*S,0,Math.PI*2);
+    const eg=ctx.createRadialGradient(tx(EARTH.x)-8*S,ty(EARTH.y)-8*S,2,tx(EARTH.x),ty(EARTH.y),EARTH.r*S);
+    eg.addColorStop(0,'#3a8ac4');eg.addColorStop(1,'#1a4a8a');
+    ctx.fillStyle=eg;ctx.fill();
+    ctx.strokeStyle='rgba(100,180,255,.3)';ctx.lineWidth=2;ctx.stroke();
+    ctx.fillStyle='rgba(255,255,255,.5)';ctx.font=`bold ${Math.max(10,Math.round(12*S))}px Inter,sans-serif`;ctx.textAlign='center';
+    ctx.fillText('Земля',tx(EARTH.x),ty(EARTH.y+EARTH.r+14));
+    // Луна
+    ctx.beginPath();ctx.arc(tx(MOON.x),ty(MOON.y),MOON.r*S,0,Math.PI*2);
+    const mg=ctx.createRadialGradient(tx(MOON.x)-4*S,ty(MOON.y)-4*S,2,tx(MOON.x),ty(MOON.y),MOON.r*S);
+    mg.addColorStop(0,'#aaaaaa');mg.addColorStop(1,'#555566');
+    ctx.fillStyle=mg;ctx.fill();
+    ctx.strokeStyle='rgba(200,200,200,.2)';ctx.lineWidth=1.5;ctx.stroke();
+    ctx.fillStyle='rgba(255,255,255,.5)';ctx.fillText('Луна',tx(MOON.x),ty(MOON.y+MOON.r+14));
+    // Коридор
+    ctx.beginPath();ctx.arc(tx(MOON.x),ty(MOON.y),CORRIDOR*S,0,Math.PI*2);
+    ctx.strokeStyle='rgba(201,168,76,.25)';ctx.lineWidth=1.5;ctx.setLineDash([4,4]);ctx.stroke();ctx.setLineDash([]);
+    ctx.textAlign='left';
+  }
+
+  function getAngleRad(){return (90-parseInt(slider.value))*Math.PI/180;}
+
+  function drawPreview(){
+    drawStatic();
+    const ang=getAngleRad(),len=180; // len в логических единицах
+    ctx.beginPath();ctx.moveTo(tx(EARTH.x),ty(EARTH.y));
+    ctx.lineTo(tx(EARTH.x+Math.cos(ang)*len),ty(EARTH.y-Math.sin(ang)*len));
+    ctx.strokeStyle='rgba(201,168,76,.4)';ctx.lineWidth=1.5;ctx.setLineDash([5,4]);ctx.stroke();ctx.setLineDash([]);
+  }
+
+  function simulate(angleDeg){
+    // Параболическая траектория в логическом поле — ширина экрана сюда не входит
+    const ang=(90-angleDeg)*Math.PI/180;
+    const spd=3.8;
+    let x=EARTH.x,y=EARTH.y;
+    let vx=Math.cos(ang)*spd,vy=-Math.sin(ang)*spd;
+    const result=[];
+    for(let i=0;i<600;i++){
+      const dx=VW*.5-x,dy=VH*.4-y,d=Math.sqrt(dx*dx+dy*dy);
+      vx+=dx/d*.03;vy+=dy/d*.03;
+      x+=vx;y+=vy;
+      result.push({x,y});
+      if(x<-50||x>VW+50||y<-50||y>VH+50)break;
+    }
+    return result;
+  }
+
+  function animateLaunch(angleDeg){
+    const traj=simulate(angleDeg);
+    let idx=0;
+    let closest=Infinity;
+    traj.forEach(p=>{const d=Math.sqrt((p.x-MOON.x)**2+(p.y-MOON.y)**2);if(d<closest)closest=d;});
+    function frame(){
+      drawStatic();
+      ctx.beginPath();ctx.moveTo(tx(traj[0].x),ty(traj[0].y));
+      for(let i=1;i<=Math.min(idx,traj.length-1);i++)ctx.lineTo(tx(traj[i].x),ty(traj[i].y));
+      ctx.strokeStyle='rgba(201,168,76,.7)';ctx.lineWidth=2;ctx.stroke();
+      if(idx<traj.length){const p=traj[idx];
+        ctx.fillStyle='#e4c97a';ctx.beginPath();ctx.arc(tx(p.x),ty(p.y),5*S,0,Math.PI*2);ctx.fill();}
+      idx+=5;
+      if(idx<traj.length){animId=requestAnimationFrame(frame);}
+      else{
+        if(closest<=CORRIDOR&&closest>MOON_HIT){
+          msg.textContent=`✅ Попал в коридор! Расстояние до Луны: ${Math.round(closest*30)} км. Именно так «Луна-1» пролетела в ~6000 км — и стала первым объектом в окрестностях Луны.`;
+          msg.style.color='#7ed4a0';
+          // Главная механика страницы участвует в счёте — один раз за посещение
+          if(!scored&&typeof window.award==='function'){window.award('game',12);scored=true;}}
+        else if(closest<=MOON_HIT){
+          msg.textContent='💥 Попал прямо в Луну — столкновение. В реальности это было бы «Луна-2». Попробуй угол чуть больше.';
+          msg.style.color='#f08080';}
+        else{
+          msg.textContent=`❌ Промахнулся — ракета прошла слишком далеко (${Math.round(closest*30)} км). Скорректируй угол и попробуй снова.`;
+          msg.style.color='#f08080';}
+        rstBtn.style.display='inline-block';}
+    }
+    frame();
+  }
+
+  slider.addEventListener('input',()=>{lbl.textContent=slider.value+'°';if(!launched)drawPreview();});
+  launchBtn.addEventListener('click',()=>{
+    if(launched)return;launched=true;launchBtn.style.display='none';
+    animateLaunch(parseInt(slider.value));});
+  rstBtn.addEventListener('click',()=>{
+    if(animId)cancelAnimationFrame(animId);
+    launched=false;msg.textContent='';
+    launchBtn.style.display='inline-block';rstBtn.style.display='none';drawPreview();});
+  addEventListener('resize',()=>{if(!launched){layout();drawPreview();}});
+  layout();
+  drawPreview();
+})();
+</script>
+
+<!-- ── ВИКТОРИНА ── -->
+<section class="block" id="quiz">
+  <div class="wrap">
+    <div class="kicker">Проверь себя</div>
+    <h2>Викторина</h2>
+    <div id="quizBox"></div>
+    <noscript>
+      <p style="color:var(--muted);max-width:64ch">Викторина и игра с траекторией работают на JavaScript — сейчас он отключён.
+      Ответы на вопросы дня есть в тексте выше: «Луна-1» стартовала 2 января 1959 года, прошла мимо Луны примерно
+      в 6000 км и первой в истории вышла на гелиоцентрическую орбиту, развив вторую космическую скорость.</p>
+    </noscript>
+  </div>
+</section>
+
+<!-- ── РАЗВИЛКА ── -->
+<section class="block" id="fork" style="background:rgba(45,140,191,.04)">
+  <div class="wrap">
+    <div class="kicker">Твой выбор</div>
+    <h2>А как поступил бы ты?</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Ночь после старта, 2 января 1959 года. Станция ушла с Байконура и впервые в истории набрала вторую космическую скорость — но телеметрия говорит: в Луну она не попадёт, пройдёт мимо примерно в шести тысячах километров. Ты — Королёв, чьё имя засекречено, и до утренних газет считаные часы. Что объявить стране?</p>
+    <div class="fork-opt"><b>Молчать до следующего пуска</b><br><span style="font-size:13px;color:var(--muted)">Мимо — значит провал. Сообщить, когда следующая станция всё-таки достанет Луну.</span></div>
+    <div class="fork-opt"><b>Сказать о промахе прямо</b><br><span style="font-size:13px;color:var(--muted)">Целились в Луну, не попали. Честно назвать неудачу и работать дальше.</span></div>
+    <div class="fork-opt"><b>Считать рекордом то, что уже сделано</b><br><span style="font-size:13px;color:var(--muted)">Вторая космическая, солнечный ветер, первый рукотворный спутник Солнца — этого нет ни у кого в мире.</span></div>
+    <div id="forkReal" style="display:none;margin-top:14px;padding:14px 16px;border-left:3px solid var(--gold);border-radius:10px;background:var(--gold-g);font-size:14.5px;line-height:1.65">
+      <b>Как было на самом деле.</b> Главным сделали не попадание, а рекорды: первый в мире разгон до второй космической скорости — 11,2 км/с, первое измерение солнечного ветра, первая искусственная планета. Станции дали имя «Мечта». Спор, была ли траектория вообще рассчитана на попадание или запас топлива для коррекции не предусматривался, историки ведут до сих пор. Через восемь месяцев «Луна-2» всё-таки достигла Луны, а американский Pioneer 4 в марте 1959-го тоже прошёл мимо — на два месяца позже нас.
+    </div>
+  </div>
+</section>
+
+<!-- ── ЧАТ ── -->
+<section class="block" id="chat-sec">
+  <div class="wrap">
+    <div class="kicker">Поговори с изобретателем</div>
+    <h2>Спроси ✓ Сергей Павлович Королёв</h2>
+    <p style="color:var(--muted)">Задай вопрос — ответит сам изобретатель.</p>
+    <div id="starters"></div>
+    <div id="chatBox" style="margin:16px 0;min-height:80px"></div>
+    <div style="display:flex;gap:10px;margin-top:12px">
+      <input id="chatInput" type="text" placeholder="Написать вопрос..." style="flex:1;padding:12px 16px;font-size:15px">
+      <button class="btn gold" onclick="sendChat()">Отправить</button>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin-top:8px">Ответы сформированы на основе документальных источников.</p>
+  </div>
+</section>
+
+<!-- ── ЭКСКУРСИЯ ── -->
+<section class="block" id="excursion">
+  <div class="wrap">
+    <div class="kicker">Аудиогид</div>
+    <h2>Фрагмент экскурсии</h2>
+    <div class="card" style="border-left:3px solid var(--gold);border-radius:0 16px 16px 0">
+<p>«Вот карта — посмотрите на траекторию: Земля слева, Луна справа, и тонкая дуга проходит мимо неё — уходит дальше, в пространство между планетами. Это путь "Луны-1".</p>
+<p>2 января 1959 года она стартовала с Байконура и сделала то, чего не делал ни один рукотворный объект: разогналась до второй космической скорости и вырвалась из притяжения Земли навсегда.</p>
+<p>Цель была — Луна. Не долетела: прошла мимо на шесть тысяч километров. Но по дороге успела кое-что важное: измерила то, что до неё никто не измерял. Вот этот прибор — магнитометр — искал магнитное поле Луны и не нашёл его. Зато нашёл солнечный ветер. Поток заряженных частиц от Солнца, который физики-теоретики предсказывали, но никто ещё не щупал руками.</p>
+<p>А "Луна-1" прощупала. И улетела дальше — на орбиту вокруг Солнца. Где и летит до сих пор. Первый искусственный спутник Солнца, имя ему — "Мечта". Переходим дальше».</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap"><div class="ad-slot"><span class="lbl">Реклама</span><span class="ph-txt">Партнёрский блок в середине страницы.</span></div></div>
+>
+
+<section class="block" id="calendar">
+  <div class="wrap">
+    <div class="kicker">Календарь изобретений</div>
+    <h2 style="margin-bottom:6px">Выбери любой день года</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Каждый подсвеченный день — изобретение, которое русские сделали первыми в мире.</p>
+    <div class="cal2">
+      <div class="cal2-head">
+        <button class="cal2-nav" id="calPrev">◀</button>
+        <div class="cal2-title" id="calTitle">Январь</div>
+        <button class="cal2-nav" id="calNext">▶</button>
+      </div>
+      <div class="cal2-dow"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span></div>
+      <div class="cal2-grid" id="calGrid"></div>
+    </div>
+    <div class="cal2-detail" id="calDetail" style="max-width:520px">Выбери подсвеченный день — покажу, что в этот день изобрели русские первыми в мире.</div>
+  </div>
+</section>
+
+<section class="block" id="catalog" style="background:linear-gradient(135deg,#16294a,#0f1e33);border-bottom:none">
+  <div class="wrap" style="text-align:center">
+    <h2 style="margin-bottom:6px;color:#fff">Открой все изобретения</h2>
+    <p style="color:var(--muted);margin:0 auto 16px;max-width:60ch">365 дней — 365 первенств. Выбери любой день года.</p>
+    <a class="btn gold" href="https://arabelthera-dot.github.io/rc-museum-preview/index.html" style="display:inline-block;text-decoration:none">Полная база изобретений →</a>
+  </div>
+</section>
+
+<section class="block kd" id="kuda-dalshe">
+  <div class="wrap">
+    <div class="kd-kicker">Куда дальше</div>
+    <h2>Музей продолжается</h2>
+    <div class="kd-grid">
+      <div class="kd-card main"><span class="kd-lbl">Следующий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-03jan-anosov.html">3 января — Аносов: первым в мире посмотрел на сталь в микроскоп <span class="kd-arr">→</span></a>
+        <p>Потерянный на века секрет булата вернул русский инженер, первым в мире разглядев под микроскопом, из чего сделана сталь.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Предыдущий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-01jan-cabletv.html">1 января — Первая в мире сеть кабельного телевидения <span class="kd-arr">→</span></a>
+        <p>Кабельное телевидение придумали не в Америке.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Весь музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми <span class="kd-arr">→</span></a>
+        <p>Полная база изобретений — по алфавиту и по дням года.</p></div>
+      <div class="kd-card main"><span class="kd-lbl">Город-музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация <span class="kd-arr">→</span></a>
+        <p>Все музеи проекта на одной карте: изобретения, искусство, первопроходцы.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div class="slog">Цивилизация первенств — что Россия дала миру раньше всех</div>
+  Русская цивилизация · «Что изобрели русские первыми в мире» · 2026</div></footer>
+
+<script>
+// ── СЧЁТ ── шкала посетителя из 100 держит движок assets/museum-score.js
+// Здесь только награды этой страницы: сумма сырых очков и звания.
+window.MUSEUM_SCORE = {awards: {read:5, q:[2,10], game:12, fork:10, chat:5, theme:5, cal:3}, ranks: [[100,'Знаток дня'],[70,'Знаток'],[40,'Экскурсант'],[0,'Гость музея']]};
+
+// ── СТАТЬЯ ────────────────────────────────────────────────────────────────────
+document.getElementById('moreBtn').onclick=function(){
+  document.getElementById('article').classList.remove('collapsed');
+  this.style.display='none';
+  award('read',5);
+};
+
+// ── ВИКТОРИНА ─────────────────────────────────────────────────────────────────
+const quiz=[{"q": "Чем стала «Луна-1» после того, как прошла мимо Луны?", "o": ["Упала на Землю", "Вышла на орбиту Луны", "Стала первым искусственным спутником Солнца", "Была уничтожена в атмосфере"], "c": 2, "e": "«Луна-1» набрала вторую космическую скорость и вырвалась из притяжения Земли. Пройдя мимо Луны, она вышла на гелиоцентрическую орбиту и стала первым в истории искусственным спутником Солнца."}, {"q": "Что «Луна-1» открыла впервые в истории по пути к Луне?", "o": ["Кратеры на обратной стороне Луны", "Солнечный ветер — поток заряженных частиц от Солнца", "Радиационные пояса Земли", "Воду на Луне"], "c": 1, "e": "Магнитометры «Луны-1» не нашли магнитного поля Луны, зато впервые в истории измерили солнечный ветер — непрерывный поток заряженных частиц от Солнца. До этого его существование было лишь теорией."}];
+const qBox=document.getElementById('quizBox');
+let qIdx=0, answered=[];
+
+function renderQ(){
+  if(qIdx>=quiz.length){
+    qBox.innerHTML='<p style="color:var(--gold-l);font-weight:600">Все вопросы пройдены. Молодец!</p>';
+    return;
+  }
+  const q=quiz[qIdx];
+  qBox.innerHTML=`<p style="font-weight:600;font-size:17px;margin-bottom:8px">${qIdx+1} / ${quiz.length}. ${q.q}</p>
+    ${q.o.map((o,i)=>`<button class="opt" data-i="${i}" onclick="answerQ(${i})">${'АБВГ'[i]}) ${o}</button>`).join('')}
+    <div class="exp" id="exp${qIdx}">${q.e}</div>`;
+}
+
+function answerQ(i){
+  const q=quiz[qIdx];
+  document.querySelectorAll('.opt').forEach((b,j)=>{
+    b.disabled=true;
+    if(j===q.c)b.classList.add('correct');
+    else if(j===i&&i!==q.c)b.classList.add('wrong');
+  });
+  document.getElementById('exp'+qIdx).classList.add('show');
+  if(i===q.c)award('q'+qIdx,10);
+  setTimeout(()=>{qIdx++;renderQ();},2200);
+}
+renderQ();
+
+// ── РАЗВИЛКА ──────────────────────────────────────────────────────────────────
+document.querySelectorAll('.fork-opt').forEach((el,i)=>{
+  el.onclick=function(){
+    document.querySelectorAll('.fork-opt').forEach(b=>b.classList.remove('chosen'));
+    this.classList.add('chosen');
+    document.getElementById('forkReal').style.display='block';
+    award('fork',10);
+  };
+});
+
+// ── ЧАТ ───────────────────────────────────────────────────────────────────────
+const kb=[
+ {k:['промах','мимо','не попал','шесть тысяч','6000','провал'],a:'Прошли мимо примерно в шести тысячах километров. Попасть в Луну тогда было почти невозможно: поправить траекторию в полёте станция не могла. Но до Луны впервые дотянулся не взгляд, а рукотворный аппарат — и это уже другая эпоха.'},
+ {k:['скорость','вторая космическая','11,2','разгон','притяжен'],a:'Впервые в истории машина набрала вторую космическую — 11,2 километра в секунду — и навсегда вырвалась из земного притяжения. Это рекорд сам по себе, даже без попадания.'},
+ {k:['солнечный ветер','частиц','поток','солнце'],a:'По дороге приборы поймали непрерывный поток заряженных частиц от Солнца. Физики о нём спорили — мы его измерили. Спору конец: солнечный ветер существует.'},
+ {k:['магнит','магнитометр','поле'],a:'Ждали у Луны магнитное поле, как у Земли. Магнитометр не нашёл ничего. Отрицательный результат — тоже результат, и он был первым.'},
+ {k:['мечт','имя','назван','спутник солнца','планет'],a:'Пролетев мимо, станция вышла на орбиту вокруг Солнца и стала первым искусственным спутником светила. В газетах её назвали «Мечтой». Она и сейчас летает где-то между орбитами Земли и Марса.'},
+ {k:['вымпел','герб','шар','361','масса','приборы','аппарат'],a:'Металлический шар в триста шестьдесят один килограмм, набитый приборами, и вымпел с гербом. Всё, что можно было поднять на той ракете.'},
+ {k:['америк','сша','pioneer','пионер','гонк'],a:'Их Pioneer 4 стартовал в марте того же года — и тоже прошёл мимо Луны. На два месяца позже нашего пуска.'},
+ {k:['луна-2','луна 2','попадан','сентябр','жёстк'],a:'В сентябре пятьдесят девятого «Луна-2» упала на Луну — первая в мире жёсткая посадка на другое небесное тело. Дорога, начатая «Мечтой», была пройдена до конца.'},
+ {k:['секрет','тайна','имя','кто вы','кто ты','конструктор'],a:'Сергей Павлович Королёв, главный конструктор. Имя моё при жизни — государственная тайна, в газетах я «главный конструктор» без фамилии.'},
+ {k:['привет','здравств','добрый'],a:'Здравствуйте. Королёв. Спрашивайте о «Мечте» — о первом рывке за пределы земного притяжения.'}
+];
+
+function addMsg(text,who){
+  const d=document.createElement('div');
+  d.className='msg '+who;
+  d.textContent=text;
+  document.getElementById('chatBox').appendChild(d);
+  d.scrollIntoView({behavior:'smooth'});
+}
+
+function findAnswer(q){
+  q=q.toLowerCase();
+  for(const item of kb){
+    if(item.k.some(k=>q.includes(k.toLowerCase())))return item.a;
+  }
+  return 'Не всё мне ведомо — я про своё дело. Спросите лучше о первом рывке к Луне, о «Мечте», что обогнала планету, или о том, как мы прокладывали дорогу в космос.';
+}
+
+function sendChat(){
+  const inp=document.getElementById('chatInput');
+  const q=inp.value.trim();
+  if(!q)return;
+  addMsg(q,'you');
+  inp.value='';
+  setTimeout(()=>{addMsg(findAnswer(q),'inv');award('chat',5);},600);
+}
+document.getElementById('chatInput').addEventListener('keydown',e=>{if(e.key==='Enter')sendChat();});
+
+// стартовые вопросы + приветствие (без прокрутки при загрузке)
+(function(){
+  const qs=['Почему «Луна-1» не попала в Луну?','Что такое солнечный ветер и при чём тут вы?','Почему станцию назвали «Мечтой»?'];
+  const box=document.getElementById('starters');
+  qs.forEach(q=>{const c=document.createElement('span');c.className='chip';c.textContent=q;
+    c.onclick=()=>{document.getElementById('chatInput').value=q;sendChat();};box.appendChild(c);});
+  const w=document.createElement('div');w.className='msg inv';
+  w.textContent='Здравствуйте. Королёв. Спрашивайте о «Мечте» — о первом рывке за пределы земного притяжения.';
+  document.getElementById('chatBox').appendChild(w);
+})();
+
+document.querySelectorAll('.starter-btn').forEach(b=>{
+  b.onclick=function(){
+    document.getElementById('chatInput').value=this.dataset.q;
+    sendChat();
+  };
+});
+
+// ── HERO: ЛУНА-1 — ТРАЕКТОРИЯ К СОЛНЦУ ──────────────────────────────────────
+(function(){
+  const cv=document.getElementById('heroCvs');if(!cv)return;
+  const ctx=cv.getContext('2d');
+  let W,H,t=0;
+  const stars=[];
+  function init(){
+    const p=cv.parentElement;
+    W=cv.width=p?p.offsetWidth||window.innerWidth:window.innerWidth;
+    H=cv.height=p?p.offsetHeight||Math.round(window.innerHeight*.52):Math.round(window.innerHeight*.52);
+    stars.length=0;
+    for(let i=0;i<180;i++)stars.push({x:Math.random()*W,y:Math.random()*H,r:Math.random()*1.4+.2,a:.2+Math.random()*.7});
+  }
+  init();window.addEventListener('resize',init);
+
+  // Позиции планет (относительные)
+  const getPositions=()=>({
+    earth:{x:W*.12,y:H*.72,r:Math.min(W,H)*.06},
+    moon:{x:W*.52,y:H*.32,r:Math.min(W,H)*.042},
+    sun:{x:W*.92,y:H*.18,r:Math.min(W,H)*.05}
+  });
+
+  // Траектория зонда — дуга от Земли мимо Луны к Солнцу
+  function probePath(frac){
+    const p=getPositions();
+    const t2=frac;
+    // Кривая Безье: Земля → контрольная точка → Солнце (мимо Луны)
+    const cx1=W*.3,cy1=H*.1,cx2=W*.7,cy2=H*.28;
+    const px=Math.pow(1-t2,3)*p.earth.x+3*Math.pow(1-t2,2)*t2*cx1+3*(1-t2)*t2*t2*cx2+t2*t2*t2*p.sun.x;
+    const py=Math.pow(1-t2,3)*p.earth.y+3*Math.pow(1-t2,2)*t2*cy1+3*(1-t2)*t2*t2*cy2+t2*t2*t2*p.sun.y;
+    return{x:px,y:py};
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+    // Фон — глубокий космос
+    const bg=ctx.createRadialGradient(W/2,H/2,0,W/2,H/2,Math.max(W,H)*.7);
+    bg.addColorStop(0,'#071020');bg.addColorStop(1,'#020810');
+    ctx.fillStyle=bg;ctx.fillRect(0,0,W,H);
+    // Звёзды
+    stars.forEach(s=>{
+      ctx.beginPath();ctx.arc(s.x,s.y,s.r,0,Math.PI*2);
+      ctx.fillStyle=`rgba(255,255,255,${s.a+.15*Math.sin(t*.5+s.x)})`;ctx.fill();
+    });
+    const pos=getPositions();
+    // Земля
+    const eg=ctx.createRadialGradient(pos.earth.x-pos.earth.r*.3,pos.earth.y-pos.earth.r*.3,pos.earth.r*.1,pos.earth.x,pos.earth.y,pos.earth.r);
+    eg.addColorStop(0,'#3a8ac4');eg.addColorStop(.6,'#1a4a8a');eg.addColorStop(1,'#0d2a50');
+    ctx.beginPath();ctx.arc(pos.earth.x,pos.earth.y,pos.earth.r,0,Math.PI*2);ctx.fillStyle=eg;ctx.fill();
+    // Атмосфера Земли
+    const eAtm=ctx.createRadialGradient(pos.earth.x,pos.earth.y,pos.earth.r,pos.earth.x,pos.earth.y,pos.earth.r*1.3);
+    eAtm.addColorStop(0,'rgba(100,180,255,.25)');eAtm.addColorStop(1,'rgba(100,180,255,0)');
+    ctx.beginPath();ctx.arc(pos.earth.x,pos.earth.y,pos.earth.r*1.3,0,Math.PI*2);ctx.fillStyle=eAtm;ctx.fill();
+    // Луна
+    const mg=ctx.createRadialGradient(pos.moon.x-pos.moon.r*.25,pos.moon.y-pos.moon.r*.25,pos.moon.r*.05,pos.moon.x,pos.moon.y,pos.moon.r);
+    mg.addColorStop(0,'#b0b0b8');mg.addColorStop(.5,'#7a7a85');mg.addColorStop(1,'#3a3a45');
+    ctx.beginPath();ctx.arc(pos.moon.x,pos.moon.y,pos.moon.r,0,Math.PI*2);ctx.fillStyle=mg;ctx.fill();
+    // Кратеры Луны
+    [[-.3,-.25,.3],[.2,.15,.18],[-.1,.3,.22]].forEach(([dx,dy,r])=>{
+      ctx.beginPath();ctx.arc(pos.moon.x+pos.moon.r*dx,pos.moon.y+pos.moon.r*dy,pos.moon.r*r,0,Math.PI*2);
+      ctx.fillStyle='rgba(40,40,50,.4)';ctx.fill();});
+    // Солнце
+    for(let gr=3;gr>=1;gr--){
+      const glow=ctx.createRadialGradient(pos.sun.x,pos.sun.y,0,pos.sun.x,pos.sun.y,pos.sun.r*gr*1.5);
+      glow.addColorStop(0,`rgba(255,210,60,${.25/gr})`);glow.addColorStop(1,'rgba(255,160,20,0)');
+      ctx.beginPath();ctx.arc(pos.sun.x,pos.sun.y,pos.sun.r*gr*1.5,0,Math.PI*2);ctx.fillStyle=glow;ctx.fill();
+    }
+    const sg=ctx.createRadialGradient(pos.sun.x-pos.sun.r*.2,pos.sun.y-pos.sun.r*.2,0,pos.sun.x,pos.sun.y,pos.sun.r);
+    sg.addColorStop(0,'#fff7cc');sg.addColorStop(.5,'#ffc820');sg.addColorStop(1,'#ff8c00');
+    ctx.beginPath();ctx.arc(pos.sun.x,pos.sun.y,pos.sun.r,0,Math.PI*2);ctx.fillStyle=sg;ctx.fill();
+    // Траектория (пунктир)
+    ctx.save();ctx.setLineDash([4,8]);ctx.strokeStyle='rgba(201,168,76,.3)';ctx.lineWidth=1.5;
+    ctx.beginPath();
+    for(let i=0;i<=100;i++){const pp=probePath(i/100);i===0?ctx.moveTo(pp.x,pp.y):ctx.lineTo(pp.x,pp.y);}
+    ctx.stroke();ctx.restore();
+    // Зонд — фаза: перелёт (frac 0→1) затем орбита вокруг Солнца
+    const CYCLE=600; // кадров на полный цикл
+    const phase=t%CYCLE;
+    const TRANSIT=300; // кадров на перелёт
+    let probe;
+    if(phase<TRANSIT){
+      const frac=phase/TRANSIT;
+      probe=probePath(frac);
+      // След зонда
+      ctx.beginPath();
+      for(let i=0;i<=60;i++){const ff=Math.max(0,frac-i/TRANSIT*0.7);const pp=probePath(ff);i===0?ctx.moveTo(pp.x,pp.y):ctx.lineTo(pp.x,pp.y);}
+      const trailEnd=probePath(Math.max(0,(phase-40)/TRANSIT));
+      const trailGrad=ctx.createLinearGradient(probe.x,probe.y,trailEnd.x,trailEnd.y);
+      trailGrad.addColorStop(0,'rgba(201,168,76,.7)');trailGrad.addColorStop(1,'rgba(201,168,76,0)');
+      ctx.strokeStyle=trailGrad;ctx.lineWidth=2;ctx.stroke();
+    } else {
+      // Орбита вокруг Солнца
+      const orbitAngle=(phase-TRANSIT)/(CYCLE-TRANSIT)*Math.PI*2;
+      const orbitR=pos.sun.r*2.8;
+      probe={x:pos.sun.x+Math.cos(orbitAngle)*orbitR,y:pos.sun.y+Math.sin(orbitAngle)*orbitR*0.55};
+      // Орбитальный след
+      ctx.beginPath();
+      for(let i=0;i<=30;i++){const a=orbitAngle-i*.08;ctx.lineTo(pos.sun.x+Math.cos(a)*orbitR,pos.sun.y+Math.sin(a)*orbitR*0.55);}
+      ctx.strokeStyle='rgba(201,168,76,.35)';ctx.lineWidth=1.5;ctx.stroke();
+    }
+    if(probe){
+      // Зонд (сфера с антеннами)
+      ctx.beginPath();ctx.arc(probe.x,probe.y,5,0,Math.PI*2);ctx.fillStyle='#e4c97a';ctx.fill();
+      ctx.beginPath();ctx.arc(probe.x,probe.y,8,0,Math.PI*2);
+      ctx.strokeStyle='rgba(228,201,122,.3)';ctx.lineWidth=2;ctx.stroke();
+      // Антенны (4 штуки)
+      [0,90,180,270].forEach(ang=>{const rad=ang*Math.PI/180;
+        ctx.beginPath();ctx.moveTo(probe.x,probe.y);
+        ctx.lineTo(probe.x+Math.cos(rad)*12,probe.y+Math.sin(rad)*12);
+        ctx.strokeStyle='rgba(228,201,122,.6)';ctx.lineWidth=1;ctx.stroke();});
+    }
+    t++;requestAnimationFrame(draw);
+  }
+  draw();
+})();
+
+// ── ТЕМАТИЧЕСКИЕ ИЗОБРЕТЕНИЯ ─────────────────────────────────────────────────
+const themeBtn=document.getElementById('themeInvBtn');
+if(themeBtn)themeBtn.onclick=function(){
+  const b=document.getElementById('themeInvBody');
+  const open=b.style.display==='none';
+  b.style.display=open?'block':'none';
+  this.textContent=open?'▲ Скрыть':this.dataset.label||'Показать перечень →';
+  if(open)award('theme',5);
+};
+
+// ── КАЛЕНДАРЬ ─────────────────────────────────────────────────────────────────
+const calData={"1": {"18": {"t": "Первый в мире боевой многозарядный миномёт обр. 1904 г.", "y": "1904"}, "27": {"t": "Первый в мире военный миноносец «Сокол» с паровой турбиной", "y": ""}, "29": {"t": "Первый в мире серийный атомный подводный ракетоносец К-19", "y": ""}, "31": {"t": "Первая в мире женщина-пилот (Зинаида Кокорина, аэроклуб)", "y": ""}, "5": {"t": "Первый в мире расчётный нефтепровод Балаханы–Черный город", "y": ""}, "6": {"t": "Первый в мире пенициллин советского производства (победа над", "y": ""}, "11": {"t": "Первый в мире ядерный реактор в Евразии Ф-1 (Курчатов)", "y": ""}, "3": {"t": "Первый в мире атомный ледокол-речник «Обь» и атомный флот", "y": ""}, "4": {"t": "Первая в мире беспроводная передача данных на расстояние (ра", "y": ""}, "1": {"t": "Первая в мире сеть кабельного телевидения (Москва, 30 абонен", "y": ""}, "2": {"t": "«Луна-1», первая межпланетная станция и 2-я космическая скор", "y": "1959"}, "17": {"t": "Аэродинамика как наука", "y": ""}, "7": {"t": "Геологическая карта и наука о недрах России", "y": ""}, "8": {"t": "«Ермак», первый в мире арктический ледокол", "y": "1849"}, "9": {"t": "Первый в мире гусеничный ход (патент Блинова)", "y": ""}, "10": {"t": "Первый в мире ледокол «Пайлот»", "y": ""}, "25": {"t": "Самая быстроходная в мире подлодка К-162 (титан)", "y": ""}, "12": {"t": "Первая в мире межконтинентальная баллистическая ракета Р-7", "y": "1907"}, "13": {"t": "Алюминотермия (получение металлов)", "y": ""}, "14": {"t": "Исследование Тянь-Шаня и Центральной Азии", "y": ""}, "15": {"t": "Первая в мире женщина-профессор математики", "y": ""}, "22": {"t": "Теория сверхтекучести (Нобель)", "y": ""}, "16": {"t": "Первая стыковка кораблей и переход через открытый космос («С", "y": ""}, "19": {"t": "Линейное программирование (Нобель по экономике)", "y": ""}, "21": {"t": "Первая в мире АЭС (Обнинск)", "y": "1903"}, "28": {"t": "Открытие Антарктиды", "y": ""}, "30": {"t": "Ранцевый парашют РК-1", "y": "1872"}, "24": {"t": "Первый русский электромобиль («кукушка», 60 км хода)", "y": "1864"}, "23": {"t": "Учение о движении энергии, вектор Умова (первым в мире ввёл ", "y": ""}, "20": {"t": "Открытие витаминов, основы витаминологии (первым в мире)", "y": "1853"}, "26": {"t": "Первый в мире серийный реактивный пассажирский самолёт Ту-10", "y": ""}}, "2": {"28": {"t": "Первые в мире серийные реактивные снаряды залпового огня (ис", "y": ""}, "19": {"t": "Первая в мире широкоформатная панорамная фотография", "y": ""}, "23": {"t": "Первые в мире реактивные снаряды залпового огня «Катюша» (по", "y": ""}, "26": {"t": "Первый в мире промышленный синтез синтетического каучука", "y": ""}, "24": {"t": "Первая в мире мощная радиовещательная станция (Коминтерн, 19", "y": "1922"}, "25": {"t": "Первый в мире практический токамак Т-1 для термоядерного син", "y": ""}, "1": {"t": "Основы неврологии и психоневрологии", "y": ""}, "2": {"t": "Гаубица «единорог»", "y": ""}, "3": {"t": "Первая в мире мягкая посадка на Луну («Луна-9»)", "y": ""}, "4": {"t": "Самовар", "y": ""}, "5": {"t": "Гибкая (рулонная) фотоплёнка (раньше Kodak)", "y": ""}, "20": {"t": "Первая в мире модульная орбитальная станция «Мир»", "y": ""}, "8": {"t": "Периодическая система элементов", "y": ""}, "10": {"t": "Аэросани (первые в мире)", "y": ""}, "12": {"t": "Закон Ленца (электромагнитная индукция)", "y": ""}, "13": {"t": "Гидросамолёты и амфибии «Бе»", "y": ""}, "14": {"t": "Первый в мире монорельс", "y": ""}, "17": {"t": "Первый в мире электрический трамвай", "y": ""}, "6": {"t": "Угольный противогаз", "y": "1861"}, "7": {"t": "Первая в мире троичная ЭВМ «Сетунь»", "y": ""}, "27": {"t": "Пересадка роговицы и тканевая терапия", "y": ""}, "9": {"t": "Гелиобиология и аэроионификация («люстра Чижевского»)", "y": ""}, "18": {"t": "Почвоведение как наука, первое в мире", "y": ""}, "11": {"t": "Первый в мире морской гидросамолёт (летающая лодка М-5)", "y": ""}, "16": {"t": "Первый в мире радиозонд", "y": "1893"}, "15": {"t": "Первая в мире «мёртвая петля», рождение высшего пилотажа", "y": ""}, "21": {"t": "Медицинская микробиология, первая в России станция прививок ", "y": ""}, "22": {"t": "Первый в мире промышленный индукционный нагрев токами высоко", "y": ""}}, "3": {"19": {"t": "Первый в мире военный ледокол «Вайгач» — исследование Арктик", "y": ""}, "27": {"t": "Первая в мире научная классификация почвенных зон", "y": ""}, "28": {"t": "Первые в мире опыты по передаче электроэнергии на расстояние", "y": ""}, "29": {"t": "Первый в мире пенетрометр для измерения твёрдости грунта", "y": ""}, "6": {"t": "Первый в мире обезболивающий наркоз на поле боя (эфирный)", "y": ""}, "13": {"t": "Теория функциональных систем (физиология поведения)", "y": ""}, "26": {"t": "Первые в мире опыты по радиолокации (РЛС)", "y": ""}, "22": {"t": "Первая в мире сварка под водой", "y": ""}, "1": {"t": "Первая русская печатная книга «Апостол»", "y": ""}, "2": {"t": "Спонтанное деление ядер урана (открытие)", "y": ""}, "3": {"t": "Органическая химия, реакции Фаворского", "y": ""}, "4": {"t": "Принцип автофазировки, синхрофазотрон", "y": ""}, "5": {"t": "Автоматическая дуговая сварка под флюсом", "y": ""}, "8": {"t": "Давление света (экспериментально доказано впервые)", "y": ""}, "9": {"t": "Турбобур (турбинное бурение скважин)", "y": ""}, "10": {"t": "Открытие пролива между Азией и Америкой", "y": ""}, "12": {"t": "Учение о биосфере и ноосфере", "y": ""}, "14": {"t": "Первая в мире паровая машина (двухцилиндровая)", "y": ""}, "15": {"t": "Первые в мире полупроводниковые гетероструктуры — основа лаз", "y": ""}, "16": {"t": "Радио", "y": ""}, "17": {"t": "Стартовые (пусковые) ракетные комплексы", "y": ""}, "18": {"t": "Первый выход человека в открытый космос (Леонов, «Восход-2»)", "y": ""}, "20": {"t": "Первый в мире магистральный тепловоз", "y": ""}, "21": {"t": "Самолёт Можайского, один из первых в мире", "y": ""}, "23": {"t": "Первый отечественный турбореактивный двигатель", "y": ""}, "24": {"t": "Люминесценция, физическая оптика", "y": ""}, "25": {"t": "Радиоуправление, первые в мире опыты", "y": ""}, "30": {"t": "Штурмовик Ил-2 и самолёты Ильюшина", "y": ""}, "31": {"t": "Дешифровка письменности майя", "y": ""}, "11": {"t": "Открытие мембранного (пристеночного) пищеварения, мировой пр", "y": ""}, "7": {"t": "Первый в мире токарный станок с механическим суппортом", "y": ""}}, "4": {"18": {"t": "Первые в мире алмазы на Урале: открытие месторождения", "y": ""}, "20": {"t": "Первый в мире рейс атомного ледокола «Ленин» по Северному мо", "y": ""}, "22": {"t": "Первая в мире демонстрация электродуговой сварки публике", "y": ""}, "24": {"t": "Открытие первого в мире угольного синтеза (метод Бергиуса-На", "y": ""}, "3": {"t": "Первый в мире переносной радиоприёмник", "y": ""}, "4": {"t": "Первая в мире пересадка почки (опыты)", "y": ""}, "7": {"t": "Первая в мире подводная лодка «Дельфин» с двигателем внутрен", "y": ""}, "10": {"t": "Первый в мире оптический прицел для артиллерии", "y": ""}, "13": {"t": "Первая в мире глубоководная морская мина", "y": ""}, "16": {"t": "Первый в мире серийный атомный ледокол «Ленин» (закладка)", "y": ""}, "17": {"t": "Первый в мире буксируемый ракетный снаряд", "y": ""}, "27": {"t": "Гнойная хирургия — фундаментальный труд мировой медицины", "y": ""}, "26": {"t": "Первый в мире противочумной прокол (прошивание швами) — пред", "y": ""}, "28": {"t": "Первый в мире рентгеновский аппарат на основе трубки Попова", "y": ""}, "1": {"t": "Самолёты «Як»", "y": ""}, "9": {"t": "Первый в мире дизельный теплоход «Вандал»", "y": ""}, "11": {"t": "Первый в мире ранцевый лётный тренажёр", "y": ""}, "2": {"t": "Первый в мире бензиновый двигатель (для дирижабля)", "y": ""}, "5": {"t": "Аэродинамика, теорема Чаплыгина", "y": ""}, "6": {"t": "Антисептическая и полостная хирургия", "y": ""}, "8": {"t": "Гусеничный вездеход/танк «Вездеход»", "y": ""}, "12": {"t": "Первый полёт человека в космос (Ю. Гагарин, «Восток-1»)", "y": ""}, "14": {"t": "Трёхлинейная винтовка Мосина", "y": ""}, "15": {"t": "Теория цепных химических реакций (Нобель)", "y": ""}, "19": {"t": "Первая в мире орбитальная станция «Салют-1»", "y": ""}, "21": {"t": "Первый в России самодвижущийся экипаж («самокатка») с трёхко", "y": ""}, "23": {"t": "Первая в мире система спутникового телевещания", "y": ""}, "25": {"t": "Теория вероятностей (аксиоматика)", "y": ""}, "29": {"t": "Пистолет-пулемёт ППШ", "y": ""}, "30": {"t": "Первый в мире аппарат искусственного кровообращения (автожек", "y": ""}}, "5": {"24": {"t": "Первая в мире регулярная почтовая служба на дирижаблях", "y": ""}, "26": {"t": "Исследование Уссурийского края, «Дерсу Узала»", "y": ""}, "27": {"t": "Первый в мире безэкипажный танк (телетанк Т-26)", "y": ""}, "28": {"t": "Первая в мире ночная бомбардировка авиацией (Галиция)", "y": ""}, "29": {"t": "Первая в мире мощная лучевая пушка на основе магнетрона", "y": ""}, "30": {"t": "Первый в мире рейс самолёта с ядерным двигателем в испытател", "y": ""}, "31": {"t": "Первый в мире прыжок с парашютом из стратосферы (рекорд СССР", "y": ""}, "6": {"t": "Первые в мире полёты аэростата с людьми в России", "y": ""}, "11": {"t": "Первый в мире двигатель на водороде в блокадном Ленинграде", "y": ""}, "23": {"t": "Первая в мире передача речи по радио (Попов)", "y": ""}, "14": {"t": "Первый в мире геликоптер с автоматом перекоса (ЦАГИ 1-ЭА)", "y": ""}, "17": {"t": "Первая в мире высадка на дрейфующую льдину в Арктике", "y": ""}, "19": {"t": "Первый в мире вертикальный взлёт самолёта-штурмовика (Як-36)", "y": ""}, "1": {"t": "Первый в мире одноместный вертолёт с автоматом перекоса в ис", "y": ""}, "2": {"t": "Первая в мире дрейфующая полярная станция «СП-1» (полюс)", "y": ""}, "8": {"t": "Первый в мире буер на воздушной подушке (аэросани Туполева)", "y": ""}, "3": {"t": "Первый в мире турбовинтовой межконтинентальный лайнер Ту-114", "y": ""}, "4": {"t": "Комбинационное рассеяние света", "y": ""}, "5": {"t": "Электродуговая сварка металлическим электродом", "y": ""}, "7": {"t": "Первая демонстрация радиоприёмника (День радио)", "y": ""}, "10": {"t": "Светодиод («свечение Лосева»), первое полупроводниковое свеч", "y": ""}, "12": {"t": "Телефонная трубка (микрофон+телефон вместе) и АТС", "y": "1880"}, "13": {"t": "Древнейшее в мире колесо со спицами и боевая колесница (Синт", "y": "2000"}, "15": {"t": "Учение об иммунитете, фагоцитоз (Нобель)", "y": ""}, "16": {"t": "Математика, теория механизмов и приближений", "y": ""}, "18": {"t": "Прототип персонального компьютера и первый плоттер", "y": ""}, "20": {"t": "Первый в мире коммерческий видеомагнитофон", "y": ""}, "21": {"t": "Управляемый термоядерный синтез, идея токамака", "y": ""}, "22": {"t": "«Хождение за три моря» — первый европейский рассказ о путеше", "y": ""}, "25": {"t": "Первый в мире четырёхмоторный самолёт «Русский витязь» и сер", "y": ""}, "9": {"t": "Первая в мире передача изображения на ЭЛТ (электронное ТВ)", "y": ""}}, "6": {"2": {"t": "Первый в мире ракетный двигатель на гиперголическом топливе", "y": ""}, "7": {"t": "Исследования Центральной Азии, первый европеец в Тянь-Шане", "y": ""}, "10": {"t": "Первый в мире противоминный трал на военных кораблях", "y": ""}, "12": {"t": "Первый в мире арктический дрейф на пароходе «Ермак»", "y": ""}, "18": {"t": "Первая в мире геомагнитная обсерватория", "y": ""}, "22": {"t": "Первый в мире самодвижущийся минный катер", "y": ""}, "27": {"t": "Первый в мире скафандр для глубоководных работ", "y": ""}, "8": {"t": "Полёт первого в мире самолёта с ядерной силовой установкой", "y": ""}, "11": {"t": "Первый в мире серийный магистральный газотурбинный тепловоз ", "y": ""}, "28": {"t": "Первый в мире промышленный ядерный реактор «Аннушка» (первый", "y": ""}, "3": {"t": "Раскрытие механизма фотосинтеза", "y": ""}, "1": {"t": "Первый в мире дрейфующий научный лагерь «СП-1» на полюсе", "y": ""}, "5": {"t": "Аппарат для механического сшивания кровеносных сосудов", "y": ""}, "6": {"t": "«Тетрис», первая всемирно культовая видеоигра", "y": "1984"}, "9": {"t": "Первый в мире токамак (Т-1), управляемый термоядерный синтез", "y": ""}, "14": {"t": "Самозарядные пистолет ТТ и винтовка СВТ", "y": ""}, "15": {"t": "Аппарат Илизарова, чрескостный остеосинтез", "y": ""}, "16": {"t": "Первая женщина в космосе (В. Терешкова)", "y": ""}, "17": {"t": "Первый в мире серийный реактивный пассажирский самолёт Ту-10", "y": ""}, "23": {"t": "Авиационные и ракетные двигатели (НК)", "y": ""}, "25": {"t": "Теория сверхпроводников второго рода (Нобель)", "y": ""}, "20": {"t": "Электрошлаковая сварка", "y": ""}, "21": {"t": "Реактивный миномёт «Катюша»", "y": ""}, "29": {"t": "Возрождение секрета булатной стали", "y": ""}, "30": {"t": "Ракетно-космическая техника, крылатые ракеты", "y": ""}, "19": {"t": "Модель расширяющейся Вселенной, основа современной космологи", "y": ""}, "4": {"t": "Основоположник нейрохирургии", "y": ""}, "13": {"t": "Учение о доминанте, основы физиологии поведения (первое в ми", "y": ""}, "26": {"t": "Излучение Вавилова-Черенкова, теоретическая физика (Нобель)", "y": ""}}, "7": {"6": {"t": "Первый в мире промышленный синтез аммиака по российскому мет", "y": ""}, "7": {"t": "Первое в мире водолазное спасательное устройство", "y": ""}, "14": {"t": "Первый в мире гиперзвуковой аэродинамический расчёт крыла", "y": ""}, "20": {"t": "Первая в мире ракета на жидком кислороде и керосине (испытан", "y": ""}, "31": {"t": "Первый в мире высотный скафандр для лётчиков", "y": ""}, "1": {"t": "Первый в мире официальный патент на ранцевый парашют", "y": ""}, "2": {"t": "Первая в мире электрическая лампа (опыты)", "y": ""}, "3": {"t": "Первый в мире вертолёт Черёмухина ЦАГИ 1-ЭА (мировой рекорд ", "y": ""}, "4": {"t": "Первый в мире переносной сварочный аппарат", "y": ""}, "5": {"t": "Первая в мире сельскохозяйственная академия (Петровская)", "y": ""}, "16": {"t": "Основатель мировой нейропсихологии", "y": ""}, "8": {"t": "Электродуговая сварка (угольный электрод)", "y": ""}, "10": {"t": "Самый большой в мире вертолёт В-12 (первый полёт)", "y": ""}, "11": {"t": "Лазер и мазер (Нобель)", "y": ""}, "12": {"t": "Синхрофазотрон (Дубна)", "y": ""}, "15": {"t": "Матричный принцип наследственности", "y": ""}, "17": {"t": "Научная этнография и география Океании", "y": ""}, "19": {"t": "Электрическая дуга и её применение", "y": ""}, "22": {"t": "Самолёты «Су»", "y": ""}, "23": {"t": "Авиационные двигатели «ВК»", "y": ""}, "25": {"t": "Промышленный синтетический каучук, первый в мире", "y": ""}, "26": {"t": "Первая в мире передача движущегося изображения (электронное ", "y": ""}, "18": {"t": "Основоположник трансплантологии органов", "y": ""}, "27": {"t": "Объёмная (глубинная) голография", "y": ""}, "28": {"t": "Излучение Черенкова (Нобель)", "y": ""}, "29": {"t": "Протон-нейтронная модель атомного ядра", "y": ""}, "30": {"t": "Электронное телевидение и иконоскоп", "y": ""}, "24": {"t": "Первая в мире женщина в открытом космосе (С. Савицкая)", "y": ""}, "9": {"t": "Сверхтекучесть жидкого гелия (Нобель)", "y": ""}, "21": {"t": "Первый в мире полёт живых существ в стратосферу с возвратом ", "y": ""}, "13": {"t": "Первая в мире государственная система здравоохранения (модел", "y": ""}}, "8": {"1": {"t": "Первый в мире арктический метеорологический прогноз (Визе)", "y": ""}, "2": {"t": "Первые в мире воздушно-десантные войска (учения РККА)", "y": ""}, "4": {"t": "Геология Сибири, открытие Байкальского разлома", "y": ""}, "9": {"t": "Первый в мире парашют-«крыло» (испытания)", "y": ""}, "14": {"t": "Первая в мире успешная пересадка сердца от собаки к собаке", "y": ""}, "18": {"t": "Первый в мире полностью закрытый водолазный аппарат (регенер", "y": ""}, "21": {"t": "Первая в мире атомная мина для морского дна", "y": ""}, "22": {"t": "Первый в мире реактивный самолёт с крылом изменяемой стрелов", "y": ""}, "30": {"t": "Первый в мире пассажирский авиационный рейс на вертолёте", "y": ""}, "3": {"t": "Первый в мире гусеничный (паровой) трактор", "y": ""}, "5": {"t": "Истребители «МиГ»", "y": ""}, "6": {"t": "Первый в мире суточный полёт человека в космос («Восток-2», ", "y": ""}, "7": {"t": "Первая русская кругосветная экспедиция", "y": ""}, "12": {"t": "Самолёт схемы «летающее крыло»", "y": "1920"}, "13": {"t": "Рефлексы головного мозга, основы физиологии", "y": ""}, "25": {"t": "Синтез анилина, начало промышленной оргхимии", "y": ""}, "15": {"t": "Терменвокс — первый электромузыкальный инструмент", "y": ""}, "17": {"t": "Первый надводный корабль, достигший Северного полюса (атомох", "y": ""}, "20": {"t": "Стереокино без очков", "y": ""}, "23": {"t": "Жидкостный ракетный двигатель (ОР-1)", "y": ""}, "27": {"t": "Киноаппарат (раньше Люмьеров)", "y": ""}, "28": {"t": "Первый в мире промышленный крекинг нефти — получение бензина", "y": "1891"}, "26": {"t": "Первые в мире гиперболоидные сетчатые башни и конструкции", "y": ""}, "31": {"t": "Цветная фотография (метод трёх кадров)", "y": ""}, "8": {"t": "Микрохирургия глаза, первый в мире поток-метод операций", "y": ""}, "10": {"t": "Законы фотоэффекта, первый фотоэлемент", "y": ""}, "16": {"t": "Теория корабля и качки, первый интегратор дифуравнений", "y": ""}, "24": {"t": "Кибернетика, проект ОГАС (прообраз интернета), ЭВМ «МИР»", "y": ""}, "19": {"t": "Белка и Стрелка: первое в мире возвращение живых существ с о", "y": ""}, "29": {"t": "Первый русский паровоз и рельсовая дорога", "y": ""}, "11": {"t": "Первый в мире групповой космический полёт («Восток-3/4»)", "y": ""}}, "9": {"7": {"t": "Первый в мире телеграф в Зимнем дворце (между дворцами Петер", "y": ""}, "16": {"t": "Первый в мире самолёт-биплан с закрытой кабиной экипажа", "y": ""}, "22": {"t": "Первый в мире оперативный метеопрогноз на несколько суток", "y": ""}, "23": {"t": "Первая в мире ЭВМ для экономических расчётов «БЭСМ-6»", "y": ""}, "25": {"t": "Первое в мире систематическое картографирование Арктики", "y": ""}, "27": {"t": "Первая в мире подводная электрическая мина (Якоби)", "y": ""}, "29": {"t": "Открытие Берингова пролива (первый в мире проход)", "y": ""}, "1": {"t": "Хемосинтез (открытие)", "y": ""}, "2": {"t": "Электрический ракетный двигатель (ЭРД)", "y": ""}, "3": {"t": "Математическая теория оптимального управления", "y": ""}, "4": {"t": "Местная анестезия и мазь Вишневского", "y": ""}, "8": {"t": "Водородный двигатель (практическое применение, блокадный Лен", "y": ""}, "9": {"t": "Химия элементоорганических соединений", "y": ""}, "10": {"t": "Дефибриллятор (электрический запуск сердца)", "y": ""}, "11": {"t": "Истребители «Ла»", "y": ""}, "13": {"t": "Гидроинтегратор — первая в мире аналоговая ЭВМ", "y": ""}, "14": {"t": "Первые в мире дуговые электрические лампы («свеча Яблочкова»", "y": ""}, "6": {"t": "Первый в мире метод непрерывной разливки стали", "y": "1950"}, "15": {"t": "Теория химического строения веществ", "y": ""}, "17": {"t": "Теория космонавтики и ракетодинамики", "y": ""}, "19": {"t": "Первый в мире автомат (автоматическая винтовка)", "y": ""}, "20": {"t": "Аэрофотоаппарат (аэрофотосъёмка)", "y": ""}, "21": {"t": "Электродвигатель, гальванопластика, телеграф", "y": ""}, "24": {"t": "Математика, дивергенция и уравнения физики", "y": ""}, "26": {"t": "Учение об условных рефлексах (Нобель)", "y": ""}, "28": {"t": "Первый в Европе и Азии ядерный реактор Ф-1 (атомная промышле", "y": ""}, "30": {"t": "Стратостат «СССР-1», мировой рекорд высоты", "y": ""}, "12": {"t": "«Луна-2», первый в мире аппарат, достигший другого небесного", "y": "1959"}, "18": {"t": "Космогония, теория происхождения планет; освоение Севморпути", "y": ""}, "5": {"t": "Научная клиническая медицина, первая бесплатная больничная л", "y": ""}}, "10": {"1": {"t": "Первый в мире беспилотный вертолёт (советские испытания)", "y": ""}, "2": {"t": "Первый в мире газотурбинный локомотив", "y": ""}, "6": {"t": "Геология и геохимия Сибири, «Земля Санникова»", "y": ""}, "13": {"t": "Первый в мире реактивный бомбардировщик Ту-16", "y": ""}, "14": {"t": "Первое в мире хождение с живым сердцем донора (Демихов)", "y": ""}, "26": {"t": "Первый в мире искусственный рубин (промышленное производство", "y": ""}, "8": {"t": "Первый в мире управляемый реактивный снаряд С-75 (сбил U-2)", "y": ""}, "11": {"t": "Первый в мире сеанс радиосвязи через Луну как отражатель", "y": ""}, "17": {"t": "Первый в мире орбитальный полёт длительностью более суток (Т", "y": ""}, "4": {"t": "«Спутник-1», первый в мире искусственный спутник Земли", "y": "1957"}, "7": {"t": "Первые в мире снимки обратной стороны Луны («Луна-3»)", "y": ""}, "9": {"t": "Метод хранения и переливания крови (в т.ч. трупной)", "y": ""}, "10": {"t": "Геология Сибири и Азии", "y": ""}, "15": {"t": "Электронный парамагнитный резонанс (ЭПР)", "y": ""}, "16": {"t": "Первая в мире сварка в открытом космосе", "y": ""}, "18": {"t": "Лампа накаливания (нить, спираль)", "y": ""}, "20": {"t": "Пенный огнетушитель", "y": ""}, "21": {"t": "Электромагнитный телеграф, первый в истории", "y": ""}, "23": {"t": "Теория излучения Вавилова-Черенкова (Нобель)", "y": ""}, "24": {"t": "Первый советский пенициллин, антибиотики", "y": ""}, "25": {"t": "Баллистические ракеты подводных лодок", "y": ""}, "27": {"t": "Научная селекция растений, новые сорта", "y": ""}, "28": {"t": "Открытие вирусов (основы вирусологии)", "y": ""}, "29": {"t": "Физика полупроводников (научная школа)", "y": ""}, "30": {"t": "Первая в мире автоматическая стыковка на орбите («Космос-186", "y": ""}, "31": {"t": "Проект реактивного летательного аппарата", "y": ""}, "12": {"t": "«Восход-1», первый в мире многоместный космический корабль", "y": "1964"}, "19": {"t": "Металловедение, точки Чернова (первое в мире учение о структ", "y": ""}, "22": {"t": "«Венера-9»: первые в мире снимки поверхности другой планеты", "y": "1975"}, "3": {"t": "Теория сверхпроводимости и сверхтекучести (Нобель)", "y": ""}, "5": {"t": "Первый в мире Центральный телеграф и Киевский вокзал (ж/б ко", "y": ""}}, "11": {"16": {"t": "Первый в мире серийный зенитный ракетный комплекс С-25", "y": ""}, "23": {"t": "Первый в мире сверхтекучий гелий (открытие свойства)", "y": ""}, "24": {"t": "Первый в мире реактивный истребитель МиГ-19 со сверхзвуковой", "y": ""}, "26": {"t": "Первый в мире двуствольный пулемёт (шкас)", "y": ""}, "28": {"t": "Первый в мире ядерный взрыв под землёй (мирный)", "y": ""}, "29": {"t": "Первая в мире трёхфазная электростанция (Лауфен–Франкфурт, р", "y": ""}, "30": {"t": "Первый в мире реактивный пассажирский лайнер Ту-144 (первый ", "y": ""}, "5": {"t": "Первая в мире массовая операция под эфирным наркозом в военн", "y": ""}, "12": {"t": "Первый в мире атомный ледокол «Ленин» (ввод в эксплуатацию)", "y": ""}, "20": {"t": "Эволюционная сравнительная эмбриология — основа дарвинизма", "y": ""}, "18": {"t": "Первая в России прокладка кабелей под водой и телефонизация", "y": ""}, "11": {"t": "Первая серийная подводная лодка", "y": ""}, "14": {"t": "Первый в мире миномёт", "y": ""}, "17": {"t": "«Луноход-1», первый в мире планетоход", "y": "1970"}, "2": {"t": "Первая ЭВМ в континентальной Европе (МЭСМ)", "y": ""}, "3": {"t": "Первый в мире электромагнитный сейсмограф", "y": ""}, "6": {"t": "Агрохимия и научное применение удобрений", "y": ""}, "7": {"t": "Стратегические ракеты (Р-12, Р-36)", "y": ""}, "8": {"t": "Геохимия и минералогия", "y": ""}, "10": {"t": "Автомат Калашникова (АК-47), самое массовое стрелковое оружи", "y": ""}, "4": {"t": "Первый в мире многомоторный тяжёлый самолёт «Илья Муромец»", "y": ""}, "19": {"t": "Основоположник русской науки; мозаика, наука о стекле, закон", "y": ""}, "21": {"t": "Катализ под высоким давлением", "y": ""}, "22": {"t": "Вертолёты «Ми»", "y": ""}, "25": {"t": "Военно-полевая хирургия и наркоз в полевых условиях", "y": ""}, "27": {"t": "Трёхфазная система переменного тока", "y": ""}, "9": {"t": "Автомат перекоса — «сердце» вертолёта", "y": ""}, "13": {"t": "Закон гомологических рядов, первый в мире банк семян", "y": ""}, "15": {"t": "«Буран», первый в мире беспилотный полёт и посадка космоплан", "y": "1988"}, "1": {"t": "Первое в мире массовое применение живой вакцины от полиомиел", "y": "1909"}}, "12": {"24": {"t": "Первый в мире алмаз в Якутии (промышленное месторождение «Ми", "y": ""}, "26": {"t": "Первый в мире сверхзвуковой стратегический бомбардировщик Ту", "y": ""}, "27": {"t": "Первый в мире чертёж механизма гусеницы (Блинов)", "y": ""}, "30": {"t": "Первая в мире гиперзвуковая крылатая ракета (прототип «Метео", "y": ""}, "11": {"t": "Первый в мире телеуправляемый торпедный катер", "y": ""}, "17": {"t": "Первая в мире централизованная система теплоснабжения", "y": ""}, "19": {"t": "Первый советский персональный ЭВМ «МИР» для инженеров", "y": ""}, "25": {"t": "Первый в мире ядерный реактор на европейском континенте Ф-1", "y": ""}, "13": {"t": "Первый в мире серийный МиГ-15 — реактивный истребитель новог", "y": ""}, "23": {"t": "Первый в мире врач, предложивший противочумные прививки", "y": ""}, "29": {"t": "Первый в мире массовый серийный трактор «Фордзон-Путиловец» ", "y": ""}, "1": {"t": "Неевклидова геометрия", "y": ""}, "2": {"t": "Первая в мире посадка на Марс («Марс-3»)", "y": ""}, "3": {"t": "Токарный станок с суппортом", "y": ""}, "4": {"t": "Артиллерийский оптический прицел", "y": ""}, "5": {"t": "«Ленин», первый в мире атомный надводный корабль (ледокол)", "y": "1957"}, "6": {"t": "Физико-химический анализ", "y": ""}, "7": {"t": "Внеосевой (зеркальный) телескоп", "y": ""}, "8": {"t": "БЭСМ — одна из самых быстрых ЭВМ в мире (1953)", "y": "1953"}, "9": {"t": "Соосный несущий винт (прототип вертолёта)", "y": ""}, "14": {"t": "Мазер и лазер (принцип квантовых генераторов, Нобель)", "y": ""}, "15": {"t": "Первая в мире посадка на другую планету, Венеру («Венера-7»)", "y": ""}, "16": {"t": "Первая внутриконтинентальная станция в Антарктиде «Восток» (", "y": ""}, "18": {"t": "Экраноплан и суда на подводных крыльях", "y": ""}, "20": {"t": "Первая в мире дрейфующая полярная станция «СП-1»", "y": ""}, "22": {"t": "Инерционный аккумулятор и первая ветроэлектростанция", "y": ""}, "31": {"t": "Первый в мире полёт сверхзвукового пассажирского самолёта (Т", "y": ""}, "10": {"t": "Кардиохирургия, аппарат искусственного сердца, биокибернетик", "y": ""}, "21": {"t": "Кристаллография: вывод всех 230 пространственных групп (перв", "y": ""}, "12": {"t": "Правило Марковникова, взаимное влияние атомов в молекуле", "y": ""}, "28": {"t": "Учение о природной очаговости чумы (мировой приоритет)", "y": ""}}};
+const MONTH_NAMES=['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+let calM=0;
+function renderCal(){
+  const m=calM+1;
+  const mData=calData[String(m)]||{};
+  document.getElementById('calTitle').textContent=MONTH_NAMES[calM];
+  const grid=document.getElementById('calGrid');
+  grid.innerHTML='';
+  // Первый день месяца — день недели (Пн=0)
+  const firstDay=new Date(2024,calM,1).getDay();
+  const startOffset=(firstDay===0)?6:firstDay-1;
+  const daysInMonth=new Date(2024,calM+1,0).getDate();
+  for(let i=0;i<startOffset;i++){const e=document.createElement('div');e.className='cal2-cell empty';grid.appendChild(e);}
+  for(let d=1;d<=daysInMonth;d++){
+    const e=document.createElement('div');
+    e.className='cal2-cell'+(mData[d]?' has':'');
+    e.textContent=d;
+    if(mData[d]){const inv=mData[d];e.onclick=function(){
+      document.querySelectorAll('.cal2-cell.sel').forEach(c=>c.classList.remove('sel'));
+      this.classList.add('sel');
+      document.getElementById('calDetail').innerHTML=
+        `<b>${d} ${MONTH_NAMES[calM]}${inv.y?' · '+inv.y:''}</b><br>${inv.t}`;
+      award('cal',3);
+    };}
+    grid.appendChild(e);
+  }
+}
+renderCal();
+document.getElementById('calPrev').onclick=()=>{calM=(calM+11)%12;renderCal();};
+document.getElementById('calNext').onclick=()=>{calM=(calM+1)%12;renderCal();};
+
+// ── REVEAL ────────────────────────────────────────────────────────────────────
+document.querySelectorAll('section.block').forEach(s=>s.classList.add('reveal'));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+</script>
+<script>window.addEventListener("pageshow",function(e){if(e.persisted)location.reload();});</script>
+
+<!-- единая обвязка музеев: backbtn, «Поделиться», чипсы разделов,
+     стрелки «пред/след», строка «Случайное · Все · В город-музей» -->
+<script>window.MUSEUM_CHROME={
+  museum:{title:'Что изобрели русские первыми в мире',href:'index.html'},
+  share:{title:'первая в мире межпланетная станция «Луна-1» — музей «Что изобрели русские первыми в мире»',
+         text:'первая в мире межпланетная станция «Луна-1». Что Россия дала миру раньше всех — день за днём.'},
+  prev:{href:'day-01jan-cabletv.html',title:'1 января · Кабельное ТВ'},
+  next:{href:'day-04jan-pilchikov.html',title:'4 января · Пильчиков'},
+  all:{href:'index.html',label:'Все изобретения'},
+  city:'../../index.html',
+  random:['day-01jan-cabletv.html','day-02jan-luna1.html','day-03feb-luna9.html','day-04jan-pilchikov.html','day-05jan-shukhov.html','day-15nov-buran.html','day-08jan-icebreaker.html','day-09jan-blinov.html','day-30jan-kotelnikov.html','day-18mar-leonov.html','day-15may-mechnikov.html','day-16jun-tereshkova.html','day-26sep-pavlov.html','day-25nov-pirogov.html','day-01dec-lobachevsky.html','day-14dec-laser.html']
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-score.js"></script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-chrome.js"></script>
+<script>window.MUSEUM_SUPPORT={museum:'Что изобрели русские первыми в мире'};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-support.js"></script>
+  <!-- rc-analytics --><script defer src="https://arabelthera-dot.github.io/rc-museum-preview/assets/analytics.js"></script>
+
+<script>window.MUSEUM_AUDIOGUIDE={
+  audioSrc:"audio-guide-luna1-ru.mp3",
+  durationLabel:"5 минут 24 секунд",
+  lead:"Голос ведёт по залу «Луны-1»: от стартового стола Байконура до орбиты вокруг Солнца, где станция летит до сих пор. Семь остановок, на каждой — что искать глазами. Слушать можно фоном, пока читаешь статью ниже.",
+  stops:[
+    {t:0,mark:"0:00",title:"Шестнадцать сорок одна"},
+    {t:41,mark:"0:41",title:"Шар весом в триста шестьдесят один килограмм"},
+    {t:86,mark:"1:26",title:"Одиннадцать и две десятых"},
+    {t:131,mark:"2:11",title:"Промах в шесть тысяч километров"},
+    {t:173,mark:"2:53",title:"Ветер, которого не видели"},
+    {t:225,mark:"3:45",title:"Мечта, которая всё ещё летит"},
+    {t:269,mark:"4:29",title:"Что мы отсюда берём"}
+  ],
+  transcript:[
+    "<p>«Начнём не с ракеты, а с часов: 16:41, 2 января 1959 года, Байконур. Всё, что летало в космос до этого дня, оставалось на орбите Земли или падало обратно — Земля никого не отпускала. Сейчас она отпустит первый раз».</p>",
+    "<p>«Главный предмет зала — шар. 361 килограмм, четыре антенны, внутри приборы, снаружи вымпел с гербом: его положили с расчётом на удар о лунную поверхность. Обратите внимание, чего у шара нет: двигателя для торможения, системы посадки, обратного билета».</p>",
+    "<p>«На схеме — цифра, ради которой стоит прийти в этот зал: 11,2 километра в секунду, вторая космическая. Ниже неё любая вещь падает обратно, выше — уходит навсегда. Все прежние траектории были кольцами вокруг Земли, эта первая уходит за край схемы».</p>",
+    "<p>«Аппарат, посланный попасть, не попал: прошёл в шести тысячах километров от Луны. Зато магнитометр показал, что своего магнитного поля у Луны нет, а приборы поймали непрерывный поток частиц от Солнца — солнечный ветер, о котором физики спорили годами. Летела в Луну — открыла ветер, которым продувается вся Солнечная система».</p>",
+    "<p>«Пролетев мимо, станция вышла на орбиту вокруг Солнца и стала первым искусственным спутником Солнца; в газетах её назвали „Мечта“. Это не прошедшее время: шар идёт по своему кольцу между орбитами Земли и Марса прямо сейчас».</p>"
+  ],
+  note:"Озвучено синтезом речи — временно, до записи голосом автора музея."
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-audioguide.js"></script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-video.js"></script>
+<script type="application/json" data-proof>
+{
+ "status": "found",
+ "claim_id": "rc:izobreteniya:luna1:claim-escape",
+ "ours": {
+  "kind": "сообщение ТАСС",
+  "title": "Сообщение ТАСС о запуске космической ракеты в сторону Луны",
+  "date": "1959-01-02",
+  "holder": "ТАСС; текст — справочник «Ракетные войска стратегического назначения»",
+  "source_url": "https://rvsn.info/library/docs/doc_1_0258.html"
+ },
+ "rival": {
+  "name": "«Пионер-4», США",
+  "doc_title": "пролёт мимо Луны",
+  "date": "1959-03-03"
+ },
+ "gap_years": 0
+}
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-proof.js"></script>
+</body>
+</html>

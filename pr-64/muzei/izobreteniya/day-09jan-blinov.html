@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="ru" data-museum="inventions" data-fabric="field">
+<head><meta name="robots" content="noindex"><base href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Первый в мире гусеничный ход — Блинов — Русские первые в мире</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --dark:#060c17;--dark2:#0c1826;--surface:#111f33;
+    --card:rgba(255,255,255,.05);--card-b:rgba(255,255,255,.09);
+    --gold:#c9a84c;--gold-l:#e4c97a;--gold-g:rgba(201,168,76,.13);
+    --ink:#e8eef5;--muted:#7a9ab8;--line:rgba(255,255,255,.07);
+    --accent:#2d8cbf;--accent2:#1f6f8b;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Inter','Segoe UI',sans-serif;color:var(--ink);background:var(--dark);line-height:1.72}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.13;margin:0}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent)}
+  header.top{background:rgba(6,12,23,.88);backdrop-filter:blur(24px);border-bottom:1px solid var(--card-b);color:#fff;position:sticky;top:0;z-index:30}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+  .logo .lt{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:16px}
+  .logo .lt small{display:block;font-size:9px;font-weight:600;letter-spacing:3px;color:var(--gold);text-transform:uppercase;font-family:'Inter',sans-serif}
+  .score{background:var(--gold-g);border:1px solid rgba(201,168,76,.3);border-radius:24px;padding:6px 16px;font-size:13px;color:var(--gold-l);cursor:pointer;font-family:'Inter',sans-serif}
+  .hero-scene{position:relative;height:52vh;min-height:280px;max-height:520px;overflow:hidden;background:linear-gradient(160deg,#0a1e3a 0%,rgb(18,56,96) 55%,#0d2240 100%);display:flex;align-items:center;justify-content:center}
+  .hero-scene .hero-year{font-family:'Playfair Display',Georgia,serif;font-size:clamp(60px,14vw,130px);font-weight:900;color:rgba(255,255,255,.04);user-select:none;line-height:1;animation:yearFade 1.4s ease both}
+  @keyframes yearFade{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+  .hero-particles{position:absolute;inset:0;pointer-events:none}
+  /* ── КАЛЕНДАРЬ ── */
+  .cal2{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:20px;max-width:520px}
+  .cal2-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+  .cal2-title{font-family:'Playfair Display',Georgia,serif;font-size:22px;color:var(--gold-l);font-weight:700}
+  .cal2-nav{width:40px;height:40px;border-radius:10px;border:1px solid var(--card-b);background:rgba(255,255,255,.05);color:var(--muted);font-size:13px;cursor:pointer;transition:.16s}
+  .cal2-nav:hover{border-color:var(--gold);color:var(--gold);background:var(--gold-g)}
+  .cal2-dow{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:6px;font-size:10px;color:var(--muted);font-weight:700;font-family:'Inter',sans-serif;letter-spacing:1px;text-align:center}
+  .cal2-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+  .cal2-cell{aspect-ratio:1;display:flex;align-items:center;justify-content:center;border-radius:10px;font-size:14px;color:rgba(255,255,255,.18);background:rgba(255,255,255,.02);border:1px solid transparent;cursor:default}
+  .cal2-cell.has{background:rgba(45,140,191,.12);color:var(--ink);font-weight:700;cursor:pointer;border-color:rgba(45,140,191,.22);position:relative}
+  .cal2-cell.has:hover{border-color:var(--gold);background:var(--gold-g);color:var(--gold)}
+  .cal2-cell.has::after{content:'';position:absolute;bottom:4px;width:4px;height:4px;border-radius:50%;background:var(--accent)}
+  .cal2-cell.sel{background:var(--gold);color:#1a0f00;border-color:var(--gold);font-weight:700}
+  .cal2-detail{margin-top:14px;background:var(--gold-g);border-left:3px solid var(--gold);border-radius:0 12px 12px 0;padding:12px 16px;font-size:14px;color:var(--ink)}
+  /* Этикетка сцены и кнопка-пуск живут ПОД картинкой, а не поверх неё
+     (правило Сергея 03.08.2026). Кнопка пульсирует до первого нажатия и гаснет после. */
+  .scene-caption{background:#060d18;padding:11px 0 12px}
+  .scene-caption .wrap{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+  .scene-cap{font-size:13.5px;line-height:1.6;color:var(--muted);border-left:2px solid rgba(201,168,76,.4);padding-left:14px;flex:1 1 420px}
+  .scene-hint{flex:0 0 auto;font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.4px;color:#e4c97a;
+        background:rgba(201,168,76,.10);border:1px solid rgba(201,168,76,.3);border-radius:20px;padding:7px 16px;
+        transition:opacity .6s;white-space:nowrap}
+  button.scene-hint{cursor:pointer;font-weight:600;color:#f4dc9a;background:rgba(201,168,76,.16)}
+  button.scene-hint:hover{background:rgba(201,168,76,.26);border-color:rgba(201,168,76,.6)}
+  @keyframes ctaPulse{
+    0%,100%{box-shadow:0 0 0 0 rgba(201,168,76,.42);transform:scale(1)}
+    50%    {box-shadow:0 0 0 9px rgba(201,168,76,0);transform:scale(1.045)}}
+  .cta-pulse{animation:ctaPulse 1.6s ease-in-out infinite}
+  @media(max-width:640px){.scene-caption .wrap{flex-direction:column;gap:9px}
+        .scene-hint{order:-1;align-self:flex-start;font-size:11.5px;padding:6px 13px}
+        .scene-cap{font-size:12.8px;flex:1 1 auto}}
+  .hero-lead{display:block;background:linear-gradient(180deg,#0c1826 0%,#060c17 100%);color:#fff;padding:28px 0 38px}
+  .hero-lead .museum{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase;font-weight:700;font-family:'Inter',sans-serif;margin-bottom:12px;opacity:.9}
+  .hero-lead .who{font-family:'Inter',sans-serif;font-size:clamp(13px,3vw,15px);letter-spacing:.4px;color:var(--accent-l,#7dc8ff);margin-bottom:10px}
+  .hero-lead .who i{font-style:normal;color:#7893ab;font-weight:400}
+  .hero-lead h1{color:#fff;font-size:clamp(28px,6vw,52px);font-weight:900;line-height:1.06;margin-bottom:14px}
+  .hero-lead .hook{color:#b8ccde;font-size:18px;max-width:580px;margin-bottom:26px;line-height:1.65}
+  .date-chip{display:inline-block;background:var(--gold-g);border:1px solid rgba(201,168,76,.35);color:var(--gold);font-weight:700;padding:6px 18px;border-radius:24px;font-size:12px;margin-bottom:14px;font-family:'Inter',sans-serif;letter-spacing:.5px}
+  .daynav{position:sticky;top:64px;z-index:25;background:rgba(6,12,23,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--card-b)}
+  .daynav .wrap{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+  .daynav a{flex:0 0 auto;padding:14px 20px;font-size:11px;font-weight:700;font-family:'Inter',sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap;letter-spacing:1.5px;text-transform:uppercase;border-bottom:2px solid transparent;transition:.18s}
+  .daynav a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+  section.block{padding:60px 0;border-bottom:1px solid var(--line);scroll-margin-top:130px}
+  .kicker{font-size:10px;text-transform:uppercase;letter-spacing:3.5px;color:var(--gold);font-weight:700;font-family:'Inter',sans-serif;margin-bottom:8px}
+  section.block h2{font-size:32px;color:#fff;margin-bottom:10px}
+  p{margin:14px 0;color:var(--ink)}
+  .pull{background:var(--gold-g);border-left:3px solid var(--gold);padding:18px 22px;border-radius:0 14px 14px 0;font-style:italic;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-size:19px;line-height:1.5;margin:24px 0}
+  .article{position:relative}
+  .article.collapsed .body{max-height:260px;overflow:hidden}
+  .article.collapsed .body:after{content:'';position:absolute;left:0;right:0;bottom:44px;height:110px;background:linear-gradient(transparent,var(--dark))}
+  .more{text-align:center;margin-top:16px}
+  .btn{cursor:pointer;border:none;border-radius:12px;padding:13px 24px;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;background:var(--accent2);color:#fff;transition:.18s}
+  .btn:hover{filter:brightness(1.18)}
+  .btn.ghost{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid var(--card-b)}
+  .btn.gold{background:linear-gradient(135deg,var(--gold),#b8882b);color:#1a0f00;box-shadow:0 4px 20px rgba(201,168,76,.25)}
+  .btn.gold:hover{filter:brightness(1.1)}
+  .card{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:20px 22px;margin:14px 0}
+  .opt{display:block;width:100%;text-align:left;background:rgba(255,255,255,.04);border:1px solid var(--card-b);border-radius:12px;padding:12px 16px;margin:8px 0;cursor:pointer;font-size:15px;color:var(--ink);font-family:'Inter',sans-serif;transition:.16s}
+  .opt:hover{border-color:var(--accent);background:rgba(45,140,191,.08)}
+  .opt.correct{background:rgba(40,120,60,.18);border-color:#3f9b52;color:#7ed4a0;font-weight:600}
+  .opt.wrong{background:rgba(180,40,40,.13);border-color:#c0453f;color:#f08080}
+  .exp{margin-top:10px;font-size:14px;background:var(--gold-g);border-radius:10px;padding:12px 14px;display:none;color:var(--gold-l)}
+  .exp.show{display:block}
+  .chip{cursor:pointer;background:rgba(255,255,255,.05);border:1px solid var(--card-b);border-radius:20px;padding:7px 16px;margin:4px 5px 4px 0;font-size:13px;display:inline-block;color:var(--muted);font-family:'Inter',sans-serif;transition:.16s}
+  .chip:hover{border-color:var(--gold);color:var(--gold)}
+  .msg{margin:8px 0;padding:12px 16px;border-radius:14px;max-width:88%;font-size:15px}
+  .msg.you{background:rgba(45,140,191,.18);border:1px solid rgba(45,140,191,.28);margin-left:auto;text-align:right;color:#a8d4f0}
+  .msg.inv{background:rgba(255,255,255,.05);border:1px solid var(--card-b);color:var(--ink)}
+  .fork-opt{background:var(--card);border:1px solid var(--card-b);border-radius:14px;padding:16px 18px;margin:10px 0;cursor:pointer;transition:.18s;font-size:15px}
+  .fork-opt:hover{border-color:var(--accent);background:rgba(45,140,191,.08)}
+  .fork-opt.chosen{border-color:var(--gold);background:var(--gold-g)}
+  .reveal{opacity:1;transform:translateY(16px);transition:.65s cubic-bezier(.2,.7,.2,1)}
+  .reveal.on{transform:none}
+  .ad-slot{position:relative;margin:24px 0;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.1);border-radius:14px;min-height:80px;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px}
+  .ad-slot .lbl{position:absolute;top:7px;right:12px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.15);font-family:'Inter',sans-serif}
+  .ad-slot .ph-txt{font-size:12px;max-width:80%;color:rgba(255,255,255,.18)}
+  footer{padding:40px 0 80px;color:rgba(255,255,255,.2);font-size:12px;text-align:center;font-family:'Inter',sans-serif;letter-spacing:.5px}
+  @media(max-width:600px){.hero-lead h1{font-size:26px}.hero-lead .hook{font-size:15px}}
+  .crumbs{background:rgba(6,12,23,.6);border-bottom:1px solid var(--card-b);font-family:'Inter',sans-serif;font-size:12.5px}
+  .crumbs .wrap{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
+  .crumbs a{color:var(--gold-l);text-decoration:none;white-space:nowrap}
+  .crumbs a:hover{text-decoration:underline}
+  .crumbs .sep{color:var(--muted);opacity:.6}
+  .crumbs .here{color:var(--muted);white-space:nowrap}
+</style>
+<link rel="stylesheet" href="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-theme.css">
+<!-- rc-meta:start -->
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="description" content="Первый в мире гусеничный ход — «бесконечные рельсы». Крестьянин без образования придумал принцип, на котором держится вся тяжёлая техника планеты — за 25 лет до американцев, которые…">
+  <link rel="canonical" href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-09jan-blinov.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Русская цивилизация">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Первый в мире гусеничный ход — Блинов — Русские первые в мире">
+  <meta property="og:description" content="Первый в мире гусеничный ход — «бесконечные рельсы». Крестьянин без образования придумал принцип, на котором держится вся тяжёлая техника планеты — за 25 лет до американцев, которые…">
+  <meta property="og:url" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-09jan-blinov.html">
+  <meta property="og:image" content="https://arabelthera-dot.github.io/rc-museum-preview/og/izobreteniya_day-09jan-blinov.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Первый в мире гусеничный ход — Блинов — Русские первые в мире">
+  <meta name="twitter:description" content="Первый в мире гусеничный ход — «бесконечные рельсы». Крестьянин без образования придумал принцип, на котором держится вся тяжёлая техника планеты — за 25 лет до американцев, которые…">
+  <meta name="twitter:image" content="https://arabelthera-dot.github.io/rc-museum-preview/og/izobreteniya_day-09jan-blinov.jpg">
+  <meta name="theme-color" content="#1a1410">
+  <link rel="icon" href="https://arabelthera-dot.github.io/rc-museum-preview/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="192x192" href="https://arabelthera-dot.github.io/rc-museum-preview/icon-192.png">
+  <link rel="apple-touch-icon" href="https://arabelthera-dot.github.io/rc-museum-preview/apple-touch-icon.png">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Первый в мире гусеничный ход — Блинов — Русские первые в мире",
+  "description": "Первый в мире гусеничный ход — «бесконечные рельсы». Крестьянин без образования придумал принцип, на котором держится вся тяжёлая техника планеты — за 25 лет до американцев, которые…",
+  "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-09jan-blinov.html",
+  "image": "https://arabelthera-dot.github.io/rc-museum-preview/og/izobreteniya_day-09jan-blinov.jpg",
+  "inLanguage": "ru-RU",
+  "isAccessibleForFree": true,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Русская цивилизация",
+    "url": "https://arabelthera-dot.github.io/rc-museum-preview/",
+    "logo": "https://arabelthera-dot.github.io/rc-museum-preview/icon-512.png"
+  },
+  "isPartOf": {
+    "@type": "CollectionPage",
+    "name": "Что изобрели русские первыми в мире",
+    "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "Русская цивилизация",
+    "url": "https://arabelthera-dot.github.io/rc-museum-preview/",
+    "logo": "https://arabelthera-dot.github.io/rc-museum-preview/icon-512.png"
+  }
+}
+  </script>
+  <!-- rc-meta:end -->
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">
+      <svg width="34" height="34" viewBox="0 0 48 48" aria-label="логотип">
+        <circle cx="24" cy="24" r="23" fill="#0f1e33" stroke="#c8a24a" stroke-width="2"/>
+        <path d="M24 10 L24 30 L12 30 Z" fill="#c8a24a"/>
+        <path d="M26 14 L36 30 L26 30 Z" fill="#c8a24a" opacity=".7"/>
+        <path d="M10 33 q14 6 28 0" fill="none" stroke="#c8a24a" stroke-width="2"/>
+      </svg>
+      <span class="lt">Русская цивилизация<small>первые в мире</small></span>
+    </a>
+    <div class="score" id="scoreBox">⭐ <span id="score">0</span> / 100</div>
+  </div>
+</header>
+<nav class="crumbs"><div class="wrap">
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация</a>
+  <span class="sep">›</span>
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми в мире</a>
+  <span class="sep">›</span>
+  <span class="here">9 января · Блинов</span>
+</div></nav>
+
+
+<div class="hero-scene" id="hero">
+  <canvas id="heroCvs" class="hero-particles"></canvas>
+  <div class="hero-year">1879</div>
+</div>
+
+<div class="scene-caption">
+  <div class="wrap">
+    <div class="scene-cap">Балаково · 1879 · первый гусеничный ход в мире</div>
+    <button type="button" class="scene-hint cta-pulse" id="heroHint" onclick="var c=document.getElementById('heroCvs');if(c)c.click()">⚡ тапни — пусти трактор по пашне</button>
+  </div>
+</div>
+
+<header class="hero-lead">
+<div class="wrap">
+  <div class="date-chip">9 января · 1879</div>
+  <div class="who">Фёдор Блинов <i>· крестьянин-самоучка, механик</i></div>
+  <div class="museum">Музей «Что изобрели русские первыми в мире»</div>
+  <h1>Первый в мире гусеничный ход — «бесконечные рельсы»</h1>
+  <p class="hook">Крестьянин без образования придумал гусеницу, на которой держится вся тяжёлая техника планеты, — за 25 лет до американцев.</p>
+  <div style="display:flex;gap:12px;flex-wrap:wrap">
+    <button class="btn gold" onclick="document.getElementById('story').scrollIntoView({behavior:'smooth'})">Читать историю ↓</button>
+    <button class="btn ghost" onclick="document.getElementById('video').scrollIntoView({behavior:'smooth'})">▶ Смотреть видео</button>
+  </div>
+</div>
+</header>
+
+<div class="wrap"><div class="ad-slot"><span class="lbl">Реклама</span><span class="ph-txt">Баннер-шапка — размещается здесь.</span></div></div>
+
+<nav class="daynav">
+  <div class="wrap">
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-09jan-blinov.html#story">Читать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-09jan-blinov.html#video">Видео</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-09jan-blinov.html#quiz">Викторина</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-09jan-blinov.html#fork">Развилка</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-09jan-blinov.html#chat-sec">Спросить</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-09jan-blinov.html#games">Игры</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-09jan-blinov.html#excursion">Экскурсия</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-09jan-blinov.html#result">Итог</a>
+  </div>
+</nav>
+
+<!-- ── ВИДЕО ── -->
+<section class="wrap" id="dokument" data-proof-block aria-label="Документ первенства"></section>
+
+<section class="block" id="video">
+  <div class="wrap">
+    <div class="kicker">Видео дня</div>
+    <h2>История в 90 секундах</h2>
+    <div style="aspect-ratio:16/9;background:rgba(255,255,255,.03);border-radius:14px;display:flex;align-items:center;justify-content:center;color:var(--muted)">Видео создаётся — скоро появится</div>
+  </div>
+</section>
+
+<!-- ── АУДИОГИД ── Разметку и поведение рендерит assets/museum-audioguide.js,
+     конфиг MUSEUM_AUDIOGUIDE в конце страницы; здесь только пустая секция-плейсхолдер. -->
+<section class="block" id="audioguide"></section>
+
+<!-- ── СТАТЬЯ ── -->
+<section class="block" id="story">
+  <div class="wrap">
+    <div class="kicker">История изобретения</div>
+    <h2>Человек, придумавший гусеницу</h2>
+    <div class="article collapsed" id="article">
+      <div class="body" id="articleBody">
+        
+
+<p><b>Саратовская губерния, 1870-е.</b> Фёдор Блинов смотрит на поле после дождя. Телега с грузом зарылась в грязь по ступицу — лошади тянут из последних сил. Он видел это тысячи раз. Но впервые задаётся вопросом не «как вытащить», а «почему вообще колесо проваливается». И придумывает ответ, который изменит мир.</p>
+
+<p><b>Кто этот человек.</b> Фёдор Абрамович Блинов родился в 1831 году в деревне Никольское Вольского уезда Саратовской губернии — в крепостной семье. Грамоте выучился сам, уже взрослым. Работал матросом на Волге, потом механиком, потом завёл собственные мастерские в Балакове. Про таких говорят «самородок»: не имея образования, он понимал механику интуитивно — и строил то, что образованные инженеры считали невозможным.</p>
+
+<p><b>В чём была загвоздка.</b> Колесо — идеальная машина на твёрдой поверхности и беспомощная на мягкой: оно давит всем весом на маленькую точку контакта и проваливается. Чем тяжелее машина, тем глубже яма. Паровые тракторы того времени ездили только по твёрдым дорогам — на поле они застревали намертво.</p>
+
+<p><b>Как родилась идея.</b> Блинов рассуждал просто: если колесо проваливается, потому что давит в одну точку — значит, надо распределить вес по большей площади. Что если под колёса подложить бесконечную цепь из звеньев, которая расстилается перед машиной и собирается за ней? Вес равномерно ложится на полосу грунта — и машина идёт там, где колесо застряло бы намертво.</p>
+
+<p><b>Что он построил.</b> В 1879 году Блинов получил патент №2245 — на «вагон с бесконечными рельсами». Следующим шагом стал самодвижущийся трактор: в 1888 году Блинов поставил паровую машину на гусеничное шасси и испытал его под Балаковым. Первый в мире гусеничный трактор мог ехать по пашне, по грязи, по целине — там, где колёсная техника была беспомощна.</p>
+
+<p><b>Демонстрация.</b> В 1896 году Блинов привёз трактор на Нижегородскую промышленно-художественную выставку. Машина прошла своим ходом, повернула, развернулась. Комиссия выставки наградила изобретателя почётным дипломом. Серийного производства не последовало: у Блинова не было ни капиталистов за спиной, ни связей в министерствах.</p>
+
+<p><b>Горькая часть.</b> Блинов умер в 1902 году — не увидев, что произойдёт дальше. В 1904 году американец Бенджамин Холт запатентовал гусеничный трактор в США. В 1906-м — начал серийное производство под маркой «Caterpillar». Сегодня «Caterpillar» — один из крупнейших концернов мира, его жёлтые машины работают на всех стройках планеты. В учебниках по всему миру написано имя Холта. Патент Блинова на 25 лет старше — но Россия так и не запустила его в производство при жизни изобретателя.</p>
+
+<p><b>Финал.</b> Гусеница Блинова стала основой двух революций XX века: промышленной (тракторы, экскаваторы, краны, бульдозеры) и военной (танки Первой и Второй мировых). Каждый танк — это воплощённый патент крестьянина из Саратовской губернии. В Балакове сегодня стоит его памятник. «Caterpillar» об этом не упоминает.</p>
+
+<p><b>Человек.</b> Фёдор Абрамович Блинов (1831–1902) — бывший крепостной, самоучка, механик. Говорил мало, работал руками. Современники отмечали: объяснить, почему та или иная конструкция будет работать, он не мог — но машина работала. Последние годы жил в Балакове, в своих мастерских, продолжал изобретать до последнего дня.</p>
+
+<p style="font-size:13px;color:var(--muted);margin-top:26px">Источники: histrf.ru · rg.ru · culture.ru</p>
+      </div>
+      <div class="more"><button class="btn ghost" id="moreBtn">Читать дальше ↓</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="more">
+  <div class="wrap">
+    <div class="kicker">Гусеница изменила мир</div>
+    <h2>Что выросло из изобретения Блинова</h2>
+    <div class="card"><b style="color:var(--gold-l)">Сельскохозяйственный трактор</b><p style="margin:6px 0 0">Гусеничные тракторы пришли в поля в 1910-х и сделали возможной механизацию сельского хозяйства — на переувлажнённых почвах, торфяниках и целине, куда колёсная техника не доходила.</p></div>
+    <div class="card"><b style="color:var(--gold-l)">Танк</b><p style="margin:6px 0 0">Первые танки Первой мировой (британские Mark I, 1916) были гусеничными — только так они могли преодолевать окопы и рвы. Без принципа Блинова не было бы ни одного танка в обеих мировых войнах.</p></div>
+    <div class="card"><b style="color:var(--gold-l)">Строительная и горная техника</b><p style="margin:6px 0 0">Экскаваторы, бульдозеры, краны на гусеничном ходу — весь парк тяжёлой техники, без которого невозможно ни одно крупное строительство.</p></div>
+    <div class="card"><b style="color:var(--gold-l)">«Caterpillar»</b><p style="margin:6px 0 0">Компания основана в 1925-м (слияние Холта и Беста), сегодня №1 в мире по строительной и горной технике. На логотипе — гусеница. О Блинове — ни слова.</p></div>
+  </div>
+</section>
+<section class="block" id="theme-inventions" style="background:rgba(201,168,76,.03);border-top:1px solid rgba(201,168,76,.15)">
+  <div class="wrap">
+    <div class="kicker">Транспорт · Русские первенства</div>
+    <h2 style="margin-bottom:6px">Что ещё русские изобрели первыми в теме «транспорт»</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">1896 год. Выставка в Нижнем Новгороде прошла хорошо. Диплом есть. Но серийного завода по-прежнему нет — ни инвесторов, ни государственного заказа. Тебе 65 лет. Ты на месте Блинова — что делаешь?</p>
+    <div class="fork-opt">🏭 Ищу промышленника, продаю лицензию — пусть сам строит завод</div>
+    <div class="fork-opt">📜 Подаю прошение в министерство земледелия — трактор нужен крестьянам</div>
+    <div class="fork-opt">🔧 Продолжаю совершенствовать машину в мастерских — пока не появится покупатель</div>
+    <div id="forkReal" style="display:none;margin-top:14px" class="exp"><b>Как было на самом деле.</b> Блинов продолжал работать в балаковских мастерских до смерти в 1902 году — завод так и не появился. Через два года Бенджамин Холт в США запатентовал то же самое и за несколько лет построил империю «Caterpillar». Разница была не в идее — а в том, кто стоял за спиной изобретателя.</div>
+    <div id="themeInvBody" style="display:none;margin-top:20px">
+      <div class="card" style="padding:0;overflow:hidden">
+        <div style="padding:14px 20px;background:rgba(201,168,76,.08);border-bottom:1px solid rgba(201,168,76,.15)">
+          <span style="color:var(--gold-l);font-weight:600;font-size:14px;letter-spacing:.5px">20 ИЗОБРЕТЕНИЙ · ТРАНСПОРТ</span>
+        </div>
+        <div style="padding:4px 20px 12px">
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">3 янв</span>
+          <span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-03feb-luna9.html" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,.3);transition:.15s" onmouseover="this.style.color='var(--gold-l)'" onmouseout="this.style.color='inherit'">Первый в мире атомный ледокол-речник «Обь» и атомный флот →</a></span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">5 янв</span>
+          <span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-05jan-shukhov.html" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(201,168,76,.3);transition:.15s" onmouseover="this.style.color='var(--gold-l)'" onmouseout="this.style.color='inherit'">Первый в мире расчётный нефтепровод Балаханы–Черный город →</a></span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">10 янв</span>
+          <span>Первый в мире ледокол «Пайлот»</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">16 янв</span>
+          <span>Первая стыковка кораблей и переход через открытый космос («Союз-4/5»)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">26 янв</span>
+          <span>Первый в мире серийный реактивный пассажирский самолёт Ту-104</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">28 янв</span>
+          <span>Открытие Антарктиды</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">29 янв</span>
+          <span>Первый в мире серийный атомный подводный ракетоносец К-19</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">10 фев</span>
+          <span>Аэросани (первые в мире)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">11 фев</span>
+          <span>Первый в мире морской гидросамолёт (летающая лодка М-5)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">13 фев</span>
+          <span>Гидросамолёты и амфибии «Бе»</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">17 фев</span>
+          <span>Первый в мире электрический трамвай</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">10 мар</span>
+          <span>Открытие пролива между Азией и Америкой</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">19 мар</span>
+          <span>Первый в мире военный ледокол «Вайгач» — исследование Арктики</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">20 мар</span>
+          <span>Первый в мире магистральный тепловоз</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">21 мар</span>
+          <span>Самолёт Можайского, один из первых в мире</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">30 мар</span>
+          <span>Штурмовик Ил-2 и самолёты Ильюшина</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">1 апр</span>
+          <span>Самолёты «Як»</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">2 апр</span>
+          <span>Первый в мире бензиновый двигатель (для дирижабля)</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">7 апр</span>
+          <span>Первая в мире подводная лодка «Дельфин» с двигателем внутреннего сгорания</span>
+        </div>
+<div style="display:grid;grid-template-columns:110px 1fr;gap:6px 12px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px;align-items:baseline">
+          <span style="color:var(--gold);font-weight:700;font-size:13px;white-space:nowrap">9 апр</span>
+          <span>Первый в мире дизельный теплоход «Вандал»</span>
+        </div>
+        </div>
+      </div>
+      <p style="text-align:center;color:var(--muted);font-size:14px;margin-top:12px">Каждое — отдельный день музея. <a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Весь музей →</a></p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── ВИКТОРИНА ── -->
+<section class="block" id="quiz">
+  <div class="wrap">
+    <div class="kicker">Проверь себя</div>
+    <h2>Викторина</h2>
+    <div id="quizBox"></div>
+    <div class="gm" id="gm_tm">
+      <h3>⚖️ Правда или миф</h3>
+      <p style="font-weight:600;margin:0 0 12px">«Слово Caterpillar никак не связано с русским изобретением»</p>
+      <div><button class="gm-btn" style="width:auto;display:inline-block;margin-right:8px" onclick="tmAns(this,true)">Правда</button><button class="gm-btn" style="width:auto;display:inline-block" onclick="tmAns(this,false)">Миф</button></div>
+      <div class="gm-exp" id="tmExp">Формально правда: Холт назвал компанию сам, не зная о Блинове. Но принцип, запатентованный под этим именем, был придуман в России на 25 лет раньше.</div>
+    </div>
+    <div class="gm" id="gm_vb">
+      <h3>🤔 Верю — не верю</h3>
+      <p style="font-weight:600;margin:0 0 12px">«Без гусеницы Блинова не было бы ни одного танка в Первой мировой войне»</p>
+      <div><button class="gm-btn" style="width:auto;display:inline-block;margin-right:8px" onclick="vbAns(this,true)">Верю</button><button class="gm-btn" style="width:auto;display:inline-block" onclick="vbAns(this,false)">Не верю</button></div>
+      <div class="gm-exp" id="vbExp">Верю — правильно. Первые танки 1916 года шли именно на гусеничном ходу: только так можно преодолевать окопы и рвы. Без этого принципа танка не существовало бы.</div>
+    </div>
+    <div class="gm" id="gm_char">
+      <h3>🧩 Шарада</h3>
+      <p style="font-style:italic;line-height:1.8;margin:0 0 12px">«Не колесо я и не сани,<br>но еду там, где те застряли;<br>я цепь, что стелется под ход —<br>крестьянский ум меня создал».</p>
+      <button class="gm-btn" style="width:auto" id="charBtn" onclick="charShow()">Показать ответ</button>
+      <div class="gm-exp" id="charExp">Гусеница Блинова — «бесконечные рельсы».</div>
+    </div>
+    <script>
+    function tmAns(b,ok){document.querySelectorAll('#gm_tm .gm-btn').forEach(x=>x.disabled=true);b.classList.add(ok?'ok':'no');document.getElementById('tmExp').classList.add('show');if(ok&&typeof award==='function')award('tm',5);}
+    function vbAns(b,ok){document.querySelectorAll('#gm_vb .gm-btn').forEach(x=>x.disabled=true);b.classList.add(ok?'ok':'no');document.getElementById('vbExp').classList.add('show');if(ok&&typeof award==='function')award('vb',5);}
+    function charShow(){document.getElementById('charExp').classList.add('show');document.getElementById('charBtn').disabled=true;if(typeof award==='function')award('char',10);}
+    </script>
+  </div>
+</section>
+
+<!-- ── РАЗВИЛКА ── -->
+<section class="block" id="fork" style="background:rgba(45,140,191,.04)">
+  <div class="wrap">
+    <div class="kicker">Твой выбор</div>
+    <h2>А как поступил бы ты?</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">1897 год. Чиновники снова отказали в деньгах на ледокол. Проект считают фантазией. Менделеев готов поддержать, но нужно убедить лично министра финансов Витте на встрече через неделю. Ты на месте Макарова:</p>
+    <div class="fork-opt">🗣 Иду к Витте сам и кладу на стол расчёты</div>
+    <div class="fork-opt">📜 Прошу Менделеева выступить первым — его имя убедительнее</div>
+    <div class="fork-opt">🌐 Публикую статью в газетах — пусть общество давит на министерство</div>
+    <div id="forkReal" style="display:none;margin-top:14px" class="exp"><b>Как было на самом деле.</b> Менделеев и Макаров действовали вместе: авторитет химика открыл двери, точные расчёты адмирала убедили министерство. Витте дал деньги. «Ермак» построили в Ньюкасле и в 1899 году он уже спасал суда из ледового плена Финского залива. Союз учёного и практика сработал там, где одиночные обращения терпели неудачу.</div>
+  </div>
+</section>
+
+<!-- ── ЧАТ ── -->
+<section class="block" id="chat-sec">
+  <div class="wrap">
+    <div class="kicker">Поговори с изобретателем</div>
+    <h2>Спроси Фёдора Блинова</h2>
+    <p style="color:var(--muted)">Задай вопрос — ответит сам изобретатель.</p>
+    <div id="starters"></div>
+    <div id="chatBox" style="margin:16px 0;min-height:80px"></div>
+    <div style="display:flex;gap:10px;margin-top:12px">
+      <input id="chatInput" type="text" placeholder="Написать вопрос..." style="flex:1;padding:12px 16px;font-size:15px">
+      <button class="btn gold" onclick="sendChat()">Отправить</button>
+    </div>
+    <p style="font-size:12px;color:var(--muted);margin-top:8px">Ответы сформированы на основе документальных источников.</p>
+  </div>
+</section>
+
+<section class="block" id="games" style="background:rgba(6,12,23,.6)">
+  <div class="wrap">
+    <div class="kicker">Играй</div>
+    <h2>Игры дня</h2>
+<!-- ── ИГРЫ ── -->
+
+<style>
+.gm{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:22px 24px;margin:14px 0}
+.gm h3{margin:0 0 14px;font-size:20px;color:#e4c97a;font-family:'Playfair Display',serif}
+.gm-btn{cursor:pointer;border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:11px 16px;margin:7px 0;
+  background:rgba(255,255,255,.04);color:#e8eef5;font-size:14px;font-family:'Inter',sans-serif;width:100%;text-align:left;transition:.16s}
+.gm-btn:hover{border-color:#c9a84c;background:rgba(201,168,76,.1)}
+.gm-btn.ok{background:rgba(40,120,60,.2);border-color:#3f9b52;color:#7ed4a0;font-weight:600}
+.gm-btn.no{background:rgba(180,40,40,.15);border-color:#c0453f;color:#f08080}
+.gm-btn.neutral{opacity:.5;pointer-events:none}
+.gm-exp{margin-top:10px;background:rgba(201,168,76,.12);border-radius:10px;padding:12px 14px;font-size:14px;color:#e4c97a;display:none}
+.gm-exp.show{display:block}
+.gm-score{font-size:13px;color:#7a9ab8;margin-bottom:10px}
+.gm-tag{display:inline-block;background:rgba(45,140,191,.15);border:1px solid rgba(45,140,191,.3);
+  border-radius:20px;padding:5px 14px;margin:4px;font-size:13px;color:#a8d4f0;cursor:pointer;transition:.16s}
+.gm-tag:hover{border-color:#c9a84c;color:#e4c97a}
+.gm-tag.picked{background:rgba(201,168,76,.2);border-color:#c9a84c;color:#e4c97a}
+.gm-tag.wrong{background:rgba(180,40,40,.15);border-color:#c0453f;color:#f08080}
+.gm-slot{display:inline-block;min-width:90px;border-bottom:2px solid rgba(201,168,76,.4);padding:4px 10px;
+  margin:0 4px;color:#e4c97a;font-weight:600;text-align:center}
+.gm-slider{width:100%;accent-color:#c9a84c}
+.gm-result{font-size:18px;font-weight:700;color:#e4c97a;margin:10px 0}
+.gm-bar{height:6px;background:rgba(255,255,255,.08);border-radius:6px;overflow:hidden;margin:8px 0}
+.gm-bar i{display:block;height:100%;background:linear-gradient(90deg,#1f6f8b,#c9a84c);transition:width .5s}
+.gm-drag{cursor:grab;display:inline-block;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+  border-radius:8px;padding:7px 14px;margin:5px;font-size:14px;color:#e8eef5;user-select:none}
+.gm-drag:active{cursor:grabbing}
+.gm-drag.placed{opacity:.35;pointer-events:none}
+.gm-drop{min-width:120px;min-height:36px;border:1px dashed rgba(201,168,76,.3);border-radius:8px;padding:6px 10px;
+  margin:4px;display:inline-flex;align-items:center;color:#7a9ab8;font-size:13px;background:rgba(255,255,255,.02)}
+.gm-drop.over{border-color:#c9a84c;background:rgba(201,168,76,.08)}
+.gm-drop.filled{border-style:solid;border-color:#c9a84c;color:#e4c97a;font-weight:600}
+</style>
+<div class="gm" id="gm_ermak">
+<h3>🎮 Пробей арктический лёд — как «Ермак»</h3>
+<p style="color:var(--muted);font-size:14px;margin-bottom:14px">Нажимай на блоки льда чтобы расчистить путь — у «Ермака» было 3 попытки на каждый блок</p>
+<div id="ermakGrid" style="display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:14px"></div>
+<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+  <div style="font-size:13px;color:var(--muted)">Сломано: <b id="ermakBroken" style="color:var(--gold-l)">0</b> / 10</div>
+  <div style="font-size:13px;color:var(--muted)">Удары: <b id="ermakHits">0</b></div>
+</div>
+<div id="ermakResult" style="text-align:center;font-size:14px;font-weight:600;min-height:18px;color:var(--gold-l)"></div>
+<script>(function(){
+const grid=document.getElementById('ermakGrid');if(!grid)return;
+let broken=0,hits=0;const blocks=[];
+const types=[{hp:1,col:'rgba(190,225,245,.6)',label:'тонкий'},{hp:2,col:'rgba(140,185,220,.7)',label:'обычный'},{hp:3,col:'rgba(90,140,190,.8)',label:'толстый'}];
+for(let i=0;i<10;i++){const type=types[Math.floor(Math.random()*types.length)];const div=document.createElement('div');
+  div.style.cssText='aspect-ratio:1;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:10px;font-weight:700;color:rgba(255,255,255,.7);transition:.15s;border:1px solid rgba(255,255,255,.15);user-select:none';
+  div.style.background=type.col;div.textContent=type.label;div.dataset.hp=type.hp;div.dataset.maxHp=type.hp;
+  div.onclick=function(){if(this.dataset.hp<=0)return;
+    hits++;document.getElementById('ermakHits').textContent=hits;
+    this.dataset.hp--;const hp=+this.dataset.hp;const maxHp=+this.dataset.maxHp;
+    if(hp===0){broken++;document.getElementById('ermakBroken').textContent=broken;
+      this.style.background='rgba(201,168,76,.15)';this.style.borderColor='rgba(201,168,76,.3)';this.textContent='💧';this.style.cursor='default';
+      this.style.transform='scale(.95)';
+      if(broken>=10){document.getElementById('ermakResult').textContent='🏆 Путь открыт! «Ермак» пробил арктический лёд — как в 1899!';if(typeof award==='function')award('gm_ermak',15);}}
+    else{const frac=hp/maxHp;this.style.background=`rgba(${Math.round(90+frac*100)},${Math.round(140+frac*45)},${Math.round(190+frac*30)},.${Math.round(6+frac*2)})`;
+      this.style.transform='scale(1.05)';setTimeout(()=>this.style.transform='',120);}};
+  grid.appendChild(div);blocks.push(div);}
+})();</script></div>
+<div class="gm" id="gm_quiz2">
+  <h3>⏱ Игра 2 · Быстрый ответ</h3>
+  <div class="gm-score">Чем быстрее ответишь — тем больше очков. Осталось: <b id="gm_quiz2_t">15</b> сек</div>
+  <p style="font-weight:600;font-size:16px;margin:0 0 12px">В каком году Блинов получил патент на гусеничный ход?</p>
+  <div id="gm_quiz2_opts"><button class="gm-btn" onclick="gm_quiz2_ans(0)">А) 1865</button><button class="gm-btn" onclick="gm_quiz2_ans(1)">Б) 1879</button><button class="gm-btn" onclick="gm_quiz2_ans(2)">В) 1896</button><button class="gm-btn" onclick="gm_quiz2_ans(3)">Г) 1902</button></div>
+  <div class="gm-exp" id="gm_quiz2_exp">1879 год, патент №2245 «вагон с бесконечными рельсами». В 1888-м Блинов уже ехал на нём своим ходом под Балаковым — почти за 20 лет до Холта.</div>
+</div>
+<script>
+(function(){
+  let t=15,ti=null,done=false;
+  const correct=1;
+  ti=setInterval(()=>{
+    if(done)return;
+    t--;document.getElementById('gm_quiz2_t').textContent=t;
+    if(t<=0){clearInterval(ti);gm_quiz2_ans(-1);}
+  },1000);
+  window['gm_quiz2_ans']=function(i){
+    if(done)return;done=true;clearInterval(ti);
+    const btns=document.querySelectorAll('#gm_quiz2_opts .gm-btn');
+    btns.forEach((b,j)=>{b.disabled=true;
+      if(j===correct)b.classList.add('ok');
+      else if(j===i)b.classList.add('no');
+      else b.classList.add('neutral');
+    });
+    document.getElementById('gm_quiz2_exp').classList.add('show');
+    if(i===correct){const pts=Math.max(5,Math.round(t/15*15));if(typeof award==='function')award('gm_quiz2',pts);}
+  };
+})();
+</script>
+
+  </div>
+</section>
+
+
+<div class="wrap"><div class="ad-slot"><span class="lbl">Реклама</span><span class="ph-txt">Партнёрский блок в середине страницы.</span></div></div>
+
+
+<section class="block" id="result">
+  <div class="wrap">
+    <div class="kicker">Итог дня</div>
+    <h2 style="margin-bottom:6px">Сколько баллов ты собрал?</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Читай, играй, отвечай и спрашивай изобретателя — за всё начисляются баллы. Собери все 100 и стань "Первопроходец Арктики".</p>
+    <div class="card"><div class="gm-bar" style="height:10px"><i id="dayBar" style="width:0%"></i></div><div id="dayTxt" style="margin-top:10px;color:var(--gold-l);font-weight:600">0 / 100 · звание: Гость музея</div></div>
+  </div>
+</section>
+
+<section class="block" id="calendar">
+  <div class="wrap">
+    <div class="kicker">Календарь изобретений</div>
+    <h2 style="margin-bottom:6px">Выбери любой день года</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Каждый подсвеченный день — изобретение, которое русские сделали первыми в мире.</p>
+    <div class="cal2">
+      <div class="cal2-head">
+        <button class="cal2-nav" id="calPrev">◀</button>
+        <div class="cal2-title" id="calTitle">Январь</div>
+        <button class="cal2-nav" id="calNext">▶</button>
+      </div>
+      <div class="cal2-dow"><span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span></div>
+      <div class="cal2-grid" id="calGrid"></div>
+    </div>
+    <div class="cal2-detail" id="calDetail" style="max-width:520px">Выбери подсвеченный день — покажу, что в этот день изобрели русские первыми в мире.</div>
+  </div>
+</section>
+
+<section class="block" id="catalog" style="background:linear-gradient(135deg,#16294a,#0f1e33);border-bottom:none">
+  <div class="wrap" style="text-align:center">
+    <h2 style="margin-bottom:6px;color:#fff">У нас много изобретений</h2>
+    <p style="color:var(--muted);margin:0 auto 16px;max-width:60ch">Русские сделали первыми в мире сотни вещей. Открой полную базу и выбери по алфавиту то, что интересно именно тебе.</p>
+    <a class="btn gold" href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html" style="display:inline-block;text-decoration:none">Вернуться в музей →</a>
+  </div>
+</section>
+
+<section class="block kd" id="kuda-dalshe">
+  <div class="wrap">
+    <div class="kd-kicker">Куда дальше</div>
+    <h2>Музей продолжается</h2>
+    <div class="kd-grid">
+      <div class="kd-card main"><span class="kd-lbl">Следующий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-10jan-britnev.html">10 января — Первый в мире ледокол «Пайлот» <span class="kd-arr">→</span></a>
+        <p>Купец срезал пароходу нос под углом — и судно полезло на лёд.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Предыдущий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-08jan-icebreaker.html">8 января — Первый в мире арктический ледокол «Ермак» <span class="kd-arr">→</span></a>
+        <p>Деньги на корабль, которого не было ни у одной державы, русскому адмиралу помог достать...</p></div>
+      <div class="kd-card"><span class="kd-lbl">Весь музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми <span class="kd-arr">→</span></a>
+        <p>Полная база изобретений — по алфавиту и по дням года.</p></div>
+      <div class="kd-card main"><span class="kd-lbl">Город-музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация <span class="kd-arr">→</span></a>
+        <p>Все музеи проекта на одной карте: изобретения, искусство, первопроходцы.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div class="slog">Цивилизация первенств — что Россия дала миру раньше всех</div>
+  Русская цивилизация · «Что изобрели русские первыми в мире» · 2026</div></footer>
+
+<script>
+// ── СЧЁТ ── шкала посетителя из 100 держит движок assets/museum-score.js
+// Здесь только награды этой страницы: сумма сырых очков и звания.
+window.MUSEUM_SCORE = {awards: {tm:5, vb:5, char:10, gm_ermak:15, gm_quiz2:15, read:5, q:[2,10], fork:10, chat:5, theme:5}, ranks: [[100,'Первый по целине'],[70,'Знаток'],[40,'Экскурсант'],[0,'Гость музея']]};
+
+// ── СТАТЬЯ ────────────────────────────────────────────────────────────────────
+document.getElementById('moreBtn').onclick=function(){
+  document.getElementById('article').classList.remove('collapsed');
+  this.style.display='none';
+  award('read',5);
+};
+
+// ── ВИКТОРИНА ─────────────────────────────────────────────────────────────────
+const quiz=[
+{"q":"Что такое «вагон с бесконечными рельсами» по патенту Блинова 1879 года?",
+ "o":["Паровоз нового типа","Повозка с гусеничным ходом","Монорельс для городского транспорта","Подводный кабель для телеграфа"],
+ "c":1,"e":"Блинов придумал заменить колесо бесконечной цепью из звеньев — она распределяет вес машины по большой площади. Сегодня это называется гусеницей."},
+{"q":"На сколько лет патент Блинова на гусеницу старше американского патента Холта?",
+ "o":["На 5 лет","На 10 лет","На 25 лет","Они одновременные"],
+ "c":2,"e":"Блинов — 1879, Холт — 1904. Двадцать пять лет. За это время Блинов успел построить самодвижущийся трактор и показать его на выставке."}
+];
+const qBox=document.getElementById('quizBox');
+let qIdx=0, answered=[];
+
+function renderQ(){
+  if(qIdx>=quiz.length){
+    qBox.innerHTML='<p style="color:var(--gold-l);font-weight:600">Все вопросы пройдены. Молодец!</p>';
+    return;
+  }
+  const q=quiz[qIdx];
+  qBox.innerHTML=`<p style="font-weight:600;font-size:17px;margin-bottom:8px">${qIdx+1} / ${quiz.length}. ${q.q}</p>
+    ${q.o.map((o,i)=>`<button class="opt" data-i="${i}" onclick="answerQ(${i})">${'АБВГ'[i]}) ${o}</button>`).join('')}
+    <div class="exp" id="exp${qIdx}">${q.e}</div>`;
+}
+
+function answerQ(i){
+  const q=quiz[qIdx];
+  document.querySelectorAll('.opt').forEach((b,j)=>{
+    b.disabled=true;
+    if(j===q.c)b.classList.add('correct');
+    else if(j===i&&i!==q.c)b.classList.add('wrong');
+  });
+  document.getElementById('exp'+qIdx).classList.add('show');
+  if(i===q.c)award('q'+qIdx,10);
+  setTimeout(()=>{qIdx++;renderQ();},2200);
+}
+renderQ();
+
+// ── РАЗВИЛКА ──────────────────────────────────────────────────────────────────
+document.querySelectorAll('.fork-opt').forEach((el,i)=>{
+  el.onclick=function(){
+    document.querySelectorAll('.fork-opt').forEach(b=>b.classList.remove('chosen'));
+    this.classList.add('chosen');
+    document.getElementById('forkReal').style.display='block';
+    award('fork',10);
+  };
+});
+
+// ── ЧАТ ───────────────────────────────────────────────────────────────────────
+const kb=[
+ {k:['гусениц','бесконечн','рельс','цепь','как придум','идея','колесо','грязь','проваливается'],a:'Колесо давит в одну точку — вот и проваливается. Я подумал: а что если расстелить под него бесконечную цепь из звеньев? Она ложится на грунт широкой полосой, вес распределяется — и машина едёт там, где колесо зарылось бы по ступицу. Просто, если знаешь, в чём задача.'},
+ {k:['патент','1879','номер','документ','юридич'],a:'Патент №2245. Называлось «вагон с бесконечными рельсами». 1879 год. Комиссия рассмотрела, выдала. Всё честно.'},
+ {k:['трактор','паровой','1888','самодвижущ','ехал','испытан'],a:'В 1888 году я поставил паровую машину на гусеничное шасси. Испытывал под Балаковым. Шёл по пашне, по грязи — туда, куда колёсный трактор и соваться не мог. Потом в Нижний Новгород привёз, на выставку.'},
+ {k:['выставка','нижн','новгород','1896','диплом','публик'],a:'Нижегородская выставка, 1896 год. Машина прошла своим ходом, повернула, остановилась. Люди смотрели — кто с удивлением, кто с недоверием. Диплом дали почётный. Денег на завод — нет.'},
+ {k:['холт','американ','caterpillar','кэтерпиллар','скопир','обидно','слав'],a:'О господине Холте я не слышал — умер в 1902-м, до его патента не дожил. Но если он придумал то же, что я, через двадцать пять лет — что ж, значит, идея была правильная. Обидно ли? Я не успел об этом задуматься.'},
+ {k:['завод','производство','почему не','деньги','капитал','министер'],a:'Денег на завод у меня не было. Богатых людей за спиной — тоже. В министерства ходил, но там своих дел хватает. Так и остался при мастерских в Балакове.'},
+ {k:['крепостной','грамот','учился','образован','самоучка','детство','отец'],a:'Родился крепостным. Грамоте выучился сам — уже когда вырос. Книг не читал много, зато руки думают сами. Отец был простым человеком, мать тоже. Всё что имею — своим умом.'},
+ {k:['балаково','мастерск','волга','матрос'],a:'Начинал матросом на Волге. Потом в механики пошёл — понравилось. Потом свои мастерские открыл в Балакове. Там и прожил всю жизнь.'},
+ {k:['танк','военн','первая мировая','война'],a:'О танках я ничего не знаю — умер в 1902-м. Но если мой принцип пригодился для войны... что ж, изобретение само по себе не воюет. Это люди решают, что делать с инструментом.'},
+ {k:['привет','здравств','добрый','кто вы','кто ты'],a:'Фёдор Блинов, механик из Балакова. Объяснять на словах не мастер — зато руками покажу. Спрашивайте.'}
+];
+
+function addMsg(text,who){
+  const d=document.createElement('div');
+  d.className='msg '+who;
+  d.textContent=text;
+  document.getElementById('chatBox').appendChild(d);
+  d.scrollIntoView({behavior:'smooth'});
+}
+
+function findAnswer(q){
+  q=q.toLowerCase();
+  for(const item of kb){
+    if(item.k.some(k=>q.includes(k.toLowerCase())))return item.a;
+  }
+  return 'Спрашивайте — только говорите попроще, я объяснять на словах не мастер, зато руками покажу.';
+}
+
+function sendChat(){
+  const inp=document.getElementById('chatInput');
+  const q=inp.value.trim();
+  if(!q)return;
+  addMsg(q,'you');
+  inp.value='';
+  setTimeout(()=>{addMsg(findAnswer(q),'inv');award('chat',5);},600);
+}
+document.getElementById('chatInput').addEventListener('keydown',e=>{if(e.key==='Enter')sendChat();});
+(function(){
+  const qs=['Как вам пришла идея бесконечных рельсов?','Обидно, что американцы прославились вместо вас?','Почему в России не запустили производство?'];
+  const box=document.getElementById('starters');
+  qs.forEach(q=>{const c=document.createElement('span');c.className='chip';c.textContent=q;
+    c.onclick=()=>{document.getElementById('chatInput').value=q;sendChat();};box.appendChild(c);});
+  const w=document.createElement('div');w.className='msg inv';
+  w.textContent='Фёдор Блинов, механик из Балакова. Объяснять на словах не мастер — зато руками покажу. Спрашивайте.';
+  document.getElementById('chatBox').appendChild(w);
+})();
+
+document.querySelectorAll('.starter-btn').forEach(b=>{
+  b.onclick=function(){
+    document.getElementById('chatInput').value=this.dataset.q;
+    sendChat();
+  };
+});
+
+// ── HERO SCENE: «Трактор Блинова по пашне» ─────────────────────────────────
+(function(){
+  const cv=document.getElementById('heroCvs');if(!cv)return;
+  const ctx=cv.getContext('2d');
+  const reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const dpr=Math.min(window.devicePixelRatio||1,2);
+  let W,H,t=0,hinted=false,going=false,tx=0,clods=[];
+  function resize(){const p=cv.parentElement;W=(p?p.offsetWidth:innerWidth);H=(p?p.offsetHeight:Math.round(innerHeight*.52));
+    cv.width=W*dpr;cv.height=H*dpr;cv.style.width=W+'px';cv.style.height=H+'px';
+    ctx.setTransform(dpr,0,0,dpr,0,0);}
+  resize();addEventListener('resize',resize);
+
+  function scene(){
+    ctx.clearRect(0,0,W,H);
+    // фон
+    const sky=ctx.createLinearGradient(0,0,0,H*.6);sky.addColorStop(0,'#080d18');sky.addColorStop(1,'#14253a');
+    ctx.fillStyle=sky;ctx.fillRect(0,0,W,H*.6);
+    // звёзды
+    for(let i=0;i<35;i++){const x=(i*137)%W,y=(i*61)%(H*.5);
+      ctx.beginPath();ctx.arc(x,y,.8,0,7);ctx.fillStyle=`rgba(255,255,255,${.05+.04*Math.sin(t+i)})`;ctx.fill();}
+    // земля (пашня)
+    const gy=H*.6;
+    const g2=ctx.createLinearGradient(0,gy,0,H);g2.addColorStop(0,'#2a1a0a');g2.addColorStop(1,'#1a0e06');
+    ctx.fillStyle=g2;ctx.fillRect(0,gy,W,H-gy);
+    // борозды
+    for(let i=0;i<7;i++){const y=gy+(i+.5)*((H-gy)/7);
+      ctx.strokeStyle='rgba(60,35,15,.6)';ctx.lineWidth=2;
+      ctx.beginPath();ctx.moveTo(0,y);ctx.lineTo(W,y);ctx.stroke();}
+    // земляные комья (летят из-под трактора)
+    if(going&&Math.random()<.35)clods.push({x:W*.25+tx+Math.random()*20,y:gy+12,vx:-(1.5+Math.random()*2.5),vy:-(1+Math.random()*2.5),r:2+Math.random()*4,life:1});
+    clods=clods.filter(c=>c.life>0);
+    clods.forEach(c=>{c.x+=c.vx;c.y+=c.vy;c.vy+=.14;c.life-=.05;
+      ctx.beginPath();ctx.arc(c.x,c.y,c.r,0,7);ctx.fillStyle=`rgba(80,45,15,${c.life})`;ctx.fill();});
+
+    if(going)tx=Math.min(W*.65,tx+1.8);
+    const bx=W*.18+tx,by=gy-26;
+
+    // гусеницы (две полосы)
+    const tw=W*.22,th=14,chainW=10;
+    for(const yo of[0,18]){
+      ctx.fillStyle='rgba(60,50,30,.9)';ctx.strokeStyle='rgba(201,168,76,.5)';ctx.lineWidth=1;
+      ctx.beginPath();ctx.roundRect(bx-tw/2,by+yo,tw,th,5);ctx.fill();ctx.stroke();
+      const links=Math.round(tw/chainW);
+      for(let i=0;i<links;i++){const lx=bx-tw/2+i*chainW+((going?t*30:0))%(chainW);
+        ctx.strokeStyle='rgba(201,168,76,.35)';ctx.lineWidth=1;
+        ctx.beginPath();ctx.moveTo(lx,by+yo);ctx.lineTo(lx,by+yo+th);ctx.stroke();}
+      // ведущие колёса
+      for(const cx of[bx-tw/2+8,bx+tw/2-8]){
+        const ang=going?t*3:0;
+        ctx.save();ctx.translate(cx,by+yo+th/2);ctx.rotate(ang);
+        ctx.strokeStyle='rgba(201,168,76,.75)';ctx.lineWidth=2;
+        ctx.beginPath();ctx.arc(0,0,th/2,0,7);ctx.stroke();
+        for(let a=0;a<4;a++){ctx.beginPath();ctx.rotate(Math.PI/2);ctx.moveTo(0,0);ctx.lineTo(0,th/2);ctx.stroke();}
+        ctx.restore();}}
+    // кузов котла
+    ctx.fillStyle='#1a1005';ctx.strokeStyle='rgba(201,168,76,.6)';ctx.lineWidth=1.4;
+    ctx.beginPath();ctx.roundRect(bx-tw/2+4,by-26,tw-8,26,4);ctx.fill();ctx.stroke();
+    // труба с паром
+    ctx.fillStyle='rgba(30,22,10,.9)';ctx.fillRect(bx+tw/2-22,by-48,12,24);
+    if(going){for(let i=0;i<3;i++){const sy=by-50-i*14,sa=.3-i*.1;
+      ctx.beginPath();ctx.arc(bx+tw/2-16+Math.sin(t*2+i)*4,sy,4+i*3,0,7);
+      ctx.fillStyle=`rgba(200,210,220,${sa})`;ctx.fill();}}
+    // маховик сбоку
+    ctx.save();ctx.translate(bx-tw/2-5,by-10);ctx.rotate(going?t*4:0);
+    ctx.strokeStyle='rgba(201,168,76,.7)';ctx.lineWidth=2;
+    ctx.beginPath();ctx.arc(0,0,9,0,7);ctx.stroke();
+    for(let a=0;a<4;a++){ctx.rotate(Math.PI/2);ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(0,9);ctx.stroke();}
+    ctx.restore();
+    // колёсная телега слева (вязнет в грязи) — только до старта
+    if(!going||tx<20){const wa=1-Math.min(1,tx/20);
+      ctx.save();ctx.globalAlpha=wa;
+      const wx=W*.72,wy=gy-8;
+      ctx.fillStyle='#251508';ctx.strokeStyle='rgba(150,100,50,.6)';ctx.lineWidth=1.5;
+      ctx.beginPath();ctx.roundRect(wx-24,wy-16,48,16,3);ctx.fill();ctx.stroke();
+      for(const cx of[wx-14,wx+14]){
+        ctx.beginPath();ctx.arc(cx,wy+6,10,0,7);ctx.strokeStyle='rgba(150,100,50,.7)';ctx.lineWidth=2;ctx.stroke();
+        // провал в грязи — колесо ниже линии горизонта
+        ctx.fillStyle='rgba(40,22,8,.8)';
+        ctx.beginPath();ctx.ellipse(cx,wy+12,10,4,0,0,Math.PI);ctx.fill();}
+      ctx.fillStyle='rgba(122,154,184,.5)';ctx.font=`10px Inter,sans-serif`;ctx.textAlign='center';
+      ctx.fillText('обычная телега вязнет...',wx,gy+18);
+      ctx.restore();}
+  }
+
+  function fire(){
+    if(!hinted){hinted=true;const h=document.getElementById('heroHint');if(h)setTimeout(()=>{h.style.opacity='0';},1200);}
+    going=true;
+  }
+  cv.style.cursor='pointer';cv.style.pointerEvents='auto';
+  cv.addEventListener('click',fire);
+  if(reduce){going=true;tx=W*.3;scene();return;}
+  (function loop(){t+=.025;scene();requestAnimationFrame(loop);})();
+})();
+
+// ── ТЕМАТИЧЕСКИЕ ИЗОБРЕТЕНИЯ ─────────────────────────────────────────────────
+const themeBtn=document.getElementById('themeInvBtn');
+if(themeBtn)themeBtn.onclick=function(){
+  const b=document.getElementById('themeInvBody');
+  const open=b.style.display==='none';
+  b.style.display=open?'block':'none';
+  this.textContent=open?'▲ Скрыть':this.dataset.label||'Показать перечень →';
+  if(open)award('theme',5);
+};
+
+// ── КАЛЕНДАРЬ ─────────────────────────────────────────────────────────────────
+const calData={"1": {"18": {"t": "Первый в мире боевой многозарядный миномёт обр. 1904 г.", "y": "1904"}, "27": {"t": "Первый в мире военный миноносец «Сокол» с паровой турбиной", "y": ""}, "29": {"t": "Первый в мире серийный атомный подводный ракетоносец К-19", "y": ""}, "31": {"t": "Первая в мире женщина-пилот (Зинаида Кокорина, аэроклуб)", "y": ""}, "5": {"t": "Первый в мире расчётный нефтепровод Балаханы–Черный город", "y": ""}, "6": {"t": "Первый в мире пенициллин советского производства (победа над", "y": ""}, "11": {"t": "Первый в мире ядерный реактор в Евразии Ф-1 (Курчатов)", "y": ""}, "3": {"t": "Первый в мире атомный ледокол-речник «Обь» и атомный флот", "y": ""}, "4": {"t": "Первая в мире беспроводная передача данных на расстояние (ра", "y": ""}, "1": {"t": "Первая в мире сеть кабельного телевидения (Москва, 30 абонен", "y": ""}, "2": {"t": "«Луна-1», первая межпланетная станция и 2-я космическая скор", "y": "1959"}, "17": {"t": "Аэродинамика как наука", "y": ""}, "7": {"t": "Геологическая карта и наука о недрах России", "y": ""}, "8": {"t": "«Ермак», первый в мире арктический ледокол", "y": "1849"}, "9": {"t": "Первый в мире гусеничный ход (патент Блинова)", "y": ""}, "10": {"t": "Первый в мире ледокол «Пайлот»", "y": ""}, "25": {"t": "Самая быстроходная в мире подлодка К-162 (титан)", "y": ""}, "12": {"t": "Первая в мире межконтинентальная баллистическая ракета Р-7", "y": "1907"}, "13": {"t": "Алюминотермия (получение металлов)", "y": ""}, "14": {"t": "Исследование Тянь-Шаня и Центральной Азии", "y": ""}, "15": {"t": "Первая в мире женщина-профессор математики", "y": ""}, "22": {"t": "Теория сверхтекучести (Нобель)", "y": ""}, "16": {"t": "Первая стыковка кораблей и переход через открытый космос («С", "y": ""}, "19": {"t": "Линейное программирование (Нобель по экономике)", "y": ""}, "21": {"t": "Первая в мире АЭС (Обнинск)", "y": "1903"}, "28": {"t": "Открытие Антарктиды", "y": ""}, "30": {"t": "Ранцевый парашют РК-1", "y": "1872"}, "24": {"t": "Первый русский электромобиль («кукушка», 60 км хода)", "y": "1864"}, "23": {"t": "Учение о движении энергии, вектор Умова (первым в мире ввёл ", "y": ""}, "20": {"t": "Открытие витаминов, основы витаминологии (первым в мире)", "y": "1853"}, "26": {"t": "Первый в мире серийный реактивный пассажирский самолёт Ту-10", "y": ""}}, "2": {"28": {"t": "Первые в мире серийные реактивные снаряды залпового огня (ис", "y": ""}, "19": {"t": "Первая в мире широкоформатная панорамная фотография", "y": ""}, "23": {"t": "Первые в мире реактивные снаряды залпового огня «Катюша» (по", "y": ""}, "26": {"t": "Первый в мире промышленный синтез синтетического каучука", "y": ""}, "24": {"t": "Первая в мире мощная радиовещательная станция (Коминтерн, 19", "y": "1922"}, "25": {"t": "Первый в мире практический токамак Т-1 для термоядерного син", "y": ""}, "1": {"t": "Основы неврологии и психоневрологии", "y": ""}, "2": {"t": "Гаубица «единорог»", "y": ""}, "3": {"t": "Первая в мире мягкая посадка на Луну («Луна-9»)", "y": ""}, "4": {"t": "Самовар", "y": ""}, "5": {"t": "Гибкая (рулонная) фотоплёнка (раньше Kodak)", "y": ""}, "20": {"t": "Первая в мире модульная орбитальная станция «Мир»", "y": ""}, "8": {"t": "Периодическая система элементов", "y": ""}, "10": {"t": "Аэросани (первые в мире)", "y": ""}, "12": {"t": "Закон Ленца (электромагнитная индукция)", "y": ""}, "13": {"t": "Гидросамолёты и амфибии «Бе»", "y": ""}, "14": {"t": "Первый в мире монорельс", "y": ""}, "17": {"t": "Первый в мире электрический трамвай", "y": ""}, "6": {"t": "Угольный противогаз", "y": "1861"}, "7": {"t": "Первая в мире троичная ЭВМ «Сетунь»", "y": ""}, "27": {"t": "Пересадка роговицы и тканевая терапия", "y": ""}, "9": {"t": "Гелиобиология и аэроионификация («люстра Чижевского»)", "y": ""}, "18": {"t": "Почвоведение как наука, первое в мире", "y": ""}, "11": {"t": "Первый в мире морской гидросамолёт (летающая лодка М-5)", "y": ""}, "16": {"t": "Первый в мире радиозонд", "y": "1893"}, "15": {"t": "Первая в мире «мёртвая петля», рождение высшего пилотажа", "y": ""}, "21": {"t": "Медицинская микробиология, первая в России станция прививок ", "y": ""}, "22": {"t": "Первый в мире промышленный индукционный нагрев токами высоко", "y": ""}}, "3": {"19": {"t": "Первый в мире военный ледокол «Вайгач» — исследование Арктик", "y": ""}, "27": {"t": "Первая в мире научная классификация почвенных зон", "y": ""}, "28": {"t": "Первые в мире опыты по передаче электроэнергии на расстояние", "y": ""}, "29": {"t": "Первый в мире пенетрометр для измерения твёрдости грунта", "y": ""}, "6": {"t": "Первый в мире обезболивающий наркоз на поле боя (эфирный)", "y": ""}, "13": {"t": "Теория функциональных систем (физиология поведения)", "y": ""}, "26": {"t": "Первые в мире опыты по радиолокации (РЛС)", "y": ""}, "22": {"t": "Первая в мире сварка под водой", "y": ""}, "1": {"t": "Первая русская печатная книга «Апостол»", "y": ""}, "2": {"t": "Спонтанное деление ядер урана (открытие)", "y": ""}, "3": {"t": "Органическая химия, реакции Фаворского", "y": ""}, "4": {"t": "Принцип автофазировки, синхрофазотрон", "y": ""}, "5": {"t": "Автоматическая дуговая сварка под флюсом", "y": ""}, "8": {"t": "Давление света (экспериментально доказано впервые)", "y": ""}, "9": {"t": "Турбобур (турбинное бурение скважин)", "y": ""}, "10": {"t": "Открытие пролива между Азией и Америкой", "y": ""}, "12": {"t": "Учение о биосфере и ноосфере", "y": ""}, "14": {"t": "Первая в мире паровая машина (двухцилиндровая)", "y": ""}, "15": {"t": "Первые в мире полупроводниковые гетероструктуры — основа лаз", "y": ""}, "16": {"t": "Радио", "y": ""}, "17": {"t": "Стартовые (пусковые) ракетные комплексы", "y": ""}, "18": {"t": "Первый выход человека в открытый космос (Леонов, «Восход-2»)", "y": ""}, "20": {"t": "Первый в мире магистральный тепловоз", "y": ""}, "21": {"t": "Самолёт Можайского, один из первых в мире", "y": ""}, "23": {"t": "Первый отечественный турбореактивный двигатель", "y": ""}, "24": {"t": "Люминесценция, физическая оптика", "y": ""}, "25": {"t": "Радиоуправление, первые в мире опыты", "y": ""}, "30": {"t": "Штурмовик Ил-2 и самолёты Ильюшина", "y": ""}, "31": {"t": "Дешифровка письменности майя", "y": ""}, "11": {"t": "Открытие мембранного (пристеночного) пищеварения, мировой пр", "y": ""}, "7": {"t": "Первый в мире токарный станок с механическим суппортом", "y": ""}}, "4": {"18": {"t": "Первые в мире алмазы на Урале: открытие месторождения", "y": ""}, "20": {"t": "Первый в мире рейс атомного ледокола «Ленин» по Северному мо", "y": ""}, "22": {"t": "Первая в мире демонстрация электродуговой сварки публике", "y": ""}, "24": {"t": "Открытие первого в мире угольного синтеза (метод Бергиуса-На", "y": ""}, "3": {"t": "Первый в мире переносной радиоприёмник", "y": ""}, "4": {"t": "Первая в мире пересадка почки (опыты)", "y": ""}, "7": {"t": "Первая в мире подводная лодка «Дельфин» с двигателем внутрен", "y": ""}, "10": {"t": "Первый в мире оптический прицел для артиллерии", "y": ""}, "13": {"t": "Первая в мире глубоководная морская мина", "y": ""}, "16": {"t": "Первый в мире серийный атомный ледокол «Ленин» (закладка)", "y": ""}, "17": {"t": "Первый в мире буксируемый ракетный снаряд", "y": ""}, "27": {"t": "Гнойная хирургия — фундаментальный труд мировой медицины", "y": ""}, "26": {"t": "Первый в мире противочумной прокол (прошивание швами) — пред", "y": ""}, "28": {"t": "Первый в мире рентгеновский аппарат на основе трубки Попова", "y": ""}, "1": {"t": "Самолёты «Як»", "y": ""}, "9": {"t": "Первый в мире дизельный теплоход «Вандал»", "y": ""}, "11": {"t": "Первый в мире ранцевый лётный тренажёр", "y": ""}, "2": {"t": "Первый в мире бензиновый двигатель (для дирижабля)", "y": ""}, "5": {"t": "Аэродинамика, теорема Чаплыгина", "y": ""}, "6": {"t": "Антисептическая и полостная хирургия", "y": ""}, "8": {"t": "Гусеничный вездеход/танк «Вездеход»", "y": ""}, "12": {"t": "Первый полёт человека в космос (Ю. Гагарин, «Восток-1»)", "y": ""}, "14": {"t": "Трёхлинейная винтовка Мосина", "y": ""}, "15": {"t": "Теория цепных химических реакций (Нобель)", "y": ""}, "19": {"t": "Первая в мире орбитальная станция «Салют-1»", "y": ""}, "21": {"t": "Первый в России самодвижущийся экипаж («самокатка») с трёхко", "y": ""}, "23": {"t": "Первая в мире система спутникового телевещания", "y": ""}, "25": {"t": "Теория вероятностей (аксиоматика)", "y": ""}, "29": {"t": "Пистолет-пулемёт ППШ", "y": ""}, "30": {"t": "Первый в мире аппарат искусственного кровообращения (автожек", "y": ""}}, "5": {"24": {"t": "Первая в мире регулярная почтовая служба на дирижаблях", "y": ""}, "26": {"t": "Исследование Уссурийского края, «Дерсу Узала»", "y": ""}, "27": {"t": "Первый в мире безэкипажный танк (телетанк Т-26)", "y": ""}, "28": {"t": "Первая в мире ночная бомбардировка авиацией (Галиция)", "y": ""}, "29": {"t": "Первая в мире мощная лучевая пушка на основе магнетрона", "y": ""}, "30": {"t": "Первый в мире рейс самолёта с ядерным двигателем в испытател", "y": ""}, "31": {"t": "Первый в мире прыжок с парашютом из стратосферы (рекорд СССР", "y": ""}, "6": {"t": "Первые в мире полёты аэростата с людьми в России", "y": ""}, "11": {"t": "Первый в мире двигатель на водороде в блокадном Ленинграде", "y": ""}, "23": {"t": "Первая в мире передача речи по радио (Попов)", "y": ""}, "14": {"t": "Первый в мире геликоптер с автоматом перекоса (ЦАГИ 1-ЭА)", "y": ""}, "17": {"t": "Первая в мире высадка на дрейфующую льдину в Арктике", "y": ""}, "19": {"t": "Первый в мире вертикальный взлёт самолёта-штурмовика (Як-36)", "y": ""}, "1": {"t": "Первый в мире одноместный вертолёт с автоматом перекоса в ис", "y": ""}, "2": {"t": "Первая в мире дрейфующая полярная станция «СП-1» (полюс)", "y": ""}, "8": {"t": "Первый в мире буер на воздушной подушке (аэросани Туполева)", "y": ""}, "3": {"t": "Первый в мире турбовинтовой межконтинентальный лайнер Ту-114", "y": ""}, "4": {"t": "Комбинационное рассеяние света", "y": ""}, "5": {"t": "Электродуговая сварка металлическим электродом", "y": ""}, "7": {"t": "Первая демонстрация радиоприёмника (День радио)", "y": ""}, "10": {"t": "Светодиод («свечение Лосева»), первое полупроводниковое свеч", "y": ""}, "12": {"t": "Телефонная трубка (микрофон+телефон вместе) и АТС", "y": "1880"}, "13": {"t": "Древнейшее в мире колесо со спицами и боевая колесница (Синт", "y": "2000"}, "15": {"t": "Учение об иммунитете, фагоцитоз (Нобель)", "y": ""}, "16": {"t": "Математика, теория механизмов и приближений", "y": ""}, "18": {"t": "Прототип персонального компьютера и первый плоттер", "y": ""}, "20": {"t": "Первый в мире коммерческий видеомагнитофон", "y": ""}, "21": {"t": "Управляемый термоядерный синтез, идея токамака", "y": ""}, "22": {"t": "«Хождение за три моря» — первый европейский рассказ о путеше", "y": ""}, "25": {"t": "Первый в мире четырёхмоторный самолёт «Русский витязь» и сер", "y": ""}, "9": {"t": "Первая в мире передача изображения на ЭЛТ (электронное ТВ)", "y": ""}}, "6": {"2": {"t": "Первый в мире ракетный двигатель на гиперголическом топливе", "y": ""}, "7": {"t": "Исследования Центральной Азии, первый европеец в Тянь-Шане", "y": ""}, "10": {"t": "Первый в мире противоминный трал на военных кораблях", "y": ""}, "12": {"t": "Первый в мире арктический дрейф на пароходе «Ермак»", "y": ""}, "18": {"t": "Первая в мире геомагнитная обсерватория", "y": ""}, "22": {"t": "Первый в мире самодвижущийся минный катер", "y": ""}, "27": {"t": "Первый в мире скафандр для глубоководных работ", "y": ""}, "8": {"t": "Полёт первого в мире самолёта с ядерной силовой установкой", "y": ""}, "11": {"t": "Первый в мире серийный магистральный газотурбинный тепловоз ", "y": ""}, "28": {"t": "Первый в мире промышленный ядерный реактор «Аннушка» (первый", "y": ""}, "3": {"t": "Раскрытие механизма фотосинтеза", "y": ""}, "1": {"t": "Первый в мире дрейфующий научный лагерь «СП-1» на полюсе", "y": ""}, "5": {"t": "Аппарат для механического сшивания кровеносных сосудов", "y": ""}, "6": {"t": "«Тетрис», первая всемирно культовая видеоигра", "y": "1984"}, "9": {"t": "Первый в мире токамак (Т-1), управляемый термоядерный синтез", "y": ""}, "14": {"t": "Самозарядные пистолет ТТ и винтовка СВТ", "y": ""}, "15": {"t": "Аппарат Илизарова, чрескостный остеосинтез", "y": ""}, "16": {"t": "Первая женщина в космосе (В. Терешкова)", "y": ""}, "17": {"t": "Первый в мире серийный реактивный пассажирский самолёт Ту-10", "y": ""}, "23": {"t": "Авиационные и ракетные двигатели (НК)", "y": ""}, "25": {"t": "Теория сверхпроводников второго рода (Нобель)", "y": ""}, "20": {"t": "Электрошлаковая сварка", "y": ""}, "21": {"t": "Реактивный миномёт «Катюша»", "y": ""}, "29": {"t": "Возрождение секрета булатной стали", "y": ""}, "30": {"t": "Ракетно-космическая техника, крылатые ракеты", "y": ""}, "19": {"t": "Модель расширяющейся Вселенной, основа современной космологи", "y": ""}, "4": {"t": "Основоположник нейрохирургии", "y": ""}, "13": {"t": "Учение о доминанте, основы физиологии поведения (первое в ми", "y": ""}, "26": {"t": "Излучение Вавилова-Черенкова, теоретическая физика (Нобель)", "y": ""}}, "7": {"6": {"t": "Первый в мире промышленный синтез аммиака по российскому мет", "y": ""}, "7": {"t": "Первое в мире водолазное спасательное устройство", "y": ""}, "14": {"t": "Первый в мире гиперзвуковой аэродинамический расчёт крыла", "y": ""}, "20": {"t": "Первая в мире ракета на жидком кислороде и керосине (испытан", "y": ""}, "31": {"t": "Первый в мире высотный скафандр для лётчиков", "y": ""}, "1": {"t": "Первый в мире официальный патент на ранцевый парашют", "y": ""}, "2": {"t": "Первая в мире электрическая лампа (опыты)", "y": ""}, "3": {"t": "Первый в мире вертолёт Черёмухина ЦАГИ 1-ЭА (мировой рекорд ", "y": ""}, "4": {"t": "Первый в мире переносной сварочный аппарат", "y": ""}, "5": {"t": "Первая в мире сельскохозяйственная академия (Петровская)", "y": ""}, "16": {"t": "Основатель мировой нейропсихологии", "y": ""}, "8": {"t": "Электродуговая сварка (угольный электрод)", "y": ""}, "10": {"t": "Самый большой в мире вертолёт В-12 (первый полёт)", "y": ""}, "11": {"t": "Лазер и мазер (Нобель)", "y": ""}, "12": {"t": "Синхрофазотрон (Дубна)", "y": ""}, "15": {"t": "Матричный принцип наследственности", "y": ""}, "17": {"t": "Научная этнография и география Океании", "y": ""}, "19": {"t": "Электрическая дуга и её применение", "y": ""}, "22": {"t": "Самолёты «Су»", "y": ""}, "23": {"t": "Авиационные двигатели «ВК»", "y": ""}, "25": {"t": "Промышленный синтетический каучук, первый в мире", "y": ""}, "26": {"t": "Первая в мире передача движущегося изображения (электронное ", "y": ""}, "18": {"t": "Основоположник трансплантологии органов", "y": ""}, "27": {"t": "Объёмная (глубинная) голография", "y": ""}, "28": {"t": "Излучение Черенкова (Нобель)", "y": ""}, "29": {"t": "Протон-нейтронная модель атомного ядра", "y": ""}, "30": {"t": "Электронное телевидение и иконоскоп", "y": ""}, "24": {"t": "Первая в мире женщина в открытом космосе (С. Савицкая)", "y": ""}, "9": {"t": "Сверхтекучесть жидкого гелия (Нобель)", "y": ""}, "21": {"t": "Первый в мире полёт живых существ в стратосферу с возвратом ", "y": ""}, "13": {"t": "Первая в мире государственная система здравоохранения (модел", "y": ""}}, "8": {"1": {"t": "Первый в мире арктический метеорологический прогноз (Визе)", "y": ""}, "2": {"t": "Первые в мире воздушно-десантные войска (учения РККА)", "y": ""}, "4": {"t": "Геология Сибири, открытие Байкальского разлома", "y": ""}, "9": {"t": "Первый в мире парашют-«крыло» (испытания)", "y": ""}, "14": {"t": "Первая в мире успешная пересадка сердца от собаки к собаке", "y": ""}, "18": {"t": "Первый в мире полностью закрытый водолазный аппарат (регенер", "y": ""}, "21": {"t": "Первая в мире атомная мина для морского дна", "y": ""}, "22": {"t": "Первый в мире реактивный самолёт с крылом изменяемой стрелов", "y": ""}, "30": {"t": "Первый в мире пассажирский авиационный рейс на вертолёте", "y": ""}, "3": {"t": "Первый в мире гусеничный (паровой) трактор", "y": ""}, "5": {"t": "Истребители «МиГ»", "y": ""}, "6": {"t": "Первый в мире суточный полёт человека в космос («Восток-2», ", "y": ""}, "7": {"t": "Первая русская кругосветная экспедиция", "y": ""}, "12": {"t": "Самолёт схемы «летающее крыло»", "y": "1920"}, "13": {"t": "Рефлексы головного мозга, основы физиологии", "y": ""}, "25": {"t": "Синтез анилина, начало промышленной оргхимии", "y": ""}, "15": {"t": "Терменвокс — первый электромузыкальный инструмент", "y": ""}, "17": {"t": "Первый надводный корабль, достигший Северного полюса (атомох", "y": ""}, "20": {"t": "Стереокино без очков", "y": ""}, "23": {"t": "Жидкостный ракетный двигатель (ОР-1)", "y": ""}, "27": {"t": "Киноаппарат (раньше Люмьеров)", "y": ""}, "28": {"t": "Первый в мире промышленный крекинг нефти — получение бензина", "y": "1891"}, "26": {"t": "Первые в мире гиперболоидные сетчатые башни и конструкции", "y": ""}, "31": {"t": "Цветная фотография (метод трёх кадров)", "y": ""}, "8": {"t": "Микрохирургия глаза, первый в мире поток-метод операций", "y": ""}, "10": {"t": "Законы фотоэффекта, первый фотоэлемент", "y": ""}, "16": {"t": "Теория корабля и качки, первый интегратор дифуравнений", "y": ""}, "24": {"t": "Кибернетика, проект ОГАС (прообраз интернета), ЭВМ «МИР»", "y": ""}, "19": {"t": "Белка и Стрелка: первое в мире возвращение живых существ с о", "y": ""}, "29": {"t": "Первый русский паровоз и рельсовая дорога", "y": ""}, "11": {"t": "Первый в мире групповой космический полёт («Восток-3/4»)", "y": ""}}, "9": {"7": {"t": "Первый в мире телеграф в Зимнем дворце (между дворцами Петер", "y": ""}, "16": {"t": "Первый в мире самолёт-биплан с закрытой кабиной экипажа", "y": ""}, "22": {"t": "Первый в мире оперативный метеопрогноз на несколько суток", "y": ""}, "23": {"t": "Первая в мире ЭВМ для экономических расчётов «БЭСМ-6»", "y": ""}, "25": {"t": "Первое в мире систематическое картографирование Арктики", "y": ""}, "27": {"t": "Первая в мире подводная электрическая мина (Якоби)", "y": ""}, "29": {"t": "Открытие Берингова пролива (первый в мире проход)", "y": ""}, "1": {"t": "Хемосинтез (открытие)", "y": ""}, "2": {"t": "Электрический ракетный двигатель (ЭРД)", "y": ""}, "3": {"t": "Математическая теория оптимального управления", "y": ""}, "4": {"t": "Местная анестезия и мазь Вишневского", "y": ""}, "8": {"t": "Водородный двигатель (практическое применение, блокадный Лен", "y": ""}, "9": {"t": "Химия элементоорганических соединений", "y": ""}, "10": {"t": "Дефибриллятор (электрический запуск сердца)", "y": ""}, "11": {"t": "Истребители «Ла»", "y": ""}, "13": {"t": "Гидроинтегратор — первая в мире аналоговая ЭВМ", "y": ""}, "14": {"t": "Первые в мире дуговые электрические лампы («свеча Яблочкова»", "y": ""}, "6": {"t": "Первый в мире метод непрерывной разливки стали", "y": "1950"}, "15": {"t": "Теория химического строения веществ", "y": ""}, "17": {"t": "Теория космонавтики и ракетодинамики", "y": ""}, "19": {"t": "Первый в мире автомат (автоматическая винтовка)", "y": ""}, "20": {"t": "Аэрофотоаппарат (аэрофотосъёмка)", "y": ""}, "21": {"t": "Электродвигатель, гальванопластика, телеграф", "y": ""}, "24": {"t": "Математика, дивергенция и уравнения физики", "y": ""}, "26": {"t": "Учение об условных рефлексах (Нобель)", "y": ""}, "28": {"t": "Первый в Европе и Азии ядерный реактор Ф-1 (атомная промышле", "y": ""}, "30": {"t": "Стратостат «СССР-1», мировой рекорд высоты", "y": ""}, "12": {"t": "«Луна-2», первый в мире аппарат, достигший другого небесного", "y": "1959"}, "18": {"t": "Космогония, теория происхождения планет; освоение Севморпути", "y": ""}, "5": {"t": "Научная клиническая медицина, первая бесплатная больничная л", "y": ""}}, "10": {"1": {"t": "Первый в мире беспилотный вертолёт (советские испытания)", "y": ""}, "2": {"t": "Первый в мире газотурбинный локомотив", "y": ""}, "6": {"t": "Геология и геохимия Сибири, «Земля Санникова»", "y": ""}, "13": {"t": "Первый в мире реактивный бомбардировщик Ту-16", "y": ""}, "14": {"t": "Первое в мире хождение с живым сердцем донора (Демихов)", "y": ""}, "26": {"t": "Первый в мире искусственный рубин (промышленное производство", "y": ""}, "8": {"t": "Первый в мире управляемый реактивный снаряд С-75 (сбил U-2)", "y": ""}, "11": {"t": "Первый в мире сеанс радиосвязи через Луну как отражатель", "y": ""}, "17": {"t": "Первый в мире орбитальный полёт длительностью более суток (Т", "y": ""}, "4": {"t": "«Спутник-1», первый в мире искусственный спутник Земли", "y": "1957"}, "7": {"t": "Первые в мире снимки обратной стороны Луны («Луна-3»)", "y": ""}, "9": {"t": "Метод хранения и переливания крови (в т.ч. трупной)", "y": ""}, "10": {"t": "Геология Сибири и Азии", "y": ""}, "15": {"t": "Электронный парамагнитный резонанс (ЭПР)", "y": ""}, "16": {"t": "Первая в мире сварка в открытом космосе", "y": ""}, "18": {"t": "Лампа накаливания (нить, спираль)", "y": ""}, "20": {"t": "Пенный огнетушитель", "y": ""}, "21": {"t": "Электромагнитный телеграф, первый в истории", "y": ""}, "23": {"t": "Теория излучения Вавилова-Черенкова (Нобель)", "y": ""}, "24": {"t": "Первый советский пенициллин, антибиотики", "y": ""}, "25": {"t": "Баллистические ракеты подводных лодок", "y": ""}, "27": {"t": "Научная селекция растений, новые сорта", "y": ""}, "28": {"t": "Открытие вирусов (основы вирусологии)", "y": ""}, "29": {"t": "Физика полупроводников (научная школа)", "y": ""}, "30": {"t": "Первая в мире автоматическая стыковка на орбите («Космос-186", "y": ""}, "31": {"t": "Проект реактивного летательного аппарата", "y": ""}, "12": {"t": "«Восход-1», первый в мире многоместный космический корабль", "y": "1964"}, "19": {"t": "Металловедение, точки Чернова (первое в мире учение о структ", "y": ""}, "22": {"t": "«Венера-9»: первые в мире снимки поверхности другой планеты", "y": "1975"}, "3": {"t": "Теория сверхпроводимости и сверхтекучести (Нобель)", "y": ""}, "5": {"t": "Первый в мире Центральный телеграф и Киевский вокзал (ж/б ко", "y": ""}}, "11": {"16": {"t": "Первый в мире серийный зенитный ракетный комплекс С-25", "y": ""}, "23": {"t": "Первый в мире сверхтекучий гелий (открытие свойства)", "y": ""}, "24": {"t": "Первый в мире реактивный истребитель МиГ-19 со сверхзвуковой", "y": ""}, "26": {"t": "Первый в мире двуствольный пулемёт (шкас)", "y": ""}, "28": {"t": "Первый в мире ядерный взрыв под землёй (мирный)", "y": ""}, "29": {"t": "Первая в мире трёхфазная электростанция (Лауфен–Франкфурт, р", "y": ""}, "30": {"t": "Первый в мире реактивный пассажирский лайнер Ту-144 (первый ", "y": ""}, "5": {"t": "Первая в мире массовая операция под эфирным наркозом в военн", "y": ""}, "12": {"t": "Первый в мире атомный ледокол «Ленин» (ввод в эксплуатацию)", "y": ""}, "20": {"t": "Эволюционная сравнительная эмбриология — основа дарвинизма", "y": ""}, "18": {"t": "Первая в России прокладка кабелей под водой и телефонизация", "y": ""}, "11": {"t": "Первая серийная подводная лодка", "y": ""}, "14": {"t": "Первый в мире миномёт", "y": ""}, "17": {"t": "«Луноход-1», первый в мире планетоход", "y": "1970"}, "2": {"t": "Первая ЭВМ в континентальной Европе (МЭСМ)", "y": ""}, "3": {"t": "Первый в мире электромагнитный сейсмограф", "y": ""}, "6": {"t": "Агрохимия и научное применение удобрений", "y": ""}, "7": {"t": "Стратегические ракеты (Р-12, Р-36)", "y": ""}, "8": {"t": "Геохимия и минералогия", "y": ""}, "10": {"t": "Автомат Калашникова (АК-47), самое массовое стрелковое оружи", "y": ""}, "4": {"t": "Первый в мире многомоторный тяжёлый самолёт «Илья Муромец»", "y": ""}, "19": {"t": "Основоположник русской науки; мозаика, наука о стекле, закон", "y": ""}, "21": {"t": "Катализ под высоким давлением", "y": ""}, "22": {"t": "Вертолёты «Ми»", "y": ""}, "25": {"t": "Военно-полевая хирургия и наркоз в полевых условиях", "y": ""}, "27": {"t": "Трёхфазная система переменного тока", "y": ""}, "9": {"t": "Автомат перекоса — «сердце» вертолёта", "y": ""}, "13": {"t": "Закон гомологических рядов, первый в мире банк семян", "y": ""}, "15": {"t": "«Буран», первый в мире беспилотный полёт и посадка космоплан", "y": "1988"}, "1": {"t": "Первое в мире массовое применение живой вакцины от полиомиел", "y": "1909"}}, "12": {"24": {"t": "Первый в мире алмаз в Якутии (промышленное месторождение «Ми", "y": ""}, "26": {"t": "Первый в мире сверхзвуковой стратегический бомбардировщик Ту", "y": ""}, "27": {"t": "Первый в мире чертёж механизма гусеницы (Блинов)", "y": ""}, "30": {"t": "Первая в мире гиперзвуковая крылатая ракета (прототип «Метео", "y": ""}, "11": {"t": "Первый в мире телеуправляемый торпедный катер", "y": ""}, "17": {"t": "Первая в мире централизованная система теплоснабжения", "y": ""}, "19": {"t": "Первый советский персональный ЭВМ «МИР» для инженеров", "y": ""}, "25": {"t": "Первый в мире ядерный реактор на европейском континенте Ф-1", "y": ""}, "13": {"t": "Первый в мире серийный МиГ-15 — реактивный истребитель новог", "y": ""}, "23": {"t": "Первый в мире врач, предложивший противочумные прививки", "y": ""}, "29": {"t": "Первый в мире массовый серийный трактор «Фордзон-Путиловец» ", "y": ""}, "1": {"t": "Неевклидова геометрия", "y": ""}, "2": {"t": "Первая в мире посадка на Марс («Марс-3»)", "y": ""}, "3": {"t": "Токарный станок с суппортом", "y": ""}, "4": {"t": "Артиллерийский оптический прицел", "y": ""}, "5": {"t": "«Ленин», первый в мире атомный надводный корабль (ледокол)", "y": "1957"}, "6": {"t": "Физико-химический анализ", "y": ""}, "7": {"t": "Внеосевой (зеркальный) телескоп", "y": ""}, "8": {"t": "БЭСМ — одна из самых быстрых ЭВМ в мире (1953)", "y": "1953"}, "9": {"t": "Соосный несущий винт (прототип вертолёта)", "y": ""}, "14": {"t": "Мазер и лазер (принцип квантовых генераторов, Нобель)", "y": ""}, "15": {"t": "Первая в мире посадка на другую планету, Венеру («Венера-7»)", "y": ""}, "16": {"t": "Первая внутриконтинентальная станция в Антарктиде «Восток» (", "y": ""}, "18": {"t": "Экраноплан и суда на подводных крыльях", "y": ""}, "20": {"t": "Первая в мире дрейфующая полярная станция «СП-1»", "y": ""}, "22": {"t": "Инерционный аккумулятор и первая ветроэлектростанция", "y": ""}, "31": {"t": "Первый в мире полёт сверхзвукового пассажирского самолёта (Т", "y": ""}, "10": {"t": "Кардиохирургия, аппарат искусственного сердца, биокибернетик", "y": ""}, "21": {"t": "Кристаллография: вывод всех 230 пространственных групп (перв", "y": ""}, "12": {"t": "Правило Марковникова, взаимное влияние атомов в молекуле", "y": ""}, "28": {"t": "Учение о природной очаговости чумы (мировой приоритет)", "y": ""}}};
+const pageUrls={"5-15": "day-15may-mechnikov.html", "2-3": "day-03feb-luna9.html", "3-18": "day-18mar-leonov.html", "1-8": "day-08jan-icebreaker.html", "1-9": "day-09jan-blinov.html", "11-15": "day-15nov-buran.html", "11-25": "day-25nov-pirogov.html", "12-1": "day-01dec-lobachevsky.html", "1-30": "day-30jan-kotelnikov.html", "1-4": "day-04jan-pilchikov.html", "6-16": "day-16jun-tereshkova.html", "1-1": "day-01jan-cabletv.html", "1-5": "day-05jan-shukhov.html", "12-14": "day-14dec-laser.html", "9-26": "day-26sep-pavlov.html", "1-2": "day-02jan-luna1.html"};
+const MONTH_NAMES=['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'];
+let calM=0;
+function renderCal(){
+  const m=calM+1;
+  const mData=calData[String(m)]||{};
+  document.getElementById('calTitle').textContent=MONTH_NAMES[calM];
+  const grid=document.getElementById('calGrid');
+  grid.innerHTML='';
+  const firstDay=new Date(2024,calM,1).getDay();
+  const startOffset=(firstDay===0)?6:firstDay-1;
+  const daysInMonth=new Date(2024,calM+1,0).getDate();
+  for(let i=0;i<startOffset;i++){const e=document.createElement('div');e.className='cal2-cell empty';grid.appendChild(e);}
+  for(let d=1;d<=daysInMonth;d++){
+    const e=document.createElement('div');
+    e.className='cal2-cell'+(mData[d]?' has':'');
+    e.textContent=d;
+    if(mData[d]){const inv=mData[d];e.onclick=function(){
+      document.querySelectorAll('.cal2-cell.sel').forEach(c=>c.classList.remove('sel'));
+      this.classList.add('sel');
+      const key=m+'-'+d;
+      const url=pageUrls[key]||'';
+      const linkHtml=url?`<br><a href="${url}" style="display:inline-block;margin-top:8px;padding:6px 14px;background:rgba(201,168,76,.18);border:1px solid rgba(201,168,76,.4);border-radius:8px;color:#e4c97a;text-decoration:none;font-size:13px;font-weight:600">Открыть страницу →</a>`:'';
+      document.getElementById('calDetail').innerHTML=
+        `<b>${d} ${MONTH_NAMES[calM]}${inv.y?' · '+inv.y:''}</b><br>${inv.t}`+linkHtml;
+      
+    };}
+    grid.appendChild(e);
+  }
+}
+renderCal();
+document.getElementById('calPrev').onclick=()=>{calM=(calM+11)%12;renderCal();};
+document.getElementById('calNext').onclick=()=>{calM=(calM+1)%12;renderCal();};
+
+// ── REVEAL ────────────────────────────────────────────────────────────────────
+document.querySelectorAll('section.block').forEach(s=>s.classList.add('reveal'));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on');}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+</script>
+<script>window.addEventListener("pageshow",function(e){if(e.persisted)location.reload();});</script>
+
+<!-- единая обвязка музеев: backbtn, «Поделиться», чипсы разделов,
+     стрелки «пред/след», строка «Случайное · Все · В город-музей» -->
+<script>window.MUSEUM_CHROME={
+  museum:{title:'Что изобрели русские первыми в мире',href:'index.html'},
+  share:{title:'Первый в мире гусеничный ход — «бесконечные рельсы» — музей «Что изобрели русские первыми в мире»',
+         text:'Первый в мире гусеничный ход — «бесконечные рельсы». Что Россия дала миру раньше всех — день за днём.'},
+  prev:{href:'day-08jan-icebreaker.html',title:'8 января · «Ермак»'},
+  next:{href:'day-10jan-britnev.html',title:'10 января · Ледокол «Пайлот»'},
+  all:{href:'index.html',label:'Все изобретения'},
+  city:'../../index.html',
+  random:['day-01jan-cabletv.html','day-02jan-luna1.html','day-03feb-luna9.html','day-04jan-pilchikov.html','day-05jan-shukhov.html','day-15nov-buran.html','day-08jan-icebreaker.html','day-09jan-blinov.html','day-30jan-kotelnikov.html','day-18mar-leonov.html','day-15may-mechnikov.html','day-16jun-tereshkova.html','day-26sep-pavlov.html','day-25nov-pirogov.html','day-01dec-lobachevsky.html','day-14dec-laser.html']
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-score.js"></script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-chrome.js"></script>
+<script>window.MUSEUM_SUPPORT={museum:'Что изобрели русские первыми в мире'};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-support.js"></script>
+  <!-- rc-analytics --><script defer src="https://arabelthera-dot.github.io/rc-museum-preview/assets/analytics.js"></script>
+<script>window.MUSEUM_AUDIOGUIDE={
+  audioSrc:"audio-guide-blinov-ru.mp3",
+  durationLabel:"1 минут 39 секунд",
+  lead:"Голос ведёт от размытой саратовской колеи до жёлтого бульдозера на современной стройке. 4 остановки, на каждой — что искать глазами. Слушать можно фоном, пока читаешь статью ниже.",
+  stops:[
+    {t:0,mark:"0:00",title:"Телега в грязи"},
+    {t:23,mark:"0:23",title:"Бесконечные рельсы"},
+    {t:50,mark:"0:50",title:"Диплом Нижегородской выставки"},
+    {t:74,mark:"1:14",title:"Жёлтые машины Холта"}
+  ],
+  transcript:[
+    "<p>«Мы в зале, где пахнет мазутом и мокрой землёй. Посмотрите на эту фотографию: телега, зарывшаяся в грязь по ступицу, и лошади, тянущие из последних сил. Саратовская губерния, 1870-е. Такое видели все. А крестьянин Фёдор Блинов, стоя над этой колеёй, задал вопрос иначе: не как вытащить, а почему колесо вообще проваливается.</p>",
+    "<p>Вот его ответ — в витрине справа. Цепь из плоских звеньев, которая расстилается перед машиной и собирается за ней. Колесо давит всем весом в одну точку, а эта лента раскладывает вес на целую полосу грунта. В 1879 году Блинов получил на неё патент — «вагон с бесконечными рельсами». Через девять лет он поставил на такое шасси паровую машину, и первый в мире гусеничный трактор пошёл по пашне там, где колёсная техника вставала намертво.</p>",
+    "<p>Обратите внимание на диплом под стеклом. Нижний Новгород, 1896 год, промышленная выставка: машина прошла своим ходом, повернула, развернулась на глазах комиссии. Изобретателя наградили — и на этом всё. Ни заводчика за спиной, ни министерских связей у бывшего крепостного не было. Блинов умер в 1902-м, так и не увидев свой трактор в серии.</p>",
+    "<p>А теперь взгляните на последний снимок в зале — жёлтая машина на стройке. В 1904 году американец Бенджамин Холт патентует гусеничный трактор, в 1906-м ставит его на поток под маркой «Катерпиллер». Патент саратовского самоучки старше на двадцать пять лет. Каждый танк, экскаватор и бульдозер планеты катится на его ленте. В Балакове ему стоит памятник. Переходим к следующему экспонату».</p>"
+  ],
+  note:'Озвучено синтезом речи — временно, до записи голосом автора музея.'
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-audioguide.js"></script>
+<script type="application/json" data-proof>
+{
+ "status": "found",
+ "claim_id": "rc:izobreteniya:blinov:claim-privilege",
+ "ours": {
+  "kind": "привилегия",
+  "title": "Привилегия крестьянину Фёдору Блинову «на особое устройство вагона с бесконечными рельсами для перевозки грузов по шоссейным и проселочным дорогам»",
+  "date": "1879-09-20",
+  "holder": "Департамент торговли и мануфактур",
+  "source_url": "https://www.mo-balakovo.ru/city/citizen/blinov/"
+ },
+ "rival": {
+  "name": "Бенджамин Холт, США",
+  "doc_title": "патент США на гусеничный трактор",
+  "date": "1907"
+ },
+ "gap_years": 28
+}
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-proof.js"></script>
+</body>
+</html>

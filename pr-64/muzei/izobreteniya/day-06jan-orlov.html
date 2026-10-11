@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru" data-museum="izobreteniya">
+<head><meta name="robots" content="noindex"><base href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Орловская печать: все краски банкноты за один прогон — Что изобрели русские первыми в мире, 6 января</title>
+<!--
+  Страница дня 6 января. Наряд izobreteniya-2-stranicy-2809 (claude2, 28.09.2026).
+  Форма — вариант А музея изобретений (Сергей 12.09.2026): лента ударов, подробности свёрнуты.
+  Паспорт выпуска: rc-museum-production/izobreteniya/day-06jan-orlov/passport/issue.json
+  Рабочая записка дня (три подачи, находка, карта моментов): pilot-izobreteniya/day-06jan-orlov.md
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+
+  :root{
+    --dark:#060c17; --dark2:#0c1826; --surface:#111f33;
+    --card:rgba(255,255,255,.05); --card-b:rgba(255,255,255,.09);
+    --gold:#c9a84c; --gold-l:#e4c97a; --gold-g:rgba(201,168,76,.13);
+    --ink:#e8eef5; --muted:#7a9ab8; --line:rgba(255,255,255,.07);
+    --accent:#2d8cbf; --accent2:#1f6f8b;
+    /* legacy compat */
+    --paper:#0c1826; --paper2:#111f33;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Inter','Segoe UI',sans-serif;color:var(--ink);background:var(--dark);line-height:1.72}
+  h1,h2,h3{font-family:'Playfair Display',Georgia,serif;line-height:1.13;margin:0}
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px}
+  a{color:var(--accent)}
+
+  /* ── ШАПКА ── */
+  header.top{background:rgba(6,12,23,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid var(--card-b);color:#fff;position:sticky;top:0;z-index:30}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
+  .logo svg{display:block;filter:drop-shadow(0 0 8px rgba(201,168,76,.4))}
+  .logo .lt{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:16px}
+  .logo .lt small{display:block;font-size:9px;font-weight:600;letter-spacing:3px;color:var(--gold);text-transform:uppercase;font-family:'Inter',sans-serif}
+  .score{background:var(--gold-g);border:1px solid rgba(201,168,76,.3);border-radius:24px;padding:6px 16px;font-size:13px;color:var(--gold-l);cursor:pointer;font-family:'Inter',sans-serif}
+  .score-info{position:absolute;right:12px;top:66px;max-width:260px;background:#0e1c30;color:var(--ink);border:1px solid var(--card-b);border-radius:14px;padding:14px 16px;font-size:13px;line-height:1.6;box-shadow:0 20px 60px rgba(0,0,0,.6);display:none;z-index:40}
+  .score-info.show{display:block}
+
+  /* ── HERO — СТАНДАРТ (не менять): 3D-сцена сверху, текст отдельным блоком ниже ── */
+  .hero-scene{position:relative;height:52vh;min-height:300px;max-height:520px;overflow:hidden;background:linear-gradient(160deg,#0a1e3a 0%,#1a3a6a 55%,#0d2240 100%)}
+  .hero-scene canvas.scene,.hero-scene img.scene{width:100%;height:100%;display:block;object-fit:cover}
+  .scene-caption{background:#060d18;padding:11px 0 12px}
+  .scene-caption .wrap{display:flex;gap:18px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
+  .scene-cap{font-size:13.5px;line-height:1.6;color:var(--muted);border-left:2px solid rgba(201,168,76,.4);padding-left:14px;flex:1 1 420px}
+  .scene-hint{flex:0 0 auto;font-family:'Inter',sans-serif;font-size:12.5px;letter-spacing:.4px;color:#e4c97a;
+    background:rgba(201,168,76,.1);border:1px solid rgba(201,168,76,.34);border-radius:24px;padding:7px 16px;font-weight:600}
+  .hero-lead{background:linear-gradient(180deg,#0c1826 0%,#060c17 100%);color:#fff;padding:28px 0 38px}
+  .hero-lead .museum{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase;font-weight:700;font-family:'Inter',sans-serif;margin-bottom:12px;opacity:.9}
+  .hero-lead .who{font-family:'Inter',sans-serif;font-size:clamp(13px,3vw,15px);letter-spacing:.4px;color:var(--accent-l,#7dc8ff);margin-bottom:10px}
+  .hero-lead .who i{font-style:normal;color:#7893ab;font-weight:400}
+  .hero-lead h1{color:#fff;font-size:56px;font-weight:900;line-height:1.04;margin-bottom:16px}
+  .hero-lead .hook{color:#b8ccde;font-size:19px;max-width:580px;margin-bottom:28px;line-height:1.65;font-weight:400}
+  .hero-lead .hero-btns{display:flex;gap:12px;flex-wrap:wrap}
+  @media(max-width:680px){.hero-lead h1{font-size:34px}.hero-lead .hook{font-size:16px}
+    .hero-scene{height:34vh;min-height:230px;max-height:300px}
+    .scene-caption .wrap{flex-direction:column;gap:9px}
+    .scene-hint{order:-1;align-self:flex-start;font-size:11.5px;padding:6px 13px}
+    .scene-cap{font-size:12.8px;flex:1 1 auto}}
+  .date-chip{display:inline-block;background:var(--gold-g);border:1px solid rgba(201,168,76,.35);color:var(--gold);font-weight:700;padding:6px 18px;border-radius:24px;font-size:12px;margin-bottom:16px;font-family:'Inter',sans-serif;letter-spacing:.5px}
+
+  /* ── НАВИГАЦИЯ ДНЯ ── */
+  .daynav{position:sticky;top:64px;z-index:25;background:rgba(6,12,23,.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--card-b)}
+  .daynav .wrap{display:flex;gap:0;overflow-x:auto;scrollbar-width:none}
+  .daynav::-webkit-scrollbar{display:none}
+  .daynav a{flex:0 0 auto;padding:14px 20px;font-size:11px;font-weight:700;font-family:'Inter',sans-serif;color:var(--muted);text-decoration:none;white-space:nowrap;letter-spacing:1.5px;text-transform:uppercase;border-bottom:2px solid transparent;transition:.18s}
+  .daynav a:hover{color:var(--gold);border-bottom-color:var(--gold)}
+
+  /* ── СЕКЦИИ ── */
+  section.block{padding:64px 0;border-bottom:1px solid var(--line);scroll-margin-top:130px}
+  .kicker{font-size:10px;text-transform:uppercase;letter-spacing:3.5px;color:var(--gold);font-weight:700;font-family:'Inter',sans-serif;margin-bottom:8px}
+  section.block h2{font-size:34px;color:#fff;margin-bottom:10px}
+  p{margin:14px 0;color:var(--ink)}
+  .pull{background:var(--gold-g);border-left:3px solid var(--gold);padding:18px 22px;border-radius:0 14px 14px 0;font-style:italic;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-size:20px;line-height:1.5;margin:26px 0}
+
+  /* ── КНОПКИ ── */
+  .btn{cursor:pointer;border:none;border-radius:12px;padding:14px 26px;font-size:15px;font-weight:600;font-family:'Inter',sans-serif;background:var(--accent2);color:#fff;transition:.18s;letter-spacing:.2px}
+  .btn:hover{filter:brightness(1.18)}
+  .btn.ghost{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid var(--card-b)}
+  .btn.ghost:hover{background:rgba(255,255,255,.11);border-color:rgba(255,255,255,.2)}
+  .btn.gold{background:linear-gradient(135deg,var(--gold),#b8882b);color:#1a0f00;box-shadow:0 4px 20px rgba(201,168,76,.25)}
+  .btn.gold:hover{filter:brightness(1.1);box-shadow:0 6px 28px rgba(201,168,76,.4)}
+  .btn:active{transform:translateY(1px)}
+  .pulse{animation:pulse .9s ease-in-out infinite}
+  @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.06)}}
+
+  /* ── КАРТОЧКИ ── */
+  .card{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:20px 22px;margin:16px 0;backdrop-filter:blur(6px)}
+
+  /* ── КВИЗ ── */
+  .opt{display:block;width:100%;text-align:left;background:rgba(255,255,255,.04);border:1px solid var(--card-b);border-radius:12px;padding:13px 16px;margin:8px 0;cursor:pointer;font-size:15px;color:var(--ink);font-family:'Inter',sans-serif;transition:.16s}
+  .opt:hover{border-color:var(--accent);background:rgba(45,140,191,.08)}
+  .opt.correct{background:rgba(40,120,60,.18);border-color:#3f9b52;color:#7ed4a0;font-weight:600}
+  .opt.wrong{background:rgba(180,40,40,.13);border-color:#c0453f;color:#f08080}
+  .exp{margin-top:10px;font-size:14px;background:var(--gold-g);border-radius:10px;padding:12px 14px;display:none;color:var(--gold-l)}
+  .exp.show{display:block}
+
+  /* ── ИТОГ ДНЯ ── */
+  .day-result{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:22px 24px;max-width:460px}
+  .dr-rank{font-family:'Playfair Display',Georgia,serif;font-size:28px;color:var(--gold-l);font-weight:700}
+  .dr-score{font-size:16px;margin:4px 0 12px;color:var(--ink)}.dr-score span{color:var(--muted);font-size:14px}
+  .dr-bar{height:8px;background:rgba(255,255,255,.08);border-radius:6px;overflow:hidden}
+  .dr-bar i{display:block;height:100%;background:linear-gradient(90deg,var(--accent2),var(--gold));transition:width .6s cubic-bezier(.2,.7,.2,1)}
+  .dr-note{margin-top:12px;font-size:14px;color:var(--muted)}
+
+  /* ── РЕКЛАМНЫЕ СЛОТЫ ── */
+  .ad-slot{position:relative;margin:26px 0;background:rgba(255,255,255,.02);border:1px dashed rgba(255,255,255,.1);border-radius:14px;min-height:88px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px}
+  .ad-slot .lbl{position:absolute;top:7px;right:12px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.15);font-family:'Inter',sans-serif}
+  .ad-slot .ph-txt{font-size:12px;max-width:80%;color:rgba(255,255,255,.18)}
+  .ad-slot.billboard{min-height:108px}
+  .adband{background:transparent;border-bottom:none}
+
+  footer{padding:40px 0 80px;color:rgba(255,255,255,.2);font-size:12px;text-align:center;font-family:'Inter',sans-serif;letter-spacing:.5px}
+  .crumbs{background:rgba(6,12,23,.6);border-bottom:1px solid var(--card-b);font-family:'Inter',sans-serif;font-size:12.5px}
+  .crumbs .wrap{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding-top:9px;padding-bottom:9px}
+  .crumbs a{color:var(--gold-l);text-decoration:none;white-space:nowrap}
+  .crumbs a:hover{text-decoration:underline}
+  .crumbs .sep{color:var(--muted);opacity:.6}
+  .crumbs .here{color:var(--muted);white-space:nowrap}
+
+
+  /* ── ШАПКА: четыре строки по museum-core §6-бис ── */
+  header.top{display:block;text-align:center;padding:10px 12px 8px;height:auto;position:relative}
+  header.top .b1{font-family:'Playfair Display',Georgia,serif;font-weight:700;font-size:15px;letter-spacing:.5px;color:#fff}
+  header.top .b2{font-size:11px;color:var(--muted);margin-top:2px}
+  header.top .b3{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-top:6px}
+  header.top .b4{font-size:12.5px;color:var(--gold-l);font-family:'Playfair Display',Georgia,serif;font-style:italic}
+  header.top .score{position:absolute;right:12px;top:10px}
+  .daynav{top:0}
+  .hero-scene{height:38vh;min-height:250px;max-height:400px}
+  @media(max-width:680px){.hero-lead h1{font-size:31px}}
+  .hero-scene img.scene{object-fit:cover;object-position:50% 50%}
+  .date-origin{font-size:13px;color:#9fb4c8;margin:-6px 0 12px;max-width:62ch}
+  .hero-lead .hook{color:#c6d8e8;max-width:62ch}
+  .hero-under{background:linear-gradient(180deg,#060d18,#060c17);padding:4px 0 22px}
+  .stamp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid rgba(125,200,255,.28);margin-top:14px}
+  .stamp>div{padding:11px 12px;border-left:1px solid rgba(125,200,255,.16);min-width:0}
+  .stamp>div:first-child{border-left:0}
+  .stamp .v{font-size:clamp(15px,3.4vw,21px);font-weight:700;color:#8fd3ff;line-height:1.1;overflow-wrap:anywhere}
+  .stamp .k{font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:#8fa5b9;margin-top:5px}
+  @media(max-width:600px){.stamp{grid-template-columns:repeat(2,minmax(0,1fr))}.stamp>div:nth-child(3){border-left:0}.stamp>div:nth-child(n+3){border-top:1px solid rgba(125,200,255,.16)}}
+
+  /* ── ЛЕНТА УДАРОВ (museum-inventions, вариант А; museum-core §5-бис) ── */
+  .udary{list-style:none;margin:18px 0 0;padding:0;counter-reset:u}
+  .udary>li{border-top:1px solid var(--line);padding:4px 0}
+  .udary details>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:34px 1fr;gap:10px;padding:12px 0;font-size:17px;line-height:1.55;color:var(--ink)}
+  .udary details>summary::-webkit-details-marker{display:none}
+  .udary details>summary::before{counter-increment:u;content:counter(u);font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:20px;color:var(--gold);line-height:1.3}
+  .udary .more-lbl{display:block;grid-column:2;font-size:12.5px;color:var(--gold-l);letter-spacing:.3px;margin-top:4px}
+  .udary .more-lbl::after{content:' ▾'}
+  .udary details[open] .more-lbl::after{content:' ▴'}
+  .udary details[open] .more-lbl .o{display:none}
+  .udary details:not([open]) .more-lbl .c{display:none}
+  .udary summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+  .udary .det{margin:0 0 14px 44px;padding:12px 16px;background:rgba(255,255,255,.035);border-left:2px solid rgba(201,168,76,.45);border-radius:0 10px 10px 0;font-size:15px;color:#d5e0ea}
+  .udary .det p{margin:8px 0}
+  .udary .tag{display:inline-block;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#1a0f00;background:var(--gold-l);border-radius:6px;padding:1px 7px;margin-right:6px}
+  .udary .find{border-left:3px solid var(--gold);padding-left:8px}
+  figure.fig{margin:18px 0}
+  figure.fig img{max-width:100%;height:auto;border-radius:10px;display:block}
+  figure.fig figcaption{font-size:13px;color:var(--muted);margin-top:6px;line-height:1.5}
+  .src-note{font-size:12px;color:#8fa5b9}
+
+  /* ── ТИГЕЛЬ АНОСОВА (главное предметное действие) ── */
+  .lab{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:18px 18px 20px;margin-top:14px}
+  .lab-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0}
+  .lab-row .lbl{flex:0 0 100%;font-size:13px;color:var(--muted);letter-spacing:.3px}
+  .seg{cursor:pointer;border:1px solid var(--card-b);background:rgba(255,255,255,.04);color:var(--ink);border-radius:10px;padding:10px 14px;font:inherit;font-size:14.5px;min-height:44px}
+  .seg[aria-pressed="true"]{border-color:var(--gold);background:var(--gold-g);color:var(--gold-l);font-weight:600}
+  .seg:focus-visible,.btn:focus-visible,.opt:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .lab-stage{position:relative;margin-top:12px}
+  .lab-stage canvas{width:100%;height:auto;display:block;border-radius:10px;background:#1c2530}
+  .lab-cap{font-size:12px;color:#8fa5b9;margin-top:6px}
+  .lab-msg{margin-top:12px;font-size:15.5px;padding:12px 14px;border-radius:10px;background:rgba(255,255,255,.04);border-left:3px solid var(--card-b);min-height:48px}
+  .lab-msg.ok{border-left-color:#3f9b52;background:rgba(40,120,60,.14)}
+  .lab-msg.bad{border-left-color:#c0453f;background:rgba(180,40,40,.10)}
+  .lab-found{font-size:13px;color:var(--muted);margin-top:8px}
+  .lab-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+  .micro{display:none;margin-top:14px;text-align:center}
+  .micro canvas{width:min(280px,80%);height:auto;border-radius:50%;border:6px solid #2b3642;box-shadow:0 0 0 2px rgba(201,168,76,.5)}
+  .micro.show{display:block}
+  .noscript-box{background:rgba(255,255,255,.04);border:1px dashed var(--card-b);border-radius:12px;padding:12px 16px;font-size:15px}
+
+  /* ── ГРАНИЦА ПЕРВЕНСТВА ── */
+  .border-box{background:rgba(45,140,191,.08);border:1px solid rgba(45,140,191,.3);border-radius:14px;padding:16px 18px}
+  .border-box b{color:#8fd3ff}
+  .ctx{width:100%;border-collapse:collapse;margin-top:14px;font-size:14.5px}
+  .ctx th,.ctx td{text-align:left;padding:9px 8px;border-top:1px solid var(--line);vertical-align:top}
+  .ctx th{color:var(--gold-l);font-weight:600;font-size:12.5px;letter-spacing:.5px}
+  .quiz-q{margin:18px 0 6px;font-weight:600}
+  .sources a{color:var(--gold-l)}
+  .sources li{margin:6px 0;font-size:14px;color:#c8d6e2}
+  @media(max-width:600px){header.top{padding:8px 64px 6px}header.top .score{top:8px;right:8px;padding:4px 10px;font-size:12px}header.top .b3{margin-top:3px}
+    .hero-scene{height:26vh;min-height:200px;max-height:260px}.date-origin{font-size:12px;margin:-8px 0 8px}.hero-lead{padding:18px 0 26px}.hero-lead .date-chip{margin-bottom:12px}}
+  @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}html{scroll-behavior:auto}}
+
+  .hero-scene{background:#56716a}
+  .hero-scene img.scene{object-fit:contain}
+  /* ── СТАНОК: орловский прогон против трёх отдельных ── */
+  .press{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:18px 18px 20px;margin-top:14px}
+  .press-stage{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+  .press-stage figure{margin:0}
+  .press-stage canvas{width:100%;height:auto;display:block;border-radius:10px;background:#f3ecd9}
+  .press-stage figcaption{font-size:12.5px;color:var(--muted);margin-top:6px}
+  @media(max-width:600px){.press-stage{grid-template-columns:1fr}}
+  .kassa{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px}
+  .kassa button{cursor:pointer;background:rgba(255,255,255,.04);border:1px solid var(--card-b);border-radius:12px;padding:8px;color:var(--ink);font:inherit;font-size:14px;min-height:44px}
+  .kassa button canvas{width:100%;height:auto;display:block;border-radius:8px;background:#f3ecd9;margin-bottom:6px}
+  .kassa button[disabled]{cursor:default}
+  .kassa button.correct{border-color:#3f9b52;background:rgba(40,120,60,.18)}
+  .kassa button.wrong{border-color:#c0453f;background:rgba(180,40,40,.13)}
+</style>
+<meta name="description" content="Мальчик, просивший с матерью милостыню по деревням, придумал печать, которой деньги многих стран защищают до сих пор.">
+<link rel="canonical" href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-06jan-orlov.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Русская цивилизация">
+<meta property="og:title" content="Все краски банкноты — за один прогон">
+<meta property="og:description" content="Мальчик, просивший с матерью милостыню по деревням, придумал печать, которой деньги многих стран защищают до сих пор.">
+<meta property="og:url" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-06jan-orlov.html">
+<meta property="og:image" content="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-06jan-orlov-album.jpg">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "Все краски банкноты — за один прогон", "description": "Мальчик, просивший с матерью милостыню по деревням, придумал печать, которой деньги многих стран защищают до сих пор.", "url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-06jan-orlov.html", "inLanguage": "ru", "isPartOf": {"@type": "WebSite", "name": "Музей «Что изобрели русские первыми в мире»"}, "publisher": {"@type": "Organization", "name": "Русская цивилизация"}, "about": {"@type": "CreativeWork", "name": "Все краски банкноты — за один прогон"}, "image": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-06jan-orlov-album.jpg"}</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="b1">Русская цивилизация</div>
+  <div class="b2">Первый цифровой музей достижений России · Цивилизация первенств — что Россия дала миру раньше всех</div>
+  <div class="b3">Что изобрели русские первыми в мире</div>
+  <div class="b4">365 изобретений. Все русские. Все первые</div>
+  <div class="score" id="scoreBox" title="Баллы знаний за этот день">⭐ <span id="score">0</span> / 100</div>
+</header>
+
+<nav class="crumbs" aria-label="Хлебные крошки"><div class="wrap">
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация</a>
+  <span class="sep">›</span>
+  <a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми в мире</a>
+  <span class="sep">›</span>
+  <span class="here">6 января · Орловская печать</span>
+</div></nav>
+
+<div class="hero-scene" id="hero">
+  <img class="scene" src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-06jan-orlov-album.jpg" data-source="https://commons.wikimedia.org/wiki/File%3AOrlov_printing-example1.jpg" data-license="Public domain" width="522" height="460" alt="Лист из альбома Орлова: четыре круглые розетки из тончайших линий, каждая переливается несколькими красками" fetchpriority="high">
+</div>
+
+<div class="scene-caption">
+  <div class="wrap">
+    <div class="scene-cap">Розетки из альбома «Типографская печать Орлова», Петербург, 1890-е. Каждая отпечатана с одной формы. Общественное достояние.</div>
+    <span class="scene-hint">Документ · 1890-е</span>
+  </div>
+</div>
+
+<header class="hero-lead">
+  <div class="wrap">
+    <div class="date-chip">6 января · 1890</div>
+    <p class="date-origin">Дата условная: у изобретения нет одного дня. Работа начата в 1890 году, первые банкноты — 1892.</p>
+    <div class="who">Иван Орлов <i>· Экспедиция заготовления государственных бумаг</i></div>
+    <div class="museum">Музей «Что изобрели русские первыми в мире»</div>
+    <h1>Все краски банкноты — за один прогон</h1>
+    <p class="hook">Мальчик, просивший с матерью милостыню по деревням, придумал печать, которой деньги многих стран защищают до сих пор.</p>
+    <div class="hero-btns">
+      <button class="btn gold" id="readBtn" type="button">Читать историю ↓</button>
+      <button class="btn ghost" id="listenBtn" type="button">🎧 Слушать аудиогид</button>
+    </div>
+  </div>
+</header>
+
+<div class="hero-under">
+  <div class="wrap">
+    <div class="stamp">
+      <div><div class="v">1 прогон</div><div class="k">вместо 2–10</div></div>
+      <div><div class="v">1892</div><div class="k">первые банкноты</div></div>
+      <div><div class="v">1897</div><div class="k">патент Германии</div></div>
+      <div><div class="v">130+ лет</div><div class="k">на деньгах многих стран</div></div>
+    </div>
+  </div>
+</div>
+
+<nav class="daynav" aria-label="Разделы дня">
+  <div class="wrap">
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-06jan-orlov.html#story">Читать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-06jan-orlov.html#audioguide">Слушать</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-06jan-orlov.html#games">Станок</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-06jan-orlov.html#pervenstvo">Первенство</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-06jan-orlov.html#quiz">Викторина</a>
+    <a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-06jan-orlov.html#calendar">Календарь</a>
+  </div>
+</nav>
+
+<section class="wrap" id="dokument" data-proof-block aria-label="Документ первенства"></section>
+
+<section class="block" id="audioguide"></section>
+
+<section class="block" id="story">
+  <div class="wrap">
+    <div class="kicker">История изобретения · 12 ударов</div>
+    <h2>Краски, которые легли разом</h2>
+    <p style="color:var(--muted);max-width:62ch">Читается подряд. Нажми на удар — откроется подробный разбор с источниками.</p>
+    <ol class="udary">
+      <li><details><summary><span>Детство Ивана Орлова прошло на дорогах: мать водила его по деревням Нижегородской губернии просить милостыню.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Он родился в 1861 году в бедной крестьянской семье, в селе Меледино Княгининского уезда. Отец умер рано. «Бродя с ней по деревням и прося милостыню» — так «Наука и жизнь» пересказывает его детство.</p>
+          <p>Потом мать привезла сына в Нижний Новгород. Купец заметил, как мальчик рисует, и помог устроить его в Кулибинское училище.</p>
+          <p class="src-note">Источник: «Наука и жизнь», «Русская революция в печатном деле».</p>
+        </div></details></li>
+      <li><details><summary><span>Кулибинское училище он окончил с первой наградой, потом учился в Строгановском в Москве, а в 1886 году пришёл в Экспедицию, где печатали деньги.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <figure class="fig" style="max-width:200px;float:right;margin:4px 0 10px 16px">
+            <img src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-06jan-orlov-portret.jpg" data-source="https://commons.wikimedia.org/wiki/File%3AIvan_I_Orlov.jpg" data-license="Public domain" width="420" height="550" loading="lazy" alt="Иван Иванович Орлов: мужчина средних лет с бородой, в тёмном сюртуке">
+            <figcaption>И. И. Орлов (1861–1928). Фотография начала XX века, автор неизвестен. Общественное достояние.</figcaption>
+          </figure>
+          <p>Экспедиция заготовления государственных бумаг — нынешний Гознак — печатала кредитные билеты, марки и ценные бумаги империи. Главная её забота — защита денег от подделки.</p>
+          <p class="src-note">Источник: «Наука и жизнь»; Банк России, справка к монете «Орловская печать», 2025.</p>
+          <div style="clear:both"></div>
+        </div></details></li>
+      <li><details><summary><span>До Орлова каждую краску рисунка печатали своим прогоном — от двух до десяти раз, и каждый раз лист снова шёл под новую форму.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Многокрасочный рисунок собирали по слоям: на каждый цвет своя печатная форма, свой проход листа через машину. Чем больше красок, тем больше прогонов.</p>
+          <p class="src-note">Источник: «Наука и жизнь».</p>
+        </div></details></li>
+      <li><details><summary><span>Орлов собрал все краски на одной форме и переносил их на лист за один оборот: линия рисунка меняет цвет, не прерываясь.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Над способом он начал работать в 1890 году. Краски с нескольких промежуточных форм-шаблонов собирались на мягкий эластичный вал, а с него — на одну печатную форму. Лист проходил машину один раз.</p>
+          <p>Банк России описывает результат так: «линии рисунка, не прерываясь, меняют один цвет на другой».</p>
+          <p class="src-note">Источники: Банк России, 2025; «Наука и жизнь» (первые оттиски — 1891, действующая машина — 1892).</p>
+        </div></details></li>
+      <li><details><summary><span>Такое совпадение красок невозможно было повторить вручную — поэтому новые деньги стали защитой от фальшивомонетчиков.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Поддельщик, который печатал бы краски по очереди, неизбежно давал бы сдвиг на стыке цветов. Орловский оттиск такого сдвига не имеет в принципе: все краски ложатся одним касанием. Попробуй сам на станке ниже.</p>
+          <p class="src-note">Источники: «Наука и жизнь»; Банк России, 2025.</p>
+        </div></details></li>
+      <li><details><summary><span>В 1892 году в обращение вышли первые русские кредитные билеты с орловской печатью, и «новые деньги стали сенсацией в финансовом мире».<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Какой купюрой всё началось, источники называют по-разному: Банк России — пятирублёвой, «Наука и жизнь» — двадцатипятирублёвой. Мы не выбираем наугад и оставляем оба свидетельства.</p>
+          <p>В 1894 году вышли десятирублёвые билеты с орловской печатью в три краски с обеих сторон.</p>
+          <figure class="fig" style="max-width:300px">
+            <img src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-06jan-orlov-10rub-1894.jpg" data-source="https://commons.wikimedia.org/wiki/File%3ARussian_Empire-1898-Bill-10_rubles-revers.jpg" data-license="Public domain" width="520" height="852" loading="lazy" alt="Оборот кредитного билета 10 рублей образца 1894 года: красная сетка и двуглавый орёл, крупные цифры 10 и слово РУБ в жёлто-голубом переливе, перфорация «образец»">
+            <figcaption>10 рублей образца 1894 года (выпуск 1898), оборот, экземпляр-образец с перфорацией. Общественное достояние.</figcaption>
+          </figure>
+          <p class="src-note">Источники: Банк России, 2025; «Наука и жизнь».</p>
+        </div></details></li>
+      <li><details><summary><span>В 1893 году способ повезли в Чикаго — бронзовая медаль «за художественный характер и оригинальность процесса».<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Орловскую печать показывали на всемирных выставках в Чикаго и Париже. В 1896 году Орлов прочёл доклад в Императорском Русском техническом обществе, в 1902-м получил премию Петербургской академии наук.</p>
+          <p class="src-note">Источники: «Наука и жизнь»; Банк России, 2025.</p>
+        </div></details></li>
+      <li><details><summary><span>Александр III велел выдать изобретателю 7 000 рублей, а служащий Экспедиции получал около 450 рублей в год.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Больше пятнадцати годовых жалований одной наградой. Поддерживал Орлова и управляющий Экспедицией Роберт Ленц, а чертежи и детали машины делал механик Иван Стружков.</p>
+          <p class="src-note">Источник: «Наука и жизнь».</p>
+        </div></details></li>
+      <li><details><summary><span>Германский патент на русский способ выдали раньше российского: в Германии — в 1897 году, дома — только в 1899-м.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>После немецкого пришли французский и английский патенты. Немецкая фирма «Кёниг и Бауэр» наладила выпуск машин по патенту Орлова и, как пишет Банк России, «платила России золотом за идею».</p>
+          <p class="src-note">Источники: «Наука и жизнь»; Банк России, 2025.</p>
+        </div></details></li>
+      <li class="find"><details><summary><span>«Немцы дают ему миллион, а он отдал изобретение казне и получил всего десять тысяч», — записал в дневнике издатель Суворин.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p><span class="tag">Находка дня</span>В ноябре 1897 года Орлов передал права на изобретение государству. Суворин не одобрял этот выбор, но его запись и сохранила цену отказа.</p>
+          <p>Сумма у Суворина — десять тысяч, в пересказе о царской награде — семь. Разница может означать разные выплаты; источники её не объясняют, и мы приводим обе цифры как есть.</p>
+          <p class="src-note">Источник: «Наука и жизнь» (цитата из дневника А. С. Суворина).</p>
+        </div></details></li>
+      <li><details><summary><span>Он придумал и пневматический самонаклад: машина сама подавала в печать до 120 листов в минуту.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Самонаклад около 1898 года вошёл в практику полиграфии. Орлов придумал и способ изготовления тканых кредитных билетов.</p>
+          <p class="src-note">Источники: Банк России, 2025; «Наука и жизнь».</p>
+        </div></details></li>
+      <li><details><summary><span>Через 13 лет он ушёл из Экспедиции, вернулся в родное Меледино учить детей и отказывал зарубежным фирмам.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Сначала была своя механическая мастерская и работа над автоматическим самонакладчиком. Потом возвращение в село: учительство, помощь односельчанам, книги и рисунок. Иван Иванович Орлов умер в 1928 году.</p>
+          <p>Сегодня печатные машины швейцарской KBA-NotaSys носят его имя — «Супер Орлоф Интальо» — и работают на денежных фабриках мира.</p>
+          <p class="src-note">Источники: «Наука и жизнь»; Банк России, 2025.</p>
+        </div></details></li>
+    </ol>
+  </div>
+</section>
+
+<section class="block" id="games">
+  <div class="wrap">
+    <div class="kicker">Главное действие · модель</div>
+    <h2>Станок: три прогона против одного</h2>
+    <p style="max-width:62ch">Отпечатай трёхцветную розетку двумя способами. Сначала по-старому: каждая краска своим прогоном, и лист всякий раз ложится чуть иначе. Потом по-орловски: все краски с одной формы, один раз. Смотри на стык цветов.</p>
+    <div class="press" id="press">
+      <div class="lab-btns">
+        <button class="btn ghost" type="button" id="oldGo">Три прогона — по краске</button>
+        <button class="btn gold" type="button" id="orlovGo">Один прогон — по Орлову</button>
+        <button class="btn ghost" type="button" id="pressReset">Начать заново</button>
+      </div>
+      <div class="press-stage">
+        <figure><canvas id="cvOld" width="300" height="300" role="img" aria-label="Оттиск тремя прогонами"></canvas><figcaption>Три прогона: <span id="shiftTxt">ещё не печатали</span></figcaption></figure>
+        <figure><canvas id="cvOrlov" width="300" height="300" role="img" aria-label="Оттиск одним прогоном"></canvas><figcaption>Один прогон: <span id="orlTxt">ещё не печатали</span></figcaption></figure>
+      </div>
+      <div class="lab-cap">Модель, а не снимок: сдвиг листа между прогонами задан программой, чтобы показать причину.</div>
+      <div class="lab-msg" id="pressMsg" aria-live="polite">Станок готов. Начни с трёх прогонов.</div>
+      <div id="kassaBox" hidden>
+        <p class="quiz-q">Ты кассир. Какой из двух билетов настоящий?</p>
+        <div class="kassa">
+          <button type="button" id="kassaWrong"><canvas id="cvK1" width="200" height="200" aria-hidden="true"></canvas>Билет А</button>
+          <button type="button" id="kassaRight"><canvas id="cvK2" width="200" height="200" aria-hidden="true"></canvas>Билет Б</button>
+        </div>
+        <div class="lab-msg" id="kassaMsg" aria-live="polite">Посмотри на стык красок.</div>
+      </div>
+      <noscript><div class="noscript-box">Для станка нужен JavaScript. Текстовая версия опыта: если три краски печатать тремя прогонами, лист между прогонами ложится чуть по-разному, и на стыке цветов появляются белые щели и наплывы. Орловский способ собирает все краски на одной форме и печатает их одним прогоном, поэтому краски сдвигаются только вместе: линия меняет цвет без разрыва. Настоящий билет — тот, у которого на стыке цветов нет щели.</div></noscript>
+    </div>
+    <p class="src-note" style="margin-top:10px">Правило модели — описание способа в справке Банка России (2025) и в «Науке и жизни»: до Орлова — отдельный прогон на каждую краску, у Орлова — многокрасочный оттиск с одной формы за один прогон.</p>
+  </div>
+</section>
+
+<section class="block" id="pervenstvo">
+  <div class="wrap">
+    <div class="kicker">Проверка факта</div>
+    <h2>Что именно Орлов сделал первым</h2>
+    <div class="border-box">
+      <p style="margin-top:0"><b>Граница первенства:</b> способ получать многокрасочный оттиск с одной печатной формы за один прогон с точным совпадением красок. Работа начата в 1890 году, первые банкноты — 1892-й. Документы — патенты Германии (1897), Франции, Англии и России (1899).</p>
+      <p style="margin-bottom:0"><b>Чего здесь нет:</b> Орлов не изобрёл многокрасочную печать и защиту денег вообще. Его первенство — одна форма и один прогон вместо стопки отдельных.</p>
+    </div>
+    <table class="ctx">
+      <thead><tr><th scope="col">Где</th><th scope="col">Что</th><th scope="col">Когда</th></tr></thead>
+      <tbody>
+        <tr><td>Россия, Экспедиция</td><td>Орловская печать: первые кредитные билеты</td><td>1892</td></tr>
+        <tr><td>Германия, «Кёниг и Бауэр»</td><td>Машины по патенту Орлова, выплаты России</td><td>после 1897</td></tr>
+        <tr><td>Австро-Венгрия</td><td>Орловская печать на банкноте 10 крон</td><td>1904</td></tr>
+        <tr><td>Швейцария, KBA-NotaSys</td><td>Машины «Супер Орлоф Интальо» для денежных фабрик</td><td>сегодня</td></tr>
+      </tbody>
+    </table>
+    <figure class="fig">
+      <img src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/day-06jan-orlov-10kronen-1904.jpg" data-source="https://commons.wikimedia.org/wiki/File%3AOrlov_printing_on_10_kronen_1904.jpg" data-license="CC0" width="1000" height="200" loading="lazy" alt="Полоса банкноты 10 крон 1904 года: узор из тонких линий плавно переходит из одного цвета в другой">
+      <figcaption>Орловская печать на банкноте 10 крон Австро-Венгерского банка, 1904. Собрание Wien Museum, CC0.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="block" id="quiz">
+  <div class="wrap">
+    <div class="kicker">Проверь себя · 5 вопросов</div>
+    <h2>Викторина</h2>
+    <p style="color:var(--muted);max-width:62ch">На каждый вопрос — одна попытка. После ответа покажем объяснение.</p>
+    <div id="quizBox"></div>
+    <noscript><div class="noscript-box">Для викторины нужен JavaScript. Ответы: 1 — все краски с одной формы за один прогон; 2 — от двух до десяти; 3 — в Германии; 4 — передал государству; 5 — пневматический самонаклад.</div></noscript>
+  </div>
+</section>
+
+<section class="block" id="result">
+  <div class="wrap">
+    <h2 style="margin-bottom:6px">Итог дня</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Станок, проверка кассира и викторина вместе дают 100 баллов. Прогресс не сохраняется: перезагрузка страницы начинает день заново.</p>
+    <div class="day-result">
+      <div class="dr-score" id="dayTxt">0 / 100 · звание: Гость дня</div>
+      <div class="dr-bar"><i id="dayBar" style="width:0%"></i></div>
+      <div class="dr-note">Отпечатай розетку обоими способами, проверь билеты как кассир и ответь на вопросы.</div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="sources">
+  <div class="wrap">
+    <div class="kicker">Источники</div>
+    <h2>На чём стоит страница</h2>
+    <ul class="sources">
+      <li><a href="https://www.cbr.ru/cash_circulation/memorable_coins/coins_base/showcoins/?cat_num=5111-0528" rel="noopener" target="_blank">Банк России · памятная монета «Орловская печать» (серия «Изобретения России», 2025), историко-тематическая справка</a>: 1890, один прогон, 1892 и 1894, патенты, «Кёниг и Бауэр», самонаклад, «Супер Орлоф Интальо».</li>
+      <li><a href="https://www.nkj.ru/open/32603/" rel="noopener" target="_blank">«Наука и жизнь» · «Русская революция в печатном деле»</a>: детство и учёба, 2–10 прогонов, Ленц и Стружков, Чикаго 1893, награда 7 000 рублей, патенты 1897 и 1899, цитата Суворина, судьба.</li>
+      <li>Изображения: <a href="https://commons.wikimedia.org/wiki/File:Orlov_printing-example1.jpg" rel="noopener" target="_blank">лист альбома «Типографская печать Орлова» (общественное достояние)</a>, <a href="https://commons.wikimedia.org/wiki/File:Ivan_I_Orlov.jpg" rel="noopener" target="_blank">портрет И. И. Орлова (общественное достояние)</a>, <a href="https://commons.wikimedia.org/wiki/File:Russian_Empire-1898-Bill-10_rubles-revers.jpg" rel="noopener" target="_blank">10 рублей образца 1894 года (общественное достояние)</a>, <a href="https://commons.wikimedia.org/wiki/File:Orlov_printing_on_10_kronen_1904.jpg" rel="noopener" target="_blank">10 крон 1904 года, Wien Museum (CC0)</a>.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="block" id="calendar">
+  <div class="wrap">
+    <h2 style="margin-bottom:6px">Календарь изобретений</h2>
+    <p style="color:var(--muted);margin-top:0;max-width:62ch">Выбери любой день — узнаешь, что русские сделали первыми в мире. Листай месяцы стрелками.</p>
+    <div id="calbox"></div>
+  </div>
+</section>
+
+<section class="block kd" id="kuda-dalshe">
+  <div class="wrap">
+    <div class="kd-kicker">Куда дальше</div>
+    <h2>Музей продолжается</h2>
+    <div class="kd-grid">
+      <div class="kd-card main"><span class="kd-lbl">Следующая страница</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-08jan-icebreaker.html">8 января — Ледокол «Ермак» <span class="kd-arr">→</span></a>
+        <p>7 января — коронарное шунтирование Колесова — в календаре, отдельная страница готовится.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Предыдущий день</span><a href="https://arabelthera-dot.github.io/rc-preview-pr/pr-64/muzei/izobreteniya/day-05jan-shukhov.html">5 января — Нефтепровод Шухова <span class="kd-arr">→</span></a>
+        <p>Перевозка нефти стоила дороже самой нефти — пока инженер не пустил её по трубе.</p></div>
+      <div class="kd-card"><span class="kd-lbl">Весь музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/index.html">Что изобрели русские первыми <span class="kd-arr">→</span></a>
+        <p>Все изобретения — по залам и по дням года.</p></div>
+      <div class="kd-card main"><span class="kd-lbl">Город-музей</span><a href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация <span class="kd-arr">→</span></a>
+        <p>Все музеи проекта на одной карте.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div class="slog">Цивилизация первенств — что Россия дала миру раньше всех</div>
+  Русская цивилизация · «Что изобрели русские первыми в мире»</div></footer>
+
+<script>
+/* ── СЧЁТ ── шкала из 100 держит assets/museum-score.js; здесь только реестр наград.
+   три прогона 10 + орловский прогон 30 + кассир 10 + викторина 5×10 = 100. */
+window.MUSEUM_SCORE = {awards:{old:10, orlov:30, kassa:10, q:[5,10]},
+  ranks:[[100,'Мастер Экспедиции'],[70,'Печатник'],[40,'Ученик типографии'],[0,'Гость дня']]};
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-score.js"></script>
+<script>
+(function(){
+  var $ = function(id){return document.getElementById(id);};
+  $('readBtn').onclick = function(){ $('story').scrollIntoView({behavior:'smooth'}); };
+  $('listenBtn').onclick = function(){ $('audioguide').scrollIntoView({behavior:'smooth'}); };
+
+  /* ── СТАНОК ── розетка из трёх цветовых секторов; каждый сектор — своя краска.
+     Сдвиги листа детерминированы (одинаковы на любой ширине экрана): модель показывает
+     причину, а не случайность. Холст 300×300, CSS только масштабирует. */
+  var INK = ['#c0392b','#2c6fb3','#d9a21b'];
+  var OLD_SHIFTS = [[[0,0],[3.2,-2.1],[-2.6,2.8]], [[0,0],[-2.8,1.6],[2.2,3.1]]]; // два прогона-попытки
+  var tries = 0;
+  function rosette(cv, shifts, scale){
+    var c = cv.getContext('2d'), w = cv.width, h = cv.height, cx = w/2, cy = h/2, R = w*0.42;
+    c.fillStyle = '#f3ecd9'; c.fillRect(0,0,w,h);
+    c.lineWidth = Math.max(1, w/220);
+    for (var k=0;k<3;k++){
+      c.save(); c.translate(shifts[k][0]*(scale||1), shifts[k][1]*(scale||1));
+      c.beginPath(); c.moveTo(cx,cy); c.arc(cx,cy,R+4, k*2*Math.PI/3 - Math.PI/2, (k+1)*2*Math.PI/3 - Math.PI/2); c.closePath(); c.clip();
+      c.strokeStyle = INK[k];
+      for (var n=0;n<22;n++){            // гильош: лепестковые кривые
+        c.beginPath();
+        for (var a=0;a<=Math.PI*2+0.02;a+=0.02){
+          var r = R*(0.35 + 0.6*(n/22)) + R*0.09*Math.sin(9*a + n*0.45);
+          var x = cx + r*Math.cos(a), y = cy + r*Math.sin(a);
+          if (a===0) c.moveTo(x,y); else c.lineTo(x,y);
+        }
+        c.stroke();
+      }
+      c.restore();
+    }
+  }
+  function blank(cv){ var c=cv.getContext('2d'); c.fillStyle='#e7e0cd'; c.fillRect(0,0,cv.width,cv.height);
+    c.fillStyle='#7a7466'; c.font='15px Inter, sans-serif'; c.textAlign='center'; c.fillText('Чистый лист', cv.width/2, cv.height/2); }
+  function msg(t, cls){ var m=$('pressMsg'); m.className='lab-msg'+(cls?' '+cls:''); m.textContent=t; }
+  function mm(s){ return (Math.sqrt(s[0]*s[0]+s[1]*s[1])/10).toFixed(2).replace('.',','); }
+
+  $('oldGo').onclick = function(){
+    var sh = OLD_SHIFTS[tries % 2]; tries++;
+    rosette($('cvOld'), sh);
+    $('shiftTxt').textContent = 'синяя краска ушла на '+mm(sh[1])+' мм, жёлтая — на '+mm(sh[2])+' мм';
+    award('old',10);
+    msg('Видишь белые щели и наплывы на стыках секторов? Лист между прогонами ложится чуть иначе, и каждая краска встаёт со своим сдвигом. Повтори — сдвиг будет другим, но не исчезнет. Теперь попробуй по Орлову.','bad');
+  };
+  $('orlovGo').onclick = function(){
+    rosette($('cvOrlov'), [[2.4,1.2],[2.4,1.2],[2.4,1.2]]);
+    $('orlTxt').textContent = 'все краски сдвинулись вместе — стыки целые';
+    award('orlov',30);
+    msg('Все три краски легли с одной формы за одно касание. Даже если лист лёг криво, краски сдвинулись вместе, и линия меняет цвет без разрыва. Это и есть орловская печать.','ok');
+    $('kassaBox').hidden = false;
+    rosette($('cvK1'), [[0,0],[3,-2],[-2.5,2.5]], 0.67);
+    rosette($('cvK2'), [[1,1],[1,1],[1,1]], 0.67);
+  };
+  function kassa(ok, btn){
+    if ($('kassaBox').dataset.done) return; $('kassaBox').dataset.done='1';
+    $('kassaWrong').disabled = $('kassaRight').disabled = true;
+    $('kassaRight').classList.add('correct');
+    var m = $('kassaMsg');
+    if (ok){ award('kassa',10); m.className='lab-msg ok'; m.textContent='Верно: у билета Б краски встык, без щелей. Так печатает орловский способ.'; }
+    else { btn.classList.add('wrong'); m.className='lab-msg bad'; m.textContent='Это подделка: у билета А на стыке цветов щель — краски печатали по очереди. Настоящий — билет Б.'; }
+  }
+  $('kassaWrong').onclick = function(){ kassa(false, this); };
+  $('kassaRight').onclick = function(){ kassa(true, this); };
+  $('pressReset').onclick = function(){
+    tries = 0; blank($('cvOld')); blank($('cvOrlov'));
+    $('shiftTxt').textContent = 'ещё не печатали'; $('orlTxt').textContent = 'ещё не печатали';
+    msg('Станок очищен. Уже полученные баллы сохраняются и повторно не начисляются.');
+  };
+  blank($('cvOld')); blank($('cvOrlov'));
+
+  /* ── ВИКТОРИНА ── один ответ на вопрос; дистракторы сверены с источниками страницы. */
+  var Q = [
+    {q:'Что именно придумал Орлов?', o:['Водяной знак на бумаге денег','Печатать все краски с одной формы за один прогон','Первые бумажные деньги России'], a:1,
+     e:'Один прогон и одна форма на все краски. Водяные знаки известны со Средневековья, бумажные ассигнации ходили в России с XVIII века.'},
+    {q:'Сколько прогонов требовал многокрасочный рисунок до Орлова?', o:['Один','От двух до десяти','Ровно сто'], a:1,
+     e:'От двух до десяти — по прогону на краску. У Орлова — один.'},
+    {q:'Где Орлов получил патент раньше, чем в России?', o:['В Германии','Нигде: он не патентовал способ','В России раньше всех'], a:0,
+     e:'Германский патент — 1897 год, российский — только 1899-й. Потом пришли французский и английский.'},
+    {q:'Что Орлов сделал с правами на изобретение в 1897 году?', o:['Продал немцам за миллион','Передал государству','Оставил себе и открыл фабрику'], a:1,
+     e:'Передал казне. Суворин записал: «Немцы дают ему миллион, а он отдал изобретение казне и получил всего десять тысяч».'},
+    {q:'Что ещё Орлов построил для печатной машины?', o:['Пневматический самонаклад','Паровой двигатель','Телеграфный аппарат'], a:0,
+     e:'Пневматический самонаклад подавал в машину до 120 листов в минуту.'}
+  ];
+  var box = $('quizBox');
+  Q.forEach(function(it, qi){
+    var wrap = document.createElement('div');
+    var h = document.createElement('p'); h.className='quiz-q'; h.textContent=(qi+1)+'. '+it.q; wrap.appendChild(h);
+    var exp = document.createElement('div'); exp.className='exp'; exp.setAttribute('aria-live','polite');
+    var btns = it.o.map(function(txt, oi){
+      var b=document.createElement('button'); b.type='button'; b.className='opt'; b.textContent=txt;
+      b.onclick=function(){
+        if (wrap.dataset.done) return; wrap.dataset.done='1';
+        btns.forEach(function(x,xi){ x.disabled=true; if (xi===it.a) x.classList.add('correct'); });
+        if (oi===it.a){ award('q'+qi,10); exp.textContent='Верно. '+it.e; }
+        else { b.classList.add('wrong'); exp.textContent='Не совсем. '+it.e; }
+        exp.classList.add('show');
+      };
+      wrap.appendChild(b); return b;
+    });
+    wrap.appendChild(exp); box.appendChild(wrap);
+  });
+})();
+</script>
+<script>window.addEventListener("pageshow",function(e){if(e.persisted)location.reload();});</script>
+<script>window.MUSEUM_CHROME={
+  museum:{title:'Что изобрели русские первыми в мире',href:'index.html'},
+  share:{title:'Орловская печать: все краски банкноты за один прогон — музей «Что изобрели русские первыми в мире»',
+         text:'Русский печатник научил машину класть все краски банкноты разом. Что Россия дала миру раньше всех — день за днём.'},
+  prev:{href:'day-05jan-shukhov.html',title:'5 января · Нефтепровод Шухова'},
+  next:{href:'day-08jan-icebreaker.html',title:'8 января · Ледокол «Ермак»'},
+  all:{href:'index.html',label:'Все изобретения'},
+  city:'../../index.html',
+  random:['day-01jan-cabletv.html','day-02jan-luna1.html','day-03jan-anosov.html','day-04jan-pilchikov.html','day-05jan-shukhov.html','day-06jan-orlov.html','day-08jan-icebreaker.html','day-09jan-blinov.html','day-30jan-kotelnikov.html']
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-chrome.js"></script>
+<script>window.MUSEUM_SUPPORT={museum:'Что изобрели русские первыми в мире'};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-support.js"></script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/muzei/izobreteniya/calendar-izobreteniya.js"></script>
+<script>window.MUSEUM_CALENDAR_INITIAL='01-06';</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-calendar-month.js"></script>
+<script>window.MUSEUM_RETURN={riddle:{q:"Александр III велел выдать Орлову 7 000 рублей. Сколько лет примерно пришлось бы копить эту сумму служащему Экспедиции со средним жалованьем?",a:"Около пятнадцати с половиной лет: служащий Экспедиции получал в среднем около 450 рублей в год.",src:"«Наука и жизнь», «Русская революция в печатном деле»"}};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-return.js" data-museum="izobreteniya" data-day="01-06"></script>
+<script defer src="https://arabelthera-dot.github.io/rc-museum-preview/assets/analytics.js"></script>
+<script>window.MUSEUM_AUDIOGUIDE={
+  audioSrc:"audio-guide-orlov-ru.mp3",
+  durationLabel:"5 минут 8 секунд",
+  lead:"Голос ведёт по залу Ивана Орлова: от переливчатых розеток его альбома до банкнот, которые напечатаны одним прогоном. Семь остановок, на каждой — что искать глазами. Слушать можно фоном, пока читаешь статью ниже.",
+  stops:[
+    {t:0,mark:"0:00",title:"Розетки, которые переливаются"},
+    {t:43,mark:"0:43",title:"Мальчик с дорог"},
+    {t:87,mark:"1:27",title:"Десять прогонов"},
+    {t:130,mark:"2:10",title:"Одна форма, один оборот"},
+    {t:174,mark:"2:54",title:"Десятирублёвка с перфорацией"},
+    {t:217,mark:"3:37",title:"Миллион и десять тысяч"},
+    {t:262,mark:"4:22",title:"Вена, тысяча девятьсот четвёртый"}
+  ],
+  transcript:[
+    "<p>«Линия на листе из альбома Орлова меняет цвет, не прерываясь. До него каждую краску печатали отдельным прогоном — от двух до десяти раз, и на стыке цветов оставался сдвиг».</p>",
+    "<p>«Иван Орлов, сын нижегородских крестьян, пришёл в Экспедицию заготовления государственных бумаг в 1886 году. В 1890-м он начал собирать все краски на одной печатной форме, чтобы лист проходил машину один раз».</p>",
+    "<p>«Совпадение красок, недостижимое при печати по очереди, стало защитой от подделки. Первые кредитные билеты с орловской печатью вышли в 1892 году, десятирублёвые в три краски — в 1894-м».</p>",
+    "<p>«Германский патент выдан в 1897 году, раньше российского (1899); „Кёниг и Бауэр“ строила машины по патенту Орлова. Сам он в ноябре 1897-го передал права на изобретение государству».</p>",
+    "<p>«Орловскую печать видно на банкноте в 10 крон 1904 года, а машины „Супер Орлоф Интальо“ работают на денежных фабриках мира и сегодня».</p>"
+  ],
+  note:"Озвучено синтезом речи — временно, до записи голосом автора музея."
+};</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-audioguide.js"></script>
+<script type="application/json" data-proof>
+{
+ "status": "found",
+ "claim_id": "rc:izobreteniya:orlov:claim-one-pass",
+ "ours": {
+  "kind": "патент",
+  "title": "Патент Германской империи И. И. Орлову на машину для многокрасочной печати с одной формы (российская привилегия — через два года)",
+  "date": "1897",
+  "holder": "И. И. Орлов, Экспедиция заготовления государственных бумаг",
+  "source_url": "https://www.nkj.ru/open/32603/"
+ }
+}
+</script>
+<script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-proof.js"></script>
+</body>
+</html>
