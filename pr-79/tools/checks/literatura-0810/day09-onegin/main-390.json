@@ -1,0 +1,77 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-pushkin-evgeniy-onegin.html",
+  "steps": [
+    "Листать правку: второй вариант",
+    "Долистать до печати",
+    "Назад и снова до печати"
+  ],
+  "checks": [
+    {
+      "label": "Показан второй черновой вариант",
+      "actual": "Смотреть за ним и день и ночь",
+      "expected": "Смотреть за ним и день и ночь",
+      "ok": true
+    },
+    {
+      "label": "Вариант помечен как зачёркнутый",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Подпись этапа",
+      "actual": "Черновик · вариант 2 из 3",
+      "expected": "Черновик · вариант 2 из 3",
+      "ok": true
+    },
+    {
+      "label": "Черновые варианты очков не дают",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "В печати Пушкин вернулся к первому чтению",
+      "actual": "С больным сидеть и день и ночь",
+      "expected": "С больным сидеть и день и ночь",
+      "ok": true
+    },
+    {
+      "label": "Печатная строка не зачёркнута",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Подпись «В печати»",
+      "actual": "В печати",
+      "expected": "В печати",
+      "ok": true
+    },
+    {
+      "label": "Пояснение открыто",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Строка до печати даёт 8",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    },
+    {
+      "label": "Повтор не начисляет дважды",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}
