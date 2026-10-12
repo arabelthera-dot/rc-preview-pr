@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "page_sha256": "31a84178558d19f3a6d23aabb7756b6a42197293166dc243c5f987cf5fdfa706",
+  "runner": "../run-b6.mjs",
+  "created_at": "2026-10-12T23:06:01.428Z",
+  "browser": "151.0.7922.173",
+  "plan": "../day22-plan.mjs",
+  "inputs": {
+    "../../../../muzei/ne-sdayutsya/podvig-dubinin.html": "31a84178558d19f3a6d23aabb7756b6a42197293166dc243c5f987cf5fdfa706",
+    "../run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../day22-plan.mjs": "9f8742e512043facb5e48c62014afbf8ea03a62bc40101c7e7846c37f59913db",
+    "../plans.mjs": "739639f3b2368589794115ebb6099df6d57dda5441c68795dccc9840ab8e20d0",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../muzei/ne-sdayutsya/nesdayutsya-style.css": "39e9893b4180f72b0d7e77d2999dc22c2761371749fc30f2e41187b23ce92fdc",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/ne-sdayutsya/dubinin-portret-1951.png": "9d3358cd38d8ce5fd0d3380a4ea283209acede78e9160ee155beb59ff8a1c106",
+    "../../../../muzei/ne-sdayutsya/dubinin-shema-kamenolomni.svg": "367dedebfe1321ac9736fa1c4a28f19b4ccee35cfcf22c540d1058141c80b369",
+    "../../../../assets/museum-karta-puti.js": "dfda796c4cb4e72ffb00d8429782975bea27bad8905bafb26d92fbf483054b6f",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/scrolltelling.js": "782c0de78ecc16edb417b84d9c85a4e9e71f2e289fa2c2c4a27c63a06a689642",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../muzei/ne-sdayutsya/calendar-nesdayutsya.js": "492baa706827aed219834915e076f457b67b2afb81ffa89ca19a83cae2f51bae",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "../../../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "entry-390.png": "706c77c42024df040da7aca4a4bdda609dedcb84085ea67ace768628300dc6f3",
+    "entry-390.json": "34b043f2e075a6c2f85bfa1f724498fb4aa265d8003b5f351245109e3eaf4e97",
+    "wrong-390.png": "44bdb1523cac5b6a7d0a7f517f516cf6f61c562a4db4eebcfeb0302c6143cd59",
+    "wrong-390.json": "7179c419d46b1b40f797ae160f7e47334e4bdf0b7073ec5dec17aad8b42a7c75",
+    "reset-390.png": "6232d6726d022c74c8288e5d2be8248e831f34f38e4b1d7016981eccec665957",
+    "reset-390.json": "ead6657fa398536c5b7c4f734be10e0852a62d1233cdad0559460592be08909b",
+    "mobile-390.png": "75314c410a543d6bbaf903407c6aba8c555414a4f1ba3b8477f0848b0d787e31",
+    "mobile-390.json": "4d0391942a8f5c9378dbaedf2637f540786d274d662f23244e44a9f5df45016d",
+    "mobile-1440.png": "449a460ea6c18757959970dd9cd7796a46db50fb77de44f8b193cb13567fd784",
+    "mobile-1440.json": "cdad3523ae5da6f026d90bd6d3fb93837daa48e92d2c4243080d422e8b0e73c2",
+    "nojs-390.png": "004ca4470e618e28f1410fb9bf9e1a5f33d0502f8d6eb1b6d31db8021aa78a8b",
+    "nojs-390.json": "2b1c82e5314d00eb17332aeb3a26b33a0c24997e5a4e3b43ffec10dddb095f43",
+    "score-390.png": "249518042e5d01fa1240417bb6b33a852da27072f49930929675675bcb71c858",
+    "score-390.json": "8a5d7aa9d0beff002abe9df6e5de731f13f24cde7ab2e9c5d8fcbe2b51796fa9",
+    "main-390.png": "53317969460d5a4f872fc12231ea8c0c5014f36a1c5b432ffc252243303de3ed",
+    "main-390.json": "984c860bc96b2618e2711635997af220b3352aaf15af689f3a67b37d955e38f8",
+    "empty-390.png": "e24139d2fc6edf05481cc50009c2b625142d2c6f1a14187e25f8d76c856312f8",
+    "empty-390.json": "e565e3c996841ef5a571ca5d56c8c4ae5f0b8d7b067c9f6e149babe6cbc29034"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

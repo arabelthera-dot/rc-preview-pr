@@ -1,0 +1,151 @@
+{
+  "schema_version": 1,
+  "page_sha256": "4f36c75a201b9e7d438a41313dd60bccc208992add03aa889c701464a2780223",
+  "runner": "../run-b6.mjs",
+  "created_at": "2026-10-12T23:12:17.910Z",
+  "browser": "151.0.7922.173",
+  "plan": "../day28-plan.mjs",
+  "inputs": {
+    "../../../../muzei/ne-sdayutsya/podvig-tuman.html": "4f36c75a201b9e7d438a41313dd60bccc208992add03aa889c701464a2780223",
+    "../run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../day28-plan.mjs": "8e2e941617feb75fc73e80a565d32f9a2355a873a7c3f2332952e88335fd342b",
+    "../plans.mjs": "739639f3b2368589794115ebb6099df6d57dda5441c68795dccc9840ab8e20d0",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../muzei/ne-sdayutsya/nesdayutsya-style.css": "39e9893b4180f72b0d7e77d2999dc22c2761371749fc30f2e41187b23ce92fdc",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/ne-sdayutsya/tuman-model-muzey.jpg": "667d68913a152ca093f20c7f74d4e713a49663a7175e7ce6aae59876b14c6652",
+    "../../../../muzei/ne-sdayutsya/tuman-kildin-2016.jpg": "9493a87055a9a9e0c7f80e5457a44e3cf43d5a8ecb3db2cb0d26115d4b4ddb54",
+    "../../../../assets/museum-scale.js": "81e1eacc0ab0b6a3274167b9f98388cd8ba323ccc00664d6f45ce0a9ba5b273d",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/scrolltelling.js": "782c0de78ecc16edb417b84d9c85a4e9e71f2e289fa2c2c4a27c63a06a689642",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../muzei/ne-sdayutsya/calendar-nesdayutsya.js": "492baa706827aed219834915e076f457b67b2afb81ffa89ca19a83cae2f51bae",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "../../../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "../../../../muzei/ne-sdayutsya/tuman-esminec-lody-1940.jpg": "ae90241b15e1d6ab8bb779f4add7ad54d206971dcd728ea0da6687f482ccd3ee",
+    "entry-390.png": "fb7042a9c35b2344c8ce41574ea859f7e60cb9c7848eb7f62926dc1ccf4bae0b",
+    "entry-390.json": "6c5421e05a749529efe6d8fabc1ab751e976cdc02a9956633a1953f67a7a6793",
+    "wrong-390.png": "9fb344ee2ef0d2480e966635b982452a48b9e1f9c9deddb0409dbebdf24c5d11",
+    "wrong-390.json": "9a54612245d35563c1d6c8113e23e9796c3a3025d4cdfc4672d4fe2823a097b1",
+    "reset-390.png": "3a2eb4aad2e8be8471f2d751b6b91bdb30a35aa385ac832a45801a6e0c9047bf",
+    "reset-390.json": "de559b37ce3a168cfa89321664dbf5af5b7cacdf7441cd7fde8eb104a8e58944",
+    "mobile-390.png": "dcf1b53856ed4d4da4ceb1e880769b4dcdfb0d94910ba368a38d1f40a0f12ee3",
+    "mobile-390.json": "1872cbb402d3a69f5a137ccd3d80f968b6ea02d9b2181c7e8272c026d19b9785",
+    "mobile-1440.png": "383fcf9111a824009246cead0d30bf4e6c9a6c19fc99628aa7ca997b1a06d414",
+    "mobile-1440.json": "ce1dfb159847436c3e23c50972a7ea9fcd0311336271b3b47e4ad0d98f9fa767",
+    "nojs-390.png": "fe912a30853f06662a7128c25171bd3e53ae38a53cc400d8342e57e5a03bb7c9",
+    "nojs-390.json": "b8205bb59a9af1d39baeb00efb45d99dfbfb2d449ce372e611e520dceb586baf",
+    "score-390.png": "422b5a3e82fb8752d2e9871625ab603184109a5f1baebdbdae70eb74c6baebd7",
+    "score-390.json": "60ad019bbe77d98aed801e16fc7b2711ae91ff7cdeaf07b88dcf856b1adf494c",
+    "main-390.png": "2bd655a650c0e51b5548da84710dc97ad33ce1d9011d63071335da85638da783",
+    "main-390.json": "6a8e8b1b5768911219792b74e6d833e542737f5a6947009a2c50872ba072e2d1",
+    "empty-390.png": "f8f0c33a4960b473f80e7d666344be9621043322edbc3c7c0172337a61ad9981",
+    "empty-390.json": "3c3c0533ded7f40f109a3942c07a6c4eeb1556553ae12f01ce0578f896199f09"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
