@@ -1,0 +1,58 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-kataev-parus.html",
+  "steps": [
+    "«Сумбур вместо музыки» — на 1936 год",
+    "Перелёт Чкалова — на 1936 год"
+  ],
+  "checks": [
+    {
+      "label": "Пояснение с датой",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Событие легло в колонку 1936 года перед книгой",
+      "actual": "28 января 1936 года — «Правда» печатает статью «Сумбур вместо музыки» — разгром оперы Шостаковича «Леди Макбет Мценского уезда».",
+      "expected": "28 января 1936 года — «Правда» печатает статью «Сумбур вместо музыки» — разгром оперы Шостаковича «Леди Макбет Мценского уезда».",
+      "ok": true
+    },
+    {
+      "label": "Книга остаётся последней в колонке",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Карточка отмечена",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Верный год даёт 8",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    },
+    {
+      "label": "Два события — 16",
+      "actual": 16,
+      "expected": 16,
+      "ok": true
+    },
+    {
+      "label": "Счётчик",
+      "actual": "На ленте: 2 из 5",
+      "expected": "На ленте: 2 из 5",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}
