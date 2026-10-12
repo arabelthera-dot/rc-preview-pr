@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "page_sha256": "4a6c6201ccf327f55066c3504bcc698d710436b11bbf4b93a78967ab5d6e11dc",
+  "runner": "../run-b6.mjs",
+  "created_at": "2026-10-12T13:16:55.429Z",
+  "browser": "151.0.7922.173",
+  "plan": "../day23-plan.mjs",
+  "inputs": {
+    "../../../../muzei/ne-sdayutsya/podvig-6-rota.html": "4a6c6201ccf327f55066c3504bcc698d710436b11bbf4b93a78967ab5d6e11dc",
+    "../run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../day23-plan.mjs": "9d883a42c5bb3651a86fb1e330a6939528863f68d8cc26458c0021d0892f13b8",
+    "../plans.mjs": "739639f3b2368589794115ebb6099df6d57dda5441c68795dccc9840ab8e20d0",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../muzei/ne-sdayutsya/nesdayutsya-style.css": "39e9893b4180f72b0d7e77d2999dc22c2761371749fc30f2e41187b23ce92fdc",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/ne-sdayutsya/rota6-stela.jpg": "74a823bd69144f69a5950caeca09b584da117835af6cd00805f53768927ec183",
+    "../../../../muzei/ne-sdayutsya/rota6-shema-vysota.svg": "1601fe68d65bc1311ae65e93f145cb0de45c850ce7d68c7fa553072ae229cfef",
+    "../../../../assets/museum-stranica-imeni.js": "46e37d72209b80cde7a1542ff37e173abdef3b6f9cc32b38578db1d4ae79b5c4",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/scrolltelling.js": "782c0de78ecc16edb417b84d9c85a4e9e71f2e289fa2c2c4a27c63a06a689642",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../muzei/ne-sdayutsya/calendar-nesdayutsya.js": "3f3dd54472aaee7f85dae17d8bf4be31d66e701d599ed6c225e613168368adcc",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "../../../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "entry-390.png": "27fc449ddf8b6b403f65a6349772dba86ca37e5b2e9ca346b06d909c62f67edb",
+    "entry-390.json": "1e7133d3862307a7e53c3e58fd7606322523ce06c3dbccf3b00e5d3a9b1236c8",
+    "wrong-390.png": "51981a91cc46f38b35de7ab026625e35a1bc0d594ab3c6c91fb6b0819cb06e5f",
+    "wrong-390.json": "f690723f360522f1ddd9f2ba5c8e23e7cd2325899adb02f841e81ace6e21b238",
+    "reset-390.png": "9c790c64df50a32d7d117dae119dd6d186d779f4f9b1d87fb1e46bfb81a37299",
+    "reset-390.json": "3c605ec7cbbbbae6dad7c085af381756168d2f6928332238781471ddf747edcb",
+    "mobile-390.png": "0d04217acb7cb1595e7c32fdc67274708540ce833910f41e60620e61bf05b2f3",
+    "mobile-390.json": "d8e7defd4168e45dd84a0028608ba530d2499e2bf1c8c2cf63a4f15632b9c00c",
+    "mobile-1440.png": "0393909f48ddfc985bc44908f4c4204f3cbe2a980658b4ff2390e9ae7ed4a56f",
+    "mobile-1440.json": "32ac513f846aa748121318b553b65ef6711c144ed08d94d8b539dd1924c85fbb",
+    "nojs-390.png": "f75f70409846246b2eec40d2ede027597297f80cf0c637c7575c325f8366d6ee",
+    "nojs-390.json": "1d369440d95f2bb5682cf667b6ddaf361aaf11d84541ece1427cd00a81de7e49",
+    "score-390.png": "3ca56324321f6be1582246dbd891bac804b88d20828dc9779d3090e4f802feeb",
+    "score-390.json": "ffe1bda151908f654d86dd8822923c73cb94a7ef6470ee81398314fc6181c0ee",
+    "main-390.png": "f315c2fee5b4149f8901d2e4ad0baec1af708aa201c1d98ad16ec62a1b4a23f9",
+    "main-390.json": "30252fd2e03b8076108bd59306f0eec6fbd6819cb50a24812da72d0cc8b7480d",
+    "empty-390.png": "67dc1ff808056ffcd140c76f7fd0db5398defbf93d6cc8eb914f3cecbdd61920",
+    "empty-390.json": "0f7c195cc5a5c60ad309fa7dbd27d5a94c466463f48343936e870d8330add697"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
