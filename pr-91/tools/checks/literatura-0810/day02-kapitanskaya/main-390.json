@@ -1,0 +1,41 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-pushkin-kapitanskaya-dochka.html",
+  "steps": [
+    "Пройти читательскую развилку (три решения)",
+    "Верный ответ на первый вопрос",
+    "Повторное нажатие того же ответа"
+  ],
+  "checks": [
+    {
+      "label": "Развилка очков не даёт, как и обещано",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "После развилки показана историческая реальность",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Вопрос о прочитанном даёт очки",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    },
+    {
+      "label": "Повтор не начисляет дважды",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}
