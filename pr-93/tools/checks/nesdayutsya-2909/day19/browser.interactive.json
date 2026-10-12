@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "page_sha256": "3aedb568d16d2bcc328c257e3b8862cf213e130170acc46c4f1f049e6633cbb2",
+  "runner": "../run-b6.mjs",
+  "created_at": "2026-10-12T12:43:53.725Z",
+  "browser": "151.0.7922.173",
+  "plan": "../day19-plan.mjs",
+  "inputs": {
+    "../../../../muzei/ne-sdayutsya/podvig-kuznetsov.html": "3aedb568d16d2bcc328c257e3b8862cf213e130170acc46c4f1f049e6633cbb2",
+    "../run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../day19-plan.mjs": "b557546b371ee46cf0b79ae89e7d02e3c39a24d9ed3e51e43ea5c445773567fd",
+    "../plans.mjs": "739639f3b2368589794115ebb6099df6d57dda5441c68795dccc9840ab8e20d0",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../muzei/ne-sdayutsya/nesdayutsya-style.css": "39e9893b4180f72b0d7e77d2999dc22c2761371749fc30f2e41187b23ce92fdc",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/ne-sdayutsya/kuznetsov-1940.jpg": "6a8882ae39d593d1223f9c5e9fc248aa4fbd6606439b137159866cab862582e2",
+    "../../../../muzei/ne-sdayutsya/kuznetsov-holm-slavy.jpg": "6cdfe42f92175e650ca16b8651ab68e248c66c0ad575b14c1d9e7073ee4a72f5",
+    "../../../../assets/museum-choice-tale.js": "6aee17abd710db0c72a01085967efaf55a414c5edfa666574b45b46be465b709",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/scrolltelling.js": "782c0de78ecc16edb417b84d9c85a4e9e71f2e289fa2c2c4a27c63a06a689642",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../muzei/ne-sdayutsya/calendar-nesdayutsya.js": "58a6060e8bc34d8a947590381a53e6bc165436e67a455058a6402fe995a81127",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "../../../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "entry-390.png": "141daf573010224214bb9c340d18f72f401b1bcc86004cf9f4d619120e25d559",
+    "entry-390.json": "98f4faba7e1e574fbc01884f578e75b57e8c2da2369dd647e4ad9ad7f63f1336",
+    "wrong-390.png": "fc3d1ca2d8bd6109c6cf1b5eecb22304647b8114bb0b07dcbceb17650b70e1e1",
+    "wrong-390.json": "28729e6b7f4fca0cd1e292aca89b135839fd2b424012d9273a3aaaa21bac2223",
+    "reset-390.png": "10743a6c41e99a75afd474284d724872496d75d8007d112c44c53b9a7ecf8f6c",
+    "reset-390.json": "f54655aa1d6ec86161a19016efea946db6f331ce8769b138f8b01f953f230edf",
+    "mobile-390.png": "e2481cb809ed1cc79b7d2a345dabec2c00224072e105832391a61e498bc7110b",
+    "mobile-390.json": "0d35953c60c05f6b280d545313d2a47e006d7ef3fa86a118277f023d14ed2920",
+    "mobile-1440.png": "03d1b14dfc93245977453dc071fc7d96926cf6c6f32d466ef2996f1d8cb4eaa8",
+    "mobile-1440.json": "131d82a59f5a205edd748755f46f31ab014a1ace095c690a8f80786574ef3ea0",
+    "nojs-390.png": "fae7f95721cb1d44dee36a09a1909f4a5a565f50fad63a1dcf52ccd3a812e09a",
+    "nojs-390.json": "c0dc58a26bc92a3097c48cc1f889eb1a7bcce5a9e5c57793d0f47a574b3dd783",
+    "score-390.png": "35b15e107ad3b2131be062290ceb9d2815de38bc2e92cd13ce5d19dc6bc126d1",
+    "score-390.json": "64fda93543ead543b40926d132dec8c036a85a170030da4f7744218a52e409f1",
+    "main-390.png": "90dd789568aebea3e6decaf934387ddb47a934b3328b61af299c92110c971376",
+    "main-390.json": "e26da57c362fdfc9671b839ee6bfbbc7484570c3887e8a704674c745bcebae93",
+    "empty-390.png": "016a07b40f1f054838ba8deae845fc6f4e7c7a5792dcd3b146467fb03eb438c6",
+    "empty-390.json": "cec27d1d75f4a906b5813a345a98afcdf5a463191c2f42b0e32d1d53f0ff410a"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
