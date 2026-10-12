@@ -1,0 +1,41 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-yan-chingishan.html",
+  "steps": [
+    "Открыть «А в это время» у 1939 года",
+    "Верный ответ на первый вопрос",
+    "Повторное нажатие того же ответа"
+  ],
+  "checks": [
+    {
+      "label": "Раскрытие ленты показывает отзыв 1939 года",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Лента очков не даёт",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Вопрос о прочитанном даёт очки",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    },
+    {
+      "label": "Повтор не начисляет дважды",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}

@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "page_sha256": "485b2246cb725513cd2d857d862279d2c3f1de7423e098e5261d82616e722458",
+  "runner": "../../tools/b6/run-b6.mjs",
+  "created_at": "2026-10-12T03:31:30.463Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/checks/literatura-0810/neznakomka-plan.mjs",
+  "inputs": {
+    "lit-blok-neznakomka.html": "485b2246cb725513cd2d857d862279d2c3f1de7423e098e5261d82616e722458",
+    "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/checks/literatura-0810/neznakomka-plan.mjs": "8066e712526b39161996d8f136cdc7b2b25123ed6e7282e4a8580c7b2a90e1a7",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../assets/museum-literatura.css": "a205915af4132a432fcb0d668602d1eaf1a0d3c7734d554cc6dcc87a6a5ced75",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "media-neznakomka/ozerki-hero-mobile.jpg": "8933abd15217301a46ba1e806d097c57e7d0df95d14d81a95d418851a700d530",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "calendar-literatura.js": "d3f14a7cd379f94826ea2502459e5abe2c7740cf6f8cce40d80c0caffb005e18",
+    "../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "media-neznakomka/ozerki-stanciya-1900e.jpg": "b0579d1522ebb992352cda5a20c056d76525d5c63bdb18e1b803fcbae9c627a9",
+    "media-neznakomka/nechayannaya-radost-1907.jpg": "4d63de7a7e46e241359bab55aa92c2fddf0bb9c5452b9f5417234148c6f5a2d9",
+    "media-neznakomka/blok-avtograf-1906.jpg": "e052ff10ee00362b132c9d3dcceeac716092662ee972110bd4f4afda0a05ec56",
+    "media-neznakomka/somov-blok-1907.jpg": "6db569e2e08f1f85d208accb7836fd0117e382e9a760b844990e7d2b7b7eb94d",
+    "../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../tools/checks/literatura-0810/day26-neznakomka/entry-390.png": "f3e24c70547edfecc9362c794bc6995049f4b78e4f71e1bb100cb6a23f420cd8",
+    "../../tools/checks/literatura-0810/day26-neznakomka/entry-390.json": "99824eb7c639100c8f585fc348c6924a3bedd43de95ac021b6b984566ee7b858",
+    "../../tools/checks/literatura-0810/day26-neznakomka/wrong-390.png": "afedc6869db41b62a369e510c4e2b0ecd17d133cb45f0a4ac85187f5f8d2372f",
+    "../../tools/checks/literatura-0810/day26-neznakomka/wrong-390.json": "505ed135ff09b5641549d071ec5b9aa9ffd032c8b09a9f69e721078c49385d4b",
+    "../../tools/checks/literatura-0810/day26-neznakomka/reset-390.png": "8e21f1e5d0caa180aaac08b3ff3115a7d7d53ce8e180562fd2038fd3ce04aae6",
+    "../../tools/checks/literatura-0810/day26-neznakomka/reset-390.json": "40beb82c74f91ec42a4e4c6336d02a2b40c124e8b20464f8257cef0722ba4203",
+    "../../tools/checks/literatura-0810/day26-neznakomka/mobile-390.png": "2e99e067917ab7efb5898b1c5bb7e01bd60ee823b00f1c395f81e3985010f778",
+    "../../tools/checks/literatura-0810/day26-neznakomka/mobile-390.json": "01b518ed68ff8e803c5db82dd277af7b33277214fdcf1bf83c837c86effa8247",
+    "media-neznakomka/ozerki-hero.jpg": "8a7ef65cbc0dd8d76e855d6584c9f078c42a781883df2825e998fedde07930c0",
+    "../../tools/checks/literatura-0810/day26-neznakomka/mobile-1440.png": "ad6125996f5df2fd0210c95d3a54e8bbc72e13c35f75c0020d29780d1f932f30",
+    "../../tools/checks/literatura-0810/day26-neznakomka/mobile-1440.json": "c866dd08eb83f5275061c876b9b8ae6f3e1ca6177d8674a46d979cb07a2e8f16",
+    "../../tools/checks/literatura-0810/day26-neznakomka/nojs-390.png": "03245ab3481ad460544ba1f91bf447827b28a54cf724badde8253e2e8f3dfb7d",
+    "../../tools/checks/literatura-0810/day26-neznakomka/nojs-390.json": "49ba46f1e7a5dbeff65177a70c115183d56b7415e39f52513b774cc6d95d4690",
+    "../../tools/checks/literatura-0810/day26-neznakomka/score-390.png": "ff1a3112c9f860baa1245e876ac982925e6917de7c6aaf7338083af443d423ac",
+    "../../tools/checks/literatura-0810/day26-neznakomka/score-390.json": "80c198cd039fff1f7a1a7c9c395d628459647c2a118bbfac2184630875139004",
+    "audio-guide-neznakomka-stih-ru.mp3": "aa0df1a41d02313d3c33626b661dd43392dfe311ce5d3636bb484d7ed62fe053",
+    "../../tools/checks/literatura-0810/day26-neznakomka/main-390.png": "0a626782ce1287d13fa22642cd6ed65494d6c7f8a58db5137b0dfda873cba8d9",
+    "../../tools/checks/literatura-0810/day26-neznakomka/main-390.json": "6a1c8adff01af1eb130e3cb1e47ea505e9457edc57327c423f33441717b200b6",
+    "../../tools/checks/literatura-0810/day26-neznakomka/empty-390.png": "49f51fc49a9a3934b7df8e61be23c7299111b4777d933f7040d44cbf0c908e76",
+    "../../tools/checks/literatura-0810/day26-neznakomka/empty-390.json": "c6dd176ce012f5ea9adc4289051960b723d5be9ea2751a9512fb9e27ac304707"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day26-neznakomka/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day26-neznakomka/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day26-neznakomka/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day26-neznakomka/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day26-neznakomka/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/literatura-0810/day26-neznakomka/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day26-neznakomka/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day26-neznakomka/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/literatura-0810/day26-neznakomka/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
