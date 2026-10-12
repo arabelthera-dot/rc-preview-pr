@@ -1,0 +1,65 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-gogol-shinel.html",
+  "steps": [
+    "Найти воротник из кошки",
+    "Повторный клик по найденному",
+    "Найти шляпу"
+  ],
+  "checks": [
+    {
+      "label": "Место отмечено найденным",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Пояснение про куницу",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Следующее задание — шляпа",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Найденное даёт 8",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    },
+    {
+      "label": "Повтор не начисляет дважды",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    },
+    {
+      "label": "Две детали — 16",
+      "actual": 16,
+      "expected": 16,
+      "ok": true
+    },
+    {
+      "label": "Список найденного",
+      "actual": 2,
+      "expected": 2,
+      "ok": true
+    },
+    {
+      "label": "Счётчик",
+      "actual": "Найдено деталей: 2 из 5",
+      "expected": "Найдено деталей: 2 из 5",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}
