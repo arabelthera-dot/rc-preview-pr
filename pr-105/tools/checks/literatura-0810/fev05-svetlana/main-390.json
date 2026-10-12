@@ -1,0 +1,85 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-zhukovskiy-svetlana.html",
+  "steps": [
+    "Остановка 2 аудиогида (гадание) — тот же кадр",
+    "Остановка 3 аудиогида (зеркало)",
+    "Остановка 7 аудиогида (обращение поэта)",
+    "Верный ответ на первый вопрос",
+    "Повторное нажатие того же ответа"
+  ],
+  "checks": [
+    {
+      "label": "Аудиогид показывает остановки",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Сначала показан первый кадр",
+      "actual": "0",
+      "expected": "0",
+      "ok": true
+    },
+    {
+      "label": "Без звука виден только один кадр",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    },
+    {
+      "label": "Кадр остался первым",
+      "actual": "0",
+      "expected": "0",
+      "ok": true
+    },
+    {
+      "label": "Кадр сменился на Брюллова",
+      "actual": "1",
+      "expected": "1",
+      "ok": true
+    },
+    {
+      "label": "Кадр сменился на портрет Жуковского",
+      "actual": "2",
+      "expected": "2",
+      "ok": true
+    },
+    {
+      "label": "Подпись кадра сменилась",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Счётчик кадров",
+      "actual": "Кадр 3 из 3",
+      "expected": "Кадр 3 из 3",
+      "ok": true
+    },
+    {
+      "label": "Кадры не дают очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Вопрос о прочитанном даёт очки",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    },
+    {
+      "label": "Повтор не начисляет дважды",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}
