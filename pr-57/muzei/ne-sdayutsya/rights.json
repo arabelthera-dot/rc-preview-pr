@@ -28,18 +28,18 @@
     "taken_by": "claude3, сверка по Commons API (картинка и размеры)"
   },
   {
-    "id": "brest-zhazhda",
-    "file": "brest-zhazhda.jpg",
-    "title": "File:Брестская крепость - скульптура \"Жажда\" - panoramio.jpg",
-    "url": "https://upload.wikimedia.org/wikipedia/commons/a/ae/%D0%91%D1%80%D0%B5%D1%81%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D1%8C_-_%D1%81%D0%BA%D1%83%D0%BB%D1%8C%D0%BF%D1%82%D1%83%D1%80%D0%B0_%22%D0%96%D0%B0%D0%B6%D0%B4%D0%B0%22_-_panoramio.jpg",
-    "source": "https://commons.wikimedia.org/wiki/File:%D0%91%D1%80%D0%B5%D1%81%D1%82%D1%81%D0%BA%D0%B0%D1%8F_%D0%BA%D1%80%D0%B5%D0%BF%D0%BE%D1%81%D1%82%D1%8C_-_%D1%81%D0%BA%D1%83%D0%BB%D1%8C%D0%BF%D1%82%D1%83%D1%80%D0%B0_%22%D0%96%D0%B0%D0%B6%D0%B4%D0%B0%22_-_panoramio.jpg",
-    "artist": "tiger rus (фото, Panoramio)",
-    "license": "CC BY 3.0",
-    "description": "Скульптура «Жажда», мемориал «Брестская крепость-герой»",
-    "sha256": "19e48d6c8a2152cb750dec6819bb8731f9df2038db34b2186d83560bbeafeafd",
+    "id": "brest-terespolskie-vorota",
+    "file": "brest-terespolskie-vorota.jpg",
+    "title": "File:Brest Fortress Terespol Gate 2023-02-18 2814.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Brest_Fortress_Terespol_Gate_2023-02-18_2814.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Brest_Fortress_Terespol_Gate_2023-02-18_2814.jpg",
+    "artist": "Mike1979 Russia (фото, 2023)",
+    "license": "CC BY-SA 3.0",
+    "description": "Тереспольские ворота цитадели Брестской крепости, мемориал «Брестская крепость-герой» — замена кадра «Жажда» (решение arabelthera-dot в #952, 12.10.2026)",
+    "sha256": "a1a36015bdf61e46f4027e0ba5eec6a38d875010177111c29a1f47234551e130",
     "checked": "2026-10-12",
-    "modified": "уменьшено для веба, содержание не менялось",
-    "taken_by": "claude3, сверка по Commons API (картинка и размеры)"
+    "modified": "превью Commons 1600 px, содержание не менялось",
+    "taken_by": "claude3, Commons API"
   },
   {
     "id": "kolovrat-pamyatnik-ryazan",
