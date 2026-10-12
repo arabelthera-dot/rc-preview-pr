@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "page_sha256": "01c20075d72664ffbd539ccd4492de5cd1b193747b331ee8aa1bc1bd43474f67",
+  "runner": "../../tools/checks/nesdayutsya-2909/run-b6.mjs",
+  "created_at": "2026-10-12T17:32:33.912Z",
+  "browser": "151.0.7922.173",
+  "plan": "../../tools/checks/nesdayutsya-2909/day17-plan.mjs",
+  "inputs": {
+    "podvig-karbyshev.html": "01c20075d72664ffbd539ccd4492de5cd1b193747b331ee8aa1bc1bd43474f67",
+    "../../tools/checks/nesdayutsya-2909/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../../tools/checks/nesdayutsya-2909/day17-plan.mjs": "425d56d6244e3a953177e2930881d84655f25a45a6e79497345e3203c4276b01",
+    "../../tools/checks/nesdayutsya-2909/plans.mjs": "739639f3b2368589794115ebb6099df6d57dda5441c68795dccc9840ab8e20d0",
+    "../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "nesdayutsya-style.css": "39e9893b4180f72b0d7e77d2999dc22c2761371749fc30f2e41187b23ce92fdc",
+    "../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "karbyshev-1914.jpg": "844a55691ce012b18daf7516645669030f5816b90d0d58be165370ecb9bcb9ca",
+    "karbyshev-plaket-spb.jpg": "7510bcecf571873c3b6c696ca9690c7dbf57715c511d4b63f9f665dc8d6fb750",
+    "karbyshev-mauthausen-pamyatnik.jpg": "585b8aa79c48774c3ac5d4be22706daffd3961f971a07b7bd534ca3369aafe59",
+    "../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../assets/scrolltelling.js": "782c0de78ecc16edb417b84d9c85a4e9e71f2e289fa2c2c4a27c63a06a689642",
+    "../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "calendar-nesdayutsya.js": "b853e651894891db90077ce24b9c7e44e0e9b8f2cc7e8405857e7b6624daf8d9",
+    "../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "../../tools/checks/nesdayutsya-2909/day17/entry-390.png": "59e5c23221fc432ebade1992bd6b7fc4e452280633660e2073188076a7775267",
+    "../../tools/checks/nesdayutsya-2909/day17/entry-390.json": "319f70ff04240824a4b696954e0879625259b54a4d9a72c6f6989901d0d435f7",
+    "../../tools/checks/nesdayutsya-2909/day17/wrong-390.png": "f6ab6281ff561b4c5755c35151461a123c0a3819ba52d16631594de25c4c6957",
+    "../../tools/checks/nesdayutsya-2909/day17/wrong-390.json": "cca1fb88da9d105fe6c88fbba0be712f5bbcd9c66fd778dd0be27e26180e15c7",
+    "../../tools/checks/nesdayutsya-2909/day17/reset-390.png": "fd2136ccb52736e6f16ce5230f79988e552523bf047935e63bac6793844dab7d",
+    "../../tools/checks/nesdayutsya-2909/day17/reset-390.json": "7c0b757ca607333092e763971dcadb83628c8eabbfe6dfcb48ce92b01b9d117e",
+    "../../tools/checks/nesdayutsya-2909/day17/mobile-390.png": "81cec347f8600a0f42a617ec1c6f2b4cab92c3b00554806251c7693b2fca277d",
+    "../../tools/checks/nesdayutsya-2909/day17/mobile-390.json": "4979258b75811db4f675306b1762cabde7612df37693e56613ad4d8e294d14f9",
+    "../../tools/checks/nesdayutsya-2909/day17/mobile-1440.png": "a6fc9fa98111366af05108ccc0f87cd0d662f14cfa8f199c24b8355965e0ffad",
+    "../../tools/checks/nesdayutsya-2909/day17/mobile-1440.json": "972610a666a6e8856d24a992b0c6ca2ba8f686f20dfb8fbf62f59e9f8c6777ff",
+    "../../tools/checks/nesdayutsya-2909/day17/nojs-390.png": "70754f19bea149521619ac8deb82164dad5dcb678897fba07d375bc1c08dae05",
+    "../../tools/checks/nesdayutsya-2909/day17/nojs-390.json": "1ddf03f00e011eadeed451535e3bd02dee94728da5ac4abc08022a1690ca6c24",
+    "../../tools/checks/nesdayutsya-2909/day17/score-390.png": "545d894ade9591b46d73b14de25ade1e30844a7e7f5f253af0ce634d98405779",
+    "../../tools/checks/nesdayutsya-2909/day17/score-390.json": "8f7c5c37f78720f5924ee9cd2c2cc30e5403edf6c11280cb449425afbcff1d35",
+    "../../tools/checks/nesdayutsya-2909/day17/main-390.png": "75c1d34aa3853011925a0e116a841375dc406bd33f1f3e2263abdb248216ebc6",
+    "../../tools/checks/nesdayutsya-2909/day17/main-390.json": "30cb54b60fcf1d447a00a37956c4946a846e30ff94555394b25455499258f001",
+    "../../tools/checks/nesdayutsya-2909/day17/empty-390.png": "b16c8e1016e94cb5ea2657a63da2e68d43fe0a12ff65e21343247308429ec4a3",
+    "../../tools/checks/nesdayutsya-2909/day17/empty-390.json": "9518d554224b7a8fd0c9f358144548aab58a5e87e79b15db461d0803c33e8744"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day17/entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day17/wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day17/reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day17/mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day17/mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day17/nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day17/score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day17/main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "../../tools/checks/nesdayutsya-2909/day17/empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
