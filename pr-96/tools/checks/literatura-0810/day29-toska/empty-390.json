@@ -1,0 +1,67 @@
+{
+  "test_id": "empty-390",
+  "code": "empty",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-chekhov-toska.html",
+  "steps": [],
+  "checks": [
+    {
+      "label": "В каждом вопросе три варианта",
+      "actual": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "expected": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "ok": true
+    },
+    {
+      "label": "Четыре фрагмента",
+      "actual": 4,
+      "expected": 4,
+      "ok": true
+    },
+    {
+      "label": "В каждом фрагменте есть что вычеркнуть и что оставить",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Фраз-кнопок всего",
+      "actual": 14,
+      "expected": 14,
+      "ok": true
+    },
+    {
+      "label": "Аудиогид на месте",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Подпись о баллах совпадает с реестром (4 × 10 и 5 × 12)",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Источники названы",
+      "actual": 6,
+      "expected": 6,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "empty-390.png",
+  "status": "pass"
+}
