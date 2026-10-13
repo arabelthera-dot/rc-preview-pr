@@ -103,3 +103,20 @@ jobs:
           name: lhci-report-${{ matrix.kusok.n }}
           path: lhci-report
           retention-days: 7
+  # Постоянное имя для обязательной проверки в ruleset: у кусков имя плавает (perf 1, perf 2…).
+  # Красное, если упал хоть один кусок или сам список; нечего мерить или выключатель — зелёное.
+  perf-itog:
+    needs: [spisok, perf]
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: итог кусков
+        env:
+          SPISOK: ${{ needs.spisok.result }}
+          PERF: ${{ needs.perf.result }}
+        run: |
+          echo "список: $SPISOK, замер: $PERF"
+          case "$SPISOK/$PERF" in
+            */failure|*/cancelled|failure/*|cancelled/*) exit 1 ;;
+          esac
