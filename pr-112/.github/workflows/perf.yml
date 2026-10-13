@@ -8,6 +8,7 @@ name: perf
 # Красный крестик видно в заявке, слияние он не держит, пока проверку не сделали обязательной.
 # Страницы делятся на куски по 12 (матрица GitHub Actions): ручной замер всех страниц музеев
 # одной задачей шёл ~1,5 ч и упирался в потолок 30 мин (run 38417358405, 13.10).
+# Заглушки «Музей создаётся» не мерим. Таблица страниц (LCP, вес, CLS) — в сводке задачи.
 # Выключатель — переменная репо PERF_CHECK_OFF=1.
 on:
   pull_request:
@@ -33,6 +34,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
           PR: ${{ github.event.pull_request.number }}
+          ZAGLUSHKA: 'content="[^"]*Музей создаётся:'
         run: |
           if [ -n "$PR" ]; then
             gh api "repos/${{ github.repository }}/pulls/$PR/files" --paginate \
@@ -40,11 +42,14 @@ jobs:
             grep '\.html$' files.txt > pages.txt || true
             # заявка правит саму проверку — гоняем её на пяти главных страницах музеев
             if grep -qE '^(\.github/workflows/perf\.yml|tools/ci/lighthouserc\.json)$' files.txt; then
-              git ls-files 'muzei/*/index.html' | head -5 >> pages.txt
+              git ls-files 'muzei/*/index.html' | xargs grep -L "$ZAGLUSHKA" | head -5 >> pages.txt
             fi
           else
             git ls-files 'muzei/*.html' > pages.txt
           fi
+          # заглушки «Музей создаётся» (шаблон platform/templates/museum-stub.html) не мерим —
+          # меряем только готовые страницы
+          [ -s pages.txt ] && { xargs grep -L "$ZAGLUSHKA" < pages.txt > gotovye.txt || true; mv gotovye.txt pages.txt; }
           echo "страниц: $(wc -l < pages.txt)"
           # куски по 12 страниц: [{"n":1,"urls":"--url=… --url=…"}, …]; пусто — []
           echo "kuski=$(jq -Rnc '[inputs | select(length > 0) | "--url=http://localhost:8765/" + .]
@@ -73,6 +78,25 @@ jobs:
       - name: отчёты
         if: always()
         run: npx --yes @lhci/cli@0.14 upload --config=tools/ci/lighthouserc.json || true
+      - name: таблица страниц в сводку
+        if: always()
+        run: |
+          [ -f lhci-report/manifest.json ] || exit 0
+          python3 - >> "$GITHUB_STEP_SUMMARY" <<'PY'
+          import json
+          print("| Страница | Загрузка главного (LCP), с | Вес, КБ | Сдвиг (CLS) | Итог |")
+          print("|---|---|---|---|---|")
+          for r in json.load(open("lhci-report/manifest.json")):
+              if not r.get("isRepresentativeRun"):
+                  continue
+              a = json.load(open(r["jsonPath"]))["audits"]
+              lcp = a["largest-contentful-paint"]["numericValue"] / 1000
+              kb = a["total-byte-weight"]["numericValue"] / 1024
+              cls = a["cumulative-layout-shift"]["numericValue"]
+              bad = lcp > 2.5 or kb > 2048 or cls > 0.1
+              path = r["url"].split(":8765/", 1)[-1]
+              print(f"| {path} | {lcp:.1f} | {kb:.0f} | {cls:.2f} | {'🔴' if bad else '🟢'} |")
+          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
