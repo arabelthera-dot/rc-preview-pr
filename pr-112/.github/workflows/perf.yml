@@ -1,0 +1,81 @@
+name: perf
+# Скорость страниц, которые меняет заявка — Lighthouse CI (мировой стандарт, замена самодельных
+# tools/skorost.py + skorost.mjs, опись самоделок 12.10). Пороги — tools/ci/lighthouserc.json:
+# LCP ≤ 2,5 с, CLS ≤ 0,1, вес ≤ 2 МБ, картинка без сжатия или шире показа — красное
+# (uses-optimized-images, uses-responsive-images — замена порога 300 КБ из skorost.py);
+# старый формат картинки, картинка без width/height — жёлтое. Мобильный профиль
+# Lighthouse (Slow 4G, процессор ×4), медиана трёх прогонов. Отчёты — артефакты lhci-report-N.
+# Красный крестик видно в заявке, слияние он не держит, пока проверку не сделали обязательной.
+# Страницы делятся на куски по 12 (матрица GitHub Actions): ручной замер всех страниц музеев
+# одной задачей шёл ~1,5 ч и упирался в потолок 30 мин (run 38417358405, 13.10).
+# Выключатель — переменная репо PERF_CHECK_OFF=1.
+on:
+  pull_request:
+    paths: ['**.html', '.github/workflows/perf.yml', 'tools/ci/lighthouserc.json']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pull-requests: read
+concurrency:
+  group: perf-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: true
+jobs:
+  spisok:
+    if: vars.PERF_CHECK_OFF != '1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    outputs:
+      kuski: ${{ steps.pages.outputs.kuski }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: страницы заявки
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          if [ -n "$PR" ]; then
+            gh api "repos/${{ github.repository }}/pulls/$PR/files" --paginate \
+              --jq '.[] | select(.status != "removed") | .filename' > files.txt
+            grep '\.html$' files.txt > pages.txt || true
+            # заявка правит саму проверку — гоняем её на пяти главных страницах музеев
+            if grep -qE '^(\.github/workflows/perf\.yml|tools/ci/lighthouserc\.json)$' files.txt; then
+              git ls-files 'muzei/*/index.html' | head -5 >> pages.txt
+            fi
+          else
+            git ls-files 'muzei/*.html' > pages.txt
+          fi
+          echo "страниц: $(wc -l < pages.txt)"
+          # куски по 12 страниц: [{"n":1,"urls":"--url=… --url=…"}, …]; пусто — []
+          echo "kuski=$(jq -Rnc '[inputs | select(length > 0) | "--url=http://localhost:8765/" + .]
+            | [range(0; length; 12) as $i | {n: ($i / 12 + 1), urls: (.[$i:$i+12] | join(" "))}]' pages.txt)" >> "$GITHUB_OUTPUT"
+  perf:
+    needs: spisok
+    if: needs.spisok.outputs.kuski != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        kusok: ${{ fromJSON(needs.spisok.outputs.kuski) }}
+    name: perf ${{ matrix.kusok.n }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: проверка
+        run: |
+          python3 -m http.server 8765 >/dev/null 2>&1 &
+          sleep 1
+          npx --yes @lhci/cli@0.14 collect --config=tools/ci/lighthouserc.json ${{ matrix.kusok.urls }}
+          npx --yes @lhci/cli@0.14 assert --config=tools/ci/lighthouserc.json
+      - name: отчёты
+        if: always()
+        run: npx --yes @lhci/cli@0.14 upload --config=tools/ci/lighthouserc.json || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lhci-report-${{ matrix.kusok.n }}
+          path: lhci-report
+          retention-days: 7
