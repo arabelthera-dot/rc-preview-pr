@@ -1,0 +1,55 @@
+name: netlify-preview
+# Предпросмотр заявки — стандартный Netlify deploy preview из CI (docs.netlify.com, «Deploy with CLI»):
+# файлы сайта заявки целиком → https://pr-N--<сайт>.netlify.app. Ссылки не переписываются.
+# Включатель — переменная репо NETLIFY_PREVIEW_ON=1 (ставится после секретов NETLIFY_AUTH_TOKEN, NETLIFY_SITE_ID).
+# pull_request_target: код заявки не исполняется — только выкладываются статические файлы.
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: номер заявки
+        required: true
+permissions:
+  contents: read
+  pull-requests: write
+concurrency:
+  group: netlify-preview-${{ github.event.pull_request.number || inputs.pr }}
+  cancel-in-progress: true
+jobs:
+  preview:
+    if: vars.NETLIFY_PREVIEW_ON == '1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      PR: ${{ github.event.pull_request.number || inputs.pr }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: refs/pull/${{ env.PR }}/head
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /*
+            !/tools/
+            !/docs/
+            !/.github/
+      - name: Выкладка на Netlify
+        id: deploy
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          rm -rf .git
+          npx -y netlify-cli@17 deploy --dir . --alias "pr-$PR" --no-build --json > deploy.json
+          echo "url=$(jq -r .deploy_url deploy.json)" >> "$GITHUB_OUTPUT"
+      - name: Ссылка в заявке
+        run: |
+          body="<!-- netlify-preview -->
+          Предпросмотр заявки: ${{ steps.deploy.outputs.url }}/"
+          id=$(gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" --paginate \
+            --jq '.[]|select(.body|startswith("<!-- netlify-preview -->"))|.id' | head -1)
+          if [ -n "$id" ]; then gh api -X PATCH "repos/$GITHUB_REPOSITORY/issues/comments/$id" -f body="$body"
+          else gh api "repos/$GITHUB_REPOSITORY/issues/$PR/comments" -f body="$body"; fi
