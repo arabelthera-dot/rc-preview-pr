@@ -229,6 +229,15 @@
        не двигается: перестановка после дорисовки сетки календаря давала сдвиг вёрстки
        (CLS 0,26 на календаре костюма, 14.10). Резерв высоты слота — в CSS страницы. */
     var slot = doc.querySelector('[data-support-slot]');
+    /* календарь: расшифровка дня (#calcard) стоит ПРЯМО над сеткой (#calyear), блок поддержки —
+       над ними обоими, никогда между (правка Сергея 14.10: «чтобы день календаря расшифровывался
+       прямо над самим календарем»). Слот без разметки создаётся, размеченный не там — переносится. */
+    var calCard = doc.getElementById('calcard'), calYear = doc.getElementById('calyear');
+    if(calCard && calYear){
+      if(calCard.nextElementSibling !== calYear) calYear.parentNode.insertBefore(calCard, calYear);
+      if(!slot){ slot = doc.createElement('div'); slot.setAttribute('data-support-slot', ''); slot.style.margin = '0 0 22px'; }
+      if(slot.nextElementSibling !== calCard) calCard.parentNode.insertBefore(slot, calCard);
+    }
     if(slot){
       if(!peakEl){
         peakEl = peakBlock();
