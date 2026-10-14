@@ -39,6 +39,8 @@ main{max-width:720px;margin:0 auto;padding:10px 16px 40px}
 #calcard p{font-size:14px;line-height:1.6}
 #calcard a{display:inline-block;margin-top:11px;font-size:13.5px}
 
+/* резерв места под сетку и карточку, которые дорисует скрипт: без него подвал мелькает под шапкой и Lighthouse ловит сдвиг вёрстки (CLS 0,69) */
+#calcard:empty{min-height:250px}#calyear:empty{min-height:150vh}
 .council{background:var(--panel);border:1px solid rgba(201,168,76,.2);border-radius:14px;padding:15px;font-size:13.5px;margin-top:14px}
 footer{padding:22px 16px 60px;border-top:1px solid rgba(201,168,76,.2);text-align:center;font-size:12.5px;opacity:.85;margin-top:30px}
 footer .slog{font-style:italic;color:var(--gold);margin-bottom:6px}
