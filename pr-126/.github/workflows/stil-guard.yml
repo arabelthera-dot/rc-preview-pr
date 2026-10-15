@@ -1,0 +1,36 @@
+name: stil-guard
+# Сторож заплаток (Сергей 15.10.2026): вид страниц — только в общих assets/*.css, не внутри страницы.
+# Мировой приём «храповик» линтера: свои стили страницы заявка не увеличивает, шрифты не блокируют
+# первый экран. Скрипт — tools/ci/stil-guard.py. Обязательная проверка в ruleset 24740200.
+# Исключение — метка «stil-soglasovano» только после «да» Сергея. Выключатель — STIL_GUARD_OFF=1.
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled, unlabeled]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pull-requests: read
+concurrency:
+  group: stil-guard-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: true
+jobs:
+  stil-guard:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: страницы заявки
+        if: vars.STIL_GUARD_OFF != '1' && !contains(github.event.pull_request.labels.*.name, 'stil-soglasovano')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          if [ -z "$PR" ]; then echo "ручной запуск — нечего сверять"; exit 0; fi
+          gh api "repos/${{ github.repository }}/pulls/$PR/files" --paginate \
+            --jq '.[] | select(.status != "removed") | .filename' \
+            | grep -E '^(muzei/.*\.html|index\.html)$' > pages.txt || true
+          echo "страниц: $(wc -l < pages.txt)"
+          python3 tools/ci/stil-guard.py check "$BASE" $(cat pages.txt)
