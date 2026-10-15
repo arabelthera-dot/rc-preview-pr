@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "page_sha256": "dfb9c9fa75d692d1901f6236dd416212eec4fe2482113f32bd9d1b89e213988a",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-09T15:07:29.938Z",
+  "browser": "151.0.7922.173",
+  "plan": "../kapitanskaya-plan.mjs",
+  "inputs": {
+    "../../../../muzei/literatura/lit-pushkin-kapitanskaya-dochka.html": "dfb9c9fa75d692d1901f6236dd416212eec4fe2482113f32bd9d1b89e213988a",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../kapitanskaya-plan.mjs": "ba86b41ab31769c1d079cf068edce1e51ea71304a3834f6ba06630b92e93e631",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../assets/museum-literatura.css": "c61af6100f347eca763bde21e186eed1e46b4f7595610697abd05e68e231773c",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/literatura/media-kapitanskaya/sud-pugacheva-perov-1875-mobile.jpg": "04ad7eb0459517aab6b89cf91937b1c591ac51b3f9819ee8f95bdfff2d24d4d9",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-choice-tale.js": "6aee17abd710db0c72a01085967efaf55a414c5edfa666574b45b46be465b709",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../muzei/literatura/calendar-literatura.js": "f8cc9a50fda6d455f1776d0747eac21ef632e9f95063f5472a1b47dafb1b5725",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../../../muzei/literatura/media-kapitanskaya/sud-pugacheva-perov-1875.jpg": "d1e8572eb4c99f53a4c96b9d89cd1858c8274bd59d7d5bcf095d1f05c78009ac",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "../../../../muzei/literatura/media-kapitanskaya/plan-shvanvich-avtograf.jpg": "38f4cb2b7a33ebd9b7c48a1cfc0fbd623d0d2b8fff69a80fa2b3d726903371dc",
+    "../../../../muzei/literatura/media-kapitanskaya/pushkin-kiprensky-1827.jpg": "0babfe7ec8d63fdf15d8f891fabcf265e7b5a7ab8d1423de7d568a2302297094",
+    "entry-390.png": "dca9778fc120148420add13fbf4bf95e8ba8699a81ab19b6108ba20a80e654ab",
+    "entry-390.json": "3d86734c42c384735b09830953012d75f560f77dddd3d2e38bca78587260474a",
+    "wrong-390.png": "3057cc6eed19c865c10662a0eec9cd9310249c8570e5d7cf8f76fd8960fb2326",
+    "wrong-390.json": "59e96354273c9a85eea51af9aa0a065b83d00a07d46bb63a43be5ba0f4b3d7fc",
+    "reset-390.png": "90a437da7e2913579dcff16b242ddb3f3ad9756ad2dec50270cd4a82ff4450f4",
+    "reset-390.json": "671f5fa54d0d6f479eb0e10e58799d688332f9061e834c7b2572463f2eb20a80",
+    "mobile-390.png": "f3110ba69e2b124116ce102b4cc992e598a39dae0f94658464c2c3712d1e4826",
+    "mobile-390.json": "34e2a73845740857a5962cfa97d68aab573f4b07fdf2f76ac4e835fd546c5bb3",
+    "mobile-1440.png": "338cb3492827edf8d47341bf36503cf46d3b6cb19c7c2f2fa0e27f7562fd9c8b",
+    "mobile-1440.json": "0f42353fc02de05090367cae2f077f3cca9ed11de18024178149da4876c860b3",
+    "nojs-390.png": "8e5a133712d999969bc6c16f751c3b2872ff952013517263b69570b6acae2862",
+    "nojs-390.json": "93c116feda39a3fb09a87dd96b137c8615dd58cacb713ea9734b40baea4fe85c",
+    "score-390.png": "8be587c9809b151e0366970a99634f81b21359563da2bb8bbbd29eea3ed34a3c",
+    "score-390.json": "5e29c8fc4af8722c04940d8bee77299d0092aaa459a5280dbfe101d1a844806f",
+    "main-390.png": "73b30bde0a5ead62e4a3fe62bae1183ec3836427a24b1df0d3b47282f829d19a",
+    "main-390.json": "2b8448319b40a2db866fabd4b92bed81e645cf72e8e68cdf978ada5f56606a0f",
+    "empty-390.png": "7990669cc612b2397ba57331db477701ed3f1156cd793b109795707908992b69",
+    "empty-390.json": "90ae87bdd5e209c0c12229adde6f75519c1f4b9bf5fe53b21807c825ef22191f"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
