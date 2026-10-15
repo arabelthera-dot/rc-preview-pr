@@ -1,0 +1,60 @@
+name: links
+# Битые ссылки в страницах, которые меняет заявка — lychee без сети (мировой стандарт,
+# замена самодельного tools/check-links.py, опись самоделок 12.10).
+# Полные адреса своего сайта (https://arabelthera-dot.github.io/rc-museum-preview/…) проверяются как
+# файлы ветки (--remap): без этого --offline их пропускал — пустая обложка #99, og/og-default.jpg на 75 стр.
+# og:image/twitter:image lychee не читает — отдельный шаг ниже.
+# Красный крестик видно в заявке, слияние он не держит, пока проверку не сделали обязательной.
+# Выключатель — переменная репо LINKS_CHECK_OFF=1.
+on:
+  pull_request:
+    paths: ['**.html', '.github/workflows/links.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  pull-requests: read
+concurrency:
+  group: links-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: true
+jobs:
+  links:
+    if: vars.LINKS_CHECK_OFF != '1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: страницы заявки
+        id: pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          if [ -n "$PR" ]; then
+            gh api "repos/${{ github.repository }}/pulls/$PR/files" --paginate \
+              --jq '.[] | select(.status != "removed") | .filename | select(endswith(".html"))' > pages.txt
+          else
+            git ls-files '*.html' > pages.txt
+          fi
+          echo "страниц: $(wc -l < pages.txt)"
+          echo "list=$(tr '\n' ' ' < pages.txt)" >> "$GITHUB_OUTPUT"
+      - uses: lycheeverse/lychee-action@v2
+        if: steps.pages.outputs.list != ''
+        with:
+          args: >-
+            --offline --no-progress --index-files index.html
+            --remap 'https://arabelthera-dot\.github\.io/rc-museum-preview/(.*) file://${{ github.workspace }}/$1'
+            ${{ steps.pages.outputs.list }}
+          fail: true
+          jobSummary: true
+      - name: картинки для соцсетей (og:image, twitter:image)
+        if: steps.pages.outputs.list != ''
+        run: |
+          for f in ${{ steps.pages.outputs.list }}; do
+            grep -oE '<meta[^>]+(og:image|twitter:image)[^>]*>' "$f" \
+              | grep -oE 'content="https://arabelthera-dot\.github\.io/rc-museum-preview/[^"?#]+' \
+              | sed 's#^content="https://arabelthera-dot.github.io/rc-museum-preview/##' \
+              | while read -r img; do
+                  [ -f "$img" ] || { echo "::error file=$f::нет файла $img" >&2; echo x; }
+                done
+          done > og-bad.txt
+          grep -c '^x$' og-bad.txt && exit 1 || echo "og:image — всё на месте"
