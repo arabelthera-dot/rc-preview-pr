@@ -1,0 +1,33 @@
+{
+  "test_id": "nojs-390",
+  "code": "nojs",
+  "width": 390,
+  "javascript_enabled": false,
+  "url": "http://b6.local/muzei/sport/day-01jan-ledyanye-gory.html",
+  "steps": [
+    "Read static alternatives"
+  ],
+  "checks": [
+    {
+      "label": "Shutter text alternative",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Quiz answers as text",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Moments readable",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "nojs-390.png",
+  "status": "pass"
+}
