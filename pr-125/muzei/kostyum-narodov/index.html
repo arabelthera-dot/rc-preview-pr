@@ -73,18 +73,10 @@ footer{background:#111;color:#cabcaa;padding:34px 0}.foot-in{display:flex;justif
 #calendar{--gold:#e4c97a;--txt:#f3ece0}#calendar .fine,#calendar .calfoot{color:#cdbfa9}#calendar #calbox .calfoot{opacity:1;color:#bfb09a}
 @media(max-width:900px){.stage-in{grid-template-columns:1fr;gap:26px}.stage-vis{order:2}.hero-stage .hero-copy{order:1}.hero-stage .hero-slides{height:min(62vh,520px)}.hero-stage .stats{grid-template-columns:repeat(2,auto)}}
 @media(max-width:640px){.hero-stage .hero-slides{height:min(60vh,480px)}.hero-stage h1{font-size:40px}.hero-stage .stats{gap:14px 22px}.hero-stage .stats b{font-size:30px}}
-/* мобильный первый экран: костюм в первом экране телефона, шапка компактная (15.10) */
-@media(max-width:900px){.stage-vis{order:0!important}.hero-stage .hero-copy{order:1}}
-@media(max-width:640px){.civic-motto{display:none}.civic-in{min-height:0!important;padding:8px 0}.civic-title{font-size:19px}.museum-label{display:none}.museum-in{min-height:0!important;padding:8px 0;flex-direction:row!important;align-items:center!important;gap:12px}.museum-name{font-size:16px;line-height:1.25}.back{padding:6px 10px;font-size:12px;white-space:nowrap}.crumbs{padding:6px 0;font-size:11px}.stage-in{gap:18px!important}.hero-stage .hero-slides{height:min(47vh,400px)!important}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.marquee-track{animation:none}*,*::before,*::after{transition-duration:.01ms!important}}
 
-/* правки команды 15.10 */
-.crumbs{display:flex;justify-content:space-between;align-items:center;gap:12px}.crumbs .sharerow{padding:0!important;text-align:right;flex:none}
-#todayBox.noimg{grid-template-columns:1fr!important}
-@media(min-width:641px){.civic-motto{max-width:520px}}
-@media(min-width:901px){.hero-stage .hero-slides{height:clamp(360px,calc(100vh - 340px),620px)}}
-@media(max-width:640px){.hero-stage .hero-visual{border:0;box-shadow:none}.hero-stage .hero-slides{height:min(52vh,440px)}.hero-stage .caption,.caption{font-size:11.5px;-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}.hero-stage .eyebrow{display:none}}
 </style>
+<link rel="stylesheet" href="https://arabelthera-dot.github.io/rc-preview-pr/pr-125/assets/museum-glavnaya.css">
 </head>
 <body>
 <header class="civic"><div class="wrap civic-in"><div><a class="civic-title" href="https://arabelthera-dot.github.io/rc-museum-preview/index.html">Русская цивилизация</a></div><div class="civic-motto">Первый цифровой музей достижений России · Цивилизация первенств — что Россия дала миру раньше всех</div></div></header>
@@ -270,11 +262,11 @@ window.addEventListener('DOMContentLoaded',function(){
 <script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-calendar-month.js"></script>
 <script>window.addEventListener('DOMContentLoaded',function(){var steps=(12-new Date().getMonth())%12;for(var i=0;i<steps;i++){var n=document.querySelector('#calbox .calnav[data-step="1"]');if(n)n.click()}var f=document.querySelector('#calbox .cday[data-k="01-01"]');if(f)f.click()});</script>
 <script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-chrome.js"></script>
-<script>(function(){var r=document.querySelector('.sharerow'),c=document.querySelector('nav.crumbs');if(r&&c)c.appendChild(r)})();</script>
 <script>window.MUSEUM_SUPPORT={museum:'По одежде узнавали народ',page:'главная Музея костюмов народов России',peak:'#project-support'};</script>
 <script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-support.js"></script>
 <script>window.RC_ANALYTICS_CONFIG={museum_id:'rc:museum:kostyum-narodov',issue_id:'rc:issue:kostyum-narodov:home',issue_version:'1.0.0',build_version:'home-v1'};</script>
 <script src="https://arabelthera-dot.github.io/rc-museum-preview/assets/museum-analytics-v2.js"></script>
 <script>document.documentElement.classList.add('js');if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.1});document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});}else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('on')});}</script>
+<script src="https://arabelthera-dot.github.io/rc-preview-pr/pr-125/assets/museum-glavnaya.js" defer></script>
 </body>
 </html>

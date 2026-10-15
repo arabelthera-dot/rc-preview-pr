@@ -1,0 +1,13 @@
+/* Общий вид главной страницы музея (Сергей 15.10.2026: правки вида — в общий файл, не в страницу).
+   Компактная шапка и экспонат в первом экране телефона, крошки со «Поделиться» в одну строку.
+   Подключение: <link rel="stylesheet" href="../../assets/museum-glavnaya.css"> после своих стилей страницы.
+   Первая — главная Музея костюма народов России; остальные главные переходят по мере переделки. */
+/* мобильный первый экран: костюм в первом экране телефона, шапка компактная (15.10) */
+@media(max-width:900px){.stage-vis{order:0!important}.hero-stage .hero-copy{order:1}}
+@media(max-width:640px){.civic-motto{display:none}.civic-in{min-height:0!important;padding:8px 0}.civic-title{font-size:19px}.museum-label{display:none}.museum-in{min-height:0!important;padding:8px 0;flex-direction:row!important;align-items:center!important;gap:12px}.museum-name{font-size:16px;line-height:1.25}.back{padding:6px 10px;font-size:12px;white-space:nowrap}.crumbs{padding:6px 0;font-size:11px}.stage-in{gap:18px!important}.hero-stage .hero-slides{height:min(47vh,400px)!important}}
+/* правки команды 15.10 */
+.crumbs{display:flex;justify-content:space-between;align-items:center;gap:12px}.crumbs .sharerow{padding:0!important;text-align:right;flex:none}
+#todayBox.noimg{grid-template-columns:1fr!important}
+@media(min-width:641px){.civic-motto{max-width:520px}}
+@media(min-width:901px){.hero-stage .hero-slides{height:clamp(360px,calc(100vh - 340px),620px)}}
+@media(max-width:640px){.hero-stage .hero-visual{border:0;box-shadow:none}.hero-stage .hero-slides{height:min(52vh,440px)}.hero-stage .caption,.caption{font-size:11.5px;-webkit-line-clamp:2;display:-webkit-box;-webkit-box-orient:vertical;overflow:hidden}.hero-stage .eyebrow{display:none}}
