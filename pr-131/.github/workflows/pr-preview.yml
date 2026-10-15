@@ -1,0 +1,64 @@
+name: pr-preview
+# Предпросмотр каждой заявки до слияния: rc-preview-pr/pr-N/. Выключатель — переменная репо PR_PREVIEW_OFF=1.
+# pull_request_target: скрипт берётся из main, код заявки не исполняется — только копируются файлы.
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, closed]
+  workflow_dispatch:
+    inputs:
+      pr:
+        description: номер заявки
+        required: true
+permissions:
+  contents: read
+  pull-requests: write
+concurrency:
+  group: pr-preview-${{ github.event.pull_request.number || inputs.pr }}
+  cancel-in-progress: false
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment: pr-preview
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: .github
+      - run: python3 .github/pr_preview.py
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number || inputs.pr }}
+          DEPLOY_KEY: ${{ secrets.PREVIEW_DEPLOY_KEY }}
+          PR_PREVIEW_OFF: ${{ vars.PR_PREVIEW_OFF }}
+  phone:
+    # Верхняя картинка на телефоне (iPhone 13, Pixel 7) — на том самом превью, что уходит Сергею.
+    # Красный крестик — в заявке до ссылки. Выключатель — переменная репо PHONE_CHECK_OFF=1.
+    needs: preview
+    if: github.event.action != 'closed' && vars.PHONE_CHECK_OFF != '1' && vars.PR_PREVIEW_OFF != '1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: .github
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: |
+          npm i --no-save --no-audit --no-fund playwright@1.48
+          npx playwright install --with-deps chromium
+      - name: первый экран на телефоне
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number || inputs.pr }}
+        run: |
+          SHA=$(gh api "repos/${{ github.repository }}/pulls/$PR" --jq .head.sha) node .github/phone_check.mjs
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: phone-shots
+          path: phone-shots/
