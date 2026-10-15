@@ -1,0 +1,1278 @@
+{
+ "schema_version": "1.0.0",
+ "museum_id": "rc:museum:sport",
+ "issue_id": "rc:issue:sport:day-01jan-ledyanye-gory",
+ "content_family_id": "rc:family:sport:ledyanye-gory",
+ "version": "1.0.0",
+ "identity": {
+  "title_ru": "Ледяные горы на Святки и Масленицу, XIX век",
+  "slug": "day-01jan-ledyanye-gory",
+  "calendar_slot": "01-01",
+  "museum_name_ru": "Музей русского спорта «Сильнее обстоятельств»",
+  "language": "ru",
+  "summary_ru": "Москвичи и петербуржцы строили ледяные горы на Москве-реке и Неве — и в Европе аттракцион до сих пор зовут «русскими горками»."
+ },
+ "lifecycle": {
+  "current": "preview",
+  "history": [
+   {
+    "status": "idea",
+    "at": "2026-10-15T00:00:00Z",
+    "actor": "arabelthera-dot",
+    "note_ru": "День 01-01 из календаря года, утверждённого Сергеем 15.10.2026: [У], народная забава, механика M-47 «Шторка было/стало»."
+   },
+   {
+    "status": "research",
+    "at": "2026-10-15T00:00:00Z",
+    "actor": "arabelthera-dot",
+    "note_ru": "Основной источник — И. Снегирёв, «Русские простонародные праздники и суеверные обряды», 1837–1839 (prlib.ru/news/1855946). Остальные фишки — к сверке по русским источникам."
+   },
+   {
+    "status": "script",
+    "at": "2026-10-15T08:32:00Z",
+    "actor": "arabelthera-dot",
+    "note_ru": "Бриф и карта моментов (коммит 075f4af6), черновик вёрстки (08c7e0b2)."
+   },
+   {
+    "status": "fact_check",
+    "at": "2026-10-15T09:30:00Z",
+    "actor": "arabelthera-dot",
+    "note_ru": "Моменты сверены по Президентской библиотеке (Снегирёв), Культуре.РФ и ГМЗ «Петергоф»; «русские горы» в Европе подтверждены Культурой.РФ и гравюрами 1816–1818 годов. Независимая сверка — за приёмкой."
+   },
+   {
+    "status": "rights_check",
+    "at": "2026-10-15T11:40:00Z",
+    "actor": "arabelthera-dot",
+    "note_ru": "tools/audit-prava.py: кадров 21, зелёных 21, красных 0; rights-ledyanye-gory.json — 34 файла с контрольными суммами."
+   },
+   {
+    "status": "design",
+    "at": "2026-10-15T11:45:00Z",
+    "actor": "arabelthera-dot",
+    "note_ru": "Вид — общие assets/museum-glavnaya.css и assets/museum-den.css, своих стилей в странице нет."
+   },
+   {
+    "status": "build",
+    "at": "2026-10-15T11:50:00Z",
+    "actor": "arabelthera-dot",
+    "note_ru": "Страница muzei/sport/day-01jan-ledyanye-gory.html собрана; B6 — браузерный пакет tools/checks/sport-1721."
+   },
+   {
+    "status": "preview",
+    "at": "2026-10-15T12:00:00Z",
+    "actor": "arabelthera-dot",
+    "note_ru": "Страница собрана на общих assets/museum-glavnaya.css и assets/museum-den.css: 21 настоящий кадр, шторка M-47 с наградой, викторина, аудиогид, календарь января; паспорт и rights-ledyanye-gory.json дописаны."
+   }
+  ]
+ },
+ "mode": "new-type",
+ "mechanic": "M-47",
+ "date_mark": "[У]",
+ "narrative": {
+  "visitor_promise_ru": "Посетитель увидит, как русская масленичная забава на льду Невы и Москвы-реки стала аттракционом, который вся Европа до сих пор зовёт «русскими горами».",
+  "hook_ru": "Москвичи и петербуржцы строили ледяные горы на Москве-реке и Неве — и в Европе аттракцион до сих пор зовут «русскими горками».",
+  "turn_ru": "Гравюры Парижа 1816–1818 годов и афиша Шере показывают: французы взяли русскую ледяную гору, приделали к саням колёсики и оставили ей русское имя.",
+  "conclusion_ru": "Дворовая горка у ёлки — прямая наследница горы на Неве: та же забава, тот же скат, тот же холод.",
+  "depths": {
+   "see": "Обложка-гравюра Аткинсона 1804 года и шесть историй горы, у каждой ряд настоящих кадров.",
+   "understand": "Шторка «было/стало» сводит гравюру 1817 года с горкой 2021 года; блок «Русские горы обошли Европу» — шесть документов от немецкой детской книжки до парижской афиши.",
+   "research": "Источники у каждого момента: Президентская библиотека по Снегирёву, Культура.РФ, музей «Петергоф»; кадры с основанием прав в rights-ledyanye-gory.json."
+  },
+  "ideas_ru": [
+   "Вход через Неву: гора на льду между Петропавловкой и Зимним — забава в самом центре столицы.",
+   "Вход через Париж: почему французы зовут американские горки «русскими» — шесть документов 1807–1889 годов.",
+   "Вход через двор: сегодняшняя горка у ёлки, а от неё — назад, к горе Масленицы."
+  ],
+  "choice_ru": "Выбрана первая идея как основа с Парижем вторым актом: настоящая гравюра Аткинсона даёт сильный первый экран, а «русские горы» Европы — развязка, ради которой дочитывают; двор остаётся шторкой.",
+  "finding_ru": "А ты знал, что в Париже в 1817 году к саням «русских гор» приделали колёсики, потому что снега не хватало, — и аттракцион до сих пор зовётся les montagnes russes?"
+ },
+ "interactive": {
+  "title_ru": "Было и стало: гора на Неве и горка у ёлки",
+  "type": "before_after_shutter",
+  "visitor_action_ru": "Посетитель тянет шторку до обоих краёв: слева раскрашенная гравюра Серракаприолы 1817 года с горами на Большой Неве, справа ночная ледяная горка у ёлки 2021 года; затем отвечает на четыре вопроса о горах.",
+  "exclusive_insight_ru": "Скат, флажки и толпа у подножия совпадают через двести лет: дворовая горка — та же масленичная гора, только меньше.",
+  "wow_effect_ru": "Под пальцем гравюра 1817 года превращается в сегодняшнюю горку, а за полный проход начисляются 20 очков из 100.",
+  "text_alternative_ru": "Без JavaScript под шторкой стоит текстовое описание обоих кадров с датами, а ответы викторины даны текстом с источниками.",
+  "engine": "assets/museum-firstlook.js (mode shutter, award) + assets/museum-quiz.js + assets/museum-score.js",
+  "unique_to_issue": true
+ },
+ "sources": [
+  {
+   "source_id": "rc:source:prlib:maslenitsa-snegirev",
+   "title_ru": "Как на Руси Масленицу праздновали (по книге И. М. Снегирёва «Русские простонародные праздники и суеверные обряды», 1837–1839)",
+   "publisher_ru": "Президентская библиотека имени Б. Н. Ельцина",
+   "url": "https://www.prlib.ru/news/1855946",
+   "source_type": "library",
+   "language": "ru",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:culture:russkie-gorki",
+   "title_ru": "Почему американские горки называют «русскими»?",
+   "publisher_ru": "Культура.РФ (Министерство культуры РФ)",
+   "url": "https://www.culture.ru/s/vopros/russkie-gorki/",
+   "source_type": "official_catalog",
+   "language": "ru",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:peterhof:katalnaya-gorka",
+   "title_ru": "Павильон Катальной горки, Ораниенбаум",
+   "publisher_ru": "ГМЗ «Петергоф»",
+   "url": "https://peterhofmuseum.ru/objects/oranienbaum/pavilion_katalnoy_gorki",
+   "source_type": "museum",
+   "language": "ru",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:atkinson-1804",
+   "title_ru": "Дж._О._Аткинсон._Ледяные_горы._1804.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Дж._О._Аткинсон._Ледяные_горы._1804.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:geysler-neva",
+   "title_ru": "Ледяные_горы_на_Неве_у_Смольного_монастыря.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Ледяные_горы_на_Неве_у_Смольного_монастыря.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:serracapriola-1817",
+   "title_ru": "Катальные_горы_на_Большой_Неве.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Катальные_горы_на_Большой_Неве.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:timm-1858",
+   "title_ru": "Fair_on_the_Admiralty_meadow_in_1858.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Fair_on_the_Admiralty_meadow_in_1858.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:delabart-1795",
+   "title_ru": "Жерар_Делабарт_(лист_10)_Вид_Ледяных_гор_в_Москве_во_время_сырной_недели_1.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Жерар_Делабарт_(лист_10)_Вид_Ледяных_гор_в_Москве_во_время_сырной_недели_1.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:kustodiev-1919",
+   "title_ru": "Кустодиев._Масленица._1919.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Кустодиев._Масленица._1919.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:kustodiev-1916",
+   "title_ru": "Boris_Kustodiev_-_Shrovetide_-_Google_Art_Project.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Boris_Kustodiev_-_Shrovetide_-_Google_Art_Project.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:spb-1874",
+   "title_ru": "СПб._Масленица_с_горками_(рис.)(26_из_кн._1874г)_e1.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:СПб._Масленица_с_горками_(рис.)(26_из_кн._1874г)_e1.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:rijks-1903",
+   "title_ru": "Gezelschap_rondom_een_slee_op_een_glijbaan_in_Rusland,_in_het_midden_miss_Cheetham,_RP-F-F01050-D.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Gezelschap_rondom_een_slee_op_een_glijbaan_in_Rusland,_in_het_midden_miss_Cheetham,_RP-F-F01050-D.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:orenburg-2020",
+   "title_ru": "Русская_ледяная_горка_для_детей_Оренбург.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Русская_ледяная_горка_для_детей_Оренбург.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:rastrelli-1752",
+   "title_ru": "La_Grand_Glisade.png",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:La_Grand_Glisade.png",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:gruzinsky-1889",
+   "title_ru": "Pyotr_Nikolayevich_Gruzinsky_-_Maslenitsa.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Pyotr_Nikolayevich_Gruzinsky_-_Maslenitsa.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:lubok-1839",
+   "title_ru": "Масленица_Лубок_1839.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Масленица_Лубок_1839.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:solomatkin-1878",
+   "title_ru": "Соломаткин_Масленица_1878.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Соломаткин_Масленица_1878.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:surikov-1891",
+   "title_ru": "Василий_Иванович_Суриков_–_Взятие_снежного_городка_1891.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Василий_Иванович_Суриков_–_Взятие_снежного_городка_1891.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:russian-mountains-1807",
+   "title_ru": "Unknown._Russian_mountans.1807.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Unknown._Russian_mountans.1807.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:paris-roule-1816",
+   "title_ru": "Le_Bon_Genre_N°97._Les_Montagnes_Russes_de_la_Barrière_du_Roule._G.10820.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Le_Bon_Genre_N°97._Les_Montagnes_Russes_de_la_Barrière_du_Roule._G.10820.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:paris-belleville-1817",
+   "title_ru": "Montagnes_russes_de_Belleville.png",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Montagnes_russes_de_Belleville.png",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:paris-tivoli-1818",
+   "title_ru": "Montagnes_russes_de_Tivoli_1818.png",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Montagnes_russes_de_Tivoli_1818.png",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:stockholm-1830",
+   "title_ru": "Montagne_Russe_1830_Stockholm.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Montagne_Russe_1830_Stockholm.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:cheret-1889",
+   "title_ru": "Montagnes_russes._Tous_les_soirs_Danseuses_espagnoles._affiche,_Jules_Chéret.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Montagnes_russes._Tous_les_soirs_Danseuses_espagnoles._affiche,_Jules_Chéret.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:ledyanye-gory:gorka-2021",
+   "title_ru": "Ice slide and New Years Tree.jpg",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Ice_slide_and_New_Years_Tree.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  }
+ ],
+ "claims": [
+  {
+   "claim_id": "rc:claim:sport:ledyanye-gory:neva",
+   "text_ru": "В Петербурге на Масленицу горы и балаганы ставили на льду Невы, между Петропавловской крепостью и Зимним дворцом.",
+   "kind": "fact",
+   "key_claim": true,
+   "confidence": "verified",
+   "source_ids": [
+    "rc:source:prlib:maslenitsa-snegirev",
+    "rc:source:commons:ledyanye-gory:serracapriola-1817"
+   ]
+  },
+  {
+   "claim_id": "rc:claim:sport:ledyanye-gory:sibir-20",
+   "text_ru": "В Сибири на Масленицу сколачивали из саней «подобие корабля с парусами и снастями» и впрягали по 20 лошадей.",
+   "kind": "fact",
+   "key_claim": false,
+   "confidence": "verified",
+   "source_ids": [
+    "rc:source:prlib:maslenitsa-snegirev"
+   ]
+  },
+  {
+   "claim_id": "rc:claim:sport:ledyanye-gory:snegirev",
+   "text_ru": "Снегирёв писал, что народные праздники и забавы «входят во внутреннюю историю русского народа».",
+   "kind": "fact",
+   "key_claim": false,
+   "confidence": "verified",
+   "source_ids": [
+    "rc:source:prlib:maslenitsa-snegirev"
+   ]
+  },
+  {
+   "claim_id": "rc:claim:sport:ledyanye-gory:montagnes-russes",
+   "text_ru": "Во Франции аттракцион называют les montagnes russes — «русские горы»; в 1817 году в Бельвиле открылись Les Montagnes Russes, к саням приделали колёсики.",
+   "kind": "fact",
+   "key_claim": true,
+   "confidence": "verified",
+   "source_ids": [
+    "rc:source:culture:russkie-gorki",
+    "rc:source:commons:ledyanye-gory:paris-belleville-1817"
+   ]
+  },
+  {
+   "claim_id": "rc:claim:sport:ledyanye-gory:tsarskoe",
+   "text_ru": "Катальную горку в Царском Селе для Елизаветы Петровны строили Нартов и Растрелли; её открыли в 1757 году.",
+   "kind": "fact",
+   "key_claim": false,
+   "confidence": "verified",
+   "source_ids": [
+    "rc:source:culture:russkie-gorki"
+   ]
+  },
+  {
+   "claim_id": "rc:claim:sport:ledyanye-gory:oranienbaum",
+   "text_ru": "В Ораниенбауме сохранился павильон Катальной горки Антонио Ринальди.",
+   "kind": "fact",
+   "key_claim": false,
+   "confidence": "verified",
+   "source_ids": [
+    "rc:source:peterhof:katalnaya-gorka"
+   ]
+  }
+ ],
+ "objects": [
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:atkinson-1804",
+   "object_type": "print",
+   "title_ru": "Гравюра 1804 года: высокая деревянная ледяная гора с флагами на льду реки, по скату летят санки, внизу толпа в шубах",
+   "date_display_ru": "1804",
+   "attribution_ru": "John Augustus Atkinson",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:atkinson-1804"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:geysler-neva",
+   "object_type": "print",
+   "title_ru": "Гравюра конца XVIII века: ледяные горы на Неве у Смольного монастыря, толпа и сани на льду",
+   "date_display_ru": "between 1790 and 1800",
+   "attribution_ru": "Гравёр Х. Г. Гейслер (Христиан Готфрид Генрих Гейслер)",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:geysler-neva"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:serracapriola-1817",
+   "object_type": "print",
+   "title_ru": "Раскрашенная гравюра 1817 года: катальные горы на Большой Неве, тройки на льду",
+   "date_display_ru": "1817",
+   "attribution_ru": "Н. Серракаприола (N. Serracapriola ?)",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:serracapriola-1817"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:timm-1858",
+   "object_type": "print",
+   "title_ru": "Литография Тимма 1858 года: масленичное гулянье в Петербурге, балаганы и толпа",
+   "date_display_ru": "1858",
+   "attribution_ru": "В. Ф. Тимм",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:timm-1858"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:delabart-1795",
+   "object_type": "print",
+   "title_ru": "Раскрашенная гравюра: ледяные горы в Москве во время сырной недели, у торговых рядов, толпа на льду",
+   "date_display_ru": "1799 (published) 1794 (original drawing)",
+   "attribution_ru": "Georg Christoph Friedrich Oberkogler (1774-1856, engraver) Gérard de la Barthe",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:delabart-1795"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:kustodiev-1919",
+   "object_type": "print",
+   "title_ru": "Картина Кустодиева «Масленица» 1919 года: зимний город, катание на санях",
+   "date_display_ru": "1919",
+   "attribution_ru": "Boris Kustodiev",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:kustodiev-1919"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:kustodiev-1916",
+   "object_type": "print",
+   "title_ru": "Картина Кустодиева «Масленица» 1916 года: тройка мчится по снегу под розовым закатом",
+   "date_display_ru": "1916",
+   "attribution_ru": "Boris Kustodiev",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:kustodiev-1916"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:spb-1874",
+   "object_type": "print",
+   "title_ru": "Рисунок из книги 1874 года: Масленица в Петербурге, деревянные горки с флагами и гуляющие",
+   "date_display_ru": "1874",
+   "attribution_ru": "автор неизвестен",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:spb-1874"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:rijks-1903",
+   "object_type": "photograph",
+   "title_ru": "Фотография 1903–1904 годов: компания с санками на верху ледяной горки в России",
+   "date_display_ru": "between 1903 and 1904",
+   "attribution_ru": "Rijksmuseum",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:rijks-1903"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:orenburg-2020",
+   "object_type": "photograph",
+   "title_ru": "Фотография 2020 года: ледяная горка для детей в Оренбурге, дети съезжают по ледяному жёлобу",
+   "date_display_ru": "2020-12-26 13:51:32",
+   "attribution_ru": "ХВикт",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:orenburg-2020"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:rastrelli-1752",
+   "object_type": "print",
+   "title_ru": "Чертёж Растрелли 1752 года: фасад павильона катальной горы в Царском Селе и длинный скат с галереей",
+   "date_display_ru": "1752",
+   "attribution_ru": "Francesco Bartolomeo Rastrelli (w:Bartolomeo Francesco Rastrelli)",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:rastrelli-1752"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:gruzinsky-1889",
+   "object_type": "print",
+   "title_ru": "Картина Грузинского «Масленица» 1889 года: тройки с седоками мчатся по деревенской улице",
+   "date_display_ru": "1889",
+   "attribution_ru": "Pyotr Gruzinsky",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:gruzinsky-1889"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:lubok-1839",
+   "object_type": "print",
+   "title_ru": "Лубок 1839 года «Масленица»: катание на санях и гулянье",
+   "date_display_ru": "1839",
+   "attribution_ru": "автор неизвестен",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:lubok-1839"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:solomatkin-1878",
+   "object_type": "print",
+   "title_ru": "Картина Соломаткина «Масленица» 1878 года: горка, сани и толпа на улице городка",
+   "date_display_ru": "1878",
+   "attribution_ru": "Leonid Solomatkin",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:solomatkin-1878"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:surikov-1891",
+   "object_type": "print",
+   "title_ru": "Картина Сурикова «Взятие снежного городка» 1891 года: всадник на коне прорывается через снежную стену, толпа машет руками",
+   "date_display_ru": "1891",
+   "attribution_ru": "Василий Иванович Суриков (1848—1916)",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:surikov-1891"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:russian-mountains-1807",
+   "object_type": "print",
+   "title_ru": "Раскрашенная гравюра 1807 года из немецкой книжки для детей: две ледяные горы с флагами и катающиеся",
+   "date_display_ru": "1807",
+   "attribution_ru": "автор неизвестен",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:russian-mountains-1807"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:paris-roule-1816",
+   "object_type": "print",
+   "title_ru": "Французская гравюра 1816 года «Русские горы у заставы Руль»: дамы на галерее у длинного ската",
+   "date_display_ru": "En 1816",
+   "attribution_ru": "автор неизвестен",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:paris-roule-1816"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:paris-belleville-1817",
+   "object_type": "print",
+   "title_ru": "Гравюра: «Русские горы» в Бельвиле, парк и аттракцион с тележками",
+   "date_display_ru": "2023-01-18",
+   "attribution_ru": "автор неизвестен",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:paris-belleville-1817"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:paris-tivoli-1818",
+   "object_type": "print",
+   "title_ru": "Гравюра 1818 года: горы сада Тиволи в Париже среди деревьев",
+   "date_display_ru": "2023-01-16",
+   "attribution_ru": "inconnu. gravure de 1818",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:paris-tivoli-1818"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:stockholm-1830",
+   "object_type": "print",
+   "title_ru": "Раскрашенная литография 1830 года: русская гора зимой в стокгольмском парке Юргорден",
+   "date_display_ru": "1830",
+   "attribution_ru": "автор неизвестен",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:stockholm-1830"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:cheret-1889",
+   "object_type": "print",
+   "title_ru": "Афиша Жюля Шере 1889 года «Montagnes Russes» с танцовщицей в красно-жёлтом платье",
+   "date_display_ru": "1889",
+   "attribution_ru": "Chéret, Jules (1836-1932). Illustrateur",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:cheret-1889"
+   ]
+  },
+  {
+   "object_id": "rc:object:sport:ledyanye-gory:gorka-2021",
+   "object_type": "photograph",
+   "title_ru": "Ночная ледяная горка с подсветкой перед новогодней ёлкой",
+   "date_display_ru": "2021-01-04",
+   "attribution_ru": "Vsatinet",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:ledyanye-gory:gorka-2021"
+   ]
+  }
+ ],
+ "images": [
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:atkinson-1804-480",
+   "object_id": "rc:object:sport:ledyanye-gory:atkinson-1804",
+   "local_path": "muzei/sport/media/ledyanye-gory/atkinson-1804-480.webp",
+   "sha256": "91dbdcc87929967dddacaaded88edd7edb761aca49289b5c0cd2927e29b7a783",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Дж._О._Аткинсон._Ледяные_горы._1804.jpg",
+   "credit_ru": "John Augustus Atkinson, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Гравюра 1804 года: высокая деревянная ледяная гора с флагами на льду реки, по скату летят санки, внизу толпа в шубах",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1804 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:atkinson-1804-960",
+   "object_id": "rc:object:sport:ledyanye-gory:atkinson-1804",
+   "local_path": "muzei/sport/media/ledyanye-gory/atkinson-1804-960.webp",
+   "sha256": "a3e98fb7fad573217732bdb01aa91e062e0ab3cb488ddfa18e22a4632c63a08b",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Дж._О._Аткинсон._Ледяные_горы._1804.jpg",
+   "credit_ru": "John Augustus Atkinson, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Гравюра 1804 года: высокая деревянная ледяная гора с флагами на льду реки, по скату летят санки, внизу толпа в шубах",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1804 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:geysler-neva-480",
+   "object_id": "rc:object:sport:ledyanye-gory:geysler-neva",
+   "local_path": "muzei/sport/media/ledyanye-gory/geysler-neva-480.webp",
+   "sha256": "c67096c8aec494087c8e4fc9933d0ac922026a55491df93997735b636ec74e3a",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Ледяные_горы_на_Неве_у_Смольного_монастыря.jpg",
+   "credit_ru": "Гравёр Х. Г. Гейслер (Христиан Готфрид Генрих Гейслер), Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Гравюра конца XVIII века: ледяные горы на Неве у Смольного монастыря, толпа и сани на льду",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1790 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:geysler-neva-960",
+   "object_id": "rc:object:sport:ledyanye-gory:geysler-neva",
+   "local_path": "muzei/sport/media/ledyanye-gory/geysler-neva-960.webp",
+   "sha256": "ad0e97196731661ddc699a40a0f6d166de8effca49e53e16db584e141d976f2b",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Ледяные_горы_на_Неве_у_Смольного_монастыря.jpg",
+   "credit_ru": "Гравёр Х. Г. Гейслер (Христиан Готфрид Генрих Гейслер), Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Гравюра конца XVIII века: ледяные горы на Неве у Смольного монастыря, толпа и сани на льду",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1790 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:serracapriola-1817-480",
+   "object_id": "rc:object:sport:ledyanye-gory:serracapriola-1817",
+   "local_path": "muzei/sport/media/ledyanye-gory/serracapriola-1817-480.webp",
+   "sha256": "eaaf5efbf99e4d9d4e64f356d84e3e6786276777f4bc18c8ceb73c3c5591910c",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Катальные_горы_на_Большой_Неве.jpg",
+   "credit_ru": "Н. Серракаприола (N. Serracapriola ?), Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Раскрашенная гравюра 1817 года: катальные горы на Большой Неве, тройки на льду",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1817 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:serracapriola-1817-960",
+   "object_id": "rc:object:sport:ledyanye-gory:serracapriola-1817",
+   "local_path": "muzei/sport/media/ledyanye-gory/serracapriola-1817-960.webp",
+   "sha256": "746f8c2680271e8a802304a1c03b942e0527758f0785f38220d856d6ad7a20e6",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Катальные_горы_на_Большой_Неве.jpg",
+   "credit_ru": "Н. Серракаприола (N. Serracapriola ?), Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Раскрашенная гравюра 1817 года: катальные горы на Большой Неве, тройки на льду",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1817 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:timm-1858-480",
+   "object_id": "rc:object:sport:ledyanye-gory:timm-1858",
+   "local_path": "muzei/sport/media/ledyanye-gory/timm-1858-480.webp",
+   "sha256": "4808a28ec2938b9e8be29cbf533c54478c2894614e8c87c2c0589045d0fcfec9",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Fair_on_the_Admiralty_meadow_in_1858.jpg",
+   "credit_ru": "В. Ф. Тимм, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Литография Тимма 1858 года: масленичное гулянье в Петербурге, балаганы и толпа",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1858 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:delabart-1795-480",
+   "object_id": "rc:object:sport:ledyanye-gory:delabart-1795",
+   "local_path": "muzei/sport/media/ledyanye-gory/delabart-1795-480.webp",
+   "sha256": "ff1cf36be148b81c981af62b4da695864ce6c83d8455ab340648361e23d7ad5b",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Жерар_Делабарт_(лист_10)_Вид_Ледяных_гор_в_Москве_во_время_сырной_недели_1.jpg",
+   "credit_ru": "Georg Christoph Friedrich Oberkogler (1774-1856, engraver) Gérard de la Barthe, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Раскрашенная гравюра: ледяные горы в Москве во время сырной недели, у торговых рядов, толпа на льду",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1799 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:delabart-1795-960",
+   "object_id": "rc:object:sport:ledyanye-gory:delabart-1795",
+   "local_path": "muzei/sport/media/ledyanye-gory/delabart-1795-960.webp",
+   "sha256": "87debca443c958651b70f16c86ea6ce51f7fc9d7da2721f2aaa157ef3fd9d12c",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Жерар_Делабарт_(лист_10)_Вид_Ледяных_гор_в_Москве_во_время_сырной_недели_1.jpg",
+   "credit_ru": "Georg Christoph Friedrich Oberkogler (1774-1856, engraver) Gérard de la Barthe, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Раскрашенная гравюра: ледяные горы в Москве во время сырной недели, у торговых рядов, толпа на льду",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1799 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:kustodiev-1919-480",
+   "object_id": "rc:object:sport:ledyanye-gory:kustodiev-1919",
+   "local_path": "muzei/sport/media/ledyanye-gory/kustodiev-1919-480.webp",
+   "sha256": "d1e172bcd0d042ffdf8743a0d8a0c08da6158c26e0b2d6c72f78813f90b33b46",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Кустодиев._Масленица._1919.jpg",
+   "credit_ru": "Boris Kustodiev, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Картина Кустодиева «Масленица» 1919 года: зимний город, катание на санях",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1919 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:kustodiev-1916-480",
+   "object_id": "rc:object:sport:ledyanye-gory:kustodiev-1916",
+   "local_path": "muzei/sport/media/ledyanye-gory/kustodiev-1916-480.webp",
+   "sha256": "826f284dfb173de8d877e3c559fc0f9d24845e7474fcd58e93cc28f5f19ed3bb",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Boris_Kustodiev_-_Shrovetide_-_Google_Art_Project.jpg",
+   "credit_ru": "Boris Kustodiev, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Картина Кустодиева «Масленица» 1916 года: тройка мчится по снегу под розовым закатом",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1916 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:spb-1874-480",
+   "object_id": "rc:object:sport:ledyanye-gory:spb-1874",
+   "local_path": "muzei/sport/media/ledyanye-gory/spb-1874-480.webp",
+   "sha256": "d6a08e8509fc7ec8ab191735e68fe947a5957999a1c68a21e032abb2517dc8da",
+   "source_url": "https://commons.wikimedia.org/wiki/File:СПб._Масленица_с_горками_(рис.)(26_из_кн._1874г)_e1.jpg",
+   "credit_ru": "автор неизвестен, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Рисунок из книги 1874 года: Масленица в Петербурге, деревянные горки с флагами и гуляющие",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1874 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:spb-1874-960",
+   "object_id": "rc:object:sport:ledyanye-gory:spb-1874",
+   "local_path": "muzei/sport/media/ledyanye-gory/spb-1874-960.webp",
+   "sha256": "663feb46281c747632dbbea325f5fc3e31357abbc9bf3992eb9a359d83632136",
+   "source_url": "https://commons.wikimedia.org/wiki/File:СПб._Масленица_с_горками_(рис.)(26_из_кн._1874г)_e1.jpg",
+   "credit_ru": "автор неизвестен, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Рисунок из книги 1874 года: Масленица в Петербурге, деревянные горки с флагами и гуляющие",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1874 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:rijks-1903-480",
+   "object_id": "rc:object:sport:ledyanye-gory:rijks-1903",
+   "local_path": "muzei/sport/media/ledyanye-gory/rijks-1903-480.webp",
+   "sha256": "e168a87ecf57171939b41e0c881daa21258c0ddaaeead8b5373d9e58b7e054c3",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Gezelschap_rondom_een_slee_op_een_glijbaan_in_Rusland,_in_het_midden_miss_Cheetham,_RP-F-F01050-D.jpg",
+   "credit_ru": "Rijksmuseum, CC0, Рейксмузеум; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Фотография 1903–1904 годов: компания с санками на верху ледяной горки в России",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "CC0 — держатель (Рейксмузеум) отказался от прав.",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:orenburg-2020-480",
+   "object_id": "rc:object:sport:ledyanye-gory:orenburg-2020",
+   "local_path": "muzei/sport/media/ledyanye-gory/orenburg-2020-480.webp",
+   "sha256": "ab23f67f68111c0ebf72ca6dd481bf9ffbfa2f8c444a0c47ce8ed533c2131447",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Русская_ледяная_горка_для_детей_Оренбург.jpg",
+   "credit_ru": "ХВикт, CC BY-SA 4.0, автор ХВикт; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Фотография 2020 года: ледяная горка для детей в Оренбурге, дети съезжают по ледяному жёлобу",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "CC BY-SA 4.0 — свободная лицензия с указанием автора и той же лицензией на производные; подпись на странице.",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:rastrelli-1752-794",
+   "object_id": "rc:object:sport:ledyanye-gory:rastrelli-1752",
+   "local_path": "muzei/sport/media/ledyanye-gory/rastrelli-1752-794.webp",
+   "sha256": "7ce724ad9fc716990401102e97827479ecca42da06eec2ccc52d90fd12c2da0e",
+   "source_url": "https://commons.wikimedia.org/wiki/File:La_Grand_Glisade.png",
+   "credit_ru": "Francesco Bartolomeo Rastrelli (w:Bartolomeo Francesco Rastrelli), Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Чертёж Растрелли 1752 года: фасад павильона катальной горы в Царском Селе и длинный скат с галереей",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1752 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:gruzinsky-1889-480",
+   "object_id": "rc:object:sport:ledyanye-gory:gruzinsky-1889",
+   "local_path": "muzei/sport/media/ledyanye-gory/gruzinsky-1889-480.webp",
+   "sha256": "5731f22382b95647ab92bdeec50406fc54adb7916b16a598534de373f8ed17f8",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Pyotr_Nikolayevich_Gruzinsky_-_Maslenitsa.jpg",
+   "credit_ru": "Pyotr Gruzinsky, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Картина Грузинского «Масленица» 1889 года: тройки с седоками мчатся по деревенской улице",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1889 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:gruzinsky-1889-960",
+   "object_id": "rc:object:sport:ledyanye-gory:gruzinsky-1889",
+   "local_path": "muzei/sport/media/ledyanye-gory/gruzinsky-1889-960.webp",
+   "sha256": "fcfd166f36c52b5ef508e8071fafe9f44caeb3f4b39260d7c9cf427b05cb1037",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Pyotr_Nikolayevich_Gruzinsky_-_Maslenitsa.jpg",
+   "credit_ru": "Pyotr Gruzinsky, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Картина Грузинского «Масленица» 1889 года: тройки с седоками мчатся по деревенской улице",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1889 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:lubok-1839-448",
+   "object_id": "rc:object:sport:ledyanye-gory:lubok-1839",
+   "local_path": "muzei/sport/media/ledyanye-gory/lubok-1839-448.webp",
+   "sha256": "f40482f0e84ffed7e9d13ad3814ff1e6d680a2ae0f202be6e23b00702309a1f5",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Масленица_Лубок_1839.jpg",
+   "credit_ru": "автор неизвестен, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Лубок 1839 года «Масленица»: катание на санях и гулянье",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1839 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:solomatkin-1878-480",
+   "object_id": "rc:object:sport:ledyanye-gory:solomatkin-1878",
+   "local_path": "muzei/sport/media/ledyanye-gory/solomatkin-1878-480.webp",
+   "sha256": "533603ba8a92cc49d7875c90cf2e3d3825c23e95ecd095681fc2a4b8f359dbd0",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Соломаткин_Масленица_1878.jpg",
+   "credit_ru": "Leonid Solomatkin, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Картина Соломаткина «Масленица» 1878 года: горка, сани и толпа на улице городка",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1878 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:surikov-1891-480",
+   "object_id": "rc:object:sport:ledyanye-gory:surikov-1891",
+   "local_path": "muzei/sport/media/ledyanye-gory/surikov-1891-480.webp",
+   "sha256": "a6cebc16bc35d97213422fd37e44c995047a04cf590e8284c2a72ea151aff783",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Василий_Иванович_Суриков_–_Взятие_снежного_городка_1891.jpg",
+   "credit_ru": "Василий Иванович Суриков (1848—1916), Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Картина Сурикова «Взятие снежного городка» 1891 года: всадник на коне прорывается через снежную стену, толпа машет руками",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1891 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:surikov-1891-960",
+   "object_id": "rc:object:sport:ledyanye-gory:surikov-1891",
+   "local_path": "muzei/sport/media/ledyanye-gory/surikov-1891-960.webp",
+   "sha256": "5af38f369f465dcf9aea9426389224dc7b8ee1217020bb6e5047c641e86795e2",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Василий_Иванович_Суриков_–_Взятие_снежного_городка_1891.jpg",
+   "credit_ru": "Василий Иванович Суриков (1848—1916), Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Картина Сурикова «Взятие снежного городка» 1891 года: всадник на коне прорывается через снежную стену, толпа машет руками",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1891 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:russian-mountains-1807-480",
+   "object_id": "rc:object:sport:ledyanye-gory:russian-mountains-1807",
+   "local_path": "muzei/sport/media/ledyanye-gory/russian-mountains-1807-480.webp",
+   "sha256": "835452d36a36a9540eb59a5d9807048f0f623c16ff814db86e187c094a2fc163",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Unknown._Russian_mountans.1807.jpg",
+   "credit_ru": "автор неизвестен, Общественное достояние: издание 1807 года, автор неизвестен; скан на Commons — Free Art License; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Раскрашенная гравюра 1807 года из немецкой книжки для детей: две ледяные горы с флагами и катающиеся",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1807 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ); скан на Commons под Free Art License.",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:russian-mountains-1807-960",
+   "object_id": "rc:object:sport:ledyanye-gory:russian-mountains-1807",
+   "local_path": "muzei/sport/media/ledyanye-gory/russian-mountains-1807-960.webp",
+   "sha256": "96af10da578da26aa4cb3465c3ff545e6aaabc4f1ca1f48120ee9d6aefa5c2fa",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Unknown._Russian_mountans.1807.jpg",
+   "credit_ru": "автор неизвестен, Общественное достояние: издание 1807 года, автор неизвестен; скан на Commons — Free Art License; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Раскрашенная гравюра 1807 года из немецкой книжки для детей: две ледяные горы с флагами и катающиеся",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1807 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ); скан на Commons под Free Art License.",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:paris-roule-1816-480",
+   "object_id": "rc:object:sport:ledyanye-gory:paris-roule-1816",
+   "local_path": "muzei/sport/media/ledyanye-gory/paris-roule-1816-480.webp",
+   "sha256": "7d58c25fe2dcda938d8279000f5170a4a15cc437a807bf480db1a67ba785eb7a",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Le_Bon_Genre_N°97._Les_Montagnes_Russes_de_la_Barrière_du_Roule._G.10820.jpg",
+   "credit_ru": "автор неизвестен, CC0, Музеи Парижа; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Французская гравюра 1816 года «Русские горы у заставы Руль»: дамы на галерее у длинного ската",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "CC0 — держатель (Музеи Парижа) отказался от прав.",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:paris-roule-1816-960",
+   "object_id": "rc:object:sport:ledyanye-gory:paris-roule-1816",
+   "local_path": "muzei/sport/media/ledyanye-gory/paris-roule-1816-960.webp",
+   "sha256": "da3b085b7a990ddc80be6c4428b26ac4998ae109a9f976a0f4de22c1e9179479",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Le_Bon_Genre_N°97._Les_Montagnes_Russes_de_la_Barrière_du_Roule._G.10820.jpg",
+   "credit_ru": "автор неизвестен, CC0, Музеи Парижа; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Французская гравюра 1816 года «Русские горы у заставы Руль»: дамы на галерее у длинного ската",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "CC0 — держатель (Музеи Парижа) отказался от прав.",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:paris-belleville-1817-409",
+   "object_id": "rc:object:sport:ledyanye-gory:paris-belleville-1817",
+   "local_path": "muzei/sport/media/ledyanye-gory/paris-belleville-1817-409.webp",
+   "sha256": "6d2afc3808530e2adffdf6ec92f2ec8b607e504b4c6c6460e0fdd3bc95d92d33",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Montagnes_russes_de_Belleville.png",
+   "credit_ru": "автор неизвестен, CC BY-SA 4.0, Музеи Парижа; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Гравюра: «Русские горы» в Бельвиле, парк и аттракцион с тележками",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "CC BY-SA 4.0 — свободная лицензия с указанием автора и той же лицензией на производные; подпись на странице.",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:paris-tivoli-1818-482",
+   "object_id": "rc:object:sport:ledyanye-gory:paris-tivoli-1818",
+   "local_path": "muzei/sport/media/ledyanye-gory/paris-tivoli-1818-482.webp",
+   "sha256": "70bc457a48164ee65700fe96f59da80eb4b33a685b8214074ce853e3c1a57f8e",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Montagnes_russes_de_Tivoli_1818.png",
+   "credit_ru": "inconnu. gravure de 1818, CC BY-SA 4.0; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Гравюра 1818 года: горы сада Тиволи в Париже среди деревьев",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "CC BY-SA 4.0 — свободная лицензия с указанием автора и той же лицензией на производные; подпись на странице.",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:stockholm-1830-480",
+   "object_id": "rc:object:sport:ledyanye-gory:stockholm-1830",
+   "local_path": "muzei/sport/media/ledyanye-gory/stockholm-1830-480.webp",
+   "sha256": "6244da0c9f7c50eef6aa12ad87e21c1574346ebec7040e51580a6db919228189",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Montagne_Russe_1830_Stockholm.jpg",
+   "credit_ru": "автор неизвестен, Общественное достояние (Public domain), Национальный музей Швеции; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Раскрашенная литография 1830 года: русская гора зимой в стокгольмском парке Юргорден",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1830 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:stockholm-1830-838",
+   "object_id": "rc:object:sport:ledyanye-gory:stockholm-1830",
+   "local_path": "muzei/sport/media/ledyanye-gory/stockholm-1830-838.webp",
+   "sha256": "223cb1c5233bb6da8f015cf6b257673c81f5f7ba87118d4d1850659a60ca5302",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Montagne_Russe_1830_Stockholm.jpg",
+   "credit_ru": "автор неизвестен, Общественное достояние (Public domain), Национальный музей Швеции; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Раскрашенная литография 1830 года: русская гора зимой в стокгольмском парке Юргорден",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1830 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:cheret-1889-480",
+   "object_id": "rc:object:sport:ledyanye-gory:cheret-1889",
+   "local_path": "muzei/sport/media/ledyanye-gory/cheret-1889-480.webp",
+   "sha256": "4707c3aa1adf03762b0fc710afa5103975278fb59a835ada08cf1d27c97cb1d9",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Montagnes_russes._Tous_les_soirs_Danseuses_espagnoles._affiche,_Jules_Chéret.jpg",
+   "credit_ru": "Chéret, Jules (1836-1932). Illustrateur, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Афиша Жюля Шере 1889 года «Montagnes Russes» с танцовщицей в красно-жёлтом платье",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1889 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:cheret-1889-960",
+   "object_id": "rc:object:sport:ledyanye-gory:cheret-1889",
+   "local_path": "muzei/sport/media/ledyanye-gory/cheret-1889-960.webp",
+   "sha256": "c26a7a1e778435ca2ad78eb88b1ad492db357d967253074cdca6addac033c895",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Montagnes_russes._Tous_les_soirs_Danseuses_espagnoles._affiche,_Jules_Chéret.jpg",
+   "credit_ru": "Chéret, Jules (1836-1932). Illustrateur, Общественное достояние (Public domain); Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Афиша Жюля Шере 1889 года «Montagnes Russes» с танцовщицей в красно-жёлтом платье",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Общественное достояние: произведение 1889 года, автор умер более 70 лет назад или неизвестен (ст. 1281 ГК РФ).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:gorka-2021-480",
+   "object_id": "rc:object:sport:ledyanye-gory:gorka-2021",
+   "local_path": "muzei/sport/media/ledyanye-gory/gorka-2021-480.webp",
+   "sha256": "7f5494d54215879dcb748984ed88bb9a990d305e77ef01c70de61f9e0e77cc36",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Ice_slide_and_New_Years_Tree.jpg",
+   "credit_ru": "Vsatinet, CC BY-SA 4.0, автор Vsatinet; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Ночная ледяная горка с подсветкой перед новогодней ёлкой",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "CC BY-SA 4.0 — свободная лицензия с указанием автора и той же лицензией на производные; подпись на странице.",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:sport:ledyanye-gory:gorka-2021-960",
+   "object_id": "rc:object:sport:ledyanye-gory:gorka-2021",
+   "local_path": "muzei/sport/media/ledyanye-gory/gorka-2021-960.webp",
+   "sha256": "c768e843fa5361baa5cb441ad8b681db27b368df3f348080529d0e225611d902",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Ice_slide_and_New_Years_Tree.jpg",
+   "credit_ru": "Vsatinet, CC BY-SA 4.0, автор Vsatinet; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Ночная ледяная горка с подсветкой перед новогодней ёлкой",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "CC BY-SA 4.0 — свободная лицензия с указанием автора и той же лицензией на производные; подпись на странице.",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  }
+ ],
+ "risks": {
+  "historical": {
+   "level": "medium",
+   "reason_ru": "Дата 1 января условная [У]: ледяные горы — забава Святок и Масленицы, не событие одного дня.",
+   "mitigation_ru": "На странице дата подана как сезон Святок, без «ровно N лет назад»; факты — по Президентской библиотеке и Культуре.РФ.",
+   "approved_by": null
+  },
+  "legal": {
+   "level": "low",
+   "reason_ru": "22 кадра с Commons: общественное достояние, CC0, CC BY-SA 4.0.",
+   "mitigation_ru": "Основание, источник и контрольная сумма каждого файла — в rights-ledyanye-gory.json и паспорте; авторы CC BY-SA подписаны на странице.",
+   "approved_by": null
+  },
+  "reputational": {
+   "level": "low",
+   "reason_ru": "Народная забава без спорных персон и оценок.",
+   "mitigation_ru": "Слово «первые» не используется; европейское имя аттракциона подтверждено Культурой.РФ.",
+   "approved_by": null
+  }
+ },
+ "seo": {
+  "title_ru": "Ледяные горы на Святки и Масленицу — Музей русского спорта «Сильнее обстоятельств»",
+  "description_ru": "Москвичи и петербуржцы строили ледяные горы на Москве-реке и Неве — и в Европе аттракцион до сих пор зовут «русскими горками».",
+  "h1_ru": "Ледяные горы",
+  "canonical_url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/sport/day-01jan-ledyanye-gory.html",
+  "index_state": "noindex",
+  "primary_query_ru": "ледяные горы масленица история русские горки",
+  "og_image_id": "rc:image:sport:ledyanye-gory:atkinson-1804-960"
+ },
+ "media": [
+  {
+   "media_id": "rc:media:sport:ledyanye-gory:page",
+   "kind": "page",
+   "platform": "web",
+   "status": "review",
+   "path": "muzei/sport/day-01jan-ledyanye-gory.html"
+  },
+  {
+   "media_id": "rc:media:sport:ledyanye-gory:shtorka",
+   "kind": "interactive",
+   "platform": "web",
+   "status": "review",
+   "path": "muzei/sport/day-01jan-ledyanye-gory.html#shtorka"
+  },
+  {
+   "media_id": "rc:media:sport:ledyanye-gory:quiz",
+   "kind": "interactive",
+   "platform": "web",
+   "status": "review",
+   "path": "muzei/sport/day-01jan-ledyanye-gory.html#quiz-wrap"
+  }
+ ],
+ "publication": {
+  "blockers": [
+   "«Да» Сергея на публикацию",
+   "Независимая приёмка и слияние ветки"
+  ],
+  "approvals": {
+   "fact_check": false,
+   "rights": true,
+   "editorial": false
+  },
+  "target_path": "muzei/sport/day-01jan-ledyanye-gory.html"
+ }
+}
