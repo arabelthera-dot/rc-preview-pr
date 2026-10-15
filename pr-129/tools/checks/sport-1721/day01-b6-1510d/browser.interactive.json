@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "page_sha256": "052733b6040b622ea178b9ff60548046fa32ce2319455b56131c5abe1dc98376",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-15T09:38:22.051Z",
+  "browser": "151.0.7922.173",
+  "plan": "../day01-plan.mjs",
+  "inputs": {
+    "../../../../muzei/sport/day-01jan-ledyanye-gory.html": "052733b6040b622ea178b9ff60548046fa32ce2319455b56131c5abe1dc98376",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../day01-plan.mjs": "5aa82fe21dbe66fa9c939583c68c4e6f517dbeaf49cfee832974de9a6cb562e5",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/museum-glavnaya.css": "9c163aa68b5d239e6c7cb16cc24b0314ee7d49bf91103fe383190c161cd85e35",
+    "../../../../assets/museum-den.css": "41c2d7f883671cfc8383486d3aba2e5e2bb9d9d871cedb20dfd81a469bfd49f6",
+    "../../../../muzei/sport/media/ledyanye-gory/atkinson-1804-480.webp": "91dbdcc87929967dddacaaded88edd7edb761aca49289b5c0cd2927e29b7a783",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-firstlook.js": "ddf84e248e5beef5eae33ea19a69b5ca21f684d1a50cdfbdfb6d0aacf56aebe6",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../muzei/sport/calendar-sport.js": "401833458eba60a2483258bf72eda40d8c3833891a997dfd6fe9174472f4d443",
+    "../../../../assets/museum-calendar-month.js": "f1b090559f53b8aeac6edc3d287e24e31f250db8606015cbfc79cd86f41b3346",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "08c2846a956b63c95bbca7bac1ee4e560d774502e8364f28eb607a716eedf3d6",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../muzei/sport/media/ledyanye-gory/geysler-neva-480.webp": "c67096c8aec494087c8e4fc9933d0ac922026a55491df93997735b636ec74e3a",
+    "../../../../muzei/sport/media/ledyanye-gory/serracapriola-1817-480.webp": "eaaf5efbf99e4d9d4e64f356d84e3e6786276777f4bc18c8ceb73c3c5591910c",
+    "../../../../muzei/sport/media/ledyanye-gory/timm-1858-480.webp": "4808a28ec2938b9e8be29cbf533c54478c2894614e8c87c2c0589045d0fcfec9",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../muzei/sport/media/ledyanye-gory/switchback-1884-461.webp": "d8ca93682d11987c74e0933e92bffbd471b2fe5a534624b2a7fad4f573a0e07b",
+    "entry-390.png": "daa7c7f3bb252d1c4bf1812578d0734b157457e0f7afbf272ac46b7e615ade2c",
+    "entry-390.json": "c783bceb6afb4005303134f678d7b0c120ef746de0cdab43709517efed00a93e",
+    "wrong-390.png": "bb93bb2a2b68e01ab1d75ca3d47cad1551e6ed2c530920ea0be4ef59454f93a1",
+    "wrong-390.json": "4b50db52e4f72348f1a467ddb5be1e73c0c82bba70d263edac7e85edfd0614f5",
+    "../../../../muzei/sport/media/ledyanye-gory/gruzinsky-1889-480.webp": "5731f22382b95647ab92bdeec50406fc54adb7916b16a598534de373f8ed17f8",
+    "../../../../muzei/sport/media/ledyanye-gory/lubok-1839-448.webp": "f40482f0e84ffed7e9d13ad3814ff1e6d680a2ae0f202be6e23b00702309a1f5",
+    "../../../../muzei/sport/media/ledyanye-gory/solomatkin-1878-480.webp": "533603ba8a92cc49d7875c90cf2e3d3825c23e95ecd095681fc2a4b8f359dbd0",
+    "../../../../muzei/sport/media/ledyanye-gory/surikov-1891-480.webp": "a6cebc16bc35d97213422fd37e44c995047a04cf590e8284c2a72ea151aff783",
+    "../../../../muzei/sport/media/ledyanye-gory/russian-mountains-1807-480.webp": "835452d36a36a9540eb59a5d9807048f0f623c16ff814db86e187c094a2fc163",
+    "../../../../muzei/sport/media/ledyanye-gory/paris-roule-1816-480.webp": "7d58c25fe2dcda938d8279000f5170a4a15cc437a807bf480db1a67ba785eb7a",
+    "../../../../muzei/sport/media/ledyanye-gory/serracapriola-1817-960.webp": "746f8c2680271e8a802304a1c03b942e0527758f0785f38220d856d6ad7a20e6",
+    "../../../../muzei/sport/media/ledyanye-gory/gorka-2021-960.webp": "c768e843fa5361baa5cb441ad8b681db27b368df3f348080529d0e225611d902",
+    "reset-390.png": "6f707398bdde8e8cedffaf22e43e06a3b0b8ec121f84c22b87f28ea04fbcbe05",
+    "reset-390.json": "b55e0ae3186158abddd1de0d359c58779348f540275f7e87e92d638c06e9d0bd",
+    "mobile-390.png": "9ec9be000801e17caa70fe733e9c4b2bedd487b3526bf115c67cac25630e0caa",
+    "mobile-390.json": "859f058163b06e15feb39d0512ce14b978768d48fab038cd6d85ca740005a27b",
+    "../../../../muzei/sport/media/ledyanye-gory/atkinson-1804-960.webp": "a3e98fb7fad573217732bdb01aa91e062e0ab3cb488ddfa18e22a4632c63a08b",
+    "../../../../muzei/sport/media/ledyanye-gory/delabart-1795-480.webp": "ff1cf36be148b81c981af62b4da695864ce6c83d8455ab340648361e23d7ad5b",
+    "../../../../muzei/sport/media/ledyanye-gory/kustodiev-1919-480.webp": "d1e172bcd0d042ffdf8743a0d8a0c08da6158c26e0b2d6c72f78813f90b33b46",
+    "../../../../muzei/sport/media/ledyanye-gory/kustodiev-1916-480.webp": "826f284dfb173de8d877e3c559fc0f9d24845e7474fcd58e93cc28f5f19ed3bb",
+    "../../../../muzei/sport/media/ledyanye-gory/spb-1874-480.webp": "d6a08e8509fc7ec8ab191735e68fe947a5957999a1c68a21e032abb2517dc8da",
+    "../../../../muzei/sport/media/ledyanye-gory/rijks-1903-480.webp": "e168a87ecf57171939b41e0c881daa21258c0ddaaeead8b5373d9e58b7e054c3",
+    "../../../../muzei/sport/media/ledyanye-gory/orenburg-2020-480.webp": "ab23f67f68111c0ebf72ca6dd481bf9ffbfa2f8c444a0c47ce8ed533c2131447",
+    "../../../../muzei/sport/media/ledyanye-gory/rastrelli-1752-794.webp": "7ce724ad9fc716990401102e97827479ecca42da06eec2ccc52d90fd12c2da0e",
+    "../../../../muzei/sport/media/ledyanye-gory/paris-belleville-1817-409.webp": "6d2afc3808530e2adffdf6ec92f2ec8b607e504b4c6c6460e0fdd3bc95d92d33",
+    "../../../../muzei/sport/media/ledyanye-gory/paris-tivoli-1818-482.webp": "70bc457a48164ee65700fe96f59da80eb4b33a685b8214074ce853e3c1a57f8e",
+    "../../../../muzei/sport/media/ledyanye-gory/stockholm-1830-480.webp": "6244da0c9f7c50eef6aa12ad87e21c1574346ebec7040e51580a6db919228189",
+    "../../../../muzei/sport/media/ledyanye-gory/cheret-1889-480.webp": "4707c3aa1adf03762b0fc710afa5103975278fb59a835ada08cf1d27c97cb1d9",
+    "mobile-1440.png": "fe4f3eb1066bc5afcae721fd61c095df58d5131c9d79f3c22be33f9c27ca398e",
+    "mobile-1440.json": "8e8ccdbd3cc053994b8ad352da48514b5a8bdd4dc6ae73257d6439a4cec9a02e",
+    "nojs-390.png": "7165754c8398b15664e2aff34d8c9659abb772797cd2f1c9c3f7b9ad486d531d",
+    "nojs-390.json": "2b933e75d73639d2ff8865b15753722e3a68204bde7a73f2a65ca890f9285114",
+    "score-390.png": "fa5984c8fbba74a50b26440e23c2a8ecae03c6f88402368be744a2edd9a4a603",
+    "score-390.json": "925a65a4f35aa85c72f534f7f3747573e3d3d0579be5c71686467a813bfcd7c0",
+    "main-390.png": "ae533af0cbf3bbb5b03bbe1c3d4bd2b936cee3ab81df1358407c0a97164eadc6",
+    "main-390.json": "a229c486fb96f73ceeed48f58a10bc1dac938b5e093013d2d9d783e94d13f8cd",
+    "empty-390.png": "051d8032a8aa51045fdc1f2066bee9d77cdbb3320a2126a4dba8bd0ac7c7b8aa",
+    "empty-390.json": "9dc7baef364140b9c84d5f5c1ccdc981974c9d5008761e4eeaff204f15225d1a"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

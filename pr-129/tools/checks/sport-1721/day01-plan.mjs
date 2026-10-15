@@ -1,8 +1,8 @@
 // B6-сценарии страницы 1 января Музея спорта (ледяные горы), карточка #1721.
-// Награды: шторка M-47 — 20, викторина — 4 × 20; знаменатель 100. Прогресс не хранится:
+// Награды: шторка M-47 — 20, викторина — 5 × 16; знаменатель 100. Прогресс не хранится:
 // перезагрузка — чистый старт, это и есть «начать заново» без очистки браузера.
 const score = async p => Number(await p.locator('#score').innerText());
-const RIGHT = [0, 1, 2, 0];
+const RIGHT = [0, 1, 2, 0, 1];
 async function shutter(p) {
   const r = p.locator('#firstlook input[type=range]');
   await r.scrollIntoViewIfNeeded();
@@ -19,7 +19,7 @@ export const scenarios = {
     check('Fresh score', await score(page), 0);
     check('Fresh rank', (await page.locator('#dayTxt').innerText()).includes('Гость музея'), true);
     await step('Answer first question right', () => page.locator('#quiz .mq-opt').nth(0).click());
-    check('Earned for answered', await score(page), 20);
+    check('Earned for answered', await score(page), 16);
     await step('Reload', () => page.reload());
     check('No phantom progress after reload', await score(page), 0);
   },
@@ -72,7 +72,7 @@ export const scenarios = {
     await step('Scroll to shutter', () => page.locator('#firstlook').scrollIntoViewIfNeeded());
     await page.waitForFunction(() => [...document.querySelectorAll('#firstlook img')].every(i => i.complete && i.naturalWidth > 0)).catch(() => {});
     check('Shutter images loaded', await page.locator('#firstlook img').evaluateAll(a => a.every(i => i.complete && i.naturalWidth > 0)), true);
-    check('Four questions', (await page.locator('#quiz .mq-step').innerText()).trim(), '1 / 4');
+    check('Five questions', (await page.locator('#quiz .mq-step').innerText()).trim(), '1 / 5');
     check('Three choices', await page.locator('#quiz .mq-opt').count(), 3);
     check('Hero loaded', await page.locator('#hero img').evaluate(i => i.complete && i.naturalWidth > 0), true);
     check('Calendar rendered', await page.locator('#calbox *').count() > 0, true);

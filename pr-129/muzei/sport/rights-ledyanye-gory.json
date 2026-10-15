@@ -508,5 +508,20 @@
   "modified": "Уменьшение и перевод в WebP, содержание не менялось",
   "date": "2021-01-04",
   "credit": "Own work"
+ },
+ {
+  "id": "switchback-1884-461",
+  "title": "File:Thompsons_Switchback_Railway_1884.jpg",
+  "url": "https://upload.wikimedia.org/wikipedia/commons/d/db/Thompsons_Switchback_Railway_1884.jpg",
+  "artist": "автор неизвестен",
+  "license": "Public domain (PD-Art)",
+  "description": "Гравюра 1884 года: деревянная эстакада горок вдоль пляжа Кони-Айленда, по ней едет вагончик, внизу гуляет публика, над павильоном флаг США",
+  "file": "media/ledyanye-gory/switchback-1884-461.webp",
+  "sha256": "d8ca93682d11987c74e0933e92bffbd471b2fe5a534624b2a7fad4f573a0e07b",
+  "checked": "2026-10-15",
+  "source": "https://commons.wikimedia.org/wiki/File:Thompsons_Switchback_Railway_1884.jpg",
+  "modified": "Перевод в WebP в исходном размере 461×461, содержание не менялось",
+  "date": "1884",
+  "credit": "Основание: общественное достояние — гравюра 1884 года, автор неизвестен, с публикации прошло больше 70 лет; репродукция двумерной работы (PD-Art)"
  }
 ]

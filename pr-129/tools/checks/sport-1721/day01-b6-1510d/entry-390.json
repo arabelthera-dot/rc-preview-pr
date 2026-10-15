@@ -1,0 +1,40 @@
+{
+  "test_id": "entry-390",
+  "code": "entry",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/sport/day-01jan-ledyanye-gory.html",
+  "steps": [
+    "Answer first question right",
+    "Reload"
+  ],
+  "checks": [
+    {
+      "label": "Fresh score",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Fresh rank",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Earned for answered",
+      "actual": 16,
+      "expected": 16,
+      "ok": true
+    },
+    {
+      "label": "No phantom progress after reload",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "entry-390.png",
+  "status": "pass"
+}

@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "page_sha256": "1d5aa09851c78ceab93c68780bc37e3a9fab456a71c7ce40fbf314439d65f661",
+  "page_sha256": "052733b6040b622ea178b9ff60548046fa32ce2319455b56131c5abe1dc98376",
   "runner": "../../tools/b6/run-b6.mjs",
-  "created_at": "2026-10-15T09:27:54.237Z",
+  "created_at": "2026-10-15T09:38:22.051Z",
   "browser": "151.0.7922.173",
   "plan": "../../tools/checks/sport-1721/day01-plan.mjs",
   "inputs": {
-    "day-01jan-ledyanye-gory.html": "1d5aa09851c78ceab93c68780bc37e3a9fab456a71c7ce40fbf314439d65f661",
+    "day-01jan-ledyanye-gory.html": "052733b6040b622ea178b9ff60548046fa32ce2319455b56131c5abe1dc98376",
     "../../tools/b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
-    "../../tools/checks/sport-1721/day01-plan.mjs": "add18d3d73fb507bc849df9a25cafc54e71eb92d12623d1789a2aa1c9716bf7f",
+    "../../tools/checks/sport-1721/day01-plan.mjs": "5aa82fe21dbe66fa9c939583c68c4e6f517dbeaf49cfee832974de9a6cb562e5",
     "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
     "../../assets/museum-glavnaya.css": "9c163aa68b5d239e6c7cb16cc24b0314ee7d49bf91103fe383190c161cd85e35",
     "../../assets/museum-den.css": "41c2d7f883671cfc8383486d3aba2e5e2bb9d9d871cedb20dfd81a469bfd49f6",
@@ -28,13 +28,11 @@
     "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
     "../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
     "../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
-    "media/ledyanye-gory/stockholm-1830-480.webp": "6244da0c9f7c50eef6aa12ad87e21c1574346ebec7040e51580a6db919228189",
-    "media/ledyanye-gory/cheret-1889-480.webp": "4707c3aa1adf03762b0fc710afa5103975278fb59a835ada08cf1d27c97cb1d9",
-    "media/ledyanye-gory/paris-tivoli-1818-482.webp": "70bc457a48164ee65700fe96f59da80eb4b33a685b8214074ce853e3c1a57f8e",
-    "../../tools/checks/sport-1721/day01-b6-1510/entry-390.png": "c4817066021062f9a15e02590799207656865f9a219a7ef31e9e1119574b3f9b",
-    "../../tools/checks/sport-1721/day01-b6-1510/entry-390.json": "0ae5eea74b30eb02f72dfd38766b181488b41d49476aa49565193a0666b6d085",
-    "../../tools/checks/sport-1721/day01-b6-1510/wrong-390.png": "a7a989eb87525142ad6d5619b8d1a20c010cab36342f838f01d598f1a3835b02",
-    "../../tools/checks/sport-1721/day01-b6-1510/wrong-390.json": "4b50db52e4f72348f1a467ddb5be1e73c0c82bba70d263edac7e85edfd0614f5",
+    "media/ledyanye-gory/switchback-1884-461.webp": "d8ca93682d11987c74e0933e92bffbd471b2fe5a534624b2a7fad4f573a0e07b",
+    "../../tools/checks/sport-1721/day01-b6-1510d/entry-390.png": "daa7c7f3bb252d1c4bf1812578d0734b157457e0f7afbf272ac46b7e615ade2c",
+    "../../tools/checks/sport-1721/day01-b6-1510d/entry-390.json": "c783bceb6afb4005303134f678d7b0c120ef746de0cdab43709517efed00a93e",
+    "../../tools/checks/sport-1721/day01-b6-1510d/wrong-390.png": "bb93bb2a2b68e01ab1d75ca3d47cad1551e6ed2c530920ea0be4ef59454f93a1",
+    "../../tools/checks/sport-1721/day01-b6-1510d/wrong-390.json": "4b50db52e4f72348f1a467ddb5be1e73c0c82bba70d263edac7e85edfd0614f5",
     "media/ledyanye-gory/gruzinsky-1889-480.webp": "5731f22382b95647ab92bdeec50406fc54adb7916b16a598534de373f8ed17f8",
     "media/ledyanye-gory/lubok-1839-448.webp": "f40482f0e84ffed7e9d13ad3814ff1e6d680a2ae0f202be6e23b00702309a1f5",
     "media/ledyanye-gory/solomatkin-1878-480.webp": "533603ba8a92cc49d7875c90cf2e3d3825c23e95ecd095681fc2a4b8f359dbd0",
@@ -43,10 +41,10 @@
     "media/ledyanye-gory/paris-roule-1816-480.webp": "7d58c25fe2dcda938d8279000f5170a4a15cc437a807bf480db1a67ba785eb7a",
     "media/ledyanye-gory/serracapriola-1817-960.webp": "746f8c2680271e8a802304a1c03b942e0527758f0785f38220d856d6ad7a20e6",
     "media/ledyanye-gory/gorka-2021-960.webp": "c768e843fa5361baa5cb441ad8b681db27b368df3f348080529d0e225611d902",
-    "../../tools/checks/sport-1721/day01-b6-1510/reset-390.png": "1117108a28ef32de803a84defbf776f66ce1cc9857ed3e8278b8fa77eb36e428",
-    "../../tools/checks/sport-1721/day01-b6-1510/reset-390.json": "b55e0ae3186158abddd1de0d359c58779348f540275f7e87e92d638c06e9d0bd",
-    "../../tools/checks/sport-1721/day01-b6-1510/mobile-390.png": "b6c604f01252d82de9347846f67a8b84b807ea9ab17d3b487cf7ee239f3f7a35",
-    "../../tools/checks/sport-1721/day01-b6-1510/mobile-390.json": "859f058163b06e15feb39d0512ce14b978768d48fab038cd6d85ca740005a27b",
+    "../../tools/checks/sport-1721/day01-b6-1510d/reset-390.png": "6f707398bdde8e8cedffaf22e43e06a3b0b8ec121f84c22b87f28ea04fbcbe05",
+    "../../tools/checks/sport-1721/day01-b6-1510d/reset-390.json": "b55e0ae3186158abddd1de0d359c58779348f540275f7e87e92d638c06e9d0bd",
+    "../../tools/checks/sport-1721/day01-b6-1510d/mobile-390.png": "9ec9be000801e17caa70fe733e9c4b2bedd487b3526bf115c67cac25630e0caa",
+    "../../tools/checks/sport-1721/day01-b6-1510d/mobile-390.json": "859f058163b06e15feb39d0512ce14b978768d48fab038cd6d85ca740005a27b",
     "media/ledyanye-gory/atkinson-1804-960.webp": "a3e98fb7fad573217732bdb01aa91e062e0ab3cb488ddfa18e22a4632c63a08b",
     "media/ledyanye-gory/delabart-1795-480.webp": "ff1cf36be148b81c981af62b4da695864ce6c83d8455ab340648361e23d7ad5b",
     "media/ledyanye-gory/kustodiev-1919-480.webp": "d1e172bcd0d042ffdf8743a0d8a0c08da6158c26e0b2d6c72f78813f90b33b46",
@@ -56,16 +54,19 @@
     "media/ledyanye-gory/orenburg-2020-480.webp": "ab23f67f68111c0ebf72ca6dd481bf9ffbfa2f8c444a0c47ce8ed533c2131447",
     "media/ledyanye-gory/rastrelli-1752-794.webp": "7ce724ad9fc716990401102e97827479ecca42da06eec2ccc52d90fd12c2da0e",
     "media/ledyanye-gory/paris-belleville-1817-409.webp": "6d2afc3808530e2adffdf6ec92f2ec8b607e504b4c6c6460e0fdd3bc95d92d33",
-    "../../tools/checks/sport-1721/day01-b6-1510/mobile-1440.png": "afdb578bc4d6c88c487e55353b4637c7023a99c9be692e2c078942c2229a07c7",
-    "../../tools/checks/sport-1721/day01-b6-1510/mobile-1440.json": "8e8ccdbd3cc053994b8ad352da48514b5a8bdd4dc6ae73257d6439a4cec9a02e",
-    "../../tools/checks/sport-1721/day01-b6-1510/nojs-390.png": "81a15d7c4622f9f5f6f826794e8a779c96552e8209803ed204c56632ddea7ff5",
-    "../../tools/checks/sport-1721/day01-b6-1510/nojs-390.json": "2b933e75d73639d2ff8865b15753722e3a68204bde7a73f2a65ca890f9285114",
-    "../../tools/checks/sport-1721/day01-b6-1510/score-390.png": "69fe53e1f4de13c5ccd46c5d9bde9ce64c2db63874abce5207cce78a2ad722c8",
-    "../../tools/checks/sport-1721/day01-b6-1510/score-390.json": "925a65a4f35aa85c72f534f7f3747573e3d3d0579be5c71686467a813bfcd7c0",
-    "../../tools/checks/sport-1721/day01-b6-1510/main-390.png": "12faed04d3e288f26fe5d6e5669479b6ad366ebe0c90223b8ff1486f5e764bbc",
-    "../../tools/checks/sport-1721/day01-b6-1510/main-390.json": "a229c486fb96f73ceeed48f58a10bc1dac938b5e093013d2d9d783e94d13f8cd",
-    "../../tools/checks/sport-1721/day01-b6-1510/empty-390.png": "acfff3ed892f3670b25c180d40e7eb57440965cd5d7bf24cbf90096f10feef1d",
-    "../../tools/checks/sport-1721/day01-b6-1510/empty-390.json": "7cdc5f46f84080a240d3ba83ea1fdfd5da3e1fe6771379bc70c6b9aaaeccf4b7"
+    "media/ledyanye-gory/paris-tivoli-1818-482.webp": "70bc457a48164ee65700fe96f59da80eb4b33a685b8214074ce853e3c1a57f8e",
+    "media/ledyanye-gory/stockholm-1830-480.webp": "6244da0c9f7c50eef6aa12ad87e21c1574346ebec7040e51580a6db919228189",
+    "media/ledyanye-gory/cheret-1889-480.webp": "4707c3aa1adf03762b0fc710afa5103975278fb59a835ada08cf1d27c97cb1d9",
+    "../../tools/checks/sport-1721/day01-b6-1510d/mobile-1440.png": "fe4f3eb1066bc5afcae721fd61c095df58d5131c9d79f3c22be33f9c27ca398e",
+    "../../tools/checks/sport-1721/day01-b6-1510d/mobile-1440.json": "8e8ccdbd3cc053994b8ad352da48514b5a8bdd4dc6ae73257d6439a4cec9a02e",
+    "../../tools/checks/sport-1721/day01-b6-1510d/nojs-390.png": "7165754c8398b15664e2aff34d8c9659abb772797cd2f1c9c3f7b9ad486d531d",
+    "../../tools/checks/sport-1721/day01-b6-1510d/nojs-390.json": "2b933e75d73639d2ff8865b15753722e3a68204bde7a73f2a65ca890f9285114",
+    "../../tools/checks/sport-1721/day01-b6-1510d/score-390.png": "fa5984c8fbba74a50b26440e23c2a8ecae03c6f88402368be744a2edd9a4a603",
+    "../../tools/checks/sport-1721/day01-b6-1510d/score-390.json": "925a65a4f35aa85c72f534f7f3747573e3d3d0579be5c71686467a813bfcd7c0",
+    "../../tools/checks/sport-1721/day01-b6-1510d/main-390.png": "ae533af0cbf3bbb5b03bbe1c3d4bd2b936cee3ab81df1358407c0a97164eadc6",
+    "../../tools/checks/sport-1721/day01-b6-1510d/main-390.json": "a229c486fb96f73ceeed48f58a10bc1dac938b5e093013d2d9d783e94d13f8cd",
+    "../../tools/checks/sport-1721/day01-b6-1510d/empty-390.png": "051d8032a8aa51045fdc1f2066bee9d77cdbb3320a2126a4dba8bd0ac7c7b8aa",
+    "../../tools/checks/sport-1721/day01-b6-1510d/empty-390.json": "9dc7baef364140b9c84d5f5c1ccdc981974c9d5008761e4eeaff204f15225d1a"
   },
   "scenarios": {
     "entry": [
@@ -75,7 +76,7 @@
         "automated": true,
         "width": 390,
         "javascript_enabled": true,
-        "evidence": "../../tools/checks/sport-1721/day01-b6-1510/entry-390.json"
+        "evidence": "../../tools/checks/sport-1721/day01-b6-1510d/entry-390.json"
       }
     ],
     "wrong": [
@@ -85,7 +86,7 @@
         "automated": true,
         "width": 390,
         "javascript_enabled": true,
-        "evidence": "../../tools/checks/sport-1721/day01-b6-1510/wrong-390.json"
+        "evidence": "../../tools/checks/sport-1721/day01-b6-1510d/wrong-390.json"
       }
     ],
     "reset": [
@@ -95,7 +96,7 @@
         "automated": true,
         "width": 390,
         "javascript_enabled": true,
-        "evidence": "../../tools/checks/sport-1721/day01-b6-1510/reset-390.json"
+        "evidence": "../../tools/checks/sport-1721/day01-b6-1510d/reset-390.json"
       }
     ],
     "mobile": [
@@ -105,7 +106,7 @@
         "automated": true,
         "width": 390,
         "javascript_enabled": true,
-        "evidence": "../../tools/checks/sport-1721/day01-b6-1510/mobile-390.json"
+        "evidence": "../../tools/checks/sport-1721/day01-b6-1510d/mobile-390.json"
       },
       {
         "test_id": "mobile-1440",
@@ -113,7 +114,7 @@
         "automated": true,
         "width": 1440,
         "javascript_enabled": true,
-        "evidence": "../../tools/checks/sport-1721/day01-b6-1510/mobile-1440.json"
+        "evidence": "../../tools/checks/sport-1721/day01-b6-1510d/mobile-1440.json"
       }
     ],
     "nojs": [
@@ -123,7 +124,7 @@
         "automated": true,
         "width": 390,
         "javascript_enabled": false,
-        "evidence": "../../tools/checks/sport-1721/day01-b6-1510/nojs-390.json"
+        "evidence": "../../tools/checks/sport-1721/day01-b6-1510d/nojs-390.json"
       }
     ],
     "score": [
@@ -133,7 +134,7 @@
         "automated": true,
         "width": 390,
         "javascript_enabled": true,
-        "evidence": "../../tools/checks/sport-1721/day01-b6-1510/score-390.json"
+        "evidence": "../../tools/checks/sport-1721/day01-b6-1510d/score-390.json"
       }
     ],
     "main": [
@@ -143,7 +144,7 @@
         "automated": true,
         "width": 390,
         "javascript_enabled": true,
-        "evidence": "../../tools/checks/sport-1721/day01-b6-1510/main-390.json"
+        "evidence": "../../tools/checks/sport-1721/day01-b6-1510d/main-390.json"
       }
     ],
     "empty": [
@@ -153,7 +154,7 @@
         "automated": true,
         "width": 390,
         "javascript_enabled": true,
-        "evidence": "../../tools/checks/sport-1721/day01-b6-1510/empty-390.json"
+        "evidence": "../../tools/checks/sport-1721/day01-b6-1510d/empty-390.json"
       }
     ]
   },

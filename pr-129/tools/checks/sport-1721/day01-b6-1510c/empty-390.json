@@ -1,0 +1,57 @@
+{
+  "test_id": "empty-390",
+  "code": "empty",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/sport/day-01jan-ledyanye-gory.html",
+  "steps": [
+    "Scroll to shutter"
+  ],
+  "checks": [
+    {
+      "label": "Shutter has two real images",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Shutter images loaded",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Five questions",
+      "actual": "1 / 5",
+      "expected": "1 / 5",
+      "ok": true
+    },
+    {
+      "label": "Three choices",
+      "actual": 3,
+      "expected": 3,
+      "ok": true
+    },
+    {
+      "label": "Hero loaded",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Calendar rendered",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "At least 15 images",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "empty-390.png",
+  "status": "pass"
+}
