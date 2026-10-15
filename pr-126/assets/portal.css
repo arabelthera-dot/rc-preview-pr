@@ -46,6 +46,8 @@ a{color:var(--gold-l)}
 }
 .hero-lead .hook{font-size:clamp(17px,2.3vw,21px);color:#cfd8f4;max-width:760px;margin:0 0 22px}
 .btns{display:flex;gap:12px;flex-wrap:wrap}
+.btns-gap{margin-top:18px}
+.lead-wide{max-width:760px;color:#cfd8f4}
 .btn{
   display:inline-block;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600;
   font-size:15px;transition:transform .15s ease,box-shadow .15s ease;
