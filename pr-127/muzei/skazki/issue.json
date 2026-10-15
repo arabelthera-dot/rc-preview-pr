@@ -1,0 +1,307 @@
+{
+ "schema_version": "1.0.0",
+ "museum_id": "rc:museum:skazki",
+ "issue_id": "rc:issue:skazki:museum-home",
+ "content_family_id": "rc:family:skazki:museum-home",
+ "version": "1.0.0",
+ "identity": {
+  "title_ru": "Детский музей русских народных сказок",
+  "slug": "museum-home",
+  "calendar_slot": "01-01",
+  "museum_name_ru": "Детский музей русских народных сказок",
+  "language": "ru",
+  "summary_ru": "Вход в музей: обложка с Бабой-ягой Билибина, главный вопрос музея с двумя иллюстрациями-моментами, тринадцать залов, вход в календарь года и маршрут «куда дальше»."
+ },
+ "lifecycle": {
+  "current": "preview",
+  "history": [
+   {
+    "status": "preview",
+    "at": "2026-10-15T07:00:00Z",
+    "actor": "arabelthera-dot",
+    "note_ru": "Заглушка главной заменена страницей музея (коммит 8e2ede94)."
+   },
+   {
+    "status": "preview",
+    "at": "2026-10-15T08:34:00Z",
+    "actor": "arabelthera-dot",
+    "note_ru": "Вид перенесён в общий assets/museum-glavnaya.css по образцу главной спорта; три иллюстрации Билибина с Commons; хук сокращён до одной фразы (коммит de47f3d8)."
+   },
+   {
+    "status": "preview",
+    "at": "2026-10-15T10:00:00Z",
+    "actor": "arabelthera-dot",
+    "note_ru": "Сохранён паспорт выпуска и rights.json; og:image переведён с несуществующего og/og-default.jpg на assets/og-default.jpg."
+   }
+  ]
+ },
+ "narrative": {
+  "visitor_promise_ru": "Ребёнок и взрослый рядом поймут, что сказку рассказывали люди и каждый менял её по-своему, и выберут сказку дня или зал.",
+  "hook_ru": "Баба-яга живёт на границе миров, и её изба поворачивается не просто так.",
+  "turn_ru": "Рисунок Билибина подсказывает то, что рассказчик оставил без слов: куколку в кармане, зверей и травы в рамке.",
+  "conclusion_ru": "Сказка живёт, пока её рассказывают, — и следующим рассказчиком становится сам посетитель.",
+  "depths": {
+   "see": "Обложка с Бабой-ягой и два момента-иллюстрации с короткой подсказкой, что рассмотреть.",
+   "understand": "Главный вопрос «Как эта сказка рассказана — и как расскажешь её ты?» связывает рисунок, текст записи и пересказ.",
+   "research": "Тринадцать залов и календарь года ведут к страницам отдельных сказок с источниками по академическому Афанасьеву."
+  },
+  "ideas_ru": [
+   "Обложка-вопрос: Баба-яга Билибина и вопрос о поворачивающейся избе — вход через загадку сказки.",
+   "Вход через рассказчика: бабушка у печки и солдат на привале рассказывают одну сказку по-разному.",
+   "Вход через календарь: сегодняшняя сказка дня сразу первым экраном."
+  ],
+  "choice_ru": "Выбрана первая идея: реальная иллюстрация Билибина даёт сильный первый экран без генерации, а загадка избы цепляет ребёнка; рассказчик раскрывается в главном вопросе ниже, календарь — второй кнопкой.",
+  "finding_ru": "А ты знал, что в рамке рисунка Билибина к «Сестрице Алёнушке и братцу Иванушке» спрятаны звери и травы — художник продолжает сказку прямо на полях?"
+ },
+ "interactive": {
+  "title_ru": "Рассмотри рисунок",
+  "type": "illustration_look_prompt",
+  "visitor_action_ru": "Посетитель рассматривает две иллюстрации Билибина по подсказке «что художник рассказал без слов» и выбирает вход: календарь или зал.",
+  "exclusive_insight_ru": "Иллюстрация читается как отдельное прочтение эпизода сказки, а не украшение.",
+  "wow_effect_ru": "Деталь, найденная самим ребёнком на рисунке, — куколка, звери в рамке.",
+  "text_alternative_ru": "Подсказки к рисункам даны текстом под каждой картинкой; у каждой картинки описательный alt.",
+  "engine": "inline-home-moments-v1",
+  "unique_to_issue": true
+ },
+ "claims": [
+  {
+   "claim_id": "rc:claim:skazki:home:afanasyev-600",
+   "text_ru": "А. Н. Афанасьев собрал и издал около 600 текстов русских народных сказок («Народные русские сказки»).",
+   "kind": "fact",
+   "key_claim": false,
+   "confidence": "needs_review",
+   "source_ids": [
+    "rc:source:feb:skazki-afanasyev"
+   ]
+  },
+  {
+   "claim_id": "rc:claim:skazki:home:bilibin-vasilisa",
+   "text_ru": "Иван Билибин нарисовал иллюстрации и обложку к сказке «Василиса Прекрасная»; книжка вышла в серии «Сказки» Экспедиции заготовления государственных бумаг (ценз. 1902).",
+   "kind": "fact",
+   "key_claim": true,
+   "confidence": "verified",
+   "source_ids": [
+    "rc:source:rsl:vasilisa-bilibin-1902",
+    "rc:source:commons:bilibin-vasilisa-cover"
+   ]
+  },
+  {
+   "claim_id": "rc:claim:skazki:home:bilibin-alyonushka",
+   "text_ru": "Иллюстрация Билибина к сказке «Сестрица Алёнушка и братец Иванушка» датирована 1901 годом.",
+   "kind": "fact",
+   "key_claim": false,
+   "confidence": "verified",
+   "source_ids": [
+    "rc:source:commons:bilibin-alyonushka"
+   ]
+  }
+ ],
+ "sources": [
+  {
+   "source_id": "rc:source:feb:skazki-afanasyev",
+   "title_ru": "ЭНИ «Сказки»: Народные русские сказки А. Н. Афанасьева",
+   "publisher_ru": "Фундаментальная электронная библиотека «Русская литература и фольклор» (ФЭБ)",
+   "url": "https://feb-web.ru/feb/skazki/",
+   "source_type": "library",
+   "language": "ru",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:bilibin-baba-yaga",
+   "title_ru": "Bilibin. Baba Yaga",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Bilibin._Baba_Yaga.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:bilibin-vasilisa-cover",
+   "title_ru": "Vasilisa the Beautiful (Bilibin) — cover",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Vasilisa_the_Beautiful_(Bilibin)_-_cover.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:commons:bilibin-alyonushka",
+   "title_ru": "Ivan Bilibin — Sister Alyonushka and Brother Ivanushka, 1901",
+   "publisher_ru": "Wikimedia Commons",
+   "url": "https://commons.wikimedia.org/wiki/File:Ivan_Bilibin_-_illustration-for-the-russian-fairy-story-sister-alyonushka-and-brother-ivanushka-1901-21.jpg",
+   "source_type": "official_catalog",
+   "language": "en",
+   "checked_at": "2026-10-15"
+  },
+  {
+   "source_id": "rc:source:rsl:vasilisa-bilibin-1902",
+   "title_ru": "Василиса прекрасная / Рис. И. Я. Билибина. — СПб.: Экспедиция заготовления гос. бумаг, ценз. 1902. — (Сказки)",
+   "publisher_ru": "Российская государственная библиотека, электронный каталог (запись 01003702991)",
+   "url": "https://search.rsl.ru/ru/record/01003702991",
+   "source_type": "library",
+   "language": "ru",
+   "checked_at": "2026-10-15"
+  }
+ ],
+ "objects": [
+  {
+   "object_id": "rc:object:skazki:bilibin-baba-yaga",
+   "object_type": "book-illustration",
+   "title_ru": "Баба-яга. Иллюстрация к сказке «Василиса Прекрасная»",
+   "date_display_ru": "1900",
+   "attribution_ru": "Иван Яковлевич Билибин (1876–1942)",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:bilibin-baba-yaga"
+   ]
+  },
+  {
+   "object_id": "rc:object:skazki:bilibin-vasilisa-cover",
+   "object_type": "book-cover",
+   "title_ru": "Обложка книжки «Василиса Прекрасная»",
+   "date_display_ru": "ценз. 1902",
+   "attribution_ru": "Иван Яковлевич Билибин (1876–1942)",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:bilibin-vasilisa-cover",
+    "rc:source:rsl:vasilisa-bilibin-1902"
+   ]
+  },
+  {
+   "object_id": "rc:object:skazki:bilibin-alyonushka",
+   "object_type": "book-illustration",
+   "title_ru": "Иллюстрация к сказке «Сестрица Алёнушка и братец Иванушка»",
+   "date_display_ru": "1901",
+   "attribution_ru": "Иван Яковлевич Билибин (1876–1942)",
+   "holder_ru": "Wikimedia Commons (цифровая копия)",
+   "source_ids": [
+    "rc:source:commons:bilibin-alyonushka"
+   ]
+  }
+ ],
+ "images": [
+  {
+   "image_id": "rc:image:skazki:home:baba-yaga",
+   "object_id": "rc:object:skazki:bilibin-baba-yaga",
+   "local_path": "muzei/skazki/media/baba-yaga-540.webp",
+   "sha256": "16abc2c665640a00d3e476df5278ae3abf462606f04e43eb8b3c99b4c6e3e303",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Bilibin._Baba_Yaga.jpg",
+   "credit_ru": "Иван Билибин, общественное достояние; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Баба-яга в ступе летит над лесом — рисунок Ивана Билибина к сказке «Василиса Прекрасная», 1900",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Иван Билибин умер в 1942 году; срок охраны (70 лет, ст. 1281 ГК РФ) истёк 1 января 2013 года. На Commons — общественное достояние; строка в rights.json рядом со страницей (tools/audit-prava.py vzyat).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:skazki:home:vasilisa-oblozhka",
+   "object_id": "rc:object:skazki:bilibin-vasilisa-cover",
+   "local_path": "muzei/skazki/media/vasilisa-oblozhka-540.webp",
+   "sha256": "904b53343d42a2833ef58e76423f6136f1f09c148f2aea60a76490e457c7abb7",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Vasilisa_the_Beautiful_(Bilibin)_-_cover.jpg",
+   "credit_ru": "Иван Билибин, общественное достояние; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Обложка книжки «Василиса Прекрасная» с рисунком Ивана Билибина",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Иван Билибин умер в 1942 году; срок охраны (70 лет, ст. 1281 ГК РФ) истёк 1 января 2013 года. На Commons — общественное достояние; строка в rights.json рядом со страницей (tools/audit-prava.py vzyat).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  },
+  {
+   "image_id": "rc:image:skazki:home:alyonushka",
+   "object_id": "rc:object:skazki:bilibin-alyonushka",
+   "local_path": "muzei/skazki/media/alyonushka-436.webp",
+   "sha256": "cba9db947532f22484ede276ad1e4d33beb726885bfdd52e3aed9e281e9693a6",
+   "source_url": "https://commons.wikimedia.org/wiki/File:Ivan_Bilibin_-_illustration-for-the-russian-fairy-story-sister-alyonushka-and-brother-ivanushka-1901-21.jpg",
+   "credit_ru": "Иван Билибин, общественное достояние; Wikimedia Commons; редакционное уменьшение WebP",
+   "alt_ru": "Сестрица Алёнушка и братец Иванушка — рисунок Ивана Билибина, 1901",
+   "rights": {
+    "status": "cleared",
+    "basis_ru": "Иван Билибин умер в 1942 году; срок охраны (70 лет, ст. 1281 ГК РФ) истёк 1 января 2013 года. На Commons — общественное достояние; строка в rights.json рядом со страницей (tools/audit-prava.py vzyat).",
+    "checked_at": "2026-10-15",
+    "commercial_use": "allowed",
+    "derivatives": "allowed",
+    "ai_modification": "not_used"
+   }
+  }
+ ],
+ "risks": {
+  "historical": {
+   "level": "low",
+   "reason_ru": "Главная сводит сказки к навигационным формулам; число текстов у Афанасьева округлено.",
+   "mitigation_ru": "Номер и паспорт записи каждой сказки сверяются по академическому изданию 1984–1985 на странице дня.",
+   "approved_by": null
+  },
+  "legal": {
+   "level": "low",
+   "reason_ru": "На странице три иллюстрации Билибина — производные копии с Commons.",
+   "mitigation_ru": "Автор умер в 1942 году; основание, источник и контрольная сумма записаны в rights.json и паспорте, подпись под обложкой.",
+   "approved_by": null
+  },
+  "reputational": {
+   "level": "medium",
+   "reason_ru": "Концепция музея и аудитория 6–12 лет ещё не утверждены Сергеем, а надпись «Для ребят 6–12 лет» уже стоит на странице.",
+   "mitigation_ru": "Страница остаётся в превью до «да» Сергея на концепцию и публикацию.",
+   "approved_by": null
+  }
+ },
+ "seo": {
+  "title_ru": "Детский музей русских народных сказок — Русская цивилизация",
+  "description_ru": "Баба-яга живёт на границе миров, и её изба поворачивается не просто так. Каждый день — сказка, открытие и дело для ребёнка.",
+  "h1_ru": "Почему изба Бабы-яги поворачивается?",
+  "canonical_url": "https://arabelthera-dot.github.io/rc-museum-preview/muzei/skazki/",
+  "index_state": "index",
+  "primary_query_ru": "музей русских народных сказок онлайн",
+  "og_image_id": "rc:image:skazki:home:baba-yaga"
+ },
+ "media": [
+  {
+   "media_id": "rc:media:skazki:home:page",
+   "kind": "page",
+   "platform": "web",
+   "status": "review",
+   "path": "muzei/skazki/index.html"
+  },
+  {
+   "media_id": "rc:media:skazki:home:moments",
+   "kind": "interactive",
+   "platform": "web",
+   "status": "review",
+   "path": "muzei/skazki/index.html#vopros"
+  },
+  {
+   "media_id": "rc:media:skazki:home:halls",
+   "kind": "interactive",
+   "platform": "web",
+   "status": "review",
+   "path": "muzei/skazki/index.html#zaly"
+  },
+  {
+   "media_id": "rc:media:skazki:home:calendar",
+   "kind": "interactive",
+   "platform": "web",
+   "status": "review",
+   "path": "muzei/skazki/calendar.html"
+  }
+ ],
+ "publication": {
+  "blockers": [
+   "Концепция музея не утверждена Сергеем",
+   "«Да» Сергея на публикацию",
+   "Независимая приёмка и слияние ветки"
+  ],
+  "approvals": {
+   "fact_check": false,
+   "rights": true,
+   "editorial": false
+  },
+  "target_path": "muzei/skazki/index.html"
+ }
+}
