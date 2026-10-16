@@ -1,0 +1,46 @@
+{
+  "test_id": "wrong-390",
+  "code": "wrong",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-yan-chingishan.html",
+  "steps": [
+    "Неверный вариант первого вопроса",
+    "Повторное нажатие (кнопки заблокированы)"
+  ],
+  "checks": [
+    {
+      "label": "Разбор показан",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Верный вариант подсвечен как верный",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Выбранный неверный не помечен верным",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Неверный ответ не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Повтор не даёт очков",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "wrong-390.png",
+  "status": "pass"
+}
