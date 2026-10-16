@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "page_sha256": "bb894b5e4821688a5700e86068afc01749e73c92cfb1c9b0617ffd4483c6c4b9",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-11T09:10:04.500Z",
+  "browser": "151.0.7922.173",
+  "plan": "../avvakum-plan.mjs",
+  "inputs": {
+    "../../../../muzei/literatura/lit-avvakum-zhitie.html": "bb894b5e4821688a5700e86068afc01749e73c92cfb1c9b0617ffd4483c6c4b9",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../avvakum-plan.mjs": "d83f454147c0fe25fb6d9b4584e6d294270248c9da2d7ba414fbaa1f7c8dcecb",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../assets/museum-literatura.css": "a205915af4132a432fcb0d668602d1eaf1a0d3c7734d554cc6dcc87a6a5ced75",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/literatura/media-avvakum/hero-avvakum-sibir-mobile.jpg": "55c1eedacdb1059f552de40cae8777a8591c3573d45fe08d2a9262f8f28f36f6",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-slovo-geroya.js": "32ac9c2b52a1f9eb3a3655d965cbb9bdd3fe3cdb0111bbad169a186f8a65633d",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../muzei/literatura/calendar-literatura.js": "7070366c51f1e4839f9c6b1a4c9be238ef422f6da9319bbbe9a1bab28744acaf",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../../../muzei/literatura/media-avvakum/avvakum-ikona-17v.jpg": "a7df8813bc71181cfc1c24e781deaeb6302f5eb7f31b22c8d988f1d19adac515",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "entry-390.png": "f6a8e2e9bc7c05d59559eb322a3e584014171b30cea226e5a2859011563f7779",
+    "entry-390.json": "e896bbbb34eaa880e987ebb518a8125d372b2c20c16438d088df7ec3c22dcdcb",
+    "wrong-390.png": "d4c77d0493550995dad6c339a4360249db432e14810a0c667c736d1094686493",
+    "wrong-390.json": "4458b21e04ac1ba735d0c9c7979b8490ec13f99a42843fd8b6a9bf06c0d69cd4",
+    "reset-390.png": "46ce3c3c0efb33344cd597b07021aa50352b82eef8885781ded8667e44720105",
+    "reset-390.json": "b2e305c8c4198819ba6808ab9036e9126987903dbcfcbd173b17f7b5f6329739",
+    "mobile-390.png": "aaa3397a22d22cb3073f47c2da46ac51ea199c933b65240051b3b69407283a05",
+    "mobile-390.json": "9fce2b72b1071a7ea6b96bf559f05781b097f62b7f5492d3fc9f7a2de3836a3e",
+    "../../../../muzei/literatura/media-avvakum/hero-avvakum-sibir.jpg": "55b87f5e90d7968f4f00d624ebe3923ade8d9b396ff47e2d9c93f9883d288101",
+    "mobile-1440.png": "cf0842e8033b42431a81a8f8b107df00b2f0a8d233ab0b7493aacb87351b1737",
+    "mobile-1440.json": "24ce766d193db61b432dcff5a6cdc4cb6ddcbb4072cfc51d1f68870e2b01fce3",
+    "../../../../muzei/literatura/media-avvakum/avvakum-avtograf-1675.jpg": "697c31ebfc6729da6343a052580b55dded823e163ab86b749ded9eb3bd637e53",
+    "../../../../muzei/literatura/media-avvakum/avvakum-sozhzhenie-1897.jpg": "7f09191f7c15a632b3eef300a6a9c1996b0254d9d9c67801f1494b52f4ff8dfc",
+    "nojs-390.png": "a8a5ac5d10e191a910884477399c05383d62d6d8880a9bceac39eac7776c0779",
+    "nojs-390.json": "affcee62e9aa9c7abb3bb56beef9f4caf8fc3819cb33f47e101295df36788065",
+    "score-390.png": "10cd9e11736e6e1a6d9dc904d535417e3897d21930fb388f0c76d9a694c55e97",
+    "score-390.json": "bfc84ec676677cb2de3bd6fe39a70f4e8262c45b80fbee4d1803f54c7155fcc9",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "main-390.png": "8886096b90c2335f1accf35d7c19869a6df2cd1e99fd1cc79ad5d52df31c9ada",
+    "main-390.json": "65675b697aa20ad0fe768fd6e47373588413545eb1e246b9e591afdf31c56cc9",
+    "empty-390.png": "cb03ddcda4d5adeb4f57e1b2009f203ef3cb90499bb1c27c2683c385786f50aa",
+    "empty-390.json": "6ca581d77f0011db617026690c69d65eeba569fc899b20e362b0d29009a8ef32"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "page_sha256": "5a5c31cef766da932d3978a837e7bf92001a7ef1ad6fd9518a0629a2b4e36383",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-11T22:28:50.733Z",
+  "browser": "151.0.7922.173",
+  "plan": "../voyna-plan.mjs",
+  "inputs": {
+    "../../../../muzei/literatura/lit-tolstoy-voyna-i-mir.html": "5a5c31cef766da932d3978a837e7bf92001a7ef1ad6fd9518a0629a2b4e36383",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../voyna-plan.mjs": "40dbdc856baa72cafc1096cae689939662f46e39ce432270fb0824df020717f1",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../assets/museum-literatura.css": "a205915af4132a432fcb0d668602d1eaf1a0d3c7734d554cc6dcc87a6a5ced75",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/literatura/media-voyna/fili-hero-mobile.jpg": "1cf4f1564a8e492e77b8c87201778fca758dfee68ccbaa90e8de3139a14b4b04",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../muzei/literatura/calendar-literatura.js": "5e9c8e41254b5b6bfd95cb1043f2a068ec8372a4d47998f86eab283e41e7fd02",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMwX7I-NP.woff2": "98c22de85f6e83bcd6ae1a443e12e256fbc8de7142bec4f76b059f8ff9c2797e",
+    "../../../../muzei/literatura/media-voyna/voyna-i-mir-titul-1868.jpg": "6e9ef41925feaf5bf2f48cefe669bd63af90aa01d20adba58fdf8162acc18d0c",
+    "entry-390.png": "51e34311fc475e594d33b0830fcbaf2b9ace417be723828f54a526d19403891d",
+    "entry-390.json": "9fc80247edcf6754f0ac5e470e87fca536aa8514bdef1752e01b86761eae49b9",
+    "wrong-390.png": "2439da0fd1246dc7c980db50037d1775e1b168c20871f490614844c25188f1be",
+    "wrong-390.json": "cf279d36feb062ec53493122b3a6deab753104befa48d3f62d9319831416adfb",
+    "../../../../muzei/literatura/media-voyna/kivshenko-fili-1880.jpg": "87a639a0763641b5bb836036a5bdb609c3eea57521b7f5c7fb695dd378445a50",
+    "reset-390.png": "319dbaeac22faa2a0df0f99d7ef5079512ebed63d8316e269043e02acf8b5950",
+    "reset-390.json": "0d18e181dcb3fabba8b118c774a7aade87dc3ff68a7c78fc6370a897a22affa4",
+    "mobile-390.png": "673adb8b96410bd2ca5ec2cb214b1dc4e23ec308721cd76a7390fd582e57c554",
+    "mobile-390.json": "c145ece51aa0f09e17520c073866003008b0341eca3e8a952c04dd9130b5fc12",
+    "../../../../muzei/literatura/media-voyna/fili-hero.jpg": "e1fdc86c30579589756f9eee86ad499d1ef1a6c7c1c07fd1ce3865e42a1fdc31",
+    "mobile-1440.png": "18cdf5e0410ee8248e5ca14a2611afc232a8d9d666532f4fabd0401474c2851c",
+    "mobile-1440.json": "7c6f1abc22699feddbf86e4c56a657cfa284499951248cecf1e1993ec97cca5c",
+    "nojs-390.png": "bf9db6e1c013f3b2535ef076ef65500d909ca39aa9e3c1afe30b978a945d252d",
+    "nojs-390.json": "2bc7a72660d252f04b950a8289c2c7d72be968266eb81393fb7214dbd977a96a",
+    "score-390.png": "1106f12d697d311098f7cbb9473a6a31a9149e29f8d8834a5a83012ac084aa79",
+    "score-390.json": "58495da030756b56451098ba17358fb66e2563c8d686cc8c5fb56cf8362a823c",
+    "main-390.png": "b63689da8c35e75c532cb0331d435f098daf238dc0785935554c7df1ae16a8a1",
+    "main-390.json": "4b39dbf2a24ef08a2d4c99807fafe9901263e671ad6e63769d1f03111acbfa7f",
+    "empty-390.png": "ea79245564b590a7a333b162cf9dacdcde4cf51258253d917986ef6522ddd207",
+    "empty-390.json": "0f0824f82c4add0623cd26fbe787d389836a9a3a38c4a4967a077159d3545ad7"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
