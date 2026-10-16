@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "page_sha256": "81ab32d645f58bc902d51480327ac1dc6edbd7de16d761349b64e9bbf78b3ac7",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-12T09:47:24.135Z",
+  "browser": "151.0.7922.173",
+  "plan": "../shkatulka-plan.mjs",
+  "inputs": {
+    "../../../../muzei/literatura/lit-bazhov-malahitovaya-shkatulka.html": "81ab32d645f58bc902d51480327ac1dc6edbd7de16d761349b64e9bbf78b3ac7",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../shkatulka-plan.mjs": "18e50ff2ef645326dcf3eb63e63b078fd194f064311f7e50ccb0c368418f88f8",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../assets/museum-literatura.css": "a205915af4132a432fcb0d668602d1eaf1a0d3c7734d554cc6dcc87a6a5ced75",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/literatura/media-shkatulka/malahitovyy-zal-hero-mobile.jpg": "20a40cd75cce89b1a7046c09dbdbe2d0424bf18cc638e672a0ce9ce0aa5c5dbc",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../muzei/literatura/calendar-literatura.js": "d84bb16f4340dcff1aed338b18941ff94b1ae7ae6deaf3d6dfe7ca6fd5efcc6c",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "../../../../muzei/literatura/media-shkatulka/verh-isetskiy-1909.jpg": "1f632957b08d0098ecf1086a453d18df11db20e77a170e230d0de0b48e5b754f",
+    "../../../../muzei/literatura/media-shkatulka/bazhov-1911.jpg": "23c652cdd3a7dc6ff614996cb8d1ee21fcf8999302588876e900716fc1f9e48e",
+    "../../../../muzei/literatura/media-shkatulka/ukhtomskiy-malahitovyy-zal.jpg": "5bfb48cd1a164b7ecf34cd37417aec4a4515b7e891adf492881a26fe7c0da49c",
+    "../../../../muzei/literatura/media-shkatulka/bazhov-uchilishche-1910.jpg": "d8e2e3087f6b4ad5b5d7989e86715aed7a0a3f55c85cd77a00c46333024219fc",
+    "../../../../muzei/literatura/media-shkatulka/ekaterinburg-1909.jpg": "29ff7bbded072dddd2ceb4c4baef0bb1c4ae963e35056fa56ab0f395941ff73d",
+    "entry-390.png": "d29f7a0161e518fcbbf08af9a06185eb8e94d3a0be9722a8119def45a17f6ab3",
+    "entry-390.json": "cfa8d45cf2e849913529ac97de4afd0a7f8e81b975d8e193c00e27b2add73271",
+    "wrong-390.png": "ae6e4722be42285a8dd807c55a489d4f7d8537f6999a3fbf3ae1251a392b5d1c",
+    "wrong-390.json": "852bad3c18d67ef01efd0df810ef60d79f637c71d1e3e3a0a0fb70283a661eaa",
+    "reset-390.png": "19d852d4abd98992fda7804283e21764aca0832e476aeeb4b71201abeda7e892",
+    "reset-390.json": "659951a560d529492cdadfc3d0ce4965fb024b348d4406cab054294f31259c62",
+    "mobile-390.png": "971732f747b4d33d1a11c655491bae1d2a0b1dbd6423f78ed7614d9bedfad826",
+    "mobile-390.json": "88bb78b143f959a0d3e27144a488e84ab02e9dc66f04ee334d0179c36ce3a2fe",
+    "../../../../muzei/literatura/media-shkatulka/malahitovyy-zal-hero.jpg": "41b7c60b7aa30ddca7e2211cf75b96a8d71a8b2209baac19f6454d0756c827c7",
+    "mobile-1440.png": "ffbc41005e7cbd7e3242b22059fa2b6b73feb3f58b5844901766c9f60a99da7f",
+    "mobile-1440.json": "2625cb7fac541f832b5c4f0d9c6d601599d7c6b65b4dce03568154bd5791ce88",
+    "nojs-390.png": "aeed89bdff43f31d0b5d199ff96c2a72894d674ca6b7b72eca0e24173df1e65b",
+    "nojs-390.json": "0f7ed1909bd22890d0150073a067ad2af52b077302fd82bb07c115f07b684d7b",
+    "score-390.png": "971732f747b4d33d1a11c655491bae1d2a0b1dbd6423f78ed7614d9bedfad826",
+    "score-390.json": "5f3323ceaebdcd2d3d7f7c834a77da01e15f0825a9940a9c15b24c2e3327ca2d",
+    "../../../../muzei/literatura/audio-guide-shkatulka-ru.mp3": "1a1af3fb512ab708de524b98c0d6f4bbded62fbc37f2fcf3c302d136153b35d2",
+    "main-390.png": "20273114d0197033249a28c1c97f07fc35d544d41ec87bf42ace842664a41d38",
+    "main-390.json": "c12e7bc04a541580a464c1d3d19b5f414376e891d25e129d5a30c8838d73ed1e",
+    "empty-390.png": "c320cc78e88853f85ca90ab76291d1c79f9867604f8ceea14e3b7a4fd9b555dc",
+    "empty-390.json": "3e61ad941130afdafc30d4602b3a0a0e7d811b0fe3b914180adb54e347b68d66"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
