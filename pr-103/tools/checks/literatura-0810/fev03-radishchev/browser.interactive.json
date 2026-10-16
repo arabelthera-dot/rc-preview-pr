@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "page_sha256": "0e877ce36b52de0731853e930903cf4e351a7d10b525ce99cee41f2b457d4cb7",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-12T19:25:27.396Z",
+  "browser": "151.0.7922.173",
+  "plan": "../radishchev-plan.mjs",
+  "inputs": {
+    "../../../../muzei/literatura/lit-radishchev-puteshestvie.html": "0e877ce36b52de0731853e930903cf4e351a7d10b525ce99cee41f2b457d4cb7",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../radishchev-plan.mjs": "185a927fa07b8586116a1f07219b15353d4188db2a85009048e169865a1e99cc",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../assets/museum-literatura.css": "a205915af4132a432fcb0d668602d1eaf1a0d3c7734d554cc6dcc87a6a5ced75",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/literatura/media-radishchev/ilimsk-hero-mobile.jpg": "2ca4bb65dcc0f1be1dddbeb1c5e869874c1479e23e4cdfa9e02b0d100397bc16",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../muzei/literatura/calendar-literatura.js": "81ce3c8da6661ed69186c072b57f3e47866019f5f2b058a8908487c3e41b2cfa",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "../../../../muzei/literatura/media-radishchev/radishchev-portret.jpg": "ef510d2f85b4638d04489f0c35cdcad57e2b1315ee32bdfb1fc78b372400a040",
+    "../../../../muzei/literatura/media-radishchev/puteshestvie-1790-titul.jpg": "c1aaa2a374f22c3ba6094048b9e1d95eaa4eb939e0c83a5d074c49e73e8bf26f",
+    "../../../../muzei/literatura/media-radishchev/ilimsk-spasskaya-bashnya.jpg": "d0cf37be3a6f1bdca0385dc81227ed63fef0e1fe2153361f7a7780e7f0294d12",
+    "entry-390.png": "792084a25c797e00eb01e9f1ef632b300b6511fdf6c35932752363f86a3dc7a8",
+    "entry-390.json": "cedeaef7796022cf63d8d57a09bd79bdcf05017482686b3cfa6459fd2293cbb6",
+    "wrong-390.png": "c53f6002ee5a716a6290c4c32ba0251621ffa40a5ca49233d354b2892b7598b5",
+    "wrong-390.json": "aa4d7e70b1b571edbece82b7dcb186b3fb22f1399aa841110261b4b9ad148e01",
+    "reset-390.png": "67fcc02b2057686a5ecf1947cefcab04412b6859a7dfe421b603ed30c22d1267",
+    "reset-390.json": "e7932e84e2dba945225bbd48216e61d343fac768e9c61f9079c9232aac6a23e2",
+    "mobile-390.png": "b67c7f071655a2fd3430067de0dd7662a34d340f22c4e04334556757853a0c72",
+    "mobile-390.json": "e3ea6f2def7c883c84f2e9a1918296227d0ce7098860d16ab7299c59e6c67998",
+    "../../../../muzei/literatura/media-radishchev/ilimsk-hero.jpg": "fe491d3c39cf508630b0d2bbc031ffdca801f57d78fd4ee29a6053933538a5e7",
+    "mobile-1440.png": "b5af2f435c0d66757e86806e1600b2af553da1dfa817cdbe0c0adb8914d4073c",
+    "mobile-1440.json": "407131a72e81b2350b78a606fc705e4c63334d93568846535e65cebc4869cbc3",
+    "nojs-390.png": "b981c5172c80f47bd08848ac79d0b022a2a5298b97372d9ecbb5790527017f54",
+    "nojs-390.json": "c63e9ab00c19d8d4ee3023638018f630a3d6891f0d5ca6627ed2f659249d6e74",
+    "score-390.png": "b67c7f071655a2fd3430067de0dd7662a34d340f22c4e04334556757853a0c72",
+    "score-390.json": "ac2cf27e8d5670773ccaea5aa69081c1fd829ad4bca22d55ee49d2153db7bc97",
+    "main-390.png": "ab6f8a61d1eea50fb5fab449e7bd66f14959169ac827d41df1130db5b5cd5d38",
+    "main-390.json": "e9cfb174c625558a584c481bf2e77e1189401cb9008a832989615236c83f0fee",
+    "empty-390.png": "e26beb94442ffdb84c6c8471f305b85ccce12661c71de316b4470d9946cfae49",
+    "empty-390.json": "e26e569ac44f026a63217db1e0af5a71f72920c6e371d8d902c453670e545e0b"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

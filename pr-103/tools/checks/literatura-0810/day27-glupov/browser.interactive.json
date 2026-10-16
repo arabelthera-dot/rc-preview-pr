@@ -1,0 +1,152 @@
+{
+  "schema_version": 1,
+  "page_sha256": "b44d426f07f02b164630d612adf7672a66f81e41b8f2d5b0c166bc59a58c596e",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-12T03:43:02.424Z",
+  "browser": "151.0.7922.173",
+  "plan": "../glupov-plan.mjs",
+  "inputs": {
+    "../../../../muzei/literatura/lit-saltykov-istoriya-goroda.html": "b44d426f07f02b164630d612adf7672a66f81e41b8f2d5b0c166bc59a58c596e",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../glupov-plan.mjs": "9175a66f0b19b1c3f5ba2dd97783e24cf0802db284e9eda1efac704accb9877a",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../assets/museum-literatura.css": "a205915af4132a432fcb0d668602d1eaf1a0d3c7734d554cc6dcc87a6a5ced75",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/literatura/media-glupov/kramskoy-hero-mobile.jpg": "39ebeab7e73d9111704b1b12a6c53cbe69fa9f6acb623b8e215053ed09e5af82",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../muzei/literatura/calendar-literatura.js": "51c7b566dd5d475bdaf34abe8cda7f6478331b3946d7396849a53811dba082fe",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "../../../../muzei/literatura/media-glupov/istoriya-titul-1870.jpg": "5f1995855b32a0c65d973903709c658fe2cd52aa1528e9c84946bc29e7f74e03",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "entry-390.png": "90adc3d8e3db1d2731432009edd1fd574c7771af0a56f5bec49ef73fb7f5794b",
+    "entry-390.json": "03688ee0f90a74313fe08a218e62a25352b00777c1579338a12b7f777d67e63c",
+    "../../../../muzei/literatura/media-glupov/yakovlev-grustilov-1907.jpg": "c8a16ab1f0882760c7f68a7921aa2b7922fd17c5a1900197ed92bbd39202d64d",
+    "../../../../muzei/literatura/media-glupov/kramskoy-saltykov-1879.jpg": "be0051e11a55b10502ac189a8d85df9981b32680900f150b650395941114b4ce",
+    "wrong-390.png": "e51dc9631c71c4bc5fe92a65609431c4c2e9707d8a3238d253273fb1c50f05d3",
+    "wrong-390.json": "9b24b7849821f1640c39f865a227f699f1bd34571edae5f19984f64cda5511f1",
+    "reset-390.png": "6716f217f49ec61f2d106b8873fe9afab6e04d76abf882c8b5892e19effdadf0",
+    "reset-390.json": "d445c4c4202c6f102f5ef1fa64bc63f7c826abf6547d250f7579465d391cd3c9",
+    "mobile-390.png": "32dd3d83182de49c508a8778a0cdc23adeebe44b6730f6f130c17de1226522ed",
+    "mobile-390.json": "6f7b6f185e13b1ea506a9578825ab96929f432af013d015f1389925bd36e6c5c",
+    "../../../../muzei/literatura/media-glupov/kramskoy-hero.jpg": "d08117834b48756392d90c9974133d32b3333d2879dd32f6e1846f950fbd27b9",
+    "mobile-1440.png": "608256d2dfa196e38fbdfc9b74d7fece86e67efc919c5970ce0b3e82daefc125",
+    "mobile-1440.json": "f181409671e984f28bf1042e17d325dc71f077a597b08421c0e19384273b304c",
+    "nojs-390.png": "be14fe86ffee7d5f4e515ac372604f7b0e5b153a67118986110c648d90350a80",
+    "nojs-390.json": "2257e2775c39e266f483d35d15d98bddd7896fc6d8f73cb7ace752037335cd96",
+    "score-390.png": "32dd3d83182de49c508a8778a0cdc23adeebe44b6730f6f130c17de1226522ed",
+    "score-390.json": "94609920533f8b54c7b86407d1575b95d4d63512b7cee9ade08d0b119526762e",
+    "main-390.png": "841c4539e2ecefd0ffbf302948b6871dba10271ed52dca0ccc0b00a4a24d6af1",
+    "main-390.json": "7c398f074f909ee30ff936ab21e53f12f8429d61c0fff2994fcf6287a1fc1b08",
+    "empty-390.png": "467afc14644e0fe1622778ffb0cbadd057767b93554286830886b22abc1de6cd",
+    "empty-390.json": "9c3dcb2f36dde9fb64374f29517869aff73a9c60eb6af6bd9038de884c86c53e"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
