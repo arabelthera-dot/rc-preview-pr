@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "page_sha256": "5bdf9f26d53790de9d2297e0ae02affb8117a7abb4ccd0fe403542bc7606247d",
+  "runner": "../../../b6/run-b6.mjs",
+  "created_at": "2026-10-11T12:07:20.476Z",
+  "browser": "151.0.7922.173",
+  "plan": "../lermontov-plan.mjs",
+  "inputs": {
+    "../../../../muzei/literatura/lit-lermontov-geroy-nashego-vremeni.html": "5bdf9f26d53790de9d2297e0ae02affb8117a7abb4ccd0fe403542bc7606247d",
+    "../../../b6/run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../lermontov-plan.mjs": "df491595949f6ab8e9ca25736e6fa47dad845824b80c8ba2941e547a8e8b6afc",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../assets/museum-literatura.css": "a205915af4132a432fcb0d668602d1eaf1a0d3c7734d554cc6dcc87a6a5ced75",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/literatura/media-lermontov/krestovaya-gora-1837-mobile.jpg": "b9ac19106ef8a3e92a72701d2ef5f6f40013224219e39f103efd601a827eb739",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../muzei/literatura/calendar-literatura.js": "c133d3f9fb0faacccb2223503361a761d7d9047abe863fab653e3e3d8fec3f91",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMwr7Iw.woff2": "ddb8c66035104e233fc024669183aad3738b6daa16deee2ebb1241bd0f98ace1",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuMw77I-NP.woff2": "c57d9ca3bd42e6bc093badc7744dd2059a78f66a3a4dc6ca40574480c870f553",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM3b7I-NP.woff2": "a8c4cb778ab6202d22bdea2ccc8d7e7caf802cfe0a7ce37df7b212f82341468f",
+    "../../../../assets/fonts/lora-0QIvMX1D_JOuM2T7I-NP.woff2": "2df52199eac56e2ec7a735e609bb151bdab79422c3e73948f4b6580c66bb5a50",
+    "entry-390.png": "ca73b01048d67b1974370ba9125281a65a4dd8986e2f9f02957c23817ca16a39",
+    "entry-390.json": "2e25f5b2ef411800f2274f6841ae34ec50ba9479b9ee1c22613502fc81c7d05c",
+    "wrong-390.png": "0a6678690745481071e604c6af583268516672ea527dbf4efa5d98cbb067fb54",
+    "wrong-390.json": "c550e21b8350276d64cdd7a729c1d991537c9e861077eff3370112ce326611a5",
+    "reset-390.png": "7b70d355bd356516d2fb13f72321e27f1bf6eec24db8b26746b5ab2f73711820",
+    "reset-390.json": "e3f68550fb6b495b1923135f50623b7aae81d7c4f6227629a84c128081ce23fc",
+    "mobile-390.png": "113d455ce6e0c2c8ed4ea9c454a5cff5a4683b019423573a4a335dff26b79562",
+    "mobile-390.json": "54a4c00581776c17b0816843f3eb1975d8747027cbc076070d06f4dafed90603",
+    "../../../../muzei/literatura/media-lermontov/krestovaya-gora-1837.jpg": "cb0ae03e89f9a85ea4e7753d5f012b8bc5081a055d57e886b99c533fbf620100",
+    "../../../../muzei/literatura/media-lermontov/zabolotsky-portret-1837.jpg": "1aa29227b9d05b4b508c12c257269e77fe08acc5ff8c5f9e4e089d91c617382d",
+    "mobile-1440.png": "c3a2eb76792716b032ecdbebeb45f1d23ab4de12be4486bb8fcb7bae8efba566",
+    "mobile-1440.json": "c2503eff200455401c0ab08b409a31792189faf9e43827d9916389556e2cb187",
+    "nojs-390.png": "4d041533e0b48a34718ee5780780581dce1afe8db05a47c46d21db01fd6b115b",
+    "nojs-390.json": "458918b925a9022e53a9341a2948f228d91b072822f88972fa0db9b6e171117e",
+    "score-390.png": "e2ecef469d9416ab39ae200a2427f190231f8887ee31d07e624043066f3a4c7b",
+    "score-390.json": "68dc09eabc6eb61a28471ecd53c53bcc4fdbf40bbf5697d790fd0745d0eb4747",
+    "main-390.png": "31fb7fb286c22cf6f6b4915cf953a54b24c493cc09f4659650783166fb4aedad",
+    "main-390.json": "efad59a20fe0c6aa82abc369a1a12996aa044e403415d92da90fa92bc809a3f3",
+    "empty-390.png": "92022d372c747dfa966fe3b24b1bd2acafacd2244454c04ff8195c4972826161",
+    "empty-390.json": "1701398ccfa4e032db0edbc6dbc5ab921f5486ce1402cb2f099dd344c99c981c"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
