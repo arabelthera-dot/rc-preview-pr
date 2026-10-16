@@ -1,0 +1,63 @@
+{
+  "test_id": "empty-390",
+  "code": "empty",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/ne-sdayutsya/podvig-panfilovtsy.html",
+  "steps": [
+    "Inspect subject interactive"
+  ],
+  "checks": [
+    {
+      "label": "Five questions",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    },
+    {
+      "label": "Each question has ≥3 options and an explanation",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Declared answers match page data",
+      "actual": "0,2,3,0,3",
+      "expected": "0,2,3,0,3",
+      "ok": true
+    },
+    {
+      "label": "Options rendered",
+      "actual": 4,
+      "expected": 4,
+      "ok": true
+    },
+    {
+      "label": "Exhibits in rights register",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    },
+    {
+      "label": "Rights rows",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    },
+    {
+      "label": "Fact-or-myth has statements",
+      "actual": 1,
+      "expected": 1,
+      "ok": true
+    },
+    {
+      "label": "Honest reveal shown",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "empty-390.png",
+  "status": "pass"
+}

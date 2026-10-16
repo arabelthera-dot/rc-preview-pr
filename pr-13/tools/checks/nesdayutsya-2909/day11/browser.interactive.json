@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "page_sha256": "9b6c064e27b5a8e6c6b16c04b5d1eca67890feea799f82200b6515df1916d683",
+  "runner": "../run-b6.mjs",
+  "created_at": "2026-10-09T19:11:57.389Z",
+  "browser": "151.0.7922.173",
+  "plan": "../day11-plan.mjs",
+  "inputs": {
+    "../../../../muzei/ne-sdayutsya/podvig-dom-pavlova.html": "9b6c064e27b5a8e6c6b16c04b5d1eca67890feea799f82200b6515df1916d683",
+    "../run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../day11-plan.mjs": "270e4400368094320a7d0d34ae42b76b3cbb0bb4589be7990bd9ef5172d3bb90",
+    "../plans.mjs": "739639f3b2368589794115ebb6099df6d57dda5441c68795dccc9840ab8e20d0",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../muzei/ne-sdayutsya/nesdayutsya-style.css": "39e9893b4180f72b0d7e77d2999dc22c2761371749fc30f2e41187b23ce92fdc",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/ne-sdayutsya/pavlov-dom-1943.jpg": "ee2d0b2cf3742a2a2c56993fbf11f50608181939411bae105b2a4739d833463e",
+    "../../../../muzei/ne-sdayutsya/pavlov-stalingrad-boy-1942.jpg": "e625daeebc8af8602d1ce845c369a65ce3dffec8429016506d2464b8bfcffecb",
+    "../../../../muzei/ne-sdayutsya/pavlov-melnica-1943.jpg": "3c7337011060d3c985c48128a724befd79d7572e0b848ef48f83b6aba8d80792",
+    "../../../../assets/museum-fact-or-myth.js": "151d8c561e2364d72ee572ad231ddd350d54b59e7f6ba04508e42c5966fcee3f",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/scrolltelling.js": "782c0de78ecc16edb417b84d9c85a4e9e71f2e289fa2c2c4a27c63a06a689642",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../muzei/ne-sdayutsya/calendar-nesdayutsya.js": "c4ee7a954f4d4a1a7f0681ec473edb8a5a180c004c289d8e57399094b1141770",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qWVyvHpA.woff2": "bec4e724c49bde6d6b3f15038c8015f5dc7c810bdaadd3aee537ab72afc50e4a",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "../../../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qSVys.woff2": "bf23a7a4eebedbb87d4084a69496b29815914a18e339a00f5dc73a03c9c9328f",
+    "../../../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "../../../../muzei/ne-sdayutsya/pavlov-geroi-1967.jpg": "d16eaa8d4014e5609452b4f2c9b7314d89965e993691d55362517f1f0c8b8817",
+    "entry-390.png": "5666fa318f7a2b27695c7450b2430337eb796d9f3dba29b4ed5703afd202d44f",
+    "entry-390.json": "534d86460df7ee8b1085f0d9ab1271ba84443128fca1d3a60500b6110011431e",
+    "wrong-390.png": "944dffe6b2c79aa2cf041db344bef9f4c9eed9e21e179ee4606723a190cc5e50",
+    "wrong-390.json": "0a9139a4da375481dfbd68a64a6952ce0430b9728d53e1d59c930394184ce89f",
+    "reset-390.png": "7cbf44b7adf740636f161207e61ab14dd2f1c1091712c8664620169b005a334b",
+    "reset-390.json": "bd1acbe0f2c622659cc1e6eee1926006198ff68c0f5d845901f7acde575d0bf6",
+    "mobile-390.png": "e07fdd6378e94d89e9062070d256bbc5591dcdc89910dc3e05b94270b959371e",
+    "mobile-390.json": "72cbbc7f66c189c683d541bc3cab6f923418aa71aeae12e58e5978d46b2c4c48",
+    "mobile-1440.png": "7867e44afebdff6f7df359d06ba66f979a2e7b1b5754427082d2c2825077c697",
+    "mobile-1440.json": "86250f319387ab9d932cede939a5e0a0c2c993d6a3bc38f0a5b911747d528703",
+    "nojs-390.png": "fcfe2f0ecc023ba157a64a59eb9192cc7d2e66956f3cb2e14ce5a501f584e361",
+    "nojs-390.json": "6a838aec89ef60a7a0c27c7b27b8a3902289b48a9cad1913a3a933db599c485f",
+    "score-390.png": "dff061a6c7c4bcbbb1dfc68558718fed4d20f3e23476ae2d58ba8a33f68ca08f",
+    "score-390.json": "44d1b9023cf01969977c602e62d60df344a8dadcb1988c0d0133e452a40dbf18",
+    "main-390.png": "39721d876d4d96c72924ca9dfd69589d929cb31ec72fe183c233da1f0b8d13a0",
+    "main-390.json": "069b4f7f763e9eec775bd48adf87d1a3ebe318c18ac05f9dadf3ddf58fa0f222",
+    "empty-390.png": "c1a45d00bf3c111ecefee09c70a998fe82e9a3250980bf9395c95d2958534dbc",
+    "empty-390.json": "b29a18a498903864999170c288cc1398a07bdd2f745daecfd7367ec1e12956a7"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
