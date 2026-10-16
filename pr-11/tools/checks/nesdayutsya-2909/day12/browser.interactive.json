@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "page_sha256": "019f5a0ce73838c74ddec4578c96cad2a6ec23a0dd935bcaa86433aaa4d85e47",
+  "runner": "../run-b6.mjs",
+  "created_at": "2026-10-09T19:13:25.834Z",
+  "browser": "151.0.7922.173",
+  "plan": "../day12-plan.mjs",
+  "inputs": {
+    "../../../../muzei/ne-sdayutsya/podvig-matrosov.html": "019f5a0ce73838c74ddec4578c96cad2a6ec23a0dd935bcaa86433aaa4d85e47",
+    "../run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../day12-plan.mjs": "fd2afc6ecf009193ab62d0ed7d6772e0178f07635a86d01181c03ad62cc5e629",
+    "../plans.mjs": "739639f3b2368589794115ebb6099df6d57dda5441c68795dccc9840ab8e20d0",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../muzei/ne-sdayutsya/nesdayutsya-style.css": "39e9893b4180f72b0d7e77d2999dc22c2761371749fc30f2e41187b23ce92fdc",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/ne-sdayutsya/matrosov-portret-1944.jpg": "fd81c477215c8201be44441cff3091667f241a0c42b01914b4f88e1f30e5adfe",
+    "../../../../muzei/ne-sdayutsya/matrosov-dzot-1944.jpg": "8e311f7ccf0045439c0798e7df6b30f7b79f22e18fa5782d0e6f3e22c8ef38c5",
+    "../../../../muzei/ne-sdayutsya/matrosov-chernushki-1944.jpg": "30b4c0a34716e1f09ad781f0102eea830684f38f8f28ab557f20191fd2786d4b",
+    "../../../../assets/museum-slovo-geroya.js": "e887721481307327878b42031d0dd10110ea754c73bb1d6456e7d4383a5fd47a",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/scrolltelling.js": "782c0de78ecc16edb417b84d9c85a4e9e71f2e289fa2c2c4a27c63a06a689642",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../muzei/ne-sdayutsya/calendar-nesdayutsya.js": "c4ee7a954f4d4a1a7f0681ec473edb8a5a180c004c289d8e57399094b1141770",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qWVyvHpA.woff2": "bec4e724c49bde6d6b3f15038c8015f5dc7c810bdaadd3aee537ab72afc50e4a",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "../../../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qSVys.woff2": "bf23a7a4eebedbb87d4084a69496b29815914a18e339a00f5dc73a03c9c9328f",
+    "../../../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "../../../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2": "e17cfd15fb96909d64095015f958207063a0c07191da3512df7d560a781aebdf",
+    "../../../../muzei/ne-sdayutsya/matrosov-pole-1944.jpg": "940598c42eccf97ee5a8179b42ca16cd87c91302d71e04cf0c932446af60fee7",
+    "../../../../muzei/ne-sdayutsya/matrosov-marka-1944.jpg": "7c0877f3eb45c4d5a722e42f1ac30522f806917a84c0597a30387c1fe570b294",
+    "../../../../muzei/ne-sdayutsya/matrosov-mogila-1944.jpg": "c6b7356ebd9489451fd58cdb1f6616e038678b1d2a64b75e0cdb449419d34ce4",
+    "../../../../muzei/ne-sdayutsya/matrosov-shema-1944.jpg": "995448400a4ae9bc85157ba92c15fbfa8f3a73d0306850398d934c7445c7746c",
+    "entry-390.png": "8f2dd6cfa91d8febd5e23c53bbddd92ef5702ede61a76c772cd5120902faedaa",
+    "entry-390.json": "2b608c3e042fe6ea7b8a77e5d17d8587670ded047ab4e693791ccb88827f92bb",
+    "wrong-390.png": "e97ebf7ac6da9eca8edf9dd788ace5a47063bcb26e8de4c5126d03c645f6144d",
+    "wrong-390.json": "da6c5a57e0b1fafdbc214d61d0edd1c4aacfc9992bbaaa1e4957976a4ba22152",
+    "reset-390.png": "f0f2759f1e87e42d175c53c0d994b0e70db2f7a0ac127468e60bba3650206c76",
+    "reset-390.json": "49570a3683b1b30b2d4a060c74d5619f809cf2b7e8aa3a7b2ea0d69d668c3d8c",
+    "mobile-390.png": "8592e582939121c8a57ba9dcee0a0a3367904eca9206947ab61ce227bc12d338",
+    "mobile-390.json": "5d5a9c2537305a4a50d389170df9c6a52c567147a98fb5fc5d5d31deeb7fe04a",
+    "mobile-1440.png": "32c5048a42ade1baef56c732b2dbdf50bfba14fb2c4583f17f1cb7b8735d56b9",
+    "mobile-1440.json": "b78c4546e8f84ea2534a461cdaa239a7778160ae55cd9bccfe119937c9588187",
+    "nojs-390.png": "85407e0bd415e3f75e95ec1558cbce2cb527a82665d58ff9af5375b534d10cde",
+    "nojs-390.json": "a99826e63eed3e2f8e7e5295322789b29572260c605d7a03147d95b92868cefa",
+    "score-390.png": "5b13fc51fd4f9f507c974ad6109543f0882679831f01c91ec5f136c21c755b19",
+    "score-390.json": "48e698dd0d1b0307d8c52fab157f12de998a51ebb8dc3273963d527497345c03",
+    "main-390.png": "4dd7c1e7e83489b3d1f7979cd3bb41b07c48f0bc71edbe48023d743e66120701",
+    "main-390.json": "fb267eb1495907d0c2ac524095f85d2d513ed9715164e62d6935b85a5f185205",
+    "empty-390.png": "ad7e5a88ea95ff031ff42930c1553eea6b8ad830820912585956423354b617ed",
+    "empty-390.json": "afb1533ba18fdc560763b81163cca1af0baaa31823233ecf803cfe678a9584d5"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}

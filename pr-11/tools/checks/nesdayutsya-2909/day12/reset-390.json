@@ -1,0 +1,41 @@
+{
+  "test_id": "reset-390",
+  "code": "reset",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/ne-sdayutsya/podvig-matrosov.html",
+  "steps": [
+    "Answer first question correctly",
+    "Start again: reload",
+    "Answer the same question again"
+  ],
+  "checks": [
+    {
+      "label": "Reward once",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    },
+    {
+      "label": "Route and rewards cleared",
+      "actual": 0,
+      "expected": 0,
+      "ok": true
+    },
+    {
+      "label": "Controls back to initial state",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "New pass earns once, no carry-over",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "reset-390.png",
+  "status": "pass"
+}

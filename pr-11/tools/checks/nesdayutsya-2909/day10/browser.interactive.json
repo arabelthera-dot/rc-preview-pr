@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "page_sha256": "18efa8d27044d61bd2799c5968a384d9ccf0f83f196808bd7d412655753ab917",
+  "runner": "../run-b6.mjs",
+  "created_at": "2026-10-09T19:15:01.942Z",
+  "browser": "151.0.7922.173",
+  "plan": "../day10-plan.mjs",
+  "inputs": {
+    "../../../../muzei/ne-sdayutsya/podvig-varyag.html": "18efa8d27044d61bd2799c5968a384d9ccf0f83f196808bd7d412655753ab917",
+    "../run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../day10-plan.mjs": "59ad11869d280fb2eadb0744e3fb4ece25f132dc6e0a807a4087d42728f7c77d",
+    "../plans.mjs": "739639f3b2368589794115ebb6099df6d57dda5441c68795dccc9840ab8e20d0",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../muzei/ne-sdayutsya/nesdayutsya-style.css": "39e9893b4180f72b0d7e77d2999dc22c2761371749fc30f2e41187b23ce92fdc",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/ne-sdayutsya/varyag-chemulpo-1904.jpg": "41f16d199d606239a97b589434fc0b810dd5ab52c1bde1ae4ced4de357b17077",
+    "../../../../muzei/ne-sdayutsya/varyag-rudnev-bulla.jpg": "379a745bbaa73a243431206f216d864c201dc71ab112131d8da89849171a6d6c",
+    "../../../../muzei/ne-sdayutsya/varyag-posle-boya-1904.jpg": "243a7a013379c180dac91579d1e10476b4d716be307405570ffc390b7323863a",
+    "../../../../assets/museum-choice-tale.js": "6aee17abd710db0c72a01085967efaf55a414c5edfa666574b45b46be465b709",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/scrolltelling.js": "782c0de78ecc16edb417b84d9c85a4e9e71f2e289fa2c2c4a27c63a06a689642",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../muzei/ne-sdayutsya/calendar-nesdayutsya.js": "c4ee7a954f4d4a1a7f0681ec473edb8a5a180c004c289d8e57399094b1141770",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qWVyvHpA.woff2": "bec4e724c49bde6d6b3f15038c8015f5dc7c810bdaadd3aee537ab72afc50e4a",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "../../../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qSVys.woff2": "bf23a7a4eebedbb87d4084a69496b29815914a18e339a00f5dc73a03c9c9328f",
+    "../../../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "../../../../muzei/ne-sdayutsya/varyag-odessa-1904.jpg": "12f01fd358ed2f6af9bdd984aaf56dfabc9dce753695f95fd76d982d98d22efe",
+    "../../../../muzei/ne-sdayutsya/varyag-otkrytka-1904.jpg": "bf82cf015450ec9f82f10e9271f32e52943a4194f7e53b60ac71d2fe0aaa51a3",
+    "entry-390.png": "961fffdfb971106cca21b79522d5e9e1279304a60ede8490ee7e86a3be27c845",
+    "entry-390.json": "034847a2215206a537a07f0e4d021f82bf8414ab3bee9b12c0055bea73b7a1b1",
+    "wrong-390.png": "03399d0e8cb6a98aef2a1118ae523e39761f706dd579eb7e01dcbb3a8557990e",
+    "wrong-390.json": "2cc23f2c3b6eb83e9b4ce7d54a48a1fed5537a271b1506e5f38bcb505cc8ad20",
+    "reset-390.png": "af18371a0f643a3221db6a5d4269f54156fcb213d76e0423302813cdae173371",
+    "reset-390.json": "9b10706e7050964a2ea1ee642af243ce2e2a7a67f62bafbdcdd67480705622e7",
+    "mobile-390.png": "7eafc5b71d253917619ca4cfb6f431be90625b25521066e23b4e73bf13f7d68a",
+    "mobile-390.json": "2452264fbef3a9dbc620557fd7979732ac0dd14708fa2c4310fc55da4352a718",
+    "mobile-1440.png": "31332c4afdd5f0f600eb8443186176582eca0aafb25bd3faf0541b2438fad240",
+    "mobile-1440.json": "1ec0f88fdb8761a0c218ccd95423f043b1e8cda1e5362310c44a870e9a41b4d8",
+    "nojs-390.png": "a246f7089ba997887394d4f79944090b811de3005fa487db65e40ec752fb5100",
+    "nojs-390.json": "b9020a87d1e622652529dc08cb4d14b6ace5f197d50fb254db1274770d848bf9",
+    "score-390.png": "7193b90e77722f75dad1d075884f94a3303dbbc51372cee744e40cab2f1ec417",
+    "score-390.json": "a2417b837fb76bd90fbf6a8d0666544f5919a8de32669c7ac499dd619e39a550",
+    "main-390.png": "1c70b7eae8640b30f82801555a794247acf92265504c989762452453b5309675",
+    "main-390.json": "aba6b2c7dad07bac864dc0147486f70880f1cf61578f31a647fc12e9c123c8fb",
+    "empty-390.png": "f7f614be50629ea6994a24d0c11f1585ab489e304ef82a5436cfee3a5ae86bcb",
+    "empty-390.json": "67925fd3561c9d365ff10c5a9138ed7ff779e0febeb06e104e6db458502a6f83"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
