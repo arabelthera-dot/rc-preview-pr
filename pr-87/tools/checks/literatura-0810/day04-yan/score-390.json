@@ -1,0 +1,56 @@
+{
+  "test_id": "score-390",
+  "code": "score",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-yan-chingishan.html",
+  "steps": [
+    "Полный набор уникальных наград",
+    "Повторные награды тем же ключом"
+  ],
+  "checks": [
+    {
+      "label": "Знаменатель шкалы 100",
+      "actual": "⭐ 0 / 100",
+      "expected": "⭐ 0 / 100",
+      "ok": true
+    },
+    {
+      "label": "Реестр наград: 5 вопросов по 20",
+      "actual": {
+        "q": [
+          5,
+          20
+        ]
+      },
+      "expected": {
+        "q": [
+          5,
+          20
+        ]
+      },
+      "ok": true
+    },
+    {
+      "label": "Вопросов в викторине столько же, сколько наград",
+      "actual": 5,
+      "expected": 5,
+      "ok": true
+    },
+    {
+      "label": "Объявленный максимум достижим",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    },
+    {
+      "label": "Повтор не переполняет максимум",
+      "actual": 100,
+      "expected": 100,
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "score-390.png",
+  "status": "pass"
+}
