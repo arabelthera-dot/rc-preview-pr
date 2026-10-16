@@ -1,0 +1,33 @@
+<!doctype html><html lang=ru><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<title>23 поломки конвейера и GitHub Pro</title><meta name=robots content=noindex>
+<style>body{font:15px/1.45 system-ui,sans-serif;margin:0;padding:16px;background:#faf8f3;color:#222}h1{font-size:20px}
+.s{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}.s div{background:#fff;border:1px solid #ddd;border-radius:8px;padding:8px 12px}
+.w{overflow-x:auto}table{border-collapse:collapse;min-width:760px;background:#fff}td,th{border:1px solid #ddd;padding:6px 8px;vertical-align:top}th{background:#efe9da;text-align:left}.n{text-align:right}</style>
+<h1>23 поломки конвейера (06–09.10.2026): что заберёт GitHub Pro</h1>
+<p>Источник — журнал поломок машины, разные поломки с 06.10; «раз» — сколько раз сработала. Поломки страниц (аудитор) сюда не входят.</p>
+<div class=s><div><b style='color:#1f7a3a'>уходит: 2</b></div><div><b style='color:#a86b00'>частично: 7</b></div><div><b style='color:#8a2b2b'>остаётся: 10</b></div><div><b>шум — убрать: 4</b></div></div>
+<p><b>Вывод.</b> Pro закрывает слой слияния: прямой пуш и автооткат уходят целиком, конфликты и «сдано без заявки» GitHub перестаёт пропускать в main — около 230 строк нашего кода из 1898 (слияние, сторож main, автооткат, «тишина») удаляются. 10 поломок — не про слияние: вызовы агентов, общая папка, выключатели. Их Pro не лечит, это следующий слой переезда. 4 строки — не поломки, а снесённые детали, которые всё ещё пишут в журнал.</p>
+<div class=w><table><tr><th>№</th><th>Что ломалось</th><th>Раз</th><th>Кто сейчас ловит</th><th>Что делает GitHub Pro</th><th>Итог</th></tr>
+<tr><td>1</td><td>Прямой пуш в main мимо заявки (скрипт без замены)</td><td class=n>1</td><td>сторож main в pr-checks</td><td>Защита ветки: в main без заявки не пускает вообще</td><td><b style='color:#1f7a3a'>уходит</b></td></tr>
+<tr><td>2</td><td>Автооткат прямого пуша в main</td><td class=n>1</td><td>автооткат в pr-checks</td><td>Откатывать нечего — прямой пуш запрещён</td><td><b style='color:#1f7a3a'>уходит</b></td></tr>
+<tr><td>3</td><td>Заявка #633 зелёная, но конфликтует с main</td><td class=n>21</td><td>pr-checks → карточка автору</td><td>Не даст слить; кнопка «обновить ветку»; конфликт правит автор</td><td><b style='color:#a86b00'>частично</b></td></tr>
+<tr><td>4</td><td>Заявка #686 зелёная, но конфликтует с main</td><td class=n>9</td><td>pr-checks → карточка автору</td><td>То же</td><td><b style='color:#a86b00'>частично</b></td></tr>
+<tr><td>5</td><td>Заявка #83 (с «да» Сергея) конфликтует с main</td><td class=n>3</td><td>pr-checks → карточка автору</td><td>То же</td><td><b style='color:#a86b00'>частично</b></td></tr>
+<tr><td>6</td><td>Заявка #654 конфликтует с main</td><td class=n>3</td><td>pr-checks → карточка автору</td><td>То же</td><td><b style='color:#a86b00'>частично</b></td></tr>
+<tr><td>7</td><td>Ветка deepseek4/kalendar сдана без заявки</td><td class=n>9</td><td>pr-checks открывает заявку сам</td><td>Без заявки в main не попасть — агент обязан открыть её сам</td><td><b style='color:#a86b00'>частично</b></td></tr>
+<tr><td>8</td><td>Ветка bot4/kalendar сдана без заявки</td><td class=n>3</td><td>pr-checks открывает заявку сам</td><td>То же</td><td><b style='color:#a86b00'>частично</b></td></tr>
+<tr><td>9</td><td>Ветка claude2/kvitok сдана без заявки</td><td class=n>1</td><td>pr-checks открывает заявку сам</td><td>То же</td><td><b style='color:#a86b00'>частично</b></td></tr>
+<tr><td>10</td><td>Вызов claude2 (концепция изобретений) не встал в очередь</td><td class=n>9</td><td>диспетчер</td><td>Не про слияние</td><td><b style='color:#8a2b2b'>остаётся</b></td></tr>
+<tr><td>11</td><td>Вызов claude2 по конфликту #654 не встал в очередь</td><td class=n>8</td><td>диспетчер</td><td>Не про слияние</td><td><b style='color:#8a2b2b'>остаётся</b></td></tr>
+<tr><td>12</td><td>Вызов deepseek4 по конфликту #633 не встал в очередь</td><td class=n>8</td><td>диспетчер</td><td>Не про слияние</td><td><b style='color:#8a2b2b'>остаётся</b></td></tr>
+<tr><td>13</td><td>Вызов deepseek4 (доска искусства) не встал в очередь</td><td class=n>3</td><td>диспетчер</td><td>Не про слияние</td><td><b style='color:#8a2b2b'>остаётся</b></td></tr>
+<tr><td>14</td><td>Вызов bot4 (доска первопроходцев) не встал в очередь</td><td class=n>1</td><td>диспетчер</td><td>Не про слияние</td><td><b style='color:#8a2b2b'>остаётся</b></td></tr>
+<tr><td>15</td><td>Вызов bot4 по конфликту #584 не встал в очередь</td><td class=n>1</td><td>диспетчер</td><td>Не про слияние</td><td><b style='color:#8a2b2b'>остаётся</b></td></tr>
+<tr><td>16</td><td>Общая папка ~/projects отстаёт от main на 180 коммитов</td><td class=n>23</td><td>сторож папки</td><td>Не про слияние</td><td><b style='color:#8a2b2b'>остаётся</b></td></tr>
+<tr><td>17</td><td>Вложенный репо превью стоит на чужой ветке</td><td class=n>1</td><td>сторож папки</td><td>Не про слияние</td><td><b style='color:#8a2b2b'>остаётся</b></td></tr>
+<tr><td>18</td><td>Вложенный репо продакшена стоит на чужой ветке</td><td class=n>1</td><td>сторож папки</td><td>Не про слияние</td><td><b style='color:#8a2b2b'>остаётся</b></td></tr>
+<tr><td>19</td><td>Файл выключателей битый (значение 4 вместо 0/1)</td><td class=n>1</td><td>выключатели</td><td>Не про слияние</td><td><b style='color:#8a2b2b'>остаётся</b></td></tr>
+<tr><td>20</td><td>«Почтальон» выключен — пишется как поломка</td><td class=n>6</td><td>обходчик</td><td>Не поломка: снесённая деталь шумит в журнале</td><td><b style='color:#555'>шум — убрать</b></td></tr>
+<tr><td>21</td><td>«Разборщик» выключен — пишется как поломка</td><td class=n>4</td><td>обходчик</td><td>То же</td><td><b style='color:#555'>шум — убрать</b></td></tr>
+<tr><td>22</td><td>«Контролёр» выключен — пишется как поломка</td><td class=n>3</td><td>сторож пульса</td><td>То же</td><td><b style='color:#555'>шум — убрать</b></td></tr>
+<tr><td>23</td><td>«Приёмщик поставок» молчит 141 срок</td><td class=n>2</td><td>сторож пульса</td><td>Сторож следит за снесённой деталью</td><td><b style='color:#555'>шум — убрать</b></td></tr></table></div></html>
