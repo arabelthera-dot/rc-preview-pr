@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "page_sha256": "582b7ba09dfc0fe997afc82b0d4c14efb4abe1d294971c0b914673b78b345011",
+  "runner": "../run-b6.mjs",
+  "created_at": "2026-10-09T19:12:36.542Z",
+  "browser": "151.0.7922.173",
+  "plan": "../day08-plan.mjs",
+  "inputs": {
+    "../../../../muzei/ne-sdayutsya/podvig-kosmodemyanskaya.html": "582b7ba09dfc0fe997afc82b0d4c14efb4abe1d294971c0b914673b78b345011",
+    "../run-b6.mjs": "9102a2e45306a6add3e56fcbd8a460d4cf6a0ee8a625bf26bee8b9e6a3e5285a",
+    "../day08-plan.mjs": "647fa077cbcffd8658d59148768a17f45ec91ea33feb94dc4ff0ad2fc8467b5d",
+    "../plans.mjs": "739639f3b2368589794115ebb6099df6d57dda5441c68795dccc9840ab8e20d0",
+    "../../../../assets/fonts.css": "6025405e45ebd2219a5716ff005bd18a234361b87151f483c5d749c9679d29a0",
+    "../../../../muzei/ne-sdayutsya/nesdayutsya-style.css": "39e9893b4180f72b0d7e77d2999dc22c2761371749fc30f2e41187b23ce92fdc",
+    "../../../../assets/museum-theme.css": "860c46ef384ae104f269d5c5557686352dd17123648e1da3eeb6a1ec7dbd8c28",
+    "../../../../muzei/ne-sdayutsya/zoya-portret-1941.jpg": "449735d682755eb7dfcbd5e3f0d927d9661b23f3d72cc65d0b407bacd61f5dc5",
+    "../../../../muzei/ne-sdayutsya/zoya-komsomolka-1942-02-19.jpg": "9a09bc3aa4575a442c22272862dc8d3d688dcb0c6479744ad0a2ef9b00b01d0f",
+    "../../../../muzei/ne-sdayutsya/zoya-marka-1942.jpg": "ee19112bf2718cb68a00c16325a43d8fc22d7cb9a55ac0249c9ef4b33c0fdb58",
+    "../../../../assets/museum-slovo-geroya.js": "e887721481307327878b42031d0dd10110ea754c73bb1d6456e7d4383a5fd47a",
+    "../../../../assets/museum-audioguide.js": "25ee813c11e79591f8a50895d65e0e52c230aa7abe5d604ee7ed335316b63caf",
+    "../../../../assets/museum-score.js": "2182608307c7078473ece8453b34efa492a769f832ca5426169ff8eaddb59a2f",
+    "../../../../assets/museum-quiz.js": "cbad871665abd09691bcb0095c4f6eb859ae2f52b7551de37eef4b2d505bdd17",
+    "../../../../assets/museum-chrome.js": "36e66b9e071643768f4a23f2fa9daf1918cef8815962afd2a5ef60b30670c74b",
+    "../../../../assets/scrolltelling.js": "782c0de78ecc16edb417b84d9c85a4e9e71f2e289fa2c2c4a27c63a06a689642",
+    "../../../../assets/museum-support.js": "b01f62ae2ec23f6e1329f6a2c2b2e9bc85e72545696d360a418fe0df040bbbcd",
+    "../../../../assets/museum-calendar-month.js": "e597a197c185ee065da25691ccb5c4cd538960f7642629c30198dc4ab81d59b3",
+    "../../../../muzei/ne-sdayutsya/calendar-nesdayutsya.js": "c4ee7a954f4d4a1a7f0681ec473edb8a5a180c004c289d8e57399094b1141770",
+    "../../../../assets/museum-return.js": "b033bea947d64b73bf6fe770c4b43d204470c164e99ec9a5f5807834a82eb486",
+    "../../../../assets/analytics.js": "e26d9783206ecb19a0796aaa4f89654ec178ff929af47d1ce36bfdd101783e20",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+    "../../../../assets/fonts/inter-UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2": "71d5ee93cc1e9f1d520a3a8b66456de18c7879d8df09d57fcd2eaff75fef0075",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTjYgFE_.woff2": "c108681cba6a9820bff52f4a1a4a1d9edf356b347bd79b7c61e916028e8a8b54",
+    "../../../../assets/fonts/playfairdisplay-nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2": "e0c764a8e9e1cce92163c55bac4b2ad6cd4cf8c696ce2289ab5c41565e65b7e2",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFWzr8.woff2": "4271064a37f3ffc0aac5f3806db8a72acc23e19447d1804e4e80d8796cbf6330",
+    "../../../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qWVyvHpA.woff2": "bec4e724c49bde6d6b3f15038c8015f5dc7c810bdaadd3aee537ab72afc50e4a",
+    "../../../../assets/fonts/ptserif-EJRSQgYoZZY2vCFuvAnt66qSVys.woff2": "bf23a7a4eebedbb87d4084a69496b29815914a18e339a00f5dc73a03c9c9328f",
+    "../../../../assets/fonts/ptserif-EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2": "050aee25e3462f72c4d357ee964b8df1801e701bae8af275b697581a87c04a48",
+    "../../../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxDcwg.woff2": "83c005d49d8a6a50474c73a5a36ac0468076e9c4a29da7bdb14995d80560a5be",
+    "../../../../assets/fonts/jetbrainsmono-tDbv2o-flEEny0FZhsfKu5WU4zr3E_BX0PnT8RD8yKwBNntkaToggR7BYRbKPxTcwhsk.woff2": "e17cfd15fb96909d64095015f958207063a0c07191da3512df7d560a781aebdf",
+    "entry-390.png": "4f93bc4b3739ac1e0dc97e570e442452368b2ac6294bc284c447b2885d1210fb",
+    "entry-390.json": "2d5cafaa474bb984f0a06ec3b5fc10483167e377e703bfdc23cab36a81367cbb",
+    "wrong-390.png": "6a0ff3c77143a1ef9e4464a365dfd267bee57c7c426ac9ccab83141aabaaa62b",
+    "wrong-390.json": "a6ac7d796c67c5b72bff1b7eda62d7827b997593fc7b0f5414094aa8a10ea92d",
+    "reset-390.png": "b0d1f19664334ae55d50215553d31b0627d4bd3910e5079912c65fbc4e216385",
+    "reset-390.json": "b4734ca7fcdc9791ee30280c00f18c393528d75a3f3d50a0e0fb5c0f8c32a723",
+    "mobile-390.png": "f775ea1ccc3115b948a9a9c3b4ffa4bf70b481405872cfec5830fa5f1e2885c6",
+    "mobile-390.json": "182d0934175b07ee6513878493b43eccdae8b360ed15d35099587a1eec81c172",
+    "mobile-1440.png": "fb7fd364b78558a0b2787812d91e52765e301a1d198024759c4620414aef66cb",
+    "mobile-1440.json": "309f0eeb5339416b722c7f888bb65a622e54368cb7fae0cb35d344cbbc59d6d4",
+    "nojs-390.png": "e094c72c70a2a6b9925ea0fa2172cae6813fd4433422767461d3e724cad724a6",
+    "nojs-390.json": "84c894f1f39d23d72429b1492331012ade820721925e0d2901a34123c1fcff92",
+    "score-390.png": "17f0d4cbb94c65be0c1872bea438ed73002ad609c7acf9b683a9b4c125db924a",
+    "score-390.json": "bc632d3e16cae633bb13e2f6419c0cd2f108c15616722f60e9444eaf0e95fe6e",
+    "main-390.png": "27b28c7d43511efc55562d6d9bbb435d1aa46b62fac2fbc484b8b1cb3928af3a",
+    "main-390.json": "d2e60a0671f19687fbb175f504e965f7fb78432ad7e55312287568be6eaa9592",
+    "empty-390.png": "1326140abb23ca38d0b8cf5c69baacdc4fad184bb37d987d18fcdcfa52e68b1e",
+    "empty-390.json": "6f00b324781041ff4b1a97ed3f8c905f6e571b500ae041e68e7a76ac429087d7"
+  },
+  "scenarios": {
+    "entry": [
+      {
+        "test_id": "entry-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "entry-390.json"
+      }
+    ],
+    "wrong": [
+      {
+        "test_id": "wrong-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "wrong-390.json"
+      }
+    ],
+    "reset": [
+      {
+        "test_id": "reset-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "reset-390.json"
+      }
+    ],
+    "mobile": [
+      {
+        "test_id": "mobile-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "mobile-390.json"
+      },
+      {
+        "test_id": "mobile-1440",
+        "status": "pass",
+        "automated": true,
+        "width": 1440,
+        "javascript_enabled": true,
+        "evidence": "mobile-1440.json"
+      }
+    ],
+    "nojs": [
+      {
+        "test_id": "nojs-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": false,
+        "evidence": "nojs-390.json"
+      }
+    ],
+    "score": [
+      {
+        "test_id": "score-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "score-390.json"
+      }
+    ],
+    "main": [
+      {
+        "test_id": "main-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "main-390.json"
+      }
+    ],
+    "empty": [
+      {
+        "test_id": "empty-390",
+        "status": "pass",
+        "automated": true,
+        "width": 390,
+        "javascript_enabled": true,
+        "evidence": "empty-390.json"
+      }
+    ]
+  },
+  "errors": [],
+  "environment": {
+    "origin": "http://b6.local",
+    "network": "local inputs only"
+  }
+}
