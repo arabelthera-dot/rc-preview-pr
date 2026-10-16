@@ -1,0 +1,58 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-chekhov-toska.html",
+  "steps": [
+    "Вычеркнуть авторскую фразу на с. 236",
+    "Вычеркнуть весь абзац на с. 235 (три фразы)"
+  ],
+  "checks": [
+    {
+      "label": "Фраза зачёркнута",
+      "actual": "Ничего ведь нет лучше, как выслушать человека…",
+      "expected": "Ничего ведь нет лучше, как выслушать человека…",
+      "ok": true
+    },
+    {
+      "label": "Открыт окончательный текст",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Окончательный текст — без вычеркнутой фразы",
+      "actual": false,
+      "expected": false,
+      "ok": true
+    },
+    {
+      "label": "Карточка отмечена",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Сокращение даёт 10",
+      "actual": 10,
+      "expected": 10,
+      "ok": true
+    },
+    {
+      "label": "Два сокращения — 20",
+      "actual": 20,
+      "expected": 20,
+      "ok": true
+    },
+    {
+      "label": "Счётчик",
+      "actual": "Сокращено: 2 из 4",
+      "expected": "Сокращено: 2 из 4",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}
