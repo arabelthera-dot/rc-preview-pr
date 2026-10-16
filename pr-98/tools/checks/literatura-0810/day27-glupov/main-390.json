@@ -1,0 +1,58 @@
+{
+  "test_id": "main-390",
+  "code": "main",
+  "width": 390,
+  "javascript_enabled": true,
+  "url": "http://b6.local/muzei/literatura/lit-saltykov-istoriya-goroda.html",
+  "steps": [
+    "Органчик: бегунок до гротеска",
+    "Прыщ: бегунок до гротеска"
+  ],
+  "checks": [
+    {
+      "label": "Сначала — строка «как в хронике»",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Подлинная строка Щедрина",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Пояснение самого Щедрина",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Карточка отмечена пройденной",
+      "actual": true,
+      "expected": true,
+      "ok": true
+    },
+    {
+      "label": "Гротеск даёт 8",
+      "actual": 8,
+      "expected": 8,
+      "ok": true
+    },
+    {
+      "label": "Два бегунка — 16",
+      "actual": 16,
+      "expected": 16,
+      "ok": true
+    },
+    {
+      "label": "Счётчик",
+      "actual": "Пройдено до гротеска: 2 из 5",
+      "expected": "Пройдено до гротеска: 2 из 5",
+      "ok": true
+    }
+  ],
+  "errors": [],
+  "screenshot": "main-390.png",
+  "status": "pass"
+}
