@@ -1,0 +1,51 @@
+#!/bin/sh
+# Сторожа стандартов страниц. Канон — tools/ репозитория russian-civilization,
+# запаска — сторож из самого превью-репо (tools/audit-precommit.py).
+# Блокируют только регрессию: новое нарушение не проходит, старые долги коммитятся.
+#
+# Сторожей не нашли — коммит НЕ проходит. Молчащий сторож хуже отсутствующего:
+# 18.08 хук с «нет сторожей — пропускаю» пропускал бы любую правку без единой проверки.
+repo_root=$(git rev-parse --show-toplevel) || exit 1
+
+PY="${RC_PY:-/home/agent/opt/bin/python3}"
+[ -x "$PY" ] || PY=python3
+
+for d in "$RC_TOOLS" \
+         "/home/agent/projects/russian-civilization/tools" \
+         "$repo_root/../tools" \
+         "$repo_root/tools"; do
+  [ -n "$d" ] && [ -f "$d/audit-precommit.py" ] && { TOOLS="$d"; break; }
+done
+
+if [ -z "$TOOLS" ]; then
+  echo "╳ КОММИТ ОСТАНОВЛЕН: сторожа стандартов не найдены."
+  echo "  Искали audit-precommit.py в RC_TOOLS, tools/ репозитория и $repo_root/tools."
+  echo "  Переустановить: bash ~/projects/russian-civilization/tools/install-hooks.sh"
+  echo "  Осознанный обход одним коммитом: git commit --no-verify"
+  exit 1
+fi
+
+# --- Сторож зон: чужой музей не коммитится (Сергей, 01.09.2026) --------------
+# Стоит ПЕРВЫМ: сначала «твоя ли это работа», потом «по стандарту ли она сделана».
+for d in "$RC_TOOLS" \
+         "/home/agent/projects/russian-civilization/tools" \
+         "$repo_root/../tools" \
+         "$repo_root/tools"; do
+  [ -n "$d" ] && [ -f "$d/zone-guard.py" ] && { ZONES="$d"; break; }
+done
+if [ -z "$ZONES" ]; then
+  echo "╳ КОММИТ ОСТАНОВЛЕН: сторож зон (zone-guard.py) не найден."
+  echo "  Сделай git pull: без него не проверить, твой ли это музей."
+  exit 1
+fi
+"$PY" "$ZONES/zone-guard.py" --staged || exit 1
+
+"$PY" "$TOOLS/audit-precommit.py" || exit 1
+[ -f "$TOOLS/audit-structure.py" ] && { "$PY" "$TOOLS/audit-structure.py" --staged || exit 1; }
+# Сигнатура медиа (16.10.2026): под cmp-whistler.jpg 2,5 месяца лежала HTML-страница Commons.
+# Сторож медиа общий; здесь — только его проверка формата, правило веса превью не включено.
+grep -q -- '--signatury' "$TOOLS/check-media.py" 2>/dev/null && \
+  { "$PY" "$TOOLS/check-media.py" --signatury "$repo_root" || exit 1; }
+# Турникет хуков (Сергей, 25.09.2026, пункт А): новый красный хук не проходит.
+[ -f "$TOOLS/hook-gate.py" ] && { "$PY" "$TOOLS/hook-gate.py" || exit 1; }
+exit 0
