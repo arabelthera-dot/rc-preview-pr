@@ -1,0 +1,18 @@
+[
+  {
+    "id": "landscape",
+    "title": "File:Church of the Intercession on the Nerl.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Church_of_the_Intercession_on_the_Nerl.jpg",
+    "artist": "kishjar?",
+    "license": "CC BY 2.0",
+    "description": "",
+    "file": "landscape.webp",
+    "sha256": "fcc128a6a46072fbc0874ac9f39f465c233bd5cc5d2f9fc11fb96ff8ddd9b578",
+    "checked": "2026-10-16",
+    "source": "https://commons.wikimedia.org/wiki/File:Church_of_the_Intercession_on_the_Nerl.jpg",
+    "modified": "уменьшено для веба",
+    "taken_by": "tools/audit-prava.py (commons_meta, judge_kadr, entry); сверка кадра по изображению, score 1.000",
+    "date": "2024-05-25 19:26:22",
+    "credit": "https://www.flickr.com/photos/kishjar/53798832155/"
+  }
+]

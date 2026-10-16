@@ -1,0 +1,18 @@
+[
+  {
+    "id": "archangel-1280",
+    "title": "File:Kizhi. Chapel of the Archangel Michael DSC02753 2200.jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Kizhi._Chapel_of_the_Archangel_Michael_DSC02753_2200.jpg",
+    "artist": "Alexxx1979",
+    "license": "CC BY-SA 4.0",
+    "description": "",
+    "file": "archangel-1280.jpg",
+    "sha256": "9c36d77200eb9d8fc782fca6e24649e38020f8758a01843e84a1129a80b41f1d",
+    "checked": "2026-10-16",
+    "source": "https://commons.wikimedia.org/wiki/File:Kizhi._Chapel_of_the_Archangel_Michael_DSC02753_2200.jpg",
+    "modified": "уменьшено для веба",
+    "taken_by": "tools/audit-prava.py (commons_meta, judge_kadr, entry); сверка кадра по изображению, score 0.999",
+    "date": "2016-07-19 19:33:25",
+    "credit": "Own work"
+  }
+]

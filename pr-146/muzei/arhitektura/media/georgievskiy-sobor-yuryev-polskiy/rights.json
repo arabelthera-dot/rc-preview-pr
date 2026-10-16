@@ -1,0 +1,35 @@
+[
+  {
+    "id": "historic",
+    "title": "File:Георгиевский собор (Юрьев-Польский).jpg",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_%28%D0%AE%D1%80%D1%8C%D0%B5%D0%B2-%D0%9F%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9%29.jpg",
+    "artist": "Unknown author Unknown author",
+    "license": "Public domain",
+    "description": "",
+    "file": "historic.webp",
+    "sha256": "5d7e2514f421b38444573fd5684bfb777a5c3842454686eb92043ddb84506c7e",
+    "checked": "2026-10-16",
+    "source": "https://commons.wikimedia.org/wiki/File:%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_(%D0%AE%D1%80%D1%8C%D0%B5%D0%B2-%D0%9F%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%B8%D0%B9).jpg",
+    "modified": "уменьшено для веба",
+    "taken_by": "tools/audit-prava.py (commons_meta, judge_kadr, entry); сверка кадра по изображению, score 1.000",
+    "date": "1899",
+    "credit": "И.Толстой, Н.Кондаков. Русские древности в памятниках искусства, выпуск 6: памятники Владимира, Новгорода и Пскова. СПб, 1899.",
+    "osnovanie": "срок охраны проверен по странице файла: {{PD-old}}"
+  },
+  {
+    "id": "ensemble",
+    "title": "File:2011.05.09 3277 Георгиевский собор в Юрьеве Польском.JPG",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/c/cf/2011.05.09_3277_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_%D0%B2_%D0%AE%D1%80%D1%8C%D0%B5%D0%B2%D0%B5_%D0%9F%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%BC.JPG",
+    "artist": "Ded egor",
+    "license": "CC BY-SA 3.0",
+    "description": "",
+    "file": "ensemble.webp",
+    "sha256": "f6094b76d5fb5300018fbd37da1869725f4e8583547ae2fa5c2ba1f7a011b2c8",
+    "checked": "2026-10-16",
+    "source": "https://commons.wikimedia.org/wiki/File:2011.05.09_3277_%D0%93%D0%B5%D0%BE%D1%80%D0%B3%D0%B8%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%BE%D0%B1%D0%BE%D1%80_%D0%B2_%D0%AE%D1%80%D1%8C%D0%B5%D0%B2%D0%B5_%D0%9F%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%BC.JPG",
+    "modified": "уменьшено для веба",
+    "taken_by": "tools/audit-prava.py (commons_meta, judge_kadr, entry); сверка кадра по изображению, score 1.000",
+    "date": "2011-05-09 14:05:04",
+    "credit": "Own work"
+  }
+]
