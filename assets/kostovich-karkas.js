@@ -7,7 +7,6 @@
   var $ = function (s) { return root.querySelector(s); };
   var cv = $('.ko-cv'), ctx = cv.getContext('2d');
   var task = $('.ko-task'), sub = $('.ko-sub'), cap = $('.ko-cap'), capT = $('.ko-cap-t'), next = $('.ko-next'), tip = $('.ko-tip');
-  var rules = $('.ko-rules'), play = $('.ko-play'), bStart = $('.ko-start');
   var steps = root.querySelectorAll('.ko-steps li');
   var stName = $('.ko-st-name'), stVal = $('.ko-st-val'), status = $('.ko-status'), meter = $('.ko-meter'), meterI = $('.ko-meter i');
   var partsBox = $('.ko-parts'), parts = root.querySelectorAll('.ko-part');
@@ -22,7 +21,6 @@
     'спицы тянутся от шахты к кольцам — как у велосипедного колеса: тонкие, а вместе держат кольцо круглым.',
     'сверху натянули шёлк — это обшивка. Каркас готов.'];
   var S; // состояние
-  var started = false; // до «Начать» кнопки игры не работают
   function reset() {
     S = { phase: 'soft', wind: 0, hold: false, crush: 0, built: 0, prog: [0, 0, 0, 0],
           windT: 0, len: 36, stretching: false, autoWind: 0, t: 0, shake: 0 };
@@ -274,7 +272,7 @@
     }
     upStatus();
     upFill();
-    if (!play.hidden) draw();
+    draw();
     requestAnimationFrame(loop);
   }
 
@@ -289,7 +287,6 @@
     next.hidden = false;
   }
   next.addEventListener('click', function () {
-    if (!started) return;
     next.hidden = true; cap.hidden = true;
     S.phase = 'build'; S.crush = 0; S.hold = false;
     setStep(1);
@@ -302,7 +299,7 @@
   function markNext() { parts.forEach(function (p, k) { p.classList.toggle('next', k === S.built); }); }
   parts.forEach(function (p, k) {
     p.addEventListener('click', function () {
-      if (!started || S.phase !== 'build' || p.classList.contains('done')) return;
+      if (S.phase !== 'build' || p.classList.contains('done')) return;
       if (k !== S.built) {
         p.classList.remove('no'); void p.offsetWidth; p.classList.add('no');
         sub.textContent = 'Не та деталь. Сейчас нужна «' + PART_NAMES[S.built] + '» — она мигает';
@@ -360,7 +357,7 @@
   // ткнул и отпустил быстрее 0,4 с — подсказать, что кнопку надо держать
   function holdable(btn, on, off, busy) {
     var t0 = 0;
-    function down() { if (!started) return; t0 = performance.now(); tip.hidden = true; btn.classList.add('go'); on(); }
+    function down() { t0 = performance.now(); tip.hidden = true; btn.classList.add('go'); on(); }
     function up() {
       if (!t0) return;
       var quick = performance.now() - t0 < 400; t0 = 0;
@@ -378,22 +375,6 @@
   holdable(bStretch, function () { if (S.phase === 'stretch') { S.stretching = true; bStretch.classList.remove('hint'); } }, function () { S.stretching = false; },
     function () { return S.phase === 'stretch'; });
 
-  // ---- Экран «Как играть» ----
-  function showRules() {
-    started = false; S.hold = false; S.stretching = false;
-    bWind.classList.remove('go'); bStretch.classList.remove('go');
-    play.hidden = true; rules.hidden = false;
-    bStart.textContent = played ? 'Вернуться к игре' : 'Начать';
-    root.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
-  }
-  var played = false;
-  bStart.addEventListener('click', function () {
-    rules.hidden = true; play.hidden = false;
-    started = true; played = true;
-    size(); draw();
-    root.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
-  });
-  $('.ko-rules-btn').addEventListener('click', showRules);
-
-  reset(); requestAnimationFrame(loop);
+  // игра работает сразу (Р201): без экрана до старта и без «Начать»
+  size(); reset(); requestAnimationFrame(loop);
 })();
