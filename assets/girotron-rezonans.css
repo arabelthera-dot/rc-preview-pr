@@ -63,19 +63,16 @@
 .gr-src{font-size:13px;color:#b4c4d4;overflow-wrap:anywhere}
 @media (prefers-reduced-motion:reduce){.gr-hand{animation:none}}
 
-/* Р198: экран «Как играть» до старта, «Что сделать сейчас:», подсказки на неверный ход */
+/* Р198: «Что сделать сейчас:», подсказки на неверный ход. Р201: короткие правила под игрой, без экрана до старта */
+.gr-rules{margin:18px 0 0;padding:14px 0 0;border-top:1px solid rgba(255,255,255,.12)}
 .gr-rules-h{margin:0 0 8px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(24px,6.4vw,32px);color:#fff}
-.gr-why,.gr-end{margin:0 0 12px;font-size:17px;color:#e8eef5}
-.gr-why b,.gr-end b{color:#ffd36b}
+.gr-end{margin:0 0 12px;font-size:17px;color:#e8eef5}
+.gr-end b{color:#ffd36b}
 .gr-howto{margin:0 0 12px;padding:0;list-style:none;counter-reset:gr-h}
 .gr-howto li{position:relative;margin:0 0 10px;padding:10px 12px 10px 52px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);font-size:17px;line-height:1.45;counter-increment:gr-h}
 .gr-howto li::before{content:counter(gr-h);position:absolute;left:10px;top:10px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:#c9a84c;color:#1a1206;font-weight:800;font-size:18px}
 .gr-howto li b{color:#fff}
-.gr-howto li span{color:#b8d4ec;font-size:16px}
-.gr-go{display:block;width:100%;min-height:64px;margin:6px 0 0;border:0;border-radius:32px;background:#ffd36b;color:#1a1206;font:inherit;font-size:24px;font-weight:800;cursor:pointer;box-shadow:0 6px 18px rgba(255,211,107,.25)}
-.gr-go:focus-visible,.gr-rules-btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
 .gr-play{position:relative}
-.gr-rules-btn{position:absolute;top:-2px;right:0;min-height:36px;padding:4px 12px;border:1px solid rgba(201,168,76,.6);border-radius:18px;background:transparent;color:#e4c97a;font:inherit;font-size:14px;font-weight:700;cursor:pointer}
 .gr-now{margin:0;font-size:14px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:#c9a84c}
 .gr-poke{position:absolute;left:8px;right:8px;bottom:8px;margin:0;padding:8px 10px;border-radius:8px;background:rgba(20,10,0,.88);border:1px solid #ffd36b;color:#ffe9a8;font-size:15px;font-weight:700;text-align:center}
 .gr-tap{margin:4px 0 0;padding:8px 10px;border-radius:8px;background:rgba(201,168,76,.14);border-left:3px solid #ffd36b;color:#ffe9a8;font-size:15px;font-weight:700}

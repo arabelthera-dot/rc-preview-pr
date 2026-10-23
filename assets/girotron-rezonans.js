@@ -1,7 +1,7 @@
 /* Игра «Поймай резонанс» (31 января, гиротрон). Одна ручка «магнит»: попал в такт — точки-электроны
    сбиваются в сгусток, из трубки бьёт луч, счётчик ватт под сценой растёт. Шаги: 1964 (6 Вт) → ИТЭР (1 000 000 Вт)
    → финал: 8 лучей в бублик реактора, градусник до 300 млн °C. Все числа и подписи — в HTML под сценой.
-   Р198: до кнопки «Начать» виден только экран «Как играть», игра не рисуется и не реагирует; «Правила» открывают его снова. */
+   Р201: игра работает сразу при открытии, без экрана правил и кнопки «Начать»; короткие правила — под игрой. */
 (function () {
   var root = document.querySelector('[data-girotron-igra]');
   if (!root) return;
@@ -11,7 +11,7 @@
   var wattEl = $('.gr-watt'), wBox = $('.gr-w'), eraEl = $('.gr-era'), eraL = $('.gr-era-l');
   var msg = $('.gr-msg'), next = $('.gr-next'), steps = root.querySelectorAll('.gr-steps li');
   var termo = $('.gr-termo'), tfill = $('.gr-tfill'), tempEl = $('.gr-temp'), sunL = $('.gr-tsun-l');
-  var rules = $('.gr-rules'), play = $('.gr-play'), go = $('.gr-go'), poke = $('.gr-poke'), tap = $('.gr-tap');
+  var poke = $('.gr-poke'), tap = $('.gr-tap');
   var schema = $('.gr-schema'), finale = $('.gr-finale'), knobBox = $('.gr-knob'), kname = $('.gr-kname'), read = $('.gr-read');
 
   var LEVELS = [
@@ -21,7 +21,7 @@
   var N = 30, el = [];
   for (var i = 0; i < N; i++) el.push({ s0: i / N + Math.random() * 0.02, ph: Math.random() * Math.PI * 2 });
 
-  var lv, prog, bunch, done, t = 0, last = 0, mode, fin, touched, raf = 0, running = false, begun = false, hot = false;
+  var lv, prog, bunch, done, t = 0, last = 0, mode, fin, touched, raf = 0, running = false, hot = false;
 
   function fmtW(x) {
     if (x < 10) return x.toFixed(1).replace('.', ',').replace(',0', '') + ' Вт';
@@ -84,20 +84,6 @@
       task.textContent = 'Смотри на градусник';
       sub.textContent = 'Лучи греют плазму — газ, раскалённый до свечения…';
     }
-  });
-
-  // экран «Как играть»: до «Начать» игра скрыта и не крутит кадры
-  function openGame() {
-    rules.hidden = true; play.hidden = false;
-    if (!begun) { begun = true; resize(); start(0); }
-    if (!running) { running = true; last = 0; raf = requestAnimationFrame(frame); }
-    root.scrollIntoView({ block: 'start' });
-  }
-  go.addEventListener('click', openGame);
-  $('.gr-rules-btn').addEventListener('click', function () {
-    running = false; cancelAnimationFrame(raf); play.hidden = true; rules.hidden = false;
-    go.textContent = 'Вернуться к игре';
-    root.scrollIntoView({ block: 'start' });
   });
 
   // неверные действия: ткнул в картинку; ткнул в ручку вместо «тяни»
@@ -241,4 +227,6 @@
     if (running) raf = requestAnimationFrame(frame);
   }
 
+  resize(); start(0);
+  running = true; raf = requestAnimationFrame(frame);
 })();
