@@ -1,0 +1,103 @@
+/* Игра «Держи форму на ветру» (29 января, Костович). Палитра — как у черновиков изобретений 23–28 января. */
+.ko-body{margin:0;background:#060c17;color:#e8eef5;font-family:'Inter','Segoe UI',system-ui,sans-serif;line-height:1.55}
+.ko-wrap{max-width:760px;margin:0 auto;padding:0 12px}
+.ko-top{padding:14px 0 4px;background:linear-gradient(180deg,#0c1826,#060c17)}
+.ko-museum{margin:0 0 4px;color:#c9a84c;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+.ko-top h1{margin:0;font-family:'Playfair Display',Georgia,serif;font-size:clamp(20px,5vw,32px);line-height:1.15}
+.ko-hook{margin:6px 0 0;font-size:clamp(15px,4vw,18px);color:#d6e0ea}
+.ko-igra{position:relative;margin:10px 0 8px;padding:12px 14px 18px;border:1px solid rgba(255,255,255,.09);border-radius:18px;background:#0c1826;user-select:none;-webkit-user-select:none}
+/* Экран «Как играть» (Р198) */
+.ko-rules{padding:4px 2px 2px}
+.ko-rules-h{margin:0 0 6px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(24px,6.4vw,32px);line-height:1.15;color:#fff}
+.ko-rules-why{margin:0 0 14px;font-size:clamp(16px,4.3vw,18px);color:#d6e0ea}
+.ko-rules-steps{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.ko-rules-steps li{display:flex;gap:12px;align-items:flex-start;padding:12px;border-radius:14px;background:rgba(255,255,255,.05)}
+.ko-rn{flex:0 0 36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#c9a84c;color:#1a1206;font-size:19px;font-weight:800}
+.ko-rd{margin:0;font-size:clamp(17px,4.6vw,19px);font-weight:700;line-height:1.4;color:#fff}
+.ko-rs{margin:4px 0 0;font-size:17px;color:#e2eaf2}
+.ko-pill{display:inline-block;padding:0 8px;border:2px solid #c9a84c;border-radius:14px;color:#e4c97a;font-weight:800;white-space:nowrap}
+.ko-rules-end{margin:14px 0 0;font-size:17px;font-weight:700;color:#e4c97a}
+.ko-rules-first{margin:0 0 12px;padding:10px 12px;border-radius:12px;background:rgba(201,168,76,.14);font-size:17px;font-weight:700;color:#fff}
+.ko-rules-tip{margin:6px 0 0;font-size:16px;color:#d6e0ea}
+.ko-start{display:block;width:100%;max-width:360px;margin:16px auto 0;min-height:60px;border:0;border-radius:30px;background:#c9a84c;color:#1a1206;font:inherit;font-size:22px;font-weight:800;cursor:pointer;box-shadow:0 6px 0 #8a6f2c}
+.ko-start:active{transform:translateY(4px);box-shadow:0 2px 0 #8a6f2c}
+.ko-bar{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 6px}
+.ko-rules-btn{min-height:36px;padding:4px 14px;border:1px solid rgba(228,201,122,.6);border-radius:18px;background:transparent;color:#e4c97a;font:inherit;font-size:15px;font-weight:700;cursor:pointer}
+.ko-lbl{margin:0;font-size:15px;font-weight:800;letter-spacing:.5px;text-transform:uppercase;color:#c9a84c}
+.ko-steps{display:flex;gap:6px;margin:0;padding:0;list-style:none}
+.ko-steps li{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;background:rgba(255,255,255,.07);color:#7a9ab8}
+.ko-steps li.on{background:#c9a84c;color:#1a1206}
+.ko-task{margin:0;font-size:clamp(21px,5.6vw,28px);font-weight:800;line-height:1.2;color:#fff}
+.ko-sub{margin:3px 0 8px;min-height:1.45em;font-size:clamp(15px,4vw,17px);color:#e4c97a}
+[hidden]{display:none!important}
+
+.ko-stage{position:relative;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:linear-gradient(180deg,#1b3a5c,#3f6f94 70%,#7aa3bf)}
+.ko-cv{display:block;width:100%;height:100%}
+@media (max-width:520px){.ko-stage{aspect-ratio:4/3}}
+
+.ko-status{display:flex;align-items:center;gap:10px;margin:10px 0 0;font-size:16px;font-weight:700}
+.ko-st-name{flex:0 0 auto;color:#d6e0ea}
+.ko-meter{flex:1 1 auto;height:12px;border-radius:6px;background:rgba(255,255,255,.1);overflow:hidden}
+.ko-meter i{display:block;height:100%;width:100%;background:#4cd27a;border-radius:6px;transition:background .3s}
+.ko-meter.bad i{background:#e0607a}
+.ko-st-val{flex:0 0 auto;min-width:7.5em;text-align:right;color:#4cd27a}
+.ko-status.bad .ko-st-val{color:#ff9d94}
+.ko-schema{margin:2px 0 0;font-size:14px;color:#9fb6cc}
+
+/* Сборка (M-14) */
+.ko-parts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:12px 0 0}
+.ko-part{display:flex;align-items:center;gap:10px;min-height:56px;padding:8px 12px;border:2px dashed rgba(228,201,122,.45);border-radius:12px;background:rgba(255,255,255,.04);color:#e8eef5;font:inherit;font-size:16px;font-weight:700;text-align:left;cursor:pointer;opacity:.45;transition:opacity .3s,border-color .3s,background .3s}
+.ko-part.next{opacity:1;border:2px solid #c9a84c;background:rgba(201,168,76,.14);animation:ko-pulse 1.3s ease-in-out infinite}
+.ko-part.done{opacity:1;border:2px solid #4cd27a;background:rgba(76,210,122,.12);animation:none;cursor:default}
+.ko-part{position:relative;padding-right:28px}.ko-part.done::after{content:"✓";position:absolute;right:8px;top:4px;color:#4cd27a;font-size:18px}
+.ko-part.no{animation:ko-shake .4s 1}
+@keyframes ko-pulse{0%,100%{box-shadow:0 0 0 0 rgba(201,168,76,.5)}50%{box-shadow:0 0 0 6px rgba(201,168,76,0)}}
+@keyframes ko-shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.ko-ico{flex:0 0 30px;height:30px;position:relative}
+.ko-ico-ring{border:4px solid #d9a35a;border-radius:50%;box-sizing:border-box}
+.ko-ico-shaft::before{content:'';position:absolute;left:0;right:0;top:12px;height:6px;border-radius:3px;background:#b07a3c}
+.ko-ico-shaft::after{content:'';position:absolute;left:9px;width:12px;top:9px;height:12px;border-radius:3px;background:#d9a35a}
+.ko-ico-spoke{border:3px solid #d9a35a;border-radius:50%;box-sizing:border-box;background:conic-gradient(from 0deg,transparent 0 40deg,#e8d7b0 40deg 46deg,transparent 46deg 130deg,#e8d7b0 130deg 136deg,transparent 136deg 220deg,#e8d7b0 220deg 226deg,transparent 226deg 310deg,#e8d7b0 310deg 316deg,transparent 316deg)}
+.ko-ico-silk{border-radius:50%/45%;background:linear-gradient(180deg,#f3ead2,#c9b98f)}
+
+.ko-ctl{display:flex;justify-content:center;gap:14px;margin:14px 0 0}
+.ko-hold{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;gap:10px;min-width:220px;min-height:68px;padding:8px 26px;border:0;border-radius:32px;background:#c9a84c;color:#1a1206;font:inherit;font-size:20px;font-weight:800;cursor:pointer;touch-action:none;-webkit-touch-callout:none;box-shadow:0 6px 0 #8a6f2c;transition:transform .08s,box-shadow .08s}
+.ko-hold-t{position:relative;display:flex;flex-direction:column;align-items:flex-start;line-height:1.1}
+.ko-hold-t small{font-size:14px;font-weight:700}
+.ko-fan,.ko-arrows{position:relative}
+.ko-fill{position:absolute;left:0;top:0;bottom:0;width:0;background:#e9cf7e;box-shadow:inset -3px 0 0 #8a6f2c}
+.ko-tip{margin:10px auto 0;max-width:520px;padding:8px 12px;border-radius:10px;background:rgba(224,96,122,.18);color:#ffd3cc;font-size:17px;font-weight:700;text-align:center}
+.ko-hold.go{transform:translateY(4px);box-shadow:0 2px 0 #8a6f2c}
+.ko-hold.hint{animation:ko-pulse 1.3s ease-in-out infinite}
+.ko-fan{width:30px;height:30px;border-radius:50%;background:conic-gradient(#1a1206 0 50deg,transparent 50deg 120deg,#1a1206 120deg 170deg,transparent 170deg 240deg,#1a1206 240deg 290deg,transparent 290deg)}
+.ko-hold.go .ko-fan{animation:ko-spin .35s linear infinite}
+@keyframes ko-spin{to{transform:rotate(360deg)}}
+.ko-arrows{font-size:28px;line-height:1}
+.ko-start:focus-visible,.ko-rules-btn:focus-visible,.ko-hold:focus-visible,.ko-part:focus-visible,.ko-next:focus-visible,.ko-again:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.ko-next,.ko-again{margin:14px auto 0;display:block;min-height:48px;padding:10px 22px;border:0;border-radius:24px;background:#c9a84c;color:#1a1206;font:inherit;font-size:17px;font-weight:800;cursor:pointer}
+.ko-cap{margin:12px auto 0;max-width:560px;padding:10px 12px;border-left:4px solid #4cd27a;border-radius:8px;background:rgba(76,210,122,.08);font-size:17px;line-height:1.45;color:#fff}
+.ko-cap b{color:#7fe3a0}
+
+/* Лента лет — отдельной строкой под сценой */
+.ko-years{display:flex;align-items:center;gap:10px;margin:18px 0 0;padding:12px 12px;border-radius:12px;background:rgba(255,255,255,.04)}
+.ko-y{flex:0 0 auto;font-size:14px;line-height:1.2;color:#9fb6cc;text-align:center}
+.ko-y b{display:block;font-size:22px;color:#fff}
+.ko-y1 b{color:#e4c97a}
+.ko-line{position:relative;flex:1 1 auto;height:6px;border-radius:3px;background:rgba(255,255,255,.12)}
+.ko-line i{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:3px;background:linear-gradient(90deg,#c9a84c,#9fb6cc);transition:width 2.4s ease}
+.ko-line em{position:absolute;left:50%;top:-24px;transform:translateX(-50%);font-style:normal;font-size:15px;font-weight:800;color:#e4c97a;opacity:0;transition:opacity .6s 2s}
+.ko-years.go .ko-line i{width:100%}
+.ko-years.go .ko-line em{opacity:1}
+.ko-note{margin:8px 0 0;font-size:14px;color:#9fb6cc}
+
+.ko-finale{margin:18px 0 0}
+.ko-big{margin:0;font-size:clamp(19px,5vw,24px);font-weight:800;line-height:1.25;color:#fff}
+.ko-fin-t{margin:8px 0 0;font-size:16px;color:#d6e0ea}
+.ko-h2{margin:20px 0 6px;font-size:19px}
+.ko-h2 small{font-size:13px;font-weight:400;color:#e4c97a;margin-left:6px}
+.ko-facts{margin:0;padding:0;list-style:none}
+.ko-facts li{padding:10px 0;border-top:1px solid rgba(255,255,255,.08);font-size:16px}
+.ko-facts summary{margin-top:4px;color:#e4c97a;cursor:pointer;font-size:15px}
+.ko-facts details p{margin:6px 0 0;font-size:15px;color:#c9d6e2}
+.ko-src{font-size:13px!important;color:#7f9bb5!important}
+@media (prefers-reduced-motion:reduce){.ko-part.next,.ko-hold.hint{animation:none}.ko-start:active{transform:none}.ko-line i{transition:none}}
