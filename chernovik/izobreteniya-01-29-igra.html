@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Черновик игры · 29 января · Огнеслав Костович — дирижабль «Россия»</title>
-<link rel="stylesheet" href="../assets/kostovich-karkas.css?v=74fc0b5e">
+<link rel="stylesheet" href="../assets/kostovich-karkas.css?v=569dea51">
 </head>
 <body class="ko-body">
 <header class="ko-top">
@@ -24,7 +24,7 @@
     </div>
     <div class="ko-head">
       <p class="ko-lbl">Что сделать сейчас:</p>
-      <p class="ko-task" aria-live="polite">Нажми кнопку «Ветер» внизу и не отпускай палец</p>
+      <p class="ko-task" aria-live="polite">Нажми «Ветер»</p>
       <p class="ko-sub">Смотри, что ветер сделает с мягким баллоном</p>
     </div>
 
@@ -47,25 +47,26 @@
     </div>
 
     <div class="ko-ctl">
-      <button type="button" class="ko-hold ko-wind" aria-label="Ветер — нажми и держи">
-        <span class="ko-fill" aria-hidden="true"></span><span class="ko-fan" aria-hidden="true"></span><span class="ko-hold-t">Ветер<small>нажми и держи</small></span>
+      <button type="button" class="ko-hold ko-wind" aria-label="Ветер — нажми один раз">
+        <span class="ko-fill" aria-hidden="true"></span><span class="ko-fan" aria-hidden="true"></span><span class="ko-hold-t">Ветер<small>нажми</small></span>
       </button>
-      <button type="button" class="ko-hold ko-stretch" hidden aria-label="Тянуть — нажми и держи">
-        <span class="ko-fill" aria-hidden="true"></span><span class="ko-arrows" aria-hidden="true">⟷</span><span class="ko-hold-t">Тянуть<small>нажми и держи</small></span>
+      <button type="button" class="ko-hold ko-stretch" hidden aria-label="Тянуть — нажми один раз">
+        <span class="ko-fill" aria-hidden="true"></span><span class="ko-arrows" aria-hidden="true">⟷</span><span class="ko-hold-t">Тянуть<small>нажми</small></span>
       </button>
     </div>
-    <p class="ko-tip" aria-live="assertive" hidden>Не отпускай палец — держи, пока полоска не заполнится</p>
+    <!-- Рука-подсказка «тап-тап» над активной кнопкой (Р206) -->
+    <span class="ko-hand" aria-hidden="true" hidden><i class="ko-hand-ring"></i><svg viewBox="0 0 40 48" width="40" height="48"><path d="M15 4c2.2 0 4 1.8 4 4v13l1.2-.5c1.9-.7 4 .2 4.8 2l.3.7.8-.3c1.9-.6 4 .3 4.7 2.2l.2.5c1.9-.4 3.8.7 4.4 2.5.2.6.3 1.2.3 1.8V36c0 5.5-4.5 10-10 10h-4.6c-3 0-5.8-1.4-7.7-3.7L5.2 33.5c-1.3-1.6-1.1-4 .5-5.3 1.5-1.2 3.7-1.1 5.1.3l.2.2V8c0-2.2 1.8-4 4-4z" fill="#fff" stroke="#1a1206" stroke-width="2.2" stroke-linejoin="round"/></svg></span>
     <div class="ko-cap" aria-live="polite" hidden><b>Что произошло:</b> <span class="ko-cap-t"></span></div>
-    <button type="button" class="ko-next" hidden>Вставить каркас Костовича →</button>
 
     <!-- Короткие правила под картинкой (Р201): игра работает сразу, без экрана до старта -->
     <div class="ko-rules">
       <h2 class="ko-rules-h">Как играть</h2>
       <ol class="ko-rules-steps">
-        <li><b class="ko-rn">1</b><p>Держи <span class="ko-pill">Ветер</span>, <b>не отпуская палец</b>, пока полоска в кнопке не дойдёт до конца → мягкий баллон мнётся.</p></li>
-        <li><b class="ko-rn">2</b><p>Нажми «Вставить каркас», потом тыкай детали <b>по порядку</b>: кольца → шахта → спицы → шёлк (нужная мигает) → каркас собран.</p></li>
-        <li><b class="ko-rn">3</b><p>Снова держи <span class="ko-pill">Ветер</span>, потом <span class="ko-pill">Тянуть</span> — до конца полоски → каркас не мнётся, корпус вырастет до 64 м.</p></li>
+        <li><b class="ko-rn">1</b><p>Нажми <span class="ko-pill">Ветер</span> → ветер дует сам, мягкий баллон мнётся.</p></li>
+        <li><b class="ko-rn">2</b><p>Нажимай детали каркаса, куда показывает рука → каркас собран.</p></li>
+        <li><b class="ko-rn">3</b><p>Нажми <span class="ko-pill">Ветер</span> → каркас держит. Нажми <span class="ko-pill">Тянуть</span> → корпус сам вырастет до 64 м.</p></li>
       </ol>
+      <p class="ko-rules-tip">Держать палец не нужно — только нажимать. Нажимай то, что мигает.</p>
       <p class="ko-rules-end">Чем кончится: дирижабль выдержит ветер, а ниже откроются пять фактов о Костовиче.</p>
     </div>
 
@@ -106,6 +107,6 @@
   </section>
   <!-- Черновик для показа (Р196). Страница дня собирается отдельно. Сборка — шаблон M-14 «Собери предмет»; ветер по корпусу — новый движок (canvas 2D). -->
 </main>
-<script src="../assets/kostovich-karkas.js?v=34c7060d" defer></script>
+<script src="../assets/kostovich-karkas.js?v=62dbb210" defer></script>
 </body>
 </html>

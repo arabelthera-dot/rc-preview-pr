@@ -6,7 +6,7 @@
   if (!root) return;
   var $ = function (s) { return root.querySelector(s); };
   var cv = $('.ko-cv'), ctx = cv.getContext('2d');
-  var task = $('.ko-task'), sub = $('.ko-sub'), cap = $('.ko-cap'), capT = $('.ko-cap-t'), next = $('.ko-next'), tip = $('.ko-tip');
+  var task = $('.ko-task'), sub = $('.ko-sub'), cap = $('.ko-cap'), capT = $('.ko-cap-t');
   var steps = root.querySelectorAll('.ko-steps li');
   var stName = $('.ko-st-name'), stVal = $('.ko-st-val'), status = $('.ko-status'), meter = $('.ko-meter'), meterI = $('.ko-meter i');
   var partsBox = $('.ko-parts'), parts = root.querySelectorAll('.ko-part');
@@ -14,7 +14,7 @@
   var years = $('.ko-years'), finale = $('.ko-finale');
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  var PART_NAMES = ['Фанерные кольца', 'Шахта с каютой вдоль', 'Спицы к кольцам', 'Шёлк сверху'];
+  var PART_TASK = ['Нажми на кольца', 'Нажми на шахту', 'Нажми на спицы', 'Нажми на шёлк']; // задание 3–5 слов (Р206)
   // что произошло после каждой детали и почему
   var PART_WHY = ['фанерные кольца держат обхват — корпус больше не сплющить с боков.',
     'шахта — длинная балка вдоль всего корпуса, в середине каюта. Теперь нос не продавить.',
@@ -22,17 +22,18 @@
     'сверху натянули шёлк — это обшивка. Каркас готов.'];
   var S; // состояние
   function reset() {
-    S = { phase: 'soft', wind: 0, hold: false, crush: 0, built: 0, prog: [0, 0, 0, 0],
+    S = { phase: 'soft', wind: 0, crush: 0, built: 0, prog: [0, 0, 0, 0],
           windT: 0, len: 36, stretching: false, autoWind: 0, t: 0, shake: 0 };
     setStep(0);
-    task.textContent = 'Нажми кнопку «Ветер» внизу и не отпускай палец';
+    task.textContent = 'Нажми «Ветер»';
     sub.textContent = 'Смотри, что ветер сделает с мягким баллоном';
     stName.textContent = 'Мягкий баллон';
-    cap.hidden = true; tip.hidden = true; next.hidden = true; partsBox.hidden = true; finale.hidden = true;
-    bWind.hidden = false; bStretch.hidden = true; bWind.classList.add('hint'); bStretch.classList.remove('hint');
+    cap.hidden = true; partsBox.hidden = true; finale.hidden = true;
+    bWind.hidden = false; bStretch.hidden = true;
     years.classList.remove('go');
-    parts.forEach(function (p) { p.classList.remove('done', 'next', 'no'); });
+    parts.forEach(function (p) { p.classList.remove('done'); });
     upStatus();
+    setActive(bWind);
   }
   function setStep(i) { steps.forEach(function (li, k) { li.classList.toggle('on', k === i); }); }
   function say(t) { capT.textContent = t; cap.hidden = false; }
@@ -235,11 +236,11 @@
     stVal.textContent = val;
   }
 
-  // ---- Полоска внутри кнопки: сколько ещё держать ----
+  // ---- Полоска внутри кнопки: сколько уже сделано ----
   var fWind = bWind.querySelector('.ko-fill'), fStretch = bStretch.querySelector('.ko-fill');
   function holdProg() {
     if (S.phase === 'soft') return S.crush;
-    if (S.phase === 'rigid') return Math.min(1, S.windT / 1.6);
+    if (S.phase === 'rigid') return Math.min(1, S.windT / 1.4);
     return S.phase === 'softDone' || S.phase === 'rigidDone' ? 1 : 0;
   }
   function upFill() {
@@ -248,11 +249,11 @@
   }
 
   // ---- Цикл ----
-  var last = 0;
+  var last = 0, hp = 0;
   function loop(ts) {
     var dt = Math.min(0.05, (ts - (last || ts)) / 1000); last = ts;
     S.t += dt;
-    var target = (S.hold || S.autoWind > 0) ? 1 : 0;
+    var target = S.autoWind > 0 ? 1 : 0;
     if (S.autoWind > 0) S.autoWind -= dt;
     S.wind += (target - S.wind) * Math.min(1, dt * (target ? 3 : 2.2));
     var spd = 0.25 + S.wind * 1.4;
@@ -261,119 +262,137 @@
     for (var k = 0; k < 4; k++) if (k < S.built && S.prog[k] < 1) S.prog[k] = Math.min(1, S.prog[k] + dt * (reduce ? 10 : 1.6));
 
     if (S.phase === 'soft') {
-      if (S.wind > 0.3) S.crush = Math.min(1, S.crush + dt * 0.55 * S.wind);
+      if (S.wind > 0.3) S.crush = Math.min(1, S.crush + dt * 0.75 * S.wind);
       if (S.crush >= 1) softDone();
     } else if (S.phase === 'rigid') {
       if (S.wind > 0.75) S.windT += dt;
-      if (S.windT > 1.6) rigidDone();
+      if (S.windT > 1.4 || (S.windT > 0 && S.autoWind <= 0)) rigidDone();
     } else if (S.phase === 'stretch' && S.stretching) {
-      S.len = Math.min(64, S.len + dt * 13);
+      S.len = Math.min(64, S.len + dt * 12);
       if (S.len >= 64) final();
     }
     upStatus();
     upFill();
+    if (++hp % 20 === 0) placeHand(); // шрифты/прокрутка сдвинули кнопку — рука следом
     draw();
     requestAnimationFrame(loop);
   }
 
+  // ---- Одна активная кнопка + рука-подсказка (Р206) ----
+  // Только простые нажатия (click); pointerdown — лишь мгновенный вид «нажато».
+  var play = $('.ko-play'), hand = $('.ko-hand'), active = null;
+  function setActive(btn) {
+    active = btn;
+    [bWind, bStretch].concat([].slice.call(parts)).forEach(function (b) {
+      var on = b === btn;
+      b.disabled = !on; b.classList.toggle('hint', on);
+    });
+    placeHand();
+  }
+  function placeHand() {
+    if (!active || active.hidden || active.disabled) { hand.hidden = true; return; }
+    var pr = play.getBoundingClientRect(), r = active.getBoundingClientRect();
+    if (!r.width) { hand.hidden = true; return; }
+    hand.hidden = false;
+    hand.style.left = Math.round(r.left - pr.left + r.width * 0.86) + 'px';
+    hand.style.top = Math.round(r.top - pr.top + r.height * 0.5) + 'px';
+  }
+  window.addEventListener('resize', placeHand);
+  function buzz() { try { if (navigator.vibrate) navigator.vibrate(20); } catch (_) {} }
+  function tappable(btn, act) {
+    btn.addEventListener('pointerdown', function () { if (!btn.disabled) btn.classList.add('press'); });
+    ['pointerup', 'pointercancel', 'pointerleave'].forEach(function (ev) {
+      btn.addEventListener(ev, function () { setTimeout(function () { btn.classList.remove('press'); }, 120); });
+    });
+    btn.addEventListener('click', function () {
+      if (btn.disabled || btn !== active) return;
+      buzz();
+      btn.classList.add('press'); setTimeout(function () { btn.classList.remove('press'); }, 140);
+      act();
+    });
+  }
+  // нажатие прямо на картинку = нажатие активной кнопки «Ветер» / «Тянуть»
+  cv.addEventListener('click', function () { if (active === bWind || active === bStretch) active.click(); });
+
   // ---- Шаги ----
+  function gust(sec) { S.autoWind = sec; }
+  tappable(bWind, function () {
+    setActive(null); bWind.disabled = true;
+    task.textContent = 'Смотри на корпус!';
+    if (S.phase === 'soft') { sub.textContent = 'Ветер дует сам'; gust(2.6); }
+    else if (S.phase === 'rigid') { sub.textContent = 'Тот же ветер — на каркас'; gust(2.6); }
+  });
+  tappable(bStretch, function () {
+    setActive(null); bStretch.disabled = true;
+    S.stretching = true;
+    task.textContent = 'Смотри: корпус растёт!';
+    sub.textContent = 'До 64 метров';
+  });
+
   function softDone() {
     S.phase = 'softDone';
-    bWind.classList.remove('hint');
-    tip.hidden = true;
-    task.textContent = 'Нажми кнопку «Вставить каркас Костовича»';
-    sub.textContent = '';
     say('ветер смял мягкий баллон, как пакет. Жёсткости у него нет — форму держит только газ внутри, поэтому ветер продавил нос, и дирижабль клюёт носом. Костович придумал вставить внутрь скелет из своей фанеры.');
-    next.hidden = false;
+    setTimeout(buildStart, reduce ? 300 : 1200);
   }
-  next.addEventListener('click', function () {
-    next.hidden = true; cap.hidden = true;
-    S.phase = 'build'; S.crush = 0; S.hold = false;
+  function buildStart() {
+    S.phase = 'build'; S.crush = 0; S.autoWind = 0;
     setStep(1);
     bWind.hidden = true; partsBox.hidden = false;
-    task.textContent = 'Нажми деталь «' + PART_NAMES[0] + '» — она мигает';
-    sub.textContent = 'Собираем каркас по порядку: кольца → шахта → спицы → шёлк';
     stName.textContent = 'Каркас';
-    markNext();
-  });
-  function markNext() { parts.forEach(function (p, k) { p.classList.toggle('next', k === S.built); }); }
+    nextPart();
+  }
+  function nextPart() {
+    task.textContent = PART_TASK[S.built];
+    sub.textContent = 'Собираем каркас: ' + S.built + ' из 4';
+    setActive(parts[S.built]);
+  }
   parts.forEach(function (p, k) {
-    p.addEventListener('click', function () {
-      if (S.phase !== 'build' || p.classList.contains('done')) return;
-      if (k !== S.built) {
-        p.classList.remove('no'); void p.offsetWidth; p.classList.add('no');
-        sub.textContent = 'Не та деталь. Сейчас нужна «' + PART_NAMES[S.built] + '» — она мигает';
-        return;
-      }
-      S.built++; p.classList.add('done'); p.classList.remove('next');
+    tappable(p, function () {
+      if (S.phase !== 'build' || k !== S.built) return;
+      S.built++; p.classList.add('done');
       say(PART_WHY[k]);
-      if (S.built < 4) {
-        task.textContent = 'Теперь нажми «' + PART_NAMES[S.built] + '»';
-        sub.textContent = 'Собрано ' + S.built + ' из 4';
-      } else {
-        task.textContent = 'Подожди секунду…';
+      if (S.built < 4) nextPart();
+      else {
+        setActive(null);
+        task.textContent = 'Каркас собран!';
         sub.textContent = 'Собрано 4 из 4';
+        setTimeout(rigidStart, reduce ? 300 : 1100);
       }
-      markNext();
-      if (S.built === 4) setTimeout(rigidStart, 900);
     });
   });
   function rigidStart() {
     S.phase = 'rigid'; S.windT = 0;
     setStep(2);
-    partsBox.hidden = true; bWind.hidden = false; bWind.classList.add('hint'); cap.hidden = true;
-    task.textContent = 'Снова нажми «Ветер» и не отпускай палец';
+    partsBox.hidden = true; bWind.hidden = false;
+    task.textContent = 'Снова нажми «Ветер»';
     sub.textContent = 'Тот же ветер — теперь на каркас Костовича';
     stName.textContent = 'Каркас Костовича';
+    setActive(bWind);
   }
   function rigidDone() {
     S.phase = 'rigidDone';
-    bWind.classList.remove('hint');
-    tip.hidden = true;
-    task.textContent = 'Держит форму! Отпусти «Ветер»';
+    task.textContent = 'Держит форму!';
     sub.textContent = '';
     say('ветер тот же, а каркас не мнётся. Форму держит фанерный скелет изнутри: кольца — обхват, шахта — длину, спицы — круг. А с жёстким скелетом корпус можно сделать длинным.');
     setTimeout(function () {
       if (S.phase !== 'rigidDone') return;
       S.phase = 'stretch';
-      bWind.hidden = true; bStretch.hidden = false; bStretch.classList.add('hint');
-      task.textContent = 'Нажми «Тянуть» и держи, пока корпус не станет 64 метра';
-      sub.textContent = 'Столько был длиной дирижабль «Россия»';
-    }, 1400);
+      bWind.hidden = true; bStretch.hidden = false;
+      task.textContent = 'Нажми «Тянуть»';
+      sub.textContent = 'Корпус вырастет до 64 метров — как у «России»';
+      setActive(bStretch);
+    }, reduce ? 300 : 1400);
   }
   function final() {
     S.phase = 'final'; S.stretching = false; S.autoWind = 3.2;
-    bStretch.classList.remove('go', 'hint'); bStretch.hidden = true;
-    tip.hidden = true;
-    task.textContent = 'Готово! Листай ниже — там факты дня';
-    sub.textContent = '';
+    bStretch.hidden = true; setActive(null);
+    task.textContent = 'Готово! Листай вниз';
+    sub.textContent = 'Ниже — пять фактов дня';
     say('корпус вытянулся до 64 метров, а форма держится. Таким Костович задумал дирижабль «Россия» в 1879 году. Первый немецкий цеппелин с жёстким каркасом поднимется только в 1900 году.');
     years.classList.add('go');
     setTimeout(function () { finale.hidden = false; }, reduce ? 0 : 1600);
   }
   $('.ko-again').addEventListener('click', function () { reset(); root.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' }); });
-
-  // ---- Кнопки «держи» ----
-  // ткнул и отпустил быстрее 0,4 с — подсказать, что кнопку надо держать
-  function holdable(btn, on, off, busy) {
-    var t0 = 0;
-    function down() { t0 = performance.now(); tip.hidden = true; btn.classList.add('go'); on(); }
-    function up() {
-      if (!t0) return;
-      var quick = performance.now() - t0 < 400; t0 = 0;
-      btn.classList.remove('go'); off();
-      if (quick && busy()) tip.hidden = false;
-    }
-    btn.addEventListener('pointerdown', function (e) { e.preventDefault(); try { btn.setPointerCapture(e.pointerId); } catch (_) {} down(); });
-    ['pointerup', 'pointercancel', 'lostpointercapture'].forEach(function (ev) { btn.addEventListener(ev, up); });
-    btn.addEventListener('keydown', function (e) { if ((e.key === ' ' || e.key === 'Enter') && !e.repeat) { e.preventDefault(); down(); } });
-    btn.addEventListener('keyup', function (e) { if (e.key === ' ' || e.key === 'Enter') up(); });
-    btn.addEventListener('contextmenu', function (e) { e.preventDefault(); });
-  }
-  holdable(bWind, function () { S.hold = true; bWind.classList.remove('hint'); }, function () { S.hold = false; },
-    function () { return S.phase === 'soft' || S.phase === 'rigid'; });
-  holdable(bStretch, function () { if (S.phase === 'stretch') { S.stretching = true; bStretch.classList.remove('hint'); } }, function () { S.stretching = false; },
-    function () { return S.phase === 'stretch'; });
 
   // игра работает сразу (Р201): без экрана до старта и без «Начать»
   size(); reset(); requestAnimationFrame(loop);
