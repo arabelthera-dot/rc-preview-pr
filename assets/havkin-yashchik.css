@@ -1,0 +1,129 @@
+/* Игра «Неси ящик с вакциной» (28 января, Хавкин). Палитра — как у черновиков изобретений 23–25 января. */
+.hv-body{margin:0;background:#060c17;color:#e8eef5;font-family:'Inter','Segoe UI',system-ui,sans-serif;line-height:1.55}
+.hv-wrap{max-width:720px;margin:0 auto;padding:0 12px}
+.hv-top{padding:14px 0 4px;background:linear-gradient(180deg,#0c1826,#060c17)}
+.hv-museum{margin:0 0 4px;color:#c9a84c;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+.hv-top h1{margin:0;font-family:'Playfair Display',Georgia,serif;font-size:clamp(20px,5vw,32px);line-height:1.15}
+.hv-hook{margin:6px 0 0;font-size:clamp(15px,4vw,18px);color:#d6e0ea}
+.hv-igra{position:relative;margin:10px 0 8px;padding:12px 14px 18px;border:1px solid rgba(255,255,255,.09);border-radius:18px;background:#0c1826;user-select:none;-webkit-user-select:none}
+.hv-steps{display:flex;gap:6px;margin:0 0 6px;padding:0;list-style:none}
+.hv-steps li{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;background:rgba(255,255,255,.07);color:#7a9ab8}
+.hv-steps li.on{background:#c9a84c;color:#1a1206}
+.hv-task{margin:0;font-size:clamp(21px,5.6vw,28px);font-weight:800;line-height:1.2;color:#fff}
+.hv-sub{margin:3px 0 10px;min-height:1.45em;font-size:clamp(15px,4vw,17px);color:#e4c97a}
+[hidden]{display:none!important}
+.hv-next,.hv-again{margin:14px auto 0;display:block;min-height:48px;padding:10px 22px;border:0;border-radius:24px;background:#c9a84c;color:#1a1206;font:inherit;font-size:17px;font-weight:800;cursor:pointer}
+.hv-next:focus-visible,.hv-again:focus-visible,.hv-crate:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.hv-cap{margin:12px auto 0;max-width:460px;font-size:16px;text-align:center;color:#d6e0ea}
+
+/* Ящик с флаконами */
+.hv-crate{position:relative;display:flex;align-items:flex-end;justify-content:center;gap:8px;width:150px;height:74px;margin:0 auto;padding:0 10px 10px;border:0;border-radius:6px;background:repeating-linear-gradient(90deg,#8a5a2e 0 34px,#7a4e27 34px 36px);box-shadow:inset 0 0 0 3px #5e3a1a,0 8px 16px rgba(0,0,0,.5);cursor:pointer;font:inherit;color:inherit;transition:transform .7s cubic-bezier(.5,0,.4,1)}
+.hv-crate::after{content:'';position:absolute;left:0;right:0;top:0;height:14px;background:#5e3a1a;border-radius:6px 6px 0 0}
+.hv-vial{position:relative;z-index:1;width:22px;height:54px;margin-top:-26px;border-radius:5px 5px 9px 9px;background:linear-gradient(180deg,#d9e6ef 0 22%,#4fb3e8 22%);box-shadow:inset 0 0 0 2px rgba(255,255,255,.55)}
+.hv-vial::before{content:'';position:absolute;left:5px;right:5px;top:-6px;height:7px;border-radius:2px;background:#c9a84c}
+.hv-vial.used{visibility:hidden}
+.hv-crate-s2{width:auto;min-width:150px}
+
+/* Шаг 1 — две двери */
+.hv-doors{display:flex;justify-content:space-around;align-items:flex-end;gap:12px;margin:4px 0 18px}
+.hv-door{display:flex;flex-direction:column;align-items:center;gap:6px;width:44%;max-width:180px;border:0;background:none;color:inherit;font:inherit;padding:0}
+.hv-frame{position:relative;width:100%;aspect-ratio:3/4;border-radius:10px 10px 0 0;background:#1c2a3a;box-shadow:inset 0 0 0 4px #3b4f66;perspective:500px;overflow:hidden}
+.hv-leaf{position:absolute;inset:6px 6px 0;border-radius:6px 6px 0 0;transform-origin:left center;transition:transform 1s ease,background .6s}
+.hv-door-ru .hv-leaf{background:linear-gradient(90deg,#6b4a32,#7c573b);box-shadow:inset 0 0 0 6px #5b3d28}
+.hv-door-in .hv-leaf{background:linear-gradient(90deg,#3d5367,#4a6178);box-shadow:inset 0 0 0 6px #33475a}
+.hv-leaf::after{content:'';position:absolute;right:12px;top:52%;width:10px;height:10px;border-radius:50%;background:#c9a84c}
+.hv-door-in .hv-frame{background:radial-gradient(circle at 50% 60%,#ffe9a6,#e0a03a 60%,#7a4a14)}
+.hv-door-in.open .hv-leaf{transform:rotateY(-75deg)}
+.hv-door-in.glow .hv-frame{box-shadow:inset 0 0 0 4px #c9a84c,0 0 24px rgba(201,168,76,.6)}
+.hv-door-ru.shut .hv-leaf{animation:hv-shake .45s 2}
+@keyframes hv-shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.hv-lock{position:absolute;left:50%;top:38%;width:46px;height:46px;margin-left:-23px;border-radius:50%;background:#b8342c;box-shadow:0 0 0 4px rgba(184,52,44,.35);opacity:0;transform:scale(.4);transition:all .35s}
+.hv-lock::before,.hv-lock::after{content:'';position:absolute;left:21px;top:9px;width:5px;height:28px;border-radius:3px;background:#fff;transform:rotate(45deg)}
+.hv-lock::after{transform:rotate(-45deg)}
+.hv-door-ru.shut .hv-lock{opacity:1;transform:scale(1)}
+.hv-dlabel{font-size:15px;font-weight:700;text-align:center;line-height:1.25}
+.hv-dlabel small{display:block;font-weight:400;color:#9fb6cc}
+.hv-door-ru.shut .hv-dlabel small{color:#ff9d94}
+
+/* Шаг 2–3 — карта */
+.hv-map{position:relative;width:min(100%,430px);margin:0 auto;aspect-ratio:1/1}
+.hv-map svg{position:absolute;inset:0;width:100%;height:100%}
+.hv-land{fill:#1d3347;stroke:#4d6c88;stroke-width:1.5}
+.hv-wave{opacity:0}
+.hv-wave.go{opacity:1}
+.hv-schema{margin:2px 0 0;text-align:center;font-size:14px;color:#9fb6cc}
+.hv-vial.plague{background:linear-gradient(180deg,#d9e6ef 0 22%,#e0607a 22%)}
+.hv-vil{position:absolute;width:13%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;border:2px dashed rgba(228,201,122,.6);background:rgba(6,12,23,.55);display:grid;place-content:center;padding:0;cursor:pointer;transition:background .5s,border-color .5s,box-shadow .5s}
+.hv-vil.vac{border:2px solid #4cd27a;background:rgba(40,150,80,.35);box-shadow:0 0 16px rgba(76,210,122,.6)}
+.hv-lights{display:grid;grid-template-columns:repeat(5,6px);gap:2px}
+.hv-lights i{width:6px;height:6px;border-radius:50%;background:#ffd76a;box-shadow:0 0 5px #ffb52e;transition:background 1s,box-shadow 1s}
+.hv-vil.vac .hv-lights i{background:#c9ffd9;box-shadow:0 0 5px #4cd27a}
+.hv-lights i.out{background:transparent!important;box-shadow:inset 0 0 0 1.5px #8a97a6!important}
+.hv-dots circle{fill:#4cd27a;opacity:.85}
+.hv-legend{display:flex;justify-content:center;flex-wrap:wrap;gap:4px 14px;margin:6px 0 8px;font-size:13px;color:#b7c8d8}
+.hv-legend span{display:inline-flex;align-items:center;gap:5px}
+.hv-legend i{width:8px;height:8px;border-radius:50%;background:#ffd76a;box-shadow:0 0 4px #ffb52e}
+.hv-legend i.o{background:transparent;box-shadow:inset 0 0 0 1.5px #8a97a6}
+.hv-legend i.g{background:#4cd27a;box-shadow:0 0 4px #4cd27a}
+.hv-tray{position:relative;margin-top:16px}
+
+/* Итог волны */
+.hv-result{margin:10px auto 0;max-width:460px}
+.hv-row{display:grid;grid-template-columns:118px 1fr;align-items:center;gap:8px;margin:6px 0;font-size:15px}
+.hv-row .lt{display:flex;flex-wrap:wrap;gap:2px}
+.hv-row .lt i{width:7px;height:7px;border-radius:50%;background:#ffd76a}
+.hv-row .lt i.out{background:transparent;box-shadow:inset 0 0 0 1.5px #8a97a6}
+.hv-row.v .lt i{background:#c9ffd9}
+.hv-row.v .lt i.out{background:transparent;box-shadow:inset 0 0 0 1.5px #8a97a6}
+.hv-big{margin:8px 0 0;text-align:center;font-size:clamp(20px,5.4vw,26px);font-weight:800;color:#4cd27a}
+.hv-note{margin:4px 0 0;text-align:center;font-size:14px;color:#9fb6cc}
+
+/* Шаг 3 — счётчик */
+.hv-counter{display:flex;justify-content:center;gap:22px;margin:0 0 6px;font-variant-numeric:tabular-nums}
+.hv-counter div{text-align:center;font-size:13px;color:#9fb6cc}
+.hv-counter b{display:block;font-size:clamp(24px,6.6vw,32px);line-height:1.1;color:#fff}
+.hv-counter .dz b{color:#4cd27a}
+.hv-bar{height:6px;margin:10px auto 0;max-width:300px;border-radius:3px;background:rgba(255,255,255,.08);overflow:hidden}
+.hv-bar span{display:block;height:100%;width:0;background:#4cd27a}
+
+/* Финал */
+.hv-finale{text-align:center}
+.hv-fin-doors{display:flex;justify-content:center;gap:18px;margin:6px 0 12px}
+.hv-fin-doors .hv-door{width:40%;max-width:150px;cursor:default}
+.hv-fin-h{margin:4px 0 6px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,6vw,30px);line-height:1.2}
+.hv-q{margin:10px auto;max-width:480px;padding:10px 14px;border-left:3px solid #c9a84c;text-align:left;background:rgba(255,255,255,.04);border-radius:0 10px 10px 0}
+.hv-q p{margin:0;font-size:17px}
+.hv-q cite{display:block;margin-top:4px;font-size:13px;font-style:normal;color:#9fb6cc}
+.hv-facts{margin:16px 0 0;padding:0;list-style:none;text-align:left;counter-reset:f}
+.hv-facts>li{counter-increment:f;position:relative;margin:0 0 10px;padding:10px 12px 10px 44px;border-radius:12px;background:rgba(255,255,255,.04);font-size:16px}
+.hv-facts>li::before{content:counter(f);position:absolute;left:12px;top:10px;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:#c9a84c;color:#1a1206;font-weight:800;font-size:13px}
+.hv-facts details{margin-top:4px;font-size:14.5px;color:#c7d4e0}
+.hv-facts summary{cursor:pointer;color:#e4c97a;font-size:14px}
+.hv-src{font-size:12.5px;color:#7a9ab8;word-break:break-word}
+
+@media (prefers-reduced-motion:reduce){.hv-leaf,.hv-crate{transition:none}}
+
+/* Р206: правила под картинкой, деревни-кнопки не меньше 48 px, летящий флакон */
+.hv-igra .igra-pravila{margin:22px 0 4px}
+.hv-task.igra-seychas{font-size:clamp(18px,4.8vw,22px);line-height:1.3}
+.hv-task.igra-seychas b:first-child{color:#7ee2a0}
+.hv-vils .hv-vil{position:absolute;min-width:48px;min-height:48px}
+.hv-vils .hv-vil.igra-aktiv{z-index:3;border-color:#fff}
+.hv-let{position:absolute;z-index:25;margin:0;pointer-events:none}
+.hv-s2 .hv-tray{margin-bottom:12px}
+
+/* igra-ruka — подсказка «куда жать» (Р206); вид — как у образца 29 янв. (ko-hand, rc-site e4f86d74). Вставить в конец css игры как есть. */
+.igra-ruka-zona{touch-action:manipulation;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
+.igra-ruka-zona button{touch-action:manipulation;min-height:48px;min-width:48px}
+.igra-ruka-zona .igra-pravila{-webkit-user-select:text;user-select:text}
+.igra-ruka{position:absolute;z-index:30;width:40px;height:48px;margin:0;pointer-events:none;animation:igra-tap 1.1s ease-in-out infinite;transform-origin:15px 4px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.45))}
+.igra-ruka[hidden]{display:none}
+.igra-ruka svg{display:block}
+.igra-ruka-krug{position:absolute;left:-7px;top:-14px;width:44px;height:44px;border:3px solid #fff;border-radius:50%;opacity:0;animation:igra-krug 1.1s ease-out infinite}
+@keyframes igra-tap{0%,100%{transform:translate(-15px,10px) scale(1)}40%{transform:translate(-15px,-4px) scale(.88)}55%{transform:translate(-15px,-4px) scale(.88)}}
+@keyframes igra-krug{0%,35%{opacity:0;transform:scale(.3)}45%{opacity:.9;transform:scale(.4)}100%{opacity:0;transform:scale(1.2)}}
+.igra-ved button:not(.igra-aktiv){opacity:.42;filter:saturate(.4)}
+.igra-aktiv{position:relative;z-index:2;opacity:1!important;filter:none!important;animation:igra-puls 1.1s ease-in-out infinite!important;outline:3px solid #e9cf7e;outline-offset:3px}
+@keyframes igra-puls{0%,100%{box-shadow:0 0 0 0 rgba(233,207,126,.75)}50%{box-shadow:0 0 0 12px rgba(233,207,126,0)}}
+.igra-zhmyak{transform:scale(.94)!important;transition:transform 60ms}
+@media (prefers-reduced-motion:reduce){.igra-ruka,.igra-aktiv{animation:none!important}.igra-ruka{transform:translate(-15px,0)}.igra-ruka-krug{display:none}}

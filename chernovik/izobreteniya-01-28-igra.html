@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Черновик игры · 28 января · Владимир Хавкин — вакцины от холеры и чумы</title>
+<link rel="stylesheet" href="../assets/igra-pravila.css?v=9449179f">
+<link rel="stylesheet" href="../assets/havkin-yashchik.css?v=5c18b3a9">
+</head>
+<body class="hv-body">
+<header class="hv-top">
+  <div class="hv-wrap">
+    <p class="hv-museum">Что изобрели русские первыми в мире · черновик игры</p>
+    <h1>28 января · Владимир Хавкин</h1>
+    <p class="hv-hook">Хавкин ввёл холеру себе — выжил, и через пять лет его прививка останавливала чуму в Индии миллионами доз.</p>
+  </div>
+</header>
+
+<main class="hv-wrap">
+  <section class="hv-igra igra-ruka-zona" data-havkin-igra aria-label="Игра: неси ящик с вакциной">
+    <ol class="hv-steps" aria-hidden="true"><li class="on">1</li><li>2</li><li>3</li></ol>
+    <div class="hv-head">
+      <p class="hv-task igra-seychas" aria-live="polite"><b>Что сделать сейчас:</b> Нажми на ящик</p>
+      <p class="hv-sub igra-poyasnenie" aria-live="polite">Ящик внизу, под дверями. Хавкин сделал прививку от холеры и сначала понёс её домой, в Россию.</p>
+    </div>
+
+    <!-- Шаг 1. Две двери -->
+    <div class="hv-scene hv-s1">
+      <div class="hv-doors">
+        <div class="hv-door hv-door-ru" role="img" aria-label="Дверь: Россия, 1892">
+          <span class="hv-frame"><span class="hv-leaf"></span><span class="hv-lock" aria-hidden="true"></span></span>
+          <span class="hv-dlabel">Россия, 1892<small>дома</small></span>
+        </div>
+        <div class="hv-door hv-door-in" role="img" aria-label="Дверь: Индия, 1893">
+          <span class="hv-frame"><span class="hv-leaf"></span></span>
+          <span class="hv-dlabel">Индия, 1893<small>далеко</small></span>
+        </div>
+      </div>
+      <div class="hv-tray">
+        <button type="button" class="hv-crate hv-crate-s1" aria-label="Ящик с прививкой от холеры">
+          <span class="hv-vial" aria-hidden="true"></span><span class="hv-vial" aria-hidden="true"></span><span class="hv-vial" aria-hidden="true"></span><span class="hv-vial" aria-hidden="true"></span>
+        </button>
+      </div>
+      <p class="hv-cap" aria-live="polite" hidden></p>
+    </div>
+
+    <!-- Шаг 2–3. Карта Индии -->
+    <div class="hv-scene hv-s2" hidden>
+      <div class="hv-counter" hidden>
+        <div>год<b class="hv-year">1897</b></div>
+        <div class="dz">привито<b class="hv-doses">0</b></div>
+      </div>
+      <div class="hv-map">
+        <svg viewBox="0 0 310 310" aria-hidden="true">
+          <defs>
+            <linearGradient id="hv-wg" x1="0" x2="1">
+              <stop offset="0" stop-color="#5a4a6a" stop-opacity="0"/>
+              <stop offset=".5" stop-color="#7d6a92" stop-opacity=".55"/>
+              <stop offset="1" stop-color="#5a4a6a" stop-opacity="0"/>
+            </linearGradient>
+            <clipPath id="hv-clip"><polygon class="hv-clip" points=""/></clipPath>
+          </defs>
+          <polygon class="hv-land" points=""/>
+          <g class="hv-dots"></g>
+          <rect class="hv-wave" clip-path="url(#hv-clip)" x="-90" y="0" width="90" height="310" fill="url(#hv-wg)"/>
+        </svg>
+        <div class="hv-vils"></div>
+      </div>
+      <p class="hv-schema">схема · огонёк — один житель деревни</p>
+      <div class="hv-legend" aria-hidden="true">
+        <span><i></i>житель</span><span><i class="g"></i>привит</span><span><i class="o"></i>погас — холера унесла</span>
+      </div>
+      <div class="hv-tray">
+        <button type="button" class="hv-crate hv-crate-s2" aria-label="Ящик с флаконами вакцины">
+          <span class="hv-vial"></span><span class="hv-vial"></span><span class="hv-vial"></span><span class="hv-vial"></span>
+        </button>
+      </div>
+      <div class="hv-bar" hidden><span></span></div>
+      <div class="hv-result" aria-live="polite" hidden>
+        <div class="hv-row"><span>Без прививки</span><span class="lt lt-u"></span></div>
+        <div class="hv-row v"><span>С прививкой</span><span class="lt lt-v"></span></div>
+        <p class="hv-big">Привитые гибли в 10 раз реже</p>
+        <p class="hv-note">Числа жителей условные — верно только «в 10 раз». Так было в Индии в 1893–1895 годах: больше 42 тысяч привитых.</p>
+        <button type="button" class="hv-next">Дальше: новая болезнь — чума →</button>
+      </div>
+    </div>
+
+    <div class="igra-pravila" data-igra-pravila>
+      <h2 class="igra-pravila-h">Как играть</h2>
+      <p class="igra-pravila-zachem">Ты врач Хавкин. У тебя ящик с прививкой — уколом, после которого человек не заболеет. Неси её людям и смотри, спасает ли она от холеры и чумы — страшных болезней.</p>
+      <ol class="igra-pravila-shagi">
+        <li><b>Нажми на мигающий ящик.</b> Он поедет к двери «Россия», но дома прививку не возьмут — дверь закроется. <b>Нажми на ящик ещё раз</b> — он поедет в Индию.</li>
+        <li><b>Нажми на мигающую деревню — и так четыре раза.</b> Деревня — кружок с огоньками, один огонёк — один житель. Флакон из ящика полетит в деревню, и она станет зелёной. Потом по карте сама пройдёт холера.</li>
+        <li><b>Нажми «Дальше: новая болезнь — чума →».</b> Увидишь новую болезнь — чуму — и новую прививку Хавкина.</li>
+        <li><b>Нажми на ящик три раза.</b> Каждый раз побегут годы — до 1909, 1925 и 1940 года, а счётчик покажет, сколько сделано прививок.</li>
+      </ol>
+      <p class="igra-pravila-nyuans">Жми ту кнопку, которая мигает и над которой рука. Двери нажимать не нужно — ящик едет сам.</p>
+      <p class="igra-pravila-final">В конце узнаешь, сколько людей в Индии привили и кто такой Хавкин.</p>
+    </div>
+
+    <!-- Финал -->
+    <div class="hv-finale" hidden>
+      <div class="hv-fin-doors" aria-hidden="true">
+        <span class="hv-door hv-door-ru shut"><span class="hv-frame"><span class="hv-leaf"></span><span class="hv-lock"></span></span><span class="hv-dlabel">Россия<small>«не нужна»</small></span></span>
+        <span class="hv-door hv-door-in open glow"><span class="hv-frame"><span class="hv-leaf"></span></span><span class="hv-dlabel">Индия<small>35 000 000 прививок</small></span></span>
+      </div>
+      <h2 class="hv-fin-h">Деревню за деревней — как Хавкин</h2>
+      <p>Владимир Хавкин из Одессы сделал прививки от холеры и чумы. Дома их сочли ненужными, а в Индии к 1940 году его вакцину от чумы получили 35 миллионов человек.</p>
+      <blockquote class="hv-q"><p>«В России это самый неизвестный человек…»</p><cite>Антон Чехов, письмо 1899 года</cite></blockquote>
+      <blockquote class="hv-q"><p>«…в Англии же его давно прозвали великим филантропом».</p><cite>там же — так Хавкина звали англичане</cite></blockquote>
+      <ul class="hv-facts">
+        <li><b>Дома сочли ненужной.</b> Дома вакцину Хавкина сочли ненужной — а в Индии привитые ею умирали от холеры в 10 раз реже.
+          <details><summary>Подробнее</summary><p>Хавкин предложил прививать в России, приложив письмо Пастера, и получил ответ, что вакцина не нужна. Испытания разрешили в Индии: с апреля 1893 по июль 1895 года привили больше 42 тысяч человек, привитые умирали от холеры в десять раз реже.</p>
+          <p class="hv-src">Источники: В. А. Острогорская, «Непопулярный в России», «Химия и жизнь», 2018, № 3 — hij.ru/read/11413/; М. Сорокина, «Между верой и разумом», «Природа», 2020, № 4 — elementy.ru/nauchno-populyarnaya_biblioteka/435658</p></details></li>
+        <li><b>Испытал на себе.</b> Чумную вакцину Хавкин испытал на себе — дозой в 10 раз больше той, что потом кололи людям.
+          <details><summary>Подробнее</summary><p>10 января 1897 года, Бомбей, при двух свидетелях. Вакцину он создал за три месяца после приезда в охваченный чумой город; до 1940-х она оставалась, по сути, единственным средством против чумы.</p>
+          <p class="hv-src">Источники: «Химия и жизнь», 2018, № 3; «Война с „чёрной смертью“», «Наука и жизнь» — nkj.ru/archive/articles/6364/; Российское историческое общество — historyrussia.org</p></details></li>
+        <li><b>«Махатма».</b> В Индии Хавкина звали «махатма» — «великая душа».
+          <details><summary>Подробнее</summary><p>«Махатма» на санскрите — «великая душа»: так в Индии называют самых почитаемых людей.</p>
+          <p class="hv-src">Источник: «Владимир Аронович Хавкин — самый неизвестный учёный России», Российское историческое общество, 2021 — historyrussia.org/tsekh-istorikov/vladimir-aronovich-khavkin-samyj-neizvestnyj-uchjonyj-rossii.html</p></details></li>
+        <li><b>Институт Хавкина.</b> С 1925 года бомбейская лаборатория называется Институтом Хавкина и работает до сих пор.
+          <details><summary>Подробнее</summary><p>Лабораторию против чумы в Бомбее (сейчас Мумбаи) Хавкин возглавлял сам; в 1925 году ей дали его имя.</p>
+          <p class="hv-src">Источник: «Химия и жизнь», 2018, № 3 — hij.ru/read/11413/</p></details></li>
+        <li><b>Камни — и 35 миллионов.</b> В прививавших летели камни — а к 1940-му чумную вакцину Хавкина в Индии получили 35 миллионов.
+          <details><summary>Подробнее</summary><p>Крестьяне считали болезнь волей высших сил, на уговоры отвечали угрозами, во врачей летели камни. К 1909 году против чумы в Индии привили 8 миллионов человек, к 1940-му — 35 миллионов.</p>
+          <p class="hv-src">Источник: «Химия и жизнь», 2018, № 3. Цитата Чехова — «Родина», 20.09.2020 — rodina-history.ru/2020/09/20/sozdatelia-pervyh-vakcin-protiv-chumy-i-holery-na-rodine-ne-cenili.html</p></details></li>
+      </ul>
+      <button type="button" class="hv-again">Сыграть ещё раз</button>
+    </div>
+  </section>
+  <!-- Черновик для показа (Р192). Страница дня собирается отдельно. Движок «волна по карте» — новый, в реестре готового нет; на нажатиях (Р206). -->
+</main>
+<script src="../assets/havkin-yashchik.js?v=48a84b50" defer></script>
+</body>
+</html>
