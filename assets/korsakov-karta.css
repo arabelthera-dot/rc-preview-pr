@@ -1,0 +1,123 @@
+/* Игра «Пробей карту и найди лекарство» (25 января). Палитра — как у черновиков изобретений 23–24 января. */
+.ko-body{margin:0;background:#060c17;color:#e8eef5;font-family:'Inter','Segoe UI',system-ui,sans-serif;line-height:1.55}
+.ko-wrap{max-width:720px;margin:0 auto;padding:0 12px}
+.ko-top{padding:14px 0 4px;background:linear-gradient(180deg,#0c1826,#060c17)}
+.ko-museum{margin:0 0 4px;color:#c9a84c;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+.ko-top h1{margin:0;font-family:'Playfair Display',Georgia,serif;font-size:clamp(20px,5vw,32px);line-height:1.15}
+.ko-igra{position:relative;margin:10px 0 8px;padding:12px 14px 18px;border:1px solid rgba(255,255,255,.09);border-radius:18px;background:#0c1826}
+.ko-steps{display:flex;gap:6px;margin:0 0 8px;padding:0;list-style:none}
+.ko-steps li{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;background:rgba(255,255,255,.07);color:#7a9ab8}
+.ko-steps li.on{background:#c9a84c;color:#1a1206}
+.ko-task{margin:0;font-size:clamp(21px,5.6vw,28px);font-weight:800;line-height:1.2;color:#fff}
+.ko-sub{margin:3px 0 10px;min-height:1.45em;font-size:clamp(15px,4vw,17px);color:#e4c97a}
+[hidden]{display:none!important}
+
+/* Карта — общий вид для всех шагов: та же старая бумага */
+.ko-card{display:block;border:0;font:inherit;color:inherit;background:#ead8ab;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.45),inset 0 0 0 2px #c9a46a;position:relative}
+.ko-card::before{content:'';position:absolute;top:0;right:0;width:22px;height:22px;background:linear-gradient(225deg,#0c1826 50%,transparent 50%);border-top-right-radius:10px}
+
+/* Шаг 1 */
+.ko-s1{display:flex;flex-direction:column;align-items:center}
+.ko-loom{width:min(100%,340px);padding:12px 14px 14px;border-radius:12px;background:linear-gradient(#5a3a22,#3e2716);box-shadow:inset 0 0 0 3px #7a5232}
+.ko-slot{height:12px;margin:0 30px 10px;border-radius:6px;background:#140b05;box-shadow:inset 0 2px 4px #000}
+.ko-cloth{display:block;width:100%;height:auto;border-radius:4px}
+.ko-card-loom{width:min(78%,260px);margin:18px auto 0;padding:16px 18px 18px;cursor:pointer;transition:transform .45s cubic-bezier(.5,0,.6,1),opacity .45s}
+.igra-ved .ko-card-loom:not(.igra-aktiv){opacity:1;filter:none}
+.ko-card-loom:focus-visible{outline:3px solid #e4c97a;outline-offset:4px}
+.ko-card-loom.in{transform:translateY(-150px) scale(.55);opacity:0;pointer-events:none}
+.ko-holes{display:grid;grid-template-columns:repeat(8,1fr);gap:7px}
+.ko-holes i{aspect-ratio:1;border-radius:50%;background:rgba(120,80,30,.18)}
+.ko-holes i.h{background:#0c1826;box-shadow:inset 0 2px 3px #000}
+.ko-cap{margin:14px 0 0;max-width:440px;font-size:16px;text-align:center;color:#d6e0ea}
+.ko-btn{margin:14px auto 0;display:block;min-height:52px;padding:10px 26px;border:0;border-radius:26px;background:#c9a84c;color:#1a1206;font:inherit;font-size:18px;font-weight:800;cursor:pointer}
+.ko-btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+
+/* Столбцы признаков */
+.ko-cols{display:grid;grid-template-columns:repeat(5,1fr);text-align:center;font-size:13px;line-height:1.2;color:#cfe0ef;margin-bottom:6px}
+.ko-cols b{display:block;font-size:24px;line-height:1.3;font-weight:400}
+.ko-cols3{padding-left:64px;font-size:11.5px}
+.ko-cols3 b{font-size:19px}
+
+/* Шаг 2 */
+.ko-patient{display:flex;align-items:center;gap:10px;margin:0 0 12px;padding:8px 12px;border-radius:12px;background:rgba(255,255,255,.05)}
+.ko-pat-face{font-size:34px}
+.ko-patient p{margin:0;font-size:17px}
+.ko-patient b{color:#ffd27a}
+.ko-card-k{display:grid;grid-template-columns:repeat(5,1fr);padding:14px 4px}
+.ko-cell{justify-self:center;width:48px;height:48px;border-radius:50%;border:2px dashed #9a7440;background:transparent;padding:0;cursor:pointer}
+.ko-s2 .ko-cell.igra-aktiv{border:3px solid #b3261e;background:rgba(255,214,102,.35)}
+.igra-ved .ko-s2 .ko-cell.h{opacity:1;filter:none}
+.ko-s2 .ko-cell:focus-visible{outline:3px solid #0c1826;outline-offset:2px}
+.ko-cell.h{border:0;background:#0c1826;box-shadow:inset 0 3px 5px #000}
+.ko-s2 .ko-cell.h{animation:ko-punch .25s ease-out}
+.ko-oops{min-height:1.5em;margin:10px 0 0;font-size:16px;text-align:center;color:#e4c97a}
+
+/* Шаг 3: таблица и карта поверх (наложение, как M-29) */
+.ko-table{position:relative}
+.ko-row{display:grid;grid-template-columns:64px repeat(5,1fr);align-items:center;height:62px;border-top:1px solid rgba(255,255,255,.08);transition:background .25s}
+.ko-row:last-child{border-bottom:1px solid rgba(255,255,255,.08)}
+.ko-med{font-size:14px;font-weight:700;color:#b9cadb;white-space:nowrap}
+.ko-pin{justify-self:center;width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.1)}
+.ko-pin.p{width:20px;height:24px;border-radius:0;background:linear-gradient(90deg,#7a5a1c,#fff2c4 45%,#c9a84c 60%,#7a5a1c);clip-path:polygon(50% 0,100% 100%,0 100%)}
+.ko-park{height:62px}
+.ko-row.ok{background:rgba(111,224,160,.22)}
+.ko-row.ok .ko-med{color:#6fe0a0}
+.ko-slider{position:absolute;top:4px;left:64px;right:0;height:54px;padding:0 4px;align-items:center;z-index:2;opacity:.97;pointer-events:none;transition:transform .25s ease-out}
+.ko-slider .ko-cell{width:34px;height:34px}
+.ko-slider .ko-cell:not(.h){border-color:transparent}
+.ko-x{color:#ff6b5b;font-weight:900}
+.ko-o{display:inline-block;width:14px;height:14px;border-radius:50%;background:#0c1826;box-shadow:0 0 0 3px rgba(255,107,91,.8);vertical-align:-2px;margin:0 2px}
+.ko-verdict b{color:#fff}
+.ko-cell.in{background:radial-gradient(circle,#ffe9a6 0 7px,#0c1826 8px)}
+.ko-cell.hit{position:relative}
+.ko-cell.hit::after{content:'✕';position:absolute;inset:0;display:grid;place-items:center;font-size:22px;font-weight:900;color:#c0392b}
+.ko-cell.empty{box-shadow:inset 0 3px 5px #000,0 0 0 3px rgba(192,57,43,.6)}
+.ko-row.ok~.ko-slider,.ko-table:has(.ko-row.ok) .ko-slider{box-shadow:0 0 0 4px #6fe0a0,0 6px 18px rgba(0,0,0,.45)}
+.ko-verdict{min-height:3em;margin:10px 0 0;font-size:16px;text-align:center;color:#e4c97a}
+
+/* Финал */
+.ko-fin-card{position:relative;scroll-margin-top:12px;width:min(100%,320px);margin:4px auto 40px}
+.ko-card-fin .ko-cell{width:34px;height:34px;cursor:default}
+.ko-card-fin .ko-cell:not(.h){border-color:rgba(154,116,64,.35)}
+.ko-stamp{position:absolute;left:62%;top:100%;white-space:nowrap;padding:4px 12px;border:3px solid #b3261e;border-radius:8px;color:#b3261e;font-weight:900;font-size:15px;line-height:1.15;text-align:center;text-transform:uppercase;letter-spacing:.5px;background:#ead8ab;transform:translate(-50%,-50%) rotate(-9deg);opacity:0}
+.ko-stamp.hit{animation:ko-stamp .5s .35s cubic-bezier(.3,1.6,.6,1) forwards}
+.ko-fin-h{margin:0 0 6px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(22px,6vw,30px);color:#6fe0a0;scroll-margin-top:12px}
+.ko-big{margin:0 0 10px;font-size:18px}
+.ko-big b{color:#ffd27a}
+.ko-facts{margin:0 0 12px;padding:0;list-style:none}
+.ko-facts li{margin:0 0 8px;padding:8px 12px;border-radius:10px;background:rgba(255,255,255,.05);font-size:16px}
+.ko-facts b{color:#e4c97a}
+.ko-more summary{cursor:pointer;color:#c9a84c;font-weight:700;min-height:44px;display:flex;align-items:center}
+.ko-more p{font-size:15px;color:#c9d6e2}
+.ko-src{font-size:13px!important;color:#8fa6bc!important;overflow-wrap:anywhere}
+.ko-note{margin:6px 0 30px;font-size:13px;color:#7a9ab8}
+
+@keyframes ko-punch{0%{transform:scale(1.4)}100%{transform:scale(1)}}
+@keyframes ko-stamp{0%{opacity:0;transform:translate(-50%,-50%) rotate(-9deg) scale(2.4)}100%{opacity:1;transform:translate(-50%,-50%) rotate(-9deg) scale(1)}}
+@media (min-width:900px){.ko-row,.ko-park{height:70px}.ko-slider{height:62px}.ko-cols3{font-size:15px}.ko-cols3 b{font-size:24px}.ko-med{font-size:17px}.ko-verdict,.ko-oops{font-size:18px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.ko-stamp.hit{opacity:1}}
+
+/* Задание шага и пояснения */
+.ko-task b:first-child{display:block;font-size:15px;font-weight:700;letter-spacing:.3px;color:#6fe0a0}
+
+/* Как играть — статично под картинкой (Р201) */
+.ko-pravila{margin:18px 0 0;padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.05);font-size:16px;color:#d6e0ea}
+.ko-pravila h2{margin:0 0 6px;font-size:18px;color:#e4c97a}
+.ko-pravila p{margin:0 0 6px}
+.ko-pravila ol{margin:0 0 6px;padding-left:22px}
+.ko-pravila li{margin:0 0 4px}
+/* igra-ruka — подсказка «куда жать» (Р206); вид — как у образца 29 янв. (ko-hand, rc-site e4f86d74). Вставить в конец css игры как есть. */
+.igra-ruka-zona{touch-action:manipulation;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
+.igra-ruka-zona button{touch-action:manipulation;min-height:48px;min-width:48px}
+.igra-ruka-zona .igra-pravila{-webkit-user-select:text;user-select:text}
+.igra-ruka{position:absolute;z-index:30;width:40px;height:48px;margin:0;pointer-events:none;animation:igra-tap 1.1s ease-in-out infinite;transform-origin:15px 4px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.45))}
+.igra-ruka[hidden]{display:none}
+.igra-ruka svg{display:block}
+.igra-ruka-krug{position:absolute;left:-7px;top:-14px;width:44px;height:44px;border:3px solid #fff;border-radius:50%;opacity:0;animation:igra-krug 1.1s ease-out infinite}
+@keyframes igra-tap{0%,100%{transform:translate(-15px,10px) scale(1)}40%{transform:translate(-15px,-4px) scale(.88)}55%{transform:translate(-15px,-4px) scale(.88)}}
+@keyframes igra-krug{0%,35%{opacity:0;transform:scale(.3)}45%{opacity:.9;transform:scale(.4)}100%{opacity:0;transform:scale(1.2)}}
+.igra-ved button:not(.igra-aktiv){opacity:.42;filter:saturate(.4)}
+.igra-aktiv{position:relative;z-index:2;opacity:1!important;filter:none!important;animation:igra-puls 1.1s ease-in-out infinite!important;outline:3px solid #e9cf7e;outline-offset:3px}
+@keyframes igra-puls{0%,100%{box-shadow:0 0 0 0 rgba(233,207,126,.75)}50%{box-shadow:0 0 0 12px rgba(233,207,126,0)}}
+.igra-zhmyak{transform:scale(.94)!important;transition:transform 60ms}
+@media (prefers-reduced-motion:reduce){.igra-ruka,.igra-aktiv{animation:none!important}.igra-ruka{transform:translate(-15px,0)}.igra-ruka-krug{display:none}}
