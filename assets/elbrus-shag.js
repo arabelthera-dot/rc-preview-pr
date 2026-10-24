@@ -41,53 +41,84 @@ function igraRuka(root) {
   root.addEventListener('contextmenu', function (e) { e.preventDefault(); });
   return { na: na, ubrat: ubrat, mesto: mesto };
 }
-/* Игра «Уложи команды в шаг» (27 января, «Эльбрус»): рецепт супа = программа, лента шагов = время машины.
-   Один повар — одна команда за шаг (8 шагов). Два повара («Эльбрус») — по две за шаг, если команда не ждёт чужого результата. */
+/* Игра «Щит Москвы» (27 января, «Эльбрус»; Р224): к Москве летит цель, машина считает перехват.
+   Обычная ЭВМ — одна команда за шаг (8 шагов, не успевает). «Эльбрус» — до трёх команд в шаг, если они не ждут друг друга (4 шага, перехват).
+   Один шаг = 10 секунд схемы, до Москвы — 60 секунд. */
 (function () {
   var root = document.querySelector('[data-elbrus-igra]');
   if (!root) return;
 
   var IC = {
-    drop: '<path d="M12 3c3 5 6 8 6 11a6 6 0 0 1-12 0c0-3 3-6 6-11z" fill="#3a8ee6"/>',
-    fire: '<path d="M12 2c1 4 6 6 6 12a6 6 0 0 1-12 0c0-3 2-5 3-6 0 2 1 3 2 3 0-4-1-6 1-9z" fill="#e8642c"/><path d="M12 13c1 2 3 3 3 5a3 3 0 0 1-6 0c0-2 2-3 3-5z" fill="#ffc531"/>',
-    salt: '<path d="M8 9l1-5h6l1 5z" fill="#8a8a8a"/><rect x="7" y="9" width="10" height="13" rx="2" fill="#fff" stroke="#6b6b6b"/><circle cx="10" cy="6" r=".9" fill="#fff"/><circle cx="14" cy="6" r=".9" fill="#fff"/>',
-    potato: '<ellipse cx="12" cy="13" rx="9" ry="7" fill="#b9823f"/><circle cx="9" cy="11" r="1" fill="#7a5222"/><circle cx="14" cy="15" r="1" fill="#7a5222"/><path d="M3 6c2 1 3 1 5 0" stroke="#3a8ee6" stroke-width="2" fill="none"/><path d="M16 5c2 1 3 1 5 0" stroke="#3a8ee6" stroke-width="2" fill="none"/>',
-    peel: '<ellipse cx="11" cy="13" rx="8" ry="7" fill="#f3d983"/><path d="M17 8c3-3 5 0 3 2s-1 5 2 5" stroke="#b9823f" stroke-width="2.5" fill="none"/>',
-    knife: '<path d="M4 18L18 4l2 2-10 11z" fill="#c9ced6" stroke="#7d8590"/><rect x="2" y="16" width="6" height="4" rx="1" transform="rotate(-45 5 18)" fill="#6b4222"/>',
-    pot: '<path d="M4 10h16v7a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" fill="#4b5563"/><rect x="3" y="8" width="18" height="3" rx="1.5" fill="#6b7280"/><ellipse cx="10" cy="6" rx="2.5" ry="2" fill="#f3d983"/><ellipse cx="14.5" cy="5" rx="2" ry="1.6" fill="#f3d983"/>',
-    leaf: '<path d="M5 19C5 9 12 4 20 4c0 8-5 15-15 15z" fill="#4caf50"/><path d="M5 19L15 9" stroke="#2e7d32" stroke-width="1.5"/>',
-    cook: '<path d="M7 14a4 4 0 0 1 .5-8 4.5 4.5 0 0 1 9 0 4 4 0 0 1 .5 8v5H7z" fill="#fff"/><rect x="7" y="16" width="10" height="3" fill="#cfd8e3"/>'
+    radar: '<circle cx="12" cy="13" r="9" fill="#0d3b2a" stroke="#38d39f" stroke-width="1.5"/><circle cx="12" cy="13" r="4.5" fill="none" stroke="#38d39f"/><path d="M12 13L19 7" stroke="#9cf5cf" stroke-width="2"/>',
+    speed: '<path d="M3 17a9 9 0 0 1 18 0z" fill="#2c4a6b"/><path d="M12 17l5-6" stroke="#ffc531" stroke-width="2.4" stroke-linecap="round"/><circle cx="12" cy="17" r="2" fill="#fff"/>',
+    dir: '<path d="M4 20L20 4" stroke="#3a8ee6" stroke-width="2.6"/><path d="M11 4h9v9" fill="none" stroke="#3a8ee6" stroke-width="2.6" stroke-linejoin="round"/>',
+    alt: '<path d="M2 21l7-11 4 6 3-4 6 9z" fill="#7a8a99"/><path d="M18 2v8M15 5l3-3 3 3" stroke="#e8642c" stroke-width="2" fill="none"/>',
+    ready: '<rect x="4" y="15" width="16" height="5" rx="1" fill="#6b7280"/><path d="M12 2c2 2 3 5 3 8v5H9v-5c0-3 1-6 3-8z" fill="#e8eef5" stroke="#4b5563"/>',
+    meet: '<circle cx="12" cy="12" r="8" fill="none" stroke="#e8642c" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="#e8642c"/><path d="M12 1v5M12 18v5M1 12h5M18 12h5" stroke="#e8642c" stroke-width="2"/>',
+    launch: '<path d="M12 1c2.5 2.5 3.5 6 3.5 9.5V16h-7v-5.5C8.5 7 9.5 3.5 12 1z" fill="#e8eef5" stroke="#4b5563"/><path d="M9.5 17h5l-2.5 6z" fill="#ffc531"/>',
+    aim: '<path d="M3 20L17 6" stroke="#38d39f" stroke-width="2" stroke-dasharray="3 2"/><path d="M14 4l6-1-1 6z" fill="#38d39f"/><circle cx="4" cy="20" r="2.2" fill="#e8eef5"/>'
   };
   function svg(k) { return '<svg viewBox="0 0 24 24" aria-hidden="true">' + IC[k] + '</svg>'; }
 
   var T = [
-    { id: 'w1', t: 'Налей воду', ic: 'drop', deps: [] },
-    { id: 'w2', t: 'Вскипяти воду', ic: 'fire', deps: ['w1'] },
-    { id: 'w3', t: 'Посоли воду', ic: 'salt', deps: ['w2'] },
-    { id: 'p1', t: 'Помой картошку', ic: 'potato', deps: [] },
-    { id: 'p2', t: 'Почисти картошку', ic: 'peel', deps: ['p1'] },
-    { id: 'p3', t: 'Нарежь картошку', ic: 'knife', deps: ['p2'] },
-    { id: 'g', t: 'Нарежь зелень', ic: 'leaf', deps: [] },
-    { id: 's', t: 'Брось картошку в воду', ic: 'pot', deps: ['w3', 'p3'] }
+    { id: 'r', t: 'Принять сигнал радара', ic: 'radar', deps: [] },
+    { id: 'v', t: 'Узнать скорость цели', ic: 'speed', deps: ['r'] },
+    { id: 'd', t: 'Узнать направление полёта', ic: 'dir', deps: ['r'] },
+    { id: 'h', t: 'Узнать высоту', ic: 'alt', deps: ['r'] },
+    { id: 'g', t: 'Подготовить перехватчик', ic: 'ready', deps: [] },
+    { id: 'p', t: 'Найти точку встречи', ic: 'meet', deps: ['v', 'd', 'h'] },
+    { id: 's', t: 'Пуск перехватчика', ic: 'launch', deps: ['g'] },
+    { id: 'n', t: 'Навести перехватчик', ic: 'aim', deps: ['p', 's'] }
   ];
   var byId = {}; T.forEach(function (x, i) { x.n = i + 1; byId[x.id] = x; });
+  var KRATKO = { r: 'Сигнал радара', v: 'Скорость', d: 'Направление', h: 'Высота', g: 'Подготовка', p: 'Точка встречи', s: 'Пуск', n: 'Наведение' };
 
+  var LIMIT = 60, SHAG = 10;
   var $ = function (s) { return root.querySelector(s); };
-  var pool = $('.el-pool'), rowsEl = $('.el-rows'), cooksEl = $('.el-cooks');
-  var task = $('.el-task'), sub = $('.el-sub'), nEl = $('.el-n');
+  var pool = $('.el-pool'), rowsEl = $('.el-rows'), lanesEl = $('.el-lanes');
+  var task = $('.el-task'), sub = $('.el-sub'), nEl = $('.el-n'), dockT = $('.el-dock-t');
+  var timer = $('.el-timer'), timerN = $('.el-timer b'), scene = $('.el-scene');
+  var tgt = $('.el-tgt'), icp = $('.el-icp'), hit = $('.el-hit');
   var race = $('.el-race'), win = $('.el-win'), btnNext = $('.el-next');
   var steps = root.querySelectorAll('.el-steps li');
   var ruka = igraRuka(root);
 
-  function setTask(t) { task.innerHTML = '<b>Что сделать сейчас:</b> ' + t; }
-
-  var mode = 1;          // 1 — один повар, 2 — «Эльбрус», два повара
-  var place = {};        // id -> номер шага (0..7)
-  var order = [];        // какие плитки посетитель кладёт сам, по очереди
-  var cel = null, busy = false;
+  var mode = 1, place = {}, cel = null, busy = false, dalshe = null, novaya = null;
   var reduce = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var P0 = { x: 178, y: 26 }, M = { x: 100, y: 104 };
 
+  function zhdi(ms) { return reduce ? Math.min(ms, 120) : ms; }
+  function setTask(t) { task.innerHTML = '<b>Что сделать сейчас:</b> ' + t; }
   function setStep(k) { steps.forEach(function (li, i) { li.classList.toggle('on', i === k - 1); }); }
+  function mesta() { return mode === 1 ? 1 : 3; }
+  function shagov() { var m = 0; for (var k in place) m = Math.max(m, place[k] + 1); return m; }
+  function zanyato(r) { var c = 0; for (var k in place) if (place[k] === r) c++; return c; }
+  function ranniy(x) {
+    if (mode === 1) return shagov();
+    var r = 0;
+    x.deps.forEach(function (d) { r = Math.max(r, place[d] + 1); });
+    while (zanyato(r) >= mesta()) r++;
+    return r;
+  }
+  function gotova(x) { return x.deps.every(function (d) { return place[d] != null; }); }
+  function sklon(n) { return n % 10 === 1 && n % 100 !== 11 ? 'шаг' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20) ? 'шага' : 'шагов'); }
+
+  function tochka(f) { return { x: P0.x + (M.x - P0.x) * f, y: P0.y + (M.y - P0.y) * f }; }
+  function dvigat(el, p) { el.style.transform = 'translate(' + p.x.toFixed(1) + 'px,' + p.y.toFixed(1) + 'px)'; }
+
+  function chasy() {
+    var n = shagov(), ost = LIMIT - n * SHAG;
+    nEl.textContent = n;
+    timerN.textContent = Math.max(ost, 0) + ' с';
+    dockT.textContent = Math.max(ost, 0) + ' с';
+    timer.classList.toggle('malo', ost <= 20);
+    dvigat(tgt, tochka(Math.min(n * SHAG / LIMIT, 1)));
+    if (ost <= 0 && !scene.classList.contains('proshla')) {
+      scene.classList.add('proshla'); timer.classList.add('vse');
+      sub.textContent = 'Время вышло — цель прошла к Москве, а машина ещё считает.';
+    }
+  }
+
   function tileHTML(x) { return svg(x.ic) + '<span>' + x.t + '</span><span class="n">' + x.n + '</span>'; }
 
   function render() {
@@ -100,177 +131,170 @@ function igraRuka(root) {
       b.innerHTML = tileHTML(x);
       pool.appendChild(b);
     });
-    var left = pool.children.length; pool.hidden = !left; $('.el-label').hidden = !left;
-    cooksEl.innerHTML = '<span></span><span>' + svg('cook') + 'Повар 1</span>' +
-      (mode === 1 ? '<span class="off">второго нет</span>' : '<span>' + svg('cook') + 'Повар 2</span>');
     rowsEl.innerHTML = '';
-    for (var r = 0; r < 8; r++) {
+    var m = mesta(), vsego = Math.max(shagov(), 1);
+    rowsEl.style.setProperty('--m', m);
+    lanesEl.style.setProperty('--m', m);
+    lanesEl.innerHTML = '<span></span>' + (m === 1 ? '<span>Одна команда в шаге</span>' : '<span>место 1</span><span>место 2</span><span>место 3</span>');
+    for (var r = 0; r < vsego; r++) {
       var row = document.createElement('div');
-      row.className = 'el-row'; row.dataset.row = r;
-      row.innerHTML = '<b>шаг<br>' + (r + 1) + '</b>';
-      var inRow = T.filter(function (x) { return place[x.id] === r; });
-      if (inRow.length) row.classList.add('used');
-      for (var c = 0; c < 2; c++) {
+      row.className = 'el-row' + (zanyato(r) ? ' used' : '') + (mode === 1 && r * SHAG >= LIMIT ? ' pozdno' : '');
+      row.innerHTML = '<b>Шаг ' + (r + 1) + '</b>';
+      var v = T.filter(function (x) { return place[x.id] === r; });
+      for (var j = 0; j < m; j++) {
         var s = document.createElement('div');
-        s.className = 'el-slot' + (mode === 1 && c === 1 ? ' off' : '');
-        var x = inRow[c];
+        s.className = 'el-slot';
+        var x = v[j];
         if (x) {
-          var d = document.createElement('span');
-          d.className = 'el-tile done'; d.dataset.id = x.id;
-          d.innerHTML = tileHTML(x);
-          s.appendChild(d);
+          s.innerHTML = '<span class="el-tile done' + (x.id === novaya ? ' new' : '') + '">' + svg(x.ic) + '<span>' + KRATKO[x.id] + '</span></span>';
         }
         row.appendChild(s);
       }
       rowsEl.appendChild(row);
     }
-    var used = T.filter(function (x) { return place[x.id] != null; });
-    nEl.textContent = used.length ? Math.max.apply(null, used.map(function (x) { return place[x.id]; })) + 1 : 0;
+    chasy();
   }
 
-  // Одна активная кнопка: мигает, над ней рука. Если не видна — подкрутить к ней.
-  function aktiv(el) {
-    cel = el; ruka.na(el);
-    if (!el) return;
+  function vidno(el) {
     var r = el.getBoundingClientRect();
-    if (r.top < 60 || r.bottom > innerHeight - 90) el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
+    if (r.top < 60 || r.bottom > innerHeight - 96) el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
   }
-  function tile(id) { return pool.querySelector('.el-tile[data-id="' + id + '"]'); }
-  function zhdat() { cel = null; ruka.ubrat(); }
-
-  function nextFree() { for (var r = 0; r < 8; r++) if (!T.some(function (k) { return place[k.id] === r; })) return r; return -1; }
-  // Самый ранний шаг для команды у двух поваров: всё, чего она ждёт, — выше, и в шаге есть свободный повар.
-  function earliest(id) {
-    var x = byId[id], r = 0;
-    x.deps.forEach(function (d) { r = Math.max(r, place[d] + 1); });
-    while (T.filter(function (k) { return place[k.id] === r; }).length >= 2) r++;
-    return r;
-  }
-  function count() { return T.filter(function (x) { return place[x.id] != null; }).length; }
-
-  var SAY1 = ['Хорошо! Повар сделает это в шаге 1.', 'Шаг 2 занят. Ещё одну — и машина продолжит сама'];
-  var SAY2 = {
-    w1: 'Повар 1 наливает воду — это шаг 1.',
-    p1: '«Помой картошку» не ждёт воду — второй повар делает это в тот же шаг!',
-    w2: '«Вскипяти воду» ждёт «Налей воду» — значит, шаг 2.',
-    p2: '«Почисти картошку» тоже в шаге 2: второй повар не ждёт воду. Дальше машина сама.'
-  };
+  function ukazat(el, t, posle) { cel = el; dalshe = posle; busy = false; setTask(t); ruka.na(el); vidno(el); }
+  function plitka(id) { return pool.querySelector('[data-id="' + id + '"]'); }
 
   function polozhit(id) {
-    zhdat();
-    place[id] = mode === 1 ? nextFree() : earliest(id);
-    var c = count();
-    if (mode === 1) sub.textContent = SAY1[c - 1] || '';
-    else sub.textContent = SAY2[id];
-    setTask('Смотри на ленту шагов');
+    place[id] = ranniy(byId[id]); novaya = id;
     render();
-    setTimeout(dalshe, reduce ? 80 : 450);
+    return place[id];
   }
 
-  function dalshe() {
-    var c = count();
-    if (c < order.length) {
-      var nx = byId[order[c]];
-      setTask('Нажми «' + nx.t + '»');
-      aktiv(tile(nx.id));
-      return;
-    }
-    if (mode === 1) autoFill(); else autoPairs();
-  }
-
-  // Режим 1: один повар — после трёх плиток машина докладывает остальное сама, по одной.
-  function autoFill() {
-    busy = true;
-    setTask('Смотри — машина докладывает сама');
-    sub.textContent = 'Один повар делает по одной команде. Машина доложит остальное…';
-    var rest = T.filter(function (x) { return place[x.id] == null; });
+  function avto(ids, slova, konec) {
     var i = 0;
-    (function step() {
-      if (i >= rest.length) {
-        busy = false;
-        setTask('Нажми «Позвать второго повара →»');
-        sub.textContent = 'Один повар: 8 команд — 8 шагов. Долго! Позови второго повара';
-        btnNext.textContent = 'Позвать второго повара →';
-        btnNext.hidden = false;
-        aktiv(btnNext);
-        return;
-      }
-      place[rest[i].id] = nextFree(); i++; render();
-      setTimeout(step, reduce ? 60 : 380);
+    (function sled() {
+      if (i >= ids.length) return setTimeout(konec, zhdi(600));
+      var id = ids[i], r = polozhit(id);
+      if (slova && slova[id]) sub.textContent = slova[id];
+      else if (!scene.classList.contains('proshla')) sub.textContent = '«' + byId[id].t + '» — шаг ' + (r + 1) + '.';
+      i++;
+      setTimeout(sled, zhdi(mode === 1 ? 750 : 1300));
     })();
   }
 
-  function startElbrus() {
-    mode = 2; place = {}; order = ['w1', 'p1', 'w2', 'p2']; setStep(2);
-    btnNext.hidden = true; race.hidden = true;
-    sub.textContent = 'Пока один повар наливает воду, второй моет картошку — в один шаг';
+  /* Часть 1: обычная ЭВМ */
+  var TAPS1 = ['r', 'v', 'd'];
+  function chast1() {
+    mode = 1; place = {}; setStep(1);
+    root.classList.remove('rezhim-2'); scene.classList.remove('proshla', 'perehvat'); timer.classList.remove('vse');
     render();
-    setTimeout(dalshe, reduce ? 80 : 450);
+    sub.textContent = 'Обычная ЭВМ: одна команда — один шаг. Шаг — 10 секунд.';
+    tap1(0);
+  }
+  function tap1(k) {
+    if (k >= TAPS1.length) {
+      busy = true; ruka.ubrat(); cel = null;
+      setTask('Смотри, как машина досчитывает');
+      sub.textContent = 'Дальше машина кладёт команды сама — по одной за шаг.';
+      return setTimeout(function () {
+        avto(['h', 'g', 'p', 's', 'n'], null, konec1);
+      }, zhdi(900));
+    }
+    var x = byId[TAPS1[k]];
+    ukazat(plitka(x.id), 'Нажми «' + x.t + '»', function () {
+      var r = polozhit(x.id);
+      sub.textContent = '«' + x.t + '» — шаг ' + (r + 1) + '. Прошло ' + (r + 1) * SHAG + ' секунд.';
+      setTimeout(function () { tap1(k + 1); }, zhdi(450));
+    });
+  }
+  function konec1() {
+    sub.innerHTML = '<b>8 команд — 8 шагов.</b> По одной команде за шаг — не успеть.';
+    btnNext.textContent = 'Включить «Эльбрус» →'; btnNext.hidden = false;
+    ukazat(btnNext, 'Нажми «Включить „Эльбрус“»', chast2);
   }
 
-  // Режим 2: остальное машина кладёт сама, парами — как «Эльбрус».
-  function autoPairs() {
-    busy = true;
-    setTask('Смотри — машина кладёт парами');
-    var pary = [['w3', 'p3'], ['s', 'g']], i = 0;
-    (function step() {
-      if (i >= pary.length) return setTimeout(finish, reduce ? 60 : 500);
-      var r = earliest(pary[i][0]);
-      pary[i].forEach(function (id) { place[id] = r; });
-      sub.textContent = '«' + byId[pary[i][0]].t + '» и «' + byId[pary[i][1]].t + '» не ждут друг друга — шаг ' + (r + 1);
-      i++; render();
-      setTimeout(step, reduce ? 80 : 900);
-    })();
+  /* Часть 2: «Эльбрус» */
+  function chast2() {
+    btnNext.hidden = true; ruka.ubrat();
+    mode = 2; place = {}; setStep(2);
+    root.classList.add('rezhim-2'); scene.classList.remove('proshla'); timer.classList.remove('vse');
+    render();
+    sub.textContent = '«Эльбрус» кладёт команду в самый ранний шаг — до трёх команд рядом.';
+    vidno(scene);
+    setTimeout(function () { tap2(0); }, zhdi(700));
+  }
+  var TAPS2 = [
+    { id: 'r', slovo: '«Сигнал радара» — шаг 1. Остальные ждут его.' },
+    { id: 'v', slovo: '«Скорость» ждёт сигнала радара — встаёт в шаг 2.' },
+    { id: 'd', slovo: '«Скорость» и «направление» не ждут друг друга — «Эльбрус» считает их в один шаг!' },
+    { id: 'p' }
+  ];
+  function tap2(k) {
+    if (k >= TAPS2.length) return;
+    var w = TAPS2[k], x = byId[w.id];
+    ukazat(plitka(x.id), 'Нажми «' + x.t + '»', function () {
+      if (!gotova(x)) return otskok(plitka(x.id));
+      polozhit(x.id); sub.textContent = w.slovo;
+      setTimeout(function () { tap2(k + 1); }, zhdi(500));
+    });
+  }
+  function otskok(b) {
+    busy = true; ruka.ubrat(); cel = null;
+    b.classList.add('el-otskok');
+    sub.textContent = 'Сначала нужны скорость, направление и высота.';
+    setTask('Смотри, как машина досчитывает');
+    setTimeout(function () {
+      b.classList.remove('el-otskok');
+      avto(['h', 'p', 'g', 's', 'n'], {
+        h: '«Высоту» машина кладёт сама — тоже в шаг 2, рядом.',
+        p: 'Скорость, направление и высота есть — «Точка встречи» встаёт в шаг 3.',
+        g: '«Подготовить перехватчик» не ждёт радара — встаёт в шаг 1 рядом.',
+        s: '«Пуск» не ждёт точку встречи — в шаг 3 рядом.',
+        n: '«Навести перехватчик» ждёт точку встречи и пуск — шаг 4.'
+      }, perehvat);
+    }, zhdi(1500));
+  }
+  function perehvat() {
+    var f = shagov() * SHAG / LIMIT, p = tochka(f);
+    sub.textContent = 'Перехватчик летит к точке встречи…';
+    icp.style.opacity = 1;
+    dvigat(icp, M);
+    requestAnimationFrame(function () { requestAnimationFrame(function () {
+      icp.classList.add('let'); dvigat(icp, p);
+    }); });
+    setTimeout(function () {
+      scene.classList.add('perehvat'); dvigat(hit, p);
+      var n = shagov(), ost = LIMIT - n * SHAG;
+      win.innerHTML = 'Цель перехвачена! «Эльбрус» успел за ' + n + ' ' + sklon(n) + ' — обычной ЭВМ нужно 8.';
+      sub.textContent = 'Цель перехвачена за ' + ost + ' секунд до Москвы.';
+      race.querySelectorAll('.el-bar').forEach(function (bar, i) {
+        var k = i === 0 ? 8 : n;
+        bar.innerHTML = '';
+        for (var j = 0; j < 8; j++) bar.appendChild(document.createElement('i'));
+        bar.querySelectorAll('i').forEach(function (c, j) { if (j < k) c.className = 'on'; });
+      });
+      race.hidden = false;
+      btnNext.textContent = 'Кто так считал первым? →'; btnNext.hidden = false;
+      ukazat(btnNext, 'Нажми «Кто так считал первым?»', finish);
+      vidno(race);
+    }, zhdi(1600));
   }
 
   function finish() {
-    var n = +nEl.textContent;
-    busy = true;
-    setTask('Смотри, кто сварит быстрее');
-    sub.textContent = '';
-    race.hidden = false; win.textContent = '';
-    var slow = $('.el-bar-slow'), fast = $('.el-bar-fast');
-    slow.innerHTML = fast.innerHTML = new Array(9).join('<i></i>');
-    setTimeout(function () { race.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' }); }, 50);
-    var t = 0;
-    (function tick() {
-      if (t < 8) slow.children[t].classList.add('on');
-      if (t < n) fast.children[t].classList.add('on');
-      t++;
-      if (t < 8) return setTimeout(tick, reduce ? 40 : 320);
-      busy = false;
-      setTask('Нажми «Кто так считал первым? →»');
-      win.innerHTML = 'Два повара: <b>' + n + ' шага</b> вместо 8. Ты ускорил программу вдвое.';
-      btnNext.textContent = 'Кто так считал первым? →';
-      btnNext.hidden = false;
-      aktiv(btnNext);
-    })();
-  }
-
-  function finale() {
-    zhdat(); busy = true;
-    setStep(3);
-    $('.el-play').hidden = true;
-    setTask('Прочитай, как считал «Эльбрус»'); sub.textContent = '';
+    ruka.ubrat(); cel = null; busy = true; btnNext.hidden = true; setStep(3);
+    setTask('Читай, кто так считал первым');
     var f = $('.el-finale'); f.hidden = false;
     f.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
   }
 
-  // Каждый шаг — одно нажатие на мигающую кнопку. Нажатие мимо — только подсказка.
   root.addEventListener('click', function (e) {
-    if (e.target.closest('.el-finale, [data-igra-pravila]')) return;
-    var k = e.target.closest('.igra-aktiv');
-    if (k && k === cel) {
-      if (k === btnNext) { zhdat(); btnNext.hidden = true; if (mode === 1) startElbrus(); else finale(); return; }
-      if (k.dataset.id) return polozhit(k.dataset.id);
-      return;
+    var b = e.target.closest('button');
+    if (!b || !root.contains(b) || b.classList.contains('el-again')) return;
+    if (!busy && cel && b === cel) {
+      var go = dalshe; cel = null; dalshe = null; busy = true; ruka.ubrat();
+      return go();
     }
     if (!busy && cel) sub.textContent = 'Жми мигающую кнопку — над ней рука.';
   });
-  $('.el-again').addEventListener('click', function () { location.reload(); });
+  $('.el-again').addEventListener('click', function () { window.scrollTo(0, 0); location.reload(); });
 
-  // Игра стартует сама: мигает первая плитка.
-  order = ['w1', 'w2', 'w3'];
-  render();
-  setTimeout(dalshe, 300);
+  chast1();
 })();
