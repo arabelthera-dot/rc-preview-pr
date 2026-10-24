@@ -1,0 +1,90 @@
+/* ============================================================
+   igra-pravila.css — блок «Как играть» у каждой игры (Р199, Р201, 23.10.2026;
+   стандарт museum-core 04-build §5-бис). Картинка игры видна сразу и сразу
+   работает: ни экрана правил до старта, ни кнопок «Начать» и «Правила» (Р201).
+   Разметка — контракт Р201: строка .igra-seychas над картинкой игры; ПОСЛЕ сцены
+   и кнопок игры — обычный видимый блок
+   [data-igra-pravila] > .igra-pravila-h, .igra-pravila-zachem, ol.igra-pravila-shagi,
+   .igra-pravila-nyuans, .igra-pravila-final.
+   Цвета не задаются: блок наследует текст страницы (светлой или тёмной),
+   акцент и шрифты — токены museum-theme.css (--acc, --font-h, --font-b, --radius).
+   JS не нужен.
+   ============================================================ */
+
+.igra-pravila{
+  --igra-acc:var(--acc,#c9a84c);
+  box-sizing:border-box;
+  max-width:68ch;
+  margin:18px 0 20px;
+  padding:16px 16px 18px;
+  border:1px solid color-mix(in srgb,var(--igra-acc) 55%,transparent);
+  border-left-width:4px;
+  border-radius:var(--radius,14px);
+  background:color-mix(in srgb,currentColor 5%,transparent);
+  font-family:var(--font-b,inherit);
+  font-size:16px;
+  line-height:1.5;
+  overflow-wrap:anywhere;
+}
+.igra-pravila *{box-sizing:border-box}
+
+.igra-pravila .igra-pravila-h{
+  margin:0 0 6px;
+  font-family:var(--font-h,inherit);
+  font-size:1.25rem;
+  line-height:1.25;
+  letter-spacing:0;
+  text-transform:none;
+}
+.igra-pravila .igra-pravila-zachem{margin:0 0 10px;max-width:none}
+
+.igra-pravila .igra-pravila-shagi{
+  list-style:none;
+  counter-reset:igra-shag;
+  margin:0 0 10px;
+  padding:0;
+}
+.igra-pravila .igra-pravila-shagi li{
+  counter-increment:igra-shag;
+  position:relative;
+  margin:0 0 8px;
+  padding:0 0 0 38px;
+  min-height:28px;
+}
+.igra-pravila .igra-pravila-shagi li::before{
+  content:counter(igra-shag);
+  position:absolute;
+  left:0;top:0;
+  width:28px;height:28px;
+  border-radius:50%;
+  background:var(--igra-acc);
+  color:#111;
+  font:700 15px/28px var(--font-b,system-ui,sans-serif);
+  text-align:center;
+}
+.igra-pravila .igra-pravila-shagi b{font-weight:700}
+
+.igra-pravila .igra-pravila-nyuans,
+.igra-pravila .igra-pravila-final{margin:0 0 10px;max-width:none}
+.igra-pravila .igra-pravila-nyuans{
+  padding:8px 10px;
+  border-radius:10px;
+  background:color-mix(in srgb,var(--igra-acc) 14%,transparent);
+}
+.igra-pravila .igra-pravila-final{font-weight:600}
+
+/* Строка «Что сделать сейчас:» внутри игры. */
+.igra-seychas{
+  margin:10px 0;
+  padding:8px 12px;
+  border-radius:10px;
+  background:color-mix(in srgb,var(--acc,#c9a84c) 14%,transparent);
+  font-size:16px;
+  line-height:1.45;
+}
+.igra-seychas b{font-weight:700}
+
+@media (min-width:700px){
+  .igra-pravila{padding:20px 24px 22px}
+  .igra-pravila .igra-pravila-h{font-size:1.4rem}
+}
