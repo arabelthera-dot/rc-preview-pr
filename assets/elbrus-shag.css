@@ -1,0 +1,100 @@
+/* Игра «Уложи команды в шаг» (27 января, «Эльбрус»). Палитра — как у черновиков изобретений 23–25 января. */
+.el-body{margin:0;background:#060c17;color:#e8eef5;font-family:'Inter','Segoe UI',system-ui,sans-serif;line-height:1.5}
+.el-wrap{max-width:720px;margin:0 auto;padding:0 12px}
+.el-top{padding:14px 0 4px;background:linear-gradient(180deg,#0c1826,#060c17)}
+.el-museum{margin:0 0 4px;color:#c9a84c;font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+.el-top h1{margin:0;font-family:'Playfair Display',Georgia,serif;font-size:clamp(20px,5vw,32px);line-height:1.15}
+.el-igra{position:relative;margin:10px 0 8px;padding:12px 12px 18px;border:1px solid rgba(255,255,255,.09);border-radius:18px;background:#0c1826}
+.el-steps{display:flex;gap:6px;margin:0 0 6px;padding:0;list-style:none}
+.el-steps li{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;background:rgba(255,255,255,.07);color:#7a9ab8}
+.el-steps li.on{background:#c9a84c;color:#1a1206}
+.el-task{margin:0;font-size:clamp(21px,5.6vw,28px);font-weight:800;line-height:1.2;color:#fff}
+.el-sub{margin:3px 0 10px;min-height:1.45em;font-size:clamp(15px,4vw,17px);color:#e4c97a}
+[hidden]{display:none!important}
+
+/* Рецепт = программа */
+.el-label{margin:0 0 6px;font-size:13px;font-weight:700;letter-spacing:.5px;color:#9db5cc;text-transform:uppercase}
+.el-pool{display:grid;grid-template-columns:1fr 1fr;gap:8px;min-height:52px;margin-bottom:12px}
+.el-tile{position:relative;display:flex;align-items:center;gap:8px;min-height:52px;padding:6px 10px 6px 8px;border:0;border-radius:10px;background:#f1e4c4;color:#1d1408;font:inherit;font-size:15px;font-weight:700;line-height:1.15;text-align:left;cursor:pointer;box-shadow:0 3px 0 #b99a5e,0 5px 12px rgba(0,0,0,.35)}
+.el-tile svg{flex:0 0 26px;width:26px;height:26px}
+.el-tile .n{position:absolute;top:3px;right:6px;font-size:11px;font-weight:700;color:#8a7348}
+.el-tile:focus-visible{outline:3px solid #fff;outline-offset:2px}
+.el-tile.done svg{flex-basis:20px;width:20px;height:20px}
+.el-tile.done .n{display:none}
+.el-tile.done{cursor:default;min-height:38px;padding:4px 6px;gap:5px;font-size:13px;box-shadow:0 2px 0 #b99a5e}
+
+/* Лента шагов */
+.el-strip{border-radius:12px;background:#08121f;padding:8px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.08)}
+.el-cooks{display:grid;grid-template-columns:44px 1fr 1fr;gap:6px;margin-bottom:4px;font-size:13px;font-weight:700;color:#cfe0ef;text-align:center}
+.el-cooks span{display:flex;align-items:center;justify-content:center;gap:4px}
+.el-cooks svg{width:20px;height:20px}
+.el-cooks .off{color:#4d6178}
+.el-row{display:grid;grid-template-columns:44px 1fr 1fr;gap:6px;margin-top:5px;align-items:stretch}
+.el-row b{display:grid;place-items:center;font-size:12px;line-height:1.1;color:#7a9ab8;text-align:center}
+.el-slot{min-height:38px;border-radius:9px;border:2px dashed rgba(201,168,76,.35);display:flex}
+.el-slot>.el-tile{flex:1}
+.el-slot.off{border:2px solid transparent;background:repeating-linear-gradient(135deg,rgba(255,255,255,.035) 0 8px,transparent 8px 16px)}
+.el-row.used b{color:#fff}
+.el-dock{position:sticky;bottom:0;z-index:4;margin:8px -12px 0;padding:6px 12px 8px;background:rgba(12,24,38,.96);border-top:1px solid rgba(255,255,255,.08)}
+.el-count{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:2px 2px 0;font-size:16px;color:#d6e0ea}
+.el-count strong{font-size:30px;line-height:1;color:#fff}
+.el-btns{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:12px}
+.el-next,.el-again{min-height:48px;padding:10px 22px;border:0;border-radius:24px;background:#c9a84c;color:#1a1206;font:inherit;font-size:17px;font-weight:800;cursor:pointer}
+.el-next:focus-visible,.el-again:focus-visible{outline:3px solid #fff;outline-offset:3px}
+
+/* Гонка: обычная ЭВМ против «Эльбруса» */
+.el-race{margin-top:12px;padding:12px;border-radius:12px;background:#08121f}
+.el-lane{display:grid;grid-template-columns:96px 1fr;gap:8px;align-items:center;margin:6px 0;font-size:14px;font-weight:700}
+.el-bar{display:grid;grid-template-columns:repeat(8,1fr);gap:3px}
+.el-bar i{height:22px;border-radius:4px;background:rgba(255,255,255,.07)}
+.el-bar i.on{background:#7a9ab8}
+.el-bar.fast i.on{background:#c9a84c}
+.el-win{margin:10px 0 0;font-size:clamp(20px,5.4vw,26px);font-weight:800;line-height:1.2;color:#fff;text-align:center}
+
+/* Финал: лента лет (M-74) */
+.el-fin-h{margin:4px 0 6px;font-family:'Playfair Display',Georgia,serif;font-size:clamp(24px,6.4vw,34px);line-height:1.15}
+.el-big{margin:0 0 12px;font-size:clamp(17px,4.6vw,20px)}
+.timeline.el-years{position:relative;display:grid;grid-template-columns:1fr 1fr;margin:14px 0 6px;padding-top:22px}
+.el-years::before{content:'';position:absolute;top:30px;left:8px;right:8px;height:4px;border-radius:2px;background:linear-gradient(90deg,#c9a84c,#3d5a78)}
+.el-years article{position:relative;padding-top:20px}
+.el-years article::before{content:'';position:absolute;top:0;left:0;width:20px;height:20px;border-radius:50%;background:#c9a84c;box-shadow:0 0 0 4px #0c1826}
+.el-years article:last-child{text-align:right}
+.el-years article:last-child::before{left:auto;right:0;background:#3d5a78}
+.el-years strong{display:block;font-size:clamp(22px,6vw,30px);line-height:1.1}
+.el-years span{font-size:15px;color:#cfe0ef}
+.el-gap{position:absolute;top:0;left:0;right:0;text-align:center;font-size:14px;font-weight:800;color:#e4c97a}
+.el-hook{margin:10px 0 14px;padding:12px 14px;border-left:4px solid #c9a84c;border-radius:0 10px 10px 0;background:rgba(201,168,76,.08);font-size:17px}
+.el-facts{margin:0 0 12px;padding-left:20px}
+.el-facts li{margin:0 0 8px;font-size:16px}
+.el-more summary{cursor:pointer;color:#e4c97a;font-weight:700;min-height:44px;display:flex;align-items:center}
+.el-more p{font-size:15px;color:#d6e0ea}
+.el-src{font-size:13px!important;color:#9db5cc!important;overflow-wrap:anywhere}
+.el-scheme{font-size:12px;color:#9db5cc;margin:0 0 8px}
+
+@media (min-width:900px){
+  .el-wrap{max-width:820px}
+  .el-pool{grid-template-columns:repeat(4,1fr)}
+  .el-tile{font-size:16px}
+}
+
+/* Строка «Что сделать сейчас» и пояснение под тёмную сцену «Эльбруса» */
+.el-task.igra-seychas{font-size:clamp(19px,5vw,24px);font-weight:700}
+.el-task.igra-seychas b:first-child{display:block;font-size:15px;font-weight:700;color:#7fd6a0;letter-spacing:.01em}
+.el-sub.igra-poyasnenie{margin:3px 0 10px;font-size:clamp(15px,4vw,17px);line-height:1.4}
+.el-igra .igra-pravila{margin:16px 0 8px}
+
+/* igra-ruka — подсказка «куда жать» (Р206); вид — как у образца 29 янв. (ko-hand, rc-site e4f86d74). Вставить в конец css игры как есть. */
+.igra-ruka-zona{touch-action:manipulation;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
+.igra-ruka-zona button{touch-action:manipulation;min-height:48px;min-width:48px}
+.igra-ruka-zona .igra-pravila{-webkit-user-select:text;user-select:text}
+.igra-ruka{position:absolute;z-index:30;width:40px;height:48px;margin:0;pointer-events:none;animation:igra-tap 1.1s ease-in-out infinite;transform-origin:15px 4px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.45))}
+.igra-ruka[hidden]{display:none}
+.igra-ruka svg{display:block}
+.igra-ruka-krug{position:absolute;left:-7px;top:-14px;width:44px;height:44px;border:3px solid #fff;border-radius:50%;opacity:0;animation:igra-krug 1.1s ease-out infinite}
+@keyframes igra-tap{0%,100%{transform:translate(-15px,10px) scale(1)}40%{transform:translate(-15px,-4px) scale(.88)}55%{transform:translate(-15px,-4px) scale(.88)}}
+@keyframes igra-krug{0%,35%{opacity:0;transform:scale(.3)}45%{opacity:.9;transform:scale(.4)}100%{opacity:0;transform:scale(1.2)}}
+.igra-ved button:not(.igra-aktiv){opacity:.42;filter:saturate(.4)}
+.igra-aktiv{position:relative;z-index:2;opacity:1!important;filter:none!important;animation:igra-puls 1.1s ease-in-out infinite!important;outline:3px solid #e9cf7e;outline-offset:3px}
+@keyframes igra-puls{0%,100%{box-shadow:0 0 0 0 rgba(233,207,126,.75)}50%{box-shadow:0 0 0 12px rgba(233,207,126,0)}}
+.igra-zhmyak{transform:scale(.94)!important;transition:transform 60ms}
+@media (prefers-reduced-motion:reduce){.igra-ruka,.igra-aktiv{animation:none!important}.igra-ruka{transform:translate(-15px,0)}.igra-ruka-krug{display:none}}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Черновик игры · 27 января · «Эльбрус» и Владимир Пентковский</title>
+<link rel="stylesheet" href="../assets/igra-pravila.css?v=9449179f">
+<link rel="stylesheet" href="../assets/elbrus-shag.css?v=cd749a3b">
+</head>
+<body class="el-body">
+<header class="el-top">
+  <div class="el-wrap">
+    <p class="el-museum">Что изобрели русские первыми в мире · черновик игры</p>
+    <h1>27 января · ЭВМ «Эльбрус», 1978</h1>
+  </div>
+</header>
+
+<main class="el-wrap">
+  <section class="el-igra igra-ruka-zona" data-elbrus-igra aria-label="Игра: уложи команды в шаги машины">
+    <ol class="el-steps" aria-hidden="true"><li class="on">1</li><li>2</li><li>3</li></ol>
+    <div class="el-head">
+      <p class="el-task igra-seychas" aria-live="polite"><b>Что сделать сейчас:</b> Нажми «Налей воду»</p>
+      <p class="el-sub igra-poyasnenie" aria-live="polite">Свари суп машиной: один повар делает одну команду за шаг</p>
+    </div>
+
+    <div class="el-play">
+      <p class="el-label">Рецепт — программа для машины</p>
+      <div class="el-pool" role="list" aria-label="Команды рецепта"></div>
+
+      <div class="el-strip">
+        <div class="el-cooks" aria-hidden="true"></div>
+        <div class="el-rows"></div>
+      </div>
+      <div class="el-dock">
+        <div class="el-count"><span class="el-count-t">Шагов у машины:</span> <strong class="el-n">0</strong></div>
+      </div>
+
+      <div class="el-race" hidden>
+        <div class="el-lane"><span>Один повар</span><div class="el-bar el-bar-slow"></div></div>
+        <div class="el-lane"><span>Два повара</span><div class="el-bar el-bar-fast fast"></div></div>
+        <p class="el-win" aria-live="polite"></p>
+      </div>
+
+      <div class="el-btns">
+        <button type="button" class="el-next" hidden>Дальше →</button>
+      </div>
+    </div>
+
+    <div class="igra-pravila" data-igra-pravila>
+      <h2 class="igra-pravila-h">Как играть</h2>
+      <p class="igra-pravila-zachem">Представь кухню, где повар — машина: делает одно дело за один шаг. Рецепт супа — это плитки-карточки: «Налей воду», «Помой картошку» и другие. Внизу лента шагов: одна клетка — один шаг. Узнаешь, за сколько шагов сварят суп один повар и два.</p>
+      <ol class="igra-pravila-shagi">
+        <li><b>Нажми мигающую плитку — и так три раза.</b> «Налей воду», «Вскипяти воду», «Посоли воду» лягут в клетки по порядку, остальные пять машина положит сама: 8 команд — 8 шагов.</li>
+        <li><b>Нажми «Позвать второго повара →».</b> Теперь в каждой клетке два места: два повара работают одновременно.</li>
+        <li><b>Нажми по очереди четыре мигающие плитки.</b> Каждая встанет в самый ранний шаг: «Налей воду» и «Помой картошку» — в шаг 1, пока один наливает, другой моет. Остальное машина разложит парами сама и устроит гонку поваров.</li>
+        <li><b>Нажми «Кто так считал первым? →».</b> Откроется рассказ, кто первым считал по два дела за шаг.</li>
+      </ol>
+      <p class="igra-pravila-nyuans">Жми ту плитку или кнопку, которая мигает и над которой рука. Кипятить воду, пока её не налили, нельзя — поэтому «Вскипяти воду» всегда на шаг позже.</p>
+      <p class="igra-pravila-final">В конце узнаешь, что так же, по два дела за шаг, считал советский компьютер «Эльбрус» — на 15 лет раньше американского Pentium.</p>
+    </div>
+
+    <!-- Финал: лента лет (M-74) -->
+    <div class="el-finale" hidden>
+      <h2 class="el-fin-h">Так считал «Эльбрус»</h2>
+      <p class="el-big">Советская ЭВМ «Эльбрус-1» выполняла <b>по нескольку команд за один шаг</b> — как твои два повара. Машина сама находила команды, которые не ждут друг друга, — и программа шла быстрее.</p>
+      <div class="timeline el-years" aria-label="Лента лет">
+        <span class="el-gap">на 15 лет раньше</span>
+        <article><strong>1978–79</strong><span>«Эльбрус-1», СССР</span></article>
+        <article><strong>1993</strong><span>Pentium, Intel, США</span></article>
+      </div>
+      <p class="el-hook">Инженер советского «Эльбруса» <b>Владимир Пентковский</b> ушёл в Intel — и там его негласно прозвали главным архитектором Pentium.</p>
+      <details class="el-more el-five">
+        <summary>Ещё 5 фактов об «Эльбрусе»</summary>
+        <ul class="el-facts">
+          <li><b>По нескольку команд за шаг.</b> «Эльбрус-1» (1978–79) так работал на полтора десятка лет раньше Pentium.</li>
+          <li><b>Щит Москвы.</b> «Эльбрус-2» с 1991 года считал для противоракетного щита Москвы и работал в Центре управления полётами.</li>
+          <li><b>Домой.</b> В 2010 году Пентковский вернулся в Россию и открыл лабораторию в МФТИ по мегагранту.</li>
+          <li><b>Intel пришла сама.</b> Через четверть века Intel пришла за командой Бабаяна, создателя «Эльбруса», — и оставила её работать в России.</li>
+          <li><b>48 тонн.</b> «Эльбрус-2» весил 48 т и занимал 430 м² — больше полутора теннисных кортов.</li>
+        </ul>
+      </details>
+      <details class="el-more">
+        <summary>Подробнее и источники</summary>
+        <p>Программа для ЭВМ — список команд, как рецепт. Обычная машина выполняет их по одной: одна команда — один шаг. «Эльбрус-1» умел брать в один шаг несколько команд сразу, если они не ждут друг друга. Команда, которой нужен чужой результат, ждёт — как соль ждёт кипящей воды. В игре команды по поварам раскладываешь ты сам; в «Эльбрусе-1» это делала сама машина — на ходу находила команды, которые можно выполнить разом. В игре два «повара» и восемь команд; у настоящей машины команд были тысячи.</p>
+        <p>«Эльбрус-2» выпускали с 1985 года, до 125 млн операций в секунду; с 1991 года машины стояли в системе ПРО А-135 вокруг Москвы и в ЦУП. Теннисный корт ≈ 261 м²: 430 / 261 ≈ 1,65.</p>
+        <p>Пентковский с 1970 года работал над «Эльбрусом-1» и «-2», с 1993 года — в Intel; один из авторов и архитекторов набора команд SSE, впервые появившегося в Pentium III. В 2010 году в МФТИ под его руководством открыли Лабораторию суперкомпьютерных технологий для биомедицины.</p>
+        <p class="el-src">Источники: И. Карташев, «„Эльбрус“. История легенды», «Компьютерра», 01.07.2004 — old.computerra.ru/hitech/205267/; Виртуальный компьютерный музей, «МВК „Эльбрус“» — computer-museum.ru/histussr/elbrus12.htm; Программа мегагрантов, «Пентковский Владимир Мстиславович» — megagrant.ru/labs/scientists/scientist_rus_112121/; «Борис Бабаян: победитель победителей», CNews, 2006 — cnews.ru/articles/boris_babayan_pobeditel_pobeditelej</p>
+        <p class="el-scheme">Плитки и повара в игре — рисованная схема.</p>
+      </details>
+      <div class="el-btns"><button type="button" class="el-again">Сыграть ещё раз</button></div>
+    </div>
+  </section>
+  <!-- Черновик для показа (Р190). Страница дня собирается отдельно. Лента лет — M-74 ✅, движок «уложи команды в шаг» — новый, на нажатиях (Р206). -->
+</main>
+<script src="../assets/elbrus-shag.js?v=8363f063" defer></script>
+</body>
+</html>
