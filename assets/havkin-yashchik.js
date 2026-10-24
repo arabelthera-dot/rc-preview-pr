@@ -296,10 +296,10 @@ function igraRuka(root) {
 
   function finale() {
     zhdat();
-    $('.hv-s2').hidden = true; $('.hv-head').hidden = true; $('.hv-steps').hidden = true;
+    $('.hv-s2').hidden = true; $('.hv-steps').hidden = true;
+    say('Прочитай, кто такой Хавкин', '');
     var fin = $('.hv-finale');
     fin.hidden = false;
-    root.insertBefore(fin, $('[data-igra-pravila]')); // финал — сразу под картинкой, правила ниже
     fin.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
   }
   $('.hv-again').addEventListener('click', function () { location.reload(); });
