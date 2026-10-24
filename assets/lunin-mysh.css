@@ -1,0 +1,155 @@
+/* lunin-mysh.css — черновик игры 20 января (Лунин, «Спаси мышь — и не сможешь»), Р227, Р228.
+   Вид — из assets/lunin-page.css (блок «Механика „Спаси мышь“» и базовые токены страницы).
+   Перетаскивание заменено нажатиями (Р206): правила наведения и «призрак» баночки убраны, добавлен полёт баночки в миску. */
+:root{
+  --dark:#060c17; --dark2:#0c1826; --surface:#111f33;
+  --card:rgba(255,255,255,.05); --card-b:rgba(255,255,255,.09);
+  --gold:#c9a84c; --gold-l:#e4c97a; --gold-g:rgba(201,168,76,.13);
+  --ink:#e8eef5; --muted:#7a9ab8; --line:rgba(255,255,255,.07);
+  --accent:#2d8cbf; --accent2:#1f6f8b;
+  --acc:#c9a84c; --font-h:'Playfair Display',Georgia,serif; --font-b:'Inter','Segoe UI',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+body.lm-body{margin:0;font-family:var(--font-b);color:var(--ink);background:var(--dark);line-height:1.72;overflow-x:hidden}
+.lm-body h1,.lm-body h2,.lm-body h3{font-family:var(--font-h);line-height:1.13;margin:0}
+.wrap{max-width:840px;margin:0 auto;padding:0 18px}
+a{color:var(--gold-l)}
+p{margin:14px 0;color:var(--ink)}
+.lm-top{background:linear-gradient(180deg,#0c1826 0%,#060c17 100%);padding:18px 0 8px}
+.lm-museum{margin:0 0 6px;color:var(--gold);font-size:10px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
+.lm-top h1{color:#fff;font-size:30px;font-weight:900;line-height:1.08;margin-bottom:8px}
+.lm-hook{color:#c6d8e8;font-size:16px;max-width:62ch;margin:0}
+.lm-igra{padding:22px 0 40px}
+.kicker{font-size:10px;text-transform:uppercase;letter-spacing:3.5px;color:var(--gold);font-weight:700;margin-bottom:8px}
+.lm-igra h2{font-size:28px;color:#fff;margin-bottom:10px}
+.btn{cursor:pointer;border:none;border-radius:12px;padding:14px 26px;font-size:15px;font-weight:600;font-family:var(--font-b);background:var(--accent2);color:#fff;min-height:48px}
+.btn.ghost{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid var(--card-b)}
+.btn.gold{background:linear-gradient(135deg,var(--gold),#b8882b);color:#1a0f00;box-shadow:0 4px 20px rgba(201,168,76,.25)}
+.btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.btn[aria-disabled="true"]{opacity:.45;cursor:default;box-shadow:none;filter:grayscale(.4)}
+.lab-cap{font-size:12px;color:#8fa5b9;margin-top:6px}
+.lab-msg{margin-top:12px;font-size:15.5px;padding:12px 14px;border-radius:10px;background:rgba(255,255,255,.04);border-left:3px solid var(--card-b);min-height:48px}
+.lab-msg.ok{border-left-color:#3f9b52;background:rgba(40,120,60,.14)}
+.lab-msg.bad{border-left-color:#c0453f;background:rgba(180,40,40,.10)}
+.lab-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.noscript-box{background:rgba(255,255,255,.04);border:1px dashed var(--card-b);border-radius:12px;padding:12px 16px;font-size:15px}
+.src-note{font-size:12px;color:#8fa5b9}
+.lead-p{max-width:62ch}
+.opyt{background:var(--card);border:1px solid var(--card-b);border-radius:16px;padding:18px;margin-top:14px}
+.den-shkala{display:flex;align-items:center;gap:12px;margin-top:12px}
+.den-shkala .den{font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:26px;color:var(--gold-l);min-width:4.6em}
+.den-shkala .polosa{flex:1;height:8px;border-radius:6px;background:rgba(255,255,255,.08);overflow:hidden}
+.den-shkala .polosa i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--accent2),var(--gold))}
+.vyvod{margin-top:14px;padding:16px 18px;border-radius:12px;background:var(--gold-g);border:1px solid rgba(201,168,76,.35)}
+.vyvod h3{font-size:22px;color:var(--gold-l);margin-bottom:6px}
+.vyvod p{margin:6px 0;color:var(--ink)}
+
+/* ── пять фактов в финале — как на странице дня ── */
+.udary{list-style:none;margin:18px 0 0;padding:0;counter-reset:u}
+.udary>li{border-top:1px solid var(--line);padding:4px 0}
+.udary details>summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:34px 1fr;gap:10px;padding:12px 0;font-size:17px;line-height:1.55;color:var(--ink)}
+.udary details>summary::-webkit-details-marker{display:none}
+.udary details>summary::before{counter-increment:u;content:counter(u);font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:20px;color:var(--gold);line-height:1.3}
+.udary .more-lbl{display:block;grid-column:2;font-size:12.5px;color:var(--gold-l);letter-spacing:.3px;margin-top:4px}
+.udary .more-lbl::after{content:' ▾'}
+.udary details[open] .more-lbl::after{content:' ▴'}
+.udary details[open] .more-lbl .o{display:none}
+.udary details:not([open]) .more-lbl .c{display:none}
+.udary summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:6px}
+.udary .det{margin:0 0 14px 44px;padding:12px 16px;background:rgba(255,255,255,.035);border-left:2px solid rgba(201,168,76,.45);border-radius:0 10px 10px 0;font-size:15px;color:#d5e0ea}
+.udary .det p{margin:8px 0}
+.udary .tag{display:inline-block;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:#1a0f00;background:var(--gold-l);border-radius:6px;padding:1px 7px;margin-right:6px}
+.udary .find{border-left:3px solid var(--gold);padding-left:8px}
+
+/* ── Механика «Спаси мышь — и не сможешь» (Р176): клетки SVG, полка с баночками, сроки ── */
+.mysh .kletki{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:4px}
+.kletka{margin:0;min-width:0}
+.kletka svg{display:block;width:100%;height:auto;border-radius:12px;transition:box-shadow .25s,transform .25s}
+.kletka.final svg{box-shadow:0 0 0 2px var(--gold-l),0 0 34px rgba(241,207,99,.35)}
+.kletka figcaption{font-size:14px;color:var(--muted);margin-top:8px;line-height:1.45;min-height:2.9em}
+.kletka figcaption b{color:var(--ink);font-weight:600;display:block}
+.k-fon{fill:#f1e8d2}.k-noch{fill:#0d1a33;transition:opacity .2s}
+.k-pol{fill:#dcc9a0}.k-podst rect{fill:rgba(140,108,58,.45)}
+.prutya path{stroke:rgba(70,62,50,.32);stroke-width:2.2;fill:none}.k-krysha{fill:rgba(70,62,50,.55)}
+.m-ten{fill:rgba(0,0,0,.12)}.m-telo{fill:#8e97a3}.m-verh{fill:#a8b0ba}
+.korm{transition:rx .35s,ry .35s}.moloko{fill:#fffdf6;transition:rx .45s,ry .45s}
+.miska{transform-box:fill-box;transform-origin:50% 100%}
+.miska.plesk{animation:plesk .45s ease-out}
+@keyframes plesk{0%{transform:scale(1)}35%{transform:scale(1.12,.9)}70%{transform:scale(.97,1.04)}100%{transform:scale(1)}}
+.tulovo{fill:#9aa1ad}.uho{fill:#9aa1ad}.uho-v{fill:#e9b4b6}.nos{fill:#e48f97}.glaz{fill:#1b1b1b}
+.glaz-zakr{stroke:#1b1b1b;stroke-width:1.6;fill:none;stroke-linecap:round}
+.hvost{stroke:#d29a9e;stroke-width:2.6;fill:none;stroke-linecap:round}
+.lapa{stroke:#d29a9e;stroke-width:2.6;stroke-linecap:round}
+.mysh-g{transition:opacity .6s}
+.kol-stoyka{stroke:#7b8590;stroke-width:4;fill:none;stroke-linecap:round}
+.kol-obod{fill:rgba(255,255,255,.25);stroke:#7b8590;stroke-width:4}
+.kol-spica{stroke:#9aa3ad;stroke-width:2;fill:none}.kol-os{fill:#7b8590}
+.vopros{transition:opacity .8s}
+.v-svet{fill:rgba(241,207,99,.35)}.v-znak{stroke:#b8860b;stroke-width:5.5;fill:none;stroke-linecap:round;stroke-linejoin:round}.v-tochka{fill:#b8860b}
+.vopros.gorit .v-svet{animation:svet 1.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}
+@keyframes svet{0%,100%{opacity:.55;transform:scale(.92)}50%{opacity:1;transform:scale(1.08)}}
+.polka{margin-top:14px;padding:12px;border-radius:12px;background:rgba(255,255,255,.035);border:1px dashed rgba(201,168,76,.35)}
+.polka-lbl{font-size:13px;color:var(--muted);margin-bottom:10px}
+.banki{display:flex;flex-wrap:wrap;gap:8px}
+.banka{display:flex;flex-direction:column;align-items:center;gap:4px;width:calc(20% - 7px);min-width:62px;min-height:84px;padding:8px 4px 6px;border-radius:12px;border:1px solid var(--card-b);background:rgba(255,255,255,.05);color:var(--ink);font:inherit;font-size:12.5px;line-height:1.2;text-align:center;cursor:pointer;transition:transform .2s,opacity .3s,border-color .2s,background .2s}
+.banka[hidden]{display:none}
+.banka svg{width:34px;height:40px;flex:none}
+.banka:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.banka.vzyato{opacity:.32;cursor:default;transform:none}
+.banka.dop{width:calc(50% - 4px);flex-direction:row;justify-content:center;gap:8px;font-size:13.5px;border-color:var(--gold);background:var(--gold-g)}
+.banka.dop.vzyato{background:rgba(255,255,255,.04);border-color:var(--card-b)}
+.banka.poyavis{animation:poyavis .6s ease-out}
+@keyframes poyavis{0%{opacity:0;transform:translateY(10px) scale(.9)}100%{opacity:1;transform:none}}
+.bk-st{fill:rgba(220,235,245,.18);stroke:#c8d6e2;stroke-width:1.6}.bk-kr{fill:#8a6a3a}
+.bk-moloko{fill:#fffdf6}.bk-belok{fill:#f4efe2}.bk-zhir{fill:#f1cf63}.bk-sahar{fill:#ffffff;opacity:.85}.bk-voda{fill:#8cc4ea}.bk-soda{fill:#d9e4ea}.bk-soli{fill:#c9b8a6}
+.mysh .den-shkala .nedel{font-size:13px;color:var(--muted);white-space:nowrap}
+.mysh.idyot .den-shkala .den{color:#fff}
+.sroki{margin-top:14px;padding:12px 14px;border-radius:12px;background:rgba(255,255,255,.035)}
+.sroki-h{font-size:13px;color:var(--muted);margin-bottom:6px}
+.srok{display:grid;grid-template-columns:7.5em 1fr;gap:4px 10px;align-items:center;padding:6px 0;font-size:14px}
+.srok-n{color:var(--ink);font-weight:600}
+.srok-p{height:10px;border-radius:6px;background:rgba(255,255,255,.08);overflow:hidden}
+.srok-p i{display:block;height:100%;width:0;border-radius:6px;transition:width .9s cubic-bezier(.2,.8,.2,1)}
+.srok-p i.zhiva{width:100%;background:linear-gradient(90deg,#3f9b52,#7cc68a)}
+.srok-p i.gibel{background:linear-gradient(90deg,#8f3a36,#c0453f)}
+.srok-d{grid-column:2;font-size:12.5px;color:#c8d6e2}
+.vyvod{transition:opacity .8s,transform .8s;opacity:0;transform:translateY(8px)}
+.vyvod.vidno{opacity:1;transform:none}
+.vyvod .vopros-str{font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:30px;color:var(--gold-l);margin:0 0 6px}
+@media(max-width:520px){
+  .mysh{padding:12px}
+  .mysh .kletki{gap:8px}
+  .kletka figcaption{font-size:13px}
+  .banka{width:calc(33.333% - 6px)}
+  .banka.dop{width:100%}
+  .den-shkala .den{font-size:21px}
+  .srok{grid-template-columns:6.4em 1fr;font-size:13px}
+}
+
+/* ── шаги, строка «Что сделать сейчас», полёт баночки, финал ── */
+.lm-shagi{display:flex;gap:6px;list-style:none;margin:0 0 4px;padding:0}
+.lm-shagi li{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700;background:rgba(255,255,255,.07);color:var(--muted)}
+.lm-shagi li.on{background:var(--gold);color:#1a0f00}
+.lm-shagi li.bylo{background:rgba(201,168,76,.3);color:#1a0f00}
+.igra-poyasnenie{margin:0 0 10px;font-size:14px;color:#c8d6e2;min-height:1.5em}
+.banka.letit{position:fixed;z-index:60;margin:0;pointer-events:none;box-shadow:0 14px 30px rgba(0,0,0,.45);background:#1e2a36;transition:transform .5s cubic-bezier(.35,.1,.3,1),opacity .5s ease-in}
+.lm-finale{margin-top:22px;padding-top:18px;border-top:1px solid rgba(201,168,76,.3)}
+.lm-finale h2{font-size:26px}
+.lm-again{margin-top:18px}
+.igra-ruka-zona .igra-pravila{color:var(--ink)}
+
+/* igra-ruka — подсказка «куда жать» (Р206); вид — как у образца 29 янв. (ko-hand, rc-site e4f86d74). Вставить в конец css игры как есть. */
+.igra-ruka-zona{touch-action:manipulation;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}
+.igra-ruka-zona button{touch-action:manipulation;min-height:48px;min-width:48px}
+.igra-ruka-zona .igra-pravila{-webkit-user-select:text;user-select:text}
+.igra-ruka{position:absolute;z-index:30;width:40px;height:48px;margin:0;pointer-events:none;animation:igra-tap 1.1s ease-in-out infinite;transform-origin:15px 4px;filter:drop-shadow(0 3px 4px rgba(0,0,0,.45))}
+.igra-ruka[hidden]{display:none}
+.igra-ruka svg{display:block}
+.igra-ruka-krug{position:absolute;left:-7px;top:-14px;width:44px;height:44px;border:3px solid #fff;border-radius:50%;opacity:0;animation:igra-krug 1.1s ease-out infinite}
+@keyframes igra-tap{0%,100%{transform:translate(-15px,10px) scale(1)}40%{transform:translate(-15px,-4px) scale(.88)}55%{transform:translate(-15px,-4px) scale(.88)}}
+@keyframes igra-krug{0%,35%{opacity:0;transform:scale(.3)}45%{opacity:.9;transform:scale(.4)}100%{opacity:0;transform:scale(1.2)}}
+.igra-ved button:not(.igra-aktiv){opacity:.42;filter:saturate(.4)}
+.igra-aktiv{position:relative;z-index:2;opacity:1!important;filter:none!important;animation:igra-puls 1.1s ease-in-out infinite!important;outline:3px solid #e9cf7e;outline-offset:3px}
+@keyframes igra-puls{0%,100%{box-shadow:0 0 0 0 rgba(233,207,126,.75)}50%{box-shadow:0 0 0 12px rgba(233,207,126,0)}}
+.igra-zhmyak{transform:scale(.94)!important;transition:transform 60ms}
+@media (prefers-reduced-motion:reduce){.igra-ruka,.igra-aktiv{animation:none!important}.igra-ruka{transform:translate(-15px,0)}.igra-ruka-krug{display:none}}
