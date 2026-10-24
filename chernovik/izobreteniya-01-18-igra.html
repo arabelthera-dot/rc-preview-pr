@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Черновик игры · 18 января · Вильгодт Однер — арифмометр</title>
+<link rel="stylesheet" href="../assets/igra-pravila.css?v=9449179f">
+<link rel="stylesheet" href="../assets/odner-koleso.css?v=5fed0a1a">
+</head>
+<body class="od-body">
+<header class="od-top">
+  <div class="od-wrap">
+    <p class="od-museum">Что изобрели русские первыми в мире · черновик игры</p>
+    <h1>18 января · Вильгодт Однер, арифмометр</h1>
+    <p class="od-lead">Механический калькулятор из Петербурга считал на всех континентах почти сто лет — в СССР его звали «Феликс».</p>
+  </div>
+</header>
+
+<main class="od-wrap">
+  <section class="od-igra igra-ruka-zona" data-odner-igra aria-label="Игра: мир считал на петербургском колесе">
+    <h2 class="od-h">Мир считал на петербургском колесе</h2>
+    <ol class="od-steps" aria-label="Задания">
+      <li class="on">Просветить полку</li>
+      <li>Набрать 147</li>
+      <li>Умножить на 23</li>
+    </ol>
+    <div class="od-head">
+      <p class="od-task igra-seychas" aria-live="polite"><b>Что сделать сейчас:</b> Нажми «Однер»</p>
+      <p class="od-sub igra-poyasnenie" aria-live="polite">Семь машин из четырёх стран — корпуса у всех разные. Что у них внутри?</p>
+    </div>
+
+    <div class="od-scene">
+      <div class="polka" id="polka">
+        <div class="polka-shelf"><div class="polka-lens" aria-hidden="true"></div></div>
+        <div class="polka-count"><span>Колесо Однера найдено: <b id="polkaCnt">0</b> из 7</span><span class="polka-bar"><i></i></span></div>
+        <div class="stopki" id="stopki" hidden>
+          <div class="stopki-row">
+            <div class="stopki-col stopki-fr"><div class="stopki-pile"><i class="on"></i></div><div class="stopki-v">≈ 5 000</div><div class="stopki-k">арифмометров Тома де Кольмара, Франция, — за сто лет</div></div>
+            <div class="stopki-col stopki-ru"><div class="stopki-pile stopki-wall"></div><div class="stopki-v" id="stopkiNum">0</div><div class="stopki-k">«Феликсов» собрал один Курск — к 1973 году</div></div>
+          </div>
+          <p class="stopki-leg">Один кирпичик — 5 000 машин. Слева один, справа шестьсот.</p>
+        </div>
+        <noscript><div class="noscript-box">Для полки нужен JavaScript. Текстовая версия: на полке петербургский «Однер» 1890 года, немецкие Brunsviga и Triumphator, шведские Original-Odhner и Facit, американский Marchant и курский «Феликс». Корпуса разные, а внутри у всех одно колесо Однера с выдвижными зубцами. Французских арифмометров Тома за сто лет сделали около 5 000, курских «Феликсов» — 3 миллиона.</div></noscript>
+      </div>
+      <p class="od-src">Схема музея, не снимок: корпуса нарисованы по типу машин. Марки-потомки — по А. И. Басову (НИУ ВШЭ, IQ.HSE, 2024); 5 000 машин Тома и 3 миллиона «Феликсов» — там же и «Курский завод „Счётмаш“», Виртуальный компьютерный музей.</p>
+
+      <div class="od-take-row" hidden><button type="button" class="od-btn gold od-take">Взять «Феликс» и посчитать</button></div>
+
+      <div class="od-press" hidden>
+        <h3>Возьми и покрути ручку</h3>
+        <p class="od-press-t">В руках: <b id="inHand">«Однер», Петербург (Россия)</b>. Задача счетовода: в цехе 23 рабочих, каждому положено 147 рублей. Набери рычажками 147, крути ручку: три оборота, сдвиг каретки, ещё два.</p>
+        <figure class="od-fig"><canvas id="cvWheel" width="300" height="200" role="img" aria-label="Модель трёх колёс Однера: из каждого выдвинуто столько зубцов, какая цифра набрана"></canvas><figcaption>Набрано: <span id="setTxt">000</span></figcaption></figure>
+        <div class="od-lev">
+          <button type="button" class="od-btn" data-lev="0">Сотни → 1<small>рычажок</small></button>
+          <button type="button" class="od-btn" data-lev="1">Десятки → 4<small>рычажок</small></button>
+          <button type="button" class="od-btn" data-lev="2">Единицы → 7<small>рычажок</small></button>
+        </div>
+        <figure class="od-fig"><canvas id="cvCount" width="300" height="180" role="img" aria-label="Модель счётчика арифмометра: окошки результата, положение каретки и число оборотов"></canvas><figcaption>Счётчик: <span id="cntTxt">0, оборотов 0</span></figcaption></figure>
+        <div class="od-ctl">
+          <button type="button" class="od-btn gold od-crank" aria-label="Ручку вперёд: один оборот, прибавить набранное"><svg viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56" class="crank-ring"/><circle cx="60" cy="60" r="10" class="crank-hub"/><g class="crank-arm"><rect x="56" y="10" width="8" height="52" rx="4"/><circle cx="60" cy="16" r="11" class="crank-knob"/></g></svg><span>Ручку вперёд<small style="display:block;font-weight:400;font-size:12px">1-й оборот из 3</small></span></button>
+          <button type="button" class="od-btn od-car">Сдвинуть каретку</button>
+        </div>
+        <p class="od-cap">Модель, а не снимок: три колеса вместо девяти, каретка на два положения, звонок — как у «Феликса».</p>
+        <p class="od-src">Правило модели — устройство колеса Однера: Понятов А. «Рождение легенды», «Наука и жизнь» № 6, 2020; звонок — «Арифмометр „Феликс“», Музей истории города Обнинска.</p>
+      </div>
+    </div>
+
+    <div class="igra-pravila" data-igra-pravila>
+      <h2 class="igra-pravila-h">Как играть</h2>
+      <p class="igra-pravila-zachem">На полке семь арифмометров из четырёх стран: Россия, Германия, Швеция, США. Корпуса у всех разные. Просвет показывает, что у машины внутри. Потом на «Феликсе» посчитаешь зарплату цеха: 23 рабочих по 147 рублей.</p>
+      <ol class="igra-pravila-shagi">
+        <li><b>Нажми мигающую машину.</b> Просвет сам приплывёт к ней, корпус станет прозрачным — внутри колесо Однера. И так все семь, по очереди: в конце встанут две стопки, французская и курская.</li>
+        <li><b>Нажми «Взять „Феликс“ и посчитать».</b> Ниже откроется арифмометр.</li>
+        <li><b>Нажми три рычажка по очереди: «Сотни → 1», «Десятки → 4», «Единицы → 7».</b> Из колёс выдвинется 1, 4 и 7 зубцов — набрано 147.</li>
+        <li><b>Нажми «Ручку вперёд» три раза</b> — в счётчике 441. <b>Нажми «Сдвинуть каретку»</b> и ещё два раза ручку — в счётчике 3381.</li>
+      </ol>
+      <p class="igra-pravila-nyuans">Жми только то, что мигает и над чем рука, — одно нажатие на шаг. Водить пальцем не нужно.</p>
+      <p class="igra-pravila-final">В конце — 3381 рубль за пять оборотов ручки вместо 23 сложений, а ниже откроются пять фактов об Однере.</p>
+    </div>
+
+    <div class="od-finale" hidden>
+      <p class="od-big">Семь машин, четыре страны — и в каждой одно колесо из Петербурга.</p>
+      <p class="od-kicker">Пять фактов об Однере</p>
+      <h2>Механик, которого выгнали с завода</h2>
+    <ol class="udary">
+      <li><details><summary><span>Лучший в мире французский арифмометр Однеру дали починить — он сделал свой, и Курск собрал его 3 миллиона.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Около 1871 г. мастеру завода Нобеля принесли сломанный арифмометр Тома де Кольмара — до Однера мировой стандарт: больше 10 кг, около 5000 штук за сто лет. Однер разобрал его и придумал своё колесо.</p>
+          <p>Трёхмиллионный «Феликс» сошёл в Курске в 1973 г.</p>
+          <p class="src-note">Источник: А. И. Басов (НИУ ВШЭ), «История с вычислениями. Эпизод третий: империя арифмометров», IQ.HSE — <a href="https://iq-media.ru/archive/936485878" rel="noopener">iq-media.ru/archive/936485878</a>; «Курский завод „Счётмаш“», Виртуальный компьютерный музей — <a href="https://www.computer-museum.ru/histussr/schetmash.htm" rel="noopener">computer-museum.ru/histussr/schetmash.htm</a>.</p>
+        </div></details></li>
+      <li><details><summary><span>Завод Нобеля выгнал Однера — а через 14 лет компания Нобелей сама считала на десяти его машинах.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>В 1877 г., пока Людвиг Нобель был в отъезде, директора запретили Однеру появляться на заводе и уволили его, партия из 14 машин осталась без производства.</p>
+          <p>В 1891 г. «Товарищество братьев Нобель» уже работало на десяти его арифмометрах.</p>
+          <p class="src-note">Источник: А. И. Басов (НИУ ВШЭ), «История с вычислениями. Эпизод третий: империя арифмометров», IQ.HSE — <a href="https://iq-media.ru/archive/936485878" rel="noopener">iq-media.ru/archive/936485878</a>.</p>
+        </div></details></li>
+      <li><details><summary><span>Первые машины Однера годами считали для правительства США — теперь они в Смитсоновском институте.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Американский агент компаньона Однера продал два арифмометра пробной партии 1870-х чиновникам правительства США, «которые использовали их на протяжении многих лет».</p>
+          <p>Третий экземпляр той партии хранится в Политехническом музее.</p>
+          <p class="src-note">Источник: А. И. Басов (НИУ ВШЭ), «История с вычислениями. Эпизод третий: империя арифмометров», IQ.HSE — <a href="https://iq-media.ru/archive/936485878" rel="noopener">iq-media.ru/archive/936485878</a>.</p>
+        </div></details></li>
+      <li><details><summary><span>Немецкая «Брунсвига» — это Однер: Германия купила лицензию у петербургского мастера и сделала 20 000 машин.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>С 1892 г. немецкая фирма выпускала арифмометры по лицензии Однера, к 1912 г. — 20 000 штук.</p>
+          <p>Его колесо крутили и под другими марками: Facit в Швеции, Triumphator в Германии, «Рапид» во Франции.</p>
+          <p class="src-note">Источник: А. И. Басов (НИУ ВШЭ), «История с вычислениями. Эпизод третий: империя арифмометров», IQ.HSE — <a href="https://iq-media.ru/archive/936485878" rel="noopener">iq-media.ru/archive/936485878</a>; А. Понятов, «Рождение легенды», «Наука и жизнь», 2020, № 6 — <a href="https://www.nkj.ru/archive/articles/38885/" rel="noopener">nkj.ru/archive/articles/38885</a>.</p>
+        </div></details></li>
+      <li><details><summary><span>Ракеты в поле считали на «Феликсе»: ему не нужно электричество.<span class="more-lbl"><span class="o">Узнать подробнее</span><span class="c">Свернуть</span></span></span></summary>
+        <div class="det">
+          <p>Армия была главным покупателем — «только на арифмометре в полевых и боевых условиях при отсутствии электричества и можно было сделать необходимые для запуска ракет расчёты».</p>
+          <p>Только за 1969 г. выпустили 300 тысяч «Феликсов».</p>
+          <p class="src-note">Источник: «Огонёк», № 34, 29.08.2004 — <a href="https://www.kommersant.ru/doc/2294058" rel="noopener">kommersant.ru/doc/2294058</a>.</p>
+        </div></details></li>
+    </ol>
+      <h3>Источники</h3>
+      <ul class="od-sources sources">
+    <ul class="sources">
+      <li><a href="https://www.computer-museum.ru/precomp/odner.htm" rel="noopener" target="_blank">Ананьева О. А. (Политехнический музей) «Арифмометры В. Т. Однера», Виртуальный компьютерный музей</a>: слова Однера о пятнадцати годах труда.</li>
+      <li><a href="https://www.nkj.ru/archive/articles/38885/" rel="noopener" target="_blank">Понятов А. «Рождение легенды», «Наука и жизнь» № 6, 2020</a>: устройство колеса, первая модель 1873 года, служба в Экспедиции, папиросная машина, «Брунсвига», награды выставок.</li>
+      <li><a href="https://iq-media.ru/archive/936485878" rel="noopener" target="_blank">Басов А. И. (НИУ ВШЭ) «История с вычислениями. Эпизод третий: империя арифмометров», IQ.HSE, 26.06.2024</a>: биография, завод Нобеля, тиражи, лицензии, цена «Феликса».</li>
+      <li><a href="https://ar.culture.ru/ru/subject/arifmometr-odnera" rel="noopener" target="_blank">«Арифмометр Однера», Волгоградский областной краеведческий музей, «Артефакт»</a>: прототип 1873 года, патенты, судьба завода.</li>
+      <li><a href="https://ar.culture.ru/ru/subject/arifmometr-feliks-1" rel="noopener" target="_blank">«Арифмометр „Феликс“», Музей истории города Обнинска, «Артефакт»</a>: миллионы приборов до 1978 года, школа, звонок.</li>
+      <li><a href="https://schetmash.com/company/history" rel="noopener" target="_blank">«История АО „Счетмаш“», официальный сайт курского завода</a>: первый «Феликс» 8 марта 1948 года.</li>
+      <li><a href="https://www.computer-museum.ru/histussr/schetmash.htm" rel="noopener" target="_blank">«Курский завод „Счётмаш“», Виртуальный компьютерный музей</a>: трёхмиллионный «Феликс», июнь 1973 года.</li>
+      <li><a href="https://www.companybest.ru/publications/60-svoboda/3669-mednolitejnyj-i-mekhanicheskij-zavod-v-t-odner.html" rel="noopener" target="_blank">«Меднолитейный и механический завод В. Т. Однер», справочник предприятий Петербурга</a>: мастерская, серия 1890 года, «Однер и Гиль».</li>
+      <li>Госкаталог музейного фонда РФ: <a href="https://goskatalog.ru/portal/#/collections?id=12713783" rel="noopener" target="_blank">арифмометр Однера № 19271, ЦМС им. А. С. Попова</a> и <a href="https://goskatalog.ru/portal/#/collections?id=28672091" rel="noopener" target="_blank">арифмометр Однера № 18539, Белогорский краеведческий музей</a>.</li>
+      <li>Изображение: <a href="https://goskatalog.ru/portal/#/collections?id=4798915" rel="noopener" target="_blank">арифмометр «Оригинал-Однер», 1910–1912, Политехнический музей, инв. ВТ 234/1, Госкаталог № 4754758</a>.</li>
+    </ul>
+      </ul>
+      <div class="od-again-row"><button type="button" class="od-btn od-again">Сыграть ещё раз</button></div>
+    </div>
+  </section>
+  <p class="od-note">Черновик для показа (Р227, Р228). Страница дня 18 января не меняется; управление — одиночные нажатия (Р206).</p>
+</main>
+<script src="../assets/odner-koleso.js?v=1cba38a5" defer></script>
+</body>
+</html>
