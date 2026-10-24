@@ -345,7 +345,7 @@ function igraRuka(root) {
     etap(3);
     sub('3381 рубль — и всего ' + turns + ' оборотов ручки вместо 23 сложений. Так считали почти сто лет — с 1890-го до 1978-го.', 'ok');
     setTimeout(function () {
-      fin.hidden = false;
+      fin.hidden = false; root.classList.add('od-konec');
       fin.scrollIntoView({behavior: reduce ? 'auto' : 'smooth', block: 'start'});
     }, reduce ? 0 : 1600);
   }

@@ -21,6 +21,7 @@
 .od-steps li.on{border-color:var(--gold);color:var(--gold-l);background:var(--gold-g);font-weight:700}
 .od-steps li.done{color:#9fd3a8;border-color:rgba(63,155,82,.5)}
 .od-head{position:sticky;top:0;z-index:20;margin:0 -16px;padding:8px 16px 8px;background:#060c17;border-bottom:1px solid var(--card-b)}
+.od-konec .od-head{position:static}
 .od-task{margin:0;font-size:17px;font-weight:700;color:#fff}
 .od-task b{display:block;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700}
 .od-sub{margin:4px 0 0;font-size:14.5px;color:#c8d6e2;min-height:2.9em}
